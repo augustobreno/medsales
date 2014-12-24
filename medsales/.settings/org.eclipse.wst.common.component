@@ -4,10 +4,7 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/teste/resources"/>
-        <dependent-module archiveName="common-qbe-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/common-qbe/common-qbe">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources-wildfly82-remote"/>
         <property name="context-root" value="medsales"/>
         <property name="java-output-path" value="/medsales/target/classes"/>
     </wb-module>

@@ -2,18 +2,16 @@ package com.sales.medsales.negocio;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
-import org.apache.logging.log4j.Logger;
-
-import br.jus.trt.lib.qbe.api.Filter;
-
 import com.sales.medsales.dominio.Entity;
-import com.sales.medsales.persistencia.CrudRepository;
+import com.sales.medsales.persistencia.repository.CrudRepository;
 import com.sales.medsales.util.DIContainerUtil;
 import com.sales.medsales.util.JavaGenericsUtil;
 
+@SuppressWarnings("serial")
 @BusinessExceptionHandler
 public abstract class CrudFacadeBase<CR extends CrudRepository<E, PK>, E extends Entity<PK>, PK extends Serializable>
         implements CrudFacade<E, PK> {
@@ -23,7 +21,8 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<E, PK>, E extends
     
     private CR repository;
 
-    protected CrudRepository<E, PK> getRepository() {
+    @SuppressWarnings("unchecked")
+	protected CrudRepository<E, PK> getRepository() {
         if (repository == null) {
             List<Class<?>> genericsTypedArguments = JavaGenericsUtil.getGenericTypedArguments(CrudFacadeBase.class, this.getClass());
             Class<CR> repositoryType = (Class<CR>) genericsTypedArguments.get(0); // o repostiório é o primeiro parãmetro genérico
@@ -34,12 +33,19 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<E, PK>, E extends
 
     @Override
     public E save(E entity) {
-        return getRepository().save(entity);
+    	validateSave(entity);
+		if (entity.getId() == null) {
+			validateInsert(entity);
+			entity = getRepository().insert(entity);
+		} else {
+			validateUpdate(entity);
+			entity = getRepository().update(entity);
+		}
+		return entity;
     }
 
     @Override
     public void remove(E entity) {
-        log.entry();
         getRepository().remove(entity);
     }
 
@@ -58,29 +64,27 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<E, PK>, E extends
         return getRepository().count();
     }
 
-    @Override
-    public E findBy(PK id, String... fetch) {
-        return getRepository().findBy(id, fetch);
-    }
-
-    @Override
-    public E findBy(Filter<? extends E> filter) {
-        return getRepository().findBy(filter);
-    }
-
-    @Override
-    public List<E> findAll(boolean ascedant, String... orderBy) {
-        return getRepository().findAll(ascedant, orderBy);
-    }
-
-    @Override
-    public Long count(Filter<? extends E> filter) {
-        return getRepository().count(filter);
-    }
-
-    @Override
-    public List<E> findAllBy(Filter<? extends E> filter) {
-        return getRepository().findAllBy(filter);
-    }
-
+    /**
+     * Ponto de extensão para realização de validação de RN antes da operação save().
+     * Este método sempre será executado juntamente (imediatamente antes) com {@link #validateInsert(Entity)}
+     * ou {@link #validateUpdate(Entity)} 
+     * @param entity Entidade a ser validada.
+     */
+    protected void validateSave(E entity) {    }
+    
+    /**
+     * Ponto de extensão para realização de validação de RN antes da operação save, 
+     * quando esta realizar um insert da entidade.
+     * @param entity Entidade a ser validada.
+     */
+    protected void validateInsert(E entity) {    }
+    
+    /**
+     * Ponto de extensão para realização de validação de RN antes da operação save, 
+     * quando esta realizar um update da entidade.
+     * @param entity Entidade a ser validada.
+     */
+    protected void validateUpdate(E entity) {    }
+    
+    
 }

@@ -1,13 +1,13 @@
 package com.sales.medsales.negocio;
 
 import java.io.Serializable;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.inject.Inject;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
-
-import org.apache.logging.log4j.Logger;
 
 import com.sales.medsales.exceptions.AppException;
 import com.sales.medsales.exceptions.BusinessException;
@@ -50,15 +50,15 @@ public class BusinessExceptionInterceptor implements Serializable {
 				
 			} catch (BusinessException ne) {
 				// relançando mensagem de negócio
-				log.error("Relançando validação de negócio" , ne);
+				log.log(Level.SEVERE, "Relançando validação de negócio" , ne);
 				throw ne;
 				
 			} catch (AppException ne) {
-				log.error("Erro não identificado" , ne);
+				log.log(Level.SEVERE,"Erro não identificado" , ne);
 				throw ne;
 				
 			} catch (Throwable ne) {
-				log.error("Erro não esperado pela aplicação. Encapsulando em um TRT6Expetion", ne);
+				log.log(Level.SEVERE,"Erro não esperado pela aplicação. Encapsulando em um TRT6Expetion", ne);
 				throw new AppException(ne);
 				
 			} finally {
