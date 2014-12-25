@@ -5,14 +5,11 @@ import javax.persistence.EntityManager;
 
 import junit.framework.Assert;
 
-import org.jboss.arquillian.transaction.api.annotation.TransactionMode;
-import org.jboss.arquillian.transaction.api.annotation.Transactional;
 import org.junit.Test;
 import org.sales.medsales.OnServerBaseTest;
 import org.sales.medsales.dominio.Cliente;
 import org.sales.medsales.exceptions.AlreadyRegisteredException;
 
-@Transactional(value=TransactionMode.ROLLBACK)
 public class ClienteFacadeTest extends OnServerBaseTest {
 
 	@Inject

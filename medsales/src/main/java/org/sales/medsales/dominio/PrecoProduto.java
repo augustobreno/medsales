@@ -1,8 +1,12 @@
 package org.sales.medsales.dominio;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.ManyToOne;
 
 /**
  * O preço de um produto pode variar com o tempo. Esta entidade 
@@ -17,12 +21,14 @@ public class PrecoProduto extends EntityBase<Long> {
 	/**
 	 * Dados do produto assiciado.
 	 */
+	@ManyToOne(fetch=FetchType.LAZY)
 	private Produto produto;
 	
 	/**
 	 * Valor comercializado .
 	 */
-	private Double valor;
+	@Column(precision=19, scale=2)
+	private BigDecimal valor;
 	
 	/**
 	 * Determina a data de aferição do preço (geralmente a data
@@ -38,11 +44,11 @@ public class PrecoProduto extends EntityBase<Long> {
 		this.produto = produto;
 	}
 
-	public Double getValor() {
+	public BigDecimal getValor() {
 		return valor;
 	}
 
-	public void setValor(Double valor) {
+	public void setValor(BigDecimal valor) {
 		this.valor = valor;
 	}
 

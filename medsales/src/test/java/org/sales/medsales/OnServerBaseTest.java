@@ -4,6 +4,8 @@ import java.io.File;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
+import org.jboss.arquillian.transaction.api.annotation.TransactionMode;
+import org.jboss.arquillian.transaction.api.annotation.Transactional;
 import org.jboss.shrinkwrap.api.Archive;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
@@ -16,10 +18,14 @@ import org.sales.medsales.exceptions.AppException;
 
 /**
  * Classe base para testes realizados no servidor de aplicação.
+ * Suas principais atividades são: Ativar o Arquillian; Configurar o arquivo para
+ * deploy dos testes no servidores de aplicação; Gerenciar a transação via Arquillian (realiza
+ * rollback por padrão) 
  * @author Augusto
  *
  */
 @RunWith(Arquillian.class)
+@Transactional(value=TransactionMode.ROLLBACK)
 public class OnServerBaseTest {
 
     @Deployment
