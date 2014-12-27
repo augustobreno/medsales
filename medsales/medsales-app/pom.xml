@@ -12,7 +12,7 @@
 		<dependency>
 			<groupId>org.jboss.spec</groupId>
 			<artifactId>jboss-javaee-7.0</artifactId>
-			<version>1.0.2.Final</version> 
+			<version>1.0.2.Final</version>
 			<type>pom</type>
 		</dependency>
 
@@ -107,16 +107,10 @@
 			<artifactId>arquillian-transaction-jta</artifactId>
 		</dependency>
 
-
 		<dependency>
-			<groupId>commons-beanutils</groupId>
-			<artifactId>commons-beanutils</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>commons-logging</groupId>
-					<artifactId>commons-logging</artifactId>
-				</exclusion>
-			</exclusions>
+			<groupId>org.eu.ingwar.tools</groupId>
+			<artifactId>arquillian-suite-extension</artifactId>
+			<version>1.1.2</version>
 		</dependency>
 
 		<!-- DeltaSpike - extensions for CDI -->
@@ -134,6 +128,18 @@
 		<dependency>
 			<groupId>org.easy</groupId>
 			<artifactId>qbeasy</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.easy</groupId>
+			<artifactId>testeasy</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging-api</artifactId>
 		</dependency>
 	</dependencies>
 

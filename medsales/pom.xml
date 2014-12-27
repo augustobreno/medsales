@@ -142,6 +142,21 @@
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 
+			<dependency>
+				<groupId>org.easy</groupId>
+				<artifactId>testeasy</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-beanutils</groupId>
+				<artifactId>commons-beanutils</artifactId>
+				<version>1.8.3</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging-api</artifactId>
+				<version>1.1</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

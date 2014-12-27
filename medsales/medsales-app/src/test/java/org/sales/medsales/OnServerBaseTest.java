@@ -2,6 +2,7 @@ package org.sales.medsales;
 
 import java.io.File;
 
+import org.eu.ingwar.tools.arquillian.extension.suite.annotations.ArquillianSuiteDeployment;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.transaction.api.annotation.TransactionMode;
@@ -26,6 +27,7 @@ import org.sales.medsales.exceptions.AppException;
  */
 @RunWith(Arquillian.class)
 @Transactional(value=TransactionMode.ROLLBACK)
+@ArquillianSuiteDeployment // garante a reutilização do @Deployment entre as classes de teste
 public class OnServerBaseTest {
 
     @Deployment
