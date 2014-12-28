@@ -2,6 +2,8 @@ package org.sales.medsales.dominio;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Inheritance;
@@ -30,14 +32,25 @@ public abstract class MovimentacaoEstoque extends EntityBase<Long> {
 
 	/** determina o tipo de operação que este objeto deverá realizar. */
 	@Type(type="operacao")
+	@Column(nullable=false)
 	private Operacao operacao;
 	
 	/**
 	 * Itens associados a este tipo de movimentação.
 	 */
-	@OneToMany(fetch=FetchType.LAZY)
+	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
 	private List<Item> itens;
 
+	
+	public MovimentacaoEstoque() {
+		defineOperacao();
+	}
+	
+	/**
+	 * Ponto de extensão para configuração da operação padrão da entidade concreta.
+	 */
+	protected abstract void defineOperacao();
+	
 	public Operacao getOperacao() {
 		return operacao;
 	}

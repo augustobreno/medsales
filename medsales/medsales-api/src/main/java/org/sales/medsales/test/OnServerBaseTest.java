@@ -1,6 +1,9 @@
-package org.sales.medsales;
+package org.sales.medsales.test;
 
 import java.io.File;
+
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
 
 import org.eu.ingwar.tools.arquillian.extension.suite.annotations.ArquillianSuiteDeployment;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -9,13 +12,11 @@ import org.jboss.arquillian.transaction.api.annotation.TransactionMode;
 import org.jboss.arquillian.transaction.api.annotation.Transactional;
 import org.jboss.shrinkwrap.api.Archive;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.jboss.shrinkwrap.resolver.api.maven.Maven;
 import org.jboss.shrinkwrap.resolver.api.maven.PomEquippedResolveStage;
 import org.jboss.shrinkwrap.resolver.api.maven.ScopeType;
 import org.junit.runner.RunWith;
-import org.sales.medsales.exceptions.AppException;
 
 /**
  * Classe base para testes realizados no servidor de aplicação.
@@ -30,6 +31,15 @@ import org.sales.medsales.exceptions.AppException;
 @ArquillianSuiteDeployment // garante a reutilização do @Deployment entre as classes de teste
 public class OnServerBaseTest {
 
+	/**
+	 * EM para acesso direto à base
+	 */
+	@Inject
+	private EntityManager em;
+	
+	@Inject
+	private QuerierUtil querierUtil;
+	
     @Deployment
     public static Archive<?> createDeployment() {
     	
@@ -43,7 +53,7 @@ public class OnServerBaseTest {
         	.addPackages(true, "org.sales.medsales")
         	.addAsLibraries(libs)
             .addAsResource("test-persistence.xml", "META-INF/persistence.xml")
-            .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml");
+            .addAsWebInfResource("test-beans.xml", "beans.xml");
     }	
     
     /**
@@ -54,7 +64,23 @@ public class OnServerBaseTest {
     	try {
 			Thread.sleep(100);
 		} catch (InterruptedException e) {
-			throw new AppException("Não foi possível fazer a thread dormir.", e);
+			throw new RuntimeException("Não foi possível fazer a thread dormir.", e);
 		}
+	}
+
+	protected EntityManager getEm() {
+		return em;
+	}
+
+	protected void setEm(EntityManager em) {
+		this.em = em;
+	}
+
+	protected QuerierUtil getQuerierUtil() {
+		return querierUtil;
+	}
+
+	protected void setQuerierUtil(QuerierUtil querierUtil) {
+		this.querierUtil = querierUtil;
 	}
 }

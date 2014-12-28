@@ -1,5 +1,6 @@
 package org.sales.medsales.dominio;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 /**
@@ -12,6 +13,7 @@ import javax.persistence.Entity;
 @Entity
 public class Parceiro extends EntityBase<Long> {
 
+	@Column(nullable=false)
 	private String nome;
 
 	public String getNome() {

@@ -43,6 +43,6 @@ public class ClienteFacade extends CrudFacadeBase<ClienteRepository, Cliente, Lo
 		if (count > 0) {
 			throw new AlreadyRegisteredException(null, "Já existe um Cliente cadastrado com este nome.");
 		}
-		
 	}
+	
 }

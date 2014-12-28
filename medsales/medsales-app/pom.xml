@@ -141,6 +141,10 @@
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging-api</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.sales</groupId>
+			<artifactId>medsales-api</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

@@ -7,13 +7,6 @@ import org.sales.medsales.dominio.Entity;
 
 public interface CrudFacade<E extends Entity<PK>, PK extends Serializable> extends Facade {
 
-    /*
-     * Redefinir métodos das interfaces herdadas. O objetivo é isolar a implementação real
-     * dos pontos de uso acima da camada de facade.
-     *
-     * A primeira parte são os métodos da interface EntityRepository. A segunda parte é
-     * de CrudRepository.
-     */
     /**
      * Persist (new entity) or merge the given entity. The distinction on
      * calling either method is done based on the primary key field being null

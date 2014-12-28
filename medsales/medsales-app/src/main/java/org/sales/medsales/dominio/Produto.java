@@ -1,5 +1,6 @@
 package org.sales.medsales.dominio;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 /**
@@ -18,6 +19,7 @@ public class Produto extends EntityBase<Long> {
 	/**
 	 * Descrição do produto.
 	 */
+	@Column(nullable=false)
 	private String descricao;
 	
 	public String getCodigoBarras() {

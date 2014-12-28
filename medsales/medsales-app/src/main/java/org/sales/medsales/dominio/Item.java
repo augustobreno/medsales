@@ -27,13 +27,13 @@ public class Item extends EntityBase<Long> {
 	/**
 	 * Quantidade de produtos pedidos.
 	 */
-	private Long quantidade;
+	private Integer quantidade;
 
-	public Long getQuantidade() {
+	public Integer getQuantidade() {
 		return quantidade;
 	}
 
-	public void setQuantidade(Long quantidade) {
+	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
 	}
 

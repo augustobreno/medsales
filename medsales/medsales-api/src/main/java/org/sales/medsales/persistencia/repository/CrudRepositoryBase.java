@@ -9,6 +9,7 @@ import java.util.logging.Logger;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.Id;
+import javax.persistence.PersistenceContext;
 
 import org.easy.qbeasy.QBEFilter;
 import org.easy.qbeasy.api.Filter;
@@ -34,7 +35,7 @@ public class CrudRepositoryBase<ENTITY extends Entity<PK>, PK extends Serializab
 	@Inject
 	protected Logger log;
 
-	@Inject
+	@PersistenceContext
 	private EntityManager em;
 	
 	@Inject

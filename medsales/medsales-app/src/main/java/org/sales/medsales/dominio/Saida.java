@@ -1,6 +1,7 @@
 package org.sales.medsales.dominio;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 
 /**
@@ -8,6 +9,7 @@ import javax.persistence.ManyToOne;
  * @author Augusto
  */
 @SuppressWarnings("serial")
+@Entity
 public class Saida extends MovimentacaoEstoque {
 
 	/**
@@ -22,6 +24,11 @@ public class Saida extends MovimentacaoEstoque {
 	@Column(precision=4, scale=2)
 	private Double desconto;
 
+	@Override
+	protected void defineOperacao() {
+		setOperacao(Operacao.SAIDA);
+	}
+	
 	public Cliente getCliente() {
 		return cliente;
 	}

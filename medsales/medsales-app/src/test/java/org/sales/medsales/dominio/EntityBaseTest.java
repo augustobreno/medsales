@@ -10,10 +10,10 @@ import junit.framework.Assert;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.sales.medsales.OnServerBaseTest;
 import org.sales.medsales.dominio.Cliente;
 import org.sales.medsales.dominio.EntityBase;
 import org.sales.medsales.negocio.ClienteFacade;
+import org.sales.medsales.test.OnServerBaseTest;
 
 /**
  * Testa o comportamento básico de uma entidade de domínio {@link EntityBase}.
