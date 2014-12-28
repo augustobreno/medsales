@@ -6,15 +6,19 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
+import org.easy.qbeasy.QBEFilter;
+import org.easy.qbeasy.api.Filter;
+import org.easy.qbeasy.api.operator.Operators;
 import org.sales.medsales.dominio.Entity;
 import org.sales.medsales.persistencia.repository.CrudRepository;
 import org.sales.medsales.util.DIContainerUtil;
 import org.sales.medsales.util.JavaGenericsUtil;
+import org.sales.medsales.util.ReflectionUtil;
 
 @SuppressWarnings("serial")
 @BusinessExceptionHandler
-public abstract class CrudFacadeBase<CR extends CrudRepository<E, PK>, E extends Entity<PK>, PK extends Serializable>
-        implements CrudFacade<E, PK> {
+public abstract class CrudFacadeBase<CR extends CrudRepository<ENTITY, PK>, ENTITY extends Entity<PK>, PK extends Serializable>
+        implements CrudFacade<ENTITY, PK> {
 
     @Inject
     protected Logger log;
@@ -22,7 +26,7 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<E, PK>, E extends
     private CR repository;
 
     @SuppressWarnings("unchecked")
-	protected CrudRepository<E, PK> getRepository() {
+	protected CrudRepository<ENTITY, PK> getRepository() {
         if (repository == null) {
             List<Class<?>> genericsTypedArguments = JavaGenericsUtil.getGenericTypedArguments(CrudFacadeBase.class, this.getClass());
             Class<CR> repositoryType = (Class<CR>) genericsTypedArguments.get(0); // o repostiório é o primeiro parãmetro genérico
@@ -32,7 +36,7 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<E, PK>, E extends
     }
 
     @Override
-    public E save(E entity) {
+    public ENTITY save(ENTITY entity) {
     	validateSave(entity);
 		if (entity.getId() == null) {
 			validateInsert(entity);
@@ -45,17 +49,17 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<E, PK>, E extends
     }
 
     @Override
-    public void remove(E entity) {
+    public void remove(ENTITY entity) {
         getRepository().remove(entity);
     }
 
     @Override
-    public E findBy(PK primaryKey) {
+    public ENTITY findBy(PK primaryKey) {
         return getRepository().findBy(primaryKey);
     }
 
     @Override
-    public List<E> findAll() {
+    public List<ENTITY> findAll() {
         return getRepository().findAll();
     }
 
@@ -70,21 +74,48 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<E, PK>, E extends
      * ou {@link #validateUpdate(Entity)} 
      * @param entity Entidade a ser validada.
      */
-    protected void validateSave(E entity) {    }
+    protected void validateSave(ENTITY entity) {    }
     
     /**
      * Ponto de extensão para realização de validação de RN antes da operação save, 
      * quando esta realizar um insert da entidade.
      * @param entity Entidade a ser validada.
      */
-    protected void validateInsert(E entity) {    }
+    protected void validateInsert(ENTITY entity) {    }
     
     /**
      * Ponto de extensão para realização de validação de RN antes da operação save, 
      * quando esta realizar um update da entidade.
      * @param entity Entidade a ser validada.
      */
-    protected void validateUpdate(E entity) {    }
+    protected void validateUpdate(ENTITY entity) {    }
     
+	/**
+	 * Verifica se já há um objeto cadastro com os dados de unicidade informados. Para o fluxo de inclusão,
+	 * apenas verifica se há outro objeto com as mesmas informações. Para o fluxo de alteração, verifica se há outro objeto
+	 * diferente deste com as mesmas informações.
+	 * @param entity Entidade a ser validada.
+	 * @param uniqueProperties Propriedades que, juntas, representam uma regra de unicidade.
+	 * @param e Exception a ser lançada caso a unicidade seja desrespeitada.
+	 * 
+	 * @return true se existir outro registro com as mesmas propriedades de unicidade, false caso contrário. 
+	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	protected boolean checkUniqueConstraint(ENTITY entity, String...uniqueProperties) {
+		QBEFilter<? extends Entity> filter = new QBEFilter<>(entity.getClass());
+		
+		if (entity.getId() != null) {
+			// fluxo de alteração
+			filter.filterBy("id", Operators.notEqual(), entity.getId());
+		}
+		
+		for (String uniqueProp : uniqueProperties) {
+			Object uniqueValue = ReflectionUtil.getValue(entity, uniqueProp);
+			filter.filterBy(uniqueProp, Operators.equal(), uniqueValue);
+		}
+		
+		Long count = getRepository().count((Filter<? extends ENTITY>) filter);
+		return count == 0;
+	}
     
 }

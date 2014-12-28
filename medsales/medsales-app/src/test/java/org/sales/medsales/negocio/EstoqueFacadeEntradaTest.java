@@ -33,7 +33,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
 	 * Garante a validação dos parâmetros de entrada
 	 */
     @Test(expected=NullParameterException.class)
-    public void cadastrarEntradaNullTest() {
+    public void cadastrarEntradaNull() {
     	estoqueFacade.cadastrarEntrada(null);
     }
     
@@ -41,7 +41,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
 	 * Garante a validação dos parâmetros de entrada
 	 */
     @Test(expected=NullParameterException.class)
-    public void cadastrarEntradaOperacaoNullTest() {
+    public void cadastrarEntradaOperacaoNull() {
     	Entrada entrada = new Entrada();
     	entrada.setOperacao(null);
     	estoqueFacade.cadastrarEntrada(entrada);
@@ -51,7 +51,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
 	 * Garante a validação dos parâmetros de entrada
 	 */
     @Test(expected=MovimentacaoNeedsItemException.class)
-    public void cadastrarEntradaSemItensTest() {
+    public void cadastrarEntradaSemItens() {
     	Entrada entrada = new Entrada();
     	entrada.setItens(null);
     	estoqueFacade.cadastrarEntrada(entrada);
@@ -64,7 +64,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
 	 */
     @Test(expected=NoPrecoProdutoException.class)
     @LoadData(dataLoader=ProdutosDataLoader.class) // TODO implementar interceptorr + arquillian?
-    public void cadastrarEntradaProdutoSemPrecoTest() throws Exception {
+    public void cadastrarEntradaProdutoSemPreco() throws Exception {
     	// workaround enquanto interceptor + arquillian continua um mistério
     	produtosDataLoader.load();    	
     	
@@ -97,7 +97,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
 	 * @throws Exception 
 	 */
     @Test
-    public void cadastrarEntrada() throws Exception {
+    public void cadastrarEntradaSucesso() throws Exception {
     	// workaround enquanto interceptor + arquillian continua um mistério
     	produtosDataLoader.load();
     	precoProdutoDataLoader.load();
