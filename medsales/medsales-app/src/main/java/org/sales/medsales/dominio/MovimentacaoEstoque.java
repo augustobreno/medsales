@@ -26,7 +26,7 @@ import org.sales.medsales.dominio.types.HibernateEnumType;
 @TypeDef(name = "operacao", typeClass = HibernateEnumType.class, 
 		parameters = { @Parameter(name = "enumClass", value = "org.sales.medsales.dominio.Operacao"), })
 
-@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = InheritanceType.JOINED) 
 @Entity
 public abstract class MovimentacaoEstoque extends EntityBase<Long> {
 
