@@ -2,16 +2,19 @@
       xmlns:ui="http://java.sun.com/jsf/facelets">
  
     <ui:composition>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3 col-md-2 sidebar">
-                    <ui:include src="leftMenu.xhtml" />
-                </div>
-                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">                    
-                    <ui:insert name="content" />                    
-                </div>
-            </div>
-        </div>
+		<div class="page-header">
+			<h1>Navmenu Template</h1>
+		</div>
+		<p class="lead">
+			This example shows the navmenu element. If the viewport is <b>less
+				than 992px</b> the menu will be placed the off canvas and will be shown
+			with a slide in effect.
+		</p>
+		<p>
+			Also take a look at the examples for a navmenu with <a
+				href="../navmenu-push">push effect</a> and <a
+				href="../navmenu-reveal">reveal effect</a>.
+		</p>
     </ui:composition>
 </html>
  

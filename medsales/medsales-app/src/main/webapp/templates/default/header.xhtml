@@ -1,31 +1,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets">
- 
-    <ui:composition>
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Sales Medicamentos</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                    <form class="navbar-form navbar-right">
-                        <input type="text" class="form-control" placeholder="Search..." />
-                    </form>
-                </div>
-            </div>
-        </div>
-    </ui:composition>
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:composition>
+	<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+		<a class="navmenu-brand visible-md visible-lg" href="#">Sales Medicamentos</a>
+		<ui:include src="leftMenu.xhtml" />
+	</div>
+
+	<div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+			<span class="icon-bar"></span> 
+			<span class="icon-bar"></span> 
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">Sales Medicamentos</a>
+	</div>
+</ui:composition>
 </html>
- 
+
