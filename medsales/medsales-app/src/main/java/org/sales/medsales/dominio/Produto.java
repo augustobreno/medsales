@@ -11,6 +11,14 @@ import javax.persistence.Entity;
 @Entity
 public class Produto extends EntityBase<Long> {
 
+	public Produto() {
+		super();
+	}
+
+	public Produto(Long id) {
+		super(id);
+	}
+
 	/**
 	 * Código de barras cadastrado.
 	 */
@@ -20,7 +28,7 @@ public class Produto extends EntityBase<Long> {
 	 * Descrição do produto.
 	 */
 	@Column(nullable=false)
-	private String descricao;
+	private String nome;
 	
 	public String getCodigoBarras() {
 		return codigoBarras;
@@ -30,11 +38,11 @@ public class Produto extends EntityBase<Long> {
 		this.codigoBarras = codigoBarras;
 	}
 
-	public String getDescricao() {
-		return descricao;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public void setNome(String descricao) {
+		this.nome = descricao;
 	}
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+<ui:composition>
+
+	<ui:param name="param_pageTitle" value="Cadastrar Novo Produto" />
+
+	<h:form id="editForm">
+		<p:panelGrid columns="3" layout="grid">
+			<p:outputLabel value="Nome: " for="nome" />
+			<p:inputText id="nome" label="Nome" value="#{produtoAction.entity.nome}" required="true" />
+			<p:message for="nome" showSummary="false" />
+
+			<p:outputLabel value="Cód Barras: " for="codbarras" />
+			<p:inputText id="codbarras" label="Cód Barras" value="#{produtoAction.entity.codigoBarras}" />
+			<p:message for="codbarras" />
+		</p:panelGrid>
+
+		<br/>
+		
+		<p:panelGrid columns="3">
+			<p:commandButton actionListener="#{produtoAction.cancelOperation()}" value="Cancelar" immediate="true"
+				update=":content-panel" />				
+
+			<p:commandButton actionListener="#{produtoAction.delete()}" value="Remover" immediate="true"
+				update=":content-panel" />
+				
+			<p:commandButton actionListener="#{produtoAction.save()}" value="Salvar" update=":content-panel"/>
+		</p:panelGrid>
+	</h:form>
+</ui:composition>
+</html>

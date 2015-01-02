@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/templates/default/main.xhtml">
+
+	<ui:param name="param_pageTitle" value="Produtos" />
+
+	<ui:define name="content">
+
+		<p:outputPanel rendered="#{produtoAction.crudOperation.equals('S')}">
+			<ui:include src="/cadastros/produto/produtoList.xhtml" />
+		</p:outputPanel>
+
+		<p:outputPanel rendered="#{produtoAction.crudOperation.equals('E')}">
+			<ui:param name="param_pageSubtitle" value="Manutenção" />
+			<ui:include src="/cadastros/produto/produtoEdit.xhtml" />
+		</p:outputPanel>	
+
+	</ui:define>
+
+</ui:composition>
+</html>

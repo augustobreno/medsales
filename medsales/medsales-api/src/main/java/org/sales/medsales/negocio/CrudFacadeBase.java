@@ -59,6 +59,16 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<ENTITY, PK>, ENTI
     }
 
     @Override
+    public ENTITY findBy(Filter<ENTITY> filter) {
+        return getRepository().findBy(filter);
+    }
+    
+    @Override
+    public List<ENTITY> findAllBy(Filter<ENTITY> filter) {
+        return getRepository().findAllBy(filter);
+    }
+    
+    @Override
     public List<ENTITY> findAll() {
         return getRepository().findAll();
     }
@@ -66,6 +76,11 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<ENTITY, PK>, ENTI
     @Override
     public Long count() {
         return getRepository().count();
+    }
+    
+    @Override
+    public Long count(Filter<ENTITY> filter) {
+        return getRepository().count(filter);
     }
 
     /**

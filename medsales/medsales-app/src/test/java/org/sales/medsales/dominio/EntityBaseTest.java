@@ -10,9 +10,9 @@ import junit.framework.Assert;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.sales.medsales.dominio.Cliente;
+import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.EntityBase;
-import org.sales.medsales.negocio.ClienteFacade;
+import org.sales.medsales.negocio.ParceiroFacade;
 import org.sales.medsales.test.OnServerBaseTest;
 
 /**
@@ -24,7 +24,7 @@ import org.sales.medsales.test.OnServerBaseTest;
 public class EntityBaseTest extends OnServerBaseTest {
 
 	@Inject
-	private ClienteFacade clienteFacade;
+	private ParceiroFacade clienteFacade;
 	
 	@Inject
 	private EntityManager em;
@@ -36,7 +36,7 @@ public class EntityBaseTest extends OnServerBaseTest {
     public void prePersistEventTest() {
 
     	// cadastrando um cliente com os dados mais básicos.
-    	Cliente cliente = new Cliente();
+    	Parceiro cliente = new Parceiro();
     	cliente.setNome("Cliente 1");
     	clienteFacade.save(cliente);
 
@@ -51,7 +51,7 @@ public class EntityBaseTest extends OnServerBaseTest {
     	em.clear();
     	
     	// buscando o cliente
-    	Cliente found = clienteFacade.findBy(cliente.getId());
+    	Parceiro found = clienteFacade.findBy(cliente.getId());
     	
     	// checando as propriedades preenchidas no evento
     	Assert.assertNotNull(found);
@@ -73,7 +73,7 @@ public class EntityBaseTest extends OnServerBaseTest {
     public void preUpdateEventTest() {
 
     	// cadastrando um cliente com os dados mais básicos.
-    	Cliente cliente = new Cliente();
+    	Parceiro cliente = new Parceiro();
     	cliente.setNome("Cliente 1");
     	clienteFacade.save(cliente);
 
@@ -85,7 +85,7 @@ public class EntityBaseTest extends OnServerBaseTest {
     	sleep(100);
     	
     	// buscando o cliente
-    	Cliente cliente2 = clienteFacade.findBy(cliente.getId());
+    	Parceiro cliente2 = clienteFacade.findBy(cliente.getId());
     	
     	// checando as propriedades preenchidas no evento
     	Assert.assertEquals(cliente2.getDataCriacao(), cliente2.getDataAlteracao());

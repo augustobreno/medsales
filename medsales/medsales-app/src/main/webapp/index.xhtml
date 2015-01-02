@@ -10,11 +10,38 @@
 	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 
 <ui:composition template="/templates/default/main.xhtml">
+
+	<ui:param name="param_pageTitle" value="Resumo de Movimentações" />
+
 	<ui:define name="content">
+
+		<p:dataTable var="movimentacao" value="#{resumoMovimentacoesAction.movimentacoes}" >
+			<p:column headerText="Código">
+				<h:outputText value="#{movimentacao.id}" />
+			</p:column>
+			
+			<p:column headerText="Tipo">
+				<h:outputText value="#{movimentacao.operacao.descricao}" />
+			</p:column>
+
+			<p:column headerText="Data">
+				<h:outputText value="#{movimentacao.dataCriacao}" >
+					<f:convertDateTime pattern="dd/MM/yyyy HH:mm" />
+				</h:outputText>
+			</p:column>
+
+			<p:column headerText="Parceiro">
+				<h:outputText value="#{movimentacao.parceiro.nome}" />
+			</p:column>
+
+		</p:dataTable>
+
+		<!-- 		
 		<h1 class="page-header ">
 			<i class="fa fa-tachometer"></i> Dashboard
 		</h1>
-		<p:inputText value="#{bean.value}" pt:placeholder="Watermark here"/>
+		<p:inputText value="#{bean.value}" pt:placeholder="Watermark here"/> 
+-->
 	</ui:define>
 </ui:composition>
 

@@ -5,20 +5,20 @@ import javax.inject.Inject;
 import junit.framework.Assert;
 
 import org.junit.Test;
-import org.sales.medsales.dominio.Cliente;
+import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.exceptions.AlreadyRegisteredException;
 import org.sales.medsales.test.OnServerBaseTest;
 
 public class ClienteFacadeTest extends OnServerBaseTest {
 
 	@Inject
-	private ClienteFacade clienteFacade;
+	private ParceiroFacade clienteFacade;
 	
     @Test
     public void simpleInsertAndFindTest() {
 
     	// cadastrando um cliente com os dados mais básicos.
-    	Cliente cliente = new Cliente();
+    	Parceiro cliente = new Parceiro();
     	cliente.setNome("Cliente 1");
     	clienteFacade.save(cliente);
     	
@@ -26,7 +26,7 @@ public class ClienteFacadeTest extends OnServerBaseTest {
     	getEm().clear();
     	
     	// buscando o cliente
-    	Cliente found = clienteFacade.findBy(cliente.getId());
+    	Parceiro found = clienteFacade.findBy(cliente.getId());
     	
     	Assert.assertNotNull(found);
     }
@@ -38,7 +38,7 @@ public class ClienteFacadeTest extends OnServerBaseTest {
     public void duplicidadeTest() {
 
     	// cadastrando um cliente com os dados mais básicos.
-    	Cliente cliente = new Cliente();
+    	Parceiro cliente = new Parceiro();
     	cliente.setNome("Cliente 1");
     	clienteFacade.save(cliente);
     	
@@ -46,7 +46,7 @@ public class ClienteFacadeTest extends OnServerBaseTest {
     	getEm().clear();
     	
     	// cadastrando outro cliente com o mesmo nome
-    	cliente = new Cliente();
+    	cliente = new Parceiro();
     	cliente.setNome("Cliente 1");
     	
     	try {

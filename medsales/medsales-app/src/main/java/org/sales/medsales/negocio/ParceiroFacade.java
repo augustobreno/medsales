@@ -2,16 +2,16 @@ package org.sales.medsales.negocio;
 
 import javax.ejb.Stateless;
 
-import org.sales.medsales.dominio.Cliente;
+import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.exceptions.AlreadyRegisteredException;
 import org.sales.medsales.persistencia.repository.ClienteRepository;
 
 @SuppressWarnings("serial")
 @Stateless
-public class ClienteFacade extends CrudFacadeBase<ClienteRepository, Cliente, Long>{
+public class ParceiroFacade extends CrudFacadeBase<ClienteRepository, Parceiro, Long>{
 
 	@Override
-	protected void validateSave(Cliente entity) {
+	protected void validateSave(Parceiro entity) {
 		super.validateSave(entity);
 		validarUnicidade(entity);
 	}
@@ -23,7 +23,7 @@ public class ClienteFacade extends CrudFacadeBase<ClienteRepository, Cliente, Lo
 	 * @param entity Entidade a ser validada.
 	 * @param uniqueProperties Propriedades que, juntas, representam uma regra de unicidade. 
 	 */
-	protected void validarUnicidade(Cliente entity) {
+	protected void validarUnicidade(Parceiro entity) {
 		if (!checkUniqueConstraint(entity, "nome")) {
 			throw new AlreadyRegisteredException(null, "Já existe um Cliente cadastrado com este nome.");
 		}

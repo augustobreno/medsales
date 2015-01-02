@@ -8,7 +8,9 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.Transient;
 
 import org.hibernate.annotations.Parameter;
 import org.hibernate.annotations.Type;
@@ -41,6 +43,12 @@ public abstract class MovimentacaoEstoque extends EntityBase<Long> {
 	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
 	private List<Item> itens;
 
+	/**
+	 * Parceiro, de onde os itens foram adquiridos, ou para quem os itens foram vendidos.
+	 * A denpender do tipo da movimentação.
+	 */
+	@ManyToOne
+	private Parceiro parceiro;
 	
 	public MovimentacaoEstoque() {
 		defineOperacao();
@@ -65,6 +73,14 @@ public abstract class MovimentacaoEstoque extends EntityBase<Long> {
 
 	public void setItens(List<Item> itens) {
 		this.itens = itens;
+	}
+
+	public Parceiro getParceiro() {
+		return parceiro;
+	}
+
+	public void setParceiro(Parceiro parceiro) {
+		this.parceiro = parceiro;
 	}
 	
 }

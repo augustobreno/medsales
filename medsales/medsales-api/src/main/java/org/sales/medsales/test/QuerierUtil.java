@@ -31,6 +31,19 @@ public class QuerierUtil {
 	
 	/**
 	 * @param type Tipo da entidade a ser retornada.
+	 * @param position Posição do registro a ser recuperado (zero based).
+	 * @return Qualquer entidade do tipo informado.
+	 */
+	@SuppressWarnings("unchecked")
+	public <T extends Entity<?>> T findAt(Class<T> type, int position) {
+		Query query = getEm().createQuery("from " + type.getSimpleName());
+		query.setMaxResults(1);
+		query.setFirstResult(position);
+		return (T) query.getSingleResult();
+	}
+	
+	/**
+	 * @param type Tipo da entidade a ser retornada.
 	 * @return Todas os objetos do tipo informado.
 	 */
 	@SuppressWarnings("unchecked")

@@ -15,6 +15,16 @@ import javax.persistence.TemporalType;
 @MappedSuperclass
 public abstract class EntityBase<PK> implements Entity<PK> {
 
+	
+	public EntityBase(PK id) {
+		super();
+		this.id = id;
+	}
+
+	public EntityBase() {
+		// default
+	}
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private PK id;

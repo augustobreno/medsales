@@ -1,10 +1,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets">
- 
-    <ui:composition>
-		<div class="page-header">
-			<h1>Navmenu Template</h1>
-		</div>
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+<ui:composition>
+	<div class="page-header">
+		<h1>#{param_pageTitle}</h1>
+
+		<p:growl id="growl" showDetail="false" sticky="true" globalOnly="true" autoUpdate="true" />		
+	</div>
+
+	<p:outputPanel id="content-panel" >
+		<ui:insert name="content" />
+	</p:outputPanel>
+	<!-- 		
 		<p class="lead">
 			This example shows the navmenu element. If the viewport is <b>less
 				than 992px</b> the menu will be placed the off canvas and will be shown
@@ -14,7 +25,8 @@
 			Also take a look at the examples for a navmenu with <a
 				href="../navmenu-push">push effect</a> and <a
 				href="../navmenu-reveal">reveal effect</a>.
-		</p>
-    </ui:composition>
+		</p> 
+-->
+</ui:composition>
 </html>
- 
+

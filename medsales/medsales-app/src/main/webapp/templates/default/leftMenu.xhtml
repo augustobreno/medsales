@@ -1,32 +1,38 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets">
- 
-    <ui:composition>
- 
-      <ul class="nav navmenu-nav">
-        <li class="active"><a href="./">Slide in</a></li>
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:c="http://java.sun.com/jstl/core">
+
+<ui:composition>
+
+	<c:set var="root" value="#{request.contextPath}" />
+
+	<ul class="nav navmenu-nav">
+		<li class="active"><a href="#{root}">Resumo de Movimentações</a></li>
+		<li><a href="#{root}/cadastros/produto/produto.xhtml">Produtos</a></li>
+		<!--         
         <li><a href="../navmenu-push/">Push</a></li>
         <li><a href="../navmenu-reveal/">Reveal</a></li>
         <li><a href="../navbar-offcanvas/">Off canvas navbar</a></li>
-      </ul>
-      <ul class="nav navmenu-nav">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu navmenu-nav">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-        
-    </ui:composition>
+         -->
+	</ul>
+	<ul class="nav navmenu-nav">
+		<li class="dropdown"><a href="#" class="dropdown-toggle"
+			data-toggle="dropdown">Cadastros <b class="caret"></b></a>
+			<ul class="dropdown-menu navmenu-nav">
+				<li><a href="#{root}/cadastros/produto/produto.xhtml">Produtos</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li class="divider"></li>
+				<li class="dropdown-header">Nav header</li>
+				<li><a href="#">Separated link</a></li>
+				<li><a href="#">One more separated link</a></li>
+			</ul></li>
+	</ul>
+
+</ui:composition>
 </html>
- 
+

@@ -1,7 +1,7 @@
 package org.sales.medsales.persistencia.repository;
 
-import org.sales.medsales.dominio.Cliente;
+import org.sales.medsales.dominio.Parceiro;
 
-public class ClienteRepository extends CrudRepositoryBase<Cliente, Long> {
+public class ClienteRepository extends CrudRepositoryBase<Parceiro, Long> {
 
 }
