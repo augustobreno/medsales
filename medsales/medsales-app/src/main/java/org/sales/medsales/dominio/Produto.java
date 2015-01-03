@@ -3,6 +3,8 @@ package org.sales.medsales.dominio;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
+import org.sales.medsales.api.dominio.EntityBase;
+
 /**
  * Entidade que representa os dados de um produto comercializado. 
  * @author Augusto
@@ -10,14 +12,6 @@ import javax.persistence.Entity;
 @SuppressWarnings("serial")
 @Entity
 public class Produto extends EntityBase<Long> {
-
-	public Produto() {
-		super();
-	}
-
-	public Produto(Long id) {
-		super(id);
-	}
 
 	/**
 	 * Código de barras cadastrado.

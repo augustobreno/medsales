@@ -2,6 +2,8 @@ package org.sales.medsales.dominio;
 
 import java.util.List;
 
+import org.sales.medsales.api.dominio.EntityBase;
+
 /**
  * Representa um pedido de medicamentos.
  * @author Augusto

@@ -5,9 +5,9 @@ import javax.inject.Inject;
 import junit.framework.Assert;
 
 import org.junit.Test;
+import org.sales.medsales.api.exceptions.AlreadyRegisteredException;
+import org.sales.medsales.api.test.OnServerBaseTest;
 import org.sales.medsales.dominio.Parceiro;
-import org.sales.medsales.exceptions.AlreadyRegisteredException;
-import org.sales.medsales.test.OnServerBaseTest;
 
 public class ClienteFacadeTest extends OnServerBaseTest {
 

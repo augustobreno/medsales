@@ -10,12 +10,12 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.Transient;
 
 import org.hibernate.annotations.Parameter;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
-import org.sales.medsales.dominio.types.HibernateEnumType;
+import org.sales.medsales.api.dominio.EntityBase;
+import org.sales.medsales.api.dominio.types.HibernateEnumType;
 
 /**
  * Determina que os dados e comportamentos associados à movimentação de um item do

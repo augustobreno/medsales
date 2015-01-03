@@ -8,6 +8,8 @@ import junit.framework.Assert;
 
 import org.easy.testeasy.dataloader.LoadData;
 import org.junit.Test;
+import org.sales.medsales.api.exceptions.NullParameterException;
+import org.sales.medsales.api.test.OnServerBaseTest;
 import org.sales.medsales.dataLoader.PrecoProdutoDataLoader;
 import org.sales.medsales.dataLoader.ProdutosDataLoader;
 import org.sales.medsales.dominio.Entrada;
@@ -15,8 +17,6 @@ import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.exceptions.MovimentacaoNeedsItemException;
 import org.sales.medsales.exceptions.NoPrecoProdutoException;
-import org.sales.medsales.exceptions.NullParameterException;
-import org.sales.medsales.test.OnServerBaseTest;
 
 public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
 

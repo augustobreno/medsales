@@ -2,8 +2,9 @@ package org.sales.medsales.negocio;
 
 import javax.ejb.Stateless;
 
+import org.sales.medsales.api.exceptions.AlreadyRegisteredException;
+import org.sales.medsales.api.negocio.CrudFacadeBase;
 import org.sales.medsales.dominio.Parceiro;
-import org.sales.medsales.exceptions.AlreadyRegisteredException;
 import org.sales.medsales.persistencia.repository.ClienteRepository;
 
 @SuppressWarnings("serial")

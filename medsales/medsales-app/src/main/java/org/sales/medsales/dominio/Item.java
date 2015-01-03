@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
 
+import org.sales.medsales.api.dominio.EntityBase;
+
 /**
  * Item para composição de um pedido de aquisição ou venda. 
  * @author Augusto

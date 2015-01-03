@@ -6,6 +6,7 @@ import javax.enterprise.context.ConversationScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import org.sales.medsales.api.web.action.CrudActionBase;
 import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.negocio.ProdutoFacade;
 

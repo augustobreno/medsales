@@ -11,6 +11,7 @@ import javax.ejb.Singleton;
 import javax.ejb.Startup;
 import javax.inject.Inject;
 
+import org.sales.medsales.api.test.QuerierUtil;
 import org.sales.medsales.dominio.Entrada;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Parceiro;
@@ -20,7 +21,6 @@ import org.sales.medsales.negocio.EstoqueFacade;
 import org.sales.medsales.negocio.ParceiroFacade;
 import org.sales.medsales.negocio.PrecoProdutoFacade;
 import org.sales.medsales.negocio.ProdutoFacade;
-import org.sales.medsales.test.QuerierUtil;
 
 /**
  * Carrega dados iniciais para testes do sistema. 

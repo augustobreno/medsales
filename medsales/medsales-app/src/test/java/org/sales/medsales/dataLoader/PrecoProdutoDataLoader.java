@@ -7,9 +7,9 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.easy.testeasy.dataloader.HibernateDataLoader;
+import org.sales.medsales.api.test.QuerierUtil;
 import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
-import org.sales.medsales.test.QuerierUtil;
 
 /**
  * Data loader que cria uma base de dados de preços de Produtos.

@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
 
+import org.sales.medsales.api.dominio.EntityBase;
+
 /**
  * O preço de um produto pode variar com o tempo. Esta entidade 
  * permite isolar os dados de um produto do histórico do seu preço.

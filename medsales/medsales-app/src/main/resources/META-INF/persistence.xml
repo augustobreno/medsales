@@ -8,7 +8,8 @@
    
    		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<jta-data-source>java:/jboss/datasources/ExampleDS</jta-data-source>
-		<class>org.sales.medsales.dominio.types.HibernateEnumType</class>
+		<class>org.sales.medsales.api.dominio.types.HibernateEnumType</class>
+		<class>org.sales.medsales.api.dominio.EntityBase</class>
 		
 		<!-- para evitar o erro 'No primary key attribute' no eclipse (https://bugs.eclipse.org/bugs/show_bug.cgi?id=361042) 
 		<class>br.jus.trt.lib.common_core.business.domain.EntityBase</class>

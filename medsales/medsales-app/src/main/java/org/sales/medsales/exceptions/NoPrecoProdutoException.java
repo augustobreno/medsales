@@ -2,6 +2,9 @@ package org.sales.medsales.exceptions;
 
 import java.util.Collection;
 
+import org.sales.medsales.api.exceptions.BusinessException;
+import org.sales.medsales.api.exceptions.ExceptionMessage;
+
 @SuppressWarnings("serial")
 public class NoPrecoProdutoException extends BusinessException {
 

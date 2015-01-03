@@ -6,12 +6,12 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.sales.medsales.api.exceptions.NullParameterException;
 import org.sales.medsales.dominio.Entrada;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.exceptions.MovimentacaoNeedsItemException;
 import org.sales.medsales.exceptions.NoPrecoProdutoException;
-import org.sales.medsales.exceptions.NullParameterException;
 import org.sales.medsales.persistencia.repository.EstoqueRepository;
 
 /**
