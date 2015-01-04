@@ -9,7 +9,7 @@
 	<h:form id="searchForm">
 		<f:validateBean disabled="true">
 			<p:inputText value="#{produtoAction.chaveConsulta}" />
-			<p:commandButton value="Pesquisar" update=":listForm" />
+			<p:commandButton icon="ui-icon-search" update=":listForm" />
 		</f:validateBean>
 	</h:form>
 
@@ -17,7 +17,7 @@
 
 	<h:form id="btnForm">
 		<div style="float: right">
-			<p:commandButton actionListener="#{produtoAction.prepareToInsert()}" value="Adicionar" update=":content-panel"
+			<p:commandButton actionListener="#{produtoAction.prepareToInsert()}" icon="ui-icon-plusthick" update=":content-panel"
 				immediate="true" />
 		</div>
 	</h:form>	
