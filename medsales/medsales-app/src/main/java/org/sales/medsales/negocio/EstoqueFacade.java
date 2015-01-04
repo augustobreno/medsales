@@ -45,4 +45,12 @@ public class EstoqueFacade implements Facade {
 	public List<MovimentacaoEstoque> findAllBy(Filter<MovimentacaoEstoque> filter) {
 		return estoqueRepository.findAllBy(filter);
 	}
+	
+	/**
+	 * @param filter Filtro para consulta.
+	 * @return Número de registros alcançados pelo filtro.
+	 */
+	public long count(Filter<MovimentacaoEstoque> filter) {
+		return estoqueRepository.count(filter);
+	}
 }

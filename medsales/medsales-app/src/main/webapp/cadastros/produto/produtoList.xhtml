@@ -1,70 +1,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:p="http://primefaces.org/ui"
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui"
 	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 
 <ui:composition>
 
-		<h:form id="searchForm">
-			<f:validateBean disabled="true">
+	<h:form id="searchForm">
+		<f:validateBean disabled="true">
+			<p:inputText value="#{produtoAction.chaveConsulta}" />
+			<p:commandButton value="Pesquisar" update=":listForm" />
+		</f:validateBean>
+	</h:form>
 
-				<p:panelGrid columns="4" layout="grid">
-					<p:outputLabel value="Nome: " for="nome"/>
-					<p:inputText id="nome" label="Nome" value="#{produtoAction.example.nome}" />
-					
-					<p:outputLabel value="Cód Barras: " for="codbarras"/>
-					<p:inputText id="codbarras" label="Cód Barras"
-						value="#{produtoAction.example.codigoBarras}" />
-				</p:panelGrid>
-				<br/>
-				<p>
-					<p:commandButton value="Pesquisar" update=":listForm"/>
-					
-					<p:commandButton actionListener="#{produtoAction.prepareToInsert()}" value="Adicionar"  
-						update=":content-panel" immediate="true" >
-					</p:commandButton>	
-				</p>
+	<p:separator />
 
-			</f:validateBean>
-		</h:form>
+	<h:form id="btnForm">
+		<div style="float: right">
+			<p:commandButton actionListener="#{produtoAction.prepareToInsert()}" value="Adicionar" update=":content-panel"
+				immediate="true" />
+		</div>
+	</h:form>	
 
-		<h:form id="listForm">
-			<p:dataTable id="table" var="produto" value="#{produtoAction.result}"
-				rendered="#{not empty produtoAction.result}" paginator="true"
-				lazy="true"
-				paginatorTemplate="{RowsPerPageDropdown} {totalPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
-				paginatorPosition="bottom" rowsPerPageLabel="Exibindo"
-				rowsPerPageTemplate="5,10,20,30,50,100" rows="5"
-				emptyMessage="Nenhum registro foi encontrado."
-				selectionMode="single" rowKey="#{produto.id}"
-				>
+	<h:form id="listForm">
+		<p:dataTable id="table" var="produto" value="#{produtoAction.result}" rendered="#{not empty produtoAction.result}"
+			paginator="true" lazy="true"
+			paginatorTemplate="{RowsPerPageDropdown} {totalPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+			paginatorPosition="bottom" rowsPerPageLabel="Exibindo" rowsPerPageTemplate="5,10,20,30,50,100" rows="5"
+			emptyMessage="Nenhum registro foi encontrado." selectionMode="single" rowKey="#{produto.id}">
 
-				<p:ajax event="rowSelect" listener="#{produtoAction.prepareToEdit}" update=":content-panel" />
-        
+			<p:ajax event="rowSelect" listener="#{produtoAction.prepareToEdit}" update=":content-panel" />
 
-				<f:facet name="header">
+
+			<f:facet name="header">
 					Produtos Cadastrados
 				</f:facet>
 
-				<f:facet name="{totalPageReport}">
+			<f:facet name="{totalPageReport}">
 					de #{produtoAction.result.rowCount} &nbsp;&nbsp;&nbsp;
 				</f:facet>
 
-				<p:column headerText="Cód" sortBy="#{produto.id}">
+			<p:column headerText="Cód" sortBy="#{produto.id}">
 	                #{produto.id}
 	            </p:column>
-				<p:column headerText="Nome" sortBy="#{produto.nome}">
+			<p:column headerText="Nome" sortBy="#{produto.nome}">
 	                #{produto.nome}
 	            </p:column>
-				<p:column headerText="Cód Barras" sortBy="#{produto.codigoBarras}">
+			<p:column headerText="Cód Barras" sortBy="#{produto.codigoBarras}">
 	                #{produto.codigoBarras}
 	            </p:column>
-			</p:dataTable>
-		</h:form>
+		</p:dataTable>
+	</h:form>
 
 </ui:composition>
 </html>

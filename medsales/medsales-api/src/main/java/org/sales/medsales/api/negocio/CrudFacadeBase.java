@@ -50,6 +50,7 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<ENTITY, PK>, ENTI
 
     @Override
     public void remove(ENTITY entity) {
+    	validateRemove(entity);
         getRepository().remove(entity);
     }
 
@@ -57,7 +58,12 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<ENTITY, PK>, ENTI
     public ENTITY findBy(PK primaryKey) {
         return getRepository().findBy(primaryKey);
     }
-
+    
+    @Override
+    public ENTITY findBy(PK primaryKey, String... fetch) {
+    	return getRepository().findBy(primaryKey, fetch);
+    }
+    
     @Override
     public ENTITY findBy(Filter<ENTITY> filter) {
         return getRepository().findBy(filter);
@@ -83,6 +89,12 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<ENTITY, PK>, ENTI
         return getRepository().count(filter);
     }
 
+    /**
+     * Ponto de extensão para realização de validação de RN antes da operação remove().
+     * @param entity Entidade a ser validada.
+     */
+    protected void validateRemove(ENTITY entity) {    }    
+    
     /**
      * Ponto de extensão para realização de validação de RN antes da operação save().
      * Este método sempre será executado juntamente (imediatamente antes) com {@link #validateInsert(Entity)}

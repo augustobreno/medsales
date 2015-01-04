@@ -43,12 +43,13 @@ public class CrudRepositoryBase<ENTITY extends Entity<PK>, PK extends Serializab
 
 	private Class<? extends ENTITY> entityClass;
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public void remove(ENTITY entity) {
 		if (!em.contains(entity)) {
 			log.log(Level.FINE, "Merging entidade no Entitymanager antes de remover");
 			log.log(Level.FINER, entity.toString());
-			entity = em.merge(entity);
+			entity = (ENTITY) em.find(entity.getClass(), entity.getId());
 		}
 		em.remove(entity);
 		em.flush();

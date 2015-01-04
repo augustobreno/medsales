@@ -15,8 +15,8 @@ import org.sales.medsales.dataLoader.ProdutosDataLoader;
 import org.sales.medsales.dominio.Entrada;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Produto;
-import org.sales.medsales.exceptions.MovimentacaoNeedsItemException;
-import org.sales.medsales.exceptions.NoPrecoProdutoException;
+import org.sales.medsales.exceptions.MovimentacaoSemItensException;
+import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 
 public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
 
@@ -50,7 +50,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
 	/**
 	 * Garante a validação dos parâmetros de entrada
 	 */
-    @Test(expected=MovimentacaoNeedsItemException.class)
+    @Test(expected=MovimentacaoSemItensException.class)
     public void cadastrarEntradaSemItens() {
     	Entrada entrada = new Entrada();
     	entrada.setItens(null);
@@ -62,7 +62,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
 	 * sem preços cadastrados.
 	 * @throws Exception 
 	 */
-    @Test(expected=NoPrecoProdutoException.class)
+    @Test(expected=ProdutoSemPrecoException.class)
     @LoadData(dataLoader=ProdutosDataLoader.class) // TODO implementar interceptorr + arquillian?
     public void cadastrarEntradaProdutoSemPreco() throws Exception {
     	// workaround enquanto interceptor + arquillian continua um mistério

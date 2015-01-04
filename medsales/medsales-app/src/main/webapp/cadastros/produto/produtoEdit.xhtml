@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui"
-	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:pe="http://primefaces.org/ui/extensions">
 
 <ui:composition>
 
@@ -16,19 +16,48 @@
 			<p:outputLabel value="Cód Barras: " for="codbarras" />
 			<p:inputText id="codbarras" label="Cód Barras" value="#{produtoAction.entity.codigoBarras}" />
 			<p:message for="codbarras" />
+
+			<p:outputLabel value="Preço: " for="preco" />
+			<p:outputPanel>
+				<pe:inputNumber id="preco" value="#{produtoAction.novoPreco.valor}" symbol="R$ " />
+				<p:commandButton id="histPrecoBtn" icon="ui-icon-search" type="button" />
+			</p:outputPanel>
+			<p:message for="preco" />
 		</p:panelGrid>
 
-		<br/>
-		
+		<p:overlayPanel showEffect="fade" hideEffect="fade" showCloseIcon="true" for="histPrecoBtn">
+			<p:outputPanel id="histPrecos" style="text-align:center;">
+				<p:dataList value="#{produtoAction.entity.precos}" var="preco" type="ordered" emptyMessage="Nenhum preço cadastrado">
+					<f:facet name="header">
+			            Hist. Preços
+			        </f:facet>
+					<h:outputText value="#{preco.validoEm}">
+						<f:convertDateTime pattern="dd/MM/yyyy" />
+					</h:outputText>
+			        - R$  
+			        <h:outputText value="#{preco.valor}" converter="BigDecimalConverter" />
+				</p:dataList>
+			</p:outputPanel>
+		</p:overlayPanel>
+
+		<br />
+
 		<p:panelGrid columns="3">
 			<p:commandButton actionListener="#{produtoAction.cancelOperation()}" value="Cancelar" immediate="true"
-				update=":content-panel" />				
-
-			<p:commandButton actionListener="#{produtoAction.delete()}" value="Remover" immediate="true"
 				update=":content-panel" />
-				
-			<p:commandButton actionListener="#{produtoAction.save()}" value="Salvar" update=":content-panel"/>
+
+			<p:commandButton actionListener="#{produtoAction.delete()}" value="Remover" immediate="true" update=":content-panel"
+				rendered="#{not empty produtoAction.entity.id}">
+				<p:confirm header="Confirmation" message="Deseja REMOVER o Produto?" icon="ui-icon-alert" />
+			</p:commandButton>
+
+			<p:commandButton actionListener="#{produtoAction.save()}" value="Salvar" update=":content-panel" />
 		</p:panelGrid>
+
+		<p:confirmDialog global="true">
+			<p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+			<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+		</p:confirmDialog>
 	</h:form>
 </ui:composition>
 </html>

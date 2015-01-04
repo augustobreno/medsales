@@ -9,33 +9,33 @@ import org.sales.medsales.api.exceptions.ExceptionMessage;
  * QUando uma movimentação é cadastrada em itens.
  */
 @SuppressWarnings("serial")
-public class MovimentacaoNeedsItemException extends BusinessException {
+public class MovimentacaoSemItensException extends BusinessException {
 
-	public MovimentacaoNeedsItemException(String codigo, String mensagem,
+	public MovimentacaoSemItensException(String codigo, String mensagem,
 			Object... parametros) {
 		super(codigo, mensagem, parametros);
 		// TODO Auto-generated constructor stub
 	}
 
-	public MovimentacaoNeedsItemException(String codigo, String mensagem, Boolean showCode,
+	public MovimentacaoSemItensException(String codigo, String mensagem, Boolean showCode,
 			Object... parametros) {
 		super(codigo, mensagem, showCode, parametros);
 		// TODO Auto-generated constructor stub
 	}
 
-	public MovimentacaoNeedsItemException(String codigo, String mensagem, Throwable e,
+	public MovimentacaoSemItensException(String codigo, String mensagem, Throwable e,
 			Object... parametros) {
 		super(codigo, mensagem, e, parametros);
 		// TODO Auto-generated constructor stub
 	}
 
-	public MovimentacaoNeedsItemException(Collection<ExceptionMessage> mensagens,
+	public MovimentacaoSemItensException(Collection<ExceptionMessage> mensagens,
 			boolean allowRepeat) {
 		super(mensagens, allowRepeat);
 		// TODO Auto-generated constructor stub
 	}
 
-	public MovimentacaoNeedsItemException(Collection<ExceptionMessage> mensagens) {
+	public MovimentacaoSemItensException(Collection<ExceptionMessage> mensagens) {
 		super(mensagens);
 		// TODO Auto-generated constructor stub
 	}

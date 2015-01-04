@@ -10,8 +10,8 @@ import org.sales.medsales.api.exceptions.NullParameterException;
 import org.sales.medsales.dominio.Entrada;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Produto;
-import org.sales.medsales.exceptions.MovimentacaoNeedsItemException;
-import org.sales.medsales.exceptions.NoPrecoProdutoException;
+import org.sales.medsales.exceptions.MovimentacaoSemItensException;
+import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 import org.sales.medsales.persistencia.repository.EstoqueRepository;
 
 /**
@@ -47,7 +47,7 @@ public class EntradaBO implements Serializable {
 		
 		boolean temPrecosCagastados = estoqueRepository.temPrecosCadastrados(produtos.toArray(new Produto[]{}));
 		if (!temPrecosCagastados) {
-			throw new NoPrecoProdutoException(null, "Todos os produtos da Entrada devem ter preço cadastrado.");
+			throw new ProdutoSemPrecoException(null, "Todos os produtos da Entrada devem ter preço cadastrado.");
 		}	
 	}
 
@@ -59,7 +59,7 @@ public class EntradaBO implements Serializable {
 			throw new NullParameterException("É necessário informar o tipo da operação da entrada.");
 		}
 		if (entrada.getItens() == null || entrada.getItens().isEmpty()) {
-			throw new MovimentacaoNeedsItemException(null, "É necessário incluir Itens na movimentação.");
+			throw new MovimentacaoSemItensException(null, "É necessário incluir Itens na movimentação.");
 		}
 	}	
 

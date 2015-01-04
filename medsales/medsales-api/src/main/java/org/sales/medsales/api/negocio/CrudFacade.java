@@ -36,7 +36,17 @@ public interface CrudFacade<ENTITY extends Entity<PK>, PK extends Serializable> 
      * @return Entity identified by primary or null if it does not exist.
      */
     ENTITY findBy(PK primaryKey);
-
+    
+    /**
+     * Entity lookup by primary key. Convenicence method around
+     * {@link javax.persistence.EntityManager#find(Class, Object)}.
+     *
+     * @param primaryKey DB primary key.
+     * @param fetch Associações apra carregamento.
+     * @return Entity identified by primary or null if it does not exist.
+     */
+    ENTITY findBy(PK primaryKey, String...fetch);
+    
     /**
      * Lookup all existing entities of entity class {@code <E extends Entity>}.
      *

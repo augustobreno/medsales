@@ -19,8 +19,8 @@ import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.negocio.EstoqueFacade;
 import org.sales.medsales.negocio.ParceiroFacade;
-import org.sales.medsales.negocio.PrecoProdutoFacade;
 import org.sales.medsales.negocio.ProdutoFacade;
+import org.sales.medsales.persistencia.repository.PrecoProdutoRepository;
 
 /**
  * Carrega dados iniciais para testes do sistema. 
@@ -43,7 +43,7 @@ public class DataStartupService {
 	private ProdutoFacade produtoFacade;
 	
 	@Inject
-	private PrecoProdutoFacade precoProdutoFacade;
+	private PrecoProdutoRepository precoProdutoRepository;
 	
 	@Inject
 	private EstoqueFacade estoqueFacade;
@@ -107,7 +107,7 @@ public class DataStartupService {
 			precoInicial += 10;
 			precoProduto.setValor(new BigDecimal(precoInicial));
 
-			precoProdutoFacade.save(precoProduto);
+			precoProdutoRepository.insert(precoProduto);
 		}
 	}
 
