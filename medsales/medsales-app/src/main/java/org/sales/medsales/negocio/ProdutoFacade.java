@@ -50,7 +50,7 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 	
 	@Override
 	public void remove(Produto entity) {
-		super.validateRemove(entity);
+		validateRemove(entity);
 		removerPrecosAssociados(entity);
 		getRepository().remove(entity);
 	}
@@ -79,7 +79,8 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 		
 		long numMovimentacoes = estoqueFacade.count(filter);	
 		if (numMovimentacoes > 0) {
-			throw new RemoverProdutoComMovimentacaoException(null, "Não é possível remover este Produto por já foi utilizado em uma Movimentação.");
+			throw new RemoverProdutoComMovimentacaoException(null, 
+					"Não é possível remover este Produto pois já foi utilizado em uma Movimentação.");
 		}
 	}
 }
