@@ -12,6 +12,8 @@ import org.sales.medsales.api.negocio.CrudFacadeBase;
 import org.sales.medsales.dominio.MovimentacaoEstoque;
 import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
+import org.sales.medsales.exceptions.ProdutoCodBarrasJaExisteException;
+import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 import org.sales.medsales.exceptions.RemoverProdutoComMovimentacaoException;
 import org.sales.medsales.persistencia.repository.PrecoProdutoRepository;
 import org.sales.medsales.persistencia.repository.ProdutoRepository;
@@ -31,18 +33,33 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 	 * @return Preco do produto.
 	 */
 	public PrecoProduto buscarPrecoProduto(String codBarras) {
-		//TODO não está considerando o preço mais recente
 		QBEFilter<PrecoProduto> filter = new QBEFilter<PrecoProduto>(PrecoProduto.class);
 		filter.filterBy("produto.codigoBarras", Operators.equal(), codBarras);
 		filter.addFetch("produto");
+		filter.sortDescBy("validoEm", "id"); // determina o valor mais recente
+		filter.paginate(0, 1);
 		PrecoProduto preco = precoProdutoRepository.findBy(filter);
 		return preco;
 	}
 
-	// TODO validar código de barras duplicado
+	@Override
+	public Produto save(Produto entity) {
+		// salva o produto com o preço mais recente informado.
+		return save(entity, entity.getPrecoAtual());
+	}
+	
+	@Override
+	protected void validateSave(Produto entity) {
+		if (!checkUniqueConstraint(entity, "codigoBarras")) {
+			throw new ProdutoCodBarrasJaExisteException(null, "Este código de barras já está cadastrado.");
+		}
+		super.validateSave(entity);
+	}
+	
+	
 	public Produto save(Produto entity, PrecoProduto precoProduto) {
 		if (precoProduto == null || precoProduto.getValor() == null) {
-			throw new IllegalArgumentException("Preco do Produto deve ser informado.");
+			throw new ProdutoSemPrecoException(null, "Preco do Produto deve ser informado.");
 		}
 
 		Produto saved = super.save(entity);

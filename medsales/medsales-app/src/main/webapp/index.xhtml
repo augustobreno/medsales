@@ -11,6 +11,15 @@
 
 <ui:composition template="/templates/default/main.xhtml">
 
+	<ui:define name="content">
+	
+		<h:form>
+		
+			<h:commandButton value="Carregar Dados" action="#{dataStartupService.load()}" />
+		
+		</h:form>
+	
+	</ui:define>
 </ui:composition>
 
 </html>

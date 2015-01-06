@@ -123,9 +123,8 @@ public abstract class CrudFacadeBase<CR extends CrudRepository<ENTITY, PK>, ENTI
 	 * diferente deste com as mesmas informações.
 	 * @param entity Entidade a ser validada.
 	 * @param uniqueProperties Propriedades que, juntas, representam uma regra de unicidade.
-	 * @param e Exception a ser lançada caso a unicidade seja desrespeitada.
 	 * 
-	 * @return true se existir outro registro com as mesmas propriedades de unicidade, false caso contrário. 
+	 * @return true se NÃO existir outro registro com as mesmas propriedades de unicidade, false caso contrário. 
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	protected boolean checkUniqueConstraint(ENTITY entity, String...uniqueProperties) {

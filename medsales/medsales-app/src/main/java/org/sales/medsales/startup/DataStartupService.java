@@ -6,10 +6,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.logging.Logger;
 
-import javax.annotation.PostConstruct;
-import javax.ejb.Singleton;
-import javax.ejb.Startup;
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import org.sales.medsales.api.test.QuerierUtil;
 import org.sales.medsales.dominio.Entrada;
@@ -20,14 +18,14 @@ import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.negocio.EstoqueFacade;
 import org.sales.medsales.negocio.ParceiroFacade;
 import org.sales.medsales.negocio.ProdutoFacade;
-import org.sales.medsales.persistencia.repository.PrecoProdutoRepository;
 
 /**
  * Carrega dados iniciais para testes do sistema. 
  * @author Augusto
  */
-@Singleton
-@Startup
+//@Singleton
+//@Startup
+@Named
 public class DataStartupService {
 	
 	@Inject
@@ -43,18 +41,13 @@ public class DataStartupService {
 	private ProdutoFacade produtoFacade;
 	
 	@Inject
-	private PrecoProdutoRepository precoProdutoRepository;
-	
-	@Inject
 	private EstoqueFacade estoqueFacade;
 	
 	@Inject
 	private QuerierUtil querier; // FIXME QuerierUtil pertence ao pacote de testes. :-/
 	
-	@PostConstruct
-	public void onStartup() {
+	public void load() {
 		loadProdutos();
-		loadPrecoProdutos();
 		loadParceiro();
 		loadEntradas();
 	}
@@ -94,11 +87,15 @@ public class DataStartupService {
 		}
 	}
 
-	private void loadPrecoProdutos() {
-		List<Produto> produtos = querier.findAll(Produto.class);
-		
+	private void loadProdutos() {
+		Produto produto;
 		int precoInicial = DEFAULT_SIZE;
-		for (Produto produto : produtos) {
+		for (int i = 0; i < DEFAULT_SIZE; i++) {
+			produto = new Produto();
+			produto.setNome("Produto " + i);
+			produto.setCodigoBarras("" + i + i + i + i + i + i);
+			
+			// criando o preço
 			PrecoProduto precoProduto = new PrecoProduto();
 			precoProduto.setProduto(produto);
 			precoProduto.setValidoEm(new Date()); 
@@ -106,19 +103,8 @@ public class DataStartupService {
 			// simulando uma variação de preco.
 			precoInicial += 10;
 			precoProduto.setValor(new BigDecimal(precoInicial));
-
-			precoProdutoRepository.insert(precoProduto);
-		}
-	}
-
-	private void loadProdutos() {
-		Produto produto;
-		
-		for (int i = 0; i < DEFAULT_SIZE; i++) {
-			produto = new Produto();
-			produto.setNome("Produto " + i);
-			produto.setCodigoBarras("" + i + i + i + i + i + i);
-			produtoFacade.save(produto);
+			
+			produtoFacade.save(produto, precoProduto);
 		}		
 	}
 }

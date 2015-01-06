@@ -22,6 +22,7 @@ public class Produto extends EntityBase<Long> {
 	/**
 	 * Código de barras cadastrado.
 	 */
+	@Column(nullable=false)
 	private String codigoBarras;
 	
 	@OneToMany(fetch=FetchType.LAZY, mappedBy="produto")
