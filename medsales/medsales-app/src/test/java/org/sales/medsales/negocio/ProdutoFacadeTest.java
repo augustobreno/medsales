@@ -156,7 +156,7 @@ public class ProdutoFacadeTest extends OnServerBaseTest {
     	Item item = new Item();
     	item.setProduto(produto);
     	item.setQuantidade(10);
-    	item.setTipoMovimentacao(entrada);
+    	item.setMovimentacaoEstoque(entrada);
     	
     	entrada.setItens(Arrays.asList(item));
     	

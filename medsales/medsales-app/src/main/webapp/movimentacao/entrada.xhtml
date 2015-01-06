@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:pe="http://primefaces.org/ui/extensions">
+
+<f:metadata>
+	<!-- 
+		Necessário para associar o CID criado no Action com os formulários abaixo.  Bug??
+	 -->
+	<f:event listener="#{entradaAction.preRender()}" type="preRenderView" />
+</f:metadata>
+
+<ui:composition template="/templates/default/main.xhtml">
+
+	<ui:param name="param_pageTitle" value="Cadastro de Entrada" />
+
+	<ui:define name="content">
+
+		<style>
+.labels_col1 {
+	max-width: 200px
+}
+</style>
+
+		<h:form>
+			<p:panelGrid id="itemGrid" columns="3" layout="grid" columnClasses="labels_col1">
+
+				<p:outputLabel value="Quantidade:" for="quantidade" />
+				<p:spinner id="quantidade" value="#{entradaAction.item.quantidade}" min="1" required="true" />
+				<p:message for="quantidade" />
+
+				<p:outputLabel value="Produto:" for="produto" />
+
+				<p:autoComplete id="produto" value="#{entradaAction.item.produto}" minQueryLength="2"
+					title="Nome ou código de barras do Produto" completeMethod="#{entradaAction.searchProdutos}" var="produto"
+					itemLabel="#{produto.nome}" itemValue="#{produto}" dropdown="true" required="true"
+					converter="produtoCodBarrasConverter" />
+				<p:message for="produto" />
+
+				<p:commandButton value="Adicionar" action="#{entradaAction.adicionarItem}" update="itemList itemGrid"
+					process="@this quantidade produto" />
+			</p:panelGrid>
+
+			<p:spacer />
+
+			<p:dataTable id="itemList" value="#{entradaAction.itens}" var="itemPreco" emptyMessage="Nenhum Item cadastrado."
+				rows="5">
+
+				<f:facet name="header">
+    				Itens        
+	       		</f:facet>
+
+				<p:column headerText="Cód Barras">
+					<h:outputText value="#{itemPreco.preco.produto.codigoBarras}" />
+				</p:column>
+
+				<p:column headerText="Produto">
+					<h:outputText value="#{itemPreco.preco.produto.nome}" />
+				</p:column>
+
+				<p:column headerText="Quantidade" style="text-align:center">
+					<h:outputText value="#{itemPreco.item.quantidade}" />
+				</p:column>
+
+				<p:column headerText="R$ Un" style="text-align:right">
+					<h:outputText value="#{itemPreco.preco.valor}">
+						BigDecimalConverter
+					</h:outputText>
+				</p:column>
+
+				<p:column headerText="R$ Total" style="text-align:right">
+					<h:outputText value="#{itemPreco.preco.valor * itemPreco.item.quantidade}">
+						BigDecimalConverter
+					</h:outputText>
+				</p:column>
+			</p:dataTable>
+
+		</h:form>
+
+		<p:separator />
+
+		<h:form>
+
+			<p:panelGrid columns="3" layout="grid" columnClasses="labels_col1">
+				<p:outputLabel value="Parceiro/Vendedor):" for="parceiro" />
+				<p:autoComplete id="parceiro" value="#{entradaAction.entrada.parceiro}" minQueryLength="2"
+					title="Onde o produto foi comprado?" completeMethod="#{entradaAction.searchParceiros}" var="parceiro"
+					itemLabel="#{parceiro.nome}" itemValue="#{parceiro}" forceSelection="true" dropdown="true" required="true" />
+				<p:message for="parceiro" />
+
+			</p:panelGrid>
+			
+			<br/>
+			
+			<p:commandButton value="Cancelar" action="#{entradaAction.concluir}" update=":content-panel" />
+			<p:commandButton value="Salvar" action="#{entradaAction.salvar}" update=":content-panel" />
+			<p:commandButton value="Concluir" action="#{entradaAction.concluir}" update=":content-panel" />
+
+		</h:form>
+	</ui:define>
+</ui:composition>
+
+</html>
+

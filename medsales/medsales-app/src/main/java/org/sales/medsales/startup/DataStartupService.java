@@ -71,7 +71,7 @@ public class DataStartupService {
 	    		Item item = new Item();
 	    		item.setProduto(produtos.get(j)); 
 	    		item.setQuantidade(10);
-	    		item.setTipoMovimentacao(entrada);
+	    		item.setMovimentacaoEstoque(entrada);
 	    		itens.add(item);
     		}	
 

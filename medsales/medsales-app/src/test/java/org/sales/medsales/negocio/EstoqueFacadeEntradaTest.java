@@ -78,7 +78,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerierUtil().findAny(Produto.class));
     	item.setQuantidade(10);
-    	item.setTipoMovimentacao(entrada);
+    	item.setMovimentacaoEstoque(entrada);
     	
     	entrada.setItens(Arrays.asList(item));
     	
@@ -112,7 +112,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerierUtil().findAny(Produto.class));
     	item.setQuantidade(10);
-    	item.setTipoMovimentacao(entrada);
+    	item.setMovimentacaoEstoque(entrada);
     	
     	entrada.setItens(Arrays.asList(item));
     	

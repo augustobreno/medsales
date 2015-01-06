@@ -31,7 +31,9 @@ public class ProdutoAction extends CrudActionBase<Produto, Long, ProdutoFacade>{
 	@PostConstruct
 	public void init() {
 		super.init();
-		conversation.begin();
+		if (conversation.isTransient()) {
+			conversation.begin();
+		}
 	}
 
 	@Override

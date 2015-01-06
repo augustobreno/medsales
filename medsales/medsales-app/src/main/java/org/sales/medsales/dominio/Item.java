@@ -24,7 +24,7 @@ public class Item extends EntityBase<Long> {
 	 * Determina o comportamento deste item de estoque (entrada/saída)
 	 */
 	@ManyToOne(fetch=FetchType.LAZY)
-	private MovimentacaoEstoque tipoMovimentacao;
+	private MovimentacaoEstoque movimentacaoEstoque;
 	
 	/**
 	 * Quantidade de produtos pedidos.
@@ -39,12 +39,12 @@ public class Item extends EntityBase<Long> {
 		this.quantidade = quantidade;
 	}
 
-	public MovimentacaoEstoque getTipoMovimentacao() {
-		return tipoMovimentacao;
+	public MovimentacaoEstoque getMovimentacaoEstoque() {
+		return movimentacaoEstoque;
 	}
 
-	public void setTipoMovimentacao(MovimentacaoEstoque tipoMovimentacao) {
-		this.tipoMovimentacao = tipoMovimentacao;
+	public void setMovimentacaoEstoque(MovimentacaoEstoque tipoMovimentacao) {
+		this.movimentacaoEstoque = tipoMovimentacao;
 	}
 
 	public Produto getProduto() {
@@ -55,4 +55,10 @@ public class Item extends EntityBase<Long> {
 		this.produto = produto;
 	}
 	
+	/**
+	 * Incrementa a quantidade deste item.
+	 */
+	public void incrementarQuantidade(int incremento) {
+		this.quantidade += incremento;
+	}
 }

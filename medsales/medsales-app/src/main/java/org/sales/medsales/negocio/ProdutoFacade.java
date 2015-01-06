@@ -18,25 +18,39 @@ import org.sales.medsales.persistencia.repository.ProdutoRepository;
 
 @SuppressWarnings("serial")
 @Stateless
-public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Long>{
+public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Long> {
 
 	@Inject
 	private PrecoProdutoRepository precoProdutoRepository;
-	
+
 	@Inject
 	private EstoqueFacade estoqueFacade;
-	
+
+	/**
+	 * @param codBarras Código de barras de um produto.
+	 * @return Preco do produto.
+	 */
+	public PrecoProduto buscarPrecoProduto(String codBarras) {
+		//TODO não está considerando o preço mais recente
+		QBEFilter<PrecoProduto> filter = new QBEFilter<PrecoProduto>(PrecoProduto.class);
+		filter.filterBy("produto.codigoBarras", Operators.equal(), codBarras);
+		filter.addFetch("produto");
+		PrecoProduto preco = precoProdutoRepository.findBy(filter);
+		return preco;
+	}
+
+	// TODO validar código de barras duplicado
 	public Produto save(Produto entity, PrecoProduto precoProduto) {
 		if (precoProduto == null || precoProduto.getValor() == null) {
 			throw new IllegalArgumentException("Preco do Produto deve ser informado.");
 		}
-		
+
 		Produto saved = super.save(entity);
-		
+
 		// processa o preço do produto em seguida.
 		Produto original = getRepository().findBy(entity.getId(), "precos");
 		PrecoProduto precoAtual = original.getPrecoAtual();
-		
+
 		if (precoAtual == null || !precoAtual.getValor().equals(precoProduto.getValor())) {
 			precoProduto.setProduto(saved);
 			if (precoProduto.getValidoEm() == null) {
@@ -44,10 +58,10 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 			}
 			precoProdutoRepository.insert(precoProduto);
 		}
-		
+
 		return saved;
 	}
-	
+
 	@Override
 	public void remove(Produto entity) {
 		validateRemove(entity);
@@ -65,7 +79,7 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 			precoProdutoRepository.remove(precoProduto);
 		}
 	}
-	
+
 	@Override
 	protected void validateRemove(Produto entity) {
 		super.validateRemove(entity);
@@ -73,13 +87,14 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 	}
 
 	private void validarDependenciaMovimentacao(Produto entity) {
-		// Não é possível remover um produto se este já foi cadastrado em uma movimentacao
+		// Não é possível remover um produto se este já foi cadastrado em uma
+		// movimentacao
 		QBEFilter<MovimentacaoEstoque> filter = new QBEFilter<>(MovimentacaoEstoque.class);
 		filter.filterBy("itens.produto", Operators.equal(), entity);
-		
-		long numMovimentacoes = estoqueFacade.count(filter);	
+
+		long numMovimentacoes = estoqueFacade.count(filter);
 		if (numMovimentacoes > 0) {
-			throw new RemoverProdutoComMovimentacaoException(null, 
+			throw new RemoverProdutoComMovimentacaoException(null,
 					"Não é possível remover este Produto pois já foi utilizado em uma Movimentação.");
 		}
 	}
