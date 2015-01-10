@@ -14,6 +14,7 @@ import javax.persistence.OneToMany;
 import org.hibernate.annotations.Parameter;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
+import org.hibernate.annotations.TypeDefs;
 import org.sales.medsales.api.dominio.EntityBase;
 import org.sales.medsales.api.dominio.types.HibernateEnumType;
 import org.sales.medsales.dominio.Item;
@@ -27,8 +28,13 @@ import org.sales.medsales.dominio.Parceiro;
  */
 @SuppressWarnings("serial")
 
-@TypeDef(name = "operacao", typeClass = HibernateEnumType.class, 
-		parameters = { @Parameter(name = "enumClass", value = "org.sales.medsales.dominio.Operacao"), })
+@TypeDefs ({
+	@TypeDef(name = "operacao", typeClass = HibernateEnumType.class, 
+		parameters = { @Parameter(name = "enumClass", value = "org.sales.medsales.dominio.movimentacao.Operacao"), }),
+
+	@TypeDef(name = "status", typeClass = HibernateEnumType.class, 
+		parameters = { @Parameter(name = "enumClass", value = "org.sales.medsales.dominio.movimentacao.Status"), })		
+})
 
 @Inheritance(strategy = InheritanceType.JOINED) 
 @Entity
@@ -38,6 +44,13 @@ public abstract class MovimentacaoEstoque extends EntityBase<Long> {
 	@Type(type="operacao")
 	@Column(nullable=false)
 	private Operacao operacao;
+	
+	/**
+	 * Determina o status atual desta movimentação
+	 */
+	@Type(type="status")
+	@Column(nullable=false)
+	private Status status;
 	
 	/**
 	 * Itens associados a este tipo de movimentação.
@@ -83,6 +96,14 @@ public abstract class MovimentacaoEstoque extends EntityBase<Long> {
 
 	public void setParceiro(Parceiro parceiro) {
 		this.parceiro = parceiro;
+	}
+
+	public Status getStatus() {
+		return status;
+	}
+
+	public void setStatus(Status status) {
+		this.status = status;
 	}
 	
 }

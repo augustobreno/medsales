@@ -15,6 +15,7 @@ import org.sales.medsales.dataLoader.ProdutosDataLoader;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.dominio.movimentacao.Entrada;
+import org.sales.medsales.dominio.movimentacao.Status;
 import org.sales.medsales.exceptions.MovimentacaoSemItensException;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 
@@ -81,6 +82,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     	item.setMovimentacaoEstoque(entrada);
     	
     	entrada.setItens(Arrays.asList(item));
+    	entrada.setStatus(Status.CONCLUIDO);
     	
     	estoqueFacade.cadastrarEntrada(entrada);
     	
@@ -115,6 +117,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     	item.setMovimentacaoEstoque(entrada);
     	
     	entrada.setItens(Arrays.asList(item));
+    	entrada.setStatus(Status.CONCLUIDO);
     	
     	estoqueFacade.cadastrarEntrada(entrada);
     	
@@ -126,5 +129,12 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     	
     }
     
+    /**
+     * Testa o cadastro de uma entrada com status = rascunho.
+     */
+    @Test
+    public void cadastrarEntradaRascunho() {
+    	
+    }
     
 }

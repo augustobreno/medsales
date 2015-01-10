@@ -17,6 +17,7 @@ public class ProdutosDataLoader extends HibernateDataLoader {
 		for (int i = 0; i < 10; i++) {
 			produto = new Produto();
 			produto.setNome("Produto " + i);
+			produto.setCodigoBarras("" + i + i + i + i + i + i);
 			getEntityManager().persist(produto);
 		}
 		

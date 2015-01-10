@@ -17,6 +17,7 @@ import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.dominio.movimentacao.Entrada;
+import org.sales.medsales.dominio.movimentacao.Status;
 import org.sales.medsales.exceptions.ProdutoCodBarrasJaExisteException;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 import org.sales.medsales.exceptions.RemoverProdutoComMovimentacaoException;
@@ -184,6 +185,7 @@ public class ProdutoFacadeTest extends OnServerBaseTest {
 		item.setMovimentacaoEstoque(entrada);
 
 		entrada.setItens(Arrays.asList(item));
+		entrada.setStatus(Status.CONCLUIDO);
 
 		estoqueFacade.cadastrarEntrada(entrada);
 
