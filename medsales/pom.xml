@@ -207,9 +207,16 @@
 	</build>
 
 	<repositories>
-		<!-- <repository> <id>central</id> <name>Central</name> <url>http://mvnrepository.com/</url> 
-			</repository> <repository> <id>Primefaces</id> <name>Primefaces</name> <url>http://repository.primefaces.org/</url> 
-			</repository> -->
+		<repository>
+			<id>central</id>
+			<name>Central</name>
+			<url>http://mvnrepository.com/</url>
+		</repository>
+		<repository>
+			<id>Primefaces</id>
+			<name>Primefaces</name>
+			<url>http://repository.primefaces.org/</url>
+		</repository>
 	</repositories>
 
 	<modules>

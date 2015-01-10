@@ -7,7 +7,7 @@ import javax.inject.Named;
 
 import org.easy.qbeasy.QBEFilter;
 import org.easy.qbeasy.api.Filter;
-import org.sales.medsales.dominio.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
 import org.sales.medsales.negocio.EstoqueFacade;
 
 import java.io.Serializable;

@@ -1,4 +1,4 @@
-package org.sales.medsales.dominio;
+package org.sales.medsales.dominio.movimentacao;
 
 import java.util.List;
 
@@ -16,6 +16,8 @@ import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.sales.medsales.api.dominio.EntityBase;
 import org.sales.medsales.api.dominio.types.HibernateEnumType;
+import org.sales.medsales.dominio.Item;
+import org.sales.medsales.dominio.Parceiro;
 
 /**
  * Determina que os dados e comportamentos associados à movimentação de um item do

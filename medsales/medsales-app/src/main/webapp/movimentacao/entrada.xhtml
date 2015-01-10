@@ -25,7 +25,16 @@
 }
 </style>
 
-		<h:form>
+		<script type="text/javascript">
+
+function limparCampoProduto() {
+	window.document.getElementById("itemForm:produto_input").value = "";
+}
+
+</script>
+
+
+		<h:form id="itemForm">
 			<p:panelGrid id="itemGrid" columns="3" layout="grid" columnClasses="labels_col1">
 
 				<p:outputLabel value="Quantidade:" for="quantidade" />
@@ -40,7 +49,7 @@
 					converter="produtoCodBarrasConverter" />
 				<p:message for="produto" />
 
-				<p:commandButton value="Adicionar" action="#{entradaAction.adicionarItem}" update="itemList itemGrid"
+				<p:commandButton value="Adicionar" action="#{entradaAction.adicionarItem}" update=":content-panel"
 					process="@this quantidade produto" />
 			</p:panelGrid>
 
@@ -92,11 +101,11 @@
 				<p:message for="parceiro" />
 
 			</p:panelGrid>
-			
-			<br/>
-			
+
+			<br />
+
 			<p:commandButton value="Cancelar" action="#{entradaAction.concluir}" update=":content-panel" />
-			<p:commandButton value="Salvar" action="#{entradaAction.salvar}" update=":content-panel" />
+			<p:commandButton value="Salvar Rascunho" action="#{entradaAction.salvarRacunho}" update=":content-panel" />
 			<p:commandButton value="Concluir" action="#{entradaAction.concluir}" update=":content-panel" />
 
 		</h:form>

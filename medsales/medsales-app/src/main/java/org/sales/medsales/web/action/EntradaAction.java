@@ -1,7 +1,6 @@
 package org.sales.medsales.web.action;
 
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -14,13 +13,14 @@ import javax.inject.Named;
 import org.easy.qbeasy.QBEFilter;
 import org.easy.qbeasy.api.Filter;
 import org.easy.qbeasy.api.OperationContainer.ContainerType;
+import org.primefaces.context.RequestContext;
 import org.sales.medsales.api.exceptions.BusinessException;
 import org.sales.medsales.api.web.action.ActionBase;
-import org.sales.medsales.dominio.Entrada;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
+import org.sales.medsales.dominio.movimentacao.Entrada;
 import org.sales.medsales.negocio.EstoqueFacade;
 import org.sales.medsales.negocio.ParceiroFacade;
 import org.sales.medsales.negocio.ProdutoFacade;
@@ -46,7 +46,7 @@ public class EntradaAction extends ActionBase {
 
 	@Inject
 	private EstoqueFacade estoqueFacade;
-	
+
 	/** Para cadastro dos dados da entrada */
 	private Entrada entrada;
 
@@ -105,7 +105,38 @@ public class EntradaAction extends ActionBase {
 		filter.getExample().setNome(chave);
 		filter.getExample().setCodigoBarras(chave);
 		filter.setRootContainerType(ContainerType.OR);
-		return produtoFacade.findAllBy(filter);
+		List<Produto> produtos = produtoFacade.findAllBy(filter);
+
+		/*
+		 * Para automatizar a interface, se a consulta resultar em apenas 1
+		 * produto, e a chave de consulta for exatamente igual ao código de
+		 * barras daquele, ele será automaticamente selecionado.
+		 */
+		if (produtos.size() == 1 && produtos.get(0).getCodigoBarras().equalsIgnoreCase(chave)) {
+
+			this.item.setProduto(produtos.get(0));
+			if (this.item.getQuantidade() == null) {
+				this.item.setQuantidade(1);
+			}
+
+			adicionarItem();
+
+			// reseta a lista para prepara nova consulta.
+			produtos = new ArrayList<Produto>();
+
+			// atualizando a lista de itens programaticamente
+			RequestContext context = RequestContext.getCurrentInstance();
+			context.update("itemForm:itemList");
+
+			/*
+			 * limpando o campo "Produto" programaticamente porque há um bug
+			 * quando ele é atualizado via ajax (o campo some!)
+			 */
+			context.execute("limparCampoProduto();");
+
+		}
+
+		return produtos;
 	}
 
 	/**
@@ -121,8 +152,8 @@ public class EntradaAction extends ActionBase {
 
 				if (precoProduto == null) {
 					throw new BusinessException(null,
-							"Produto com código de barras \"{0}\" não existe ou não possui preço cadastrado.", getItem()
-									.getProduto().getCodigoBarras());
+							"Produto com código de barras \"{0}\" não existe ou não possui preço cadastrado.",
+							getItem().getProduto().getCodigoBarras());
 				}
 
 				Item novoItem = new Item();
@@ -137,8 +168,9 @@ public class EntradaAction extends ActionBase {
 				itemPreco.getItem().incrementarQuantidade(this.item.getQuantidade());
 			}
 
-			showInfoMessage("Produto \"{0}\" adicionado, total: \"{1}\"", itemPreco.getItem().getProduto().getNome(), itemPreco.getItem().getQuantidade());
-			
+			showInfoMessage("Produto \"{0}\" adicionado, total: \"{1}\"", itemPreco.getItem().getProduto().getNome(),
+					itemPreco.getItem().getQuantidade());
+
 			initItem();
 		} else {
 			showErrorMessage("É necessário informar o Produto e a quantidade do Item.");
@@ -164,6 +196,13 @@ public class EntradaAction extends ActionBase {
 	 */
 	public void salvar() {
 		// trasnferir os itens cadastrados para a entrada.
+	}
+
+	/**
+	 * Salva a entrada parcipalmente.
+	 */
+	public void salvarRacunho() {
+		
 	}
 	
 	public Entrada getEntrada() {

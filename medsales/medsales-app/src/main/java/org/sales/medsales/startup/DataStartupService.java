@@ -10,11 +10,11 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.sales.medsales.api.test.QuerierUtil;
-import org.sales.medsales.dominio.Entrada;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
+import org.sales.medsales.dominio.movimentacao.Entrada;
 import org.sales.medsales.negocio.EstoqueFacade;
 import org.sales.medsales.negocio.ParceiroFacade;
 import org.sales.medsales.negocio.ProdutoFacade;

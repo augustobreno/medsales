@@ -9,8 +9,8 @@ import javax.inject.Inject;
 import org.easy.qbeasy.api.Filter;
 import org.sales.medsales.api.negocio.BusinessExceptionHandler;
 import org.sales.medsales.api.negocio.Facade;
-import org.sales.medsales.dominio.Entrada;
-import org.sales.medsales.dominio.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.Entrada;
+import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
 import org.sales.medsales.persistencia.repository.EstoqueRepository;
 
 /**

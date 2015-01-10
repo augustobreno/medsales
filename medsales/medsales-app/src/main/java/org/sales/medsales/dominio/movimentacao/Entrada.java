@@ -1,4 +1,4 @@
-package org.sales.medsales.dominio;
+package org.sales.medsales.dominio.movimentacao;
 
 import javax.persistence.Entity;
 

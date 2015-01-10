@@ -6,8 +6,8 @@ import java.util.Set;
 import javax.persistence.Query;
 
 import org.sales.medsales.api.persistencia.repository.CrudRepositoryBase;
-import org.sales.medsales.dominio.MovimentacaoEstoque;
 import org.sales.medsales.dominio.Produto;
+import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
 
 
 public class EstoqueRepository extends CrudRepositoryBase<MovimentacaoEstoque, Long> {

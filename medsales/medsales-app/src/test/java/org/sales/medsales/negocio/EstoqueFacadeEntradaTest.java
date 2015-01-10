@@ -12,9 +12,9 @@ import org.sales.medsales.api.exceptions.NullParameterException;
 import org.sales.medsales.api.test.OnServerBaseTest;
 import org.sales.medsales.dataLoader.PrecoProdutoDataLoader;
 import org.sales.medsales.dataLoader.ProdutosDataLoader;
-import org.sales.medsales.dominio.Entrada;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Produto;
+import org.sales.medsales.dominio.movimentacao.Entrada;
 import org.sales.medsales.exceptions.MovimentacaoSemItensException;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 
