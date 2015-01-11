@@ -102,6 +102,10 @@ public class EntradaAction extends ActionBase {
 	 * @return Produtos encontrados.
 	 */
 	public List<Produto> searchProdutos(String chave) {
+		
+		/*
+		 * Consultando apenas 10 produtos para otimização
+		 */
 		Filter<Produto> filter = new QBEFilter<Produto>(new Produto());
 		filter.getExample().setNome(chave);
 		filter.getExample().setCodigoBarras(chave);

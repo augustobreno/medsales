@@ -1,14 +1,25 @@
 package org.sales.medsales.startup;
 
+import java.io.InputStream;
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
 import java.util.logging.Logger;
 
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.PersistenceUnit;
 
+import org.hibernate.SessionFactory;
+import org.hibernate.StatelessSession;
+import org.hibernate.Transaction;
 import org.sales.medsales.api.test.QuerierUtil;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Parceiro;
@@ -27,6 +38,7 @@ import org.sales.medsales.negocio.ProdutoFacade;
 //@Singleton
 //@Startup
 @Named
+@Stateless
 public class DataStartupService {
 	
 	@Inject
@@ -47,7 +59,10 @@ public class DataStartupService {
 	@Inject
 	private QuerierUtil querier; // FIXME QuerierUtil pertence ao pacote de testes. :-/
 	
-	public void load() {
+	@PersistenceUnit
+	private EntityManagerFactory emf;
+	
+	public void load() throws Exception {
 		loadProdutos();
 		loadParceiro();
 		loadEntradas();
@@ -89,24 +104,52 @@ public class DataStartupService {
 		}
 	}
 
-	private void loadProdutos() {
+	/**
+	 * Lê produtos a partir do arquivo lista_produtos_eticos.txt
+	 */
+	private void loadProdutos() throws Exception {
+		
+		// stateless session para otimizar o loop com inserts.
+		SessionFactory sessionFactory = emf.unwrap(SessionFactory.class);
+		StatelessSession statelessSession = sessionFactory.openStatelessSession();
+		Transaction tx = statelessSession.beginTransaction();
+		
 		Produto produto;
-		int precoInicial = DEFAULT_SIZE;
-		for (int i = 0; i < DEFAULT_SIZE; i++) {
-			produto = new Produto();
-			produto.setNome("Produto " + i);
-			produto.setCodigoBarras("" + i + i + i + i + i + i);
+		
+		InputStream produtosInput = Thread.currentThread().getContextClassLoader().getResourceAsStream("lista_produtos_eticos.txt"); 
+		Scanner scanner = new Scanner(produtosInput);
+		while (scanner.hasNext()) {
+			String linha = scanner.nextLine();
+			
+			/*
+			 * Quebrando a linha em tokens. Primeira parte é o código de barras,
+			 * depois o nome, e o preço
+			 */
+			String[] tokens = linha.split("##");
+			
+			produto = new Produto(); 
+			produto.setNome(tokens[1]);
+			produto.setCodigoBarras(tokens[0]);
 			
 			// criando o preço
 			PrecoProduto precoProduto = new PrecoProduto();
 			precoProduto.setProduto(produto);
 			precoProduto.setValidoEm(new Date()); 
 
-			// simulando uma variação de preco.
-			precoInicial += 10;
-			precoProduto.setValor(new BigDecimal(precoInicial));
+			Locale brasil = new Locale ("pt", "BR");  
+	        DecimalFormat df = new DecimalFormat ("#,##0.00", new DecimalFormatSymbols (brasil));  
+	        df.setParseBigDecimal(true);
+	        BigDecimal preco = (BigDecimal) df.parse(tokens[2]);
+	        
+			precoProduto.setValor(preco);
 			
-			produtoFacade.save(produto, precoProduto);
-		}		
+			statelessSession.insert(produto);
+			statelessSession.insert(precoProduto);
+//			produtoFacade.save(produto, precoProduto);
+		}
+		
+		scanner.close();
+		tx.commit();
+		statelessSession.close();
 	}
 }
