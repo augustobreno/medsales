@@ -1,4 +1,4 @@
-package org.sales.medsales.web.action;
+package org.sales.medsales.web.action.movimentacao;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -21,6 +21,7 @@ import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.dominio.movimentacao.Entrada;
+import org.sales.medsales.dominio.movimentacao.Status;
 import org.sales.medsales.negocio.EstoqueFacade;
 import org.sales.medsales.negocio.ParceiroFacade;
 import org.sales.medsales.negocio.ProdutoFacade;
@@ -192,10 +193,20 @@ public class EntradaAction extends ActionBase {
 	}
 
 	/**
-	 * Salva a entrada.
+	 * Salva a entrada com status CONCLUÍDO.
 	 */
-	public void salvar() {
-		// trasnferir os itens cadastrados para a entrada.
+	public void concluir() {
+		// trasnferindo os itens cadastrados para a entrada.
+		List<Item> entradaItens = new ArrayList<Item>();
+		for (ItemPreco itemPreco : this.itens) {
+			entradaItens.add(itemPreco.getItem());
+		}
+
+		entrada.setItens(entradaItens);
+		entrada.setStatus(Status.CONCLUIDO);
+		estoqueFacade.cadastrarEntrada(entrada);
+		
+		showInfoMessage("A Entrada foi cadastrada com sucesso.");
 	}
 
 	/**

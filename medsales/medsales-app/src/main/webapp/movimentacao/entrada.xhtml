@@ -106,7 +106,7 @@ function limparCampoProduto() {
 
 			<p:commandButton value="Cancelar" action="#{entradaAction.concluir}" update=":content-panel" />
 			<p:commandButton value="Salvar Rascunho" action="#{entradaAction.salvarRacunho}" update=":content-panel" />
-			<p:commandButton value="Concluir" action="#{entradaAction.concluir}" update=":content-panel" />
+			<p:commandButton value="Concluir" actionListener="#{entradaAction.concluir}" update=":content-panel" />
 
 		</h:form>
 	</ui:define>

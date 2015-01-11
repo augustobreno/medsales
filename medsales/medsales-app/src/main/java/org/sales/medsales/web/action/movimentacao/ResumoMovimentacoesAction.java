@@ -1,4 +1,4 @@
-package org.sales.medsales.web.action;
+package org.sales.medsales.web.action.movimentacao;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ConversationScoped;
