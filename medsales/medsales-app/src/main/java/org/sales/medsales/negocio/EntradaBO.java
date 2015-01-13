@@ -31,7 +31,12 @@ public class EntradaBO implements Serializable {
 	public void cadastrar(Entrada entrada) {
 		validarDependenciasObrigatorias(entrada);
 		validarPrecosDeProdutos(entrada);
-		estoqueRepository.insert(entrada);
+		
+		if (entrada.getId() == null) {
+			estoqueRepository.insert(entrada);
+		} else {
+			estoqueRepository.update(entrada);
+		}
 	}
 
 	/**

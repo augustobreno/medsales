@@ -31,8 +31,18 @@
 	</f:facet>
 
 </h:head>
-
 <h:body>
+
+	<ui:insert name="status">
+
+		<!-- Default ajax status -->
+		<p:ajaxStatus style="display:block;height:24px;float:right;">
+			<f:facet name="start">
+				<p:graphicImage name="/images/ajaxloadingbar.gif" />
+			</f:facet>
+		</p:ajaxStatus>
+		
+	</ui:insert>
 
 	<ui:include src="header.xhtml" />
 

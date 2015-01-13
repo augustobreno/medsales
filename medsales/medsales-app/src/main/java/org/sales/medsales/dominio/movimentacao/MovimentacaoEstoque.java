@@ -1,5 +1,6 @@
 package org.sales.medsales.dominio.movimentacao;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -10,6 +11,8 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.Parameter;
 import org.hibernate.annotations.Type;
@@ -40,6 +43,13 @@ import org.sales.medsales.dominio.Parceiro;
 @Entity
 public abstract class MovimentacaoEstoque extends EntityBase<Long> {
 
+	/**
+	 * Data oficial da movimentação.
+	 */
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(nullable=false)
+	private Date dataMovimentacao;
+	
 	/** determina o tipo de operação que este objeto deverá realizar. */
 	@Type(type="operacao")
 	@Column(nullable=false)
@@ -55,7 +65,7 @@ public abstract class MovimentacaoEstoque extends EntityBase<Long> {
 	/**
 	 * Itens associados a este tipo de movimentação.
 	 */
-	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
+	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="movimentacaoEstoque")
 	private List<Item> itens;
 
 	/**
@@ -104,6 +114,14 @@ public abstract class MovimentacaoEstoque extends EntityBase<Long> {
 
 	public void setStatus(Status status) {
 		this.status = status;
+	}
+
+	public Date getDataMovimentacao() {
+		return dataMovimentacao;
+	}
+
+	public void setDataMovimentacao(Date dataMovimentacao) {
+		this.dataMovimentacao = dataMovimentacao;
 	}
 	
 }

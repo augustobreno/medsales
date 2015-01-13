@@ -86,6 +86,7 @@ public class DataStartupService {
 
     		entrada.setItens(itens);
     		
+    		entrada.setDataMovimentacao(new Date());
 			entrada.setParceiro(parceiros.get(i));
 			entrada.setStatus(Status.CONCLUIDO);
     		estoqueFacade.cadastrarEntrada(entrada);

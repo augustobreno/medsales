@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import javax.faces.application.FacesMessage;
 import javax.faces.application.FacesMessage.Severity;
 import javax.faces.context.FacesContext;
+import javax.faces.context.Flash;
 
 @SuppressWarnings("serial")
 public class MessageUtil implements Serializable {
@@ -26,8 +27,13 @@ public class MessageUtil implements Serializable {
 			msgText = mensagem;
 		}
 
+		// mantendo a mensagem até a próxima página (redirect)
+		Flash flash = facesContext.getExternalContext().getFlash();
+		flash.setKeepMessages(true);
+		
 		FacesContext context = FacesContext.getCurrentInstance();
 		context.addMessage(null, new FacesMessage(severity, MessageFormat.format(msgText, parametros), null));
+		
 	}
 
 	/**

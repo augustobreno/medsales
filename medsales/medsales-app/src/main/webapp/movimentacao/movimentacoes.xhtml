@@ -2,40 +2,64 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:p="http://primefaces.org/ui"	
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui"
 	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 
 <ui:composition template="/templates/default/main.xhtml">
 
-	<ui:param name="param_pageTitle" value="Últimas Movimentações" />
+	<ui:param name="param_pageTitle" value="Movimentações Registradas" />
+
 
 	<ui:define name="content">
 
-		<p:dataTable var="movimentacao" value="#{resumoMovimentacoesAction.movimentacoes}" >
-			<p:column headerText="Código">
-				<h:outputText value="#{movimentacao.id}" />
-			</p:column>
-			
-			<p:column headerText="Tipo">
-				<h:outputText value="#{movimentacao.operacao.descricao}" />
-			</p:column>
+		<!--  
+		<h:form id="searchForm">
+			<f:validateBean disabled="true">
+				<p:inputText value="#{movimentacoesAction.chaveConsulta}" />
+				<p:commandButton icon="ui-icon-search" update=":listForm" />
+			</f:validateBean>
+		</h:form>
+		-->
 
-			<p:column headerText="Data">
-				<h:outputText value="#{movimentacao.dataCriacao}" >
-					<f:convertDateTime pattern="dd/MM/yyyy HH:mm" />
-				</h:outputText>
-			</p:column>
+		<h:form id="listForm">
+			<p:dataTable id="table" var="movimentacao" value="#{movimentacoesAction.result}"
+				rendered="#{not empty movimentacoesAction.result}" paginator="true" lazy="true"
+				paginatorTemplate="{RowsPerPageDropdown} {totalPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+				paginatorPosition="bottom" rowsPerPageLabel="Exibindo" rowsPerPageTemplate="5,10,20,30,50,100" rows="5"
+				emptyMessage="Nenhum registro foi encontrado." selectionMode="single" rowKey="#{movimentacao.id}"
+				>
 
-			<p:column headerText="Parceiro">
-				<h:outputText value="#{movimentacao.parceiro.nome}" />
-			</p:column>
+				<p:ajax event="rowSelect" listener="#{movimentacoesAction.load}" />
+				
+				<f:facet name="{totalPageReport}">
+					de #{movimentacoesAction.result.rowCount} &nbsp;&nbsp;&nbsp;
+				</f:facet>
 
-		</p:dataTable>
+				<p:column headerText="Código" sortBy="#{movimentacao.id}">
+					<h:outputText value="#{movimentacao.id}" />
+				</p:column>
 
+				<p:column headerText="Tipo" sortBy="#{movimentacao.operacao.descricao}">
+					<h:outputText value="#{movimentacao.operacao.descricao}" />
+				</p:column>
+
+				<p:column headerText="Data" sortBy="#{movimentacao.dataMovimentacao}">
+					<h:outputText value="#{movimentacao.dataMovimentacao}">
+						<f:convertDateTime pattern="dd/MM/yyyy HH:mm" />
+					</h:outputText>
+				</p:column>
+
+				<p:column headerText="Parceiro" sortBy="#{movimentacao.parceiro.nome}">
+					<h:outputText value="#{movimentacao.parceiro.nome}" />
+				</p:column>
+				
+				<p:column headerText="Status" sortBy="#{movimentacao.status.descricao}">
+					<h:outputText value="#{movimentacao.status.descricao}" />
+				</p:column>				
+
+			</p:dataTable>
+		</h:form>
 		<!-- 		
 		<h1 class="page-header ">
 			<i class="fa fa-tachometer"></i> Dashboard

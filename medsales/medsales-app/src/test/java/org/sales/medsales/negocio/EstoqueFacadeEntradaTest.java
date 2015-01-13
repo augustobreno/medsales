@@ -1,6 +1,7 @@
 package org.sales.medsales.negocio;
 
 import java.util.Arrays;
+import java.util.Date;
 
 import javax.inject.Inject;
 
@@ -45,6 +46,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     public void cadastrarEntradaOperacaoNull() {
     	Entrada entrada = new Entrada();
     	entrada.setOperacao(null);
+    	entrada.setDataMovimentacao(new Date());
     	estoqueFacade.cadastrarEntrada(entrada);
     }
     
@@ -54,6 +56,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     @Test(expected=MovimentacaoSemItensException.class)
     public void cadastrarEntradaSemItens() {
     	Entrada entrada = new Entrada();
+    	entrada.setDataMovimentacao(new Date());
     	entrada.setItens(null);
     	estoqueFacade.cadastrarEntrada(entrada);
     }
@@ -75,6 +78,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     	
     	
     	Entrada entrada = new Entrada();
+    	entrada.setDataMovimentacao(new Date());
     	
     	Item item = new Item();
     	item.setProduto(getQuerierUtil().findAny(Produto.class));
@@ -110,6 +114,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     	
     	
     	Entrada entrada = new Entrada();
+    	entrada.setDataMovimentacao(new Date());
     	
     	Item item = new Item();
     	item.setProduto(getQuerierUtil().findAny(Produto.class));

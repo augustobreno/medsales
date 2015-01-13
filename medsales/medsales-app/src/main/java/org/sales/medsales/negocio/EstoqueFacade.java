@@ -8,7 +8,7 @@ import javax.inject.Inject;
 
 import org.easy.qbeasy.api.Filter;
 import org.sales.medsales.api.negocio.BusinessExceptionHandler;
-import org.sales.medsales.api.negocio.Facade;
+import org.sales.medsales.api.negocio.ServerPaginationFacade;
 import org.sales.medsales.dominio.movimentacao.Entrada;
 import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
 import org.sales.medsales.persistencia.repository.EstoqueRepository;
@@ -23,7 +23,7 @@ import org.sales.medsales.persistencia.repository.EstoqueRepository;
 @BusinessExceptionHandler
 @LocalBean
 @Stateless
-public class EstoqueFacade implements Facade {
+public class EstoqueFacade implements ServerPaginationFacade<MovimentacaoEstoque, Long> {
 
 	@Inject
 	private EntradaBO entradaBO; 
@@ -50,7 +50,16 @@ public class EstoqueFacade implements Facade {
 	 * @param filter Filtro para consulta.
 	 * @return Número de registros alcançados pelo filtro.
 	 */
-	public long count(Filter<MovimentacaoEstoque> filter) {
+	public Long count(Filter<MovimentacaoEstoque> filter) {
 		return estoqueRepository.count(filter);
 	}
+
+	/**
+	 * Consulta uma movimentação a partir de um filtro. O Resultado deve ser um único registro. 
+	 * @param filter Filtro com restrições para consulta.
+	 * @return Movimentação relacionada pelo filtro.
+	 */
+    public MovimentacaoEstoque findBy(Filter<MovimentacaoEstoque> filter) {
+        return estoqueRepository.findBy(filter);
+    }
 }

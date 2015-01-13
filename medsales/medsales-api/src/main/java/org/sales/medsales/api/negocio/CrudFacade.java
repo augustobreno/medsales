@@ -6,7 +6,7 @@ import java.util.List;
 import org.easy.qbeasy.api.Filter;
 import org.sales.medsales.api.dominio.Entity;
 
-public interface CrudFacade<ENTITY extends Entity<PK>, PK extends Serializable> extends Facade {
+public interface CrudFacade<ENTITY extends Entity<PK>, PK extends Serializable> extends ServerPaginationFacade<ENTITY, PK> {
 
     /**
      * Persist (new entity) or merge the given entity. The distinction on
@@ -65,17 +65,5 @@ public interface CrudFacade<ENTITY extends Entity<PK>, PK extends Serializable> 
      * de restrições para busca além da PK. O resultado deverá ser um único registro.
      */
 	ENTITY findBy(Filter<ENTITY> filter);
-
-	/**
-	 * Conta todos os registro de uma determinada entidade que atendem
-	 * às restrições configuradas no filtro. 
-	 */
-	Long count(Filter<ENTITY> filter);
-
-	/**
-	 * COnsulta todos os registros de uma determinada entidade baseado 
-	 * nas registrões configuradas no filtro.
-	 */
-	List<ENTITY> findAllBy(Filter<ENTITY> filter);
 
 }

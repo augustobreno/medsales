@@ -178,6 +178,7 @@ public class ProdutoFacadeTest extends OnServerBaseTest {
 
 		// cadastrando uma movimentacao
 		Entrada entrada = new Entrada();
+		entrada.setDataMovimentacao(new Date());
 
 		Item item = new Item();
 		item.setProduto(produto);

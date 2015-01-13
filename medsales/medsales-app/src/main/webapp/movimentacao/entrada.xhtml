@@ -7,10 +7,10 @@
 	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:pe="http://primefaces.org/ui/extensions">
 
 <f:metadata>
-	<!-- 
-		Necessário para associar o CID criado no Action com os formulários abaixo.  Bug??
-	 -->
-	<f:event listener="#{entradaAction.preRender()}" type="preRenderView" />
+	<!-- lid para book-markable -->
+	<f:viewParam name="lid" value="#{entradaAction.lid}" />
+	<f:viewAction action="#{entradaAction.loadFromId()}"/>
+	
 </f:metadata>
 
 <ui:composition template="/templates/default/main.xhtml">
@@ -32,8 +32,6 @@ function limparCampoProduto() {
 }
 
 </script>
-
-
 		<h:form id="itemForm">
 			<p:panelGrid id="itemGrid" columns="3" layout="grid" columnClasses="labels_col1">
 
@@ -56,7 +54,7 @@ function limparCampoProduto() {
 			<p:spacer />
 
 			<p:dataTable id="itemList" value="#{entradaAction.itens}" var="itemPreco" emptyMessage="Nenhum Item cadastrado."
-				rows="5">
+				rows="5" paginator="true">
 
 				<f:facet name="header">
     				Itens        
@@ -104,9 +102,12 @@ function limparCampoProduto() {
 
 			<br />
 
+			<p:separator style="height:2px" />
+
 			<p:commandButton value="Cancelar" action="#{entradaAction.concluir}" update=":content-panel" />
 			<p:commandButton value="Salvar Rascunho" action="#{entradaAction.salvarRacunho}" update=":content-panel" />
-			<p:commandButton value="Concluir" actionListener="#{entradaAction.concluir}" update=":content-panel" />
+			<p:commandButton value="Concluir" actionListener="#{entradaAction.concluir}"
+				action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" update=":content-panel" />
 
 		</h:form>
 	</ui:define>

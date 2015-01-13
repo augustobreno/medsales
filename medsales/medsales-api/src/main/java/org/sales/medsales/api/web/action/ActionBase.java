@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.logging.Logger;
 
 import javax.annotation.PostConstruct;
+import javax.enterprise.context.Conversation;
 import javax.faces.application.FacesMessage;
 import javax.inject.Inject;
 
@@ -30,6 +31,15 @@ public class ActionBase implements Serializable {
 	@PostConstruct
 	public void init() {
 	}	
+	
+	/**
+	 * @param conversation Conversation para iniciar ou continuar.
+	 */
+	protected void beginOrJoin(Conversation conversation) {
+		if (conversation.isTransient()) {
+			conversation.begin();
+		}
+	}
 	
 	/**
 	 * Exibe mensagem de informação na tela.

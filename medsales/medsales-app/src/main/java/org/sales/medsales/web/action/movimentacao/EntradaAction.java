@@ -1,18 +1,20 @@
 package org.sales.medsales.web.action.movimentacao;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.Conversation;
-import javax.enterprise.context.ConversationScoped;
+import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.easy.qbeasy.QBEFilter;
 import org.easy.qbeasy.api.Filter;
 import org.easy.qbeasy.api.OperationContainer.ContainerType;
+import org.easy.qbeasy.api.operator.Operators;
 import org.primefaces.context.RequestContext;
 import org.sales.medsales.api.exceptions.BusinessException;
 import org.sales.medsales.api.web.action.ActionBase;
@@ -21,6 +23,7 @@ import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.dominio.movimentacao.Entrada;
+import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
 import org.sales.medsales.dominio.movimentacao.Status;
 import org.sales.medsales.negocio.EstoqueFacade;
 import org.sales.medsales.negocio.ParceiroFacade;
@@ -33,7 +36,7 @@ import org.sales.medsales.negocio.ProdutoFacade;
  */
 @SuppressWarnings("serial")
 @Named
-@ConversationScoped
+@ViewScoped
 public class EntradaAction extends ActionBase {
 
 	@Inject
@@ -48,6 +51,9 @@ public class EntradaAction extends ActionBase {
 	@Inject
 	private EstoqueFacade estoqueFacade;
 
+	/** LoadId: GET parameter para carregamento dos dados de uma entrada via URL. */
+	private Long lid;
+	
 	/** Para cadastro dos dados da entrada */
 	private Entrada entrada;
 
@@ -69,6 +75,7 @@ public class EntradaAction extends ActionBase {
 		}
 
 		entrada = new Entrada();
+		entrada.setDataMovimentacao(new Date());
 
 		itens = new LinkedList<ItemPreco>();
 
@@ -80,6 +87,28 @@ public class EntradaAction extends ActionBase {
 		item.setQuantidade(1); // valor inicial
 	}
 
+	/**
+	 * Carrega uma entrada quando há a presença do parâmetro
+	 * {@link #lid}
+	 */
+	public void loadFromId() {
+		if (lid != null) {
+			Filter<MovimentacaoEstoque> filter = new QBEFilter<>(MovimentacaoEstoque.class);
+			filter.filterBy("id", Operators.equal(), lid);
+			filter.addFetch("itens.produto", "parceiro");
+			MovimentacaoEstoque movimentacao = estoqueFacade.findBy(filter);
+			
+			if (movimentacao == null) {
+				throw new BusinessException(null, "Nenhuma movimentação foi encontrada com o código informado: {0}", lid);
+			} else if (!Entrada.class.isAssignableFrom(movimentacao.getClass())) {
+				throw new BusinessException(null, "O código informado não representa uma Entrada: {0}", lid);
+			}
+			
+			setEntrada((Entrada) movimentacao);
+			this.itens = new LinkedList<>(parseToItemPreco(entrada.getItens()));
+		}
+	}
+	
 	/**
 	 * Consulta por parceiros segundo a chave informada.
 	 * 
@@ -104,12 +133,13 @@ public class EntradaAction extends ActionBase {
 	public List<Produto> searchProdutos(String chave) {
 		
 		/*
-		 * Consultando apenas 10 produtos para otimização
+		 * Consultando apenas 20 produtos para otimização
 		 */
 		Filter<Produto> filter = new QBEFilter<Produto>(new Produto());
 		filter.getExample().setNome(chave);
 		filter.getExample().setCodigoBarras(chave);
 		filter.setRootContainerType(ContainerType.OR);
+		filter.paginate(0, 20);
 		List<Produto> produtos = produtoFacade.findAllBy(filter);
 
 		/*
@@ -200,11 +230,8 @@ public class EntradaAction extends ActionBase {
 	 * Salva a entrada com status CONCLUÍDO.
 	 */
 	public void concluir() {
-		// trasnferindo os itens cadastrados para a entrada.
-		List<Item> entradaItens = new ArrayList<Item>();
-		for (ItemPreco itemPreco : this.itens) {
-			entradaItens.add(itemPreco.getItem());
-		}
+		// transferindo os itens cadastrados para a entrada.
+		List<Item> entradaItens = parseToItem(this.itens);
 
 		entrada.setItens(entradaItens);
 		entrada.setStatus(Status.CONCLUIDO);
@@ -213,6 +240,25 @@ public class EntradaAction extends ActionBase {
 		showInfoMessage("A Entrada foi cadastrada com sucesso.");
 	}
 
+	private List<Item> parseToItem(List<ItemPreco> itensToParse) {
+		List<Item> entradaItens = new ArrayList<Item>();
+		for (ItemPreco itemPreco : itensToParse) {
+			entradaItens.add(itemPreco.getItem());
+		}
+		return entradaItens;
+	}
+
+	private List<ItemPreco> parseToItemPreco(List<Item> itensToParse) {
+		
+		List<ItemPreco> itemPrecos = new ArrayList<ItemPreco>();
+		for (Item item : itensToParse) {
+			// consultando os precos dos items
+			PrecoProduto precoProduto = produtoFacade.buscarPrecoProduto(item.getProduto().getCodigoBarras());
+			itemPrecos.add(new ItemPreco(item, precoProduto));
+		}
+		return itemPrecos;
+	}
+	
 	/**
 	 * Salva a entrada parcipalmente.
 	 */
@@ -244,9 +290,14 @@ public class EntradaAction extends ActionBase {
 		this.itens = itens;
 	}
 
-	public void preRender() {
+	public Long getLid() {
+		return lid;
 	}
 
+	public void setLid(Long lid) {
+		this.lid = lid;
+	}
+	
 	/**
 	 * Decorator para exibição conjunta dos dados do Item e o preço cadastro.
 	 * 
@@ -297,4 +348,5 @@ public class EntradaAction extends ActionBase {
 			return false;
 		}
 	}
+
 }
