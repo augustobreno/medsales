@@ -230,14 +230,16 @@ public class EntradaAction extends ActionBase {
 	 * Salva a entrada com status CONCLUÍDO.
 	 */
 	public void concluir() {
+		entrada.setStatus(Status.CONCLUIDO);
+		salvarEntrada();
+		showInfoMessage("A Entrada foi cadastrada com sucesso.");
+	}
+
+	private void salvarEntrada() {
 		// transferindo os itens cadastrados para a entrada.
 		List<Item> entradaItens = parseToItem(this.itens);
-
 		entrada.setItens(entradaItens);
-		entrada.setStatus(Status.CONCLUIDO);
 		estoqueFacade.cadastrarEntrada(entrada);
-		
-		showInfoMessage("A Entrada foi cadastrada com sucesso.");
 	}
 
 	private List<Item> parseToItem(List<ItemPreco> itensToParse) {
@@ -263,7 +265,9 @@ public class EntradaAction extends ActionBase {
 	 * Salva a entrada parcipalmente.
 	 */
 	public void salvarRacunho() {
-		
+		entrada.setStatus(Status.RASCUNHO);
+		salvarEntrada();
+		showInfoMessage("A Entrada foi salva como RASCUNHO, e não constará na contabilidade do estoque.");		
 	}
 	
 	public Entrada getEntrada() {

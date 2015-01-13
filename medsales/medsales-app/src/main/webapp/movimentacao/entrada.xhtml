@@ -9,8 +9,8 @@
 <f:metadata>
 	<!-- lid para book-markable -->
 	<f:viewParam name="lid" value="#{entradaAction.lid}" />
-	<f:viewAction action="#{entradaAction.loadFromId()}"/>
-	
+	<f:viewAction action="#{entradaAction.loadFromId()}" />
+
 </f:metadata>
 
 <ui:composition template="/templates/default/main.xhtml">
@@ -32,6 +32,10 @@ function limparCampoProduto() {
 }
 
 </script>
+		<h:outputFormat value="Esta entrada foi marcada como {0} em {1} " rendered="#{entradaAction.entrada.id != null}">
+			<f:param value="#{entradaAction.entrada.status.descricao.toUpperCase()}" />
+			<f:param value="#{entradaAction.entrada.dataAlteracao}" />
+		</h:outputFormat>
 		<h:form id="itemForm">
 			<p:panelGrid id="itemGrid" columns="3" layout="grid" columnClasses="labels_col1">
 
@@ -92,11 +96,17 @@ function limparCampoProduto() {
 		<h:form>
 
 			<p:panelGrid columns="3" layout="grid" columnClasses="labels_col1">
-				<p:outputLabel value="Parceiro/Vendedor):" for="parceiro" />
+				<p:outputLabel value="Parceiro/Vendedor:" for="parceiro" />
 				<p:autoComplete id="parceiro" value="#{entradaAction.entrada.parceiro}" minQueryLength="2"
 					title="Onde o produto foi comprado?" completeMethod="#{entradaAction.searchParceiros}" var="parceiro"
 					itemLabel="#{parceiro.nome}" itemValue="#{parceiro}" forceSelection="true" dropdown="true" required="true" />
 				<p:message for="parceiro" />
+
+				<p:outputLabel value="Data da Entrada:" for="dtentrada" />
+				<p:calendar id="dtentrada" value="#{entradaAction.entrada.dataMovimentacao}" pattern="dd/MM/yyyy" mask="true"
+					showOn="button" required="true" />
+				<p:message for="dtentrada" />
+
 
 			</p:panelGrid>
 
@@ -104,10 +114,13 @@ function limparCampoProduto() {
 
 			<p:separator style="height:2px" />
 
-			<p:commandButton value="Cancelar" action="#{entradaAction.concluir}" update=":content-panel" />
-			<p:commandButton value="Salvar Rascunho" action="#{entradaAction.salvarRacunho}" update=":content-panel" />
-			<p:commandButton value="Concluir" actionListener="#{entradaAction.concluir}"
-				action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" update=":content-panel" />
+			<p:commandButton value="Cancelar" immediate="true" action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" />
+
+			<p:splitButton value="Concluir" actionListener="#{entradaAction.concluir}"  icon="ui-icon-disk"
+						action="/movimentacao/movimentacoes.xhtml?faces-redirect=true">
+				<p:menuitem value="Salvar Como Rascunho" actionListener="#{entradaAction.salvarRacunho}" icon="ui-icon-disk" 
+						action="/movimentacao/movimentacoes.xhtml?faces-redirect=true"/>
+			</p:splitButton>
 
 		</h:form>
 	</ui:define>
