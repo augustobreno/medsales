@@ -6,10 +6,10 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 import org.sales.medsales.api.exceptions.AlreadyRegisteredException;
-import org.sales.medsales.api.test.OnServerBaseTest;
+import org.sales.medsales.api.test.InServerBaseTest;
 import org.sales.medsales.dominio.Parceiro;
 
-public class ClienteFacadeTest extends OnServerBaseTest {
+public class ClienteFacadeTest extends InServerBaseTest {
 
 	@Inject
 	private ParceiroFacade clienteFacade;

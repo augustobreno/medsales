@@ -15,7 +15,7 @@ import org.easy.qbeasy.api.operator.Operators;
 import org.primefaces.event.SelectEvent;
 import org.sales.medsales.api.web.action.ServerPaginationActionBased;
 import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
-import org.sales.medsales.negocio.EstoqueFacade;
+import org.sales.medsales.negocio.movimentacao.EstoqueFacade;
 
 /**
  * Mantém a tela inicial com listagem das movimentações cadastradas, contendo

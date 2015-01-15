@@ -15,6 +15,7 @@ import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
 import org.sales.medsales.exceptions.ProdutoCodBarrasJaExisteException;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 import org.sales.medsales.exceptions.RemoverProdutoComMovimentacaoException;
+import org.sales.medsales.negocio.movimentacao.EstoqueFacade;
 import org.sales.medsales.persistencia.repository.PrecoProdutoRepository;
 import org.sales.medsales.persistencia.repository.ProdutoRepository;
 

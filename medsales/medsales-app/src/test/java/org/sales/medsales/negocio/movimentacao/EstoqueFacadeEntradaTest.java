@@ -1,4 +1,4 @@
-package org.sales.medsales.negocio;
+package org.sales.medsales.negocio.movimentacao;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -10,7 +10,7 @@ import junit.framework.Assert;
 import org.easy.testeasy.dataloader.LoadData;
 import org.junit.Test;
 import org.sales.medsales.api.exceptions.NullParameterException;
-import org.sales.medsales.api.test.OnServerBaseTest;
+import org.sales.medsales.api.test.InServerBaseTest;
 import org.sales.medsales.dataLoader.PrecoProdutoDataLoader;
 import org.sales.medsales.dataLoader.ProdutosDataLoader;
 import org.sales.medsales.dominio.Item;
@@ -20,7 +20,7 @@ import org.sales.medsales.dominio.movimentacao.Status;
 import org.sales.medsales.exceptions.MovimentacaoSemItensException;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 
-public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
+public class EstoqueFacadeEntradaTest extends InServerBaseTest {
 
 	@Inject
 	private EstoqueFacade estoqueFacade;
@@ -36,7 +36,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
 	 */
     @Test(expected=NullParameterException.class)
     public void cadastrarEntradaNull() {
-    	estoqueFacade.cadastrarEntrada(null);
+    	estoqueFacade.cadastrar((Entrada)null);
     }
     
 	/**
@@ -47,7 +47,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     	Entrada entrada = new Entrada();
     	entrada.setOperacao(null);
     	entrada.setDataMovimentacao(new Date());
-    	estoqueFacade.cadastrarEntrada(entrada);
+    	estoqueFacade.cadastrar(entrada);
     }
     
 	/**
@@ -58,7 +58,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     	Entrada entrada = new Entrada();
     	entrada.setDataMovimentacao(new Date());
     	entrada.setItens(null);
-    	estoqueFacade.cadastrarEntrada(entrada);
+    	estoqueFacade.cadastrar(entrada);
     }
     
 	/**
@@ -88,7 +88,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     	entrada.setItens(Arrays.asList(item));
     	entrada.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrarEntrada(entrada);
+    	estoqueFacade.cadastrar(entrada);
     	
     	getEm().clear();
     	
@@ -124,7 +124,7 @@ public class EstoqueFacadeEntradaTest extends OnServerBaseTest {
     	entrada.setItens(Arrays.asList(item));
     	entrada.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrarEntrada(entrada);
+    	estoqueFacade.cadastrar(entrada);
     	
     	getEm().clear();
     	

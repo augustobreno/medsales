@@ -11,7 +11,7 @@ import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.sales.medsales.api.dominio.EntityBase;
-import org.sales.medsales.api.test.OnServerBaseTest;
+import org.sales.medsales.api.test.InServerBaseTest;
 import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.negocio.ParceiroFacade;
 
@@ -21,7 +21,7 @@ import org.sales.medsales.negocio.ParceiroFacade;
  *
  */
 @RunWith(Arquillian.class)
-public class EntityBaseTest extends OnServerBaseTest {
+public class EntityBaseTest extends InServerBaseTest {
 
 	@Inject
 	private ParceiroFacade clienteFacade;

@@ -1,4 +1,4 @@
-package org.sales.medsales.negocio;
+package org.sales.medsales.negocio.movimentacao;
 
 import java.util.List;
 
@@ -11,6 +11,7 @@ import org.sales.medsales.api.negocio.BusinessExceptionHandler;
 import org.sales.medsales.api.negocio.ServerPaginationFacade;
 import org.sales.medsales.dominio.movimentacao.Entrada;
 import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.Saida;
 import org.sales.medsales.persistencia.repository.EstoqueRepository;
 
 /**
@@ -29,13 +30,24 @@ public class EstoqueFacade implements ServerPaginationFacade<MovimentacaoEstoque
 	private EntradaBO entradaBO; 
 	
 	@Inject
+	private SaidaBO saidaBO;
+	
+	@Inject
 	private EstoqueRepository estoqueRepository;
 	
 	/**
 	 * Cadastra uma entrada de produtos.
 	 */
-	public void cadastrarEntrada(Entrada entrada) {
+	public void cadastrar(Entrada entrada) {
 		entradaBO.cadastrar(entrada);
+	}
+	
+	/**
+	 * Cadastra uma saída de produtos.
+	 * @param saida Saída com os itens para cadastro.
+	 */
+	public void cadastrar(Saida saida) {
+		saidaBO.cadastrar(saida);
 	}
 	
 	/**

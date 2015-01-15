@@ -1,7 +1,7 @@
 package org.sales.medsales;
 
-import org.easy.testeasy.suite.BaseSuite;
+import org.easy.testeasy.suite.SuiteBase;
 
-public class MedSalesSuiteTest extends BaseSuite {
+public class MedSalesSuiteTest extends SuiteBase {
 
 }

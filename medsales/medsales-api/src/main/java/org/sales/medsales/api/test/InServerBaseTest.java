@@ -31,7 +31,7 @@ import org.junit.runner.RunWith;
 @RunWith(Arquillian.class)
 @Transactional(value=TransactionMode.ROLLBACK)
 @ArquillianSuiteDeployment // garante a reutilização do @Deployment entre as classes de teste
-public class OnServerBaseTest {
+public class InServerBaseTest {
 
 	private static final String ORG_SALES_MEDSALES = "org/sales/medsales";
 	

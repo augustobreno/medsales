@@ -25,9 +25,9 @@ import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.dominio.movimentacao.Entrada;
 import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
 import org.sales.medsales.dominio.movimentacao.Status;
-import org.sales.medsales.negocio.EstoqueFacade;
 import org.sales.medsales.negocio.ParceiroFacade;
 import org.sales.medsales.negocio.ProdutoFacade;
+import org.sales.medsales.negocio.movimentacao.EstoqueFacade;
 
 /**
  * Para cadastro de uma Entrada de Produtos no estoque
@@ -239,7 +239,7 @@ public class EntradaAction extends ActionBase {
 		// transferindo os itens cadastrados para a entrada.
 		List<Item> entradaItens = parseToItem(this.itens);
 		entrada.setItens(entradaItens);
-		estoqueFacade.cadastrarEntrada(entrada);
+		estoqueFacade.cadastrar(entrada);
 	}
 
 	private List<Item> parseToItem(List<ItemPreco> itensToParse) {

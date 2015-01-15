@@ -12,7 +12,7 @@ import junit.framework.Assert;
 
 import org.apache.commons.lang.time.DateUtils;
 import org.junit.Test;
-import org.sales.medsales.api.test.OnServerBaseTest;
+import org.sales.medsales.api.test.InServerBaseTest;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
@@ -21,8 +21,9 @@ import org.sales.medsales.dominio.movimentacao.Status;
 import org.sales.medsales.exceptions.ProdutoCodBarrasJaExisteException;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 import org.sales.medsales.exceptions.RemoverProdutoComMovimentacaoException;
+import org.sales.medsales.negocio.movimentacao.EstoqueFacade;
 
-public class ProdutoFacadeTest extends OnServerBaseTest {
+public class ProdutoFacadeTest extends InServerBaseTest {
 
 	private static final double PRECO_10 = 10D;
 
@@ -188,7 +189,7 @@ public class ProdutoFacadeTest extends OnServerBaseTest {
 		entrada.setItens(Arrays.asList(item));
 		entrada.setStatus(Status.CONCLUIDO);
 
-		estoqueFacade.cadastrarEntrada(entrada);
+		estoqueFacade.cadastrar(entrada);
 
 		getEm().clear();
 

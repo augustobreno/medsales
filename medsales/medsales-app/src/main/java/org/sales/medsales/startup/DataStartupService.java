@@ -27,9 +27,9 @@ import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.dominio.movimentacao.Entrada;
 import org.sales.medsales.dominio.movimentacao.Status;
-import org.sales.medsales.negocio.EstoqueFacade;
 import org.sales.medsales.negocio.ParceiroFacade;
 import org.sales.medsales.negocio.ProdutoFacade;
+import org.sales.medsales.negocio.movimentacao.EstoqueFacade;
 
 /**
  * Carrega dados iniciais para testes do sistema. 
@@ -89,7 +89,7 @@ public class DataStartupService {
     		entrada.setDataMovimentacao(new Date());
 			entrada.setParceiro(parceiros.get(i));
 			entrada.setStatus(Status.CONCLUIDO);
-    		estoqueFacade.cadastrarEntrada(entrada);
+    		estoqueFacade.cadastrar(entrada);
     	}
     	
 		
