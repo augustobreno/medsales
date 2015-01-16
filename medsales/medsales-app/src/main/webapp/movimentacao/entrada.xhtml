@@ -32,9 +32,9 @@ function limparCampoProduto() {
 }
 
 </script>
-		<h:outputFormat value="Esta entrada foi marcada como {0} em {1} " rendered="#{entradaAction.entrada.id != null}">
-			<f:param value="#{entradaAction.entrada.status.descricao.toUpperCase()}" />
-			<f:param value="#{entradaAction.entrada.dataAlteracao}" />
+		<h:outputFormat value="Esta entrada foi marcada como {0} em {1} " rendered="#{entradaAction.movimentacao.id != null}">
+			<f:param value="#{entradaAction.movimentacao.status.descricao.toUpperCase()}" />
+			<f:param value="#{entradaAction.movimentacao.dataAlteracao}" />
 		</h:outputFormat>
 		<h:form id="itemForm">
 			<p:panelGrid id="itemGrid" columns="3" layout="grid" columnClasses="labels_col1">
@@ -97,13 +97,13 @@ function limparCampoProduto() {
 
 			<p:panelGrid columns="3" layout="grid" columnClasses="labels_col1">
 				<p:outputLabel value="Parceiro/Vendedor:" for="parceiro" />
-				<p:autoComplete id="parceiro" value="#{entradaAction.entrada.parceiro}" minQueryLength="2"
+				<p:autoComplete id="parceiro" value="#{entradaAction.movimentacao.parceiro}" minQueryLength="2"
 					title="Onde o produto foi comprado?" completeMethod="#{entradaAction.searchParceiros}" var="parceiro"
 					itemLabel="#{parceiro.nome}" itemValue="#{parceiro}" forceSelection="true" dropdown="true" required="true" />
 				<p:message for="parceiro" />
 
 				<p:outputLabel value="Data da Entrada:" for="dtentrada" />
-				<p:calendar id="dtentrada" value="#{entradaAction.entrada.dataMovimentacao}" pattern="dd/MM/yyyy" mask="true"
+				<p:calendar id="dtentrada" value="#{entradaAction.movimentacao.dataMovimentacao}" pattern="dd/MM/yyyy" mask="true"
 					showOn="button" required="true" />
 				<p:message for="dtentrada" />
 

@@ -14,5 +14,9 @@ public class Entrada extends MovimentacaoEstoque {
 	protected void defineOperacao() {
 		setOperacao(Operacao.ENTRADA);
 	}
-	
+
+	@Override
+	public String getLabel() {
+		return "Entrada";
+	}
 }

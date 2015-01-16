@@ -30,4 +30,8 @@ public class Saida extends MovimentacaoEstoque {
 		this.desconto = desconto;
 	}
 
+	@Override
+	public String getLabel() {
+		return "Saída";
+	}
 }

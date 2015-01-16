@@ -124,4 +124,9 @@ public abstract class MovimentacaoEstoque extends EntityBase<Long> {
 		this.dataMovimentacao = dataMovimentacao;
 	}
 	
+	/**
+	 * Label para apresentação do tipo da movimentação.
+	 */
+	public abstract String getLabel();
+	
 }
