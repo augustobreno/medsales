@@ -113,13 +113,13 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentacaoEstoqu
 	public List<Produto> searchProdutos(String chave) {
 		
 		/*
-		 * Consultando apenas 20 produtos para otimização
+		 * Consultando apenas 15 produtos para otimização
 		 */
 		Filter<Produto> filter = new QBEFilter<Produto>(new Produto());
 		filter.getExample().setNome(chave);
 		filter.getExample().setCodigoBarras(chave);
 		filter.setRootContainerType(ContainerType.OR);
-		filter.paginate(0, 20);
+		filter.paginate(0, 15);
 		List<Produto> produtos = produtoFacade.findAllBy(filter);
 
 		/*
@@ -216,7 +216,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentacaoEstoqu
 	}
 	
 	/**
-	 * Operação para persistir os dados da movimentação
+	 * Operação para conduzir a persistência dos dados da movimentação.
 	 */
 	protected void salvarMovimentacao() {
 		// transferindo os itens cadastrados para a movimentação.
@@ -235,7 +235,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentacaoEstoqu
 	 */
 	public void salvarRacunho() {
 		getMovimentacao().setStatus(Status.RASCUNHO);
-		salvar();
+		salvarMovimentacao();
 		showInfoMessage("A {0} foi salva como RASCUNHO, e não constará na contabilidade do estoque.", getMovimentacao().getLabel());		
 	}
 	
