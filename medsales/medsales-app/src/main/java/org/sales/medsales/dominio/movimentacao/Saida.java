@@ -34,4 +34,5 @@ public class Saida extends MovimentacaoEstoque {
 	public String getLabel() {
 		return "Saída";
 	}
+	
 }

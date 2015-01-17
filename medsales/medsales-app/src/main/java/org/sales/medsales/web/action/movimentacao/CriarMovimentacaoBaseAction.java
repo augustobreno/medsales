@@ -1,5 +1,6 @@
 package org.sales.medsales.web.action.movimentacao;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -277,6 +278,23 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentacaoEstoqu
 			itemPrecos.add(new ItemPreco(item, precoProduto));
 		}
 		return itemPrecos;
+	}
+	
+	/**
+	 * @return A soma dos valores dos itens acumulados nesta movimentação.
+	 */
+	public BigDecimal getValorTotalItens() {
+		
+		BigDecimal soma = BigDecimal.ZERO;
+		if (itens != null) {
+			for (ItemPreco itemPreco : itens) {
+				Integer quantidade = itemPreco.getItem().getQuantidade();
+				BigDecimal valor = itemPreco.getPreco().getValor();
+				soma = soma.add(valor.multiply(new BigDecimal(quantidade)));
+			}
+		}
+		
+		return soma;
 	}
 	
 	public MOV getMovimentacao() {

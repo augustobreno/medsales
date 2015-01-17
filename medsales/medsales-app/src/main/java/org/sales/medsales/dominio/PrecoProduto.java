@@ -9,6 +9,7 @@ import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
 
 import org.sales.medsales.api.dominio.EntityBase;
+import org.sales.medsales.util.CalculosUtil;
 
 /**
  * O preço de um produto pode variar com o tempo. Esta entidade 
@@ -61,5 +62,13 @@ public class PrecoProduto extends EntityBase<Long> {
 	public void setValidoEm(Date validoEm) {
 		this.validoEm = validoEm;
 	}
-	
+
+	/**
+	 * Calcula o valor final deste produto aplicando um desconto.
+	 * @param desconto Desconto a ser aplicado no valor deste produto.
+	 * @return Valor final com desconto aplicado.
+	 */
+	public BigDecimal getValorComDesconto(double desconto) {
+		return CalculosUtil.aplicarDesconto(this.valor, desconto);
+	}
 }

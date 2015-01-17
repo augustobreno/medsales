@@ -56,9 +56,11 @@ function limparCampoProduto() {
 			</p:panelGrid>
 
 			<p:spacer />
+		</h:form>
 
+		<h:form id="listForm">
 			<p:dataTable id="itemList" value="#{saidaAction.itens}" var="itemPreco" emptyMessage="Nenhum Item cadastrado."
-				rows="5" paginator="true">
+				rows="5" paginator="true" paginatorPosition="bottom">
 
 				<f:facet name="header">
     				Itens        
@@ -77,23 +79,65 @@ function limparCampoProduto() {
 				</p:column>
 
 				<p:column headerText="R$ Un" style="text-align:right">
-					<h:outputText value="#{itemPreco.preco.valor}">
-						BigDecimalConverter
+					<h:outputText value="#{itemPreco.preco.valor}" >
+						<f:convertNumber type="currency" pattern="#,##0.00"/>
+					</h:outputText>
+				</p:column>
+
+				<p:column headerText="R$ Desconto" style="text-align:right">
+					<h:outputText value="#{itemPreco.preco.getValorComDesconto(saidaAction.movimentacao.desconto)}">
+						<f:convertNumber type="currency" pattern="#,##0.00"/>
 					</h:outputText>
 				</p:column>
 
 				<p:column headerText="R$ Total" style="text-align:right">
-					<h:outputText value="#{itemPreco.preco.valor * itemPreco.item.quantidade}">
-						BigDecimalConverter
+					<h:outputText
+						value="#{itemPreco.preco.getValorComDesconto(saidaAction.movimentacao.desconto) * itemPreco.item.quantidade}">
+						<f:convertNumber type="currency" pattern="#,##0.00"/>
 					</h:outputText>
 				</p:column>
 			</p:dataTable>
 
 		</h:form>
 
-		<p:separator />
-
 		<h:form>
+
+			<p:panelGrid columns="3" style="float: right;">
+				<p:message for="desconto" />
+				<p:outputLabel value="Desconto: " for="desconto" />
+				<p:outputPanel>
+					<pe:inputNumber id="desconto" value="#{saidaAction.movimentacao.desconto}" symbol=" %" symbolPosition="suffix" />
+					<p:commandButton value="Aplicar" update=":content-panel" />
+				</p:outputPanel>
+
+				<h:outputText value="" />
+				<p:outputLabel value="Total da Nota: " for="total" />
+				<h:outputText id="total" value="#{saidaAction.valorTotalItens}" >
+					<f:convertNumber type="currency" pattern="R$ #,##0.00"/>
+				</h:outputText>
+				
+				<h:outputText value="" />
+				<p:outputLabel value="Descontos: " for="descontos" />
+				<h:outputText id="descontos" value="#{calculosUtil.calcularDesconto(saidaAction.valorTotalItens, saidaAction.movimentacao.desconto)}" >
+					<f:convertNumber type="currency" pattern="R$ #,##0.00"/>
+				</h:outputText>
+
+				<h:outputText value="" />
+				<p:outputLabel value="Valor Final: " for="vfinal" />
+				<h:outputText id="vfinal" value="#{calculosUtil.aplicarDesconto(saidaAction.valorTotalItens, saidaAction.movimentacao.desconto)}" converter="BigDecimalConverter" >
+					<f:convertNumber type="currency" pattern="R$ #,##0.00"/>
+				</h:outputText>
+
+			</p:panelGrid>
+
+
+		</h:form>
+
+		<br />
+		<br />
+		<p:separator style="display: block;" />
+
+		<h:form id="btnForm">
 
 			<p:panelGrid columns="3" layout="grid" columnClasses="labels_col1">
 				<p:outputLabel value="Parceiro/Vendedor:" for="parceiro" />
@@ -116,10 +160,10 @@ function limparCampoProduto() {
 
 			<p:commandButton value="Cancelar" immediate="true" action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" />
 
-			<p:splitButton value="Concluir" actionListener="#{saidaAction.concluir}"  icon="ui-icon-disk"
-						action="/movimentacao/movimentacoes.xhtml?faces-redirect=true">
-				<p:menuitem value="Salvar Como Rascunho" actionListener="#{saidaAction.salvarRacunho}" icon="ui-icon-disk" 
-						action="/movimentacao/movimentacoes.xhtml?faces-redirect=true"/>
+			<p:splitButton value="Concluir" actionListener="#{saidaAction.concluir}" icon="ui-icon-disk"
+				action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" update="btnForm">
+				<p:menuitem value="Salvar Como Rascunho" actionListener="#{saidaAction.salvarRacunho}" icon="ui-icon-disk"
+					action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" update="btnForm" />
 			</p:splitButton>
 
 		</h:form>

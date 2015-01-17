@@ -58,7 +58,7 @@ function limparCampoProduto() {
 			<p:spacer />
 
 			<p:dataTable id="itemList" value="#{entradaAction.itens}" var="itemPreco" emptyMessage="Nenhum Item cadastrado."
-				rows="5" paginator="true">
+				rows="5" paginator="true" paginatorPosition="bottom">
 
 				<f:facet name="header">
     				Itens        
@@ -93,7 +93,7 @@ function limparCampoProduto() {
 
 		<p:separator />
 
-		<h:form>
+		<h:form id="btnForm">
 
 			<p:panelGrid columns="3" layout="grid" columnClasses="labels_col1">
 				<p:outputLabel value="Parceiro/Vendedor:" for="parceiro" />
@@ -117,9 +117,9 @@ function limparCampoProduto() {
 			<p:commandButton value="Cancelar" immediate="true" action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" />
 
 			<p:splitButton value="Concluir" actionListener="#{entradaAction.concluir}"  icon="ui-icon-disk"
-						action="/movimentacao/movimentacoes.xhtml?faces-redirect=true">
+						action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" update="btnForm">
 				<p:menuitem value="Salvar Como Rascunho" actionListener="#{entradaAction.salvarRacunho}" icon="ui-icon-disk" 
-						action="/movimentacao/movimentacoes.xhtml?faces-redirect=true"/>
+						action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" update="btnForm"/>
 			</p:splitButton>
 
 		</h:form>
