@@ -46,7 +46,7 @@ public abstract class MovimentacaoEstoque extends EntityBase<Long> {
 	/**
 	 * Data oficial da movimentação.
 	 */
-	@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.TIMESTAMP)
 	@Column(nullable=false)
 	private Date dataMovimentacao;
 	

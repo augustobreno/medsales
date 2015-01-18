@@ -20,7 +20,7 @@ import javax.persistence.PersistenceUnit;
 import org.hibernate.SessionFactory;
 import org.hibernate.StatelessSession;
 import org.hibernate.Transaction;
-import org.sales.medsales.api.test.QuerierUtil;
+import org.sales.medsales.api.util.QuerierUtil;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.PrecoProduto;

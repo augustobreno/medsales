@@ -7,7 +7,7 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.easy.testeasy.dataloader.HibernateDataLoader;
-import org.sales.medsales.api.test.QuerierUtil;
+import org.sales.medsales.api.util.QuerierUtil;
 import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
 

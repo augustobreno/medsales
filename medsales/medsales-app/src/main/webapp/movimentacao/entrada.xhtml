@@ -114,12 +114,21 @@ function limparCampoProduto() {
 
 			<p:separator style="height:2px" />
 
-			<p:commandButton value="Cancelar" immediate="true" action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" />
+			<p:commandButton value="Voltar" immediate="true" action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" />
 
-			<p:splitButton value="Concluir" actionListener="#{entradaAction.concluir}"  icon="ui-icon-disk"
-						action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" update="btnForm">
-				<p:menuitem value="Salvar Como Rascunho" actionListener="#{entradaAction.salvarRacunho}" icon="ui-icon-disk" 
-						action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" update="btnForm"/>
+			<p:splitButton value="Concluir" actionListener="#{entradaAction.concluir}" icon="ui-icon-disk"
+				action="#{entradaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm">
+
+				<p:menuitem value="Salvar Como Rascunho" actionListener="#{entradaAction.salvarRacunho}" icon="ui-icon-disk"
+					action="#{entradaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm" />
+
+				<p:menuitem value="Concluir e Gerar Saída" actionListener="#{entradaAction.concluirGerarSaida()}"
+					icon="ui-icon-disk" action="#{entradaAction.redirectIfNoError('saida.xhtml?lid='.concat(entradaAction.saidaGerada.id))}" update="btnForm"
+					rendered="#{empty entradaAction.movimentacao.id}" />
+
+				<p:menuitem value="Gerar Saída" actionListener="#{entradaAction.gerarSaida()}"
+					icon="ui-icon-disk" action="#{entradaAction.redirectIfNoError('saida.xhtml?lid='.concat(entradaAction.saidaGerada.id))}" update="btnForm"
+					rendered="#{not empty entradaAction.movimentacao.id}" />
 			</p:splitButton>
 
 		</h:form>

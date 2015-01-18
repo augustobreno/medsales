@@ -33,6 +33,9 @@ public class EstoqueFacade implements ServerPaginationFacade<MovimentacaoEstoque
 	private SaidaBO saidaBO;
 	
 	@Inject
+	private GerarSaidaBO gerarSaidaBO;
+	
+	@Inject
 	private EstoqueRepository estoqueRepository;
 	
 	/**
@@ -48,6 +51,14 @@ public class EstoqueFacade implements ServerPaginationFacade<MovimentacaoEstoque
 	 */
 	public void cadastrar(Saida saida) {
 		saidaBO.cadastrar(saida);
+	}
+	
+	/**
+	 * Cria uma saída a partir de uma entrada pré-cadastrada. A saída será criada no modo Rascunho.
+	 * @param idEntrada
+	 */
+	public Saida gerarSaida(Long idEntrada) {
+		return gerarSaidaBO.gerar(idEntrada);
 	}
 	
 	/**

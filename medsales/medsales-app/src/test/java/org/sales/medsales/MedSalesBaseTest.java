@@ -1,15 +1,12 @@
-package org.sales.medsales.api.test;
+package org.sales.medsales;
 
 import java.io.File;
 
 import javax.inject.Inject;
-import javax.persistence.EntityManager;
 
+import org.easy.testeasy.DeployableBaseTest;
 import org.eu.ingwar.tools.arquillian.extension.suite.annotations.ArquillianSuiteDeployment;
 import org.jboss.arquillian.container.test.api.Deployment;
-import org.jboss.arquillian.junit.Arquillian;
-import org.jboss.arquillian.transaction.api.annotation.TransactionMode;
-import org.jboss.arquillian.transaction.api.annotation.Transactional;
 import org.jboss.shrinkwrap.api.Archive;
 import org.jboss.shrinkwrap.api.ArchivePath;
 import org.jboss.shrinkwrap.api.Filter;
@@ -18,7 +15,7 @@ import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.jboss.shrinkwrap.resolver.api.maven.Maven;
 import org.jboss.shrinkwrap.resolver.api.maven.PomEquippedResolveStage;
 import org.jboss.shrinkwrap.resolver.api.maven.ScopeType;
-import org.junit.runner.RunWith;
+import org.sales.medsales.api.util.QuerierUtil;
 
 /**
  * Classe base para testes realizados no servidor de aplicação.
@@ -28,20 +25,13 @@ import org.junit.runner.RunWith;
  * @author Augusto
  *
  */
-@RunWith(Arquillian.class)
-@Transactional(value=TransactionMode.ROLLBACK)
 @ArquillianSuiteDeployment // garante a reutilização do @Deployment entre as classes de teste
-public class InServerBaseTest {
+public class MedSalesBaseTest extends DeployableBaseTest {
 
 	private static final String ORG_SALES_MEDSALES = "org/sales/medsales";
 	
 	private static final String ORG_SALES_MEDSALES_API_SHORT = "orgsalesmedsalesapi";
 
-	/**
-	 * EM para acesso direto à base
-	 */
-	@Inject
-	private EntityManager em;
 	
 	@Inject
 	private QuerierUtil querierUtil;
@@ -79,25 +69,6 @@ public class InServerBaseTest {
 		};
 	}
 
-	/**
-     * Provoca uma pausa na execução da thread corrente.
-     * @param time Tempo em ms de pausa. 
-     */
-    protected void sleep(int time) {
-    	try {
-			Thread.sleep(100);
-		} catch (InterruptedException e) {
-			throw new RuntimeException("Não foi possível fazer a thread dormir.", e);
-		}
-	}
-
-	protected EntityManager getEm() {
-		return em;
-	}
-
-	protected void setEm(EntityManager em) {
-		this.em = em;
-	}
 
 	protected QuerierUtil getQuerierUtil() {
 		return querierUtil;

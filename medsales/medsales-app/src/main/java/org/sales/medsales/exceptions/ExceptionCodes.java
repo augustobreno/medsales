@@ -8,7 +8,7 @@ package org.sales.medsales.exceptions;
 public interface ExceptionCodes {
 
 	/**
-	 * Códigos das exceções relacionadas à saída do estoque.
+	 * Códigos das exceções relacionadas às movimentações do estoque.
 	 */
 	public interface MOVIMENTACAO {
 		/** É necessário informar uma saída */
@@ -16,5 +16,10 @@ public interface ExceptionCodes {
 		
 		/** É obrigatória a configuração do tipo da operação */
 		public static final String OPERACAO_REQUIRED = "MOVIMENTACAO002"; 
+	}
+	
+	public interface SAIDA {
+		/** É necessário informar o código da Entrada */
+		public static final String GERAR_SAIDA_ENTRADA_REQUIRED = "GERARSAIDA001";		
 	}
 }

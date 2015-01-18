@@ -8,11 +8,6 @@
 
 	<web>
 		<link target="/">
-			<dir name="F:/desenv/workspaces/pessoal/medsales/medsales/medsales-app/target/m2e-wtp/web-resources">
-				<exclude name="/"/>
-			</dir>
-		</link>
-		<link target="/">
 			<dir name="F:/desenv/workspaces/pessoal/medsales/medsales/medsales-app/src/main/webapp">
 			</dir>
 		</link>

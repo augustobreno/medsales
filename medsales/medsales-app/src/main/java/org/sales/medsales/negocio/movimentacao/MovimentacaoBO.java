@@ -1,6 +1,7 @@
 package org.sales.medsales.negocio.movimentacao;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.inject.Inject;
 
@@ -26,6 +27,10 @@ public abstract class MovimentacaoBO implements Serializable {
 	 */
 	public void cadastrar(MovimentacaoEstoque movimentacao) {
 		validarCadastrar(movimentacao);
+		
+		if (movimentacao.getDataMovimentacao() == null) {
+			movimentacao.setDataMovimentacao(new Date());
+		}
 		
 		if (movimentacao.getId() == null) {
 			estoqueRepository.insert(movimentacao);

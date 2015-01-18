@@ -5,11 +5,11 @@ import javax.inject.Inject;
 import junit.framework.Assert;
 
 import org.junit.Test;
+import org.sales.medsales.MedSalesBaseTest;
 import org.sales.medsales.api.exceptions.AlreadyRegisteredException;
-import org.sales.medsales.api.test.InServerBaseTest;
 import org.sales.medsales.dominio.Parceiro;
 
-public class ClienteFacadeTest extends InServerBaseTest {
+public class ClienteFacadeTest extends MedSalesBaseTest {
 
 	@Inject
 	private ParceiroFacade clienteFacade;

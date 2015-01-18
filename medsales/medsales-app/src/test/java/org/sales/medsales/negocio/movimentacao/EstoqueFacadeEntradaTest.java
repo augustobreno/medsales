@@ -9,8 +9,8 @@ import junit.framework.Assert;
 
 import org.easy.testeasy.dataloader.LoadData;
 import org.junit.Test;
+import org.sales.medsales.MedSalesBaseTest;
 import org.sales.medsales.api.exceptions.NullParameterException;
-import org.sales.medsales.api.test.InServerBaseTest;
 import org.sales.medsales.dataLoader.PrecoProdutoDataLoader;
 import org.sales.medsales.dataLoader.ProdutosDataLoader;
 import org.sales.medsales.dominio.Item;
@@ -20,7 +20,7 @@ import org.sales.medsales.dominio.movimentacao.Status;
 import org.sales.medsales.exceptions.MovimentacaoSemItensException;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 
-public class EstoqueFacadeEntradaTest extends InServerBaseTest {
+public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
 
 	@Inject
 	private EstoqueFacade estoqueFacade;
@@ -131,14 +131,6 @@ public class EstoqueFacadeEntradaTest extends InServerBaseTest {
     	// verifica se os dados foram inseridos
     	Assert.assertEquals(1L, getQuerierUtil().count(Entrada.class).longValue());
     	Assert.assertEquals(1L, getQuerierUtil().count(Item.class).longValue());
-    	
-    }
-    
-    /**
-     * Testa o cadastro de uma entrada com status = rascunho.
-     */
-    @Test
-    public void cadastrarEntradaRascunho() {
     	
     }
     

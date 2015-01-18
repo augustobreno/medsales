@@ -12,7 +12,7 @@ import junit.framework.Assert;
 
 import org.apache.commons.lang.time.DateUtils;
 import org.junit.Test;
-import org.sales.medsales.api.test.InServerBaseTest;
+import org.sales.medsales.MedSalesBaseTest;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
@@ -23,7 +23,7 @@ import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 import org.sales.medsales.exceptions.RemoverProdutoComMovimentacaoException;
 import org.sales.medsales.negocio.movimentacao.EstoqueFacade;
 
-public class ProdutoFacadeTest extends InServerBaseTest {
+public class ProdutoFacadeTest extends MedSalesBaseTest {
 
 	private static final double PRECO_10 = 10D;
 

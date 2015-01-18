@@ -1,12 +1,10 @@
-package org.sales.medsales.api.test;
+package org.sales.medsales.api.util;
 
 import java.util.List;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-
-import org.sales.medsales.api.dominio.Entity;
 
 /**
  * Oferece operações genéricas de consulta para testes unitários.
@@ -17,13 +15,21 @@ public class QuerierUtil {
 
 	@Inject
 	private EntityManager em;
+
+	/**
+	 * @param type Tipo da entidade a ser retornada.
+	 * @return Qualquer entidade do tipo informado.
+	 */
+	public <T> T find(Class<T> type, Object id) {
+		return (T) getEm().find(type, id);
+	}	
 	
 	/**
 	 * @param type Tipo da entidade a ser retornada.
 	 * @return Qualquer entidade do tipo informado.
 	 */
 	@SuppressWarnings("unchecked")
-	public <T extends Entity<?>> T findAny(Class<T> type) {
+	public <T> T findAny(Class<T> type) {
 		Query query = getEm().createQuery("from " + type.getSimpleName());
 		query.setMaxResults(1);
 		return (T) query.getSingleResult();
@@ -35,7 +41,7 @@ public class QuerierUtil {
 	 * @return Qualquer entidade do tipo informado.
 	 */
 	@SuppressWarnings("unchecked")
-	public <T extends Entity<?>> T findAt(Class<T> type, int position) {
+	public <T> T findAt(Class<T> type, int position) {
 		Query query = getEm().createQuery("from " + type.getSimpleName());
 		query.setMaxResults(1);
 		query.setFirstResult(position);
@@ -47,7 +53,7 @@ public class QuerierUtil {
 	 * @return Todas os objetos do tipo informado.
 	 */
 	@SuppressWarnings("unchecked")
-	public <T extends Entity<?>> List<T> findAll(Class<T> type) {
+	public <T> List<T> findAll(Class<T> type) {
 		Query query = getEm().createQuery("from " + type.getSimpleName());
 		return query.getResultList();
 	}
@@ -57,7 +63,7 @@ public class QuerierUtil {
 	 * @param type TIpo da entidade a ser consultada.
 	 * @return Número total de registros encontrados na base de dados.
 	 */
-	public <T extends Entity<?>> Long count(Class<T> type) {
+	public <T> Long count(Class<T> type) {
 		return (Long) getEm().createQuery("select count(e) from " + type.getSimpleName() + " e ").getSingleResult();
 	}
 	
