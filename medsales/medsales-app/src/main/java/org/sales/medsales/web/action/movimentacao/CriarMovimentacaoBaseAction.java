@@ -296,6 +296,14 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentacaoEstoqu
 		
 		return soma;
 	}
+
+	/**
+	 * Remove a a movimentação.
+	 */
+	public void remover() { 
+		estoqueFacade.remover(getMovimentacao());
+		showInfoMessage("A {0} com código {1} foi excluída com sucesso.", getMovimentacao().getLabel(), getMovimentacao().getId());
+	}
 	
 	public MOV getMovimentacao() {
 		return movimentacao;

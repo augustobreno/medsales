@@ -54,11 +54,15 @@ function limparCampoProduto() {
 				<p:commandButton value="Adicionar" action="#{entradaAction.adicionarItem}" update=":content-panel"
 					process="@this quantidade produto" />
 			</p:panelGrid>
-
-			<p:spacer />
-
+		</h:form>
+		
+		<p:spacer />
+		
+		<h:form id="listForm">
 			<p:dataTable id="itemList" value="#{entradaAction.itens}" var="itemPreco" emptyMessage="Nenhum Item cadastrado."
-				rows="5" paginator="true" paginatorPosition="bottom">
+				rows="5" paginator="true" paginatorPosition="bottom" editable="true" editMode="cell">
+
+				<p:ajax event="cellEdit" update=":content-panel" listener="#{entradaAction.dummy()}"/> 
 
 				<f:facet name="header">
     				Itens        
@@ -73,7 +77,14 @@ function limparCampoProduto() {
 				</p:column>
 
 				<p:column headerText="Quantidade" style="text-align:center">
-					<h:outputText value="#{itemPreco.item.quantidade}" />
+					<p:cellEditor>
+						<f:facet name="output">
+							<h:outputText value="#{itemPreco.item.quantidade}" />
+						</f:facet>
+						<f:facet name="input">
+							<p:spinner value="#{itemPreco.item.quantidade}" min="0"/>
+						</f:facet>
+					</p:cellEditor>
 				</p:column>
 
 				<p:column headerText="R$ Un" style="text-align:right">
@@ -83,10 +94,11 @@ function limparCampoProduto() {
 				</p:column>
 
 				<p:column headerText="R$ Total" style="text-align:right">
-					<h:outputText value="#{itemPreco.preco.valor * itemPreco.item.quantidade}">
+					<h:outputText id="precoTotal" value="#{itemPreco.preco.valor * itemPreco.item.quantidade}">
 						BigDecimalConverter
 					</h:outputText>
 				</p:column>
+
 			</p:dataTable>
 
 		</h:form>
@@ -114,23 +126,50 @@ function limparCampoProduto() {
 
 			<p:separator style="height:2px" />
 
-			<p:commandButton value="Voltar" immediate="true" action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" />
+			<div style="text-align: right">
 
-			<p:splitButton value="Concluir" actionListener="#{entradaAction.concluir}" icon="ui-icon-disk"
-				action="#{entradaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm">
+				<p:commandButton value="Voltar" immediate="true" action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" />
 
-				<p:menuitem value="Salvar Como Rascunho" actionListener="#{entradaAction.salvarRacunho}" icon="ui-icon-disk"
-					action="#{entradaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm" />
+				<p:splitButton value="Concluir" actionListener="#{entradaAction.concluir}" icon="ui-icon-disk"
+					action="#{entradaAction.redirectIfNoError('movimentacoes.xhtml')}" update="btnForm">
 
-				<p:menuitem value="Concluir e Gerar Saída" actionListener="#{entradaAction.concluirGerarSaida()}"
-					icon="ui-icon-disk" action="#{entradaAction.redirectIfNoError('saida.xhtml?lid='.concat(entradaAction.saidaGerada.id))}" update="btnForm"
-					rendered="#{empty entradaAction.movimentacao.id}" />
+					<p:menuitem value="Salvar Como Rascunho" actionListener="#{entradaAction.salvarRacunho}" icon="ui-icon-disk"
+						action="#{entradaAction.redirectIfNoError('movimentacoes.xhtml')}" update="btnForm" />
 
-				<p:menuitem value="Gerar Saída" actionListener="#{entradaAction.gerarSaida()}"
-					icon="ui-icon-disk" action="#{entradaAction.redirectIfNoError('saida.xhtml?lid='.concat(entradaAction.saidaGerada.id))}" update="btnForm"
-					rendered="#{not empty entradaAction.movimentacao.id}" />
-			</p:splitButton>
+					<p:menuitem value="Concluir e Gerar Saída" actionListener="#{entradaAction.concluirGerarSaida()}"
+						icon="ui-icon-disk"
+						action="#{entradaAction.redirectIfNoError('saida.xhtml?lid='.concat(entradaAction.saidaGerada.id))}"
+						update="btnForm" rendered="#{empty entradaAction.movimentacao.id}" />
 
+					<p:menuitem value="Gerar Saída" actionListener="#{entradaAction.gerarSaida()}" icon="ui-icon-disk"
+						action="#{entradaAction.redirectIfNoError('saida.xhtml?lid='.concat(entradaAction.saidaGerada.id))}"
+						update="btnForm" rendered="#{not empty entradaAction.movimentacao.id}" />
+
+					<p:separator />
+
+					<p:menuitem id="itemExcluir" value="Excluir" icon="ui-icon-trash"
+						onclick="$('#btnForm\\:btnRemove').click();return;" />
+
+				</p:splitButton>
+
+				<!-- Este botão escondido foi necessário porque não foi possível utilizar um diálogo com o p:menuitem acima. -->
+				<p:commandButton id="btnRemove" value="DELETE" actionListener="#{entradaAction.remover()}"
+					action="#{entradaAction.redirectIfNoError('movimentacoes.xhtml')}" update="btnForm"
+					rendered="#{not empty entradaAction.movimentacao.id}" immediate="true" style="display:none;">
+
+					<p:confirm header="Atenção!"
+						message="Deseja realmente REMOVER esta Entrada? Não será possível recuperar suas informações."
+						icon="ui-icon-alert" />
+
+				</p:commandButton>
+
+
+				<p:confirmDialog global="true">
+					<p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+					<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+				</p:confirmDialog>
+
+			</div>
 		</h:form>
 	</ui:define>
 </ui:composition>

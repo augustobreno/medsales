@@ -62,6 +62,14 @@ public class EstoqueFacade implements ServerPaginationFacade<MovimentacaoEstoque
 	}
 	
 	/**
+	 * Remove uma movimentação da base de dados.
+	 * @param movimentacao A ser removida.
+	 */
+	public void remover(MovimentacaoEstoque movimentacao) {
+		estoqueRepository.remove(movimentacao);
+	}
+	
+	/**
 	 * @param filter Filtro para consulta.
 	 * @return Todos os registros alcançados pelo filtro.
 	 */

@@ -161,15 +161,40 @@ function limparCampoProduto() {
 
 			<p:separator style="height:2px" />
 
-			<p:commandButton value="Voltar" immediate="true" action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" />
+			<div style="text-align: right">
 
-			<p:splitButton value="Concluir" actionListener="#{saidaAction.concluir}" icon="ui-icon-disk"
-				action="#{entradaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm">
-				
-				<p:menuitem value="Salvar Como Rascunho" actionListener="#{saidaAction.salvarRacunho}" icon="ui-icon-disk"
-					action="#{entradaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm" />
+				<p:commandButton value="Voltar" immediate="true" action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" />
+
+				<p:splitButton value="Concluir" actionListener="#{saidaAction.concluir}" icon="ui-icon-disk"
+					action="#{saidaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm">
+
+					<p:menuitem value="Salvar Como Rascunho" actionListener="#{saidaAction.salvarRacunho}" icon="ui-icon-disk"
+						action="#{saidaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm" />
+
+					<p:separator />
 					
-			</p:splitButton>
+					<p:menuitem id="itemExcluir" value="Excluir" icon="ui-icon-trash" onclick="$('#btnForm\\:btnRemove').click();return;"/>
+
+				</p:splitButton>
+
+				<!-- Este botão escondido foi necessário porque não foi possível utilizar um diálogo com o p:menuitem acima. -->
+				<p:commandButton id="btnRemove" value="DELETE" actionListener="#{saidaAction.remover()}"
+					action="#{saidaAction.redirectIfNoError('movimentacoes.xhtml')}" update="btnForm"
+					rendered="#{not empty saidaAction.movimentacao.id}" immediate="true" style="display:none;">
+
+					<p:confirm header="Atenção!"
+						message="Deseja realmente REMOVER esta Saída Não será possível recuperar suas informações."
+						icon="ui-icon-alert" />
+
+				</p:commandButton>
+
+
+				<p:confirmDialog global="true">
+					<p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+					<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+				</p:confirmDialog>
+
+			</div>
 
 		</h:form>
 	</ui:define>

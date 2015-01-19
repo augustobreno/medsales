@@ -53,6 +53,13 @@ public class ActionBase implements Serializable {
 			FacesContext.getCurrentInstance().getExternalContext().redirect(page);
 		}
 	}
+	
+	/**
+	 * Método que não faz nada para simular uma chamada a um action.
+	 */
+	public void dummy() {
+		// faz nada
+	}
 
 	/**
 	 * Exibe mensagem de informação na tela.

@@ -134,4 +134,40 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	
     }
     
+	/**
+	 * testa a remoção de uma entrada.
+	 */
+    @Test
+    public void removerEntrada() throws Exception {
+    	// workaround enquanto interceptor + arquillian continua um mistério
+    	produtosDataLoader.load();
+    	precoProdutoDataLoader.load();
+    	
+    	Entrada entrada = new Entrada();
+    	entrada.setDataMovimentacao(new Date());
+    	
+    	Item item = new Item();
+    	item.setProduto(getQuerierUtil().findAny(Produto.class));
+    	item.setQuantidade(10);
+    	item.setMovimentacaoEstoque(entrada);
+    	
+    	entrada.setItens(Arrays.asList(item));
+    	entrada.setStatus(Status.CONCLUIDO);
+    	
+    	estoqueFacade.cadastrar(entrada);
+    	
+    	getEm().clear();
+    	
+    	// confirma que os dados foram inseridos
+    	Assert.assertEquals(1L, getQuerierUtil().count(Entrada.class).longValue());
+    	Assert.assertEquals(1L, getQuerierUtil().count(Item.class).longValue());
+    	
+    	// remove a entrada e re-confere os dados
+    	estoqueFacade.remover(entrada);
+    	
+    	Assert.assertEquals(0L, getQuerierUtil().count(Entrada.class).longValue());
+    	Assert.assertEquals(0L, getQuerierUtil().count(Item.class).longValue());
+    	
+    }
+    
 }
