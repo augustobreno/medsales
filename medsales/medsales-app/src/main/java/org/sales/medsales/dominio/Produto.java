@@ -25,14 +25,17 @@ public class Produto extends EntityBase<Long> {
 	@Column(nullable=false)
 	private String codigoBarras;
 	
-	@OneToMany(fetch=FetchType.LAZY, mappedBy="produto")
-	private List<PrecoProduto> precos;
-	
 	/**
 	 * Descrição do produto.
 	 */
 	@Column(nullable=false)
 	private String nome;
+	
+	@OneToMany(fetch=FetchType.LAZY, mappedBy="produto")
+	private List<PrecoProduto> precos;
+	
+	@OneToMany(fetch=FetchType.LAZY, mappedBy="produto")
+	private List<Item> itens;
 	
 	public String getCodigoBarras() {
 		return codigoBarras;

@@ -9,6 +9,8 @@ import javax.inject.Inject;
 import org.easy.qbeasy.api.Filter;
 import org.sales.medsales.api.negocio.BusinessExceptionHandler;
 import org.sales.medsales.api.negocio.ServerPaginationFacade;
+import org.sales.medsales.dominio.SaldoProdutoVO;
+import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.dominio.movimentacao.Entrada;
 import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
 import org.sales.medsales.dominio.movimentacao.Saida;
@@ -34,6 +36,9 @@ public class EstoqueFacade implements ServerPaginationFacade<MovimentacaoEstoque
 	
 	@Inject
 	private GerarSaidaBO gerarSaidaBO;
+	
+	@Inject
+	private SaldoEstoqueBO saldoEstoqueBO;
 	
 	@Inject
 	private EstoqueRepository estoqueRepository;
@@ -93,4 +98,22 @@ public class EstoqueFacade implements ServerPaginationFacade<MovimentacaoEstoque
     public MovimentacaoEstoque findBy(Filter<MovimentacaoEstoque> filter) {
         return estoqueRepository.findBy(filter);
     }
+
+    /**
+     * Consulta o saldo em estoque de um determinado produto.
+     * @param produto Produto para consulta do saldo.
+     * @return Saldo existente em estoque.
+     */
+	public SaldoProdutoVO consultarEstoque(Produto produto) {
+		return saldoEstoqueBO.consultar(produto); 
+	}
+	
+    /**
+     * Consulta o saldo em estoque de alguns produtos.
+     * @param produtos Produto para consulta do saldo.
+     * @return Lista com saldos existentes em estoque.
+     */
+	public List<SaldoProdutoVO> consultarEstoque(Produto...produtos) {
+		return saldoEstoqueBO.consultar(produtos); 
+	}
 }

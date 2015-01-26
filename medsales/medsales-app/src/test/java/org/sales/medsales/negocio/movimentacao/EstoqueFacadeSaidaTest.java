@@ -92,15 +92,15 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	produtosDataLoader.load();
     	
     	// garante o estado anterior da base de dados
-    	Assert.assertEquals(0L, getQuerierUtil().count(Saida.class).longValue());
-    	Assert.assertEquals(0L, getQuerierUtil().count(Item.class).longValue());
+    	Assert.assertEquals(0L, getQuerier().count(Saida.class).longValue());
+    	Assert.assertEquals(0L, getQuerier().count(Item.class).longValue());
     	
     	
     	Saida saida = new Saida();
     	saida.setDataMovimentacao(new Date());
     	
     	Item item = new Item();
-    	item.setProduto(getQuerierUtil().findAny(Produto.class));
+    	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
     	item.setMovimentacaoEstoque(saida);
     	
@@ -112,8 +112,8 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	getEm().clear();
     	
     	// verifica se os dados foram inseridos
-    	Assert.assertEquals(1L, getQuerierUtil().count(Saida.class).longValue());
-    	Assert.assertEquals(1L, getQuerierUtil().count(Item.class).longValue());
+    	Assert.assertEquals(1L, getQuerier().count(Saida.class).longValue());
+    	Assert.assertEquals(1L, getQuerier().count(Item.class).longValue());
     	
     }
 
@@ -138,7 +138,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	Long idInexistente = 9999999L;
     	
     	// se certificando de que não existe uma entrada com este ID
-    	MovimentacaoEstoque entradaInexistente = getQuerierUtil().find(MovimentacaoEstoque.class, idInexistente);
+    	MovimentacaoEstoque entradaInexistente = getQuerier().find(MovimentacaoEstoque.class, idInexistente);
     	Assert.assertNull(entradaInexistente);
     	
     	estoqueFacade.gerarSaida(idInexistente);
@@ -211,7 +211,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	List<Item> itens = new ArrayList<Item>();
     	for (int i = 0; i < 5; i++) {
     		Item item = new Item();
-        	item.setProduto(getQuerierUtil().findAt(Produto.class, i));
+        	item.setProduto(getQuerier().findAt(Produto.class, i));
         	item.setQuantidade(10);
         	item.setMovimentacaoEstoque(entrada);
         	

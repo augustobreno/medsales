@@ -5,12 +5,20 @@ import java.io.File;
 import javax.inject.Inject;
 
 import org.easy.testeasy.DeployableBaseTest;
+import org.easy.testeasy.arquillian.extension.dataloader.ArquillianDataLoaderExtension;
+import org.easy.testeasy.dataloader.DataLoader;
+import org.easy.testeasy.dataloader.HibernateDataLoader;
+import org.easy.testeasy.dataloader.LoadData;
+import org.easy.testeasy.dataloader.LoadDatas;
+import org.easy.testeasy.dataloader.SqlDataLoader;
 import org.eu.ingwar.tools.arquillian.extension.suite.annotations.ArquillianSuiteDeployment;
 import org.jboss.arquillian.container.test.api.Deployment;
+import org.jboss.arquillian.container.test.spi.RemoteLoadableExtension;
 import org.jboss.shrinkwrap.api.Archive;
 import org.jboss.shrinkwrap.api.ArchivePath;
 import org.jboss.shrinkwrap.api.Filter;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
+import org.jboss.shrinkwrap.api.container.ManifestContainer;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.jboss.shrinkwrap.resolver.api.maven.Maven;
 import org.jboss.shrinkwrap.resolver.api.maven.PomEquippedResolveStage;
@@ -51,6 +59,8 @@ public class MedSalesBaseTest extends DeployableBaseTest {
             .addAsResource("test-persistence.xml", "META-INF/persistence.xml")
             .addAsWebInfResource("test-beans.xml", "beans.xml");
         
+        installDataLoaderExtension(war);
+        
         System.out.println(war.toString(true));
 		return war;
     }	
@@ -69,8 +79,25 @@ public class MedSalesBaseTest extends DeployableBaseTest {
 		};
 	}
 
+	/**
+	 * Instala a extensão do Arquillian que permite o funcionamento das soluções
+	 * de DataLoader.
+	 * 
+	 * @param archive
+	 *            Arquivo que receberá a ativação da extensão de Data Loader
+	 * 
+	 * @see LoadData
+	 * @see LoadDatas
+	 * @see DataLoader
+	 * @see HibernateDataLoader
+	 * @see SqlDataLoader
+	 */
+	public static void installDataLoaderExtension(ManifestContainer<?> archive) {
+		archive.addAsServiceProvider(RemoteLoadableExtension.class,
+				ArquillianDataLoaderExtension.class);
+	}
 
-	protected QuerierUtil getQuerierUtil() {
+	protected QuerierUtil getQuerier() {
 		return querierUtil;
 	}
 

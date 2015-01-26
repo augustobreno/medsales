@@ -1,37 +1,72 @@
 package org.sales.medsales.persistencia.repository;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.logging.Logger;
 
+import javax.inject.Inject;
 import javax.persistence.Query;
 
+import org.easy.qbeasy.util.EntityUtil;
 import org.sales.medsales.api.persistencia.repository.CrudRepositoryBase;
 import org.sales.medsales.dominio.Produto;
+import org.sales.medsales.dominio.SaldoProdutoVO;
 import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
-
+import org.sales.medsales.dominio.movimentacao.Operacao;
 
 public class EstoqueRepository extends CrudRepositoryBase<MovimentacaoEstoque, Long> {
 
+	@Inject
+	private Logger logger;
+
 	/**
-	 * @return true se todos os produtos informados tiverem pelo menos um
-	 * preço cadastrado.
+	 * @return true se todos os produtos informados tiverem pelo menos um preço
+	 *         cadastrado.
 	 */
-	public boolean temPrecosCadastrados(Produto...produtos) {
-		
+	public boolean temPrecosCadastrados(Produto... produtos) {
+
 		// montando uma lista com os IDs diferentes dos produtos
 		Set<Long> idProdutos = new HashSet<>();
 		for (Produto produto : produtos) {
 			idProdutos.add(produto.getId());
 		}
-		
+
 		// consultando os ids dos produtos com preços cadastrados
 		Query query = getEm().createQuery(
-				"   select count(distinct pp.produto.id) "
-				+ " from PrecoProduto pp "
-				+ " where pp.produto.id in (:idProdutos)");
+				"   select count(distinct pp.produto.id) " + " from PrecoProduto pp "
+						+ " where pp.produto.id in (:idProdutos)");
 		query.setParameter("idProdutos", idProdutos);
-		
+
 		Long numProdutosComPreco = (Long) query.getSingleResult();
 		return numProdutosComPreco == idProdutos.size();
 	}
+
+	/**
+	 * Consulta o saldo em estoque de alguns produtos.
+	 * 
+	 * @param produtos
+	 *            IDs dos produtos para consulta do saldo.
+	 * @return Saldo existente em estoque.
+	 */
+	public List<SaldoProdutoVO> consultarSaldo(Produto...produtos) {
+
+		// consultando os ids dos produtos com preços cadastrados
+		String saldoClassName = SaldoProdutoVO.class.getName();
+		Query query = getEm()
+				.createQuery(
+						" SELECT new "
+								+ saldoClassName
+								+ "(produto.id, SUM(case when mov.operacao = '"
+								+ Operacao.ENTRADA.getId()
+								+ "' then  item.quantidade else -item.quantidade end)) FROM Produto produto left join produto.itens item left join item.movimentacaoEstoque mov"
+								+ " WHERE produto.id in (:idProdutos) GROUP BY produto ");
+		query.setParameter("idProdutos", EntityUtil.getIds(produtos));
+
+		@SuppressWarnings("unchecked")
+		List<SaldoProdutoVO> saldos = query.getResultList();
+		return saldos;
+
+	}
+
 }

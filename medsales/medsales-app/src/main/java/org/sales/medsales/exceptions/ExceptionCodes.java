@@ -15,7 +15,10 @@ public interface ExceptionCodes {
 		public static final String MOVIMENTACAO_REQUIRED = "MOVIMENTACAO001";
 		
 		/** É obrigatória a configuração do tipo da operação */
-		public static final String OPERACAO_REQUIRED = "MOVIMENTACAO002"; 
+		public static final String OPERACAO_REQUIRED = "MOVIMENTACAO002";
+		
+		/** É obrigatória informação do produto para consulta do saldo */
+		public static final String SALDO_PRODUTO_REQUIRED = "MOVIMENTACAO003";
 	}
 	
 	public interface SAIDA {

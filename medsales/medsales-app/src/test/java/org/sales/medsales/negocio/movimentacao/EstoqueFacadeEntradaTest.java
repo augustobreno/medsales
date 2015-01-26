@@ -73,15 +73,15 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	produtosDataLoader.load();    	
     	
     	// garante o estado anterior da base de dados
-    	Assert.assertEquals(0L, getQuerierUtil().count(Entrada.class).longValue());
-    	Assert.assertEquals(0L, getQuerierUtil().count(Item.class).longValue());
+    	Assert.assertEquals(0L, getQuerier().count(Entrada.class).longValue());
+    	Assert.assertEquals(0L, getQuerier().count(Item.class).longValue());
     	
     	
     	Entrada entrada = new Entrada();
     	entrada.setDataMovimentacao(new Date());
     	
     	Item item = new Item();
-    	item.setProduto(getQuerierUtil().findAny(Produto.class));
+    	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
     	item.setMovimentacaoEstoque(entrada);
     	
@@ -93,8 +93,8 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	getEm().clear();
     	
     	// verifica se os dados foram inseridos
-    	Assert.assertEquals(1L, getQuerierUtil().count(Entrada.class).longValue());
-    	Assert.assertEquals(1L, getQuerierUtil().count(Item.class).longValue());
+    	Assert.assertEquals(1L, getQuerier().count(Entrada.class).longValue());
+    	Assert.assertEquals(1L, getQuerier().count(Item.class).longValue());
     	
     }
     
@@ -109,15 +109,15 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	precoProdutoDataLoader.load();
     	
     	// garante o estado anterior da base de dados
-    	Assert.assertEquals(0L, getQuerierUtil().count(Entrada.class).longValue());
-    	Assert.assertEquals(0L, getQuerierUtil().count(Item.class).longValue());
+    	Assert.assertEquals(0L, getQuerier().count(Entrada.class).longValue());
+    	Assert.assertEquals(0L, getQuerier().count(Item.class).longValue());
     	
     	
     	Entrada entrada = new Entrada();
     	entrada.setDataMovimentacao(new Date());
     	
     	Item item = new Item();
-    	item.setProduto(getQuerierUtil().findAny(Produto.class));
+    	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
     	item.setMovimentacaoEstoque(entrada);
     	
@@ -129,8 +129,8 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	getEm().clear();
     	
     	// verifica se os dados foram inseridos
-    	Assert.assertEquals(1L, getQuerierUtil().count(Entrada.class).longValue());
-    	Assert.assertEquals(1L, getQuerierUtil().count(Item.class).longValue());
+    	Assert.assertEquals(1L, getQuerier().count(Entrada.class).longValue());
+    	Assert.assertEquals(1L, getQuerier().count(Item.class).longValue());
     	
     }
     
@@ -147,7 +147,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	entrada.setDataMovimentacao(new Date());
     	
     	Item item = new Item();
-    	item.setProduto(getQuerierUtil().findAny(Produto.class));
+    	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
     	item.setMovimentacaoEstoque(entrada);
     	
@@ -159,14 +159,14 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	getEm().clear();
     	
     	// confirma que os dados foram inseridos
-    	Assert.assertEquals(1L, getQuerierUtil().count(Entrada.class).longValue());
-    	Assert.assertEquals(1L, getQuerierUtil().count(Item.class).longValue());
+    	Assert.assertEquals(1L, getQuerier().count(Entrada.class).longValue());
+    	Assert.assertEquals(1L, getQuerier().count(Item.class).longValue());
     	
     	// remove a entrada e re-confere os dados
     	estoqueFacade.remover(entrada);
     	
-    	Assert.assertEquals(0L, getQuerierUtil().count(Entrada.class).longValue());
-    	Assert.assertEquals(0L, getQuerierUtil().count(Item.class).longValue());
+    	Assert.assertEquals(0L, getQuerier().count(Entrada.class).longValue());
+    	Assert.assertEquals(0L, getQuerier().count(Item.class).longValue());
     	
     }
     
