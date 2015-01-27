@@ -49,6 +49,9 @@
 			<p:column headerText="Cód Barras" sortBy="#{produto.codigoBarras}">
 	                #{produto.codigoBarras}
 	            </p:column>
+	        <p:column headerText="Estoque" sortBy="#{produtoAction.getSaldo(produto).quantidade}" rendered="#{produtoAction.exibirEstoque}">
+	                #{produtoAction.getSaldo(produto).quantidade}
+	            </p:column>    
 		</p:dataTable>
 	</h:form>
 

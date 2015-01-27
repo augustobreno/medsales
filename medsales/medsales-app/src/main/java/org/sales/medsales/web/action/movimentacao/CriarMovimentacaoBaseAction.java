@@ -160,39 +160,65 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentacaoEstoqu
 	 */
 	public void adicionarItem() {
 		if (this.item != null && this.item.getProduto() != null && this.item.getQuantidade() > 0) {
-			ItemPreco itemPreco = buscarItem();
-			if (itemPreco == null) {
-				// este produto ainda não foi inserido, será criado pela
-				// primeira vez
-				PrecoProduto precoProduto = produtoFacade.buscarPrecoProduto(getItem().getProduto().getCodigoBarras());
+			preAdicionarItem();
+			ItemPreco itemPreco = doAdicionarItem();
 
-				if (precoProduto == null) {
-					throw new BusinessException(null,
-							"Produto com código de barras \"{0}\" não existe ou não possui preço cadastrado.",
-							getItem().getProduto().getCodigoBarras());
-				}
-
-				Item novoItem = new Item();
-				novoItem.setProduto(precoProduto.getProduto());
-				novoItem.setQuantidade(this.item.getQuantidade());
-				novoItem.setMovimentacaoEstoque(getMovimentacao());
-
-				itemPreco = new ItemPreco(novoItem, precoProduto);
-				getItens().addFirst(itemPreco);
-
-			} else {
-				itemPreco.getItem().incrementarQuantidade(this.item.getQuantidade());
-			}
-
-			showInfoMessage("Produto \"{0}\" adicionado, total: \"{1}\"", itemPreco.getItem().getProduto().getNome(),
-					itemPreco.getItem().getQuantidade());
-
-			initItem();
+			postAdicionarItem(itemPreco);
 		} else {
 			showErrorMessage("É necessário informar o Produto e a quantidade do Item.");
 		}
 	}
+
+	/**
+	 * Invocado após a adição de um item à movimentação
+	 * @param itemPreco
+	 */
+	protected void postAdicionarItem(ItemPreco itemPreco) {
+		showInfoMessage("Produto \"{0}\" adicionado, total: \"{1}\"", itemPreco.getItem().getProduto().getNome(),
+				itemPreco.getItem().getQuantidade());
+
+		initItem();
+	}
+
+	/**
+	 * Adiciona, de fato, o item à movimentação.
+	 * @return Item adicionado.
+	 */
+	protected ItemPreco doAdicionarItem() {
+		ItemPreco itemPreco = buscarItem();
+		if (itemPreco == null) {
+			// este produto ainda não foi inserido, será criado pela
+			// primeira vez
+			PrecoProduto precoProduto = produtoFacade.buscarPrecoProduto(getItem().getProduto().getCodigoBarras());
+
+			if (precoProduto == null) {
+				throw new BusinessException(null,
+						"Produto com código de barras \"{0}\" não existe ou não possui preço cadastrado.",
+						getItem().getProduto().getCodigoBarras());
+			}
+
+			Item novoItem = new Item();
+			novoItem.setProduto(precoProduto.getProduto());
+			novoItem.setQuantidade(this.item.getQuantidade());
+			novoItem.setMovimentacaoEstoque(getMovimentacao());
+
+			itemPreco = new ItemPreco(novoItem, precoProduto);
+			getItens().addFirst(itemPreco);
+			
+		} else {
+			itemPreco.getItem().incrementarQuantidade(this.item.getQuantidade());
+		}
+		return itemPreco;
+	}
 	
+	/**
+	 * Invocando andes de adicionar um Item à movimentação
+	 */
+	protected void preAdicionarItem() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	/**
 	 * Busca o item selecionado na lista de itens
 	 */

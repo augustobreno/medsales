@@ -74,8 +74,8 @@ function limparCampoProduto() {
 					<h:outputText value="#{itemPreco.preco.produto.nome}" />
 				</p:column>
 
-				<p:column headerText="Quantidade" style="text-align:center">
-					<h:outputText value="#{itemPreco.item.quantidade}" />
+				<p:column headerText="Quant/Estoque" style="text-align:center" >
+					<h:outputText value="#{itemPreco.item.quantidade}/#{saidaAction.getSaldo(itemPreco.item.produto).quantidade}" />
 				</p:column>
 
 				<p:column headerText="R$ Un" style="text-align:right">
@@ -165,11 +165,11 @@ function limparCampoProduto() {
 
 				<p:commandButton value="Voltar" immediate="true" action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" />
 
-				<p:splitButton value="Concluir" actionListener="#{saidaAction.concluir}" icon="ui-icon-disk"
+				<p:splitButton value="Salvar Como Rascunho" actionListener="#{saidaAction.salvarRacunho()}" icon="ui-icon-disk"
 					action="#{saidaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm">
 
-					<p:menuitem value="Salvar Como Rascunho" actionListener="#{saidaAction.salvarRacunho}" icon="ui-icon-disk"
-						action="#{saidaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm" />
+					<p:menuitem value="Salvar e Concluir" actionListener="#{saidaAction.concluir()}" icon="ui-icon-disk"
+						action="#{saidaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm" />	
 
 					<p:separator />
 					

@@ -1,5 +1,9 @@
 package org.sales.medsales.web.action;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.Conversation;
 import javax.enterprise.context.ConversationScoped;
@@ -12,7 +16,9 @@ import org.easy.qbeasy.api.operator.Operators;
 import org.sales.medsales.api.web.action.CrudActionBase;
 import org.sales.medsales.dominio.PrecoProduto;
 import org.sales.medsales.dominio.Produto;
+import org.sales.medsales.dominio.SaldoProdutoVO;
 import org.sales.medsales.negocio.ProdutoFacade;
+import org.sales.medsales.negocio.movimentacao.EstoqueFacade;
 
 @SuppressWarnings("serial")
 @Named
@@ -22,10 +28,20 @@ public class ProdutoAction extends CrudActionBase<Produto, Long, ProdutoFacade>{
 	@Inject
 	private Conversation conversation;
 	
+	@Inject
+	private EstoqueFacade estoqueFacade;
+	
 	/** chave única para consulta */
 	private String chaveConsulta;
+
+	/** habilita a subconsulta para carregar estoque */
+	private boolean exibirEstoque = true;
 	
+	/** para cadastro de um preço de produto */
 	private PrecoProduto novoPreco;
+	
+	/** armazena os saldos dos produtos consultados */
+	private Map<Long, SaldoProdutoVO> saldos = new HashMap<>();
 	
 	@Override
 	@PostConstruct
@@ -89,6 +105,18 @@ public class ProdutoAction extends CrudActionBase<Produto, Long, ProdutoFacade>{
 	}
 	
 	@Override
+	protected void postSearch(Filter<Produto> searchFilter) {
+		super.postSearch(searchFilter);
+		
+		if (isExibirEstoque() && !getResultList().isEmpty()) {
+			List<SaldoProdutoVO> saldoList = estoqueFacade.consultarEstoque(getResultList().toArray(new Produto[]{}));
+			for (SaldoProdutoVO saldo : saldoList) {
+				saldos.put(saldo.getIdProduto(), saldo);
+			}
+		}
+	}
+	
+	@Override
 	protected void initExample() {
 		super.initExample();
 		setChaveConsulta(null);
@@ -116,5 +144,16 @@ public class ProdutoAction extends CrudActionBase<Produto, Long, ProdutoFacade>{
 		this.novoPreco = novoPreco;
 	}
 
-	
+	public boolean isExibirEstoque() {
+		return exibirEstoque;
+	}
+
+	public void setExibirEstoque(boolean exibirEstoque) {
+		this.exibirEstoque = exibirEstoque;
+	}
+
+	/** @return O saldo do produto consultado */
+	public SaldoProdutoVO getSaldo(Produto produto) {
+		return saldos.get(produto.getId());
+	}
 }
