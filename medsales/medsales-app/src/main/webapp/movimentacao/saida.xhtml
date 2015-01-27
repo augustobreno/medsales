@@ -166,16 +166,28 @@ function limparCampoProduto() {
 				<p:commandButton value="Voltar" immediate="true" action="/movimentacao/movimentacoes.xhtml?faces-redirect=true" />
 
 				<p:splitButton value="Salvar Como Rascunho" actionListener="#{saidaAction.salvarRacunho()}" icon="ui-icon-disk"
-					action="#{saidaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm">
+					action="#{saidaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm"
+					rendered="#{!saidaAction.concluido}">
 
 					<p:menuitem value="Salvar e Concluir" actionListener="#{saidaAction.concluir()}" icon="ui-icon-disk"
 						action="#{saidaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm" />	
 
 					<p:separator />
 					
-					<p:menuitem id="itemExcluir" value="Excluir" icon="ui-icon-trash" onclick="$('#btnForm\\:btnRemove').click();return;"/>
+					<p:menuitem value="Excluir" icon="ui-icon-trash" onclick="$('#btnForm\\:btnRemove').click();return;"/>
 
 				</p:splitButton>
+
+				<p:splitButton value="Salvar" actionListener="#{saidaAction.concluir()}" icon="ui-icon-disk"
+					action="#{saidaAction.redirectIfNoError('movimentacoes.xhtml?faces-redirect=true')}" update="btnForm"
+					rendered="#{saidaAction.concluido}">
+
+					<p:separator />
+					
+					<p:menuitem value="Excluir" icon="ui-icon-trash" onclick="$('#btnForm\\:btnRemove').click();return;"/>
+
+				</p:splitButton>
+
 
 				<!-- Este botão escondido foi necessário porque não foi possível utilizar um diálogo com o p:menuitem acima. -->
 				<p:commandButton id="btnRemove" value="DELETE" actionListener="#{saidaAction.remover()}"

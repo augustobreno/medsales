@@ -1,5 +1,6 @@
 package org.sales.medsales.web.action.movimentacao;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -37,14 +38,29 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<Saida> {
 	protected void salvar() {
 		getEstoqueFacade().cadastrar(getMovimentacao());
 	}
+	
+	@Override
+	protected void postAdicionarItem(ItemPreco itemPreco) {
+		super.postAdicionarItem(itemPreco);
+		consultarSaldo(itemPreco.getItem().getProduto());
+	}
 
 	@Override
-	protected ItemPreco doAdicionarItem() {
-		ItemPreco item = super.doAdicionarItem();
-		consultarSaldo(item.getItem().getProduto());
-		return item;
+	protected void postLoadId() {
+		super.postLoadId();
+		consultarSaldo(getProdutos());
 	}
 	
+	private Produto[] getProdutos() {
+		List<Produto> produtos = new ArrayList<Produto>();
+		
+		for (ItemPreco itemPreco : getItens()) {
+			produtos.add(itemPreco.getItem().getProduto());
+		}
+		
+		return produtos.toArray(new Produto[]{});
+	}
+
 	/**
 	 * Consulta o saldo em estoque dos produtos.
 	 */

@@ -278,8 +278,25 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentacaoEstoqu
 	 * Carrega uma movimentação quando há a presença do parâmetro
 	 * {@link #lid}
 	 */
-	@SuppressWarnings("unchecked")
 	public void loadFromId() {
+		preLoadFromId();
+		doLoadId();
+		postLoadId();
+	}
+
+	/**
+	 * Após o carregamento pelo parâmetro GET  lid.
+	 */
+	protected void postLoadId() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/**
+	 * Carrega, de fato, a movimentação através do parâmetro GET lid.
+	 */
+	@SuppressWarnings("unchecked")
+	protected void doLoadId() {
 		if (lid != null) {
 			Filter<MovimentacaoEstoque> filter = new QBEFilter<>(MovimentacaoEstoque.class);
 			filter.filterBy("id", Operators.equal(), lid);
@@ -295,6 +312,14 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentacaoEstoqu
 		}
 	}
 	
+	/**
+	 * Antes do carregamento pelo parâmetro GET  lid.
+	 */
+	protected void preLoadFromId() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	protected List<ItemPreco> parseToItemPreco(List<Item> itensToParse) {
 		
 		List<ItemPreco> itemPrecos = new ArrayList<ItemPreco>();
@@ -379,4 +404,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentacaoEstoqu
 		this.lid = lid;
 	}
 	
+	public boolean isConcluido() {
+		return getMovimentacao() != null && Status.CONCLUIDO.equals(getMovimentacao().getStatus());
+	}
 }
