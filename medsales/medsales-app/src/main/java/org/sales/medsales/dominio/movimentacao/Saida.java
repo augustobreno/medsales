@@ -17,6 +17,11 @@ public class Saida extends MovimentacaoEstoque {
 	@Column(precision=4, scale=2)
 	private Double desconto;
 
+	/**
+	 * Numero sequencial para identificação de um pedido por cliente.
+	 */
+	private Integer numeroPedido;
+	
 	@Override
 	protected void defineOperacao() {
 		setOperacao(Operacao.SAIDA);
@@ -33,6 +38,14 @@ public class Saida extends MovimentacaoEstoque {
 	@Override
 	public String getLabel() {
 		return "Saída";
+	}
+
+	public Integer getNumeroPedido() {
+		return numeroPedido;
+	}
+
+	public void setNumeroPedido(Integer numeroPedido) {
+		this.numeroPedido = numeroPedido;
 	}
 	
 }

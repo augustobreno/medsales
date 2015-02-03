@@ -3,22 +3,18 @@ package org.sales.medsales.persistencia.repository;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.logging.Logger;
 
-import javax.inject.Inject;
 import javax.persistence.Query;
 
 import org.easy.qbeasy.util.EntityUtil;
 import org.sales.medsales.api.persistencia.repository.CrudRepositoryBase;
+import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.dominio.SaldoProdutoVO;
 import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
 import org.sales.medsales.dominio.movimentacao.Operacao;
 
 public class EstoqueRepository extends CrudRepositoryBase<MovimentacaoEstoque, Long> {
-
-	@Inject
-	private Logger logger;
 
 	/**
 	 * @return true se todos os produtos informados tiverem pelo menos um preço
@@ -67,6 +63,18 @@ public class EstoqueRepository extends CrudRepositoryBase<MovimentacaoEstoque, L
 		List<SaldoProdutoVO> saldos = query.getResultList();
 		return saldos;
 
+	}
+
+	/**
+	 * Consulta o maior número de pedido para um cliente.
+	 * @param parceiro Cliente para consulta.
+	 * @return O maior número de pedido cadastrado para este cliente.
+	 */
+	public int buscarMaiorNumeroPedido(Parceiro parceiro) {
+		Query query = getEm().createQuery("SELECT max(saida.numeroPedido) FROM Saida saida where saida.parceiro = :parceiro");
+		query.setParameter("parceiro", parceiro);
+		Integer maxNumero = (Integer) query.getSingleResult();
+		return maxNumero != null ? maxNumero : 0;
 	}
 
 }

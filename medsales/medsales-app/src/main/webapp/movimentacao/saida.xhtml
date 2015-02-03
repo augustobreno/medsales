@@ -36,6 +36,7 @@ function limparCampoProduto() {
 			<f:param value="#{saidaAction.movimentacao.status.descricao.toUpperCase()}" />
 			<f:param value="#{saidaAction.movimentacao.dataAlteracao}" />
 		</h:outputFormat>
+		<h:outputText value="Número do Pedido: #{saidaAction.movimentacao.numeroPedido}" />
 		<h:form id="itemForm">
 			<p:panelGrid id="itemGrid" columns="3" layout="grid" columnClasses="labels_col1">
 
@@ -151,7 +152,7 @@ function limparCampoProduto() {
 
 				<p:outputLabel value="Data da Saída:" for="dtMov" />
 				<p:calendar id="dtMov" value="#{saidaAction.movimentacao.dataMovimentacao}" pattern="dd/MM/yyyy" mask="true"
-					showOn="button" required="true" />
+					showOn="button" required="true"/>
 				<p:message for="dtMov" />
 
 

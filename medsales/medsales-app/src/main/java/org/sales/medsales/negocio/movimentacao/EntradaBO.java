@@ -6,7 +6,6 @@ import java.util.List;
 import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Produto;
 import org.sales.medsales.dominio.movimentacao.Entrada;
-import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 
 /**
@@ -15,12 +14,12 @@ import org.sales.medsales.exceptions.ProdutoSemPrecoException;
  *
  */
 @SuppressWarnings("serial")
-public class EntradaBO extends MovimentacaoBO {
+public class EntradaBO extends MovimentacaoBO<Entrada> {
 
 	@Override
-	protected void validarCadastrar(MovimentacaoEstoque movimentacao) {
+	protected void validarCadastrar(Entrada movimentacao) {
 		super.validarCadastrar(movimentacao);
-		validarPrecosDeProdutos((Entrada) movimentacao);
+		validarPrecosDeProdutos(movimentacao);
 	}
 
 	/**

@@ -63,6 +63,8 @@ public class DataStartupService {
 	private EntityManagerFactory emf;
 	
 	public void load() throws Exception {
+		Locale.getDefault();
+		Locale.setDefault(new Locale("PT", "BR")); // TODO verificar a melhor maneira de fazer isso
 		loadProdutos();
 		loadParceiro();
 		loadEntradas();
@@ -86,7 +88,6 @@ public class DataStartupService {
 
     		entrada.setItens(itens);
     		
-    		entrada.setDataMovimentacao(new Date());
 			entrada.setParceiro(parceiros.get(i));
 			entrada.setStatus(Status.CONCLUIDO);
     		estoqueFacade.cadastrar(entrada);

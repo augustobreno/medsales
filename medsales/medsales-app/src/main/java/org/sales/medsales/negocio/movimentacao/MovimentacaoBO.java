@@ -17,7 +17,7 @@ import org.sales.medsales.persistencia.repository.EstoqueRepository;
  *
  */
 @SuppressWarnings("serial")
-public abstract class MovimentacaoBO implements Serializable {
+public abstract class MovimentacaoBO<MOV extends MovimentacaoEstoque> implements Serializable {
 
 	@Inject
 	private EstoqueRepository estoqueRepository;
@@ -25,13 +25,21 @@ public abstract class MovimentacaoBO implements Serializable {
 	/**
 	 * Cadastra uma movimentacao de produtos.
 	 */
-	public void cadastrar(MovimentacaoEstoque movimentacao) {
+	public void cadastrar(MOV movimentacao) {
 		validarCadastrar(movimentacao);
 		
 		if (movimentacao.getDataMovimentacao() == null) {
 			movimentacao.setDataMovimentacao(new Date());
 		}
 		
+		salvar(movimentacao);
+	}
+
+	/**
+	 * Salva de fato a movimentação. O fluxo de inclusão ou atialização
+	 * será definido pela presença do ID.
+	 */
+	protected void salvar(MOV movimentacao) {
 		if (movimentacao.getId() == null) {
 			estoqueRepository.insert(movimentacao);
 		} else {
@@ -39,11 +47,11 @@ public abstract class MovimentacaoBO implements Serializable {
 		}
 	}
 	
-	protected void validarCadastrar(MovimentacaoEstoque movimentacao) {
+	protected void validarCadastrar(MOV movimentacao) {
 		validarDadosObrigatorias(movimentacao);
 	}
 
-	protected void validarDadosObrigatorias(MovimentacaoEstoque movimentacao) {
+	protected void validarDadosObrigatorias(MOV movimentacao) {
 		if (movimentacao == null) {
 			throw new NullParameterException(ExceptionCodes.MOVIMENTACAO.MOVIMENTACAO_REQUIRED, "É necessário informar uma movimentação.");
 		}

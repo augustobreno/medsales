@@ -58,7 +58,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
 	 * Garante a validação dos parâmetros de saída
 	 */
     @Test
-    public void cadastrarEntradaOperacaoNull() {
+    public void cadastrarSaidaOperacaoNull() {
     	Saida saida = new Saida();
     	saida.setOperacao(null);
     	saida.setDataMovimentacao(new Date());
@@ -75,7 +75,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
 	 * Garante a validação dos parâmetros de saída
 	 */
     @Test(expected=MovimentacaoSemItensException.class)
-    public void cadastrarEntradaSemItens() {
+    public void cadastrarSaidaSemItens() {
     	Saida saida = new Saida();
     	saida.setDataMovimentacao(new Date());
     	saida.setItens(null);

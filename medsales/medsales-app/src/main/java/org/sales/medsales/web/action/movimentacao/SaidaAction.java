@@ -67,11 +67,14 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<Saida> {
 	private void consultarSaldo(Produto...produtos) {
 		// quando adicionar apenas um produto, verifica se o saldo já foi consultado
 		if (produtos != null 
+				&& produtos.length > 0	
 				&& (produtos.length > 1 || !isSaldoConsultado(produtos[0]))) {
+			
 			List<SaldoProdutoVO> saldoList = getEstoqueFacade().consultarEstoque(produtos);
 			for (SaldoProdutoVO saldo : saldoList) {
 				saldos.put(saldo.getIdProduto(), saldo);
 			}
+			
 		}	
 	}
 	

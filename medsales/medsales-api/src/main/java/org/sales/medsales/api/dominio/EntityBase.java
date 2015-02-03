@@ -16,7 +16,7 @@ import javax.persistence.TemporalType;
 public abstract class EntityBase<PK> implements Entity<PK> {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private PK id;
 
 	@Temporal(TemporalType.TIMESTAMP)

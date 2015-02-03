@@ -51,7 +51,7 @@ public class MovimentacoesAction extends ServerPaginationActionBased<Movimentaca
 	protected void configSearch(Filter<? extends MovimentacaoEstoque> filter) {
 		super.configSearch(filter);
 
-		filter.sortDescBy("dataMovimentacao");
+		filter.sortDescBy("dataMovimentacao", "id");
 		filter.addFetch("parceiro");
 
 		// TODO liberar este código quando distinct estiver aplicável à
@@ -73,7 +73,7 @@ public class MovimentacoesAction extends ServerPaginationActionBased<Movimentaca
 		} else 	if (Saida.class.isAssignableFrom(movimentacao.getClass())) {
 			FacesContext.getCurrentInstance().getExternalContext().redirect("saida.xhtml?lid=" + movimentacao.getId());
 		} else {
-			showErrorMessage("Não foi possível dicernir o tipo da movimentação.");
+			showErrorMessage("Não foi possível discernir o tipo da movimentação.");
 		}
 	}
 
