@@ -39,6 +39,24 @@ public interface ExceptionCodes {
 		public static final String INVESTIDOR_DIFERENTE_CICLO = "INVESTIMENTO04";
 	}
 
+	/**
+	 * Códigos das exceções relacionadas ao Valor.
+	 */
+	public interface VALOR {
+
+		/** É necessário informar um ciclo */
+		public static final String VALOR_REQUIRED = "VALOR01";
+		
+		/** É obrigatória a configuração do ciclo */
+		public static final String CICLO_REQUIRED = "VALOR02";
+
+		/** É obrigatória a configuração do valor */
+		public static final String VALOR_FINANCEIRO_REQUIRED = "VALOR03";
+		
+		/** É ibrigatória a configuração do tipo de operação */
+		public static final String OPERACAO_REQUIRED = "VALOR04";
+	}
+
 	
 	/**
 	 * Códigos das exceções relacionadas às movimentações do estoque.

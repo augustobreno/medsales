@@ -10,6 +10,7 @@ import junit.framework.Assert;
 import org.easy.testeasy.dataloader.LoadData;
 import org.junit.Test;
 import org.sales.medsales.MedSalesBaseTest;
+import org.sales.medsales.api.exceptions.BusinessException;
 import org.sales.medsales.api.exceptions.NullParameterException;
 import org.sales.medsales.dataLoader.PrecoProdutoDataLoader;
 import org.sales.medsales.dataLoader.ProdutosDataLoader;
@@ -17,6 +18,7 @@ import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.Item;
 import org.sales.medsales.dominio.movimentacao.estoque.Produto;
 import org.sales.medsales.dominio.movimentacao.estoque.Status;
+import org.sales.medsales.exceptions.ExceptionCodes;
 import org.sales.medsales.exceptions.MovimentacaoSemItensException;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
@@ -43,12 +45,18 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
 	/**
 	 * Garante a validação dos parâmetros de entrada
 	 */
-    @Test(expected=NullParameterException.class)
+    @Test
     public void cadastrarEntradaOperacaoNull() {
     	EntradaEstoque entradaEstoque = new EntradaEstoque();
     	entradaEstoque.setOperacao(null);
     	entradaEstoque.setDataMovimentacao(new Date());
-    	estoqueFacade.cadastrar(entradaEstoque);
+    	
+    	try {
+    		estoqueFacade.cadastrar(entradaEstoque);
+    		Assert.fail();
+		} catch (BusinessException e) {
+			Assert.assertTrue(e.hasCode(ExceptionCodes.MOVIMENTACAO_ESTOQUE.OPERACAO_REQUIRED));
+		}
     }
     
 	/**

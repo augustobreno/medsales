@@ -1,10 +1,13 @@
-package org.sales.medsales.negocio;
+package org.sales.medsales.negocio.movimentacao;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
 
 import javax.inject.Inject;
 
 import org.sales.medsales.api.exceptions.BusinessException;
+import org.sales.medsales.api.exceptions.ExceptionMessage;
 import org.sales.medsales.api.exceptions.NullParameterException;
 import org.sales.medsales.dominio.movimentacao.Investimento;
 import org.sales.medsales.exceptions.ExceptionCodes;
@@ -35,18 +38,24 @@ public class InvestimentoBO implements Serializable {
 			throw new NullParameterException(ExceptionCodes.INVESTIMENTO.INVESTIMENTO_REQUIRED,
 					"É necessário informar o Investimento a ser realizado.");
 		}
+		
+		Collection<ExceptionMessage> msgs = new ArrayList<ExceptionMessage>();
 		if (entity.getCiclo() == null) {
-			throw new BusinessException(ExceptionCodes.INVESTIMENTO.CICLO_REQUIRED,
-					"É necessário informar o Ciclo associado a este Investimento.");
+			msgs.add(new ExceptionMessage(ExceptionCodes.INVESTIMENTO.CICLO_REQUIRED,
+					"É necessário informar o Ciclo associado a este Investimento."));
 		}
 		if (entity.getValor() == null) {
-			throw new BusinessException(ExceptionCodes.INVESTIMENTO.VALOR_REQUIRED,
-					"É necessário informar o valor do Investimento.");
+			msgs.add(new ExceptionMessage(ExceptionCodes.INVESTIMENTO.VALOR_REQUIRED,
+					"É necessário informar o valor do Investimento."));
 		}
 
 		if (entity.getParceiro() != null && !entity.getParceiro().equals(entity.getCiclo().getInvestidor())) {
-			throw new BusinessException(ExceptionCodes.INVESTIMENTO.INVESTIDOR_DIFERENTE_CICLO,
-					"O Parceiro do Investimento deve ser o mesmo que o do Ciclo.");
+			msgs.add(new ExceptionMessage(ExceptionCodes.INVESTIMENTO.INVESTIDOR_DIFERENTE_CICLO,
+					"O Parceiro do Investimento deve ser o mesmo que o do Ciclo."));
+		}
+		
+		if (!msgs.isEmpty()) {
+			throw new BusinessException(msgs);
 		}
 	}
 }

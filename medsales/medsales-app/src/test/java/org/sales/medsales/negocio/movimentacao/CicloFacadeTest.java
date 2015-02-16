@@ -1,4 +1,4 @@
-package org.sales.medsales.negocio;
+package org.sales.medsales.negocio.movimentacao;
 
 import java.util.Date;
 

@@ -12,6 +12,7 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 import org.sales.medsales.MedSalesBaseTest;
+import org.sales.medsales.api.exceptions.BusinessException;
 import org.sales.medsales.api.exceptions.EntityNotFoundException;
 import org.sales.medsales.api.exceptions.NullParameterException;
 import org.sales.medsales.dataLoader.PrecoProdutoDataLoader;
@@ -67,7 +68,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
 		try {
 			estoqueFacade.cadastrar(saidaEstoque);
 			Assert.fail();
-		} catch (NullParameterException e) {
+		} catch (BusinessException e) {
 			Assert.assertTrue(e.hasCode(ExceptionCodes.MOVIMENTACAO_ESTOQUE.OPERACAO_REQUIRED));
 		}
     }

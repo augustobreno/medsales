@@ -1,4 +1,4 @@
-package org.sales.medsales.negocio;
+package org.sales.medsales.negocio.movimentacao;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -15,6 +15,7 @@ import org.sales.medsales.dominio.Ciclo;
 import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.movimentacao.Investimento;
 import org.sales.medsales.exceptions.ExceptionCodes;
+import org.sales.medsales.negocio.movimentacao.InvestimentoBO;
 
 /**
  * Testes de inclusão de um {@link Investimento} em um {@link Ciclo}
@@ -37,11 +38,11 @@ public class CicloInvestimentoTest extends MedSalesBaseTest {
 	public void validacaoParametrosPrimariosTest() {
 
 		try {
-			cicloFacade.add(null, null);
+			cicloFacade.addInvestimento(null, null);
 			Assert.fail();
 		} catch (BusinessException e) {
-			e.hasCode(ExceptionCodes.INVESTIMENTO.CICLO_REQUIRED);
-			e.hasCode(ExceptionCodes.INVESTIMENTO.VALOR_REQUIRED);
+			Assert.assertTrue(e.hasCode(ExceptionCodes.INVESTIMENTO.CICLO_REQUIRED));
+			Assert.assertTrue(e.hasCode(ExceptionCodes.INVESTIMENTO.VALOR_REQUIRED));
 		}
 
 	}
@@ -70,7 +71,7 @@ public class CicloInvestimentoTest extends MedSalesBaseTest {
 			bo.add(investimento);
 			Assert.fail();
 		} catch (BusinessException e) {
-			e.hasCode(ExceptionCodes.INVESTIMENTO.INVESTIDOR_DIFERENTE_CICLO);
+			Assert.assertTrue(e.hasCode(ExceptionCodes.INVESTIMENTO.INVESTIDOR_DIFERENTE_CICLO));
 		}
 		
 	}
@@ -87,7 +88,7 @@ public class CicloInvestimentoTest extends MedSalesBaseTest {
 		ciclo.setInicio(new Date());
 		cicloFacade.save(ciclo);
 
-		Investimento investimento = cicloFacade.add(ciclo, new BigDecimal(10));
+		Investimento investimento = cicloFacade.addInvestimento(ciclo, new BigDecimal(10));
 		
 		// consulta o ciclo e garante a presenca do investimento
 		getEm().clear();

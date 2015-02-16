@@ -59,6 +59,9 @@ public abstract class MovimentacaoValor extends EntityBase<Long>{
 	@Column(nullable=false)
 	private Operacao operacao;
 
+	@Column(length=500)
+	private String observacao;
+	
 	public MovimentacaoValor() {
 		defineOperacao();
 	}
@@ -98,6 +101,14 @@ public abstract class MovimentacaoValor extends EntityBase<Long>{
 
 	public void setOperacao(Operacao operacao) {
 		this.operacao = operacao;
+	}
+
+	public String getObservacao() {
+		return observacao;
+	}
+
+	public void setObservacao(String observacao) {
+		this.observacao = observacao;
 	}
 	
 }
