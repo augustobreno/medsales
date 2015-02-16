@@ -58,7 +58,7 @@ public class Ciclo extends EntityBase<Long>{
 	@Temporal(TemporalType.DATE)
 	private Date fim;
 	
-	@OneToMany(fetch=FetchType.LAZY)
+	@OneToMany(fetch=FetchType.LAZY, mappedBy="ciclo")
 	private List<MovimentacaoValor> movimentacoes;
 
 	public Parceiro getInvestidor() {

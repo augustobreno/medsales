@@ -20,6 +20,24 @@ public interface ExceptionCodes {
 
 		
 	}
+	
+	/**
+	 * Códigos das exceções relacionadas ao Investimento.
+	 */
+	public interface INVESTIMENTO {
+
+		/** É necessário informar um ciclo */
+		public static final String INVESTIMENTO_REQUIRED = "INVESTIMENTO01";
+		
+		/** É obrigatória a configuração do ciclo */
+		public static final String CICLO_REQUIRED = "INVESTIMENTO02";
+
+		/** É obrigatória a configuração do valor */
+		public static final String VALOR_REQUIRED = "INVESTIMENTO03";
+		
+		/** O parceiro do investimento e do ciclo devem ser os mesmos ou não deve ser informado */
+		public static final String INVESTIDOR_DIFERENTE_CICLO = "INVESTIMENTO04";
+	}
 
 	
 	/**
