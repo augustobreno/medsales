@@ -5,8 +5,8 @@ import java.util.Date;
 import javax.enterprise.context.ConversationScoped;
 import javax.inject.Named;
 
-import org.sales.medsales.dominio.movimentacao.Entrada;
-import org.sales.medsales.dominio.movimentacao.Saida;
+import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
 
 /**
  * Para cadastro de uma Entrada de Produtos no estoque
@@ -16,15 +16,15 @@ import org.sales.medsales.dominio.movimentacao.Saida;
 @SuppressWarnings("serial")
 @Named
 @ConversationScoped
-public class EntradaAction extends CriarMovimentacaoBaseAction<Entrada> {
+public class EntradaAction extends CriarMovimentacaoBaseAction<EntradaEstoque> {
 
-	private Saida saidaGerada;
+	private SaidaEstoque saidaGerada;
 
 	@Override
 	protected void initMovimentacao() {
-		Entrada entrada = new Entrada();
-		entrada.setDataMovimentacao(new Date());
-		setMovimentacao(entrada);
+		EntradaEstoque entradaEstoque = new EntradaEstoque();
+		entradaEstoque.setDataMovimentacao(new Date());
+		setMovimentacao(entradaEstoque);
 	}
 
 	@Override
@@ -48,7 +48,7 @@ public class EntradaAction extends CriarMovimentacaoBaseAction<Entrada> {
 		showInfoMessage("A SAÍDA foi gerada a partir da Entrada Nº {0}", String.valueOf(getMovimentacao().getId()));
 	}
 
-	public Saida getSaidaGerada() {
+	public SaidaEstoque getSaidaGerada() {
 		return saidaGerada;
 	}
 	

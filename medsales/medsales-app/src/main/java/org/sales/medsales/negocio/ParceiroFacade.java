@@ -5,11 +5,11 @@ import javax.ejb.Stateless;
 import org.sales.medsales.api.exceptions.AlreadyRegisteredException;
 import org.sales.medsales.api.negocio.CrudFacadeBase;
 import org.sales.medsales.dominio.Parceiro;
-import org.sales.medsales.persistencia.repository.ClienteRepository;
+import org.sales.medsales.persistencia.repository.ParceiroRepository;
 
 @SuppressWarnings("serial")
 @Stateless
-public class ParceiroFacade extends CrudFacadeBase<ClienteRepository, Parceiro, Long>{
+public class ParceiroFacade extends CrudFacadeBase<ParceiroRepository, Parceiro, Long>{
 
 	@Override
 	protected void validateSave(Parceiro entity) {

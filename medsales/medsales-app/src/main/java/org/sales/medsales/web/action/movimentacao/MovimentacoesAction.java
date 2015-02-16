@@ -14,10 +14,10 @@ import org.easy.qbeasy.api.Operation;
 import org.easy.qbeasy.api.operator.Operators;
 import org.primefaces.event.SelectEvent;
 import org.sales.medsales.api.web.action.ServerPaginationActionBased;
-import org.sales.medsales.dominio.movimentacao.Entrada;
-import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
-import org.sales.medsales.dominio.movimentacao.Saida;
-import org.sales.medsales.negocio.movimentacao.EstoqueFacade;
+import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
+import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
 
 /**
  * Mantém a tela inicial com listagem das movimentações cadastradas, contendo
@@ -68,9 +68,9 @@ public class MovimentacoesAction extends ServerPaginationActionBased<Movimentaca
 	}
 	
 	public void load(MovimentacaoEstoque movimentacao) throws IOException {
-		if (Entrada.class.isAssignableFrom(movimentacao.getClass())) {
+		if (EntradaEstoque.class.isAssignableFrom(movimentacao.getClass())) {
 			FacesContext.getCurrentInstance().getExternalContext().redirect("entrada.xhtml?lid=" + movimentacao.getId());
-		} else 	if (Saida.class.isAssignableFrom(movimentacao.getClass())) {
+		} else 	if (SaidaEstoque.class.isAssignableFrom(movimentacao.getClass())) {
 			FacesContext.getCurrentInstance().getExternalContext().redirect("saida.xhtml?lid=" + movimentacao.getId());
 		} else {
 			showErrorMessage("Não foi possível discernir o tipo da movimentação.");

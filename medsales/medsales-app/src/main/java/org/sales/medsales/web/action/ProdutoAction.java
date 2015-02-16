@@ -14,11 +14,11 @@ import org.easy.qbeasy.api.Filter;
 import org.easy.qbeasy.api.OperationContainer.ContainerType;
 import org.easy.qbeasy.api.operator.Operators;
 import org.sales.medsales.api.web.action.CrudActionBase;
-import org.sales.medsales.dominio.PrecoProduto;
-import org.sales.medsales.dominio.Produto;
-import org.sales.medsales.dominio.SaldoProdutoVO;
-import org.sales.medsales.negocio.ProdutoFacade;
-import org.sales.medsales.negocio.movimentacao.EstoqueFacade;
+import org.sales.medsales.dominio.movimentacao.estoque.PrecoProduto;
+import org.sales.medsales.dominio.movimentacao.estoque.Produto;
+import org.sales.medsales.dominio.movimentacao.estoque.SaldoProdutoVO;
+import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
+import org.sales.medsales.negocio.movimentacao.estoque.ProdutoFacade;
 
 @SuppressWarnings("serial")
 @Named

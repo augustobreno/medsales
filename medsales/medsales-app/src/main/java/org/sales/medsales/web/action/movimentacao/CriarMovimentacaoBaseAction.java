@@ -16,15 +16,15 @@ import org.easy.qbeasy.api.operator.Operators;
 import org.primefaces.context.RequestContext;
 import org.sales.medsales.api.exceptions.BusinessException;
 import org.sales.medsales.api.web.action.ActionBase;
-import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Parceiro;
-import org.sales.medsales.dominio.PrecoProduto;
-import org.sales.medsales.dominio.Produto;
-import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
-import org.sales.medsales.dominio.movimentacao.Status;
+import org.sales.medsales.dominio.movimentacao.estoque.Item;
+import org.sales.medsales.dominio.movimentacao.estoque.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.PrecoProduto;
+import org.sales.medsales.dominio.movimentacao.estoque.Produto;
+import org.sales.medsales.dominio.movimentacao.estoque.Status;
 import org.sales.medsales.negocio.ParceiroFacade;
-import org.sales.medsales.negocio.ProdutoFacade;
-import org.sales.medsales.negocio.movimentacao.EstoqueFacade;
+import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
+import org.sales.medsales.negocio.movimentacao.estoque.ProdutoFacade;
 
 /**
  * Classe base que mantém as principais funcionalidades dos fluxos de cadastro e

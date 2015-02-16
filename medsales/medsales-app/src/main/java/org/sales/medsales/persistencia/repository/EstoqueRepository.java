@@ -9,10 +9,12 @@ import javax.persistence.Query;
 import org.easy.qbeasy.util.EntityUtil;
 import org.sales.medsales.api.persistencia.repository.CrudRepositoryBase;
 import org.sales.medsales.dominio.Parceiro;
-import org.sales.medsales.dominio.Produto;
-import org.sales.medsales.dominio.SaldoProdutoVO;
-import org.sales.medsales.dominio.movimentacao.MovimentacaoEstoque;
 import org.sales.medsales.dominio.movimentacao.Operacao;
+import org.sales.medsales.dominio.movimentacao.estoque.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.PrecoProduto;
+import org.sales.medsales.dominio.movimentacao.estoque.Produto;
+import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.SaldoProdutoVO;
 
 public class EstoqueRepository extends CrudRepositoryBase<MovimentacaoEstoque, Long> {
 
@@ -29,8 +31,9 @@ public class EstoqueRepository extends CrudRepositoryBase<MovimentacaoEstoque, L
 		}
 
 		// consultando os ids dos produtos com preços cadastrados
+		String precoProdutoType = PrecoProduto.class.getSimpleName();
 		Query query = getEm().createQuery(
-				"   select count(distinct pp.produto.id) " + " from PrecoProduto pp "
+				"   select count(distinct pp.produto.id) from " + precoProdutoType + " pp "
 						+ " where pp.produto.id in (:idProdutos)");
 		query.setParameter("idProdutos", idProdutos);
 
@@ -49,13 +52,15 @@ public class EstoqueRepository extends CrudRepositoryBase<MovimentacaoEstoque, L
 
 		// consultando os ids dos produtos com preços cadastrados
 		String saldoClassName = SaldoProdutoVO.class.getName();
+		String produtoType = Produto.class.getSimpleName();
 		Query query = getEm()
 				.createQuery(
 						" SELECT new "
 								+ saldoClassName
 								+ "(produto.id, SUM(case when mov.operacao = '"
 								+ Operacao.ENTRADA.getId()
-								+ "' then  item.quantidade else -item.quantidade end)) FROM Produto produto left join produto.itens item left join item.movimentacaoEstoque mov"
+								+ "' then  item.quantidade else -item.quantidade end)) "
+								+ "FROM " + produtoType + " produto left join produto.itens item left join item.movimentacaoEstoque mov"
 								+ " WHERE produto.id in (:idProdutos) GROUP BY produto ");
 		query.setParameter("idProdutos", EntityUtil.getIds(produtos));
 
@@ -71,7 +76,8 @@ public class EstoqueRepository extends CrudRepositoryBase<MovimentacaoEstoque, L
 	 * @return O maior número de pedido cadastrado para este cliente.
 	 */
 	public int buscarMaiorNumeroPedido(Parceiro parceiro) {
-		Query query = getEm().createQuery("SELECT max(saida.numeroPedido) FROM Saida saida where saida.parceiro = :parceiro");
+		String saidaType = SaidaEstoque.class.getSimpleName();
+		Query query = getEm().createQuery("SELECT max(saida.numeroPedido) FROM " + saidaType + " saida where saida.parceiro = :parceiro");
 		query.setParameter("parceiro", parceiro);
 		Integer maxNumero = (Integer) query.getSingleResult();
 		return maxNumero != null ? maxNumero : 0;

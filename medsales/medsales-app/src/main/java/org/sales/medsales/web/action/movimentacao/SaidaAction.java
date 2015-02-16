@@ -9,9 +9,9 @@ import java.util.Map;
 import javax.enterprise.context.ConversationScoped;
 import javax.inject.Named;
 
-import org.sales.medsales.dominio.Produto;
-import org.sales.medsales.dominio.SaldoProdutoVO;
-import org.sales.medsales.dominio.movimentacao.Saida;
+import org.sales.medsales.dominio.movimentacao.estoque.Produto;
+import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.SaldoProdutoVO;
 
 /**
  * Mantém o fluxo de cadastro e manutenção de saída (venda) de produtos.
@@ -22,16 +22,16 @@ import org.sales.medsales.dominio.movimentacao.Saida;
 @SuppressWarnings("serial")
 @Named
 @ConversationScoped
-public class SaidaAction extends CriarMovimentacaoBaseAction<Saida> {
+public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 
 	/** armazena os saldos dos produtos consultados */
 	private Map<Long, SaldoProdutoVO> saldos = new HashMap<>();
 	
 	@Override
 	protected void initMovimentacao() {
-		Saida saida = new Saida();
-		saida.setDataMovimentacao(new Date());
-		setMovimentacao(saida);
+		SaidaEstoque saidaEstoque = new SaidaEstoque();
+		saidaEstoque.setDataMovimentacao(new Date());
+		setMovimentacao(saidaEstoque);
 	}
 	
 	@Override

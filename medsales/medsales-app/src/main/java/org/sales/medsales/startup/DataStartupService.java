@@ -21,15 +21,15 @@ import org.hibernate.SessionFactory;
 import org.hibernate.StatelessSession;
 import org.hibernate.Transaction;
 import org.sales.medsales.api.util.QuerierUtil;
-import org.sales.medsales.dominio.Item;
 import org.sales.medsales.dominio.Parceiro;
-import org.sales.medsales.dominio.PrecoProduto;
-import org.sales.medsales.dominio.Produto;
-import org.sales.medsales.dominio.movimentacao.Entrada;
-import org.sales.medsales.dominio.movimentacao.Status;
+import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.Item;
+import org.sales.medsales.dominio.movimentacao.estoque.PrecoProduto;
+import org.sales.medsales.dominio.movimentacao.estoque.Produto;
+import org.sales.medsales.dominio.movimentacao.estoque.Status;
 import org.sales.medsales.negocio.ParceiroFacade;
-import org.sales.medsales.negocio.ProdutoFacade;
-import org.sales.medsales.negocio.movimentacao.EstoqueFacade;
+import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
+import org.sales.medsales.negocio.movimentacao.estoque.ProdutoFacade;
 
 /**
  * Carrega dados iniciais para testes do sistema. 
@@ -75,22 +75,22 @@ public class DataStartupService {
 		List<Produto> produtos = querier.findAll(Produto.class);
 		List<Parceiro> parceiros = querier.findAll(Parceiro.class);
     	for (int i = 0; i < DEFAULT_SIZE; i++) {
-    		Entrada entrada = new Entrada();
+    		EntradaEstoque entradaEstoque = new EntradaEstoque();
 
     		List<Item> itens = new ArrayList<>();
     		for (int j = 0; j < DEFAULT_SIZE; j++) {
 	    		Item item = new Item();
 	    		item.setProduto(produtos.get(j)); 
 	    		item.setQuantidade(10);
-	    		item.setMovimentacaoEstoque(entrada);
+	    		item.setMovimentacaoEstoque(entradaEstoque);
 	    		itens.add(item);
     		}	
 
-    		entrada.setItens(itens);
+    		entradaEstoque.setItens(itens);
     		
-			entrada.setParceiro(parceiros.get(i));
-			entrada.setStatus(Status.CONCLUIDO);
-    		estoqueFacade.cadastrar(entrada);
+			entradaEstoque.setParceiro(parceiros.get(i));
+			entradaEstoque.setStatus(Status.CONCLUIDO);
+    		estoqueFacade.cadastrar(entradaEstoque);
     	}
     	
 		

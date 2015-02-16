@@ -1,20 +1,20 @@
-package org.sales.medsales.dominio.movimentacao;
+package org.sales.medsales.dominio.movimentacao.estoque;
 
 /**
- * Tipo da operação a ser realizada sobre a movimentação no cálculo dos
- * totalizadores. 
+ * Status para controle da movimentação no cálculo dos
+ * totalizadores do estoque. 
  */
-public enum Operacao {
+public enum Status {
 	
-	ENTRADA("E", "Entrada"), SAIDA("S", "Saída");
+	RASCUNHO("R", "Rascunho"), CONCLUIDO("C", "Concluído");
 	
-	/** Id desta operação, a ser armazenada na base de dados */
+	/** Id deste status, a ser armazenada na base de dados */
 	private String id;
 	
 	/** Descrição para ser exibida na aplicação */
 	private String descricao;
 
-	private Operacao(String id, String descricao) {
+	private Status(String id, String descricao) {
 		this.id = id;
 		this.descricao = descricao;
 	}
