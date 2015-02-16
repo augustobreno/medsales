@@ -9,7 +9,6 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -19,7 +18,6 @@ import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
 import org.sales.medsales.api.dominio.types.HibernateEnumType;
-import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.movimentacao.MovimentacaoValor;
 
 /**
@@ -59,27 +57,12 @@ public abstract class MovimentacaoEstoque extends MovimentacaoValor {
 	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="movimentacaoEstoque")
 	private List<Item> itens;
 
-	/**
-	 * Parceiro, de onde os itens foram adquiridos, ou para quem os itens foram vendidos.
-	 * A denpender do tipo da movimentação.
-	 */
-	@ManyToOne
-	private Parceiro parceiro;
-	
 	public List<Item> getItens() {
 		return itens;
 	}
 
 	public void setItens(List<Item> itens) {
 		this.itens = itens;
-	}
-
-	public Parceiro getParceiro() {
-		return parceiro;
-	}
-
-	public void setParceiro(Parceiro parceiro) {
-		this.parceiro = parceiro;
 	}
 
 	public Status getStatus() {

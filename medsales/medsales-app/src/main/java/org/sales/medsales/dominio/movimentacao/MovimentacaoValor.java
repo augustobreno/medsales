@@ -38,7 +38,6 @@ public abstract class MovimentacaoValor extends EntityBase<Long>{
 	/**
 	 * Ciclo que contém todas as movimentações de valores inter-relacionadas.
 	 */
-	// TODO deve ser obrigatório
 	@ManyToOne(fetch=FetchType.LAZY)
 	private Ciclo ciclo;
 	

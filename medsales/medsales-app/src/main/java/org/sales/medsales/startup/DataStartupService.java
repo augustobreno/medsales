@@ -21,13 +21,18 @@ import org.hibernate.SessionFactory;
 import org.hibernate.StatelessSession;
 import org.hibernate.Transaction;
 import org.sales.medsales.api.util.QuerierUtil;
+import org.sales.medsales.dominio.Ciclo;
 import org.sales.medsales.dominio.Parceiro;
+import org.sales.medsales.dominio.movimentacao.Operacao;
+import org.sales.medsales.dominio.movimentacao.Valor;
 import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.Item;
 import org.sales.medsales.dominio.movimentacao.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimentacao.estoque.Produto;
+import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.Status;
 import org.sales.medsales.negocio.ParceiroFacade;
+import org.sales.medsales.negocio.movimentacao.CicloFacade;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
 import org.sales.medsales.negocio.movimentacao.estoque.ProdutoFacade;
 
@@ -57,6 +62,9 @@ public class DataStartupService {
 	private EstoqueFacade estoqueFacade;
 	
 	@Inject
+	private CicloFacade cicloFacade;
+	
+	@Inject
 	private QuerierUtil querier; // FIXME QuerierUtil pertence ao pacote de testes. :-/
 	
 	@PersistenceUnit
@@ -67,7 +75,56 @@ public class DataStartupService {
 		Locale.setDefault(new Locale("PT", "BR")); // TODO verificar a melhor maneira de fazer isso
 		loadProdutos();
 		loadParceiro();
+		loadCiclos();
 		loadEntradas();
+		
+	}
+
+	private void loadCiclos() {
+		Ciclo ciclo = new Ciclo();
+		ciclo.setInicio(new Date());
+		ciclo.setInvestidor(querier.findAt(Parceiro.class, 0));
+		cicloFacade.save(ciclo);
+		
+		cicloFacade.addInvestimento(ciclo, new BigDecimal(1000.00));
+		
+		// Entrada
+		EntradaEstoque entradaEstoque = new EntradaEstoque();
+		List<Produto> produtos = querier.findAll(Produto.class);
+		List<Item> itens = new ArrayList<>();
+		for (int j = 0; j < DEFAULT_SIZE; j++) {
+    		Item item = new Item();
+    		item.setProduto(produtos.get(j)); 
+    		item.setQuantidade(10);
+    		item.setMovimentacaoEstoque(entradaEstoque);
+    		itens.add(item);
+		}	
+		entradaEstoque.setItens(itens);
+		entradaEstoque.setCiclo(ciclo);
+		entradaEstoque.setParceiro(ciclo.getInvestidor());
+		entradaEstoque.setStatus(Status.CONCLUIDO);
+		estoqueFacade.cadastrar(entradaEstoque);
+
+		// saida
+		SaidaEstoque saida = estoqueFacade.gerarSaida(entradaEstoque.getId());
+		saida.setStatus(Status.CONCLUIDO);
+		estoqueFacade.cadastrar(saida);
+		
+		// valor avulso
+		Valor valorEntrada = new Valor();
+		valorEntrada.setCiclo(ciclo);
+		valorEntrada.setOperacao(Operacao.ENTRADA);
+		valorEntrada.setParceiro(querier.findAt(Parceiro.class, 1));
+		valorEntrada.setValor(BigDecimal.valueOf(500.00));
+		cicloFacade.add(valorEntrada);
+		
+		Valor valorSaida = new Valor();
+		valorSaida.setCiclo(ciclo);
+		valorSaida.setOperacao(Operacao.SAIDA);
+		valorSaida.setParceiro(querier.findAt(Parceiro.class, 2));
+		valorSaida.setValor(BigDecimal.valueOf(100.00));
+		cicloFacade.add(valorSaida);
+		
 	}
 
 	private void loadEntradas() {
