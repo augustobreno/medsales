@@ -17,12 +17,12 @@ import org.sales.medsales.api.exceptions.EntityNotFoundException;
 import org.sales.medsales.api.exceptions.NullParameterException;
 import org.sales.medsales.dataLoader.PrecoProdutoDataLoader;
 import org.sales.medsales.dataLoader.ProdutosDataLoader;
-import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.Item;
-import org.sales.medsales.dominio.movimentacao.estoque.MovimentacaoEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.Produto;
-import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.Status;
+import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
+import org.sales.medsales.dominio.movimento.estoque.Item;
+import org.sales.medsales.dominio.movimento.estoque.MovimentoEstoque;
+import org.sales.medsales.dominio.movimento.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
+import org.sales.medsales.dominio.movimento.estoque.Status;
 import org.sales.medsales.exceptions.ExceptionCodes;
 import org.sales.medsales.exceptions.MovimentacaoSemItensException;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
@@ -104,7 +104,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(saidaEstoque);
+    	item.setMovimentoEstoque(saidaEstoque);
     	
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.CONCLUIDO);
@@ -140,7 +140,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	Long idInexistente = 9999999L;
     	
     	// se certificando de que não existe uma entrada com este ID
-    	MovimentacaoEstoque entradaInexistente = getQuerier().find(MovimentacaoEstoque.class, idInexistente);
+    	MovimentoEstoque entradaInexistente = getQuerier().find(MovimentoEstoque.class, idInexistente);
     	Assert.assertNull(entradaInexistente);
     	
     	estoqueFacade.gerarSaida(idInexistente);
@@ -215,7 +215,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     		Item item = new Item();
         	item.setProduto(getQuerier().findAt(Produto.class, i));
         	item.setQuantidade(10);
-        	item.setMovimentacaoEstoque(entradaEstoque);
+        	item.setMovimentoEstoque(entradaEstoque);
         	
         	itens.add(item);
 		}

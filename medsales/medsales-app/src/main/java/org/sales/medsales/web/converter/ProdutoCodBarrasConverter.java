@@ -6,7 +6,7 @@ import javax.faces.convert.Converter;
 import javax.faces.convert.ConverterException;
 import javax.faces.convert.FacesConverter;
 
-import org.sales.medsales.dominio.movimentacao.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.Produto;
 
 /**
  * Conversor que utiliza o código de barras do produto como chave.

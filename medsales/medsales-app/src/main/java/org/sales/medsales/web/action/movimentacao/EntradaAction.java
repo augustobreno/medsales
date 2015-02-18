@@ -5,8 +5,8 @@ import java.util.Date;
 import javax.enterprise.context.ConversationScoped;
 import javax.inject.Named;
 
-import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
+import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
+import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
 
 /**
  * Para cadastro de uma Entrada de Produtos no estoque

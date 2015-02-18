@@ -5,8 +5,8 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.sales.medsales.api.exceptions.NullParameterException;
-import org.sales.medsales.dominio.movimentacao.estoque.Produto;
-import org.sales.medsales.dominio.movimentacao.estoque.SaldoProdutoVO;
+import org.sales.medsales.dominio.movimento.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.SaldoProdutoVO;
 import org.sales.medsales.exceptions.ExceptionCodes;
 import org.sales.medsales.persistencia.repository.EstoqueRepository;
 

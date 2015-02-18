@@ -1,4 +1,4 @@
-package org.sales.medsales.dominio.movimentacao.estoque;
+package org.sales.medsales.dominio.movimento.estoque;
 
 /**
  * Status para controle da movimentação no cálculo dos

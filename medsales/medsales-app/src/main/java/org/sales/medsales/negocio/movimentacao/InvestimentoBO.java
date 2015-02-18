@@ -9,7 +9,7 @@ import javax.inject.Inject;
 import org.sales.medsales.api.exceptions.BusinessException;
 import org.sales.medsales.api.exceptions.ExceptionMessage;
 import org.sales.medsales.api.exceptions.NullParameterException;
-import org.sales.medsales.dominio.movimentacao.Investimento;
+import org.sales.medsales.dominio.movimento.valor.Investimento;
 import org.sales.medsales.exceptions.ExceptionCodes;
 import org.sales.medsales.persistencia.repository.InvestimentoRepository;
 

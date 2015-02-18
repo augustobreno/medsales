@@ -1,8 +1,8 @@
-package org.sales.medsales.dominio.movimentacao.estoque;
+package org.sales.medsales.dominio.movimento.estoque;
 
 import javax.persistence.Entity;
 
-import org.sales.medsales.dominio.movimentacao.Operacao;
+import org.sales.medsales.dominio.movimento.Operacao;
 
 /**
  * Caracteriza uma movimentação de Entrada, que acrescenta itens ao estoque. 
@@ -10,7 +10,7 @@ import org.sales.medsales.dominio.movimentacao.Operacao;
  */
 @SuppressWarnings("serial")
 @Entity
-public class EntradaEstoque extends MovimentacaoEstoque {
+public class EntradaEstoque extends MovimentoEstoque {
 
 	@Override
 	protected void defineOperacao() {

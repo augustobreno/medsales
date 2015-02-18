@@ -1,7 +1,7 @@
 package org.sales.medsales.web.action.movimentacao;
 
-import org.sales.medsales.dominio.movimentacao.estoque.Item;
-import org.sales.medsales.dominio.movimentacao.estoque.PrecoProduto;
+import org.sales.medsales.dominio.movimento.estoque.Item;
+import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
 
 /**
  * Decorator para exibição conjunta dos dados do Item e o preço cadastro.

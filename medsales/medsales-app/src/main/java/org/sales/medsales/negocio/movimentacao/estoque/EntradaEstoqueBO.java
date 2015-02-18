@@ -3,9 +3,9 @@ package org.sales.medsales.negocio.movimentacao.estoque;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.Item;
-import org.sales.medsales.dominio.movimentacao.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
+import org.sales.medsales.dominio.movimento.estoque.Item;
+import org.sales.medsales.dominio.movimento.estoque.Produto;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 
 /**

@@ -1,7 +1,7 @@
 package org.sales.medsales.dataLoader;
 
 import org.easy.testeasy.dataloader.HibernateDataLoader;
-import org.sales.medsales.dominio.movimentacao.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.Produto;
 
 /**
  * Data loader que cria uma base de dados de Produtos.

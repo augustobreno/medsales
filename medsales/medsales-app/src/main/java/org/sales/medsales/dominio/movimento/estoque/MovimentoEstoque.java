@@ -1,4 +1,4 @@
-package org.sales.medsales.dominio.movimentacao.estoque;
+package org.sales.medsales.dominio.movimento.estoque;
 
 import java.util.Date;
 import java.util.List;
@@ -18,7 +18,7 @@ import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
 import org.sales.medsales.api.dominio.types.HibernateEnumType;
-import org.sales.medsales.dominio.movimentacao.MovimentacaoValor;
+import org.sales.medsales.dominio.movimento.Movimento;
 
 /**
  * Determina que os dados e comportamentos associados à movimentação de um item do
@@ -30,12 +30,12 @@ import org.sales.medsales.dominio.movimentacao.MovimentacaoValor;
 
 @TypeDefs ({
 	@TypeDef(name = "status", typeClass = HibernateEnumType.class, 
-		parameters = { @Parameter(name = "enumClass", value = "org.sales.medsales.dominio.movimentacao.estoque.Status"), })		
+		parameters = { @Parameter(name = "enumClass", value = "org.sales.medsales.dominio.movimento.estoque.Status"), })		
 })
 
 @Inheritance(strategy = InheritanceType.JOINED) 
 @Entity
-public abstract class MovimentacaoEstoque extends MovimentacaoValor {
+public abstract class MovimentoEstoque extends Movimento {
 
 	/**
 	 * Data oficial da movimentação.
@@ -54,9 +54,18 @@ public abstract class MovimentacaoEstoque extends MovimentacaoValor {
 	/**
 	 * Itens associados a este tipo de movimentação.
 	 */
-	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="movimentacaoEstoque")
+	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="movimentoEstoque")
 	private List<Item> itens;
 
+	public MovimentoEstoque() {
+		defineOperacao();
+	}
+	
+	/**
+	 * Ponto de extensão para configuração da operação padrão da entidade concreta.
+	 */
+	protected abstract void defineOperacao();
+	
 	public List<Item> getItens() {
 		return itens;
 	}

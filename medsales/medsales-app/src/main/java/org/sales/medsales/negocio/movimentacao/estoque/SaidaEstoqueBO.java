@@ -1,7 +1,7 @@
 package org.sales.medsales.negocio.movimentacao.estoque;
 
-import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.Status;
+import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
+import org.sales.medsales.dominio.movimento.estoque.Status;
 
 
 /**

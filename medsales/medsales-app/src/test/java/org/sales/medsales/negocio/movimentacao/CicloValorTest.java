@@ -14,8 +14,8 @@ import org.sales.medsales.api.exceptions.CodedAppException;
 import org.sales.medsales.dataLoader.ParceirosDataLoader;
 import org.sales.medsales.dominio.Ciclo;
 import org.sales.medsales.dominio.Parceiro;
-import org.sales.medsales.dominio.movimentacao.Operacao;
-import org.sales.medsales.dominio.movimentacao.Valor;
+import org.sales.medsales.dominio.movimento.Operacao;
+import org.sales.medsales.dominio.movimento.valor.Valor;
 import org.sales.medsales.exceptions.ExceptionCodes;
 
 /**

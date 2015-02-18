@@ -13,7 +13,7 @@ import org.sales.medsales.api.exceptions.BusinessException;
 import org.sales.medsales.dataLoader.ParceirosDataLoader;
 import org.sales.medsales.dominio.Ciclo;
 import org.sales.medsales.dominio.Parceiro;
-import org.sales.medsales.dominio.movimentacao.Investimento;
+import org.sales.medsales.dominio.movimento.valor.Investimento;
 import org.sales.medsales.exceptions.ExceptionCodes;
 import org.sales.medsales.negocio.movimentacao.InvestimentoBO;
 

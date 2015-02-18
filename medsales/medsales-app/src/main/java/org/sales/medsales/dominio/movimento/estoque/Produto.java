@@ -1,4 +1,4 @@
-package org.sales.medsales.dominio.movimentacao.estoque;
+package org.sales.medsales.dominio.movimento.estoque;
 
 import java.util.Collections;
 import java.util.List;

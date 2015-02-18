@@ -14,9 +14,9 @@ import org.easy.qbeasy.api.Filter;
 import org.easy.qbeasy.api.OperationContainer.ContainerType;
 import org.easy.qbeasy.api.operator.Operators;
 import org.sales.medsales.api.web.action.CrudActionBase;
-import org.sales.medsales.dominio.movimentacao.estoque.PrecoProduto;
-import org.sales.medsales.dominio.movimentacao.estoque.Produto;
-import org.sales.medsales.dominio.movimentacao.estoque.SaldoProdutoVO;
+import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
+import org.sales.medsales.dominio.movimento.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.SaldoProdutoVO;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
 import org.sales.medsales.negocio.movimentacao.estoque.ProdutoFacade;
 

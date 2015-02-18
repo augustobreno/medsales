@@ -23,14 +23,14 @@ import org.hibernate.Transaction;
 import org.sales.medsales.api.util.QuerierUtil;
 import org.sales.medsales.dominio.Ciclo;
 import org.sales.medsales.dominio.Parceiro;
-import org.sales.medsales.dominio.movimentacao.Operacao;
-import org.sales.medsales.dominio.movimentacao.Valor;
-import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.Item;
-import org.sales.medsales.dominio.movimentacao.estoque.PrecoProduto;
-import org.sales.medsales.dominio.movimentacao.estoque.Produto;
-import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.Status;
+import org.sales.medsales.dominio.movimento.Operacao;
+import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
+import org.sales.medsales.dominio.movimento.estoque.Item;
+import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
+import org.sales.medsales.dominio.movimento.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
+import org.sales.medsales.dominio.movimento.estoque.Status;
+import org.sales.medsales.dominio.movimento.valor.Valor;
 import org.sales.medsales.negocio.ParceiroFacade;
 import org.sales.medsales.negocio.movimentacao.CicloFacade;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
@@ -96,11 +96,11 @@ public class DataStartupService {
     		Item item = new Item();
     		item.setProduto(produtos.get(j)); 
     		item.setQuantidade(10);
-    		item.setMovimentacaoEstoque(entradaEstoque);
+    		item.setMovimentoEstoque(entradaEstoque);
     		itens.add(item);
 		}	
 		entradaEstoque.setItens(itens);
-		entradaEstoque.setCiclo(ciclo);
+//		entradaEstoque.setCiclo(ciclo);
 		entradaEstoque.setParceiro(ciclo.getInvestidor());
 		entradaEstoque.setStatus(Status.CONCLUIDO);
 		estoqueFacade.cadastrar(entradaEstoque);
@@ -139,7 +139,7 @@ public class DataStartupService {
 	    		Item item = new Item();
 	    		item.setProduto(produtos.get(j)); 
 	    		item.setQuantidade(10);
-	    		item.setMovimentacaoEstoque(entradaEstoque);
+	    		item.setMovimentoEstoque(entradaEstoque);
 	    		itens.add(item);
     		}	
 

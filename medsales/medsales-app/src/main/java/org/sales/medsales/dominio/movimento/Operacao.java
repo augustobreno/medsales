@@ -1,4 +1,4 @@
-package org.sales.medsales.dominio.movimentacao;
+package org.sales.medsales.dominio.movimento;
 
 /**
  * Tipo da operação a ser realizada sobre a movimentação no cálculo dos

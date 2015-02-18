@@ -1,9 +1,9 @@
-package org.sales.medsales.dominio.movimentacao.estoque;
+package org.sales.medsales.dominio.movimento.estoque;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
-import org.sales.medsales.dominio.movimentacao.Operacao;
+import org.sales.medsales.dominio.movimento.Operacao;
 
 /**
  * Caracteriza uma movimentação de Saída, que remove itens ao estoque. 
@@ -11,7 +11,7 @@ import org.sales.medsales.dominio.movimentacao.Operacao;
  */
 @SuppressWarnings("serial")
 @Entity
-public class SaidaEstoque extends MovimentacaoEstoque {
+public class SaidaEstoque extends MovimentoEstoque {
 
 	/**
 	 * Porcentagem de desconto aplicado sobre uma movimentação de saída.

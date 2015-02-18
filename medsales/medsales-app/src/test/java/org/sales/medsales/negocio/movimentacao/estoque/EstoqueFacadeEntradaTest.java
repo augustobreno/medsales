@@ -14,10 +14,10 @@ import org.sales.medsales.api.exceptions.BusinessException;
 import org.sales.medsales.api.exceptions.NullParameterException;
 import org.sales.medsales.dataLoader.PrecoProdutoDataLoader;
 import org.sales.medsales.dataLoader.ProdutosDataLoader;
-import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.Item;
-import org.sales.medsales.dominio.movimentacao.estoque.Produto;
-import org.sales.medsales.dominio.movimentacao.estoque.Status;
+import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
+import org.sales.medsales.dominio.movimento.estoque.Item;
+import org.sales.medsales.dominio.movimento.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.Status;
 import org.sales.medsales.exceptions.ExceptionCodes;
 import org.sales.medsales.exceptions.MovimentacaoSemItensException;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
@@ -92,7 +92,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(entradaEstoque);
+    	item.setMovimentoEstoque(entradaEstoque);
     	
     	entradaEstoque.setItens(Arrays.asList(item));
     	entradaEstoque.setStatus(Status.CONCLUIDO);
@@ -128,7 +128,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(entradaEstoque);
+    	item.setMovimentoEstoque(entradaEstoque);
     	
     	entradaEstoque.setItens(Arrays.asList(item));
     	entradaEstoque.setStatus(Status.CONCLUIDO);
@@ -158,7 +158,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(entradaEstoque);
+    	item.setMovimentoEstoque(entradaEstoque);
     	
     	entradaEstoque.setItens(Arrays.asList(item));
     	entradaEstoque.setStatus(Status.CONCLUIDO);

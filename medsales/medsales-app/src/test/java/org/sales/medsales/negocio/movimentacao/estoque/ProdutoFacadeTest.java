@@ -13,11 +13,11 @@ import junit.framework.Assert;
 import org.apache.commons.lang.time.DateUtils;
 import org.junit.Test;
 import org.sales.medsales.MedSalesBaseTest;
-import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.Item;
-import org.sales.medsales.dominio.movimentacao.estoque.PrecoProduto;
-import org.sales.medsales.dominio.movimentacao.estoque.Produto;
-import org.sales.medsales.dominio.movimentacao.estoque.Status;
+import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
+import org.sales.medsales.dominio.movimento.estoque.Item;
+import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
+import org.sales.medsales.dominio.movimento.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.Status;
 import org.sales.medsales.exceptions.ProdutoCodBarrasJaExisteException;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 import org.sales.medsales.exceptions.RemoverProdutoComMovimentacaoException;
@@ -185,7 +185,7 @@ public class ProdutoFacadeTest extends MedSalesBaseTest {
 		Item item = new Item();
 		item.setProduto(produto);
 		item.setQuantidade(10);
-		item.setMovimentacaoEstoque(entradaEstoque);
+		item.setMovimentoEstoque(entradaEstoque);
 
 		entradaEstoque.setItens(Arrays.asList(item));
 		entradaEstoque.setStatus(Status.CONCLUIDO);

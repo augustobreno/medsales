@@ -12,7 +12,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import org.sales.medsales.api.dominio.EntityBase;
-import org.sales.medsales.dominio.movimentacao.MovimentacaoValor;
+import org.sales.medsales.dominio.movimento.valor.MovimentoValor;
 
 /**
  * Representa um ciclo de movimentação de fluxo de caixa que envolve
@@ -59,7 +59,7 @@ public class Ciclo extends EntityBase<Long>{
 	private Date fim;
 	
 	@OneToMany(fetch=FetchType.LAZY, mappedBy="ciclo")
-	private List<MovimentacaoValor> movimentacoes;
+	private List<MovimentoValor> movimentacoes;
 
 	public Parceiro getInvestidor() {
 		return investidor;
@@ -85,11 +85,11 @@ public class Ciclo extends EntityBase<Long>{
 		this.fim = fim;
 	}
 
-	public List<MovimentacaoValor> getMovimentacoes() {
+	public List<MovimentoValor> getMovimentacoes() {
 		return movimentacoes;
 	}
 
-	public void setMovimentacoes(List<MovimentacaoValor> movimentacoes) {
+	public void setMovimentacoes(List<MovimentoValor> movimentacoes) {
 		this.movimentacoes = movimentacoes;
 	}
 	

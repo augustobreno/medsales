@@ -9,9 +9,9 @@ import java.util.Map;
 import javax.enterprise.context.ConversationScoped;
 import javax.inject.Named;
 
-import org.sales.medsales.dominio.movimentacao.estoque.Produto;
-import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.SaldoProdutoVO;
+import org.sales.medsales.dominio.movimento.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
+import org.sales.medsales.dominio.movimento.estoque.SaldoProdutoVO;
 
 /**
  * Mantém o fluxo de cadastro e manutenção de saída (venda) de produtos.

@@ -1,4 +1,4 @@
-package org.sales.medsales.dominio.movimentacao.estoque;
+package org.sales.medsales.dominio.movimento.estoque;
 
 /**
  * VO para agrupamento dos dados de um Produto e sua quantidade existente em estoque. 
