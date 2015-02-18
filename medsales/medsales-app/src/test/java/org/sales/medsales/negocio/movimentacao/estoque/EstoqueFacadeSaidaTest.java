@@ -19,7 +19,7 @@ import org.sales.medsales.dataLoader.PrecoProdutoDataLoader;
 import org.sales.medsales.dataLoader.ProdutosDataLoader;
 import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.Item;
-import org.sales.medsales.dominio.movimentacao.estoque.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.MovimentoEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.Produto;
 import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.Status;
@@ -104,7 +104,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(saidaEstoque);
+    	item.setMovimentoEstoque(saidaEstoque);
     	
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.CONCLUIDO);
@@ -140,7 +140,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	Long idInexistente = 9999999L;
     	
     	// se certificando de que não existe uma entrada com este ID
-    	MovimentacaoEstoque entradaInexistente = getQuerier().find(MovimentacaoEstoque.class, idInexistente);
+    	MovimentoEstoque entradaInexistente = getQuerier().find(MovimentoEstoque.class, idInexistente);
     	Assert.assertNull(entradaInexistente);
     	
     	estoqueFacade.gerarSaida(idInexistente);
@@ -215,7 +215,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     		Item item = new Item();
         	item.setProduto(getQuerier().findAt(Produto.class, i));
         	item.setQuantidade(10);
-        	item.setMovimentacaoEstoque(entradaEstoque);
+        	item.setMovimentoEstoque(entradaEstoque);
         	
         	itens.add(item);
 		}

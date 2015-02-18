@@ -185,7 +185,7 @@ public class ProdutoFacadeTest extends MedSalesBaseTest {
 		Item item = new Item();
 		item.setProduto(produto);
 		item.setQuantidade(10);
-		item.setMovimentacaoEstoque(entradaEstoque);
+		item.setMovimentoEstoque(entradaEstoque);
 
 		entradaEstoque.setItens(Arrays.asList(item));
 		entradaEstoque.setStatus(Status.CONCLUIDO);

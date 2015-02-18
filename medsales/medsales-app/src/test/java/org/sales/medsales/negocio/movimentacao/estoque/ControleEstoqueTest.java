@@ -93,7 +93,7 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
     	Item item = new Item();
 		item.setProduto(produto);
     	item.setQuantidade(quantidade);
-    	item.setMovimentacaoEstoque(entradaEstoque);
+    	item.setMovimentoEstoque(entradaEstoque);
     	
     	entradaEstoque.setItens(Arrays.asList(item));
     	entradaEstoque.setStatus(Status.CONCLUIDO);
@@ -122,7 +122,7 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
     	Item item = new Item();
 		item.setProduto(produto);
     	item.setQuantidade(5);
-    	item.setMovimentacaoEstoque(saidaEstoque);
+    	item.setMovimentoEstoque(saidaEstoque);
     	
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.CONCLUIDO);
@@ -156,7 +156,7 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
     	Item item = new Item();
 		item.setProduto(produto);
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(saidaEstoque);
+    	item.setMovimentoEstoque(saidaEstoque);
     	
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.CONCLUIDO);
@@ -190,7 +190,7 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
     	Item item = new Item();
 		item.setProduto(produto);
     	item.setQuantidade(15);
-    	item.setMovimentacaoEstoque(saidaEstoque);
+    	item.setMovimentoEstoque(saidaEstoque);
     	
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.CONCLUIDO);

@@ -9,7 +9,7 @@ import javax.inject.Inject;
 import org.easy.qbeasy.QBEFilter;
 import org.easy.qbeasy.api.operator.Operators;
 import org.sales.medsales.api.negocio.CrudFacadeBase;
-import org.sales.medsales.dominio.movimentacao.estoque.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.MovimentoEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimentacao.estoque.Produto;
 import org.sales.medsales.exceptions.ProdutoCodBarrasJaExisteException;
@@ -106,7 +106,7 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 	private void validarDependenciaMovimentacao(Produto entity) {
 		// Não é possível remover um produto se este já foi cadastrado em uma
 		// movimentacao
-		QBEFilter<MovimentacaoEstoque> filter = new QBEFilter<>(MovimentacaoEstoque.class);
+		QBEFilter<MovimentoEstoque> filter = new QBEFilter<>(MovimentoEstoque.class);
 		filter.filterBy("itens.produto", Operators.equal(), entity);
 
 		long numMovimentacoes = estoqueFacade.count(filter);

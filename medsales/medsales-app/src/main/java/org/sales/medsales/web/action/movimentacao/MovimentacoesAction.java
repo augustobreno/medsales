@@ -15,7 +15,7 @@ import org.easy.qbeasy.api.operator.Operators;
 import org.primefaces.event.SelectEvent;
 import org.sales.medsales.api.web.action.ServerPaginationActionBased;
 import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.MovimentoEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
 
@@ -28,7 +28,7 @@ import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
 @SuppressWarnings("serial")
 @Named
 @ConversationScoped
-public class MovimentacoesAction extends ServerPaginationActionBased<MovimentacaoEstoque, Long, EstoqueFacade> {
+public class MovimentacoesAction extends ServerPaginationActionBased<MovimentoEstoque, Long, EstoqueFacade> {
 
 	@Inject
 	private Conversation conversation;
@@ -48,7 +48,7 @@ public class MovimentacoesAction extends ServerPaginationActionBased<Movimentaca
 	}
 
 	@Override
-	protected void configSearch(Filter<? extends MovimentacaoEstoque> filter) {
+	protected void configSearch(Filter<? extends MovimentoEstoque> filter) {
 		super.configSearch(filter);
 
 		filter.sortDescBy("dataMovimentacao", "id");
@@ -64,10 +64,10 @@ public class MovimentacoesAction extends ServerPaginationActionBased<Movimentaca
 	}
 
 	public void load(SelectEvent event) throws IOException {
-		load((MovimentacaoEstoque) event.getObject());
+		load((MovimentoEstoque) event.getObject());
 	}
 	
-	public void load(MovimentacaoEstoque movimentacao) throws IOException {
+	public void load(MovimentoEstoque movimentacao) throws IOException {
 		if (EntradaEstoque.class.isAssignableFrom(movimentacao.getClass())) {
 			FacesContext.getCurrentInstance().getExternalContext().redirect("entrada.xhtml?lid=" + movimentacao.getId());
 		} else 	if (SaidaEstoque.class.isAssignableFrom(movimentacao.getClass())) {
@@ -78,8 +78,8 @@ public class MovimentacoesAction extends ServerPaginationActionBased<Movimentaca
 	}
 
 	@Override
-	public Class<MovimentacaoEstoque> getEntityType() {
-		return MovimentacaoEstoque.class;
+	public Class<MovimentoEstoque> getEntityType() {
+		return MovimentoEstoque.class;
 	}
 
 	@Override

@@ -18,7 +18,7 @@ import org.sales.medsales.api.exceptions.BusinessException;
 import org.sales.medsales.api.web.action.ActionBase;
 import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.movimentacao.estoque.Item;
-import org.sales.medsales.dominio.movimentacao.estoque.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.MovimentoEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimentacao.estoque.Produto;
 import org.sales.medsales.dominio.movimentacao.estoque.Status;
@@ -32,7 +32,7 @@ import org.sales.medsales.negocio.movimentacao.estoque.ProdutoFacade;
  * @author Augusto
  */
 @SuppressWarnings("serial")
-public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentacaoEstoque> extends ActionBase {
+public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> extends ActionBase {
 
 	@Inject
 	private Conversation conversation;
@@ -200,7 +200,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentacaoEstoqu
 			Item novoItem = new Item();
 			novoItem.setProduto(precoProduto.getProduto());
 			novoItem.setQuantidade(this.item.getQuantidade());
-			novoItem.setMovimentacaoEstoque(getMovimentacao());
+			novoItem.setMovimentoEstoque(getMovimentacao());
 
 			itemPreco = new ItemPreco(novoItem, precoProduto);
 			getItens().addFirst(itemPreco);
@@ -298,10 +298,10 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentacaoEstoqu
 	@SuppressWarnings("unchecked")
 	protected void doLoadId() {
 		if (lid != null) {
-			Filter<MovimentacaoEstoque> filter = new QBEFilter<>(MovimentacaoEstoque.class);
+			Filter<MovimentoEstoque> filter = new QBEFilter<>(MovimentoEstoque.class);
 			filter.filterBy("id", Operators.equal(), lid);
 			filter.addFetch("itens.produto", "parceiro");
-			MovimentacaoEstoque movimentacao = estoqueFacade.findBy(filter);
+			MovimentoEstoque movimentacao = estoqueFacade.findBy(filter);
 			
 			if (movimentacao == null) {
 				throw new BusinessException(null, "Nenhuma movimentação foi encontrada com o código informado: {0}", lid);

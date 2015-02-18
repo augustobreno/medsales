@@ -11,7 +11,7 @@ import org.sales.medsales.dominio.movimentacao.Operacao;
  */
 @SuppressWarnings("serial")
 @Entity
-public class SaidaEstoque extends MovimentacaoEstoque {
+public class SaidaEstoque extends MovimentoEstoque {
 
 	/**
 	 * Porcentagem de desconto aplicado sobre uma movimentação de saída.

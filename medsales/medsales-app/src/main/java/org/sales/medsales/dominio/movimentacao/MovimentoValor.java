@@ -10,13 +10,10 @@ import javax.persistence.InheritanceType;
 import javax.persistence.ManyToOne;
 
 import org.hibernate.annotations.Parameter;
-import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
-import org.sales.medsales.api.dominio.EntityBase;
 import org.sales.medsales.api.dominio.types.HibernateEnumType;
 import org.sales.medsales.dominio.Ciclo;
-import org.sales.medsales.dominio.Parceiro;
 
 /**
  * Tipo abstrato que representa uma movimentação de valores em um ciclo. Uma movimentação
@@ -33,7 +30,7 @@ import org.sales.medsales.dominio.Parceiro;
 
 @Inheritance(strategy = InheritanceType.JOINED) 
 @Entity
-public abstract class MovimentacaoValor extends EntityBase<Long>{
+public abstract class MovimentoValor extends Movimento{
 
 	/**
 	 * Ciclo que contém todas as movimentações de valores inter-relacionadas.
@@ -42,26 +39,12 @@ public abstract class MovimentacaoValor extends EntityBase<Long>{
 	private Ciclo ciclo;
 	
 	/**
-	 * Aquele que dá ou recebe o valor associado a esta movimentação.
-	 */
-	@ManyToOne(fetch=FetchType.LAZY)
-	private Parceiro parceiro;
-	
-	/**
 	 * Valor total desta movimentação.
 	 */
 	@Column(precision=19, scale=2)
 	private BigDecimal valor;
 	
-	/** determina o tipo de operação que este objeto deverá realizar (entrada, saída...) */
-	@Type(type="operacao")
-	@Column(nullable=false)
-	private Operacao operacao;
-
-	@Column(length=500)
-	private String observacao;
-	
-	public MovimentacaoValor() {
+	public MovimentoValor() {
 		defineOperacao();
 	}
 	
@@ -78,14 +61,6 @@ public abstract class MovimentacaoValor extends EntityBase<Long>{
 		this.ciclo = ciclo;
 	}
 
-	public Parceiro getParceiro() {
-		return parceiro;
-	}
-
-	public void setParceiro(Parceiro parceiro) {
-		this.parceiro = parceiro;
-	}
-
 	public BigDecimal getValor() {
 		return valor;
 	}
@@ -94,20 +69,4 @@ public abstract class MovimentacaoValor extends EntityBase<Long>{
 		this.valor = valor;
 	}
 
-	public Operacao getOperacao() {
-		return operacao;
-	}
-
-	public void setOperacao(Operacao operacao) {
-		this.operacao = operacao;
-	}
-
-	public String getObservacao() {
-		return observacao;
-	}
-
-	public void setObservacao(String observacao) {
-		this.observacao = observacao;
-	}
-	
 }

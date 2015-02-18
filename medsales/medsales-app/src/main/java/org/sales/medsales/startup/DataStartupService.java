@@ -96,11 +96,11 @@ public class DataStartupService {
     		Item item = new Item();
     		item.setProduto(produtos.get(j)); 
     		item.setQuantidade(10);
-    		item.setMovimentacaoEstoque(entradaEstoque);
+    		item.setMovimentoEstoque(entradaEstoque);
     		itens.add(item);
 		}	
 		entradaEstoque.setItens(itens);
-		entradaEstoque.setCiclo(ciclo);
+//		entradaEstoque.setCiclo(ciclo);
 		entradaEstoque.setParceiro(ciclo.getInvestidor());
 		entradaEstoque.setStatus(Status.CONCLUIDO);
 		estoqueFacade.cadastrar(entradaEstoque);
@@ -139,7 +139,7 @@ public class DataStartupService {
 	    		Item item = new Item();
 	    		item.setProduto(produtos.get(j)); 
 	    		item.setQuantidade(10);
-	    		item.setMovimentacaoEstoque(entradaEstoque);
+	    		item.setMovimentoEstoque(entradaEstoque);
 	    		itens.add(item);
     		}	
 

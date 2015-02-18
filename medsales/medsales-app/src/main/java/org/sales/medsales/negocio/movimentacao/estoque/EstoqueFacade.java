@@ -10,7 +10,7 @@ import org.easy.qbeasy.api.Filter;
 import org.sales.medsales.api.negocio.BusinessExceptionHandler;
 import org.sales.medsales.api.negocio.ServerPaginationFacade;
 import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
-import org.sales.medsales.dominio.movimentacao.estoque.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.MovimentoEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.Produto;
 import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.SaldoProdutoVO;
@@ -26,7 +26,7 @@ import org.sales.medsales.persistencia.repository.EstoqueRepository;
 @BusinessExceptionHandler
 @LocalBean
 @Stateless
-public class EstoqueFacade implements ServerPaginationFacade<MovimentacaoEstoque, Long> {
+public class EstoqueFacade implements ServerPaginationFacade<MovimentoEstoque, Long> {
 
 	@Inject
 	private EntradaEstoqueBO entradaEstoqueBO; 
@@ -70,7 +70,7 @@ public class EstoqueFacade implements ServerPaginationFacade<MovimentacaoEstoque
 	 * Remove uma movimentação da base de dados.
 	 * @param movimentacao A ser removida.
 	 */
-	public void remover(MovimentacaoEstoque movimentacao) {
+	public void remover(MovimentoEstoque movimentacao) {
 		estoqueRepository.remove(movimentacao);
 	}
 	
@@ -78,7 +78,7 @@ public class EstoqueFacade implements ServerPaginationFacade<MovimentacaoEstoque
 	 * @param filter Filtro para consulta.
 	 * @return Todos os registros alcançados pelo filtro.
 	 */
-	public List<MovimentacaoEstoque> findAllBy(Filter<MovimentacaoEstoque> filter) {
+	public List<MovimentoEstoque> findAllBy(Filter<MovimentoEstoque> filter) {
 		return estoqueRepository.findAllBy(filter);
 	}
 	
@@ -86,7 +86,7 @@ public class EstoqueFacade implements ServerPaginationFacade<MovimentacaoEstoque
 	 * @param filter Filtro para consulta.
 	 * @return Número de registros alcançados pelo filtro.
 	 */
-	public Long count(Filter<MovimentacaoEstoque> filter) {
+	public Long count(Filter<MovimentoEstoque> filter) {
 		return estoqueRepository.count(filter);
 	}
 
@@ -95,7 +95,7 @@ public class EstoqueFacade implements ServerPaginationFacade<MovimentacaoEstoque
 	 * @param filter Filtro com restrições para consulta.
 	 * @return Movimentação relacionada pelo filtro.
 	 */
-    public MovimentacaoEstoque findBy(Filter<MovimentacaoEstoque> filter) {
+    public MovimentoEstoque findBy(Filter<MovimentoEstoque> filter) {
         return estoqueRepository.findBy(filter);
     }
 

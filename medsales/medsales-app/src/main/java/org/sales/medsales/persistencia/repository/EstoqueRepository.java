@@ -10,13 +10,13 @@ import org.easy.qbeasy.util.EntityUtil;
 import org.sales.medsales.api.persistencia.repository.CrudRepositoryBase;
 import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.movimentacao.Operacao;
-import org.sales.medsales.dominio.movimentacao.estoque.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.MovimentoEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimentacao.estoque.Produto;
 import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.SaldoProdutoVO;
 
-public class EstoqueRepository extends CrudRepositoryBase<MovimentacaoEstoque, Long> {
+public class EstoqueRepository extends CrudRepositoryBase<MovimentoEstoque, Long> {
 
 	/**
 	 * @return true se todos os produtos informados tiverem pelo menos um preço
@@ -60,7 +60,7 @@ public class EstoqueRepository extends CrudRepositoryBase<MovimentacaoEstoque, L
 								+ "(produto.id, SUM(case when mov.operacao = '"
 								+ Operacao.ENTRADA.getId()
 								+ "' then  item.quantidade else -item.quantidade end)) "
-								+ "FROM " + produtoType + " produto left join produto.itens item left join item.movimentacaoEstoque mov"
+								+ "FROM " + produtoType + " produto left join produto.itens item left join item.movimentoEstoque mov"
 								+ " WHERE produto.id in (:idProdutos) GROUP BY produto ");
 		query.setParameter("idProdutos", EntityUtil.getIds(produtos));
 

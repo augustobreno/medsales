@@ -92,7 +92,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(entradaEstoque);
+    	item.setMovimentoEstoque(entradaEstoque);
     	
     	entradaEstoque.setItens(Arrays.asList(item));
     	entradaEstoque.setStatus(Status.CONCLUIDO);
@@ -128,7 +128,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(entradaEstoque);
+    	item.setMovimentoEstoque(entradaEstoque);
     	
     	entradaEstoque.setItens(Arrays.asList(item));
     	entradaEstoque.setStatus(Status.CONCLUIDO);
@@ -158,7 +158,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(entradaEstoque);
+    	item.setMovimentoEstoque(entradaEstoque);
     	
     	entradaEstoque.setItens(Arrays.asList(item));
     	entradaEstoque.setStatus(Status.CONCLUIDO);

@@ -47,7 +47,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(saidaEstoque);
+    	item.setMovimentoEstoque(saidaEstoque);
     	
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.CONCLUIDO);
@@ -79,7 +79,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(saidaEstoque);
+    	item.setMovimentoEstoque(saidaEstoque);
     	
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.RASCUNHO);
@@ -113,7 +113,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerier().findAt(Produto.class, 0));
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(saida1);
+    	item.setMovimentoEstoque(saida1);
     	
     	saida1.setItens(Arrays.asList(item));
     	saida1.setStatus(Status.CONCLUIDO);
@@ -128,7 +128,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	item = new Item();
     	item.setProduto(getQuerier().findAt(Produto.class, 1));
     	item.setQuantidade(15);
-    	item.setMovimentacaoEstoque(saida2);
+    	item.setMovimentoEstoque(saida2);
     	
     	saida2.setItens(Arrays.asList(item));
     	saida2.setStatus(Status.CONCLUIDO);
@@ -168,7 +168,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	Item item = new Item();
     	item.setProduto(getQuerier().findAt(Produto.class, 0));
     	item.setQuantidade(10);
-    	item.setMovimentacaoEstoque(saida1);
+    	item.setMovimentoEstoque(saida1);
     	
     	saida1.setItens(Arrays.asList(item));
     	saida1.setStatus(Status.CONCLUIDO);
@@ -183,7 +183,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	item = new Item();
     	item.setProduto(getQuerier().findAt(Produto.class, 1));
     	item.setQuantidade(15);
-    	item.setMovimentacaoEstoque(saida2);
+    	item.setMovimentoEstoque(saida2);
     	
     	saida2.setItens(Arrays.asList(item));
     	saida2.setStatus(Status.CONCLUIDO);

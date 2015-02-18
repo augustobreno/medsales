@@ -8,7 +8,7 @@ import javax.persistence.Entity;
  */
 @SuppressWarnings("serial")
 @Entity
-public class Valor extends MovimentacaoValor {
+public class Valor extends MovimentoValor {
 
 	@Override
 	protected void defineOperacao() {

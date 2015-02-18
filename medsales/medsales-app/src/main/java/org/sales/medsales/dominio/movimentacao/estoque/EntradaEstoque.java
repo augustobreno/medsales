@@ -10,7 +10,7 @@ import org.sales.medsales.dominio.movimentacao.Operacao;
  */
 @SuppressWarnings("serial")
 @Entity
-public class EntradaEstoque extends MovimentacaoEstoque {
+public class EntradaEstoque extends MovimentoEstoque {
 
 	@Override
 	protected void defineOperacao() {

@@ -13,7 +13,7 @@ import javax.persistence.InheritanceType;
 @SuppressWarnings("serial")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS) 
 @Entity
-public abstract class SaidaValor extends MovimentacaoValor {
+public abstract class SaidaValor extends MovimentoValor {
 
 	protected void defineOperacao() {
 		setOperacao(Operacao.SAIDA);

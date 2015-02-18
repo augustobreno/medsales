@@ -10,7 +10,7 @@ import org.sales.medsales.api.exceptions.EntityNotFoundException;
 import org.sales.medsales.api.exceptions.NullParameterException;
 import org.sales.medsales.dominio.movimentacao.estoque.EntradaEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.Item;
-import org.sales.medsales.dominio.movimentacao.estoque.MovimentacaoEstoque;
+import org.sales.medsales.dominio.movimentacao.estoque.MovimentoEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.SaidaEstoque;
 import org.sales.medsales.dominio.movimentacao.estoque.Status;
 import org.sales.medsales.exceptions.ExceptionCodes;
@@ -48,7 +48,7 @@ public class GerarSaidaEstoqueBO implements Serializable {
 		List<Item> itensSaida = new ArrayList<Item>();
 		for (Item itemEntrada : entradaEstoque.getItens()) {
 			Item itemSaida = new Item();
-			itemSaida.setMovimentacaoEstoque(saidaEstoque);
+			itemSaida.setMovimentoEstoque(saidaEstoque);
 			itemSaida.setProduto(itemEntrada.getProduto());
 			itemSaida.setQuantidade(itemEntrada.getQuantidade());
 			
@@ -56,7 +56,7 @@ public class GerarSaidaEstoqueBO implements Serializable {
 		}
 		
 		saidaEstoque.setItens(itensSaida);
-		saidaEstoque.setCiclo(entradaEstoque.getCiclo());
+//		saidaEstoque.setCiclo(entradaEstoque.getCiclo());
 		saidaEstoqueBO.cadastrar(saidaEstoque);
 		
 		return saidaEstoque;
@@ -67,7 +67,7 @@ public class GerarSaidaEstoqueBO implements Serializable {
 			throw new NullParameterException(ExceptionCodes.SAIDA_ESTOQUE.GERAR_SAIDA_ENTRADA_REQUIRED, "É necessário informar o código da entrada.");
 		}
 		
-		MovimentacaoEstoque movimentacao = estoqueRepository.findBy(idEntrada);
+		MovimentoEstoque movimentacao = estoqueRepository.findBy(idEntrada);
 		if (movimentacao == null ) {
 			throw new EntityNotFoundException(null, "O código da entrada informarda não existe.");
 		}
