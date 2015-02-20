@@ -6,7 +6,7 @@ package org.sales.medsales.dominio.movimento;
  */
 public enum Operacao {
 	
-	ENTRADA("E", "Entrada"), SAIDA("S", "Saída");
+	ENTRADA("E", "Entrada", "+"), SAIDA("S", "Saída", "-");
 	
 	/** Id desta operação, a ser armazenada na base de dados */
 	private String id;
@@ -14,20 +14,20 @@ public enum Operacao {
 	/** Descrição para ser exibida na aplicação */
 	private String descricao;
 
-	private Operacao(String id, String descricao) {
+	private String labelOperador;
+
+	private Operacao(String id, String descricao, String labelOperador) {
 		this.id = id;
 		this.descricao = descricao;
+		this.labelOperador = labelOperador;
 	}
 	public String getId() {
 		return id;
 	}
-	public void setId(String id) {
-		this.id = id;
-	}
 	public String getDescricao() {
 		return descricao;
 	}
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public String getLabelOperador() {
+		return labelOperador;
 	}
 }

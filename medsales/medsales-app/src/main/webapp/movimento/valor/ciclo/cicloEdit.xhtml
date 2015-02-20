@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:pe="http://primefaces.org/ui/extensions">
+
+<ui:composition>
+
+	<ui:param name="param_pageTitle" value="Cadastrar Ciclo" />
+
+	<h:form id="editForm">
+		<p:panelGrid columns="3" layout="grid">
+
+			<p:outputLabel value="Investidor: " for="parceiro" />
+			<p:autoComplete id="parceiro" value="#{cicloAction.entity.investidor}" minQueryLength="2"
+				title="Parceiro que está investindo dinheiro neste ciclo." completeMethod="#{searchParceiroAction.search}"
+				var="parceiro" itemLabel="#{parceiro.nome}" itemValue="#{parceiro}" forceSelection="true" dropdown="true"
+				required="true" />
+			<p:message for="parceiro" showSummary="false" />
+
+			<p:outputLabel value="Início em: " for="inicio" />
+			<p:calendar id="inicio" value="#{cicloAction.entity.inicio}" pattern="dd/MM/yyyy" mask="true" showOn="button"
+				required="true" />
+			<p:message for="inicio" showSummary="false" />
+
+			<p:outputLabel value="Finalizado em: " for="fim" />
+			<p:calendar id="fim" value="#{cicloAction.entity.fim}" pattern="dd/MM/yyyy" mask="true" showOn="button" />
+			<p:message for="fim" showSummary="false" />
+
+		</p:panelGrid>
+
+		<div style="float: right">
+			<p:commandButton id="addBt" value="Adicionar..." type="button" icon="ui-icon-extlink" />
+			<p:tieredMenu overlay="true" trigger="addBt" my="right top" at="right bottom" style="width:200px">
+				<p:menuitem value="Investimento" icon="ui-icon-disk" />
+			</p:tieredMenu>
+		</div>
+		<p:dataTable id="tbMovimentos" var="movimento" value="#{cicloAction.entity.movimentos}" paginator="true"
+			paginatorTemplate="{RowsPerPageDropdown} {totalPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+			paginatorPosition="bottom" rowsPerPageLabel="Exibindo" rowsPerPageTemplate="5,10,20,30,50,100" rows="20"
+			emptyMessage="Nenhum registro foi encontrado." selectionMode="single" rowKey="#{movimento.id}">
+
+
+			<f:facet name="header">
+					Movimentos Cadastrados
+			</f:facet>
+
+			<f:facet name="{totalPageReport}">
+					de #{cicloAction.result.rowCount} &nbsp;&nbsp;&nbsp;
+			</f:facet>
+
+			<p:column headerText="Cód" sortBy="#{movimento.id}">
+	                #{movimento.id}
+            </p:column>
+
+			<p:column headerText="Tipo" sortBy="#{movimento.label}">
+	                #{movimento.label}
+            </p:column>
+
+			<p:column headerText="Parceiro" sortBy="#{movimento.parceiro.nome}">
+	                #{movimento.parceiro.nome}
+            </p:column>
+
+			<p:column headerText="Valor (R$)" style="text-align:right">
+				#{movimento.operacao.labelOperador}
+				<h:outputText value="#{movimento.valor}">
+					<f:converter converterId="BigDecimalConverter" />
+				</h:outputText>
+			</p:column>
+
+		</p:dataTable>
+
+		<p:panelGrid columns="3">
+			<p:commandButton actionListener="#{cicloAction.cancelOperation()}" value="Cancelar" immediate="true"
+				update=":content-panel" />
+
+			<p:commandButton actionListener="#{cicloAction.delete()}" value="Remover" immediate="true" update=":content-panel"
+				rendered="#{not empty cicloAction.entity.id}">
+				<p:confirm header="Confirmation" message="Deseja REMOVER o Ciclo?" icon="ui-icon-alert" />
+			</p:commandButton>
+
+			<p:commandButton actionListener="#{cicloAction.save()}" value="Salvar" update=":content-panel" />
+		</p:panelGrid>
+
+		<p:confirmDialog global="true">
+			<p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+			<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+		</p:confirmDialog>
+	</h:form>
+</ui:composition>
+</html>

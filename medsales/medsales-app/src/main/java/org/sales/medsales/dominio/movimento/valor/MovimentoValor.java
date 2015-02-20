@@ -45,6 +45,11 @@ public abstract class MovimentoValor extends Movimento{
 	 */
 	protected abstract void defineOperacao();
 	
+	/**
+	 * @return Label para exibição em texto do tipo deste movimento.
+	 */
+	public abstract String getLabel();
+	
 	public Ciclo getCiclo() {
 		return ciclo;
 	}

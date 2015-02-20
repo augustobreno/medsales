@@ -42,7 +42,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	
     	SaidaEstoque saidaEstoque = new SaidaEstoque();
     	saidaEstoque.setParceiro(getQuerier().findAny(Parceiro.class));
-    	saidaEstoque.setDataMovimentacao(new Date());
+    	saidaEstoque.setDataMovimento(new Date());
     	
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
@@ -73,7 +73,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
 	public void cadastrarSaidaRascunhoTest() {
     	
     	SaidaEstoque saidaEstoque = new SaidaEstoque();
-    	saidaEstoque.setDataMovimentacao(new Date());
+    	saidaEstoque.setDataMovimento(new Date());
     	saidaEstoque.setParceiro(getQuerier().findAny(Parceiro.class));
     	
     	Item item = new Item();
@@ -108,7 +108,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
 		// saida 1
     	SaidaEstoque saida1 = new SaidaEstoque();
     	saida1.setParceiro(parceiro);
-    	saida1.setDataMovimentacao(new Date());
+    	saida1.setDataMovimento(new Date());
     	
     	Item item = new Item();
     	item.setProduto(getQuerier().findAt(Produto.class, 0));
@@ -123,7 +123,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	// saida 2
     	SaidaEstoque saida2 = new SaidaEstoque();
     	saida2.setParceiro(parceiro);
-    	saida2.setDataMovimentacao(new Date());
+    	saida2.setDataMovimento(new Date());
     	
     	item = new Item();
     	item.setProduto(getQuerier().findAt(Produto.class, 1));
@@ -163,7 +163,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
 		// saida 1
     	SaidaEstoque saida1 = new SaidaEstoque();
     	saida1.setParceiro(parceiro1);
-    	saida1.setDataMovimentacao(new Date());
+    	saida1.setDataMovimento(new Date());
     	
     	Item item = new Item();
     	item.setProduto(getQuerier().findAt(Produto.class, 0));
@@ -178,7 +178,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	// saida 2
     	SaidaEstoque saida2 = new SaidaEstoque();
     	saida2.setParceiro(parceiro2);
-    	saida2.setDataMovimentacao(new Date());
+    	saida2.setDataMovimento(new Date());
     	
     	item = new Item();
     	item.setProduto(getQuerier().findAt(Produto.class, 1));

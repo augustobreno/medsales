@@ -1,4 +1,4 @@
-package org.sales.medsales.web.action.movimentacao;
+package org.sales.medsales.web.action.movimento.estoque;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -30,7 +30,7 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 	@Override
 	protected void initMovimentacao() {
 		SaidaEstoque saidaEstoque = new SaidaEstoque();
-		saidaEstoque.setDataMovimentacao(new Date());
+		saidaEstoque.setDataMovimento(new Date());
 		setMovimentacao(saidaEstoque);
 	}
 	

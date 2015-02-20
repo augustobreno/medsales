@@ -1,4 +1,4 @@
-package org.sales.medsales.web.action;
+package org.sales.medsales.web.action.movimento.estoque;
 
 import java.util.HashMap;
 import java.util.List;

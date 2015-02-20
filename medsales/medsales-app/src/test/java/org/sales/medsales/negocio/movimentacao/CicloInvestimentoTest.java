@@ -15,7 +15,8 @@ import org.sales.medsales.dominio.Ciclo;
 import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.movimento.valor.Investimento;
 import org.sales.medsales.exceptions.ExceptionCodes;
-import org.sales.medsales.negocio.movimentacao.InvestimentoBO;
+import org.sales.medsales.negocio.movimentacao.valor.CicloFacade;
+import org.sales.medsales.negocio.movimentacao.valor.InvestimentoBO;
 
 /**
  * Testes de inclusão de um {@link Investimento} em um {@link Ciclo}
@@ -94,8 +95,8 @@ public class CicloInvestimentoTest extends MedSalesBaseTest {
 		getEm().clear();
 		
 		Ciclo found = cicloFacade.findBy(ciclo.getId(), "movimentacoes");
-		Assert.assertEquals(1, found.getMovimentacoes().size());
-		Assert.assertEquals(investimento, found.getMovimentacoes().get(0));
+		Assert.assertEquals(1, found.getMovimentos().size());
+		Assert.assertEquals(investimento, found.getMovimentos().get(0));
 		
 	}
 

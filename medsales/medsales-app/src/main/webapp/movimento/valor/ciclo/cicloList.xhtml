@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+<ui:composition>
+
+
+
+	<p:separator />
+
+	<h:form id="btnForm">
+		<div style="float: right">
+			<p:commandButton actionListener="#{cicloAction.prepareToInsert()}" icon="ui-icon-plusthick" update=":content-panel"
+				immediate="true" />
+		</div>
+	</h:form>	
+
+	<h:form id="listForm">
+		<p:dataTable id="table" var="ciclo" value="#{cicloAction.result}" rendered="#{not empty cicloAction.result}"
+			paginator="true" lazy="true"
+			paginatorTemplate="{RowsPerPageDropdown} {totalPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+			paginatorPosition="bottom" rowsPerPageLabel="Exibindo" rowsPerPageTemplate="5,10,20,30,50,100" rows="5"
+			emptyMessage="Nenhum registro foi encontrado." selectionMode="single" rowKey="#{ciclo.id}">
+
+			<p:ajax event="rowSelect" listener="#{cicloAction.prepareToEdit}" update=":content-panel" />
+
+
+			<f:facet name="header">
+					Ciclos Cadastrados
+				</f:facet>
+
+			<f:facet name="{totalPageReport}">
+					de #{cicloAction.result.rowCount} &nbsp;&nbsp;&nbsp;
+				</f:facet>
+
+			<p:column headerText="Cód" sortBy="#{ciclo.id}">
+	                #{ciclo.id}
+            </p:column>
+
+			<p:column headerText="Investidor" sortBy="#{ciclo.investidor.nome}">
+	                #{ciclo.investidor.nome}
+            </p:column>
+            
+            <p:column headerText="Início" sortBy="#{ciclo.inicio}">
+            	<h:outputText value="#{ciclo.inicio}">
+						<f:convertDateTime pattern="dd/MM/yyyy" />
+				</h:outputText>
+            </p:column>
+            
+            <p:column headerText="Finalizado" sortBy="#{ciclo.fim}">
+            	<h:outputText value="#{ciclo.fim}">
+						<f:convertDateTime pattern="dd/MM/yyyy" />
+				</h:outputText>
+            </p:column>            
+            
+		</p:dataTable>
+	</h:form>
+
+</ui:composition>
+</html>

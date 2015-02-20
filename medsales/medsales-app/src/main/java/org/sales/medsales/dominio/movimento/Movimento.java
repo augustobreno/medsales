@@ -1,9 +1,14 @@
 package org.sales.medsales.dominio.movimento;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.PrePersist;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.Parameter;
 import org.hibernate.annotations.Type;
@@ -39,9 +44,24 @@ public abstract class Movimento extends EntityBase<Long> {
 	@Column(nullable=false)
 	private Operacao operacao;
 
-	@Column(length=500)
+	@Column(length=200)
 	private String observacao;
 
+	/**
+	 * Data oficial da movimentação.
+	 */
+	@Temporal(TemporalType.DATE)
+	@Column(nullable=false)
+	private Date dataMovimento;
+	
+	@PrePersist
+	public void initTimeStamps() {
+		super.initTimeStamps();
+		if (dataMovimento == null) {
+			dataMovimento = new Date();
+		}
+	}
+	
 	public Parceiro getParceiro() {
 		return parceiro;
 	}
@@ -65,5 +85,12 @@ public abstract class Movimento extends EntityBase<Long> {
 	public void setObservacao(String observacao) {
 		this.observacao = observacao;
 	}
-	
+
+	public Date getDataMovimento() {
+		return dataMovimento;
+	}
+
+	public void setDataMovimento(Date dataMovimentacao) {
+		this.dataMovimento = dataMovimentacao;
+	}
 }

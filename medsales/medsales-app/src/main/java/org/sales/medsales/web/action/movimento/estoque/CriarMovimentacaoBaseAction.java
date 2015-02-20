@@ -1,4 +1,4 @@
-package org.sales.medsales.web.action.movimentacao;
+package org.sales.medsales.web.action.movimento.estoque;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

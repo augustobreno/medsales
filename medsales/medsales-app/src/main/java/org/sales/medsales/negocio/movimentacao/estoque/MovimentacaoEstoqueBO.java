@@ -29,8 +29,8 @@ public abstract class MovimentacaoEstoqueBO<MOV extends MovimentoEstoque> implem
 	public void cadastrar(MOV movimentacao) {
 		validarCadastrar(movimentacao);
 		
-		if (movimentacao.getDataMovimentacao() == null) {
-			movimentacao.setDataMovimentacao(new Date());
+		if (movimentacao.getDataMovimento() == null) {
+			movimentacao.setDataMovimento(new Date());
 		}
 		
 		salvar(movimentacao);

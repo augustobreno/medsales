@@ -88,7 +88,7 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
 
 	private EntradaEstoque cadastrarEntrada(Produto produto, int quantidade) {
 		EntradaEstoque entradaEstoque = new EntradaEstoque();
-    	entradaEstoque.setDataMovimentacao(new Date());
+    	entradaEstoque.setDataMovimento(new Date());
     	
     	Item item = new Item();
 		item.setProduto(produto);

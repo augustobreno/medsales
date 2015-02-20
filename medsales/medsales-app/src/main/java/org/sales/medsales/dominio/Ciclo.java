@@ -59,7 +59,7 @@ public class Ciclo extends EntityBase<Long>{
 	private Date fim;
 	
 	@OneToMany(fetch=FetchType.LAZY, mappedBy="ciclo")
-	private List<MovimentoValor> movimentacoes;
+	private List<MovimentoValor> movimentos;
 
 	public Parceiro getInvestidor() {
 		return investidor;
@@ -85,13 +85,16 @@ public class Ciclo extends EntityBase<Long>{
 		this.fim = fim;
 	}
 
-	public List<MovimentoValor> getMovimentacoes() {
-		return movimentacoes;
+	public List<MovimentoValor> getMovimentos() {
+		return movimentos;
 	}
 
-	public void setMovimentacoes(List<MovimentoValor> movimentacoes) {
-		this.movimentacoes = movimentacoes;
+	public void setMovimentos(List<MovimentoValor> movimentacoes) {
+		this.movimentos = movimentacoes;
 	}
 	
+	public String getLabel() {
+		return getId() + " - " + getInvestidor().getNome();
+	}
 	
 }

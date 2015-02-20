@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:pe="http://primefaces.org/ui/extensions">
+
+<f:metadata>
+	<!-- lid para book-markable -->
+	<f:viewParam name="lid" value="#{entradaAction.lid}" />
+	<f:viewAction action="#{entradaAction.loadFromId()}" />
+
+</f:metadata>
+
+<ui:composition template="/templates/default/main.xhtml">
+
+	<ui:param name="param_pageTitle" value="Cadastro de Entrada" />
+
+	<ui:define name="content">
+
+		<style>
+.labels_col1 {
+	max-width: 200px
+}
+</style>
+
+		<script type="text/javascript">
+
+function limparCampoProduto() {
+	window.document.getElementById("itemForm:produto_input").value = "";
+}
+
+</script>
+		<h:outputFormat value="Esta entrada foi marcada como {0} em {1} " rendered="#{entradaAction.movimentacao.id != null}">
+			<f:param value="#{entradaAction.movimentacao.status.descricao.toUpperCase()}" />
+			<f:param value="#{entradaAction.movimentacao.dataAlteracao}" />
+		</h:outputFormat>
+		<h:form id="itemForm">
+			<p:panelGrid id="itemGrid" columns="3" layout="grid" columnClasses="labels_col1">
+
+				<p:outputLabel value="Quantidade:" for="quantidade" />
+				<p:spinner id="quantidade" value="#{entradaAction.item.quantidade}" min="1" required="true" />
+				<p:message for="quantidade" />
+
+				<p:outputLabel value="Produto:" for="produto" />
+
+				<p:autoComplete id="produto" value="#{entradaAction.item.produto}" minQueryLength="2"
+					title="Nome ou código de barras do Produto" completeMethod="#{entradaAction.searchProdutos}" var="produto"
+					itemLabel="#{produto.nome}" itemValue="#{produto}" dropdown="true" required="true"
+					converter="produtoCodBarrasConverter" />
+				<p:message for="produto" />
+
+				<p:commandButton value="Adicionar" action="#{entradaAction.adicionarItem}" update=":content-panel"
+					process="@this quantidade produto" />
+			</p:panelGrid>
+		</h:form>
+		
+		<p:spacer />
+		
+		<h:form id="listForm">
+			<p:dataTable id="itemList" value="#{entradaAction.itens}" var="itemPreco" emptyMessage="Nenhum Item cadastrado."
+				rows="5" paginator="true" paginatorPosition="bottom" editable="true" editMode="cell">
+
+				<p:ajax event="cellEdit" update=":content-panel" listener="#{entradaAction.dummy()}"/> 
+
+				<f:facet name="header">
+    				Itens        
+	       		</f:facet>
+
+				<p:column headerText="Cód Barras">
+					<h:outputText value="#{itemPreco.preco.produto.codigoBarras}" />
+				</p:column>
+
+				<p:column headerText="Produto">
+					<h:outputText value="#{itemPreco.preco.produto.nome}" />
+				</p:column>
+
+				<p:column headerText="Quantidade" style="text-align:center">
+					<p:cellEditor>
+						<f:facet name="output">
+							<h:outputText value="#{itemPreco.item.quantidade}" />
+						</f:facet>
+						<f:facet name="input">
+							<p:spinner value="#{itemPreco.item.quantidade}" min="0"/>
+						</f:facet>
+					</p:cellEditor>
+				</p:column>
+
+				<p:column headerText="R$ Un" style="text-align:right">
+					<h:outputText value="#{itemPreco.preco.valor}">
+						BigDecimalConverter
+					</h:outputText>
+				</p:column>
+
+				<p:column headerText="R$ Total" style="text-align:right">
+					<h:outputText id="precoTotal" value="#{itemPreco.preco.valor * itemPreco.item.quantidade}">
+						BigDecimalConverter
+					</h:outputText>
+				</p:column>
+
+			</p:dataTable>
+
+		</h:form>
+
+		<p:separator />
+
+		<h:form id="btnForm">
+
+			<p:panelGrid columns="3" layout="grid" columnClasses="labels_col1">
+				<p:outputLabel value="Parceiro/Vendedor:" for="parceiro" />
+				<p:autoComplete id="parceiro" value="#{entradaAction.movimentacao.parceiro}" minQueryLength="2"
+					title="Onde o produto foi comprado?" completeMethod="#{searchParceiroAction.search}" var="parceiro"
+					itemLabel="#{parceiro.nome}" itemValue="#{parceiro}" forceSelection="true" dropdown="true" required="true" />
+				<p:message for="parceiro" />
+
+				<p:outputLabel value="Data da Entrada:" for="dtentrada" />
+				<p:calendar id="dtentrada" value="#{entradaAction.movimentacao.dataMovimento}" pattern="dd/MM/yyyy" mask="true"
+					showOn="button" required="true" />
+				<p:message for="dtentrada" />
+
+
+			</p:panelGrid>
+
+			<br />
+
+			<p:separator style="height:2px" />
+
+			<div style="text-align: right">
+
+				<p:commandButton value="Voltar" immediate="true" action="/movimento/estoque/movimentos.xhtml?faces-redirect=true" />
+
+				<p:splitButton value="Concluir" actionListener="#{entradaAction.concluir}" icon="ui-icon-disk"
+					action="#{entradaAction.redirectIfNoError('movimentos.xhtml')}" update="btnForm">
+
+					<p:menuitem value="Salvar Como Rascunho" actionListener="#{entradaAction.salvarRacunho}" icon="ui-icon-disk"
+						action="#{entradaAction.redirectIfNoError('movimentos.xhtml')}" update="btnForm" />
+
+					<p:menuitem value="Concluir e Gerar Saída" actionListener="#{entradaAction.concluirGerarSaida()}"
+						icon="ui-icon-disk"
+						action="#{entradaAction.redirectIfNoError('saida.xhtml?lid='.concat(entradaAction.saidaGerada.id))}"
+						update="btnForm" rendered="#{empty entradaAction.movimentacao.id}" />
+
+					<p:menuitem value="Gerar Saída" actionListener="#{entradaAction.gerarSaida()}" icon="ui-icon-disk"
+						action="#{entradaAction.redirectIfNoError('saida.xhtml?lid='.concat(entradaAction.saidaGerada.id))}"
+						update="btnForm" rendered="#{not empty entradaAction.movimentacao.id}" />
+
+					<p:separator />
+
+					<p:menuitem id="itemExcluir" value="Excluir" icon="ui-icon-trash"
+						onclick="$('#btnForm\\:btnRemove').click();return;" />
+
+				</p:splitButton>
+
+				<!-- Este botão escondido foi necessário porque não foi possível utilizar um diálogo com o p:menuitem acima. -->
+				<p:commandButton id="btnRemove" value="DELETE" actionListener="#{entradaAction.remover()}"
+					action="#{entradaAction.redirectIfNoError('movimentos.xhtml')}" update="btnForm"
+					rendered="#{not empty entradaAction.movimentacao.id}" immediate="true" style="display:none;">
+
+					<p:confirm header="Atenção!"
+						message="Deseja realmente REMOVER esta Entrada? Não será possível recuperar suas informações."
+						icon="ui-icon-alert" />
+
+				</p:commandButton>
+
+
+				<p:confirmDialog global="true">
+					<p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+					<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+				</p:confirmDialog>
+
+			</div>
+		</h:form>
+	</ui:define>
+</ui:composition>
+
+</html>
+

@@ -12,6 +12,7 @@ import org.sales.medsales.MedSalesBaseTest;
 import org.sales.medsales.dataLoader.ParceirosDataLoader;
 import org.sales.medsales.dominio.Ciclo;
 import org.sales.medsales.dominio.Parceiro;
+import org.sales.medsales.negocio.movimentacao.valor.CicloFacade;
 
 /**
  * Testes de integração da classe {@link CicloFacade}

@@ -1,4 +1,4 @@
-package org.sales.medsales.web.action.movimentacao;
+package org.sales.medsales.web.action.movimento.estoque;
 
 import org.sales.medsales.dominio.movimento.estoque.Item;
 import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;

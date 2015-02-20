@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:pe="http://primefaces.org/ui/extensions">
+
+<ui:composition>
+
+	<ui:param name="param_pageTitle" value="Cadastrar Investimento" />
+
+	<h:form id="editForm">
+		<p:panelGrid columns="3" layout="grid">
+
+			<p:outputLabel value="Ciclo: " for="ciclo" />
+			<p:autoComplete id="ciclo" value="#{investimentoAction.entity.ciclo}" 
+				title="Ciclo que estará associado a este investimento." completeMethod="#{searchCicloAction.search}"
+				var="ciclo" itemLabel="#{ciclo.label}" itemValue="#{ciclo}" forceSelection="true" dropdown="true"
+				required="true">
+				
+				<p:ajax event="itemSelect"  update="editForm" />
+				
+			</p:autoComplete>	
+			<p:message for="ciclo" showSummary="false" />
+
+			<p:outputLabel id="investidorLabel" value="Investidor: " for="investidor" rendered="#{not empty investimentoAction.entity.ciclo}"/>
+			<h:outputText id="investidor" value="#{investimentoAction.entity.ciclo.investidor.nome}" rendered="#{not empty investimentoAction.entity.ciclo}"/>
+			<p:message id="investidorMsg" for="investidor" showSummary="false" rendered="#{not empty investimentoAction.entity.ciclo}"/>
+			
+			<p:outputLabel value="Valor: " for="valor" />
+			<p:outputPanel>
+				<pe:inputNumber id="valor" value="#{investimentoAction.entity.valor}" symbol="R$ " required="true"/>
+			</p:outputPanel>
+			<p:message for="valor" />
+			
+			<p:outputLabel value="Recebido em: " for="dtMovimento" />
+			<p:calendar id="dtMovimento" value="#{investimentoAction.entity.dataMovimento}" pattern="dd/MM/yyyy" mask="true" showOn="button"
+				required="true" />
+			<p:message for="dtMovimento" showSummary="false" />			
+			
+			<p:outputLabel value="Observação: " for="obs" />
+			<p:row>
+				<p:inputTextarea id="obs" value="#{investimentoAction.entity.observacao}" maxlength="200"/>
+			</p:row>	
+			<p:message for="obs" showSummary="false" />						
+
+		</p:panelGrid>
+
+		<p:panelGrid columns="3">
+			<p:commandButton actionListener="#{investimentoAction.cancelOperation()}" value="Cancelar" immediate="true"
+				update=":content-panel" />
+
+			<p:commandButton actionListener="#{investimentoAction.delete()}" value="Remover" immediate="true" update=":content-panel"
+				rendered="#{not empty investimentoAction.entity.id}">
+				<p:confirm header="Confirmation" message="Deseja REMOVER o Investimento?" icon="ui-icon-alert" />
+			</p:commandButton>
+
+			<p:commandButton actionListener="#{investimentoAction.save()}" value="Salvar" update=":content-panel" />
+		</p:panelGrid>
+
+		<p:confirmDialog global="true">
+			<p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+			<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+		</p:confirmDialog>
+	</h:form>
+</ui:composition>
+</html>

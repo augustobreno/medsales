@@ -15,5 +15,8 @@ public class Valor extends MovimentoValor {
 		// não há implementação padrão, a operação deverá ser configurada no objeto.
 	}
 
-
+	@Override
+	public String getLabel() {
+		return "Valor Avulso";
+	}
 }

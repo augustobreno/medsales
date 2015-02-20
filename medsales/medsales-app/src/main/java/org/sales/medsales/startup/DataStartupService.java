@@ -32,9 +32,9 @@ import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
 import org.sales.medsales.dominio.movimento.estoque.Status;
 import org.sales.medsales.dominio.movimento.valor.Valor;
 import org.sales.medsales.negocio.ParceiroFacade;
-import org.sales.medsales.negocio.movimentacao.CicloFacade;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
 import org.sales.medsales.negocio.movimentacao.estoque.ProdutoFacade;
+import org.sales.medsales.negocio.movimentacao.valor.CicloFacade;
 
 /**
  * Carrega dados iniciais para testes do sistema. 

@@ -49,7 +49,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     public void cadastrarEntradaOperacaoNull() {
     	EntradaEstoque entradaEstoque = new EntradaEstoque();
     	entradaEstoque.setOperacao(null);
-    	entradaEstoque.setDataMovimentacao(new Date());
+    	entradaEstoque.setDataMovimento(new Date());
     	
     	try {
     		estoqueFacade.cadastrar(entradaEstoque);
@@ -65,7 +65,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     @Test(expected=MovimentacaoSemItensException.class)
     public void cadastrarEntradaSemItens() {
     	EntradaEstoque entradaEstoque = new EntradaEstoque();
-    	entradaEstoque.setDataMovimentacao(new Date());
+    	entradaEstoque.setDataMovimento(new Date());
     	entradaEstoque.setItens(null);
     	estoqueFacade.cadastrar(entradaEstoque);
     }
@@ -87,7 +87,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	
     	
     	EntradaEstoque entradaEstoque = new EntradaEstoque();
-    	entradaEstoque.setDataMovimentacao(new Date());
+    	entradaEstoque.setDataMovimento(new Date());
     	
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
@@ -123,7 +123,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	
     	
     	EntradaEstoque entradaEstoque = new EntradaEstoque();
-    	entradaEstoque.setDataMovimentacao(new Date());
+    	entradaEstoque.setDataMovimento(new Date());
     	
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));
@@ -153,7 +153,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	precoProdutoDataLoader.load();
     	
     	EntradaEstoque entradaEstoque = new EntradaEstoque();
-    	entradaEstoque.setDataMovimentacao(new Date());
+    	entradaEstoque.setDataMovimento(new Date());
     	
     	Item item = new Item();
     	item.setProduto(getQuerier().findAny(Produto.class));

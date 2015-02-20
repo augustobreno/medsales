@@ -1,4 +1,4 @@
-package org.sales.medsales.negocio.movimentacao;
+package org.sales.medsales.negocio.movimentacao.valor;
 
 import java.math.BigDecimal;
 

@@ -180,7 +180,7 @@ public class ProdutoFacadeTest extends MedSalesBaseTest {
 
 		// cadastrando uma movimentacao
 		EntradaEstoque entradaEstoque = new EntradaEstoque();
-		entradaEstoque.setDataMovimentacao(new Date());
+		entradaEstoque.setDataMovimento(new Date());
 
 		Item item = new Item();
 		item.setProduto(produto);

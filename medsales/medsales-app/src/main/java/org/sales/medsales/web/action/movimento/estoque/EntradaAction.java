@@ -1,4 +1,4 @@
-package org.sales.medsales.web.action.movimentacao;
+package org.sales.medsales.web.action.movimento.estoque;
 
 import java.util.Date;
 
@@ -23,7 +23,7 @@ public class EntradaAction extends CriarMovimentacaoBaseAction<EntradaEstoque> {
 	@Override
 	protected void initMovimentacao() {
 		EntradaEstoque entradaEstoque = new EntradaEstoque();
-		entradaEstoque.setDataMovimentacao(new Date());
+		entradaEstoque.setDataMovimento(new Date());
 		setMovimentacao(entradaEstoque);
 	}
 

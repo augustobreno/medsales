@@ -11,5 +11,8 @@ import javax.persistence.Entity;
 @Entity
 public class Investimento extends EntradaValor {
 
-
+	@Override
+	public String getLabel() {
+		return "Investimento";
+	}
 }

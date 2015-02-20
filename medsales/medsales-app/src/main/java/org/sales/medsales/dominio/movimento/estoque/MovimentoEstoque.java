@@ -1,6 +1,5 @@
 package org.sales.medsales.dominio.movimento.estoque;
 
-import java.util.Date;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -10,8 +9,6 @@ import javax.persistence.FetchType;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.OneToMany;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.Parameter;
 import org.hibernate.annotations.Type;
@@ -37,13 +34,6 @@ import org.sales.medsales.dominio.movimento.Movimento;
 @Entity
 public abstract class MovimentoEstoque extends Movimento {
 
-	/**
-	 * Data oficial da movimentação.
-	 */
-	@Temporal(TemporalType.DATE)
-	@Column(nullable=false)
-	private Date dataMovimentacao;
-	
 	/**
 	 * Determina o status atual desta movimentação
 	 */
@@ -80,14 +70,6 @@ public abstract class MovimentoEstoque extends Movimento {
 
 	public void setStatus(Status status) {
 		this.status = status;
-	}
-
-	public Date getDataMovimentacao() {
-		return dataMovimentacao;
-	}
-
-	public void setDataMovimentacao(Date dataMovimentacao) {
-		this.dataMovimentacao = dataMovimentacao;
 	}
 	
 	/**
