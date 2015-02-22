@@ -12,4 +12,5 @@ public interface Entity <PK> extends Serializable, Identifiable {
 
 	public PK getId();
 		
+	public void setId(PK pk);
 }

@@ -70,21 +70,55 @@ public abstract class CrudActionBase<ENTITY extends Entity<PK>, PK extends Seria
 	 * Representa a operação sendo executada neste fluxo de CRUD. O valor
 	 * default inicial é {@link CrudOperation#SEARCH}
 	 */
-	private CrudOperation crudOperation = CrudOperation.SEARCH;
+	private CrudOperation crudOperation;
 
 	/** Para uso em formulários de manutenção */
 	private ENTITY entity;
+	
+	/** LoadId: GET parameter para carregamento dos dados de uma entidade via URL. */
+	private Long lid;
+	
+	/** Operation (op): GET parameter para definição da operação inicital via URL. */
+	private String op;
 
 	@Override
     @PostConstruct
     public void init() {
 
 		super.init();
+		crudOperation = getDefaultOperation();
 		initObjects();
-		initEntity();
 
 	}
 
+	/**
+	 * Configura a operação inicial deste CRUD. 
+	 */
+	protected void defineOperation() {
+		// se a operação foi informada via GET então força o valor informado
+		if (op != null) {
+			CrudOperation operation = CrudOperation.find(op);
+			if (operation != null) {
+				crudOperation = operation;
+			}
+		}
+	}
+
+	/**
+	 * @return Operação inicial default para este CRUD. 
+	 */
+	protected CrudOperation getDefaultOperation() {
+		return CrudOperation.SEARCH;
+	}
+
+	/**
+	 * Identifica os parâmetros GET definido para a página corrente.
+	 */
+	public void doGetParams() {
+		defineOperation(); 
+		loadFromId();
+	}
+	
 	/**
 	 * Consulta registros na base de dados de acordo com os dados preenchidos no
 	 * filtro.
@@ -198,6 +232,7 @@ public abstract class CrudActionBase<ENTITY extends Entity<PK>, PK extends Seria
 		initExample();
 		initFacade();
 		initDataModel();
+		initEntity();
 		
 	}
 
@@ -311,7 +346,7 @@ public abstract class CrudActionBase<ENTITY extends Entity<PK>, PK extends Seria
 
 		showInfoMessage(getSaveSuccessMessage());
 		initEntity();
-		setCrudOperation(CrudOperation.SEARCH);
+		setCrudOperation(getDefaultOperation());
 		
 	}
 
@@ -420,7 +455,7 @@ public abstract class CrudActionBase<ENTITY extends Entity<PK>, PK extends Seria
 	protected void postDelete(ENTITY entidade) {
 
 		showInfoMessage(getRemoveSuccessMessage());
-		setCrudOperation(CrudOperation.SEARCH);
+		setCrudOperation(getDefaultOperation());
 		
 	}
 
@@ -444,6 +479,37 @@ public abstract class CrudActionBase<ENTITY extends Entity<PK>, PK extends Seria
 	 */
 	protected void preDelete(ENTITY entidade) {
 		// nada
+	} 
+
+	/**
+	 * Carrega uma movimentação quando há a presença do parâmetro
+	 * {@link #lid}
+	 */
+	public void loadFromId() {
+		preLoadFromId();
+		doLoadFromId();
+		postLoadFromId();
+	}
+
+	protected void postLoadFromId() {
+		// garante uma operação de CRUD compatível	
+		if (lid != null && op == null){
+			crudOperation = CrudOperation.EDIT;
+		}			
+	}
+
+	@SuppressWarnings("unchecked")
+	private void doLoadFromId() {
+		if (lid != null) {
+			ENTITY fromId = ReflectionUtil.instantiate(getEntityType());
+			fromId.setId((PK) lid);
+			prepareToEdit(fromId);
+		}
+	}
+	
+	protected void preLoadFromId() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	/**
@@ -566,7 +632,7 @@ public abstract class CrudActionBase<ENTITY extends Entity<PK>, PK extends Seria
 	public void cancelOperation() {
 
 		initEntity();
-		setCrudOperation(CrudOperation.SEARCH);
+		setCrudOperation(getDefaultOperation());
 		
 	}
 
@@ -636,6 +702,22 @@ public abstract class CrudActionBase<ENTITY extends Entity<PK>, PK extends Seria
 
 	protected Class<FACADE> getFacadeType() {
 		return facadeType;
+	}
+
+	public Long getLid() {
+		return lid;
+	}
+
+	public void setLid(Long lid) {
+		this.lid = lid;
+	}
+
+	public String getOp() {
+		return op;
+	}
+
+	public void setOp(String op) {
+		this.op = op;
 	}
 
 }

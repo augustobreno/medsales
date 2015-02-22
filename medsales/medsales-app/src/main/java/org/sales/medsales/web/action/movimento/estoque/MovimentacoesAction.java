@@ -51,7 +51,7 @@ public class MovimentacoesAction extends ServerPaginationActionBased<MovimentoEs
 	protected void configSearch(Filter<? extends MovimentoEstoque> filter) {
 		super.configSearch(filter);
 
-		filter.sortDescBy("dataMovimentacao", "id");
+		filter.sortDescBy("dataMovimento", "id");
 		filter.addFetch("parceiro");
 
 		// TODO liberar este código quando distinct estiver aplicável à

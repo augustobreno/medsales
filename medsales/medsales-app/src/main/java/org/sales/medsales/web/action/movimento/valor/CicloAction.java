@@ -17,7 +17,7 @@ import org.sales.medsales.negocio.movimentacao.valor.CicloFacade;
 public class CicloAction extends CrudActionBase<Ciclo, Long, CicloFacade>{
 
 	@Inject
-	private Conversation conversation;
+	private Conversation conversation; 
 	
 	@Override
 	@PostConstruct
