@@ -1,6 +1,7 @@
 package org.sales.medsales.web.action.movimento.valor;
 
 import java.io.IOException;
+import java.text.MessageFormat;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.Conversation;
@@ -21,11 +22,11 @@ import org.sales.medsales.negocio.movimentacao.valor.CicloFacade;
 @SuppressWarnings("serial")
 @Named
 @ConversationScoped
-public class CicloAction extends CrudActionBase<Ciclo, Long, CicloFacade>{
+public class CicloAction extends CrudActionBase<Ciclo, Long, CicloFacade> {
 
 	@Inject
-	private Conversation conversation; 
-	
+	private Conversation conversation;
+
 	@Override
 	@PostConstruct
 	public void init() {
@@ -38,23 +39,31 @@ public class CicloAction extends CrudActionBase<Ciclo, Long, CicloFacade>{
 	@Override
 	protected void configSearch(Filter<? extends Ciclo> filter) {
 		super.configSearch(filter);
-		
+
 		filter.addFetch("investidor", "movimentos.parceiro");
 	}
-	
+
 	public void load(SelectEvent event) throws IOException {
 		load((MovimentoValor) event.getObject());
 	}
-	
+
 	public void load(MovimentoValor movimento) throws IOException {
 		if (Investimento.class.isAssignableFrom(movimento.getClass())) {
-			FacesContext.getCurrentInstance().getExternalContext().redirect(getAppWebContext() + "/movimento/valor/investimento/investimento.xhtml?lid=" + movimento.getId());
+			String link = "{0}/movimento/valor/investimento/investimento.xhtml?lid={1}&clid={2}";
+			FacesContext.getCurrentInstance().getExternalContext()
+					.redirect(MessageFormat.format(link, getAppWebContext(), movimento.getId(), getEntity().getId()));
 		} else {
 			showErrorMessage("Não foi possível discernir o tipo do movimento.");
 		}
 	}
 
 	public void novoMovimento() throws IOException {
-		FacesContext.getCurrentInstance().getExternalContext().redirect(getAppWebContext() + "/movimento/valor/investimento/investimento.xhtml?op=" + CrudOperation.INSERT.getOperation());
+		String link = "{0}/movimento/valor/investimento/investimento.xhtml?op={1}&clid={2}";
+		FacesContext
+				.getCurrentInstance()
+				.getExternalContext()
+				.redirect(
+						MessageFormat.format(link, getAppWebContext(), CrudOperation.INSERT.getOperation(), getEntity()
+								.getId()));
 	}
 }

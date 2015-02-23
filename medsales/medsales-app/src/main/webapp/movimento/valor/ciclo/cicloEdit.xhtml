@@ -79,7 +79,8 @@
 				<p:confirm header="Confirmation" message="Deseja REMOVER o Ciclo?" icon="ui-icon-alert" />
 			</p:commandButton>
 
-			<p:commandButton actionListener="#{cicloAction.save()}" value="Salvar" update=":content-panel" />
+			<p:commandButton id="save" actionListener="#{cicloAction.save()}" value="Salvar" update=":content-panel" />
+			<p:defaultCommand target="save"/>
 		</p:panelGrid>
 
 		<p:confirmDialog global="true">

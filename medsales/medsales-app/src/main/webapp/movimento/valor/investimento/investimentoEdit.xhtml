@@ -53,7 +53,8 @@
 				<p:confirm header="Confirmation" message="Deseja REMOVER o Investimento?" icon="ui-icon-alert" />
 			</p:commandButton>
 
-			<p:commandButton actionListener="#{investimentoAction.save()}" value="Salvar" update=":content-panel" />
+			<p:commandButton id="save" actionListener="#{investimentoAction.save()}" value="Salvar" update=":content-panel" />
+			<p:defaultCommand target="save"/>
 		</p:panelGrid>
 
 		<p:confirmDialog global="true">

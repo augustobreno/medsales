@@ -115,10 +115,23 @@ public abstract class CrudActionBase<ENTITY extends Entity<PK>, PK extends Seria
 	 * Identifica os parâmetros GET definido para a página corrente.
 	 */
 	public void doGetParams() {
-		defineOperation(); 
-		loadFromId();
+		defineOperation();
+		runOperation();
 	}
 	
+	/**
+	 * Executa um comportamento específico de acordo com a operação selecionada.
+	 */
+	protected void runOperation() {
+		
+		if (CrudOperation.INSERT.equals(getCrudOperation())) {
+			prepareToInsert();
+		} else if (lid != null) {
+			loadFromId();
+		}
+		
+	}
+
 	/**
 	 * Consulta registros na base de dados de acordo com os dados preenchidos no
 	 * filtro.
@@ -318,9 +331,7 @@ public abstract class CrudActionBase<ENTITY extends Entity<PK>, PK extends Seria
 	 * limpa o formulário, altera a operação, realiza a consulta.
 	 */
 	protected void postSave() {
-
 		postPersist();
-		
 	}
 
 	/** Precede a persistência da entidade */
@@ -493,18 +504,16 @@ public abstract class CrudActionBase<ENTITY extends Entity<PK>, PK extends Seria
 
 	protected void postLoadFromId() {
 		// garante uma operação de CRUD compatível	
-		if (lid != null && op == null){
+		if (op == null){
 			crudOperation = CrudOperation.EDIT;
 		}			
 	}
 
 	@SuppressWarnings("unchecked")
 	private void doLoadFromId() {
-		if (lid != null) {
-			ENTITY fromId = ReflectionUtil.instantiate(getEntityType());
-			fromId.setId((PK) lid);
-			prepareToEdit(fromId);
-		}
+		ENTITY fromId = ReflectionUtil.instantiate(getEntityType());
+		fromId.setId((PK) lid);
+		prepareToEdit(fromId);
 	}
 	
 	protected void preLoadFromId() {
