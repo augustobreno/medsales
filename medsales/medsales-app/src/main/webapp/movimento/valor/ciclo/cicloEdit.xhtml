@@ -39,6 +39,7 @@
 			paginatorPosition="bottom" rowsPerPageLabel="Exibindo" rowsPerPageTemplate="5,10,20,30,50,100" rows="20"
 			emptyMessage="Nenhum registro foi encontrado." selectionMode="single" rowKey="#{movimento.id}">
 
+			<p:ajax event="rowSelect" listener="#{cicloAction.load}" update=":content-panel" />
 
 			<f:facet name="header">
 					Movimentos Cadastrados

@@ -97,4 +97,10 @@ public class ActionBase implements Serializable {
 		messageUtil.showMessage(FacesMessage.SEVERITY_ERROR, mensagem, parametros);
 	}
 
+	/**
+	 * @return O nome do contexto WEB da aplicação registrado no servidor de app.
+	 */
+	protected String getAppWebContext() {
+		return FacesContext.getCurrentInstance().getExternalContext().getRequestContextPath();
+	}
 }
