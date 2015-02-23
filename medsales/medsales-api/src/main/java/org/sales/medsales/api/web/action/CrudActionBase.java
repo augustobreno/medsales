@@ -612,9 +612,7 @@ public abstract class CrudActionBase<ENTITY extends Entity<PK>, PK extends Seria
 	 * Operações pós-preparacao.
 	 */
 	protected void postPrepareToInsert() {
-
-		setCrudOperation(CrudOperation.EDIT);
-		
+		setCrudOperation(CrudOperation.INSERT);
 	}
 
 	/**

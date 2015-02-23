@@ -36,6 +36,30 @@ public enum CrudOperation {
 				|| this.name().equalsIgnoreCase(anOperation);
 	}
 
+	/**
+	 * Verifica se o CrudOperation corrente é igual a pelo menos um dos informados via parâmetro.
+	 * @param operations Operations para verificação. 
+	 * @return true se houve pelo menos uma igualdade.
+	 */
+	public boolean in(String...operations) {
+		boolean isItIn = false;
+		for (String op : operations) {
+			isItIn = equals(op);
+			if (isItIn) {
+				break;
+			}
+		}
+		return isItIn;
+	}
+	
+	/**
+	 * Verifica se o CrudOperation corrente é igual a pelo menos um dos informados via parâmetro.
+	 * @return true se houve pelo menos uma igualdade.
+	 */
+	public boolean in(String op1, String op2) {
+		return in(new String[]{op1, op2});
+	}
+	
 	public String getOperation() {
 		return operation;
 	}

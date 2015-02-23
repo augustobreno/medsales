@@ -43,6 +43,20 @@ public class CicloAction extends CrudActionBase<Ciclo, Long, CicloFacade> {
 		filter.addFetch("investidor", "movimentos.parceiro");
 	}
 
+	@Override
+	protected void postSave() {
+		/*
+		 * Após salvar um ciclo, se este foi um fluxo de inclusão, então mantém
+		 * o usuário nesta mesma página.
+		 */
+		if (CrudOperation.INSERT.equals(getCrudOperation())) {
+			showInfoMessage(getSaveSuccessMessage());
+		} else {
+			super.postSave();
+		}
+
+	}
+
 	public void load(SelectEvent event) throws IOException {
 		load((MovimentoValor) event.getObject());
 	}
@@ -57,13 +71,8 @@ public class CicloAction extends CrudActionBase<Ciclo, Long, CicloFacade> {
 		}
 	}
 
-	public void novoMovimento() throws IOException {
-		String link = "{0}/movimento/valor/investimento/investimento.xhtml?op={1}&clid={2}";
-		FacesContext
-				.getCurrentInstance()
-				.getExternalContext()
-				.redirect(
-						MessageFormat.format(link, getAppWebContext(), CrudOperation.INSERT.getOperation(), getEntity()
-								.getId()));
+	public String getInvestimentoLink() throws IOException {
+		String link = "/movimento/valor/investimento/investimento.xhtml?op={0}&clid={1}&{2}";
+		return MessageFormat.format(link, CrudOperation.INSERT.getOperation(), getEntity().getId(), "faces-redirect=true");
 	}
 }

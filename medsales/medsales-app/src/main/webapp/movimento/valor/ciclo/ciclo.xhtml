@@ -25,7 +25,7 @@
 			<ui:include src="cicloList.xhtml" />
 		</p:outputPanel>
 
-		<p:outputPanel rendered="#{cicloAction.crudOperation.equals('E')}">
+		<p:outputPanel rendered="#{cicloAction.crudOperation.in('E', 'I')}">
 			<ui:param name="param_pageSubtitle" value="Manutenção" />
 			<ui:include src="cicloEdit.xhtml" />
 		</p:outputPanel>	

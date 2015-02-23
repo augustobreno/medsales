@@ -80,6 +80,13 @@ public class InvestimentoAction extends CrudActionBase<Investimento, Long, Inves
 		returnToCiclo(cicloId);
 	}
 	
+	@Override
+	public void cancelOperation() {
+		Long cicloId = getEntity().getCiclo().getId();
+		super.cancelOperation();
+		returnToCiclo(cicloId);
+	}
+	
 	/**
 	 * Retorna ao fluxo do ciclo associado ao movimento no momento da persistência.
 	 * @param cicloId ID do ciclo a retornar.
