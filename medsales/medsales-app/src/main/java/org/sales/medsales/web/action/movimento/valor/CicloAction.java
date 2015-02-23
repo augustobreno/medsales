@@ -12,6 +12,7 @@ import javax.inject.Named;
 import org.easy.qbeasy.api.Filter;
 import org.primefaces.event.SelectEvent;
 import org.sales.medsales.api.web.action.CrudActionBase;
+import org.sales.medsales.api.web.action.CrudOperation;
 import org.sales.medsales.dominio.Ciclo;
 import org.sales.medsales.dominio.movimento.valor.Investimento;
 import org.sales.medsales.dominio.movimento.valor.MovimentoValor;
@@ -53,4 +54,7 @@ public class CicloAction extends CrudActionBase<Ciclo, Long, CicloFacade>{
 		}
 	}
 
+	public void novoMovimento() throws IOException {
+		FacesContext.getCurrentInstance().getExternalContext().redirect(getAppWebContext() + "/movimento/valor/investimento/investimento.xhtml?op=" + CrudOperation.INSERT.getOperation());
+	}
 }

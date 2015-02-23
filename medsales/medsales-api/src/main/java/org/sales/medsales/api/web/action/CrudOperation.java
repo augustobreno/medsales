@@ -2,7 +2,7 @@ package org.sales.medsales.api.web.action;
 
 /** Constantes para controle da operação corrente */
 public enum CrudOperation {
-	SEARCH("S"), EDIT("E");
+	SEARCH("S"), EDIT("E"), INSERT("I");
 	
 	private String operation;
 	
@@ -34,6 +34,10 @@ public enum CrudOperation {
 	public boolean equals(String anOperation) {
 		return this.operation.equalsIgnoreCase(anOperation)
 				|| this.name().equalsIgnoreCase(anOperation);
+	}
+
+	public String getOperation() {
+		return operation;
 	}
 	
 }
