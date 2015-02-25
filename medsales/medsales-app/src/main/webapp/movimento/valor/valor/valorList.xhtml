@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+<ui:composition>
+
+
+
+	<p:separator />
+
+	<h:form id="btnForm">
+		<div style="float: right">
+			<p:commandButton actionListener="#{valorAction.prepareToInsert()}" icon="ui-icon-plusthick" update=":content-panel"
+				immediate="true" />
+		</div>
+	</h:form>	
+
+	<h:form id="listForm">
+		<p:dataTable id="table" var="investimento" value="#{valorAction.result}" rendered="#{not empty valorAction.result}"
+			paginator="true" lazy="true"
+			paginatorTemplate="{RowsPerPageDropdown} {totalPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+			paginatorPosition="bottom" rowsPerPageLabel="Exibindo" rowsPerPageTemplate="5,10,20,30,50,100" rows="5"
+			emptyMessage="Nenhum registro foi encontrado." selectionMode="single" rowKey="#{investimento.id}">
+
+			<p:ajax event="rowSelect" listener="#{valorAction.prepareToEdit}" update=":content-panel" />
+
+
+			<f:facet name="header">
+					Investimentos Cadastrados
+				</f:facet>
+
+			<f:facet name="{totalPageReport}">
+					de #{valorAction.result.rowCount} &nbsp;&nbsp;&nbsp;
+				</f:facet>
+
+			<p:column headerText="Cód" sortBy="#{investimento.id}">
+	                #{investimento.id}
+            </p:column>
+
+			<p:column headerText="Ciclo" sortBy="#{investimento.ciclo.id}">
+	                #{investimento.ciclo.id} - #{investimento.ciclo.investidor.nome}
+            </p:column>
+            
+            <p:column headerText="Realizado em" sortBy="#{investimento.dataMovimento}">
+            	<h:outputText value="#{investimento.dataMovimento}">
+						<f:convertDateTime pattern="dd/MM/yyyy" />
+				</h:outputText>
+            </p:column>
+            
+			<p:column headerText="Valor (R$)" style="text-align:right" sortBy="#{investimento.valor}">
+				<h:outputText value="#{investimento.valor}">
+					<f:converter converterId="BigDecimalConverter" />
+				</h:outputText>
+            </p:column>            
+            
+		</p:dataTable>
+	</h:form>
+
+</ui:composition>
+</html>

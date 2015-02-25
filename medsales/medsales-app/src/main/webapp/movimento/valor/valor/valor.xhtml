@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+
+<f:metadata>
+	<!-- lid para book-markable -->
+	<f:viewParam name="lid" value="#{valorAction.lid}" />
+	<f:viewParam name="op" value="#{valorAction.op}" />
+	<f:viewParam name="clid" value="#{valorAction.clid}" />
+	
+	<f:viewAction action="#{valorAction.doGetParams()}" />
+</f:metadata>
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	template="/templates/default/main.xhtml">
+
+
+	<ui:param name="param_pageTitle" value="Valor Avulso" />
+
+	<ui:define name="content">
+
+		<p:outputPanel rendered="#{valorAction.crudOperation.equals('S')}">
+			<ui:include src="valorList.xhtml" />
+		</p:outputPanel>
+
+		<p:outputPanel rendered="#{valorAction.crudOperation.equals('E') or valorAction.crudOperation.equals('I')}">
+			<ui:include src="valorEdit.xhtml" />
+		</p:outputPanel>	
+
+	</ui:define>
+
+</ui:composition>
+</html>

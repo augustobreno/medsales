@@ -32,6 +32,7 @@
 			<p:commandButton id="addBt" value="Adicionar..." type="button" icon="ui-icon-extlink" />
 			<p:tieredMenu overlay="true" trigger="addBt" my="right top" at="right bottom" style="width:200px">
 				<p:menuitem value="Investimento" icon="ui-icon-disk" ajax="false" immediate="true" url="#{cicloAction.getInvestimentoLink()}" />
+				<p:menuitem value="Valor Avulso" icon="ui-icon-disk" ajax="false" immediate="true" url="#{cicloAction.getValorLink()}" />
 			</p:tieredMenu>
 		</div>
 		<p:dataTable id="tbMovimentos" var="movimento" value="#{cicloAction.entity.movimentos}" paginator="true"

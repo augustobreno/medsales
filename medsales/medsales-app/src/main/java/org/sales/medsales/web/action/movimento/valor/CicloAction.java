@@ -17,6 +17,7 @@ import org.sales.medsales.api.web.action.CrudOperation;
 import org.sales.medsales.dominio.Ciclo;
 import org.sales.medsales.dominio.movimento.valor.Investimento;
 import org.sales.medsales.dominio.movimento.valor.MovimentoValor;
+import org.sales.medsales.dominio.movimento.valor.Valor;
 import org.sales.medsales.negocio.movimentacao.valor.CicloFacade;
 
 @SuppressWarnings("serial")
@@ -24,6 +25,10 @@ import org.sales.medsales.negocio.movimentacao.valor.CicloFacade;
 @ConversationScoped
 public class CicloAction extends CrudActionBase<Ciclo, Long, CicloFacade> {
 
+	private static final String INVESTIMENTO_LINK = "/movimento/valor/investimento/investimento.xhtml";
+
+	private static final String VALOR_LINK = "/movimento/valor/valor/valor.xhtml";
+	
 	@Inject
 	private Conversation conversation;
 
@@ -61,18 +66,39 @@ public class CicloAction extends CrudActionBase<Ciclo, Long, CicloFacade> {
 		load((MovimentoValor) event.getObject());
 	}
 
+	/**
+	 * Carrega um movimento para edição. 
+	 */
 	public void load(MovimentoValor movimento) throws IOException {
+		
+		String link = null;
 		if (Investimento.class.isAssignableFrom(movimento.getClass())) {
-			String link = "{0}/movimento/valor/investimento/investimento.xhtml?lid={1}&clid={2}";
-			FacesContext.getCurrentInstance().getExternalContext()
-					.redirect(MessageFormat.format(link, getAppWebContext(), movimento.getId(), getEntity().getId()));
-		} else {
+			link = INVESTIMENTO_LINK;
+		} else if (Valor.class.isAssignableFrom(movimento.getClass())) {
+			link = VALOR_LINK;
+		}
+		
+		if (link == null) {
 			showErrorMessage("Não foi possível discernir o tipo do movimento.");
+		} else {
+			String linkComParamentros = "{0}" + link + "?lid={1}&clid={2}";
+			FacesContext.getCurrentInstance().getExternalContext()
+					.redirect(MessageFormat.format(linkComParamentros, getAppWebContext(), movimento.getId(), getEntity().getId()));
 		}
 	}
 
 	public String getInvestimentoLink() throws IOException {
-		String link = "/movimento/valor/investimento/investimento.xhtml?op={0}&clid={1}&{2}";
-		return MessageFormat.format(link, CrudOperation.INSERT.getOperation(), getEntity().getId(), "faces-redirect=true");
+		String link = INVESTIMENTO_LINK;
+		return montarLinkParaNovoMovimento(link);
+	}
+	
+	public String getValorLink() throws IOException {
+		String link = VALOR_LINK;
+		return montarLinkParaNovoMovimento(link);
+	}
+
+	private String montarLinkParaNovoMovimento(String link) {
+		String linkComParamentros = link + "?op={0}&clid={1}&{2}"; 
+		return MessageFormat.format(linkComParamentros, CrudOperation.INSERT.getOperation(), getEntity().getId(), "faces-redirect=true");
 	}
 }
