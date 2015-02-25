@@ -5,25 +5,23 @@
 
 <ui:composition>
 
-	<ui:param name="param_pageTitle" value="Cadastrar Investimento" />
-
 	<h:form id="editForm">
 		<p:panelGrid columns="3" layout="grid">
 
 			<p:outputLabel value="Ciclo: " for="ciclo" />
 			<p:autoComplete id="ciclo" value="#{valorAction.entity.ciclo}" 
-				title="Ciclo que estará associado a este investimento." completeMethod="#{searchCicloAction.search}"
+				title="Ciclo que estará associado a este movimento." completeMethod="#{searchCicloAction.search}"
 				var="ciclo" itemLabel="#{ciclo.label}" itemValue="#{ciclo}" forceSelection="true" dropdown="true"
 				required="true">
 			</p:autoComplete>	
 			<p:message for="ciclo" showSummary="false" />
 
-			<p:outputLabel id="investidorLabel" value="Investidor: " for="parceiro" rendered="#{not empty valorAction.entity.ciclo}"/>
+			<p:outputLabel value="Parceito: " for="parceiro" rendered="#{not empty valorAction.entity.ciclo}"/>
 			<p:autoComplete id="parceiro" value="#{valorAction.entity.parceiro}" 
 				title="Parceiro que investiu ou recebeu este valor." completeMethod="#{searchParceiroAction.search}"
 				var="parceiro" itemLabel="#{parceiro.nome}" itemValue="#{parceiro}" forceSelection="true" dropdown="true">
 			</p:autoComplete>			
-			<p:message id="investidorMsg" for="parceiro" showSummary="false" rendered="#{not empty valorAction.entity.ciclo}"/>
+			<p:message for="parceiro" showSummary="false" rendered="#{not empty valorAction.entity.ciclo}"/>
 			
 			<p:outputLabel value="Valor: " for="valor" />
 			<pe:inputNumber id="valor" value="#{valorAction.entity.valor}" symbol="R$ " required="true"/>
@@ -55,7 +53,7 @@
 
 			<p:commandButton actionListener="#{valorAction.delete()}" value="Remover" immediate="true" update=":content-panel"
 				rendered="#{not empty valorAction.entity.id}">
-				<p:confirm header="Confirmation" message="Deseja REMOVER o Investimento?" icon="ui-icon-alert" />
+				<p:confirm header="Confirmation" message="Deseja REMOVER este Movimento?" icon="ui-icon-alert" />
 			</p:commandButton>
 
 			<p:commandButton id="save" actionListener="#{valorAction.save()}" value="Salvar" update=":content-panel" />

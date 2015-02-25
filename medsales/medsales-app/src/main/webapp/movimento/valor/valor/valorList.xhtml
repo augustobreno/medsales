@@ -18,11 +18,11 @@
 	</h:form>	
 
 	<h:form id="listForm">
-		<p:dataTable id="table" var="investimento" value="#{valorAction.result}" rendered="#{not empty valorAction.result}"
+		<p:dataTable id="table" var="movimento" value="#{valorAction.result}" rendered="#{not empty valorAction.result}"
 			paginator="true" lazy="true"
 			paginatorTemplate="{RowsPerPageDropdown} {totalPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
 			paginatorPosition="bottom" rowsPerPageLabel="Exibindo" rowsPerPageTemplate="5,10,20,30,50,100" rows="5"
-			emptyMessage="Nenhum registro foi encontrado." selectionMode="single" rowKey="#{investimento.id}">
+			emptyMessage="Nenhum registro foi encontrado." selectionMode="single" rowKey="#{movimento.id}">
 
 			<p:ajax event="rowSelect" listener="#{valorAction.prepareToEdit}" update=":content-panel" />
 
@@ -35,22 +35,22 @@
 					de #{valorAction.result.rowCount} &nbsp;&nbsp;&nbsp;
 				</f:facet>
 
-			<p:column headerText="Cód" sortBy="#{investimento.id}">
-	                #{investimento.id}
+			<p:column headerText="Cód" sortBy="#{movimento.id}">
+	                #{movimento.id}
             </p:column>
 
-			<p:column headerText="Ciclo" sortBy="#{investimento.ciclo.id}">
-	                #{investimento.ciclo.id} - #{investimento.ciclo.investidor.nome}
+			<p:column headerText="Ciclo" sortBy="#{movimento.ciclo.id}">
+	                #{movimento.ciclo.id} - #{movimento.ciclo.investidor.nome}
             </p:column>
             
-            <p:column headerText="Realizado em" sortBy="#{investimento.dataMovimento}">
-            	<h:outputText value="#{investimento.dataMovimento}">
+            <p:column headerText="Realizado em" sortBy="#{movimento.dataMovimento}">
+            	<h:outputText value="#{movimento.dataMovimento}">
 						<f:convertDateTime pattern="dd/MM/yyyy" />
 				</h:outputText>
             </p:column>
             
-			<p:column headerText="Valor (R$)" style="text-align:right" sortBy="#{investimento.valor}">
-				<h:outputText value="#{investimento.valor}">
+			<p:column headerText="Valor (R$)" style="text-align:right" sortBy="#{movimento.valor}">
+				<h:outputText value="#{movimento.valor}">
 					<f:converter converterId="BigDecimalConverter" />
 				</h:outputText>
             </p:column>            
