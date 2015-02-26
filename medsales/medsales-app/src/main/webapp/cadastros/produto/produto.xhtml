@@ -17,7 +17,7 @@
 			<ui:include src="/cadastros/produto/produtoList.xhtml" />
 		</p:outputPanel>
 
-		<p:outputPanel rendered="#{produtoAction.crudOperation.equals('E')}">
+		<p:outputPanel rendered="#{produtoAction.crudOperation.equals('E') or produtoAction.crudOperation.equals('I')}">
 			<ui:param name="param_pageSubtitle" value="Manutenção" />
 			<ui:include src="/cadastros/produto/produtoEdit.xhtml" />
 		</p:outputPanel>	

@@ -15,6 +15,7 @@ import org.primefaces.event.SelectEvent;
 import org.sales.medsales.api.web.action.CrudActionBase;
 import org.sales.medsales.api.web.action.CrudOperation;
 import org.sales.medsales.dominio.Ciclo;
+import org.sales.medsales.dominio.movimento.valor.EntradaEstoqueValor;
 import org.sales.medsales.dominio.movimento.valor.Investimento;
 import org.sales.medsales.dominio.movimento.valor.MovimentoValor;
 import org.sales.medsales.dominio.movimento.valor.Valor;
@@ -26,8 +27,8 @@ import org.sales.medsales.negocio.movimentacao.valor.CicloFacade;
 public class CicloAction extends CrudActionBase<Ciclo, Long, CicloFacade> {
 
 	private static final String INVESTIMENTO_LINK = "/movimento/valor/investimento/investimento.xhtml";
-
 	private static final String VALOR_LINK = "/movimento/valor/valor/valor.xhtml";
+	private static final String ENTRADA_ESTOQUE_LINK = "/movimento/valor/entradaEstoque/entradaEstoque.xhtml";
 	
 	@Inject
 	private Conversation conversation;
@@ -76,7 +77,9 @@ public class CicloAction extends CrudActionBase<Ciclo, Long, CicloFacade> {
 			link = INVESTIMENTO_LINK;
 		} else if (Valor.class.isAssignableFrom(movimento.getClass())) {
 			link = VALOR_LINK;
-		}
+		} else if (EntradaEstoqueValor.class.isAssignableFrom(movimento.getClass())) {
+			link = ENTRADA_ESTOQUE_LINK;
+		} 
 		
 		if (link == null) {
 			showErrorMessage("Não foi possível discernir o tipo do movimento.");
@@ -94,6 +97,11 @@ public class CicloAction extends CrudActionBase<Ciclo, Long, CicloFacade> {
 	
 	public String getValorLink() throws IOException {
 		String link = VALOR_LINK;
+		return montarLinkParaNovoMovimento(link);
+	}
+	
+	public String getEstradaEstoqueValorLink() throws IOException {
+		String link = ENTRADA_ESTOQUE_LINK;
 		return montarLinkParaNovoMovimento(link);
 	}
 

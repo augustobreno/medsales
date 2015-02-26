@@ -37,32 +37,33 @@ function limparCampoProduto() {
 			<f:param value="#{entradaAction.movimentacao.dataAlteracao}" />
 		</h:outputFormat>
 		<h:form id="itemForm">
+			<p:focus context="itemGrid"/>
 			<p:panelGrid id="itemGrid" columns="3" layout="grid" columnClasses="labels_col1">
 
-				<p:outputLabel value="Quantidade:" for="quantidade" />
-				<p:spinner id="quantidade" value="#{entradaAction.item.quantidade}" min="1" required="true" />
-				<p:message for="quantidade" />
 
 				<p:outputLabel value="Produto:" for="produto" />
-
 				<p:autoComplete id="produto" value="#{entradaAction.item.produto}" minQueryLength="2"
 					title="Nome ou código de barras do Produto" completeMethod="#{entradaAction.searchProdutos}" var="produto"
 					itemLabel="#{produto.nome}" itemValue="#{produto}" dropdown="true" required="true"
 					converter="produtoCodBarrasConverter" />
 				<p:message for="produto" />
 
+				<p:outputLabel value="Quantidade:" for="quantidade" />
+				<p:spinner id="quantidade" value="#{entradaAction.item.quantidade}" min="1" required="true" />
+				<p:message for="quantidade" />
+
 				<p:commandButton value="Adicionar" action="#{entradaAction.adicionarItem}" update=":content-panel"
 					process="@this quantidade produto" />
 			</p:panelGrid>
 		</h:form>
-		
+
 		<p:spacer />
-		
+
 		<h:form id="listForm">
 			<p:dataTable id="itemList" value="#{entradaAction.itens}" var="itemPreco" emptyMessage="Nenhum Item cadastrado."
-				rows="5" paginator="true" paginatorPosition="bottom" editable="true" editMode="cell">
+				rows="100" paginator="true" paginatorPosition="bottom" editable="true" editMode="cell">
 
-				<p:ajax event="cellEdit" update=":content-panel" listener="#{entradaAction.dummy()}"/> 
+				<p:ajax event="cellEdit" update=":content-panel" listener="#{entradaAction.dummy()}" />
 
 				<f:facet name="header">
     				Itens        
@@ -82,7 +83,7 @@ function limparCampoProduto() {
 							<h:outputText value="#{itemPreco.item.quantidade}" />
 						</f:facet>
 						<f:facet name="input">
-							<p:spinner value="#{itemPreco.item.quantidade}" min="0"/>
+							<p:spinner value="#{itemPreco.item.quantidade}" min="0" />
 						</f:facet>
 					</p:cellEditor>
 				</p:column>
@@ -100,6 +101,10 @@ function limparCampoProduto() {
 				</p:column>
 
 			</p:dataTable>
+
+			<h:commandLink value="XLS">
+				<p:dataExporter type="xls" target="itemList" fileName="pedido" pageOnly="true" />
+			</h:commandLink>
 
 		</h:form>
 

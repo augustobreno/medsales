@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+
+<f:metadata>
+	<!-- lid para book-markable -->
+	<f:viewParam name="lid" value="#{entradaEstoqueValorAction.lid}" />
+	<f:viewParam name="op" value="#{entradaEstoqueValorAction.op}" />
+	<f:viewParam name="clid" value="#{entradaEstoqueValorAction.clid}" />
+	
+	<f:viewAction action="#{entradaEstoqueValorAction.doGetParams()}" />
+</f:metadata>
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	template="/templates/default/main.xhtml">
+
+
+	<ui:param name="param_pageTitle" value="Valor de Entrada em Estoque" />
+
+	<ui:define name="content">
+
+		<p:outputPanel rendered="#{entradaEstoqueValorAction.crudOperation.equals('S')}">
+			<ui:include src="entradaEstoqueList.xhtml" />
+		</p:outputPanel>
+
+		<p:outputPanel rendered="#{entradaEstoqueValorAction.crudOperation.equals('E') or entradaEstoqueValorAction.crudOperation.equals('I')}">
+			<ui:include src="entradaEstoqueEdit.xhtml" />
+		</p:outputPanel>	
+
+	</ui:define>
+
+</ui:composition>
+</html>
