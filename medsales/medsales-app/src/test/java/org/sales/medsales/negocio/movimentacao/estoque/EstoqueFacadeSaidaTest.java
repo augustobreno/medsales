@@ -10,6 +10,7 @@ import javax.inject.Inject;
 
 import junit.framework.Assert;
 
+import org.easy.testeasy.dataloader.LoadData;
 import org.junit.Test;
 import org.sales.medsales.MedSalesBaseTest;
 import org.sales.medsales.api.exceptions.BusinessException;
@@ -20,12 +21,11 @@ import org.sales.medsales.dataLoader.ProdutosDataLoader;
 import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
 import org.sales.medsales.dominio.movimento.estoque.Item;
 import org.sales.medsales.dominio.movimento.estoque.MovimentoEstoque;
-import org.sales.medsales.dominio.movimento.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
 import org.sales.medsales.dominio.movimento.estoque.Status;
 import org.sales.medsales.exceptions.ExceptionCodes;
 import org.sales.medsales.exceptions.MovimentacaoSemItensException;
-import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
 import org.sales.medsales.persistencia.repository.EstoqueRepository;
 
 /**
@@ -89,10 +89,8 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
 	 * @throws Exception 
 	 */
     @Test
+    @LoadData(dataLoader={ProdutosDataLoader.class, PrecoProdutoDataLoader.class})
     public void cadastrarSaidaSucesso() throws Exception {
-    	// workaround enquanto interceptor + arquillian continua um mistério
-    	produtosDataLoader.load();
-    	
     	// garante o estado anterior da base de dados
     	Assert.assertEquals(0L, getQuerier().count(SaidaEstoque.class).longValue());
     	Assert.assertEquals(0L, getQuerier().count(Item.class).longValue());
@@ -102,7 +100,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	saidaEstoque.setDataMovimento(new Date());
     	
     	Item item = new Item();
-    	item.setProduto(getQuerier().findAny(Produto.class));
+    	item.setPrecoProduto(getQuerier().findAny(PrecoProduto.class));
     	item.setQuantidade(10);
     	item.setMovimentoEstoque(saidaEstoque);
     	
@@ -151,10 +149,8 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
      * @throws Exception 
      */
     @Test
+    @LoadData(dataLoader={ProdutosDataLoader.class, PrecoProdutoDataLoader.class})
     public void gerarSaidaTest() throws Exception {
-    	// workaround enquanto interceptor + arquillian continua um mistério
-    	produtosDataLoader.load();
-    	precoProdutoDataLoader.load();
     	
     	// criando uma entrada para teste 
     	EntradaEstoque entradaEstoque = criarEntrada();
@@ -170,7 +166,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	 * Buscando a saída direto da base de dados para verificar os dados persistidos
     	 */
     	getEm().clear();
-    	saidaEstoque = (SaidaEstoque) estoqueRepository.findBy(saidaEstoque.getId(), "itens.produto");
+    	saidaEstoque = (SaidaEstoque) estoqueRepository.findBy(saidaEstoque.getId(), "itens.precoProduto");
     	
     	Assert.assertEquals(entradaEstoque.getItens().size(), saidaEstoque.getItens().size());
     	verificarMesmosItens(entradaEstoque.getItens(), saidaEstoque.getItens());
@@ -192,7 +188,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
 				Item encontrado = iterator2.next();
 				
 				if(esperado.getQuantidade() == encontrado.getQuantidade()
-						&& esperado.getProduto().equals(encontrado.getProduto())) {
+						&& esperado.getPrecoProduto().equals(encontrado.getPrecoProduto())) {
 					iterator.remove();
 					iterator2.remove();
 					continue;
@@ -213,7 +209,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	List<Item> itens = new ArrayList<Item>();
     	for (int i = 0; i < 5; i++) {
     		Item item = new Item();
-        	item.setProduto(getQuerier().findAt(Produto.class, i));
+        	item.setPrecoProduto(getQuerier().findAt(PrecoProduto.class, i));
         	item.setQuantidade(10);
         	item.setMovimentoEstoque(entradaEstoque);
         	

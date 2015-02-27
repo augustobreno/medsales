@@ -60,7 +60,9 @@ public class EstoqueRepository extends CrudRepositoryBase<MovimentoEstoque, Long
 								+ "(produto.id, SUM(case when mov.operacao = '"
 								+ Operacao.ENTRADA.getId()
 								+ "' then  item.quantidade else -item.quantidade end)) "
-								+ "FROM " + produtoType + " produto left join produto.itens item left join item.movimentoEstoque mov"
+								+ "FROM " + produtoType + " produto "
+								+ "    left join produto.precos preco "
+								+ "    left join preco.itens item left join item.movimentoEstoque mov"
 								+ " WHERE produto.id in (:idProdutos) GROUP BY produto ");
 		query.setParameter("idProdutos", EntityUtil.getIds(produtos));
 

@@ -34,9 +34,6 @@ public class Produto extends EntityBase<Long> {
 	@OneToMany(fetch=FetchType.LAZY, mappedBy="produto")
 	private List<PrecoProduto> precos;
 	
-	@OneToMany(fetch=FetchType.LAZY, mappedBy="produto")
-	private List<Item> itens;
-	
 	public String getCodigoBarras() {
 		return codigoBarras;
 	}

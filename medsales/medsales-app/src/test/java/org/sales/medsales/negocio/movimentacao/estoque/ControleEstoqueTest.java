@@ -17,6 +17,7 @@ import org.sales.medsales.dataLoader.PrecoProdutoDataLoader;
 import org.sales.medsales.dataLoader.ProdutosDataLoader;
 import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
 import org.sales.medsales.dominio.movimento.estoque.Item;
+import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimento.estoque.Produto;
 import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
 import org.sales.medsales.dominio.movimento.estoque.SaldoProdutoVO;
@@ -74,24 +75,24 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
 	})
 	public void consultaSaldoEntradaProdutoTest() {
 		// cadastra uma entrada para um produto
-		Produto produto = getQuerier().findAt(Produto.class, 0);
+		PrecoProduto precoProduto = getQuerier().findAt(PrecoProduto.class, 0);
 		
-    	cadastrarEntrada(produto, 10);
+    	cadastrarEntrada(precoProduto, 10);
 
     	// verifica o saldo
-		SaldoProdutoVO saldoProduto = estoqueFacade.consultarEstoque(produto);
+		SaldoProdutoVO saldoProduto = estoqueFacade.consultarEstoque(precoProduto.getProduto());
 
 		Assert.assertNotNull(saldoProduto);
-		Assert.assertEquals(produto.getId(), saldoProduto.getIdProduto());
+		Assert.assertEquals(precoProduto.getProduto().getId(), saldoProduto.getIdProduto());
 		Assert.assertEquals(10L, saldoProduto.getQuantidade().longValue());
 	}
 
-	private EntradaEstoque cadastrarEntrada(Produto produto, int quantidade) {
+	private EntradaEstoque cadastrarEntrada(PrecoProduto produto, int quantidade) {
 		EntradaEstoque entradaEstoque = new EntradaEstoque();
     	entradaEstoque.setDataMovimento(new Date());
     	
     	Item item = new Item();
-		item.setProduto(produto);
+		item.setPrecoProduto(produto);
     	item.setQuantidade(quantidade);
     	item.setMovimentoEstoque(entradaEstoque);
     	
@@ -113,14 +114,14 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
 	})
 	public void consultaSaldoEntradaSaidaProdutoTest() {
 		// cadastra uma entrada e saida para um produto
-		Produto produto = getQuerier().findAt(Produto.class, 0);
+		PrecoProduto precoProduto = getQuerier().findAt(PrecoProduto.class, 0);
 		
-    	cadastrarEntrada(produto, 10);
+    	cadastrarEntrada(precoProduto, 10);
     	
     	SaidaEstoque saidaEstoque = new SaidaEstoque();
     	
     	Item item = new Item();
-		item.setProduto(produto);
+		item.setPrecoProduto(precoProduto);
     	item.setQuantidade(5);
     	item.setMovimentoEstoque(saidaEstoque);
     	
@@ -130,10 +131,10 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
     	estoqueFacade.cadastrar(saidaEstoque);
     	
     	// verifica o saldo
-		SaldoProdutoVO saldoProduto = estoqueFacade.consultarEstoque(produto);
+		SaldoProdutoVO saldoProduto = estoqueFacade.consultarEstoque(precoProduto.getProduto());
 
 		Assert.assertNotNull(saldoProduto);
-		Assert.assertEquals(produto.getId(), saldoProduto.getIdProduto());
+		Assert.assertEquals(precoProduto.getProduto().getId(), saldoProduto.getIdProduto());
 		Assert.assertEquals(5L, saldoProduto.getQuantidade().longValue());
 	}
 	
@@ -147,14 +148,14 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
 	})
 	public void consultaSaldoEntradaSaidaProdutoZeradoTest() {
 		// cadastra uma entrada e saida para um produto
-		Produto produto = getQuerier().findAt(Produto.class, 0);
+		PrecoProduto precoProduto = getQuerier().findAt(PrecoProduto.class, 0);
 		
-    	cadastrarEntrada(produto, 10);
+    	cadastrarEntrada(precoProduto, 10);
     	
     	SaidaEstoque saidaEstoque = new SaidaEstoque();
     	
     	Item item = new Item();
-		item.setProduto(produto);
+		item.setPrecoProduto(precoProduto);
     	item.setQuantidade(10);
     	item.setMovimentoEstoque(saidaEstoque);
     	
@@ -164,10 +165,10 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
     	estoqueFacade.cadastrar(saidaEstoque);
     	
     	// verifica o saldo
-		SaldoProdutoVO saldoProduto = estoqueFacade.consultarEstoque(produto);
+		SaldoProdutoVO saldoProduto = estoqueFacade.consultarEstoque(precoProduto.getProduto());
 
 		Assert.assertNotNull(saldoProduto);
-		Assert.assertEquals(produto.getId(), saldoProduto.getIdProduto());
+		Assert.assertEquals(precoProduto.getProduto().getId(), saldoProduto.getIdProduto());
 		Assert.assertEquals(0L, saldoProduto.getQuantidade().longValue());
 	}	
 	
@@ -181,14 +182,14 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
 	})
 	public void consultaSaldoEntradaSaidaProdutoNegativoTest() {
 		// cadastra uma entrada e saida para um produto
-		Produto produto = getQuerier().findAt(Produto.class, 0);
+		PrecoProduto precoProduto = getQuerier().findAt(PrecoProduto.class, 0);
 		
-    	cadastrarEntrada(produto, 10);
+    	cadastrarEntrada(precoProduto, 10);
     	
     	SaidaEstoque saidaEstoque = new SaidaEstoque();
     	
     	Item item = new Item();
-		item.setProduto(produto);
+		item.setPrecoProduto(precoProduto);
     	item.setQuantidade(15);
     	item.setMovimentoEstoque(saidaEstoque);
     	
@@ -198,10 +199,10 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
     	estoqueFacade.cadastrar(saidaEstoque);
     	
     	// verifica o saldo
-		SaldoProdutoVO saldoProduto = estoqueFacade.consultarEstoque(produto);
+		SaldoProdutoVO saldoProduto = estoqueFacade.consultarEstoque(precoProduto.getProduto());
 
 		Assert.assertNotNull(saldoProduto);
-		Assert.assertEquals(produto.getId(), saldoProduto.getIdProduto());
+		Assert.assertEquals(precoProduto.getProduto().getId(), saldoProduto.getIdProduto());
 		Assert.assertEquals(-5L, saldoProduto.getQuantidade().longValue());
 	}
 	

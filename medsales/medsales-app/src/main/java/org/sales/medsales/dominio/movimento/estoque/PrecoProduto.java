@@ -2,11 +2,13 @@ package org.sales.medsales.dominio.movimento.estoque;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import org.sales.medsales.api.dominio.EntityBase;
 import org.sales.medsales.util.CalculosUtil;
@@ -32,6 +34,9 @@ public class PrecoProduto extends EntityBase<Long> {
 	 */
 	@Column(precision=19, scale=2)
 	private BigDecimal valor;
+	
+	@OneToMany(fetch=FetchType.LAZY, mappedBy="precoProduto")
+	private List<Item> itens;
 	
 	/**
 	 * Determina a data de aferição do preço (geralmente a data

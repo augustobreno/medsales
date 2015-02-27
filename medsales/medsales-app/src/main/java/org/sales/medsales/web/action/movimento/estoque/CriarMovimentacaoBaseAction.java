@@ -111,26 +111,28 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	 *            o código de barras.
 	 * @return Produtos encontrados.
 	 */
-	public List<Produto> searchProdutos(String chave) {
+	public List<PrecoProduto> searchProdutos(String chave) {
 		
 		/*
 		 * Consultando apenas 15 produtos para otimização
 		 */
-		Filter<Produto> filter = new QBEFilter<Produto>(new Produto());
-		filter.getExample().setNome(chave);
-		filter.getExample().setCodigoBarras(chave);
+		Filter<PrecoProduto> filter = new QBEFilter<PrecoProduto>(new PrecoProduto());
+		filter.getExample().setProduto(new Produto());
+		filter.getExample().getProduto().setNome(chave);
+		filter.getExample().getProduto().setCodigoBarras(chave);
+		filter.addFetch("produto");
 		filter.setRootContainerType(ContainerType.OR);
 		filter.paginate(0, 15);
-		List<Produto> produtos = produtoFacade.findAllBy(filter);
+		List<PrecoProduto> produtos = produtoFacade.findAllPrecoProdutoBy(filter);
 
 		/*
 		 * Para automatizar a interface, se a consulta resultar em apenas 1
 		 * produto, e a chave de consulta for exatamente igual ao código de
 		 * barras daquele, ele será automaticamente selecionado.
 		 */
-		if (produtos.size() == 1 && produtos.get(0).getCodigoBarras().equalsIgnoreCase(chave)) {
+		if (produtos.size() == 1 && produtos.get(0).getProduto().getCodigoBarras().equalsIgnoreCase(chave)) {
 
-			this.item.setProduto(produtos.get(0));
+			this.item.setPrecoProduto(produtos.get(0));
 			if (this.item.getQuantidade() == null) {
 				this.item.setQuantidade(1);
 			}
@@ -138,11 +140,11 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 			adicionarItem();
 
 			// reseta a lista para prepara nova consulta.
-			produtos = new ArrayList<Produto>();
+			produtos = new ArrayList<PrecoProduto>();
 
 			// atualizando a lista de itens programaticamente
 			RequestContext context = RequestContext.getCurrentInstance();
-			context.update("itemForm:itemList");
+			context.update("listForm:itemList");
 
 			/*
 			 * limpando o campo "Produto" programaticamente porque há um bug
@@ -159,7 +161,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	 * Adiciona o item {@link #item} na lista de itens da movimentação.
 	 */
 	public void adicionarItem() {
-		if (this.item != null && this.item.getProduto() != null && this.item.getQuantidade() > 0) {
+		if (this.item != null && this.item.getPrecoProduto() != null && this.item.getQuantidade() > 0) {
 			preAdicionarItem();
 			ItemPreco itemPreco = doAdicionarItem();
 
@@ -174,7 +176,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	 * @param itemPreco
 	 */
 	protected void postAdicionarItem(ItemPreco itemPreco) {
-		showInfoMessage("Produto \"{0}\" adicionado, total: \"{1}\"", itemPreco.getItem().getProduto().getNome(),
+		showInfoMessage("Produto \"{0}\" adicionado, total: \"{1}\"", itemPreco.getItem().getPrecoProduto().getProduto().getNome(),
 				itemPreco.getItem().getQuantidade());
 
 		initItem();
@@ -189,16 +191,16 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		if (itemPreco == null) {
 			// este produto ainda não foi inserido, será criado pela
 			// primeira vez
-			PrecoProduto precoProduto = produtoFacade.buscarPrecoProduto(getItem().getProduto().getCodigoBarras());
+			PrecoProduto precoProduto = produtoFacade.buscarPrecoProduto(getItem().getPrecoProduto().getProduto().getCodigoBarras());
 
 			if (precoProduto == null) {
 				throw new BusinessException(null,
 						"Produto com código de barras \"{0}\" não existe ou não possui preço cadastrado.",
-						getItem().getProduto().getCodigoBarras());
+						getItem().getPrecoProduto().getProduto().getCodigoBarras());
 			}
 
 			Item novoItem = new Item();
-			novoItem.setProduto(precoProduto.getProduto());
+			novoItem.setPrecoProduto(precoProduto);
 			novoItem.setQuantidade(this.item.getQuantidade());
 			novoItem.setMovimentoEstoque(getMovimentacao());
 
@@ -299,7 +301,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		if (lid != null) {
 			Filter<MovimentoEstoque> filter = new QBEFilter<>(MovimentoEstoque.class);
 			filter.filterBy("id", Operators.equal(), lid);
-			filter.addFetch("itens.produto", "parceiro");
+			filter.addFetch("itens.precoProduto.produto", "parceiro");
 			MovimentoEstoque movimentacao = estoqueFacade.findBy(filter);
 			
 			if (movimentacao == null) {
@@ -324,7 +326,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		List<ItemPreco> itemPrecos = new ArrayList<ItemPreco>();
 		for (Item item : itensToParse) {
 			// consultando os precos dos items
-			PrecoProduto precoProduto = produtoFacade.buscarPrecoProduto(item.getProduto().getCodigoBarras());
+			PrecoProduto precoProduto = produtoFacade.buscarPrecoProduto(item.getPrecoProduto().getProduto().getCodigoBarras());
 			itemPrecos.add(new ItemPreco(item, precoProduto));
 		}
 		return itemPrecos;

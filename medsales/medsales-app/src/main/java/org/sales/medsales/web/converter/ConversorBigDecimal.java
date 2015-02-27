@@ -13,7 +13,7 @@ import javax.faces.convert.FacesConverter;
 public class ConversorBigDecimal implements Converter {
 
 	@Override
-    public Object getAsObject(FacesContext facesContext, UIComponent uiComponent, String s) {
+    public Object getAsObject(FacesContext facesContext, UIComponent uiComponent, String s) { 
         try {
             return NumberUtils.parseBigDecimal(s);
         } catch (ParseException e) {
@@ -24,6 +24,6 @@ public class ConversorBigDecimal implements Converter {
      
     @Override
     public String getAsString(FacesContext facesContext, UIComponent uiComponent, Object o) {
-        return new DecimalFormat(NumberUtils.BIG_DECIMAL_FORMAT).format(o);
+        return new DecimalFormat("#,##0.00").format(o);
     }
 }

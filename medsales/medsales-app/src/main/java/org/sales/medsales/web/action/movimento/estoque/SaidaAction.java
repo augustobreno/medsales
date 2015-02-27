@@ -42,7 +42,7 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 	@Override
 	protected void postAdicionarItem(ItemPreco itemPreco) {
 		super.postAdicionarItem(itemPreco);
-		consultarSaldo(itemPreco.getItem().getProduto());
+		consultarSaldo(itemPreco.getItem().getPrecoProduto().getProduto());
 	}
 
 	@Override
@@ -55,7 +55,7 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 		List<Produto> produtos = new ArrayList<Produto>();
 		
 		for (ItemPreco itemPreco : getItens()) {
-			produtos.add(itemPreco.getItem().getProduto());
+			produtos.add(itemPreco.getItem().getPrecoProduto().getProduto());
 		}
 		
 		return produtos.toArray(new Produto[]{});

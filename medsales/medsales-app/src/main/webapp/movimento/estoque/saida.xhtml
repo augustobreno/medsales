@@ -46,10 +46,19 @@ function limparCampoProduto() {
 
 				<p:outputLabel value="Produto:" for="produto" />
 
-				<p:autoComplete id="produto" value="#{saidaAction.item.produto}" minQueryLength="2"
-					title="Nome ou código de barras do Produto" completeMethod="#{saidaAction.searchProdutos}" var="produto"
-					itemLabel="#{produto.nome}" itemValue="#{produto}" dropdown="true" required="true"
-					converter="produtoCodBarrasConverter" />
+				<p:autoComplete id="produto" value="#{saidaAction.item.precoProduto}" minQueryLength="2"
+					title="Nome ou código de barras do Produto" completeMethod="#{saidaAction.searchProdutos}" var="precoProduto"
+					itemLabel="#{precoProduto.produto.nome}" itemValue="#{precoProduto}" dropdown="true" required="true"
+					converter="produtoCodBarrasConverter">
+
+					<p:column>
+						<h:outputText value="#{precoProduto.produto.nome}" />
+					</p:column>
+					<p:column>
+						R$ <h:outputText value="#{precoProduto.valor}" converter="BigDecimalConverter" />
+					</p:column>
+
+				</p:autoComplete>
 				<p:message for="produto" />
 
 				<p:commandButton value="Adicionar" action="#{saidaAction.adicionarItem}" update=":content-panel"
@@ -68,21 +77,19 @@ function limparCampoProduto() {
 	       		</f:facet>
 
 				<p:column headerText="Cód Barras">
-					<h:outputText value="#{itemPreco.preco.produto.codigoBarras}" />
+					<h:outputText value="#{itemPreco.item.precoProduto.produto.codigoBarras}" />
 				</p:column>
 
 				<p:column headerText="Produto">
-					<h:outputText value="#{itemPreco.preco.produto.nome}" />
+					<h:outputText value="#{itemPreco.item.precoProduto.produto.nome}" />
 				</p:column>
 
-				<p:column headerText="Quant/Estoque" style="text-align:center" >
-					<h:outputText value="#{itemPreco.item.quantidade}/#{saidaAction.getSaldo(itemPreco.item.produto).quantidade}" />
+				<p:column headerText="Quant/Estoque" style="text-align:center">
+					<h:outputText value="#{itemPreco.item.quantidade}/#{saidaAction.getSaldo(itemPreco.item.precoProduto.produto).quantidade}" />
 				</p:column>
 
 				<p:column headerText="R$ Un" style="text-align:right">
-					<h:outputText value="#{itemPreco.preco.valor}">
-						<f:convertNumber type="currency" pattern="#,##0.00" />
-					</h:outputText>
+					<h:outputText value="#{itemPreco.preco.valor}" converter="BigDecimalConverter" />
 				</p:column>
 
 				<p:column headerText="R$ Desconto" style="text-align:right">
@@ -93,9 +100,8 @@ function limparCampoProduto() {
 
 				<p:column headerText="R$ Total" style="text-align:right">
 					<h:outputText
-						value="#{itemPreco.preco.getValorComDesconto(saidaAction.movimentacao.desconto) * itemPreco.item.quantidade}">
-						<f:convertNumber type="currency" pattern="#,##0.00" />
-					</h:outputText>
+						value="#{itemPreco.preco.getValorComDesconto(saidaAction.movimentacao.desconto) * itemPreco.item.quantidade}"
+						converter="BigDecimalConverter" />
 				</p:column>
 			</p:dataTable>
 
@@ -120,17 +126,14 @@ function limparCampoProduto() {
 				<h:outputText value="" />
 				<p:outputLabel value="Descontos: " for="descontos" />
 				<h:outputText id="descontos"
-					value="#{calculosUtil.calcularDesconto(saidaAction.valorTotalItens, saidaAction.movimentacao.desconto)}">
-					<f:convertNumber type="currency" pattern="R$ #,##0.00" />
-				</h:outputText>
+					value="#{calculosUtil.calcularDesconto(saidaAction.valorTotalItens, saidaAction.movimentacao.desconto)}" 
+					converter="BigDecimalConverter"/>
 
 				<h:outputText value="" />
 				<p:outputLabel value="Valor Final: " for="vfinal" />
 				<h:outputText id="vfinal"
 					value="#{calculosUtil.aplicarDesconto(saidaAction.valorTotalItens, saidaAction.movimentacao.desconto)}"
-					converter="BigDecimalConverter">
-					<f:convertNumber type="currency" pattern="R$ #,##0.00" />
-				</h:outputText>
+					converter="BigDecimalConverter"/>
 
 			</p:panelGrid>
 
@@ -152,7 +155,7 @@ function limparCampoProduto() {
 
 				<p:outputLabel value="Data da Saída:" for="dtMov" />
 				<p:calendar id="dtMov" value="#{saidaAction.movimentacao.dataMovimento}" pattern="dd/MM/yyyy" mask="true"
-					showOn="button" required="true"/>
+					showOn="button" required="true" />
 				<p:message for="dtMov" />
 
 
@@ -171,11 +174,11 @@ function limparCampoProduto() {
 					rendered="#{!saidaAction.concluido}">
 
 					<p:menuitem value="Salvar e Concluir" actionListener="#{saidaAction.concluir()}" icon="ui-icon-disk"
-						action="#{saidaAction.redirectIfNoError('movimentos.xhtml?faces-redirect=true')}" update="btnForm" />	
+						action="#{saidaAction.redirectIfNoError('movimentos.xhtml?faces-redirect=true')}" update="btnForm" />
 
 					<p:separator />
-					
-					<p:menuitem value="Excluir" icon="ui-icon-trash" onclick="$('#btnForm\\:btnRemove').click();return;"/>
+
+					<p:menuitem value="Excluir" icon="ui-icon-trash" onclick="$('#btnForm\\:btnRemove').click();return;" />
 
 				</p:splitButton>
 
@@ -184,8 +187,8 @@ function limparCampoProduto() {
 					rendered="#{saidaAction.concluido}">
 
 					<p:separator />
-					
-					<p:menuitem value="Excluir" icon="ui-icon-trash" onclick="$('#btnForm\\:btnRemove').click();return;"/>
+
+					<p:menuitem value="Excluir" icon="ui-icon-trash" onclick="$('#btnForm\\:btnRemove').click();return;" />
 
 				</p:splitButton>
 
@@ -196,8 +199,7 @@ function limparCampoProduto() {
 					rendered="#{not empty saidaAction.movimentacao.id}" immediate="true" style="display:none;">
 
 					<p:confirm header="Atenção!"
-						message="Deseja realmente REMOVER esta Saída Não será possível recuperar suas informações."
-						icon="ui-icon-alert" />
+						message="Deseja realmente REMOVER esta Saída Não será possível recuperar suas informações." icon="ui-icon-alert" />
 
 				</p:commandButton>
 

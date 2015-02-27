@@ -47,8 +47,8 @@ public class ItemPreco {
 	public boolean equals(Object obj) {
 		if (obj != null && obj instanceof ItemPreco) {
 			ItemPreco outroItem = (ItemPreco) obj;
-			return this.getItem().getProduto().getCodigoBarras()
-					.equals(outroItem.getItem().getProduto().getCodigoBarras());
+			return this.getItem().getPrecoProduto().getProduto().getCodigoBarras()
+					.equals(outroItem.getItem().getPrecoProduto().getProduto().getCodigoBarras());
 		}
 		return false;
 	}

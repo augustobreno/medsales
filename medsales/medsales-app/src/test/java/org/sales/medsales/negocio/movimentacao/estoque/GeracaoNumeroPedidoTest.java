@@ -12,13 +12,13 @@ import org.easy.testeasy.dataloader.LoadDatas;
 import org.junit.Test;
 import org.sales.medsales.MedSalesBaseTest;
 import org.sales.medsales.dataLoader.ParceirosDataLoader;
+import org.sales.medsales.dataLoader.PrecoProdutoDataLoader;
 import org.sales.medsales.dataLoader.ProdutosDataLoader;
 import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.movimento.estoque.Item;
-import org.sales.medsales.dominio.movimento.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
 import org.sales.medsales.dominio.movimento.estoque.Status;
-import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
 
 /**
  * Testes para geração de número de pedidos em Saida.
@@ -35,7 +35,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
 	 */
 	@Test
 	@LoadDatas ({
-		@LoadData(dataLoader=ProdutosDataLoader.class),
+		@LoadData(dataLoader={ProdutosDataLoader.class, PrecoProdutoDataLoader.class}),
 		@LoadData(dataLoader=ParceirosDataLoader.class)
 	})
 	public void cadastrarSaidaConcluidaTest() {
@@ -45,7 +45,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	saidaEstoque.setDataMovimento(new Date());
     	
     	Item item = new Item();
-    	item.setProduto(getQuerier().findAny(Produto.class));
+    	item.setPrecoProduto(getQuerier().findAny(PrecoProduto.class));
     	item.setQuantidade(10);
     	item.setMovimentoEstoque(saidaEstoque);
     	
@@ -67,7 +67,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
 	 */
 	@Test
 	@LoadDatas ({
-		@LoadData(dataLoader=ProdutosDataLoader.class),
+		@LoadData(dataLoader={ProdutosDataLoader.class, PrecoProdutoDataLoader.class}),
 		@LoadData(dataLoader=ParceirosDataLoader.class)
 	})
 	public void cadastrarSaidaRascunhoTest() {
@@ -77,7 +77,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	saidaEstoque.setParceiro(getQuerier().findAny(Parceiro.class));
     	
     	Item item = new Item();
-    	item.setProduto(getQuerier().findAny(Produto.class));
+    	item.setPrecoProduto(getQuerier().findAny(PrecoProduto.class));
     	item.setQuantidade(10);
     	item.setMovimentoEstoque(saidaEstoque);
     	
@@ -98,7 +98,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
 	 */
 	@Test
 	@LoadDatas ({
-		@LoadData(dataLoader=ProdutosDataLoader.class),
+		@LoadData(dataLoader={ProdutosDataLoader.class, PrecoProdutoDataLoader.class}),
 		@LoadData(dataLoader=ParceirosDataLoader.class)
 	})
 	public void cadastrarDuasSaidasMesmoClienteTest() {
@@ -111,7 +111,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	saida1.setDataMovimento(new Date());
     	
     	Item item = new Item();
-    	item.setProduto(getQuerier().findAt(Produto.class, 0));
+    	item.setPrecoProduto(getQuerier().findAt(PrecoProduto.class, 0));
     	item.setQuantidade(10);
     	item.setMovimentoEstoque(saida1);
     	
@@ -126,7 +126,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	saida2.setDataMovimento(new Date());
     	
     	item = new Item();
-    	item.setProduto(getQuerier().findAt(Produto.class, 1));
+    	item.setPrecoProduto(getQuerier().findAt(PrecoProduto.class, 1));
     	item.setQuantidade(15);
     	item.setMovimentoEstoque(saida2);
     	
@@ -152,7 +152,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
 	 */
 	@Test
 	@LoadDatas ({
-		@LoadData(dataLoader=ProdutosDataLoader.class),
+		@LoadData(dataLoader={ProdutosDataLoader.class, PrecoProdutoDataLoader.class}),
 		@LoadData(dataLoader=ParceirosDataLoader.class)
 	})
 	public void cadastrarDuasSaidasClienteDiferenteTest() {
@@ -166,7 +166,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	saida1.setDataMovimento(new Date());
     	
     	Item item = new Item();
-    	item.setProduto(getQuerier().findAt(Produto.class, 0));
+    	item.setPrecoProduto(getQuerier().findAt(PrecoProduto.class, 0));
     	item.setQuantidade(10);
     	item.setMovimentoEstoque(saida1);
     	
@@ -181,7 +181,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	saida2.setDataMovimento(new Date());
     	
     	item = new Item();
-    	item.setProduto(getQuerier().findAt(Produto.class, 1));
+    	item.setPrecoProduto(getQuerier().findAt(PrecoProduto.class, 1));
     	item.setQuantidade(15);
     	item.setMovimentoEstoque(saida2);
     	

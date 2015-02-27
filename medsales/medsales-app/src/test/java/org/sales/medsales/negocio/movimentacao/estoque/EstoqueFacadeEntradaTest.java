@@ -16,23 +16,15 @@ import org.sales.medsales.dataLoader.PrecoProdutoDataLoader;
 import org.sales.medsales.dataLoader.ProdutosDataLoader;
 import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
 import org.sales.medsales.dominio.movimento.estoque.Item;
-import org.sales.medsales.dominio.movimento.estoque.Produto;
+import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimento.estoque.Status;
 import org.sales.medsales.exceptions.ExceptionCodes;
 import org.sales.medsales.exceptions.MovimentacaoSemItensException;
-import org.sales.medsales.exceptions.ProdutoSemPrecoException;
-import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
 
 public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
 
 	@Inject
 	private EstoqueFacade estoqueFacade;
-	
-	@Inject
-	private ProdutosDataLoader produtosDataLoader;
-	
-	@Inject
-	private PrecoProdutoDataLoader precoProdutoDataLoader;
 	
 	/**
 	 * Garante a validação dos parâmetros de entrada
@@ -71,52 +63,12 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     }
     
 	/**
-	 * Tenta cadastrar uma entrada que possui um ou mais produtos 
-	 * sem preços cadastrados.
-	 * @throws Exception 
-	 */
-    @Test(expected=ProdutoSemPrecoException.class)
-    @LoadData(dataLoader=ProdutosDataLoader.class) // TODO implementar interceptorr + arquillian?
-    public void cadastrarEntradaProdutoSemPreco() throws Exception {
-    	// workaround enquanto interceptor + arquillian continua um mistério
-    	produtosDataLoader.load();    	
-    	
-    	// garante o estado anterior da base de dados
-    	Assert.assertEquals(0L, getQuerier().count(EntradaEstoque.class).longValue());
-    	Assert.assertEquals(0L, getQuerier().count(Item.class).longValue());
-    	
-    	
-    	EntradaEstoque entradaEstoque = new EntradaEstoque();
-    	entradaEstoque.setDataMovimento(new Date());
-    	
-    	Item item = new Item();
-    	item.setProduto(getQuerier().findAny(Produto.class));
-    	item.setQuantidade(10);
-    	item.setMovimentoEstoque(entradaEstoque);
-    	
-    	entradaEstoque.setItens(Arrays.asList(item));
-    	entradaEstoque.setStatus(Status.CONCLUIDO);
-    	
-    	estoqueFacade.cadastrar(entradaEstoque);
-    	
-    	getEm().clear();
-    	
-    	// verifica se os dados foram inseridos
-    	Assert.assertEquals(1L, getQuerier().count(EntradaEstoque.class).longValue());
-    	Assert.assertEquals(1L, getQuerier().count(Item.class).longValue());
-    	
-    }
-    
-	/**
 	 * Tenta cadastrar uma entrada que possui apenas um produto, com preço registrado.
 	 * @throws Exception 
 	 */
     @Test
+    @LoadData(dataLoader={ProdutosDataLoader.class, PrecoProdutoDataLoader.class})
     public void cadastrarEntradaSucesso() throws Exception {
-    	// workaround enquanto interceptor + arquillian continua um mistério
-    	produtosDataLoader.load();
-    	precoProdutoDataLoader.load();
-    	
     	// garante o estado anterior da base de dados
     	Assert.assertEquals(0L, getQuerier().count(EntradaEstoque.class).longValue());
     	Assert.assertEquals(0L, getQuerier().count(Item.class).longValue());
@@ -126,7 +78,7 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
     	entradaEstoque.setDataMovimento(new Date());
     	
     	Item item = new Item();
-    	item.setProduto(getQuerier().findAny(Produto.class));
+    	item.setPrecoProduto(getQuerier().findAny(PrecoProduto.class));
     	item.setQuantidade(10);
     	item.setMovimentoEstoque(entradaEstoque);
     	
@@ -147,16 +99,13 @@ public class EstoqueFacadeEntradaTest extends MedSalesBaseTest {
 	 * testa a remoção de uma entrada.
 	 */
     @Test
+    @LoadData(dataLoader={ProdutosDataLoader.class, PrecoProdutoDataLoader.class})
     public void removerEntrada() throws Exception {
-    	// workaround enquanto interceptor + arquillian continua um mistério
-    	produtosDataLoader.load();
-    	precoProdutoDataLoader.load();
-    	
     	EntradaEstoque entradaEstoque = new EntradaEstoque();
     	entradaEstoque.setDataMovimento(new Date());
     	
     	Item item = new Item();
-    	item.setProduto(getQuerier().findAny(Produto.class));
+    	item.setPrecoProduto(getQuerier().findAny(PrecoProduto.class));
     	item.setQuantidade(10);
     	item.setMovimentoEstoque(entradaEstoque);
     	

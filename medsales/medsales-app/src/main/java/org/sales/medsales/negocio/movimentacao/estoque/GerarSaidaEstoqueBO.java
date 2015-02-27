@@ -49,7 +49,7 @@ public class GerarSaidaEstoqueBO implements Serializable {
 		for (Item itemEntrada : entradaEstoque.getItens()) {
 			Item itemSaida = new Item();
 			itemSaida.setMovimentoEstoque(saidaEstoque);
-			itemSaida.setProduto(itemEntrada.getProduto());
+			itemSaida.setPrecoProduto(itemEntrada.getPrecoProduto());
 			itemSaida.setQuantidade(itemEntrada.getQuantidade());
 			
 			itensSaida.add(itemSaida);

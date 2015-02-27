@@ -94,7 +94,7 @@ public class CicloInvestimentoTest extends MedSalesBaseTest {
 		// consulta o ciclo e garante a presenca do investimento
 		getEm().clear();
 		
-		Ciclo found = cicloFacade.findBy(ciclo.getId(), "movimentacoes");
+		Ciclo found = cicloFacade.findBy(ciclo.getId(), "movimentos");
 		Assert.assertEquals(1, found.getMovimentos().size());
 		Assert.assertEquals(investimento, found.getMovimentos().get(0));
 		

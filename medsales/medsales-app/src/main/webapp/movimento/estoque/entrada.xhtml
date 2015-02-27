@@ -37,15 +37,24 @@ function limparCampoProduto() {
 			<f:param value="#{entradaAction.movimentacao.dataAlteracao}" />
 		</h:outputFormat>
 		<h:form id="itemForm">
-			<p:focus context="itemGrid"/>
+			<p:focus context="itemGrid" />
 			<p:panelGrid id="itemGrid" columns="3" layout="grid" columnClasses="labels_col1">
 
 
 				<p:outputLabel value="Produto:" for="produto" />
-				<p:autoComplete id="produto" value="#{entradaAction.item.produto}" minQueryLength="2"
-					title="Nome ou código de barras do Produto" completeMethod="#{entradaAction.searchProdutos}" var="produto"
-					itemLabel="#{produto.nome}" itemValue="#{produto}" dropdown="true" required="true"
-					converter="produtoCodBarrasConverter" />
+				<p:autoComplete id="produto" value="#{entradaAction.item.precoProduto}" minQueryLength="2"
+					title="Nome ou código de barras do Produto" completeMethod="#{entradaAction.searchProdutos}" var="precoProduto"
+					itemLabel="#{precoProduto.produto.nome}" itemValue="#{precoProduto}" dropdown="true" required="true"
+					converter="produtoCodBarrasConverter">
+
+					<p:column>
+						<h:outputText value="#{precoProduto.produto.nome}" />
+					</p:column>
+					<p:column>
+						R$ <h:outputText value="#{precoProduto.valor}" converter="BigDecimalConverter"/>
+					</p:column>
+
+				</p:autoComplete>
 				<p:message for="produto" />
 
 				<p:outputLabel value="Quantidade:" for="quantidade" />
@@ -89,15 +98,11 @@ function limparCampoProduto() {
 				</p:column>
 
 				<p:column headerText="R$ Un" style="text-align:right">
-					<h:outputText value="#{itemPreco.preco.valor}">
-						BigDecimalConverter
-					</h:outputText>
+					<h:outputText value="#{itemPreco.preco.valor}" converter="BigDecimalConverter"/>
 				</p:column>
 
 				<p:column headerText="R$ Total" style="text-align:right">
-					<h:outputText id="precoTotal" value="#{itemPreco.preco.valor * itemPreco.item.quantidade}">
-						BigDecimalConverter
-					</h:outputText>
+					<h:outputText id="precoTotal" value="#{itemPreco.preco.valor * itemPreco.item.quantidade}" converter="BigDecimalConverter"/>
 				</p:column>
 
 			</p:dataTable>

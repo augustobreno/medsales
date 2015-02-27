@@ -90,11 +90,11 @@ public class DataStartupService {
 		
 		// Entrada
 		EntradaEstoque entradaEstoque = new EntradaEstoque();
-		List<Produto> produtos = querier.findAll(Produto.class);
+		List<PrecoProduto> produtos = querier.findAll(PrecoProduto.class);
 		List<Item> itens = new ArrayList<>();
 		for (int j = 0; j < DEFAULT_SIZE; j++) {
     		Item item = new Item();
-    		item.setProduto(produtos.get(j)); 
+    		item.setPrecoProduto(produtos.get(j)); 
     		item.setQuantidade(10);
     		item.setMovimentoEstoque(entradaEstoque);
     		itens.add(item);
@@ -129,7 +129,7 @@ public class DataStartupService {
 
 	private void loadEntradas() {
 
-		List<Produto> produtos = querier.findAll(Produto.class);
+		List<PrecoProduto> produtos = querier.findAll(PrecoProduto.class);
 		List<Parceiro> parceiros = querier.findAll(Parceiro.class);
     	for (int i = 0; i < DEFAULT_SIZE; i++) {
     		EntradaEstoque entradaEstoque = new EntradaEstoque();
@@ -137,7 +137,7 @@ public class DataStartupService {
     		List<Item> itens = new ArrayList<>();
     		for (int j = 0; j < DEFAULT_SIZE; j++) {
 	    		Item item = new Item();
-	    		item.setProduto(produtos.get(j)); 
+	    		item.setPrecoProduto(produtos.get(j)); 
 	    		item.setQuantidade(10);
 	    		item.setMovimentoEstoque(entradaEstoque);
 	    		itens.add(item);

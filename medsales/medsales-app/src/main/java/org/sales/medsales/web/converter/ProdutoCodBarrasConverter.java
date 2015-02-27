@@ -6,6 +6,7 @@ import javax.faces.convert.Converter;
 import javax.faces.convert.ConverterException;
 import javax.faces.convert.FacesConverter;
 
+import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimento.estoque.Produto;
 
 /**
@@ -21,7 +22,10 @@ public class ProdutoCodBarrasConverter implements Converter {
         try {
         	Produto produto = new Produto();
         	produto.setCodigoBarras(s);
-            return produto;
+        	
+        	PrecoProduto precoProduto = new PrecoProduto();
+        	precoProduto.setProduto(produto);
+            return precoProduto;
         } catch (Exception e) {
             final String msg = "Erro ao converter código de barras para produto.";
             throw new ConverterException(new FacesMessage(msg));
@@ -30,6 +34,6 @@ public class ProdutoCodBarrasConverter implements Converter {
      
     @Override
     public String getAsString(FacesContext facesContext, UIComponent uiComponent, Object o) {
-        return ((Produto) o).getCodigoBarras();
+        return ((PrecoProduto) o).getProduto().getCodigoBarras();
     }
 }

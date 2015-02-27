@@ -183,7 +183,7 @@ public class ProdutoFacadeTest extends MedSalesBaseTest {
 		entradaEstoque.setDataMovimento(new Date());
 
 		Item item = new Item();
-		item.setProduto(produto);
+		item.setPrecoProduto(produto.getPrecos().get(0));
 		item.setQuantidade(10);
 		item.setMovimentoEstoque(entradaEstoque);
 

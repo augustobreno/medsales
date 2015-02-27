@@ -18,7 +18,7 @@ public class Item extends EntityBase<Long> {
 	 * Produto associado a este pedido.
 	 */
 	@ManyToOne(fetch=FetchType.LAZY)
-	private Produto produto;
+	private PrecoProduto precoProduto;
 
 	/**
 	 * Determina o comportamento deste item de estoque (entrada/saída)
@@ -47,12 +47,12 @@ public class Item extends EntityBase<Long> {
 		this.movimentoEstoque = tipoMovimentacao;
 	}
 
-	public Produto getProduto() {
-		return produto;
+	public PrecoProduto getPrecoProduto() {
+		return precoProduto;
 	}
 
-	public void setProduto(Produto produto) {
-		this.produto = produto;
+	public void setPrecoProduto(PrecoProduto produto) {
+		this.precoProduto = produto;
 	}
 	
 	/**

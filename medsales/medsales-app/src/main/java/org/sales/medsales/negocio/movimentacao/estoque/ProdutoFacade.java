@@ -4,9 +4,11 @@ import java.util.Date;
 import java.util.List;
 
 import javax.ejb.Stateless;
+import javax.enterprise.inject.Instance;
 import javax.inject.Inject;
 
 import org.easy.qbeasy.QBEFilter;
+import org.easy.qbeasy.api.Filter;
 import org.easy.qbeasy.api.operator.Operators;
 import org.sales.medsales.api.negocio.CrudFacadeBase;
 import org.sales.medsales.dominio.movimento.estoque.MovimentoEstoque;
@@ -23,10 +25,10 @@ import org.sales.medsales.persistencia.repository.ProdutoRepository;
 public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Long> {
 
 	@Inject
-	private PrecoProdutoRepository precoProdutoRepository;
+	private Instance<PrecoProdutoRepository> precoProdutoRepositoryInstance;
 
 	@Inject
-	private EstoqueFacade estoqueFacade;
+	private Instance<EstoqueFacade> estoqueFacadeInstance;
 
 	/**
 	 * @param codBarras Código de barras de um produto.
@@ -38,7 +40,7 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 		filter.addFetch("produto");
 		filter.sortDescBy("validoEm", "id"); // determina o valor mais recente
 		filter.paginate(0, 1);
-		PrecoProduto preco = precoProdutoRepository.findBy(filter);
+		PrecoProduto preco = getPrecoProdutoRepository().findBy(filter);
 		return preco;
 	}
 
@@ -73,7 +75,7 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 			if (precoProduto.getValidoEm() == null) {
 				precoProduto.setValidoEm(new Date());
 			}
-			precoProdutoRepository.insert(precoProduto);
+			getPrecoProdutoRepository().insert(precoProduto);
 		}
 
 		return saved;
@@ -91,9 +93,9 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 		QBEFilter<PrecoProduto> filter = new QBEFilter<PrecoProduto>(PrecoProduto.class);
 		filter.setExample(new PrecoProduto());
 		filter.getExample().setProduto(entity);
-		List<PrecoProduto> precos = precoProdutoRepository.findAllBy(filter);
+		List<PrecoProduto> precos = getPrecoProdutoRepository().findAllBy(filter);
 		for (PrecoProduto precoProduto : precos) {
-			precoProdutoRepository.remove(precoProduto);
+			getPrecoProdutoRepository().remove(precoProduto);
 		}
 	}
 
@@ -107,12 +109,24 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 		// Não é possível remover um produto se este já foi cadastrado em uma
 		// movimentacao
 		QBEFilter<MovimentoEstoque> filter = new QBEFilter<>(MovimentoEstoque.class);
-		filter.filterBy("itens.produto", Operators.equal(), entity);
+		filter.filterBy("itens.precoProduto.produto", Operators.equal(), entity);
 
-		long numMovimentacoes = estoqueFacade.count(filter);
+		long numMovimentacoes = getEstoqueFacade().count(filter);
 		if (numMovimentacoes > 0) {
 			throw new RemoverProdutoComMovimentacaoException(null,
 					"Não é possível remover este Produto pois já foi utilizado em uma Movimentação.");
 		}
 	}
+	
+    public List<PrecoProduto> findAllPrecoProdutoBy(Filter<PrecoProduto> filter) {
+        return getPrecoProdutoRepository().findAllBy(filter);
+    }
+    
+    protected PrecoProdutoRepository getPrecoProdutoRepository() {
+    	return precoProdutoRepositoryInstance.get();
+    }
+    
+    protected EstoqueFacade getEstoqueFacade() {
+    	return estoqueFacadeInstance.get();
+    }
 }
