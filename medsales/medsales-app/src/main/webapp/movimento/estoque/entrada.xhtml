@@ -44,14 +44,13 @@ function limparCampoProduto() {
 				<p:outputLabel value="Produto:" for="produto" />
 				<p:autoComplete id="produto" value="#{entradaAction.item.precoProduto}" minQueryLength="2"
 					title="Nome ou código de barras do Produto" completeMethod="#{entradaAction.searchProdutos}" var="precoProduto"
-					itemLabel="#{precoProduto.produto.nome}" itemValue="#{precoProduto}" dropdown="true" required="true"
-					>
+					itemLabel="#{precoProduto.produto.nome}" itemValue="#{precoProduto}" dropdown="true" required="true">
 
 					<p:column>
 						<h:outputText value="#{precoProduto.produto.nome}" />
 					</p:column>
 					<p:column>
-						R$ <h:outputText value="#{precoProduto.valor}" converter="BigDecimalConverter"/>
+						R$ <h:outputText value="#{precoProduto.valor}" converter="BigDecimalConverter" />
 					</p:column>
 
 				</p:autoComplete>
@@ -71,9 +70,7 @@ function limparCampoProduto() {
 		<!-- Lista de produtos adicionados -->
 		<h:form id="listForm">
 			<p:dataTable id="itemList" value="#{entradaAction.itens}" var="itemPreco" emptyMessage="Nenhum Item cadastrado."
-				rows="100" paginator="true" paginatorPosition="bottom" editable="true" editMode="cell">
-
-				<p:ajax event="cellEdit" update=":content-panel" listener="#{entradaAction.dummy()}" />
+				rows="100" paginator="true" paginatorPosition="bottom" editable="true" editMode="row">
 
 				<f:facet name="header">
     				Itens        
@@ -93,19 +90,23 @@ function limparCampoProduto() {
 							<h:outputText value="#{itemPreco.quantidade}" />
 						</f:facet>
 						<f:facet name="input">
-							<p:spinner value="#{itemPreco.quantidade}" min="0" />
+							<p:spinner value="#{itemPreco.quantidade}" min="1" size="5"/>
 						</f:facet>
 					</p:cellEditor>
 				</p:column>
 
 				<p:column headerText="R$ Un" style="text-align:right">
-					<h:outputText value="#{itemPreco.precoProduto.valor}" converter="BigDecimalConverter"/>
+					<h:outputText value="#{itemPreco.precoProduto.valor}" converter="BigDecimalConverter" />
 				</p:column>
 
 				<p:column headerText="R$ Total" style="text-align:right">
-					<h:outputText id="precoTotal" value="#{itemPreco.precoProduto.valor * itemPreco.quantidade}" converter="BigDecimalConverter"/>
+					<h:outputText id="precoTotal" value="#{itemPreco.precoProduto.valor * itemPreco.quantidade}"
+						converter="BigDecimalConverter" />
 				</p:column>
 
+				<p:column style="width:32px">
+					<p:rowEditor/>
+				</p:column>
 			</p:dataTable>
 
 			<h:commandLink value="XLS">

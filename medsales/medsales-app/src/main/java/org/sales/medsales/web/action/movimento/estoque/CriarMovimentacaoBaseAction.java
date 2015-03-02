@@ -342,6 +342,9 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 				getMovimentacao().getId());
 	}
 
+	/*
+	 * GET/SET
+	 */
 	public MOV getMovimentacao() {
 		return movimentacao;
 	}

@@ -69,7 +69,7 @@ function limparCampoProduto() {
 
 		<h:form id="listForm">
 			<p:dataTable id="itemList" value="#{saidaAction.itens}" var="itemPreco" emptyMessage="Nenhum Item cadastrado."
-				rows="5" paginator="true" paginatorPosition="bottom">
+				rows="5" paginator="true" paginatorPosition="bottom" editable="true" editMode="row">
 
 				<f:facet name="header">
     				Itens        
@@ -84,7 +84,14 @@ function limparCampoProduto() {
 				</p:column>
 
 				<p:column headerText="Quant/Estoque" style="text-align:center">
-					<h:outputText value="#{itemPreco.quantidade}/#{saidaAction.getSaldo(itemPreco.precoProduto.produto).quantidade}" />
+					<p:cellEditor>
+						<f:facet name="output">
+							<h:outputText value="#{itemPreco.quantidade}/#{saidaAction.getSaldo(itemPreco.precoProduto.produto).quantidade}" />
+						</f:facet>
+						<f:facet name="input">
+							<p:spinner value="#{itemPreco.quantidade}" min="1" size="5" />
+						</f:facet>
+					</p:cellEditor>				
 				</p:column>
 
 				<p:column headerText="R$ Un" style="text-align:right">
@@ -102,6 +109,11 @@ function limparCampoProduto() {
 						value="#{itemPreco.precoProduto.getValorComDesconto(saidaAction.movimentacao.desconto) * itemPreco.quantidade}"
 						converter="BigDecimalConverter" />
 				</p:column>
+				
+				<p:column style="width:32px">
+					<p:rowEditor/>
+				</p:column>				
+				
 			</p:dataTable>
 
 		</h:form>
