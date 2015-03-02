@@ -1,11 +1,13 @@
 package org.sales.medsales.web.action.movimento.estoque;
 
 import java.util.Date;
+import java.util.LinkedList;
 
 import javax.enterprise.context.ConversationScoped;
 import javax.inject.Named;
 
 import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
+import org.sales.medsales.dominio.movimento.estoque.Item;
 import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
 
 /**
@@ -23,6 +25,7 @@ public class EntradaAction extends CriarMovimentacaoBaseAction<EntradaEstoque> {
 	@Override
 	protected void initMovimentacao() {
 		EntradaEstoque entradaEstoque = new EntradaEstoque();
+		entradaEstoque.setItens(new LinkedList<Item>());
 		entradaEstoque.setDataMovimento(new Date());
 		setMovimentacao(entradaEstoque);
 	}

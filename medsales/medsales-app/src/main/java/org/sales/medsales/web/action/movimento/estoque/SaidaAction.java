@@ -3,12 +3,14 @@ package org.sales.medsales.web.action.movimento.estoque;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
 import javax.enterprise.context.ConversationScoped;
 import javax.inject.Named;
 
+import org.sales.medsales.dominio.movimento.estoque.Item;
 import org.sales.medsales.dominio.movimento.estoque.Produto;
 import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
 import org.sales.medsales.dominio.movimento.estoque.SaldoProdutoVO;
@@ -30,6 +32,7 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 	@Override
 	protected void initMovimentacao() {
 		SaidaEstoque saidaEstoque = new SaidaEstoque();
+		saidaEstoque.setItens(new LinkedList<Item>());
 		saidaEstoque.setDataMovimento(new Date());
 		setMovimentacao(saidaEstoque);
 	}
@@ -40,9 +43,9 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 	}
 	
 	@Override
-	protected void postAdicionarItem(ItemPreco itemPreco) {
-		super.postAdicionarItem(itemPreco);
-		consultarSaldo(itemPreco.getItem().getPrecoProduto().getProduto());
+	protected void postAdicionarItem(Item itemAdd) {
+		super.postAdicionarItem(itemAdd);
+		consultarSaldo(itemAdd.getPrecoProduto().getProduto());
 	}
 
 	@Override
@@ -54,8 +57,8 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 	private Produto[] getProdutos() {
 		List<Produto> produtos = new ArrayList<Produto>();
 		
-		for (ItemPreco itemPreco : getItens()) {
-			produtos.add(itemPreco.getItem().getPrecoProduto().getProduto());
+		for (Item item : getItens()) {
+			produtos.add(item.getPrecoProduto().getProduto());
 		}
 		
 		return produtos.toArray(new Produto[]{});

@@ -48,8 +48,7 @@ function limparCampoProduto() {
 
 				<p:autoComplete id="produto" value="#{saidaAction.item.precoProduto}" minQueryLength="2"
 					title="Nome ou código de barras do Produto" completeMethod="#{saidaAction.searchProdutos}" var="precoProduto"
-					itemLabel="#{precoProduto.produto.nome}" itemValue="#{precoProduto}" dropdown="true" required="true"
-					converter="produtoCodBarrasConverter">
+					itemLabel="#{precoProduto.produto.nome}" itemValue="#{precoProduto}" dropdown="true" required="true">
 
 					<p:column>
 						<h:outputText value="#{precoProduto.produto.nome}" />
@@ -77,30 +76,30 @@ function limparCampoProduto() {
 	       		</f:facet>
 
 				<p:column headerText="Cód Barras">
-					<h:outputText value="#{itemPreco.item.precoProduto.produto.codigoBarras}" />
+					<h:outputText value="#{itemPreco.precoProduto.produto.codigoBarras}" />
 				</p:column>
 
 				<p:column headerText="Produto">
-					<h:outputText value="#{itemPreco.item.precoProduto.produto.nome}" />
+					<h:outputText value="#{itemPreco.precoProduto.produto.nome}" />
 				</p:column>
 
 				<p:column headerText="Quant/Estoque" style="text-align:center">
-					<h:outputText value="#{itemPreco.item.quantidade}/#{saidaAction.getSaldo(itemPreco.item.precoProduto.produto).quantidade}" />
+					<h:outputText value="#{itemPreco.quantidade}/#{saidaAction.getSaldo(itemPreco.precoProduto.produto).quantidade}" />
 				</p:column>
 
 				<p:column headerText="R$ Un" style="text-align:right">
-					<h:outputText value="#{itemPreco.preco.valor}" converter="BigDecimalConverter" />
+					<h:outputText value="#{itemPreco.precoProduto.valor}" converter="BigDecimalConverter" />
 				</p:column>
 
 				<p:column headerText="R$ Desconto" style="text-align:right">
-					<h:outputText value="#{itemPreco.preco.getValorComDesconto(saidaAction.movimentacao.desconto)}">
+					<h:outputText value="#{itemPreco.precoProduto.getValorComDesconto(saidaAction.movimentacao.desconto)}">
 						<f:convertNumber type="currency" pattern="#,##0.00" />
 					</h:outputText>
 				</p:column>
 
 				<p:column headerText="R$ Total" style="text-align:right">
 					<h:outputText
-						value="#{itemPreco.preco.getValorComDesconto(saidaAction.movimentacao.desconto) * itemPreco.item.quantidade}"
+						value="#{itemPreco.precoProduto.getValorComDesconto(saidaAction.movimentacao.desconto) * itemPreco.quantidade}"
 						converter="BigDecimalConverter" />
 				</p:column>
 			</p:dataTable>

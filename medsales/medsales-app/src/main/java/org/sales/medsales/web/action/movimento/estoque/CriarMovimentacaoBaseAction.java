@@ -2,7 +2,6 @@ package org.sales.medsales.web.action.movimento.estoque;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -29,6 +28,7 @@ import org.sales.medsales.negocio.movimentacao.estoque.ProdutoFacade;
 /**
  * Classe base que mantém as principais funcionalidades dos fluxos de cadastro e
  * manutenção de movimentações do tipo Entrada e Saída
+ * 
  * @author Augusto
  */
 @SuppressWarnings("serial")
@@ -45,23 +45,20 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 
 	@Inject
 	private EstoqueFacade estoqueFacade;
-	
-	/** LoadId: GET parameter para carregamento dos dados de uma movimentação via URL. */
+
+	/**
+	 * LoadId: GET parameter para carregamento dos dados de uma movimentação via
+	 * URL.
+	 */
 	private Long lid;
-	
+
 	/**
 	 * Entidade para manutenção dos dados no formulário da tela.
 	 */
 	private MOV movimentacao;
-	
+
 	/** Para preenchimento do formulário da lista de itens da movimentação */
 	private Item item;
-
-	/**
-	 * Trabalhando com uma lista de itens "externa" à movimentação para poder usar um
-	 * tipo específico que permite maior manipulação da posição dos objetos
-	 */
-	private LinkedList<ItemPreco> itens;
 
 	@Override
 	@PostConstruct
@@ -72,11 +69,9 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		}
 
 		initMovimentacao();
-		
-		itens = new LinkedList<ItemPreco>();
 		initItem();
 	}
-	
+
 	/**
 	 * Inicializa o item para o formulário de adição de produto.
 	 */
@@ -84,7 +79,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		item = new Item();
 		item.setQuantidade(1); // valor inicial
 	}
-	
+
 	/**
 	 * Inicializa o objeto concreto que representará a movimentação
 	 */
@@ -102,7 +97,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		filter.getExample().setNome(chave);
 		return parceiroFacade.findAllBy(filter);
 	}
-	
+
 	/**
 	 * Consulta por produtos segundo a chave informada.
 	 * 
@@ -112,7 +107,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	 * @return Produtos encontrados.
 	 */
 	public List<PrecoProduto> searchProdutos(String chave) {
-		
+
 		/*
 		 * Consultando apenas 15 produtos para otimização
 		 */
@@ -163,9 +158,8 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	public void adicionarItem() {
 		if (this.item != null && this.item.getPrecoProduto() != null && this.item.getQuantidade() > 0) {
 			preAdicionarItem();
-			ItemPreco itemPreco = doAdicionarItem();
-
-			postAdicionarItem(itemPreco);
+			Item itemAdded = doAdicionarItem();
+			postAdicionarItem(itemAdded);
 		} else {
 			showErrorMessage("É necessário informar o Produto e a quantidade do Item.");
 		}
@@ -173,66 +167,77 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 
 	/**
 	 * Invocado após a adição de um item à movimentação
-	 * @param itemPreco
+	 * 
+	 * @param itemAdd
 	 */
-	protected void postAdicionarItem(ItemPreco itemPreco) {
-		showInfoMessage("Produto \"{0}\" adicionado, total: \"{1}\"", itemPreco.getItem().getPrecoProduto().getProduto().getNome(),
-				itemPreco.getItem().getQuantidade());
+	protected void postAdicionarItem(Item itemAdd) {
+		showInfoMessage("Produto \"{0}\" adicionado, total: \"{1}\"", itemAdd.getPrecoProduto().getProduto().getNome(),
+				itemAdd.getQuantidade());
 
 		initItem();
 	}
 
 	/**
 	 * Adiciona, de fato, o item à movimentação.
+	 * 
 	 * @return Item adicionado.
 	 */
-	protected ItemPreco doAdicionarItem() {
-		ItemPreco itemPreco = buscarItem();
-		if (itemPreco == null) {
+	protected Item doAdicionarItem() {
+		Item itemToAdd = buscarItem();
+		if (itemToAdd == null) {
 			// este produto ainda não foi inserido, será criado pela
 			// primeira vez
-			PrecoProduto precoProduto = produtoFacade.buscarPrecoProduto(getItem().getPrecoProduto().getProduto().getCodigoBarras());
+			PrecoProduto precoProduto = getItem().getPrecoProduto();
 
 			if (precoProduto == null) {
 				throw new BusinessException(null,
-						"Produto com código de barras \"{0}\" não existe ou não possui preço cadastrado.",
-						getItem().getPrecoProduto().getProduto().getCodigoBarras());
+						"Produto com código de barras \"{0}\" não existe ou não possui preço cadastrado.", getItem()
+								.getPrecoProduto().getProduto().getCodigoBarras());
 			}
 
-			Item novoItem = new Item();
-			novoItem.setPrecoProduto(precoProduto);
-			novoItem.setQuantidade(this.item.getQuantidade());
-			novoItem.setMovimentoEstoque(getMovimentacao());
+			itemToAdd = new Item();
+			itemToAdd.setPrecoProduto(precoProduto);
+			itemToAdd.setQuantidade(this.item.getQuantidade());
+			itemToAdd.setMovimentoEstoque(getMovimentacao());
 
-			itemPreco = new ItemPreco(novoItem, precoProduto);
-			getItens().addFirst(itemPreco);
-			
+			getItens().add(0, itemToAdd);
+
 		} else {
-			itemPreco.getItem().incrementarQuantidade(this.item.getQuantidade());
+			itemToAdd.incrementarQuantidade(this.item.getQuantidade());
 		}
-		return itemPreco;
+		return itemToAdd;
 	}
-	
+
 	/**
 	 * Invocando andes de adicionar um Item à movimentação
 	 */
 	protected void preAdicionarItem() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	/**
 	 * Busca o item selecionado na lista de itens
 	 */
-	protected ItemPreco buscarItem() {
+	protected Item buscarItem() {
 
 		/*
 		 * A chave de busca real é o código de barras em
 		 * itemPreco.item.produto.codigoBarras
 		 */
-		ItemPreco itemPreco = new ItemPreco(this.item, null);
-		int itemPrecoIndex = getItens().indexOf(itemPreco);
-		return itemPrecoIndex >= 0 ? getItens().get(itemPrecoIndex) : null;
+		Item original = null;
+		for (Item itemInCol : getItens()) {
+			if (itemInCol.getPrecoProduto().getProduto().getCodigoBarras()
+					.equals(this.item.getPrecoProduto().getProduto().getCodigoBarras())) {
+				original = itemInCol;
+				break;
+			}
+		}
+		return original;
+	}
+
+	public List<Item> getItens() {
+		return getMovimentacao().getItens();
 	}
 
 	/**
@@ -243,17 +248,15 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		salvarMovimentacao();
 		showInfoMessage("A {0} foi cadastrada com sucesso.", getMovimentacao().getLabel());
 	}
-	
+
 	/**
 	 * Operação para conduzir a persistência dos dados da movimentação.
 	 */
 	protected void salvarMovimentacao() {
 		// transferindo os itens cadastrados para a movimentação.
-		List<Item> movItens = parseToItem(this.itens);
-		getMovimentacao().setItens(movItens);
 		salvar();
 	}
-	
+
 	/**
 	 * Deve persisitir de fato a movimentação.
 	 */
@@ -265,20 +268,12 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	public void salvarRacunho() {
 		getMovimentacao().setStatus(Status.RASCUNHO);
 		salvarMovimentacao();
-		showInfoMessage("A {0} foi salva como RASCUNHO, e não constará na contabilidade do estoque.", getMovimentacao().getLabel());		
+		showInfoMessage("A {0} foi salva como RASCUNHO, e não constará na contabilidade do estoque.", getMovimentacao()
+				.getLabel());
 	}
-	
-	private List<Item> parseToItem(List<ItemPreco> itensToParse) {
-		List<Item> movItens = new ArrayList<Item>();
-		for (ItemPreco itemPreco : itensToParse) {
-			movItens.add(itemPreco.getItem());
-		}
-		return movItens;
-	}
-	
+
 	/**
-	 * Carrega uma movimentação quando há a presença do parâmetro
-	 * {@link #lid}
+	 * Carrega uma movimentação quando há a presença do parâmetro {@link #lid}
 	 */
 	public void loadFromId() {
 		preLoadFromId();
@@ -287,7 +282,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	}
 
 	/**
-	 * Após o carregamento pelo parâmetro GET  lid.
+	 * Após o carregamento pelo parâmetro GET lid.
 	 */
 	protected void postLoadId() {
 		// TODO Auto-generated method stub
@@ -303,60 +298,50 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 			filter.filterBy("id", Operators.equal(), lid);
 			filter.addFetch("itens.precoProduto.produto", "parceiro");
 			MovimentoEstoque movimentacao = estoqueFacade.findBy(filter);
-			
+
 			if (movimentacao == null) {
-				throw new BusinessException(null, "Nenhuma movimentação foi encontrada com o código informado: {0}", lid);
+				throw new BusinessException(null, "Nenhuma movimentação foi encontrada com o código informado: {0}",
+						lid);
 			}
-			
+
 			setMovimentacao((MOV) movimentacao);
-			this.itens = new LinkedList<ItemPreco>(parseToItemPreco(movimentacao.getItens()));
 		}
 	}
-	
+
 	/**
-	 * Antes do carregamento pelo parâmetro GET  lid.
+	 * Antes do carregamento pelo parâmetro GET lid.
 	 */
 	protected void preLoadFromId() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-	protected List<ItemPreco> parseToItemPreco(List<Item> itensToParse) {
-		
-		List<ItemPreco> itemPrecos = new ArrayList<ItemPreco>();
-		for (Item item : itensToParse) {
-			// consultando os precos dos items
-			PrecoProduto precoProduto = produtoFacade.buscarPrecoProduto(item.getPrecoProduto().getProduto().getCodigoBarras());
-			itemPrecos.add(new ItemPreco(item, precoProduto));
-		}
-		return itemPrecos;
-	}
-	
 	/**
 	 * @return A soma dos valores dos itens acumulados nesta movimentação.
 	 */
 	public BigDecimal getValorTotalItens() {
-		
+
 		BigDecimal soma = BigDecimal.ZERO;
-		if (itens != null) {
-			for (ItemPreco itemPreco : itens) {
-				Integer quantidade = itemPreco.getItem().getQuantidade();
-				BigDecimal valor = itemPreco.getPreco().getValor();
+		if (getMovimentacao().getItens() != null) {
+			for (Item item : getMovimentacao().getItens()) {
+				Integer quantidade = item.getQuantidade();
+				BigDecimal valor = item.getPrecoProduto().getValor();
 				soma = soma.add(valor.multiply(new BigDecimal(quantidade)));
 			}
 		}
-		
+
 		return soma;
 	}
 
 	/**
 	 * Remove a a movimentação.
 	 */
-	public void remover() { 
+	public void remover() {
 		estoqueFacade.remover(getMovimentacao());
-		showInfoMessage("A {0} com código {1} foi excluída com sucesso.", getMovimentacao().getLabel(), getMovimentacao().getId());
+		showInfoMessage("A {0} com código {1} foi excluída com sucesso.", getMovimentacao().getLabel(),
+				getMovimentacao().getId());
 	}
-	
+
 	public MOV getMovimentacao() {
 		return movimentacao;
 	}
@@ -365,20 +350,12 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		return item;
 	}
 
-	public LinkedList<ItemPreco> getItens() {
-		return itens;
-	}
-
 	protected void setMovimentacao(MOV movimentacao) {
 		this.movimentacao = movimentacao;
 	}
 
 	protected void setItem(Item item) {
 		this.item = item;
-	}
-
-	protected void setItens(LinkedList<ItemPreco> itens) {
-		this.itens = itens;
 	}
 
 	protected Conversation getConversation() {
@@ -404,7 +381,7 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	public void setLid(Long lid) {
 		this.lid = lid;
 	}
-	
+
 	public boolean isConcluido() {
 		return getMovimentacao() != null && Status.CONCLUIDO.equals(getMovimentacao().getStatus());
 	}

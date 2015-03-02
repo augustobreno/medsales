@@ -45,7 +45,7 @@ function limparCampoProduto() {
 				<p:autoComplete id="produto" value="#{entradaAction.item.precoProduto}" minQueryLength="2"
 					title="Nome ou código de barras do Produto" completeMethod="#{entradaAction.searchProdutos}" var="precoProduto"
 					itemLabel="#{precoProduto.produto.nome}" itemValue="#{precoProduto}" dropdown="true" required="true"
-					converter="produtoCodBarrasConverter">
+					>
 
 					<p:column>
 						<h:outputText value="#{precoProduto.produto.nome}" />
@@ -68,6 +68,7 @@ function limparCampoProduto() {
 
 		<p:spacer />
 
+		<!-- Lista de produtos adicionados -->
 		<h:form id="listForm">
 			<p:dataTable id="itemList" value="#{entradaAction.itens}" var="itemPreco" emptyMessage="Nenhum Item cadastrado."
 				rows="100" paginator="true" paginatorPosition="bottom" editable="true" editMode="cell">
@@ -79,30 +80,30 @@ function limparCampoProduto() {
 	       		</f:facet>
 
 				<p:column headerText="Cód Barras">
-					<h:outputText value="#{itemPreco.preco.produto.codigoBarras}" />
+					<h:outputText value="#{itemPreco.precoProduto.produto.codigoBarras}" />
 				</p:column>
 
 				<p:column headerText="Produto">
-					<h:outputText value="#{itemPreco.preco.produto.nome}" />
+					<h:outputText value="#{itemPreco.precoProduto.produto.nome}" />
 				</p:column>
 
 				<p:column headerText="Quantidade" style="text-align:center">
 					<p:cellEditor>
 						<f:facet name="output">
-							<h:outputText value="#{itemPreco.item.quantidade}" />
+							<h:outputText value="#{itemPreco.quantidade}" />
 						</f:facet>
 						<f:facet name="input">
-							<p:spinner value="#{itemPreco.item.quantidade}" min="0" />
+							<p:spinner value="#{itemPreco.quantidade}" min="0" />
 						</f:facet>
 					</p:cellEditor>
 				</p:column>
 
 				<p:column headerText="R$ Un" style="text-align:right">
-					<h:outputText value="#{itemPreco.preco.valor}" converter="BigDecimalConverter"/>
+					<h:outputText value="#{itemPreco.precoProduto.valor}" converter="BigDecimalConverter"/>
 				</p:column>
 
 				<p:column headerText="R$ Total" style="text-align:right">
-					<h:outputText id="precoTotal" value="#{itemPreco.preco.valor * itemPreco.item.quantidade}" converter="BigDecimalConverter"/>
+					<h:outputText id="precoTotal" value="#{itemPreco.precoProduto.valor * itemPreco.quantidade}" converter="BigDecimalConverter"/>
 				</p:column>
 
 			</p:dataTable>
