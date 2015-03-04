@@ -13,6 +13,7 @@ import org.easy.qbeasy.api.Filter;
 import org.easy.qbeasy.api.OperationContainer.ContainerType;
 import org.easy.qbeasy.api.operator.Operators;
 import org.primefaces.context.RequestContext;
+import org.primefaces.event.RowEditEvent;
 import org.sales.medsales.api.exceptions.BusinessException;
 import org.sales.medsales.api.web.action.ActionBase;
 import org.sales.medsales.dominio.Parceiro;
@@ -59,6 +60,12 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 
 	/** Para preenchimento do formulário da lista de itens da movimentação */
 	private Item item;
+
+	/**
+	 * Ativa ou desativa o salvamento automático após qualquer operação sobre o
+	 * movimento.
+	 */
+	private boolean salvarAutomaticamente = true;
 
 	@Override
 	@PostConstruct
@@ -174,7 +181,24 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		showInfoMessage("Produto \"{0}\" adicionado, total: \"{1}\"", itemAdd.getPrecoProduto().getProduto().getNome(),
 				itemAdd.getQuantidade());
 
+		salvarAutomaticamente();
+
 		initItem();
+	}
+
+	/**
+	 * Salva automaticamente, se estiver habilitado.
+	 */
+	protected void salvarAutomaticamente() {
+		if (salvarAutomaticamente && !getMovimentacao().getItens().isEmpty()) {
+
+			if (getMovimentacao().getStatus() == null) {
+				getMovimentacao().setStatus(Status.RASCUNHO);
+			}
+
+			salvarMovimentacao();
+
+		}
 	}
 
 	/**
@@ -253,7 +277,6 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	 * Operação para conduzir a persistência dos dados da movimentação.
 	 */
 	protected void salvarMovimentacao() {
-		// transferindo os itens cadastrados para a movimentação.
 		salvar();
 	}
 
@@ -261,6 +284,15 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	 * Deve persisitir de fato a movimentação.
 	 */
 	protected abstract void salvar();
+
+	/**
+	 * Remove um item da lista de itens.
+	 */
+	public void remover(Item item) {
+		getMovimentacao().getItens().remove(item);
+		salvarAutomaticamente();
+		showInfoMessage("O item {0} foi removido com sucesso.", item.getPrecoProduto().getProduto().getNome());
+	}
 
 	/**
 	 * Salva a movimentação parcipalmente.
@@ -334,6 +366,13 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	}
 
 	/**
+	 * Evento disparado ao ser editada uma linha da tabela de iens.
+	 */
+	public void onItemEdit(RowEditEvent event) {
+		salvarAutomaticamente();
+	}
+
+	/**
 	 * Remove a a movimentação.
 	 */
 	public void remover() {
@@ -387,5 +426,13 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 
 	public boolean isConcluido() {
 		return getMovimentacao() != null && Status.CONCLUIDO.equals(getMovimentacao().getStatus());
+	}
+
+	public boolean isSalvarAutomaticamente() {
+		return salvarAutomaticamente;
+	}
+
+	public void setSalvarAutomaticamente(boolean salvarAutomaticamente) {
+		this.salvarAutomaticamente = salvarAutomaticamente;
 	}
 }

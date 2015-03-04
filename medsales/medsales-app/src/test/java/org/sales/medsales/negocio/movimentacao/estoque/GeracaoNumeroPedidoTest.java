@@ -52,7 +52,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrar(saidaEstoque);
+    	estoqueFacade.salvar(saidaEstoque);
     	
     	getEm().clear();
     	
@@ -84,7 +84,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.RASCUNHO);
     	
-    	estoqueFacade.cadastrar(saidaEstoque);
+    	estoqueFacade.salvar(saidaEstoque);
     	
     	getEm().clear();
     	
@@ -118,7 +118,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	saida1.setItens(Arrays.asList(item));
     	saida1.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrar(saida1);
+    	estoqueFacade.salvar(saida1);
     	
     	// saida 2
     	SaidaEstoque saida2 = new SaidaEstoque();
@@ -133,7 +133,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	saida2.setItens(Arrays.asList(item));
     	saida2.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrar(saida2);
+    	estoqueFacade.salvar(saida2);
     	
     	getEm().clear();
     	
@@ -173,7 +173,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	saida1.setItens(Arrays.asList(item));
     	saida1.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrar(saida1);
+    	estoqueFacade.salvar(saida1);
     	
     	// saida 2
     	SaidaEstoque saida2 = new SaidaEstoque();
@@ -188,7 +188,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	saida2.setItens(Arrays.asList(item));
     	saida2.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrar(saida2);
+    	estoqueFacade.salvar(saida2);
     	
     	getEm().clear();
     	

@@ -46,16 +46,16 @@ public class EstoqueFacade implements ServerPaginationFacade<MovimentoEstoque, L
 	/**
 	 * Cadastra uma entrada de produtos.
 	 */
-	public void cadastrar(EntradaEstoque entradaEstoque) {
-		entradaEstoqueBO.cadastrar(entradaEstoque);
+	public void salvar(EntradaEstoque entradaEstoque) {
+		entradaEstoqueBO.salvar(entradaEstoque);
 	}
 	
 	/**
 	 * Cadastra uma saída de produtos.
 	 * @param saidaEstoque Saída com os itens para cadastro.
 	 */
-	public void cadastrar(SaidaEstoque saidaEstoque) {
-		saidaEstoqueBO.cadastrar(saidaEstoque);
+	public void salvar(SaidaEstoque saidaEstoque) {
+		saidaEstoqueBO.salvar(saidaEstoque);
 	}
 	
 	/**

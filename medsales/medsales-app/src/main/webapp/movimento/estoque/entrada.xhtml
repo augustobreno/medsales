@@ -32,10 +32,19 @@ function limparCampoProduto() {
 }
 
 </script>
-		<h:outputFormat value="Esta entrada foi marcada como {0} em {1} " rendered="#{entradaAction.movimentacao.id != null}">
-			<f:param value="#{entradaAction.movimentacao.status.descricao.toUpperCase()}" />
-			<f:param value="#{entradaAction.movimentacao.dataAlteracao}" />
-		</h:outputFormat>
+		<h:form>
+			<p:panelGrid columns="3">
+				<h:outputFormat value="Esta entrada foi marcada como {0} em {1} " rendered="#{entradaAction.movimentacao.id != null}">
+					<f:param value="#{entradaAction.movimentacao.status.descricao.toUpperCase()}" />
+					<f:param value="#{entradaAction.movimentacao.dataAlteracao}" />
+				</h:outputFormat>
+				
+				<p:outputLabel value="Salvar Auto:" for="auto" />
+				<p:selectBooleanCheckbox id="auto" value="#{entradaAction.salvarAutomaticamente}">
+					<p:ajax event="change"/>	
+				</p:selectBooleanCheckbox>
+			</p:panelGrid>
+		</h:form>
 		<h:form id="itemForm">
 			<p:focus context="itemGrid" />
 			<p:panelGrid id="itemGrid" columns="3" layout="grid" columnClasses="labels_col1">
@@ -76,6 +85,8 @@ function limparCampoProduto() {
     				Itens        
 	       		</f:facet>
 
+				<p:ajax event="rowEdit" listener="#{entradaAction.onItemEdit}" />
+
 				<p:column headerText="Cód Barras">
 					<h:outputText value="#{itemPreco.precoProduto.produto.codigoBarras}" />
 				</p:column>
@@ -106,6 +117,9 @@ function limparCampoProduto() {
 
 				<p:column style="width:32px">
 					<p:rowEditor/>
+					
+					<p:commandLink actionListener="#{entradaAction.remover(itemPreco)}" update=":content-panel"
+							immediate="true" styleClass="ui-icon ui-icon-trash"/>
 				</p:column>
 			</p:dataTable>
 

@@ -99,7 +99,7 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
     	entradaEstoque.setItens(Arrays.asList(item));
     	entradaEstoque.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrar(entradaEstoque);
+    	estoqueFacade.salvar(entradaEstoque);
     	
     	return entradaEstoque;
 	}
@@ -128,7 +128,7 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrar(saidaEstoque);
+    	estoqueFacade.salvar(saidaEstoque);
     	
     	// verifica o saldo
 		SaldoProdutoVO saldoProduto = estoqueFacade.consultarEstoque(precoProduto.getProduto());
@@ -162,7 +162,7 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrar(saidaEstoque);
+    	estoqueFacade.salvar(saidaEstoque);
     	
     	// verifica o saldo
 		SaldoProdutoVO saldoProduto = estoqueFacade.consultarEstoque(precoProduto.getProduto());
@@ -196,7 +196,7 @@ public class ControleEstoqueTest extends MedSalesBaseTest {
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrar(saidaEstoque);
+    	estoqueFacade.salvar(saidaEstoque);
     	
     	// verifica o saldo
 		SaldoProdutoVO saldoProduto = estoqueFacade.consultarEstoque(precoProduto.getProduto());

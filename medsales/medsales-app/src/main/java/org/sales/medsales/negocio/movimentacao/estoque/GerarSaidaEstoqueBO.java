@@ -57,7 +57,7 @@ public class GerarSaidaEstoqueBO implements Serializable {
 		
 		saidaEstoque.setItens(itensSaida);
 //		saidaEstoque.setCiclo(entradaEstoque.getCiclo());
-		saidaEstoqueBO.cadastrar(saidaEstoque);
+		saidaEstoqueBO.salvar(saidaEstoque);
 		
 		return saidaEstoque;
 	}

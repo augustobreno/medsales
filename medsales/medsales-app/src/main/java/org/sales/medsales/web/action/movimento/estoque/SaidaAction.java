@@ -39,7 +39,7 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 	
 	@Override
 	protected void salvar() {
-		getEstoqueFacade().cadastrar(getMovimentacao());
+		getEstoqueFacade().salvar(getMovimentacao());
 	}
 	
 	@Override

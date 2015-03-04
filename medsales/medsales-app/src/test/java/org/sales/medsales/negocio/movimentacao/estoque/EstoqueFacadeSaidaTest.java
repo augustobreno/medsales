@@ -49,7 +49,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
 	@Test
 	public void cadastrarSaidaNull() {
 		try {
-			estoqueFacade.cadastrar((SaidaEstoque)null);
+			estoqueFacade.salvar((SaidaEstoque)null);
 			Assert.fail();
 		} catch (NullParameterException e) {
 			Assert.assertTrue(e.hasCode(ExceptionCodes.MOVIMENTACAO_ESTOQUE.MOVIMENTACAO_REQUIRED));
@@ -66,7 +66,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	saidaEstoque.setDataMovimento(new Date());
     	
 		try {
-			estoqueFacade.cadastrar(saidaEstoque);
+			estoqueFacade.salvar(saidaEstoque);
 			Assert.fail();
 		} catch (BusinessException e) {
 			Assert.assertTrue(e.hasCode(ExceptionCodes.MOVIMENTACAO_ESTOQUE.OPERACAO_REQUIRED));
@@ -81,7 +81,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	SaidaEstoque saidaEstoque = new SaidaEstoque();
     	saidaEstoque.setDataMovimento(new Date());
     	saidaEstoque.setItens(null);
-    	estoqueFacade.cadastrar(saidaEstoque);
+    	estoqueFacade.salvar(saidaEstoque);
     }
     
 	/**
@@ -107,7 +107,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	saidaEstoque.setItens(Arrays.asList(item));
     	saidaEstoque.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrar(saidaEstoque);
+    	estoqueFacade.salvar(saidaEstoque);
     	
     	getEm().clear();
     	
@@ -219,7 +219,7 @@ public class EstoqueFacadeSaidaTest extends MedSalesBaseTest {
     	entradaEstoque.setItens(itens);
     	entradaEstoque.setStatus(Status.CONCLUIDO);
     	
-    	estoqueFacade.cadastrar(entradaEstoque);
+    	estoqueFacade.salvar(entradaEstoque);
 		return entradaEstoque;
 	}
 }

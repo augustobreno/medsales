@@ -32,10 +32,19 @@ function limparCampoProduto() {
 }
 
 </script>
-		<h:outputFormat value="Esta Saída foi marcada como {0} em {1} " rendered="#{saidaAction.movimentacao.id != null}">
-			<f:param value="#{saidaAction.movimentacao.status.descricao.toUpperCase()}" />
-			<f:param value="#{saidaAction.movimentacao.dataAlteracao}" />
-		</h:outputFormat>
+		<h:form>
+			<p:panelGrid columns="3">
+				<h:outputFormat value="Esta Saída foi marcada como {0} em {1} " rendered="#{saidaAction.movimentacao.id != null}">
+					<f:param value="#{saidaAction.movimentacao.status.descricao.toUpperCase()}" />
+					<f:param value="#{saidaAction.movimentacao.dataAlteracao}" />
+				</h:outputFormat>
+				
+				<p:outputLabel value="Salvar Auto:" for="auto" />
+				<p:selectBooleanCheckbox id="auto" value="#{saidaAction.salvarAutomaticamente}">
+					<p:ajax event="change"/>	
+				</p:selectBooleanCheckbox>
+			</p:panelGrid>
+		</h:form>		
 		<h:outputText value="Número do Pedido: #{saidaAction.movimentacao.numeroPedido}" />
 		<h:form id="itemForm">
 			<p:panelGrid id="itemGrid" columns="3" layout="grid" columnClasses="labels_col1">
@@ -74,6 +83,8 @@ function limparCampoProduto() {
 				<f:facet name="header">
     				Itens        
 	       		</f:facet>
+
+				<p:ajax event="rowEdit" listener="#{saidaAction.onItemEdit}" />
 
 				<p:column headerText="Cód Barras">
 					<h:outputText value="#{itemPreco.precoProduto.produto.codigoBarras}" />

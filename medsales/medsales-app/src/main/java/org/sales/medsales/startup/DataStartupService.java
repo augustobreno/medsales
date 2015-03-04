@@ -103,12 +103,12 @@ public class DataStartupService {
 //		entradaEstoque.setCiclo(ciclo);
 		entradaEstoque.setParceiro(ciclo.getInvestidor());
 		entradaEstoque.setStatus(Status.CONCLUIDO);
-		estoqueFacade.cadastrar(entradaEstoque);
+		estoqueFacade.salvar(entradaEstoque);
 
 		// saida
 		SaidaEstoque saida = estoqueFacade.gerarSaida(entradaEstoque.getId());
 		saida.setStatus(Status.CONCLUIDO);
-		estoqueFacade.cadastrar(saida);
+		estoqueFacade.salvar(saida);
 		
 		// valor avulso
 		Valor valorEntrada = new Valor();
@@ -147,7 +147,7 @@ public class DataStartupService {
     		
 			entradaEstoque.setParceiro(parceiros.get(i));
 			entradaEstoque.setStatus(Status.CONCLUIDO);
-    		estoqueFacade.cadastrar(entradaEstoque);
+    		estoqueFacade.salvar(entradaEstoque);
     	}
     	
 		

@@ -190,7 +190,7 @@ public class ProdutoFacadeTest extends MedSalesBaseTest {
 		entradaEstoque.setItens(Arrays.asList(item));
 		entradaEstoque.setStatus(Status.CONCLUIDO);
 
-		estoqueFacade.cadastrar(entradaEstoque);
+		estoqueFacade.salvar(entradaEstoque);
 
 		getEm().clear();
 

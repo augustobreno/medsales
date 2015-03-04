@@ -44,7 +44,7 @@ public abstract class MovimentoEstoque extends Movimento {
 	/**
 	 * Itens associados a este tipo de movimentação.
 	 */
-	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="movimentoEstoque")
+	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="movimentoEstoque", orphanRemoval=true)
 	private List<Item> itens;
 
 	public MovimentoEstoque() {

@@ -12,9 +12,9 @@ import org.sales.medsales.dominio.movimento.estoque.Status;
 public class SaidaEstoqueBO extends MovimentacaoEstoqueBO<SaidaEstoque>{
 
 	@Override
-	public void salvar(SaidaEstoque saidaEstoque) {
+	public void persistir(SaidaEstoque saidaEstoque) {
 		gerarNumeroPedido(saidaEstoque);
-		super.salvar(saidaEstoque);
+		super.persistir(saidaEstoque);
 	}
 
 	/**

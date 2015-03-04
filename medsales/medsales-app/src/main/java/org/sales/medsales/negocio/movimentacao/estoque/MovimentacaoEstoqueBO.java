@@ -26,21 +26,21 @@ public abstract class MovimentacaoEstoqueBO<MOV extends MovimentoEstoque> implem
 	/**
 	 * Cadastra uma movimentacao de produtos.
 	 */
-	public void cadastrar(MOV movimentacao) {
+	public void salvar(MOV movimentacao) {
 		validarCadastrar(movimentacao);
 		
 		if (movimentacao.getDataMovimento() == null) {
 			movimentacao.setDataMovimento(new Date());
 		}
 		
-		salvar(movimentacao);
+		persistir(movimentacao);
 	}
 
 	/**
 	 * Salva de fato a movimentação. O fluxo de inclusão ou atialização
 	 * será definido pela presença do ID.
 	 */
-	protected void salvar(MOV movimentacao) {
+	protected void persistir(MOV movimentacao) {
 		if (movimentacao.getId() == null) {
 			estoqueRepository.insert(movimentacao);
 		} else {

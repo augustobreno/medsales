@@ -32,7 +32,7 @@ public class EntradaAction extends CriarMovimentacaoBaseAction<EntradaEstoque> {
 
 	@Override
 	protected void salvar() {
-		getEstoqueFacade().cadastrar(getMovimentacao());
+		getEstoqueFacade().salvar(getMovimentacao());
 	}
 
 	/**
