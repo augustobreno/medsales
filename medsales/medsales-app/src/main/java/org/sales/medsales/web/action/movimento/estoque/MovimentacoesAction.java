@@ -52,7 +52,7 @@ public class MovimentacoesAction extends ServerPaginationActionBased<MovimentoEs
 		super.configSearch(filter);
 
 		filter.sortDescBy("dataMovimento", "id");
-		filter.addFetch("parceiro");
+		filter.addFetch("parceiro", "itens.precoProduto");
 
 		// TODO liberar este código quando distinct estiver aplicável à
 		// consulta.

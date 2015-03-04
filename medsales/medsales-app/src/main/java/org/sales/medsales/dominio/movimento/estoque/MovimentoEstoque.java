@@ -1,5 +1,6 @@
 package org.sales.medsales.dominio.movimento.estoque;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -76,5 +77,18 @@ public abstract class MovimentoEstoque extends Movimento {
 	 * Label para apresentação do tipo da movimentação.
 	 */
 	public abstract String getLabel();
+	
+	/**
+	 * @return Valor total dos itens associados a este movimento.
+	 */
+	public BigDecimal calcularTotal() {
+		BigDecimal total = BigDecimal.ZERO;
+		if (itens != null) {
+			for (Item item : itens) {
+				total = total.add(item.getPrecoProduto().getValor());
+			}
+		}
+		return total;
+	}
 
 }

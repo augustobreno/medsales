@@ -9,49 +9,57 @@
 		<p:panelGrid columns="3" layout="grid">
 
 			<p:outputLabel value="Ciclo: " for="ciclo" />
-			<p:autoComplete id="ciclo" value="#{entradaEstoqueValorAction.entity.ciclo}" 
-				title="Ciclo que estará associado a este movimento." completeMethod="#{searchCicloAction.search}"
-				var="ciclo" itemLabel="#{ciclo.label}" itemValue="#{ciclo}" forceSelection="true" dropdown="true"
-				required="true">
-			</p:autoComplete>	
+			<p:autoComplete id="ciclo" value="#{entradaEstoqueValorAction.entity.ciclo}"
+				title="Ciclo que estará associado a este movimento." completeMethod="#{searchCicloAction.search}" var="ciclo"
+				itemLabel="#{ciclo.label}" itemValue="#{ciclo}" forceSelection="true" dropdown="true" required="true">
+			</p:autoComplete>
 			<p:message for="ciclo" showSummary="false" />
 
-			<p:outputLabel value="Entrada em Estoque: " for="entrada"/>
-			<p:autoComplete id="entrada" value="#{entradaEstoqueValorAction.entity.entradaEstoque}" 
-				title="Entrada em estoque cujo valor será associado a este ciclo." completeMethod="#{searchEntradaEstoqueAction.search}"
-				var="entrada" itemLabel="#{entrada.id} - #{entrada.parceiro.nome}" itemValue="#{entrada}" forceSelection="true" dropdown="true">
-				
-	            <p:column>
-	                <h:outputText value="#{entrada.id}" />
-	            </p:column>
-	            
-	            <p:column>
-	                <h:outputText value="#{entrada.dataMovimento}" >
-	                	<f:convertDateTime pattern="dd/MM/yyyy" /> 
-	                </h:outputText>
-	            </p:column>	            				
-	            
-	            <p:column>
-	                <h:outputText value="#{entrada.parceiro.nome}" />
-	            </p:column>	            					            
-				
-			</p:autoComplete>			
-			<p:message for="entrada" showSummary="false"/>
+			<p:outputLabel value="Entrada em Estoque: " for="entrada" />
+			<p:autoComplete id="entrada" value="#{entradaEstoqueValorAction.entity.entradaEstoque}" required="true"
+				title="Entrada em estoque cujo valor será associado a este ciclo." minQueryLength="2"
+				completeMethod="#{searchEntradaEstoqueAction.search}" var="entrada"
+				itemLabel="#{entrada == null ? '' : viewFunctions.concat(entrada.id, ' - ', entrada.parceiro.nome)}"
+				itemValue="#{entrada}" forceSelection="true" dropdown="true">
+
+				<p:ajax event="itemSelect" listener="#{entradaEstoqueValorAction.onEntradaSelecionada()}" update="valor dtMovimento" />
+
+				<p:column>
+					<h:outputText value="#{entrada.id}" />
+				</p:column>
+
+				<p:column>
+					<h:outputText value="#{entrada.dataMovimento}">
+						<f:convertDateTime pattern="dd/MM/yyyy" />
+					</h:outputText>
+				</p:column>
+
+				<p:column>
+					<h:outputText value="#{entrada.parceiro.nome}" />
+				</p:column>
+
+				<p:column>
+					<h:outputText value="#{entrada.calcularTotal()}" />
+				</p:column>
+
+			</p:autoComplete>
+			<p:message for="entrada" showSummary="false" />
 
 			<p:outputLabel value="Valor: " for="valor" />
-			<pe:inputNumber id="valor" value="#{entradaEstoqueValorAction.entity.valor}" symbol="R$ " required="true"/>
+			<pe:inputNumber id="valor" value="#{entradaEstoqueValorAction.entity.valor}" symbol="R$ " required="true"
+				disabled="true" />
 			<p:message for="valor" />
-			
+
 			<p:outputLabel value="Recebido em: " for="dtMovimento" />
-			<p:calendar id="dtMovimento" value="#{entradaEstoqueValorAction.entity.dataMovimento}" pattern="dd/MM/yyyy" mask="true" showOn="button"
-				required="true" />
-			<p:message for="dtMovimento" showSummary="false" />			
-			
+			<p:calendar id="dtMovimento" value="#{entradaEstoqueValorAction.entity.dataMovimento}" pattern="dd/MM/yyyy"
+				mask="true" showOn="button" required="true" disabled="true" />
+			<p:message for="dtMovimento" showSummary="false" />
+
 			<p:outputLabel value="Observação: " for="obs" />
 			<p:row>
-				<p:inputTextarea id="obs" value="#{entradaEstoqueValorAction.entity.observacao}" maxlength="200"/>
-			</p:row>	
-			<p:message for="obs" showSummary="false" />						
+				<p:inputTextarea id="obs" value="#{entradaEstoqueValorAction.entity.observacao}" maxlength="200" />
+			</p:row>
+			<p:message for="obs" showSummary="false" />
 
 		</p:panelGrid>
 
@@ -59,13 +67,14 @@
 			<p:commandButton actionListener="#{entradaEstoqueValorAction.cancelOperation()}" value="Cancelar" immediate="true"
 				update=":content-panel" />
 
-			<p:commandButton actionListener="#{entradaEstoqueValorAction.delete()}" value="Remover" immediate="true" update=":content-panel"
-				rendered="#{not empty entradaEstoqueValorAction.entity.id}">
+			<p:commandButton actionListener="#{entradaEstoqueValorAction.delete()}" value="Remover" immediate="true"
+				update=":content-panel" rendered="#{not empty entradaEstoqueValorAction.entity.id}">
 				<p:confirm header="Confirmation" message="Deseja REMOVER este Movimento?" icon="ui-icon-alert" />
 			</p:commandButton>
 
-			<p:commandButton id="save" actionListener="#{entradaEstoqueValorAction.save()}" value="Salvar" update=":content-panel" />
-			<p:defaultCommand target="save"/>
+			<p:commandButton id="save" actionListener="#{entradaEstoqueValorAction.save()}" value="Salvar"
+				update=":content-panel" />
+			<p:defaultCommand target="save" />
 		</p:panelGrid>
 
 		<p:confirmDialog global="true">

@@ -11,5 +11,18 @@ import org.sales.medsales.negocio.movimentacao.valor.EntradaEstoqueValorFacade;
 @ConversationScoped
 public class EntradaEstoqueValorAction extends MovimentoValorActionBase<EntradaEstoqueValor, EntradaEstoqueValorFacade>{
 	
-	
+	/**
+	 * Evento disparado quando uma entrada é selecionada no combobox.
+	 */
+	public void onEntradaSelecionada() {
+		
+		if (getEntity().getEntradaEstoque() != null) {
+			getEntity().setValor(getEntity().getEntradaEstoque().calcularTotal());
+			getEntity().setDataMovimento(getEntity().getEntradaEstoque().getDataMovimento());
+		} else {
+			getEntity().setValor(null);
+			getEntity().setDataMovimento(null);
+		}
+		
+	}
 }

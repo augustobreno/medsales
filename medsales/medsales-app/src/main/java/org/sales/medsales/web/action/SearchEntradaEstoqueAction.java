@@ -8,6 +8,9 @@ import javax.inject.Named;
 
 import org.easy.qbeasy.QBEFilter;
 import org.easy.qbeasy.api.Filter;
+import org.easy.qbeasy.api.OperationContainer.ContainerType;
+import org.easy.qbeasy.api.operator.Operators;
+import org.sales.medsales.api.util.StringUtil;
 import org.sales.medsales.api.web.action.ActionBase;
 import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
 import org.sales.medsales.dominio.movimento.estoque.MovimentoEstoque;
@@ -31,8 +34,26 @@ public class SearchEntradaEstoqueAction extends ActionBase {
 	 * @return Lista de parceiros segundo a chave informada.
 	 */
 	public List<EntradaEstoque> search(String chave) {
-		Filter<MovimentoEstoque> filter = new QBEFilter<MovimentoEstoque>(new EntradaEstoque());
-		filter.addFetch("parceiro");
+		
+		if (StringUtil.isStringEmpty(chave)) {
+			chave = null;
+		}
+		
+		Filter<MovimentoEstoque> filter = new QBEFilter<MovimentoEstoque>(EntradaEstoque.class);
+		filter.setRootContainerType(ContainerType.OR);
+		filter.paginate(0, 10); // para otimização	
+		
+		filter.addFetch("parceiro", "itens.precoProduto");
+		filter.sortDescBy("dataMovimento", "id");
+		
+		filter.filterBy("parceiro.nome", Operators.like(false), chave);
+		
+		// filtra pelo código, se possível
+		String numeros = StringUtil.extractNumbers(chave);
+		if (numeros != null && !numeros.isEmpty()) {
+			filter.filterBy("id", Operators.equal(), Long.parseLong(numeros));
+		}
+		
 		List<MovimentoEstoque> movimentos = estoqueFacade.findAllBy(filter);
 		return parseToEntradaEstoque(movimentos);
 	}

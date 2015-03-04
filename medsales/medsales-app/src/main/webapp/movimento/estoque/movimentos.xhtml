@@ -56,7 +56,11 @@
 				
 				<p:column headerText="Status" sortBy="#{movimentacao.status.descricao}">
 					<h:outputText value="#{movimentacao.status.descricao}" />
-				</p:column>				
+				</p:column>
+				
+				<p:column headerText="R$">
+					<h:outputText value="#{movimentacao.calcularTotal()}" converter="BigDecimalConverter" style="float:right"/>
+				</p:column>								
 
 			</p:dataTable>
 		</h:form>
