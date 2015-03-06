@@ -59,7 +59,9 @@
 				</p:column>
 				
 				<p:column headerText="R$">
-					<h:outputText value="#{movimentacao.calcularTotal()}" converter="BigDecimalConverter" style="float:right"/>
+					<h:outputText value="#{movimentacao.calcularTotal()}" style="float:right" >
+						<f:convertNumber type="currency" pattern="#,##0.00" />
+					</h:outputText>
 				</p:column>								
 
 			</p:dataTable>

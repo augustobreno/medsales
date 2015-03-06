@@ -1,5 +1,6 @@
 package org.sales.medsales.web.action.movimento.estoque;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -10,10 +11,13 @@ import java.util.Map;
 import javax.enterprise.context.ConversationScoped;
 import javax.inject.Named;
 
+import org.easy.qbeasy.api.Filter;
 import org.sales.medsales.dominio.movimento.estoque.Item;
+import org.sales.medsales.dominio.movimento.estoque.MovimentoEstoque;
 import org.sales.medsales.dominio.movimento.estoque.Produto;
 import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
 import org.sales.medsales.dominio.movimento.estoque.SaldoProdutoVO;
+import org.sales.medsales.util.CalculosUtil;
 
 /**
  * Mantém o fluxo de cadastro e manutenção de saída (venda) de produtos.
@@ -79,6 +83,22 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 			}
 			
 		}	
+	}
+	
+	@Override
+	protected void configLoadFromIdFilter(Filter<MovimentoEstoque> filter) {
+		super.configLoadFromIdFilter(filter);
+		filter.setEntityClass(SaidaEstoque.class);
+		filter.addFetch("notasCompra");
+	}
+	
+	/**
+	 * Calculando o total considerando o desconto
+	 */
+	@Override
+	public BigDecimal calcularPrecoTotal(Item item) {
+		BigDecimal total = super.calcularPrecoTotal(item);
+		return getMovimentacao().getDesconto() == null ? total : CalculosUtil.aplicarDesconto(total, getMovimentacao().getDesconto());
 	}
 	
 	private boolean isSaldoConsultado(Produto produto) {

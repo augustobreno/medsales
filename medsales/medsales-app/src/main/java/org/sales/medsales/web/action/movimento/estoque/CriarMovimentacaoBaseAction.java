@@ -260,10 +260,6 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		return original;
 	}
 
-	public List<Item> getItens() {
-		return getMovimentacao().getItens();
-	}
-
 	/**
 	 * Salva a movimentação com status CONCLUÍDO.
 	 */
@@ -326,9 +322,9 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	@SuppressWarnings("unchecked")
 	protected void doLoadId() {
 		if (lid != null) {
-			Filter<MovimentoEstoque> filter = new QBEFilter<>(MovimentoEstoque.class);
-			filter.filterBy("id", Operators.equal(), lid);
-			filter.addFetch("itens.precoProduto.produto", "parceiro");
+			Filter<MovimentoEstoque> filter = new QBEFilter<MovimentoEstoque>(MovimentoEstoque.class);
+			configLoadFromIdFilter(filter);
+
 			MovimentoEstoque movimentacao = estoqueFacade.findBy(filter);
 
 			if (movimentacao == null) {
@@ -338,6 +334,11 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 
 			setMovimentacao((MOV) movimentacao);
 		}
+	}
+
+	protected void configLoadFromIdFilter(Filter<MovimentoEstoque> filter) {
+		filter.filterBy("id", Operators.equal(), lid);
+		filter.addFetch("itens.precoProduto.produto", "parceiro");
 	}
 
 	/**
@@ -370,6 +371,10 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	 */
 	public void onItemEdit(RowEditEvent event) {
 		salvarAutomaticamente();
+		
+		// atualizando a lista de itens programaticamente
+		RequestContext context = RequestContext.getCurrentInstance();
+		context.update(":content-panel");
 	}
 
 	/**
@@ -381,9 +386,20 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 				getMovimentacao().getId());
 	}
 
+	/**
+	 * @return o Preço total deste Item, baseado na quantidade e no valor
+	 */
+	public BigDecimal calcularPrecoTotal(Item item) {
+		return item.calcularPrecoTotal();
+	}
+	
 	/*
 	 * GET/SET
 	 */
+	public List<Item> getItens() {
+		return getMovimentacao().getItens();
+	}
+	
 	public MOV getMovimentacao() {
 		return movimentacao;
 	}

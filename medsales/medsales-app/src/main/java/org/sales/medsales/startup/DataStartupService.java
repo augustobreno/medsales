@@ -9,7 +9,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-import java.util.logging.Logger;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -33,7 +32,6 @@ import org.sales.medsales.dominio.movimento.estoque.Status;
 import org.sales.medsales.dominio.movimento.valor.Valor;
 import org.sales.medsales.negocio.ParceiroFacade;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
-import org.sales.medsales.negocio.movimentacao.estoque.ProdutoFacade;
 import org.sales.medsales.negocio.movimentacao.valor.CicloFacade;
 
 /**
@@ -46,17 +44,11 @@ import org.sales.medsales.negocio.movimentacao.valor.CicloFacade;
 @Stateless
 public class DataStartupService {
 	
-	@Inject
-	private Logger logger;
-
 	/** Tamanho default para cadastro de dados na base de dados para testes. */
 	private static final int DEFAULT_SIZE = 10;
 
 	@Inject
 	private ParceiroFacade parceiroFacade;
-	
-	@Inject
-	private ProdutoFacade produtoFacade;
 	
 	@Inject
 	private EstoqueFacade estoqueFacade;
@@ -76,7 +68,7 @@ public class DataStartupService {
 		loadProdutos();
 		loadParceiro();
 		loadCiclos();
-		loadEntradas();
+		loadMovimentos();
 		
 	}
 
@@ -127,7 +119,7 @@ public class DataStartupService {
 		
 	}
 
-	private void loadEntradas() {
+	private void loadMovimentos() {
 
 		List<PrecoProduto> produtos = querier.findAll(PrecoProduto.class);
 		List<Parceiro> parceiros = querier.findAll(Parceiro.class);
@@ -148,6 +140,7 @@ public class DataStartupService {
 			entradaEstoque.setParceiro(parceiros.get(i));
 			entradaEstoque.setStatus(Status.CONCLUIDO);
     		estoqueFacade.salvar(entradaEstoque);
+    		estoqueFacade.gerarSaida(entradaEstoque.getId());
     	}
     	
 		

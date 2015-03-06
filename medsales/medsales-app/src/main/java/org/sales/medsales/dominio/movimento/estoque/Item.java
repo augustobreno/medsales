@@ -1,5 +1,7 @@
 package org.sales.medsales.dominio.movimento.estoque;
 
+import java.math.BigDecimal;
+
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
@@ -31,6 +33,10 @@ public class Item extends EntityBase<Long> {
 	 */
 	private Integer quantidade;
 
+	public BigDecimal calcularPrecoTotal() {
+		return getPrecoProduto().getValor().multiply(new BigDecimal(getQuantidade()));
+	}
+	
 	public Integer getQuantidade() {
 		return quantidade;
 	}
