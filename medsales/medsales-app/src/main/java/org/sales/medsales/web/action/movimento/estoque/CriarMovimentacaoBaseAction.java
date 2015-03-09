@@ -273,7 +273,25 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	 * Operação para conduzir a persistência dos dados da movimentação.
 	 */
 	protected void salvarMovimentacao() {
+		boolean evitarBag = getMovimentacao().getId() == null;
 		salvar();
+		
+		if (evitarBag) {
+			evitarBagCollection();
+		}	
+	}
+
+	/**
+	 * Devida a um problema de comportamento da coleção do tipo Bag do JPA,
+	 * é preferível transferir os itens para uma coleção do tipo ArrayList 
+	 * na primeira vez que o movimento for salvo.
+	 */
+	private void evitarBagCollection() {
+		List<Item> itens = new ArrayList<Item>();
+		for (Item item : getMovimentacao().getItens()) {
+			itens.add(item);
+		}
+		getMovimentacao().setItens(itens);
 	}
 
 	/**
@@ -285,9 +303,13 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	 * Remove um item da lista de itens.
 	 */
 	public void remover(Item item) {
-		getMovimentacao().getItens().remove(item);
-		salvarAutomaticamente();
-		showInfoMessage("O item {0} foi removido com sucesso.", item.getPrecoProduto().getProduto().getNome());
+		if (getMovimentacao().getItens().size() == 1 && isSalvarAutomaticamente()) {
+			showErrorMessage("Não é possível excluir todos os items com o modo de salvamento automática ativado.");
+		} else {
+			getMovimentacao().getItens().remove(item);
+			salvarAutomaticamente();
+			showInfoMessage("O item {0} foi removido com sucesso.", item.getPrecoProduto().getProduto().getNome());
+		}
 	}
 
 	/**
@@ -319,25 +341,29 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	/**
 	 * Carrega, de fato, a movimentação através do parâmetro GET lid.
 	 */
-	@SuppressWarnings("unchecked")
 	protected void doLoadId() {
 		if (lid != null) {
-			Filter<MovimentoEstoque> filter = new QBEFilter<MovimentoEstoque>(MovimentoEstoque.class);
-			configLoadFromIdFilter(filter);
-
-			MovimentoEstoque movimentacao = estoqueFacade.findBy(filter);
-
-			if (movimentacao == null) {
-				throw new BusinessException(null, "Nenhuma movimentação foi encontrada com o código informado: {0}",
-						lid);
-			}
-
-			setMovimentacao((MOV) movimentacao);
+			load(lid);
 		}
 	}
 
-	protected void configLoadFromIdFilter(Filter<MovimentoEstoque> filter) {
-		filter.filterBy("id", Operators.equal(), lid);
+	@SuppressWarnings("unchecked")
+	private void load(Long idMovimento) {
+		Filter<MovimentoEstoque> filter = new QBEFilter<MovimentoEstoque>(MovimentoEstoque.class);
+		configLoadFromIdFilter(filter, idMovimento);
+
+		MovimentoEstoque movimentacao = estoqueFacade.findBy(filter);
+
+		if (movimentacao == null) {
+			throw new BusinessException(null, "Nenhuma movimentação foi encontrada com o código informado: {0}",
+					idMovimento);
+		}
+
+		setMovimentacao((MOV) movimentacao);
+	}
+
+	protected void configLoadFromIdFilter(Filter<MovimentoEstoque> filter, Long idMovimento) {
+		filter.filterBy("id", Operators.equal(), idMovimento);
 		filter.addFetch("itens.precoProduto.produto", "parceiro");
 	}
 
