@@ -22,7 +22,7 @@
 
 	<ui:define name="ajaxItemEdit">
 		<!-- necessário redefinir por um bug no primefaces ajax que não entendeu um action parametrizado -->
-		<p:ajax event="rowEdit" listener="#{saidaAction.onItemEdit}"/>
+		<p:ajax event="rowEdit" listener="#{saidaAction.onItemEdit}" update=":totalizadorPanel"/>
 	</ui:define>
 
 	<ui:define name="colQuantidade">
@@ -47,135 +47,165 @@
 	</ui:define>
 
 	<ui:define name="totalizador">
-		<p:panelGrid columns="2" layout="grid">
 
-			<h:form id="totalForm">
-			
-				<c:set var="valorPedido" value="#{calculosUtil.aplicarDesconto(saidaAction.valorTotalItens, saidaAction.movimentacao.desconto)}"/>
-				<p:panelGrid columns="3" style="width: 100%;">
+		<style type="text/css">
+.labelFormula {
+	font-style: italic;
+	font-size: smaller;
+}
+</style>
 
-					<f:facet name="header">
+		<p:outputPanel id="totalizadorPanel">
+			<p:panelGrid columns="2" layout="grid">
+
+				<h:form id="totalForm">
+
+					<c:set var="valorPedido"
+						value="#{saidaAction.movimentacao.calcularTotal()}" />
+						
+					<c:set var="somaValoresItens"
+						value="#{saidaAction.movimentacao.calcularSomaValoresItens()}" />	
+						
+					<p:panelGrid columns="3" style="width: 100%;">
+
+						<f:facet name="header">
     					Cálculo com Descontos       
 	       			</f:facet>
 
-					<p:message for="desconto" />
-					<p:outputLabel value="Desconto: " for="desconto" />
-					<p:outputPanel>
-						<pe:inputNumber id="desconto" value="#{saidaAction.movimentacao.desconto}" symbol=" %" symbolPosition="suffix" />
-						<p:commandButton value="Aplicar" update=":listForm totalForm :lucroForm" />
-					</p:outputPanel>
+						<p:message for="desconto" />
+						<p:outputLabel value="Desconto" for="desconto" />
+						<p:outputPanel>
+							<pe:inputNumber id="desconto" value="#{saidaAction.movimentacao.desconto}" symbol=" %" symbolPosition="suffix" />
+							<p:commandButton value="Aplicar" update=":listForm :totalizadorPanel" actionListener="#{saidaAction.aplicarDesconto()}"/>
+						</p:outputPanel>
 
-					<h:outputText value="" />
-					<p:outputLabel value="Total do Pedido: " for="total" />
-					<h:outputText id="total" value="#{saidaAction.valorTotalItens}">
-						<f:convertNumber type="currency" pattern="R$ #,##0.00" />
-					</h:outputText>
+						<h:outputText value="" />
+						<p:outputLabel value="Total do Pedido" for="total" />
+						<h:outputText id="total" value="#{somaValoresItens}">
+							<f:convertNumber type="currency" pattern="R$ #,##0.00" />
+						</h:outputText>
 
-					<h:outputText value="" />
-					<p:outputLabel value="Descontos: " for="descontos" />
-					<h:outputText id="descontos"
-						value="#{calculosUtil.calcularDesconto(saidaAction.valorTotalItens, saidaAction.movimentacao.desconto)}">
-						<f:convertNumber type="currency" pattern="R$ #,##0.00" />
-					</h:outputText>
+						<h:outputText value="" />
+						<p:outputLabel value="Descontos" for="descontos" />
+						<h:outputText id="descontos"
+							value="#{calculosUtil.calcularDesconto(somaValoresItens, saidaAction.movimentacao.desconto)}">
+							<f:convertNumber type="currency" pattern="R$ #,##0.00" />
+						</h:outputText>
 
-					<h:outputText value="" />
-					<p:outputLabel value="Valor Final: " for="vfinal" />
-					<h:outputText id="vfinal"
-						value="#{valorPedido}">
-						<f:convertNumber type="currency" pattern="R$ #,##0.00" />
-					</h:outputText>
+						<h:outputText value="" />
+						<p:outputPanel>
+							<p:outputLabel value="Valor Final " for="vfinal" />
+							<h:outputText value=" (VF)" styleClass="labelFormula" />
+						</p:outputPanel>
+						<h:outputText id="vfinal" value="#{valorPedido}">
+							<f:convertNumber type="currency" pattern="R$ #,##0.00" />
+						</h:outputText>
 
-				</p:panelGrid>
-			</h:form>
+					</p:panelGrid>
+				</h:form>
 
-			<h:form id="lucroForm">
-			
-				<c:set var="totalNotaCompra" value="#{saidaAction.movimentacao.calcularValorNotaOriginal()}"/>
-				<c:set var="valorInvestimento" value="#{calculosUtil.aplicarDesconto(saidaAction.movimentacao.calcularValorNotaOriginal(), 24)}"/>
-				<c:set var="valorComissao" value="#{calculosUtil.calcularDesconto(saidaAction.movimentacao.calcularValorNotaOriginal(), 2)}"/>
-				<c:set var="valorLucro" value="#{valorPedido - valorInvestimento - valorComissao}"/>
-			
-				<p:panelGrid columns="2" style="width: 100%;">
+				<h:form id="lucroForm">
 
-					<f:facet name="header">
+					<c:set var="totalNotaCompra" value="#{saidaAction.movimentacao.calcularValorNotaCompra()}" />
+					<c:set var="valorInvestimento" value="#{calculosUtil.aplicarDesconto(totalNotaCompra, 24)}" />
+					<c:set var="valorComissao" value="#{calculosUtil.calcularDesconto(totalNotaCompra, 2)}" />
+					<c:set var="valorLucro" value="#{valorPedido - valorInvestimento - valorComissao}" />
+
+					<p:panelGrid columns="2" style="width: 100%;">
+
+						<f:facet name="header">
     					Base de Lucro       
 	       			</f:facet>
 
-					<p:outputLabel value="Nota Original " for="notaOriginal" />
-					<p:outputPanel>
-						<h:outputText id="notaOriginal" value="#{totalNotaCompra}">
-							<f:convertNumber type="currency" pattern="R$ #,##0.00" />
+						<p:outputPanel>
+							<p:outputLabel value="Nota de Compra " for="notaOriginal" />
+							<h:outputText value=" (NC)" styleClass="labelFormula" />
+						</p:outputPanel>
+						<p:outputPanel>
+							<h:outputText id="notaOriginal" value="#{totalNotaCompra}">
+								<f:convertNumber type="currency" pattern="R$ #,##0.00" />
+							</h:outputText>
+							<p:commandButton id="valoresNotaOriginal" icon="ui-icon-extlink" type="button" />
+						</p:outputPanel>
+
+						<p:outputPanel>
+							<p:outputLabel value="Pedido" for="pedido" />
+							<h:outputText value=" (VF)" styleClass="labelFormula" />
+						</p:outputPanel>
+						<h:outputText id="pedido" value="#{valorPedido}">
+							<f:convertNumber type="currency" pattern="+ #,##0.00" />
 						</h:outputText>
-						<p:commandButton id="valoresNotaOriginal" icon="ui-icon-extlink" type="button" />
-					</p:outputPanel>
 
-					<p:outputLabel value="Pedido " for="pedido" />
-					<h:outputText id="pedido"
-						value="#{valorPedido}">
-						<f:convertNumber type="currency" pattern="+ #,##0.00" />
-					</h:outputText>
-
-					<p:outputLabel value="Investimento (24%)" for="investimento" />
-					<h:outputText id="investimento"
-						value="#{valorInvestimento}">
-						<f:convertNumber type="currency" pattern="- #,##0.00" />
-					</h:outputText>
-
-					<p:outputLabel value="Comissão (2%)" for="comissao" />
-					<h:outputText id="comissao"
-						value="#{valorComissao}">
-						<f:convertNumber type="currency" pattern="- #,##0.00" />
-					</h:outputText>
-
-					<p:outputLabel value="Lucro" for="lucro" />
-					<p:outputPanel>
-						<h:outputText id="lucro"
-							value="#{valorPedido - valorInvestimento - valorComissao}">
-							<f:convertNumber type="currency" pattern="= #,##0.00" />
+						<p:outputPanel>
+							<p:outputLabel value="Investimento" for="investimento" />
+							<h:outputText value=" (I=NC-24%)" styleClass="labelFormula" />
+						</p:outputPanel>
+						<h:outputText id="investimento" value="#{valorInvestimento}">
+							<f:convertNumber type="currency" pattern="- #,##0.00" />
 						</h:outputText>
-						<p:spacer width="5px"/>
-						(<h:outputText value="#{calculosUtil.calcularPorcentagem(valorInvestimento, valorLucro)}" converter="BigDecimalConverter"/> %)
+
+						<p:outputPanel>
+							<p:outputLabel value="Comissão" for="comissao" />
+							<h:outputText value=" (C=NC*2%)" styleClass="labelFormula" />
+						</p:outputPanel>
+						<h:outputText id="comissao" value="#{valorComissao}">
+							<f:convertNumber type="currency" pattern="- #,##0.00" />
+						</h:outputText>
+
+						<p:outputPanel>
+							<p:outputLabel value="Lucro " for="lucro" />
+							<h:outputText value=" (L=VF-I-C),(L%I)" styleClass="labelFormula" />
+						</p:outputPanel>
+						<p:outputPanel>
+							<h:outputText id="lucro" value="#{valorLucro}">
+								<f:convertNumber type="currency" pattern="= #,##0.00" />
+							</h:outputText>
+							<p:spacer width="5px" />
+						(<h:outputText value="#{calculosUtil.calcularPorcentagem(valorInvestimento, valorLucro)}"
+								converter="BigDecimalConverter" /> %)
 					</p:outputPanel>
 
 
 
-				</p:panelGrid>
+					</p:panelGrid>
 
-			</h:form>
-		</p:panelGrid>
+				</h:form>
+			</p:panelGrid>
 
-		<!-- modal de valores de notas originais -->
-		<p:overlayPanel showEffect="fade" hideEffect="fade" showCloseIcon="true" for="lucroForm:valoresNotaOriginal">
-			<h:form id="modalNotasForm">
-				<p:outputPanel id="notasPanel" style="text-align:center;">
+			<!-- modal de valores de notas originais -->
+			<p:overlayPanel showEffect="fade" hideEffect="fade" showCloseIcon="true" for="lucroForm:valoresNotaOriginal">
+				<h:form id="modalNotasForm">
+					<p:outputPanel id="notasPanel" style="text-align:center;">
 
-					<p:outputLabel value="Valor: " for="valor" />
-					<p:outputPanel>
-						<pe:inputNumber id="valor" value="#{saidaNotasOriginaisModalAction.valor}" symbol="R$ " required="true" />
-						<p:commandButton icon="ui-icon-plus" process="@this valor" update=":modalNotasForm :lucroForm"
-							actionListener="#{saidaNotasOriginaisModalAction.add(saidaAction.movimentacao)}" />
-					</p:outputPanel>
-					<p:message for="valor" />
+						<p:outputLabel value="Valor: " for="valor" />
+						<p:outputPanel>
+							<pe:inputNumber id="valor" value="#{saidaNotasOriginaisModalAction.valor}" symbol="R$ " required="true" />
+							<p:commandButton icon="ui-icon-plus" process="@this valor" update=":totalizadorPanel"
+								actionListener="#{saidaNotasOriginaisModalAction.add(saidaAction.movimentacao)}" 
+								action="#{saidaAction.salvarAutomaticamente()}"/>
+						</p:outputPanel>
+						<p:message for="valor" />
 
-					<p:dataList value="#{saidaAction.movimentacao.notasCompra}" var="nota" type="ordered"
-						emptyMessage="Nenhuma nota cadastrada">
-						<f:facet name="header">
+						<p:dataList value="#{saidaAction.movimentacao.notasCompra}" var="nota" type="ordered"
+							emptyMessage="Nenhuma nota cadastrada">
+							<f:facet name="header">
 			            	Notas Originais
 			        	</f:facet>
 
-						<h:outputText value="#{nota.valor}">
+							<h:outputText value="#{nota.valor}">
 			        		valoresNotaOriginal
 			        	</h:outputText>
 
-						<p:commandButton id="btAddNota" icon="ui-icon-trash" immediate="true" update=":modalNotasForm :lucroForm"
-							actionListener="#{saidaNotasOriginaisModalAction.remove(saidaAction.movimentacao, nota)}" />
+							<p:commandButton id="btDelNota" icon="ui-icon-trash" immediate="true" update=":totalizadorPanel"
+								actionListener="#{saidaNotasOriginaisModalAction.remove(saidaAction.movimentacao, nota)}" 
+								action="#{saidaAction.salvarAutomaticamente()}"/>
 
 
-					</p:dataList>
-				</p:outputPanel>
-			</h:form>
-		</p:overlayPanel>
-
+						</p:dataList>
+					</p:outputPanel>
+				</h:form>
+			</p:overlayPanel>
+		</p:outputPanel>
 	</ui:define>
 
 </ui:composition>

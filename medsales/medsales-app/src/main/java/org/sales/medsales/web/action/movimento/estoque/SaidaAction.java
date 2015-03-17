@@ -86,8 +86,8 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 	}
 	
 	@Override
-	protected void configLoadFromIdFilter(Filter<MovimentoEstoque> filter) {
-		super.configLoadFromIdFilter(filter);
+	protected void configLoadFromIdFilter(Filter<MovimentoEstoque> filter, Long idMovimento) {
+		super.configLoadFromIdFilter(filter, idMovimento);
 		filter.setEntityClass(SaidaEstoque.class);
 		filter.addFetch("notasCompra");
 	}
@@ -99,6 +99,15 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 	public BigDecimal calcularPrecoTotal(Item item) {
 		BigDecimal total = super.calcularPrecoTotal(item);
 		return getMovimentacao().getDesconto() == null ? total : CalculosUtil.aplicarDesconto(total, getMovimentacao().getDesconto());
+	}
+
+	/**
+	 * Operação invocada quando o usuário informa um valor para desconto e aplica sobre o movimento.
+	 */
+	public void aplicarDesconto() {
+		// os valores totais são calculados diretamente na página.
+		// resta salvar automaticamente, quando ativado
+		salvarAutomaticamente();
 	}
 	
 	private boolean isSaldoConsultado(Produto produto) {

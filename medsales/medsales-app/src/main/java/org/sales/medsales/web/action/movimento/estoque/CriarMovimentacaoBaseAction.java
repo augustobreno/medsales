@@ -189,15 +189,12 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	/**
 	 * Salva automaticamente, se estiver habilitado.
 	 */
-	protected void salvarAutomaticamente() {
+	public void salvarAutomaticamente() {
 		if (salvarAutomaticamente && !getMovimentacao().getItens().isEmpty()) {
-
 			if (getMovimentacao().getStatus() == null) {
 				getMovimentacao().setStatus(Status.RASCUNHO);
 			}
-
 			salvarMovimentacao();
-
 		}
 	}
 
@@ -372,24 +369,6 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	 */
 	protected void preLoadFromId() {
 		// TODO Auto-generated method stub
-
-	}
-
-	/**
-	 * @return A soma dos valores dos itens acumulados nesta movimentação.
-	 */
-	public BigDecimal getValorTotalItens() {
-
-		BigDecimal soma = BigDecimal.ZERO;
-		if (getMovimentacao().getItens() != null) {
-			for (Item item : getMovimentacao().getItens()) {
-				Integer quantidade = item.getQuantidade();
-				BigDecimal valor = item.getPrecoProduto().getValor();
-				soma = soma.add(valor.multiply(new BigDecimal(quantidade)));
-			}
-		}
-
-		return soma;
 	}
 
 	/**

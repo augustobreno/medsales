@@ -11,6 +11,7 @@ import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 
 import org.sales.medsales.dominio.movimento.Operacao;
+import org.sales.medsales.util.CalculosUtil;
 
 /**
  * Caracteriza uma movimentação de Saída, que remove itens ao estoque. 
@@ -74,7 +75,7 @@ public class SaidaEstoque extends MovimentoEstoque {
 	/**
 	 * @return O valor total das notas de compras originais.
 	 */
-	public BigDecimal calcularValorNotaOriginal() {
+	public BigDecimal calcularValorNotaCompra() {
 		BigDecimal valor = BigDecimal.ZERO;
 		if (this.notasCompra != null) {
 			for (NotaCompra notaCompra : notasCompra) {
@@ -82,6 +83,15 @@ public class SaidaEstoque extends MovimentoEstoque {
 			}
 		}
 		return valor;
+	}
+	
+	/**
+	 * @return Aplica o valor de desconto no cálculo do total desta nota.
+	 */
+	@Override
+	public BigDecimal calcularTotal() {
+		BigDecimal total = super.calcularTotal();
+		return desconto == null ? total : CalculosUtil.aplicarDesconto(total, desconto);
 	}
 	
 	/**
