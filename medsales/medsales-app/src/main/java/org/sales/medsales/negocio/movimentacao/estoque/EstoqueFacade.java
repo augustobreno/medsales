@@ -114,6 +114,16 @@ public class EstoqueFacade implements ServerPaginationFacade<MovimentoEstoque, L
      * @return Lista com saldos existentes em estoque.
      */
 	public List<SaldoProdutoVO> consultarEstoque(Produto...produtos) {
-		return saldoEstoqueBO.consultar(produtos); 
+		return consultarEstoque(null, produtos); 
+	}
+	
+    /**
+     * Consulta o saldo em estoque de alguns produtos.
+     * @param produtos Produto para consulta do saldo.
+     * @param desconsiderar Saida que deverá ser desconsiderada no cálculo do estoque.
+     * @return Lista com saldos existentes em estoque.
+     */
+	public List<SaldoProdutoVO> consultarEstoque(SaidaEstoque desconsiderar, Produto...produtos) {
+		return saldoEstoqueBO.consultar(desconsiderar, produtos); 
 	}
 }

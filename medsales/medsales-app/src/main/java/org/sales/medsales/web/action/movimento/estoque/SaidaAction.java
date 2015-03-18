@@ -77,7 +77,7 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 				&& produtos.length > 0	
 				&& (produtos.length > 1 || !isSaldoConsultado(produtos[0]))) {
 			
-			List<SaldoProdutoVO> saldoList = getEstoqueFacade().consultarEstoque(produtos);
+			List<SaldoProdutoVO> saldoList = getEstoqueFacade().consultarEstoque(getMovimentacao(), produtos);
 			for (SaldoProdutoVO saldo : saldoList) {
 				saldos.put(saldo.getIdProduto(), saldo);
 			}

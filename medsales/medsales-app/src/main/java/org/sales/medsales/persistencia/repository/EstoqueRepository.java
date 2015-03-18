@@ -43,29 +43,30 @@ public class EstoqueRepository extends CrudRepositoryBase<MovimentoEstoque, Long
 
 	/**
 	 * Consulta o saldo em estoque de alguns produtos.
-	 * 
+	 * @param desconsiderar Saida que deverá ser desconsiderada no cálculo do estoque.
 	 * @param produtos
 	 *            IDs dos produtos para consulta do saldo.
 	 * @return Saldo existente em estoque.
 	 */
-	public List<SaldoProdutoVO> consultarSaldo(Produto...produtos) {
+	public List<SaldoProdutoVO> consultarSaldo(SaidaEstoque desconsiderar, Produto...produtos) {
 
 		// consultando os ids dos produtos com preços cadastrados
 		String saldoClassName = SaldoProdutoVO.class.getName();
 		String produtoType = Produto.class.getSimpleName();
-		Query query = getEm()
-				.createQuery(
-						" SELECT new "
-								+ saldoClassName
-								+ "(produto.id, SUM(case when mov.operacao = '"
-								+ Operacao.ENTRADA.getId()
-								+ "' then  item.quantidade else -item.quantidade end)) "
-								+ "FROM " + produtoType + " produto "
-								+ "    left join produto.precos preco "
-								+ "    left join preco.itens item left join item.movimentoEstoque mov"
-								+ " WHERE produto.id in (:idProdutos) GROUP BY produto ");
+		String hql = 
+				" SELECT new " + saldoClassName + "(produto.id, SUM(case when mov.operacao = '"
+				+ Operacao.ENTRADA.getId()
+				+ "' then  item.quantidade else -item.quantidade end)) "
+				+ "FROM " + produtoType + " produto "
+				+ "    left join produto.precos preco "
+				+ "    left join preco.itens item "
+				+ "    left join item.movimentoEstoque mov "
+				+ " WHERE produto.id in (:idProdutos) "
+				+ (desconsiderar != null && desconsiderar.getId() != null ? " AND mov.id <> :idMovimento " : "")
+				+ " GROUP BY produto ";
+		Query query = getEm().createQuery(hql);
 		query.setParameter("idProdutos", EntityUtil.getIds(produtos));
-
+		query.setParameter("idMovimento", desconsiderar.getId());
 		@SuppressWarnings("unchecked")
 		List<SaldoProdutoVO> saldos = query.getResultList();
 		return saldos;

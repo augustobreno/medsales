@@ -29,7 +29,7 @@
 				paginatorPosition="bottom" rowsPerPageLabel="Exibindo" rowsPerPageTemplate="5,10,20,30,50,100" rows="5"
 				emptyMessage="Nenhum registro foi encontrado." selectionMode="single" rowKey="#{movimentacao.id}"
 				>
-
+ 
 				<p:ajax event="rowSelect" listener="#{movimentacoesAction.load}" />
 				
 				<f:facet name="{totalPageReport}">

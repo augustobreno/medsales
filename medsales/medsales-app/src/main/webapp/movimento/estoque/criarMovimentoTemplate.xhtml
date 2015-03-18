@@ -83,7 +83,7 @@ function limparCampoProduto() {
 				<!-- Permite customizar o evento ajax para edição do item -->
 				<ui:insert name="ajaxItemEdit">
 					<p:ajax event="rowEdit" listener="#{movimentoAction.onItemEdit}" />
-				</ui:insert>	
+				</ui:insert>
 
 				<p:column headerText="Cód Barras">
 					<h:outputText value="#{item.precoProduto.produto.codigoBarras}" />
@@ -93,7 +93,7 @@ function limparCampoProduto() {
 					<h:outputText value="#{item.precoProduto.produto.nome}" />
 				</p:column>
 
-				<!-- permite a customização da coluna Quantidade -->	
+				<!-- permite a customização da coluna Quantidade -->
 				<ui:insert name="colQuantidade">
 					<p:column headerText="Quantidade" style="text-align:center">
 						<p:cellEditor>
@@ -111,12 +111,11 @@ function limparCampoProduto() {
 					<h:outputText value="#{item.precoProduto.valor}" converter="BigDecimalConverter" />
 				</p:column>
 
-				<!-- permite a inclusão de colunas customizadas -->	
-				<ui:insert name="colCustom"/>
+				<!-- permite a inclusão de colunas customizadas -->
+				<ui:insert name="colCustom" />
 
 				<p:column headerText="R$ Total" style="text-align:right">
-					<h:outputText id="precoTotal" value="#{p_action.calcularPrecoTotal(item)}"
-						converter="BigDecimalConverter" />
+					<h:outputText id="precoTotal" value="#{p_action.calcularPrecoTotal(item)}" converter="BigDecimalConverter" />
 				</p:column>
 
 				<p:column style="width:32px">
@@ -126,14 +125,9 @@ function limparCampoProduto() {
 						styleClass="ui-icon ui-icon-trash" />
 				</p:column>
 			</p:dataTable>
-
-			<h:commandLink value="XLS">
-				<p:dataExporter type="xls" target="itemList" fileName="pedido" pageOnly="true" />
-			</h:commandLink>
-
 		</h:form>
 
-		<ui:insert name="totalizador"/>
+		<ui:insert name="totalizador" />
 
 
 		<h:form id="btnForm">
@@ -141,8 +135,9 @@ function limparCampoProduto() {
 			<p:panelGrid columns="3" layout="grid" columnClasses="labels_col1">
 				<p:outputLabel value="Parceiro:" for="parceiro" />
 				<p:autoComplete id="parceiro" value="#{p_action.movimentacao.parceiro}" minQueryLength="2"
-					title="Onde o produto foi comprado/Para quem foi vendido" completeMethod="#{searchParceiroAction.search}" var="parceiro"
-					itemLabel="#{parceiro.nome}" itemValue="#{parceiro}" forceSelection="true" dropdown="true" required="true" />
+					title="Onde o produto foi comprado/Para quem foi vendido" completeMethod="#{searchParceiroAction.search}"
+					var="parceiro" itemLabel="#{parceiro.nome}" itemValue="#{parceiro}" forceSelection="true" dropdown="true"
+					required="true" />
 				<p:message for="parceiro" />
 
 				<p:outputLabel value="Data do Movimento:" for="dtentrada" />
@@ -167,12 +162,16 @@ function limparCampoProduto() {
 					<p:menuitem value="Salvar Como Rascunho" actionListener="#{p_action.salvarRacunho}" icon="ui-icon-disk"
 						action="#{p_action.redirectIfNoError('movimentos.xhtml')}" update="btnForm" />
 
-					<ui:insert name="botoesCustom"/>
+					<ui:insert name="botoesCustom" />
 
 					<p:separator />
 
 					<p:menuitem id="itemExcluir" value="Excluir" icon="ui-icon-trash"
 						onclick="$('#btnForm\\:btnRemove').click();return;" />
+
+					<p:menuitem value="Exportar para Planilha" icon="ui-icon-document" ajax="false" immediate="true">
+						<p:dataExporter type="xls" target=":listForm:itemList" fileName="pedido" pageOnly="false" />
+					</p:menuitem>
 
 				</p:splitButton>
 
@@ -194,8 +193,8 @@ function limparCampoProduto() {
 				</p:confirmDialog>
 			</div>
 		</h:form>
-		
-		<p:spacer width="100%" height="20px"/>
+
+		<p:spacer width="100%" height="20px" />
 	</ui:define>
 </ui:composition>
 
