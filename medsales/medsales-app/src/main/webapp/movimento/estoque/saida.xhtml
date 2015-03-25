@@ -208,6 +208,14 @@
 		</p:outputPanel>
 	</ui:define>
 
+	<ui:define name="botoesCustom">
+
+		<p:menuitem value="Exibir Recibo" icon="ui-icon-disk"
+			action="#{p_action.redirectIfNoError('reciboSaida.xhtml?lid='.concat(saidaAction.movimentacao.id))}" ajax="false" target="_blank" immediate="true" />
+
+	</ui:define>
+
+
 </ui:composition>
 
 </html>

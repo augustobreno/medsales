@@ -23,11 +23,11 @@
 	<f:facet name="last">
 		<h:outputStylesheet name="css/medsales.css" />
 		<style type="text/css">
-			.ui-growl {
-				top: 51px;
-				z-index: 9999;
-			}
-		</style>
+.ui-growl {
+	top: 51px;
+	z-index: 9999;
+}
+</style>
 	</f:facet>
 
 </h:head>
@@ -41,14 +41,19 @@
 				<p:graphicImage name="/images/ajaxloadingbar.gif" />
 			</f:facet>
 		</p:ajaxStatus>
-		
+
 	</ui:insert>
 
-	<ui:include src="header.xhtml" />
+	<ui:insert name="main-header">
+		<ui:include src="header.xhtml" />
+	</ui:insert>
 
-	<div class="container">
-		<ui:include src="content.xhtml" />
-	</div>
+	<ui:insert name="main-content">
+		<div class="container">
+			<ui:include src="content.xhtml" />
+		</div>
+	</ui:insert>
+
 	<!-- /.container -->
 
 

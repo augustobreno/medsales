@@ -118,4 +118,29 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 	public SaldoProdutoVO getSaldo(Produto produto) {
 		return saldos.get(produto.getId());
 	}
+	
+//	public void createPDF() {
+//	    FacesContext facesContext = FacesContext.getCurrentInstance();
+//	    ExternalContext externalContext = facesContext.getExternalContext();
+//	    String servername = externalContext.getRequestServerName();
+//	    String port = String.valueOf(externalContext.getRequestServerPort());
+//	    String appname = externalContext.getRequestContextPath();
+//	    String protocol = externalContext.getRequestScheme();
+//	    this.url = protocol + "://" + servername + ":" + port + appname + PDF_PAGE;
+//	    try {
+//	        ITextRenderer renderer = new ITextRenderer();
+//	        renderer.setDocument(new URL(url).toString());
+//	        renderer.layout();
+//	        HttpServletResponse response = (HttpServletResponse) externalContext.getResponse();
+//	        response.reset();
+//	        response.setContentType("application/pdf");
+//	        response.setHeader("Content-Disposition", "inline; filename=\"" + PDF_FILE_NAME + "\"");
+//	        OutputStream browserStream = response.getOutputStream();
+//	        renderer.createPDF(browserStream);
+//
+//	    } catch (Exception ex) {
+//	        Logger.getLogger(PdfBean.class.getName()).log(Level.SEVERE, null, ex);
+//	    }
+//	    facesContext.responseComplete();
+//	}
 }

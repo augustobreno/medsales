@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:c="http://java.sun.com/jstl/core">
+
+<h:head>
+
+	<ui:param name="param_pageTitle"
+		value="Saída de Estoque #{not empty saidaAction.movimentacao.numeroPedido ? viewFunctions.concat('- Pedido Nº ', saidaAction.movimentacao.numeroPedido) : ''}" />
+
+
+	<f:facet name="first">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>SalesMed #{empty param_pageTitle ? '' : ' - '.concat(param_pageTitle)}</title>
+
+	</f:facet>
+
+	<f:facet name="middle">
+		<h:outputStylesheet name="bootstrap/css/bootstrap.css" />
+		<h:outputStylesheet name="css/jasny-bootstrap.min.css" />
+	</f:facet>
+
+	<f:facet name="last">
+		<h:outputStylesheet name="css/medsales.css" />
+	</f:facet>
+
+</h:head>
+<f:metadata>
+	<!-- lid para book-markable -->
+	<f:viewParam name="lid" value="#{saidaAction.lid}" />
+	<f:viewAction action="#{saidaAction.loadFromId()}" />
+
+</f:metadata>
+
+<h:body>
+	<div class="page-header">
+		<h1>#{param_pageTitle}</h1>
+	</div>
+
+	<p:outputPanel style="width:900px">
+
+		<p:outputLabel for="desconto" value="Desconto: " />
+		<h:outputText id="desconto"
+			value="#{saidaAction.movimentacao.desconto != null ? saidaAction.movimentacao.desconto : ' 0'}  %" />
+
+		<p:dataTable id="itemList" value="#{saidaAction.itens}" var="item" emptyMessage="Nenhum Produto cadastrado.">
+
+			<f:facet name="header">
+    				Produtos
+	    </f:facet>
+
+			<p:column headerText="Cód Barras" width="150">
+				<h:outputText value="#{item.precoProduto.produto.codigoBarras}" />
+			</p:column>
+
+			<p:column headerText="Produto" width="350">
+				<h:outputText value="#{item.precoProduto.produto.nome}" />
+			</p:column>
+
+			<p:column headerText="Quantidade" style="text-align:center" width="100">
+				<h:outputText value="#{item.quantidade}" />
+			</p:column>
+
+			<p:column headerText="R$ Fábrica" style="text-align:right" width="100">
+				<h:outputText value="#{item.precoProduto.valor}" converter="BigDecimalConverter" />
+			</p:column>
+
+			<p:column headerText="R$ Final" style="text-align:right" width="100">
+				<h:outputText value="#{item.precoProduto.getValorComDesconto(saidaAction.movimentacao.desconto)}">
+					<f:convertNumber type="currency" pattern="#,##0.00" />
+				</h:outputText>
+			</p:column>
+
+			<p:column headerText="R$ Total" style="text-align:right" width="100">
+				<h:outputText id="precoTotal" value="#{saidaAction.calcularPrecoTotal(item)}" converter="BigDecimalConverter" />
+			</p:column>
+
+			<f:facet name="footer">
+
+				<div style="width: 100%; text-align: right;">
+					<c:set var="valorPedido" value="#{saidaAction.movimentacao.calcularTotal()}" />
+
+					<p:outputLabel for="total" value="Total: " />
+					<h:outputText id="total" value="#{valorPedido}" converter="BigDecimalConverter" />
+				</div>
+			</f:facet>
+
+		</p:dataTable>
+
+
+		<p:panelGrid columns="2">
+			<p:outputLabel for="data" value="Data: " />
+			<h:outputText id="data" value="______/______/___________" />
+
+			<p:outputLabel for="assinatura" value="Assinatura: " />
+			<h:outputText id="assinatura" value="____________________________________________________________________" />
+			
+			<p:outputLabel for="cliente" value="" />
+			<h:outputText id="cliente" value="#{saidaAction.movimentacao.parceiro.nome}" />
+		</p:panelGrid>
+
+
+
+
+
+	</p:outputPanel>
+</h:body>
+</html>

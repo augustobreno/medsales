@@ -397,6 +397,8 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	public BigDecimal calcularPrecoTotal(Item item) {
 		return item.calcularPrecoTotal();
 	}
+
+	
 	
 	/*
 	 * GET/SET
