@@ -13,7 +13,7 @@ public class SaidaEstoqueBO extends MovimentacaoEstoqueBO<SaidaEstoque>{
 
 	@Override
 	public void persistir(SaidaEstoque saidaEstoque) {
-		gerarNumeroPedido(saidaEstoque);
+//		gerarNumeroPedido(saidaEstoque);
 		super.persistir(saidaEstoque);
 	}
 

@@ -9,6 +9,7 @@ import junit.framework.Assert;
 
 import org.easy.testeasy.dataloader.LoadData;
 import org.easy.testeasy.dataloader.LoadDatas;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.sales.medsales.MedSalesBaseTest;
 import org.sales.medsales.dataLoader.ParceirosDataLoader;
@@ -25,6 +26,7 @@ import org.sales.medsales.dominio.movimento.estoque.Status;
  * @author Augusto
  *@see SaidaListener
  */
+@Ignore
 public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
 
 	@Inject

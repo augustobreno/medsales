@@ -23,6 +23,7 @@ import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.jboss.shrinkwrap.resolver.api.maven.Maven;
 import org.jboss.shrinkwrap.resolver.api.maven.PomEquippedResolveStage;
 import org.jboss.shrinkwrap.resolver.api.maven.ScopeType;
+import org.junit.Ignore;
 import org.sales.medsales.api.util.QuerierUtil;
 
 /**
@@ -34,6 +35,7 @@ import org.sales.medsales.api.util.QuerierUtil;
  *
  */
 @ArquillianSuiteDeployment // garante a reutilização do @Deployment entre as classes de teste
+@Ignore
 public class MedSalesBaseTest extends DeployableBaseTest {
 
 	private static final String ORG_SALES_MEDSALES = "org/sales/medsales";

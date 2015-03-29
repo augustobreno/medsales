@@ -167,12 +167,12 @@ function limparCampoProduto() {
 
 					<p:separator />
 
-					<p:menuitem id="itemExcluir" value="Excluir" icon="ui-icon-trash"
-						onclick="$('#btnForm\\:btnRemove').click();return;" />
-
 					<p:menuitem value="Exportar para Planilha" icon="ui-icon-document" ajax="false" immediate="true">
 						<p:dataExporter type="xls" target=":listForm:itemList" fileName="pedido" pageOnly="false" />
 					</p:menuitem>
+
+					<p:menuitem id="itemExcluir" value="Excluir" icon="ui-icon-trash"
+						onclick="$('#btnForm\\:btnRemove').click();return;" />
 
 				</p:splitButton>
 

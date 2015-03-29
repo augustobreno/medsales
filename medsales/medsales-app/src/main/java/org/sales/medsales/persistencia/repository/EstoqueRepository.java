@@ -66,7 +66,11 @@ public class EstoqueRepository extends CrudRepositoryBase<MovimentoEstoque, Long
 				+ " GROUP BY produto ";
 		Query query = getEm().createQuery(hql);
 		query.setParameter("idProdutos", EntityUtil.getIds(produtos));
-		query.setParameter("idMovimento", desconsiderar.getId());
+		
+		if (desconsiderar != null) {
+			query.setParameter("idMovimento", desconsiderar.getId());
+		}
+		
 		@SuppressWarnings("unchecked")
 		List<SaldoProdutoVO> saldos = query.getResultList();
 		return saldos;
