@@ -133,6 +133,7 @@ function limparCampoProduto() {
 		<h:form id="btnForm">
 
 			<p:panelGrid columns="3" layout="grid" columnClasses="labels_col1">
+			
 				<p:outputLabel value="Parceiro:" for="parceiro" />
 				<p:autoComplete id="parceiro" value="#{p_action.movimentacao.parceiro}" minQueryLength="2"
 					title="Onde o produto foi comprado/Para quem foi vendido" completeMethod="#{searchParceiroAction.search}"
@@ -145,7 +146,7 @@ function limparCampoProduto() {
 					showOn="button" required="true" />
 				<p:message for="dtentrada" />
 
-
+				<ui:insert name="dadosComplementares"/>
 			</p:panelGrid>
 
 			<br />

@@ -27,7 +27,7 @@ public class SaidaEstoqueBO extends MovimentacaoEstoqueBO<SaidaEstoque>{
 				&& saidaEstoque.getNumeroPedido() == null) {
 			
 			int maiorNumPedido = getEstoqueRepository().buscarMaiorNumeroPedido(saidaEstoque.getParceiro());
-			saidaEstoque.setNumeroPedido(++maiorNumPedido);
+			saidaEstoque.setNumeroPedido(String.valueOf(++maiorNumPedido));
 		}
 	}
 	

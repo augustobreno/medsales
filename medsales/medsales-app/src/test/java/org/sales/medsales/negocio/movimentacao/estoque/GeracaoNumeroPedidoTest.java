@@ -59,7 +59,7 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	// verifica se os dados foram inseridos
     	saidaEstoque = getQuerier().find(SaidaEstoque.class, saidaEstoque.getId());
     	Assert.assertNotNull(saidaEstoque.getNumeroPedido());
-    	Assert.assertEquals((int)1, (int)saidaEstoque.getNumeroPedido());
+    	Assert.assertEquals("1", saidaEstoque.getNumeroPedido());
 	}
 	
 	/**
@@ -140,11 +140,11 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	// verifica se os dados foram inseridos
     	SaidaEstoque saidaEstoque = getQuerier().find(SaidaEstoque.class, saida1.getId());
     	Assert.assertNotNull(saidaEstoque.getNumeroPedido());
-    	Assert.assertEquals((int)1, (int)saidaEstoque.getNumeroPedido());
+    	Assert.assertEquals("1", saidaEstoque.getNumeroPedido());
     	
     	saidaEstoque = getQuerier().find(SaidaEstoque.class, saida2.getId());
     	Assert.assertNotNull(saidaEstoque.getNumeroPedido());
-    	Assert.assertEquals((int)2, (int)saidaEstoque.getNumeroPedido());
+    	Assert.assertEquals("2", saidaEstoque.getNumeroPedido());
 	}
 	
 	/**
@@ -195,11 +195,11 @@ public class GeracaoNumeroPedidoTest extends MedSalesBaseTest {
     	// verifica se os dados foram inseridos
     	SaidaEstoque saidaEstoque = getQuerier().find(SaidaEstoque.class, saida1.getId());
     	Assert.assertNotNull(saidaEstoque.getNumeroPedido());
-    	Assert.assertEquals((int)1, (int)saidaEstoque.getNumeroPedido());
+    	Assert.assertEquals("1", saidaEstoque.getNumeroPedido());
     	
     	saidaEstoque = getQuerier().find(SaidaEstoque.class, saida2.getId());
     	Assert.assertNotNull(saidaEstoque.getNumeroPedido());
-    	Assert.assertEquals((int)1, (int)saidaEstoque.getNumeroPedido());
+    	Assert.assertEquals("1", saidaEstoque.getNumeroPedido());
 	}
 
 }

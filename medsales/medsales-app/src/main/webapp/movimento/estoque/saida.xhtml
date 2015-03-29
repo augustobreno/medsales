@@ -22,7 +22,7 @@
 
 	<ui:define name="ajaxItemEdit">
 		<!-- necessário redefinir por um bug no primefaces ajax que não entendeu um action parametrizado -->
-		<p:ajax event="rowEdit" listener="#{saidaAction.onItemEdit}" update=":totalizadorPanel"/>
+		<p:ajax event="rowEdit" listener="#{saidaAction.onItemEdit}" update=":totalizadorPanel" />
 	</ui:define>
 
 	<ui:define name="colQuantidade">
@@ -60,12 +60,10 @@
 
 				<h:form id="totalForm">
 
-					<c:set var="valorPedido"
-						value="#{saidaAction.movimentacao.calcularTotal()}" />
-						
-					<c:set var="somaValoresItens"
-						value="#{saidaAction.movimentacao.calcularSomaValoresItens()}" />	
-						
+					<c:set var="valorPedido" value="#{saidaAction.movimentacao.calcularTotal()}" />
+
+					<c:set var="somaValoresItens" value="#{saidaAction.movimentacao.calcularSomaValoresItens()}" />
+
 					<p:panelGrid columns="3" style="width: 100%;">
 
 						<f:facet name="header">
@@ -76,7 +74,8 @@
 						<p:outputLabel value="Desconto" for="desconto" />
 						<p:outputPanel>
 							<pe:inputNumber id="desconto" value="#{saidaAction.movimentacao.desconto}" symbol=" %" symbolPosition="suffix" />
-							<p:commandButton value="Aplicar" update=":listForm :totalizadorPanel" actionListener="#{saidaAction.aplicarDesconto()}"/>
+							<p:commandButton value="Aplicar" update=":listForm :totalizadorPanel"
+								actionListener="#{saidaAction.aplicarDesconto()}" />
 						</p:outputPanel>
 
 						<h:outputText value="" />
@@ -181,8 +180,8 @@
 						<p:outputPanel>
 							<pe:inputNumber id="valor" value="#{saidaNotasOriginaisModalAction.valor}" symbol="R$ " required="true" />
 							<p:commandButton icon="ui-icon-plus" process="@this valor" update=":totalizadorPanel"
-								actionListener="#{saidaNotasOriginaisModalAction.add(saidaAction.movimentacao)}" 
-								action="#{saidaAction.salvarAutomaticamente()}"/>
+								actionListener="#{saidaNotasOriginaisModalAction.add(saidaAction.movimentacao)}"
+								action="#{saidaAction.salvarAutomaticamente()}" />
 						</p:outputPanel>
 						<p:message for="valor" />
 
@@ -190,15 +189,13 @@
 							emptyMessage="Nenhuma nota cadastrada">
 							<f:facet name="header">
 			            	Notas Originais
-			        	</f:facet>
+			        		</f:facet>
 
-							<h:outputText value="#{nota.valor}">
-			        		valoresNotaOriginal
-			        	</h:outputText>
+							<h:outputText value="#{nota.valor}" converter="BigDecimalConverter" />
 
 							<p:commandButton id="btDelNota" icon="ui-icon-trash" immediate="true" update=":totalizadorPanel"
-								actionListener="#{saidaNotasOriginaisModalAction.remove(saidaAction.movimentacao, nota)}" 
-								action="#{saidaAction.salvarAutomaticamente()}"/>
+								actionListener="#{saidaNotasOriginaisModalAction.remove(saidaAction.movimentacao, nota)}"
+								action="#{saidaAction.salvarAutomaticamente()}" />
 
 
 						</p:dataList>
@@ -208,10 +205,20 @@
 		</p:outputPanel>
 	</ui:define>
 
+	<!-- Para permitir editar o numero do pedido -->
+	<ui:define name="dadosComplementares">
+
+		<p:outputLabel value="Nº do Pedido:" for="numPedido" />
+		<p:inputText id="numPedido" value="#{saidaAction.movimentacao.numeroPedido}"/>
+		<p:message for="numPedido" />
+
+	</ui:define>
+
 	<ui:define name="botoesCustom">
 
 		<p:menuitem value="Exibir Recibo" icon="ui-icon-disk"
-			action="#{p_action.redirectIfNoError('reciboSaida.xhtml?lid='.concat(saidaAction.movimentacao.id))}" ajax="false" target="_blank" immediate="true" />
+			action="#{p_action.redirectIfNoError('reciboSaida.xhtml?lid='.concat(saidaAction.movimentacao.id))}" ajax="false"
+			target="_blank" immediate="true" />
 
 	</ui:define>
 

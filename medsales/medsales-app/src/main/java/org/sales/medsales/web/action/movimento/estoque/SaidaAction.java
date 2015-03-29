@@ -28,7 +28,7 @@ import org.sales.medsales.util.CalculosUtil;
 @SuppressWarnings("serial")
 @Named
 @ConversationScoped
-public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
+public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> { 
 
 	/** armazena os saldos dos produtos consultados */
 	private Map<Long, SaldoProdutoVO> saldos = new HashMap<>();

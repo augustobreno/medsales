@@ -7,10 +7,6 @@
 
 <h:head>
 
-	<ui:param name="param_pageTitle"
-		value="Saída de Estoque #{not empty saidaAction.movimentacao.numeroPedido ? viewFunctions.concat('- Pedido Nº ', saidaAction.movimentacao.numeroPedido) : ''}" />
-
-
 	<f:facet name="first">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
@@ -32,23 +28,29 @@
 </h:head>
 <f:metadata>
 	<!-- lid para book-markable -->
-	<f:viewParam name="lid" value="#{saidaAction.lid}" />
-	<f:viewAction action="#{saidaAction.loadFromId()}" />
+	<f:viewParam name="lid" value="#{saidaReciboAction.lid}" />
+	<f:viewAction action="#{saidaReciboAction.loadFromId()}" />
 
 </f:metadata>
 
 <h:body>
-	<div class="page-header">
-		<h1>#{param_pageTitle}</h1>
-	</div>
+	<h:form>
+		<div class="page-header">
+			<h1>
+				<p:inplace editor="true">
+					<p:inputText value="#{saidaReciboAction.tituloRecibo}" />
+				</p:inplace>
+			</h1>
+		</div>
+	</h:form>
 
 	<p:outputPanel style="width:900px">
 
 		<p:outputLabel for="desconto" value="Desconto: " />
 		<h:outputText id="desconto"
-			value="#{saidaAction.movimentacao.desconto != null ? saidaAction.movimentacao.desconto : ' 0'}  %" />
+			value="#{saidaReciboAction.movimentacao.desconto != null ? saidaReciboAction.movimentacao.desconto : ' 0'}  %" />
 
-		<p:dataTable id="itemList" value="#{saidaAction.itens}" var="item" emptyMessage="Nenhum Produto cadastrado.">
+		<p:dataTable id="itemList" value="#{saidaReciboAction.itens}" var="item" emptyMessage="Nenhum Produto cadastrado.">
 
 			<f:facet name="header">
     				Produtos
@@ -71,19 +73,19 @@
 			</p:column>
 
 			<p:column headerText="R$ Final" style="text-align:right" width="100">
-				<h:outputText value="#{item.precoProduto.getValorComDesconto(saidaAction.movimentacao.desconto)}">
+				<h:outputText value="#{item.precoProduto.getValorComDesconto(saidaReciboAction.movimentacao.desconto)}">
 					<f:convertNumber type="currency" pattern="#,##0.00" />
 				</h:outputText>
 			</p:column>
 
 			<p:column headerText="R$ Total" style="text-align:right" width="100">
-				<h:outputText id="precoTotal" value="#{saidaAction.calcularPrecoTotal(item)}" converter="BigDecimalConverter" />
+				<h:outputText id="precoTotal" value="#{saidaReciboAction.calcularPrecoTotal(item)}" converter="BigDecimalConverter" />
 			</p:column>
 
 			<f:facet name="footer">
 
 				<div style="width: 100%; text-align: right;">
-					<c:set var="valorPedido" value="#{saidaAction.movimentacao.calcularTotal()}" />
+					<c:set var="valorPedido" value="#{saidaReciboAction.movimentacao.calcularTotal()}" />
 
 					<p:outputLabel for="total" value="Total: " />
 					<h:outputText id="total" value="#{valorPedido}" converter="BigDecimalConverter" />
@@ -92,21 +94,25 @@
 
 		</p:dataTable>
 
+		<h:form>
+			<p:panelGrid columns="2">
+				<p:outputLabel for="data" value="Data: " />
+				<h:outputText id="data" value="______/______/___________" />
 
-		<p:panelGrid columns="2">
-			<p:outputLabel for="data" value="Data: " />
-			<h:outputText id="data" value="______/______/___________" />
+				<p:outputLabel for="assinatura" value="Assinatura: " />
+				<h:outputText id="assinatura" value="____________________________________________________________________" />
 
-			<p:outputLabel for="assinatura" value="Assinatura: " />
-			<h:outputText id="assinatura" value="____________________________________________________________________" />
-			
-			<p:outputLabel for="cliente" value="" />
-			<h:outputText id="cliente" value="#{saidaAction.movimentacao.parceiro.nome}" />
-		</p:panelGrid>
+				<p:outputLabel for="cliente" value="" />
+				<p:inplace editor="true">
+					<p:inputText id="cliente" value="#{saidaReciboAction.nomeCliente}" />
+				</p:inplace>
+			</p:panelGrid>
+		</h:form>
 
-
-
-
+		<br />
+		<br />
+		<br />
+		<br />
 
 	</p:outputPanel>
 </h:body>

@@ -28,9 +28,9 @@ public class SaidaEstoque extends MovimentoEstoque {
 	private Double desconto;
 
 	/**
-	 * Numero sequencial para identificação de um pedido por cliente.
+	 * Sequencial para identificação de um pedido por cliente.
 	 */
-	private Integer numeroPedido;
+	private String numeroPedido;
 	
 	/**
 	 * Valores das notas originais de compras dos produtos.
@@ -56,11 +56,11 @@ public class SaidaEstoque extends MovimentoEstoque {
 		return "Saída";
 	}
 
-	public Integer getNumeroPedido() {
+	public String getNumeroPedido() {
 		return numeroPedido;
 	}
 
-	public void setNumeroPedido(Integer numeroPedido) {
+	public void setNumeroPedido(String numeroPedido) {
 		this.numeroPedido = numeroPedido;
 	}
 
