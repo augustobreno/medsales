@@ -44,7 +44,7 @@
 		</div>
 	</h:form>
 
-	<p:outputPanel style="width:900px">
+	<p:outputPanel style="width:800px">
 
 		<p:outputLabel for="desconto" value="Desconto: " />
 		<h:outputText id="desconto"
@@ -56,11 +56,7 @@
     				Produtos
 	    </f:facet>
 
-			<p:column headerText="Cód Barras" width="150">
-				<h:outputText value="#{item.precoProduto.produto.codigoBarras}" />
-			</p:column>
-
-			<p:column headerText="Produto" width="350">
+			<p:column headerText="Produto" width="400">
 				<h:outputText value="#{item.precoProduto.produto.nome}" />
 			</p:column>
 

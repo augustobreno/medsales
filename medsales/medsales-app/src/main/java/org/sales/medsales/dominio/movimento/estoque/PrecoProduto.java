@@ -76,4 +76,15 @@ public class PrecoProduto extends EntityBase<Long> {
 	public BigDecimal getValorComDesconto(double desconto) {
 		return CalculosUtil.aplicarDesconto(this.valor, desconto);
 	}
+
+	/**
+	 * @return true se este preço for mais recente que o recebido por parâmetro.
+	 */
+	public boolean isMaisRecente(PrecoProduto outroPreco) {
+		/*
+		 * Checa-se primeiro a data de alteração e depois o ID
+		 */
+		return outroPreco.getValidoEm().before(this.getValidoEm())
+				|| (outroPreco.getValidoEm().equals(this.getValidoEm()) &&  this.getId() > outroPreco.getId());
+	}
 }

@@ -85,17 +85,17 @@ function limparCampoProduto() {
 					<p:ajax event="rowEdit" listener="#{movimentoAction.onItemEdit}" />
 				</ui:insert>
 
-				<p:column headerText="Cód Barras">
+				<p:column headerText="Cód Barras" width="150">
 					<h:outputText value="#{item.precoProduto.produto.codigoBarras}" />
 				</p:column>
 
-				<p:column headerText="Produto">
+				<p:column headerText="Produto" width="400">
 					<h:outputText value="#{item.precoProduto.produto.nome}" />
 				</p:column>
 
 				<!-- permite a customização da coluna Quantidade -->
 				<ui:insert name="colQuantidade">
-					<p:column headerText="Quantidade" style="text-align:center">
+					<p:column headerText="Quantidade" style="text-align:center" width="100">
 						<p:cellEditor>
 							<f:facet name="output">
 								<h:outputText value="#{item.quantidade}" />
@@ -107,14 +107,14 @@ function limparCampoProduto() {
 					</p:column>
 				</ui:insert>
 
-				<p:column headerText="R$ Un" style="text-align:right">
+				<p:column headerText="R$ Un" style="text-align:right" width="100">
 					<h:outputText value="#{item.precoProduto.valor}" converter="BigDecimalConverter" />
 				</p:column>
 
 				<!-- permite a inclusão de colunas customizadas -->
 				<ui:insert name="colCustom" />
 
-				<p:column headerText="R$ Total" style="text-align:right">
+				<p:column headerText="R$ Total" style="text-align:right" width="100">
 					<h:outputText id="precoTotal" value="#{p_action.calcularPrecoTotal(item)}" converter="BigDecimalConverter" />
 				</p:column>
 

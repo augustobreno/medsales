@@ -26,10 +26,10 @@
 	</ui:define>
 
 	<ui:define name="colQuantidade">
-		<p:column headerText="Quant/Estoque" style="text-align:center">
+		<p:column headerText="Quantidade" style="text-align:center" width="100">
 			<p:cellEditor>
 				<f:facet name="output">
-					<h:outputText value="#{item.quantidade}/#{saidaAction.getSaldo(item.precoProduto.produto).quantidade}" />
+					<h:outputText value="#{item.quantidade}" />
 				</f:facet>
 				<f:facet name="input">
 					<p:spinner value="#{item.quantidade}" min="1" size="5" />
@@ -38,8 +38,8 @@
 		</p:column>
 	</ui:define>
 
-	<ui:define name="colCustom">
-		<p:column headerText="R$ Desconto" style="text-align:right">
+	<ui:define name="colCustom" >
+		<p:column headerText="R$ Desc" style="text-align:right" width="100">
 			<h:outputText value="#{item.precoProduto.getValorComDesconto(saidaAction.movimentacao.desconto)}">
 				<f:convertNumber type="currency" pattern="#,##0.00" />
 			</h:outputText>

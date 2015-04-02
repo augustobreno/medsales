@@ -2,7 +2,10 @@ package org.sales.medsales.web.action.movimento.estoque;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.Conversation;
@@ -127,6 +130,8 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		filter.paginate(0, 15);
 		List<PrecoProduto> produtos = produtoFacade.findAllPrecoProdutoBy(filter);
 
+		produtos = removerDuplicatas(produtos);
+		
 		/*
 		 * Para automatizar a interface, se a consulta resultar em apenas 1
 		 * produto, e a chave de consulta for exatamente igual ao código de
@@ -157,6 +162,28 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		}
 
 		return produtos;
+	}
+
+	/**
+	 * Produtos que possuem mais de um preço cadastrado apresentarão mais de um Resultado
+	 * na listagem. Este método mantém apenas o preço mais recente de cada produto.
+	 * @param produtos
+	 * @return Nova lista.
+	 */
+	private ArrayList<PrecoProduto> removerDuplicatas(List<PrecoProduto> produtos) {
+		// TODO melhorar a consulta realizada para não precisar deste método
+		Map<String, PrecoProduto> precos = new HashMap<String, PrecoProduto>();
+		
+		for (Iterator<PrecoProduto> iterator = produtos.iterator(); iterator.hasNext();) {
+			PrecoProduto precoProduto = iterator.next();
+
+			PrecoProduto precoMapa = precos.get(precoProduto.getProduto().getCodigoBarras());
+			if (precoMapa == null || precoProduto.isMaisRecente(precoMapa)) {
+				precos.put(precoProduto.getProduto().getCodigoBarras(), precoProduto);
+			} 
+		}
+		
+		return new ArrayList<PrecoProduto>(precos.values());
 	}
 
 	/**
