@@ -36,7 +36,7 @@ public class SaidaEstoque extends MovimentoEstoque {
 	 * Valores das notas originais de compras dos produtos.
 	 */
 	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="saidaEstoque", orphanRemoval=true)
-	private List<NotaCompra> notasCompra;
+	private List<NotaCompra> notasCompra = new ArrayList<NotaCompra>();
 	
 	@Override
 	protected void defineOperacao() {

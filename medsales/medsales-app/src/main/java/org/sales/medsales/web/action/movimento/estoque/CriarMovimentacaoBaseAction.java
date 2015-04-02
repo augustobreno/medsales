@@ -279,18 +279,22 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 	}
 
 	/**
-	 * Devida a um problema de comportamento da coleção do tipo Bag do JPA,
+	 * Devido a um problema de comportamento da coleção do tipo Bag do JPA,
 	 * é preferível transferir os itens para uma coleção do tipo ArrayList 
 	 * na primeira vez que o movimento for salvo.
 	 */
-	private void evitarBagCollection() {
+	protected void evitarBagCollection() {
+		evitarBagItens();
+	}
+	
+	private void evitarBagItens() {
 		List<Item> itens = new ArrayList<Item>();
 		for (Item item : getMovimentacao().getItens()) {
 			itens.add(item);
 		}
 		getMovimentacao().setItens(itens);
 	}
-
+	
 	/**
 	 * Deve persisitir de fato a movimentação.
 	 */
