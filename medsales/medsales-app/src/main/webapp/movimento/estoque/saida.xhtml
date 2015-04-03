@@ -53,45 +53,45 @@
 	font-style: italic;
 	font-size: smaller;
 }
+
+.labelTotalizadores {
+	width:40%
+}
 </style>
 
 		<p:outputPanel id="totalizadorPanel">
-			<p:panelGrid columns="2" layout="grid">
-
+			<p:panelGrid columns="2" layout="grid" >
 				<h:form id="totalForm">
+
 
 					<c:set var="valorPedido" value="#{saidaAction.movimentacao.calcularTotal()}" />
 
 					<c:set var="somaValoresItens" value="#{saidaAction.movimentacao.calcularSomaValoresItens()}" />
 
-					<p:panelGrid columns="3" style="width: 100%;">
+					<p:panelGrid columns="2" style="width: 100%;" columnClasses="labelTotalizadores">
 
 						<f:facet name="header">
     					Cálculo com Descontos       
 	       			</f:facet>
 
-						<p:message for="desconto" />
 						<p:outputLabel value="Desconto" for="desconto" />
 						<p:outputPanel>
-							<pe:inputNumber id="desconto" value="#{saidaAction.movimentacao.desconto}" symbol=" %" symbolPosition="suffix" />
+							<pe:inputNumber id="desconto" value="#{saidaAction.movimentacao.desconto}" symbol=" %" symbolPosition="suffix"/>
 							<p:commandButton value="Aplicar" update=":listForm :totalizadorPanel"
 								actionListener="#{saidaAction.aplicarDesconto()}" />
 						</p:outputPanel>
 
-						<h:outputText value="" />
 						<p:outputLabel value="Total do Pedido" for="total" />
 						<h:outputText id="total" value="#{somaValoresItens}">
 							<f:convertNumber type="currency" pattern="R$ #,##0.00" />
 						</h:outputText>
 
-						<h:outputText value="" />
 						<p:outputLabel value="Descontos" for="descontos" />
 						<h:outputText id="descontos"
 							value="#{calculosUtil.calcularDesconto(somaValoresItens, saidaAction.movimentacao.desconto)}">
 							<f:convertNumber type="currency" pattern="R$ #,##0.00" />
 						</h:outputText>
 
-						<h:outputText value="" />
 						<p:outputPanel>
 							<p:outputLabel value="Valor Final " for="vfinal" />
 							<h:outputText value=" (VF)" styleClass="labelFormula" />
@@ -110,7 +110,7 @@
 					<c:set var="valorComissao" value="#{calculosUtil.calcularDesconto(totalNotaCompra, 2)}" />
 					<c:set var="valorLucro" value="#{valorPedido - valorInvestimento - valorComissao}" />
 
-					<p:panelGrid columns="2" style="width: 100%;">
+					<p:panelGrid columns="2" style="width: 100%;" columnClasses="labelTotalizadores">
 
 						<f:facet name="header">
     					Base de Lucro       
