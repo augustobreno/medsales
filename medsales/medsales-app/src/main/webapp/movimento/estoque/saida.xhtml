@@ -17,7 +17,7 @@
 <ui:composition template="criarMovimentoTemplate.xhtml">
 
 	<ui:param name="param_pageTitle"
-		value="Saída de Estoque #{not empty saidaAction.movimentacao.numeroPedido ? viewFunctions.concat('- Pedido Nº ', saidaAction.movimentacao.numeroPedido) : ''}" />
+		value="Saída de Estoque - #{saidaAction.titulo}" />
 	<ui:param name="movimentoAction" value="#{saidaAction}" />
 
 	<ui:define name="ajaxItemEdit">

@@ -1,6 +1,8 @@
 package org.sales.medsales.web.action.movimento.estoque;
 
 import java.math.BigDecimal;
+import java.text.MessageFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedList;
 
@@ -24,6 +26,14 @@ import org.sales.medsales.util.CalculosUtil;
 @ConversationScoped
 public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> { 
 
+	private String titulo;
+	
+	@Override
+	public void loadFromId() {
+		super.loadFromId();
+		setTitulo();
+	}
+	
 	@Override
 	protected void initMovimentacao() {
 		SaidaEstoque saidaEstoque = new SaidaEstoque();
@@ -35,6 +45,7 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 	@Override
 	protected void salvar() {
 		getEstoqueFacade().salvar(getMovimentacao());
+		setTitulo();
 	}
 	
 	@Override
@@ -61,5 +72,27 @@ public class SaidaAction extends CriarMovimentacaoBaseAction<SaidaEstoque> {
 		// resta salvar automaticamente, quando ativado
 		salvarAutomaticamente();
 	}
+
+	protected void setTitulo() {
+		
+		SaidaEstoque movimento = getMovimentacao() != null ? getMovimentacao() : new SaidaEstoque(); 
+		
+		String format = "Pedido: {0} em {1} - Nº {2}";
+		String titulo = 
+				MessageFormat.format(format, 
+					movimento.getParceiro() != null ?  movimento.getParceiro().getNome() : "<Parceiro>",
+					movimento.getDataMovimento() != null ? new SimpleDateFormat("dd/MM/yyyy").format(movimento.getDataMovimento()) : "<Data>",
+					movimento.getNumeroPedido() != null ?  movimento.getNumeroPedido() : "<Número>");
+		
+		setTitulo(titulo);
+	}
+
 	
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String tituloRecibo) {
+		this.titulo = tituloRecibo;
+	}
 }
