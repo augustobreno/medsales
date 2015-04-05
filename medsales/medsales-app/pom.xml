@@ -6,6 +6,12 @@
 	<artifactId>medsales-app</artifactId>
 	<packaging>war</packaging>
 
+	<parent>
+		<groupId>org.sales</groupId>
+		<artifactId>medsales</artifactId>
+		<version>1.0</version>
+	</parent>
+
 	<name>medsales</name>
 
 	<dependencies>
@@ -181,9 +187,5 @@
 		</plugins>
 	</build>
 
-	<parent>
-		<groupId>org.sales</groupId>
-		<artifactId>medsales</artifactId>
-		<version>1.0-SNAPSHOT</version>
-	</parent>
+
 </project>

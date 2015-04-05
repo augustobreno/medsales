@@ -5,7 +5,7 @@
 
 	<groupId>org.sales</groupId>
 	<artifactId>medsales</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>pom</packaging>
 
 	<name>medsales</name>
@@ -133,13 +133,13 @@
 			<dependency>
 				<groupId>org.easy</groupId>
 				<artifactId>qbeasy</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>1.0</version>
 			</dependency>
 
 			<dependency>
 				<groupId>org.easy</groupId>
 				<artifactId>testeasy</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>1.0</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-beanutils</groupId>
