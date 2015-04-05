@@ -83,7 +83,7 @@
 				<div style="width: 100%; text-align: right;">
 					<c:set var="valorPedido" value="#{saidaReciboAction.movimentacao.calcularTotal()}" />
 
-					<p:outputLabel for="total" value="Total: " />
+					<p:outputLabel for="total" value="Total: R$ " style="padding-right: 5px"/>
 					<h:outputText id="total" value="#{valorPedido}" converter="BigDecimalConverter" />
 				</div>
 			</f:facet>

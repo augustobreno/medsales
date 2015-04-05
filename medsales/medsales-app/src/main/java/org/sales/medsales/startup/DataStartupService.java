@@ -67,8 +67,8 @@ public class DataStartupService {
 		Locale.setDefault(new Locale("PT", "BR")); // TODO verificar a melhor maneira de fazer isso
 		loadProdutos();
 		loadParceiro();
-		loadCiclos();
-		loadMovimentos();
+//		loadCiclos();
+//		loadMovimentos();
 		
 	}
 
@@ -160,7 +160,6 @@ public class DataStartupService {
 	 * Lê produtos a partir do arquivo lista_produtos_eticos.txt
 	 */
 	private void loadProdutos() throws Exception {
-		
 		// stateless session para otimizar o loop com inserts.
 		SessionFactory sessionFactory = emf.unwrap(SessionFactory.class);
 		StatelessSession statelessSession = sessionFactory.openStatelessSession();

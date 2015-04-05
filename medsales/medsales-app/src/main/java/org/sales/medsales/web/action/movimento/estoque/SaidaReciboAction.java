@@ -1,7 +1,12 @@
 package org.sales.medsales.web.action.movimento.estoque;
 
+import java.text.MessageFormat;
+import java.text.SimpleDateFormat;
+
 import javax.enterprise.context.ConversationScoped;
 import javax.inject.Named;
+
+import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
 
 /**
  * Para controle da tela de impressão de recibo de saída de estoque.
@@ -31,19 +36,25 @@ public class SaidaReciboAction extends SaidaAction {
 		setNomeCliente();
 	}
 	
-	private void setNomeCliente() {
-		String nome = "Cliente";
+	protected void setNomeCliente() {
+		String nome = "<Nome do Parceiro>";
 		if (getMovimentacao() != null && getMovimentacao().getParceiro() != null) {
 			nome = getMovimentacao().getParceiro().getNome(); 
 		}
 		setNomeCliente(nome);
 	}
 
-	private void setTituloRecibo() {
-		String titulo = "Pedido";
-		if (getMovimentacao() != null && getMovimentacao().getNumeroPedido() != null) {
-			titulo = "Pedido Nº " + getMovimentacao().getNumeroPedido(); 
-		}
+	protected void setTituloRecibo() {
+		
+		SaidaEstoque movimento = getMovimentacao() != null ? getMovimentacao() : new SaidaEstoque(); 
+		
+		String format = "Pedido: {0} em {1} - Nº {2}";
+		String titulo = 
+				MessageFormat.format(format, 
+					movimento.getParceiro() != null ?  movimento.getParceiro().getNome() : "<Parceiro>",
+					movimento.getDataMovimento() != null ? new SimpleDateFormat("dd/MM/yyyy").format(movimento.getDataMovimento()) : "<Data>",
+					movimento.getNumeroPedido() != null ?  movimento.getNumeroPedido() : "<Número>");
+		
 		setTituloRecibo(titulo);
 	}
 

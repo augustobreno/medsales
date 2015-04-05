@@ -2,3 +2,10 @@
 	top:51px;
 	z-index:9999;
 }
+
+/*
+ * Removendo a borda do p:panelGrid em toda a aplicação.
+ */
+.ui-panelgrid-content, .ui-panelgrid td, .ui-panelgrid tr {
+	border-style: none !important
+}

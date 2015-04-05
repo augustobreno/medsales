@@ -16,6 +16,14 @@
 .labels_col1 {
 	max-width: 200px
 }
+
+
+</style>
+
+		<style type="text/css" media="print">
+.dontprint {
+	display: none;
+}
 </style>
 
 		<script type="text/javascript">
@@ -41,12 +49,10 @@ function limparCampoProduto() {
 		</h:form>
 
 		<h:form id="itemForm">
-			<p:focus context="itemGrid" />
 			<p:panelGrid id="itemGrid" columns="3" layout="grid" columnClasses="labels_col1">
 
-
-				<p:outputLabel value="Produto:" for="produto" />
-				<p:autoComplete id="produto" value="#{p_action.item.precoProduto}" minQueryLength="2"
+				<p:outputLabel value="Produto:" for="produto" styleClass="dontprint" />
+				<p:autoComplete id="produto" value="#{p_action.item.precoProduto}" minQueryLength="2" styleClass="dontprint"
 					title="Nome ou código de barras do Produto" completeMethod="#{p_action.searchProdutos}" var="precoProduto"
 					itemLabel="#{precoProduto.produto.nome}" itemValue="#{precoProduto}" dropdown="true" required="true">
 
@@ -58,143 +64,149 @@ function limparCampoProduto() {
 					</p:column>
 
 				</p:autoComplete>
-				<p:message for="produto" />
+				<p:message for="produto" styleClass="dontprint" />
 
-				<p:outputLabel value="Quantidade:" for="quantidade" />
-				<p:spinner id="quantidade" value="#{p_action.item.quantidade}" min="1" required="true" />
-				<p:message for="quantidade" />
+				<p:outputLabel value="Quantidade:" for="quantidade" styleClass="dontprint" />
+				<p:spinner id="quantidade" value="#{p_action.item.quantidade}" min="1" required="true" styleClass="dontprint" />
+				<p:message for="quantidade" styleClass="dontprint" />
 
 				<p:commandButton value="Adicionar" action="#{p_action.adicionarItem}" update=":content-panel"
-					process="@this quantidade produto" />
+					process="@this quantidade produto" styleClass="dontprint" />
 			</p:panelGrid>
 		</h:form>
-
 		<p:spacer />
 
 		<!-- Lista de produtos adicionados -->
-		<h:form id="listForm">
-			<p:dataTable id="itemList" value="#{p_action.itens}" var="item" emptyMessage="Nenhum Item cadastrado."
-				editable="true" editMode="row">
 
-				<f:facet name="header">
+		<p:outputPanel id="printable">
+			<h:form id="listForm">
+				<p:dataTable id="itemList" value="#{p_action.itens}" var="item" emptyMessage="Nenhum Item cadastrado."
+					editable="true" editMode="row">
+
+					<f:facet name="header">
     				Itens        
 	       		</f:facet>
 
-				<!-- Permite customizar o evento ajax para edição do item -->
-				<ui:insert name="ajaxItemEdit">
-					<p:ajax event="rowEdit" listener="#{movimentoAction.onItemEdit}" />
-				</ui:insert>
+					<!-- Permite customizar o evento ajax para edição do item -->
+					<ui:insert name="ajaxItemEdit">
+						<p:ajax event="rowEdit" listener="#{movimentoAction.onItemEdit}" />
+					</ui:insert>
 
-				<p:column headerText="Cód Barras" width="150">
-					<h:outputText value="#{item.precoProduto.produto.codigoBarras}" />
-				</p:column>
-
-				<p:column headerText="Produto" width="400">
-					<h:outputText value="#{item.precoProduto.produto.nome}" />
-				</p:column>
-
-				<!-- permite a customização da coluna Quantidade -->
-				<ui:insert name="colQuantidade">
-					<p:column headerText="Quantidade" style="text-align:center" width="100">
-						<p:cellEditor>
-							<f:facet name="output">
-								<h:outputText value="#{item.quantidade}" />
-							</f:facet>
-							<f:facet name="input">
-								<p:spinner value="#{item.quantidade}" min="1" size="5" />
-							</f:facet>
-						</p:cellEditor>
+					<p:column headerText="Cód Barras" width="150">
+						<h:outputText value="#{item.precoProduto.produto.codigoBarras}" />
 					</p:column>
-				</ui:insert>
 
-				<p:column headerText="R$ Un" style="text-align:right" width="100">
-					<h:outputText value="#{item.precoProduto.valor}" converter="BigDecimalConverter" />
-				</p:column>
+					<p:column headerText="Produto" width="400">
+						<h:outputText value="#{item.precoProduto.produto.nome}" />
+					</p:column>
 
-				<!-- permite a inclusão de colunas customizadas -->
-				<ui:insert name="colCustom" />
+					<!-- permite a customização da coluna Quantidade -->
+					<ui:insert name="colQuantidade">
+						<p:column headerText="Quantidade" style="text-align:center" width="100">
+							<p:cellEditor>
+								<f:facet name="output">
+									<h:outputText value="#{item.quantidade}" />
+								</f:facet>
+								<f:facet name="input">
+									<p:spinner value="#{item.quantidade}" min="1" size="5" />
+								</f:facet>
+							</p:cellEditor>
+						</p:column>
+					</ui:insert>
 
-				<p:column headerText="R$ Total" style="text-align:right" width="100">
-					<h:outputText id="precoTotal" value="#{p_action.calcularPrecoTotal(item)}" converter="BigDecimalConverter" />
-				</p:column>
+					<p:column headerText="R$ Un" style="text-align:right" width="100">
+						<h:outputText value="#{item.precoProduto.valor}" converter="BigDecimalConverter" />
+					</p:column>
 
-				<p:column style="width:32px">
-					<p:rowEditor />
+					<!-- permite a inclusão de colunas customizadas -->
+					<ui:insert name="colCustom" />
 
-					<p:commandLink actionListener="#{p_action.remover(item)}" update=":content-panel" immediate="true"
-						styleClass="ui-icon ui-icon-trash" />
-				</p:column>
-			</p:dataTable>
-		</h:form>
+					<p:column headerText="R$ Total" style="text-align:right" width="100">
+						<h:outputText id="precoTotal" value="#{p_action.calcularPrecoTotal(item)}" converter="BigDecimalConverter" />
+					</p:column>
 
-		<ui:insert name="totalizador" />
+					<p:column style="width:32px">
+						<p:rowEditor />
 
+						<p:commandLink actionListener="#{p_action.remover(item)}" update=":content-panel" immediate="true"
+							styleClass="ui-icon ui-icon-trash" />
+					</p:column>
+				</p:dataTable>
+			</h:form>
 
-		<h:form id="btnForm">
+			<p:spacer height="5px"/>
 
-			<p:panelGrid columns="3" layout="grid" columnClasses="labels_col1">
-			
-				<p:outputLabel value="Parceiro:" for="parceiro" />
-				<p:autoComplete id="parceiro" value="#{p_action.movimentacao.parceiro}" minQueryLength="2"
-					title="Onde o produto foi comprado/Para quem foi vendido" completeMethod="#{searchParceiroAction.search}"
-					var="parceiro" itemLabel="#{parceiro.nome}" itemValue="#{parceiro}" forceSelection="true" dropdown="true"
-					required="true" />
-				<p:message for="parceiro" />
+			<ui:insert name="totalizador" />
 
-				<p:outputLabel value="Data do Movimento:" for="dtentrada" />
-				<p:calendar id="dtentrada" value="#{p_action.movimentacao.dataMovimento}" pattern="dd/MM/yyyy" mask="true"
-					showOn="button" required="true" />
-				<p:message for="dtentrada" />
+			<h:form id="btnForm">
 
-				<ui:insert name="dadosComplementares"/>
-			</p:panelGrid>
+				<p:panelGrid columns="3" layout="grid" columnClasses="labels_col1">
 
-			<br />
+					<f:facet name="header">
+    					Dados Complementares
+	       			</f:facet>
 
-			<p:separator style="height:2px" />
+					<p:outputLabel value="Parceiro:" for="parceiro" />
+					<p:autoComplete id="parceiro" value="#{p_action.movimentacao.parceiro}" minQueryLength="2"
+						title="Onde o produto foi comprado/Para quem foi vendido" completeMethod="#{searchParceiroAction.search}"
+						var="parceiro" itemLabel="#{parceiro.nome}" itemValue="#{parceiro}" forceSelection="true" dropdown="true"
+						required="true" />
+					<p:message for="parceiro" />
 
-			<div style="text-align: right">
+					<p:outputLabel value="Data do Movimento:" for="dtentrada" />
+					<p:calendar id="dtentrada" value="#{p_action.movimentacao.dataMovimento}" pattern="dd/MM/yyyy" mask="true"
+						showOn="button" required="true" />
+					<p:message for="dtentrada" />
 
-				<p:commandButton value="Voltar" immediate="true" action="/movimento/estoque/movimentos.xhtml?faces-redirect=true" />
+					<ui:insert name="dadosComplementares" />
+				</p:panelGrid>
 
-				<p:splitButton value="Concluir" actionListener="#{p_action.concluir}" icon="ui-icon-disk"
-					action="#{p_action.redirectIfNoError('movimentos.xhtml')}" update="btnForm">
+				<br />
 
-					<p:menuitem value="Salvar Como Rascunho" actionListener="#{p_action.salvarRacunho}" icon="ui-icon-disk"
-						action="#{p_action.redirectIfNoError('movimentos.xhtml')}" update="btnForm" />
+				<div class="dontprint">
+					<p:separator style="height:2px" />
 
-					<ui:insert name="botoesCustom" />
+					<div style="text-align: right">
 
-					<p:separator />
+						<p:commandButton value="Voltar" immediate="true" action="/movimento/estoque/movimentos.xhtml?faces-redirect=true" />
 
-					<p:menuitem value="Exportar para Planilha" icon="ui-icon-document" ajax="false" immediate="true">
-						<p:dataExporter type="xls" target=":listForm:itemList" fileName="pedido" pageOnly="false" />
-					</p:menuitem>
+						<p:splitButton value="Concluir" actionListener="#{p_action.concluir}" icon="ui-icon-disk" update="btnForm">
 
-					<p:menuitem id="itemExcluir" value="Excluir" icon="ui-icon-trash"
-						onclick="$('#btnForm\\:btnRemove').click();return;" />
+							<p:menuitem value="Salvar Como Rascunho" actionListener="#{p_action.salvarRacunho}" icon="ui-icon-disk"
+								action="#{p_action.redirectIfNoError('movimentos.xhtml')}" update="btnForm" />
 
-				</p:splitButton>
+							<ui:insert name="botoesCustom" />
 
-				<!-- Este botão escondido foi necessário porque não foi possível utilizar um diálogo com o p:menuitem acima. -->
-				<p:commandButton id="btnRemove" value="DELETE" actionListener="#{p_action.remover()}"
-					action="#{p_action.redirectIfNoError('movimentos.xhtml')}" update="btnForm"
-					rendered="#{not empty p_action.movimentacao.id}" immediate="true" style="display:none;">
+							<p:separator />
 
-					<p:confirm header="Atenção!"
-						message="Deseja realmente REMOVER este Movimento? Não será possível recuperar suas informações."
-						icon="ui-icon-alert" />
+							<p:menuitem value="Exportar para Planilha" icon="ui-icon-document" ajax="false" immediate="true">
+								<p:dataExporter type="xls" target=":listForm:itemList" fileName="pedido" pageOnly="false" />
+							</p:menuitem>
 
-				</p:commandButton>
+							<p:menuitem id="itemExcluir" value="Excluir" icon="ui-icon-trash"
+								onclick="$('#btnForm\\:btnRemove').click();return;" />
 
+						</p:splitButton>
 
-				<p:confirmDialog global="true">
-					<p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
-					<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
-				</p:confirmDialog>
-			</div>
-		</h:form>
+						<!-- Este botão escondido foi necessário porque não foi possível utilizar um diálogo com o p:menuitem acima. -->
+						<p:commandButton id="btnRemove" value="DELETE" actionListener="#{p_action.remover()}"
+							action="#{p_action.redirectIfNoError('movimentos.xhtml')}" update="btnForm"
+							rendered="#{not empty p_action.movimentacao.id}" immediate="true" style="display:none;">
 
+							<p:confirm header="Atenção!"
+								message="Deseja realmente REMOVER este Movimento? Não será possível recuperar suas informações."
+								icon="ui-icon-alert" />
+
+						</p:commandButton>
+
+						<p:confirmDialog global="true">
+							<p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+							<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+						</p:confirmDialog>
+					</div>
+				</div>
+			</h:form>
+		</p:outputPanel>
 		<p:spacer width="100%" height="20px" />
 	</ui:define>
 </ui:composition>

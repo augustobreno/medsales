@@ -7,7 +7,7 @@
    <persistence-unit name="primary">
    
    		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<jta-data-source>java:/jboss/datasources/ExampleDS</jta-data-source>
+		<jta-data-source>java:jboss/datasources/MySQLDS</jta-data-source>
 		<class>org.sales.medsales.api.dominio.types.HibernateEnumType</class>
 		<class>org.sales.medsales.api.dominio.EntityBase</class>
 		
@@ -18,7 +18,7 @@
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
    
 		<properties>
-			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
+			<!-- <property name="hibernate.hbm2ddl.auto" value="create" /> --> 
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
 			<property name="hibernate.transaction.flush_before_completion"	value="true" />
