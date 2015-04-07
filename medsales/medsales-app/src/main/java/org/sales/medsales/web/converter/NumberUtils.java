@@ -1,9 +1,10 @@
 package org.sales.medsales.web.converter;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.text.ParseException;
+import java.util.Locale;
 
 public class NumberUtils {
     public static final String BIG_DECIMAL_FORMAT = "0.00";
@@ -15,14 +16,10 @@ public class NumberUtils {
     }
  
     public static BigDecimal parseBigDecimal(String s) throws ParseException {
-        final int i = s.indexOf(".");
-        if (i != -1) {
-            throw new ParseException(s, i);
-        }
-        final BigDecimal bigDecimal = (BigDecimal) NumberUtils.format.parse(s);
-        if (bigDecimal.scale() > RE_SCALE) {
-            throw new ParseException(s, i);
-        }
-        return bigDecimal.setScale(RE_SCALE, RoundingMode.DOWN);
+		Locale brasil = new Locale("pt", "BR");
+		DecimalFormat df = new DecimalFormat("#,##0.00", new DecimalFormatSymbols(brasil));
+		df.setParseBigDecimal(true);
+		BigDecimal preco = (BigDecimal) df.parse(s);
+		return preco;
     }
 }

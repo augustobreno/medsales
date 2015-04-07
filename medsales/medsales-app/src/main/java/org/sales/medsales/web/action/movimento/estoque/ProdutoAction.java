@@ -18,7 +18,7 @@ import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimento.estoque.Produto;
 import org.sales.medsales.dominio.movimento.estoque.SaldoProdutoVO;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
-import org.sales.medsales.negocio.movimentacao.estoque.ProdutoFacade;
+import org.sales.medsales.negocio.movimentacao.estoque.produto.ProdutoFacade;
 
 @SuppressWarnings("serial")
 @Named

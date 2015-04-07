@@ -17,10 +17,15 @@
 
 	<h:form id="btnForm">
 		<div style="float: right">
-			<p:commandButton actionListener="#{produtoAction.prepareToInsert()}" icon="ui-icon-plusthick" update=":content-panel"
-				immediate="true" />
+			<p:splitButton value="Adicionar" actionListener="#{produtoAction.prepareToInsert()}" icon="ui-icon-plusthick"
+				update=":content-panel" immediate="true">
+
+				<p:menuitem value="Importar Arquivo" icon="ui-icon-disk"
+								action="produtoImport.xhtml" ajax="false" />
+
+			</p:splitButton>
 		</div>
-	</h:form>	
+	</h:form>
 
 	<h:form id="listForm">
 		<p:dataTable id="table" var="produto" value="#{produtoAction.result}" rendered="#{not empty produtoAction.result}"
@@ -49,9 +54,10 @@
 			<p:column headerText="Cód Barras" sortBy="#{produto.codigoBarras}">
 	                #{produto.codigoBarras}
 	            </p:column>
-	        <p:column headerText="Estoque" sortBy="#{produtoAction.getSaldo(produto).quantidade}" rendered="#{produtoAction.exibirEstoque}">
+			<p:column headerText="Estoque" sortBy="#{produtoAction.getSaldo(produto).quantidade}"
+				rendered="#{produtoAction.exibirEstoque}">
 	                #{produtoAction.getSaldo(produto).quantidade}
-	            </p:column>    
+	            </p:column>
 		</p:dataTable>
 	</h:form>
 

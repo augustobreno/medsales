@@ -27,7 +27,7 @@ import org.sales.medsales.dominio.movimento.estoque.Produto;
 import org.sales.medsales.dominio.movimento.estoque.Status;
 import org.sales.medsales.negocio.ParceiroFacade;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
-import org.sales.medsales.negocio.movimentacao.estoque.ProdutoFacade;
+import org.sales.medsales.negocio.movimentacao.estoque.produto.ProdutoFacade;
 
 /**
  * Classe base que mantém as principais funcionalidades dos fluxos de cadastro e

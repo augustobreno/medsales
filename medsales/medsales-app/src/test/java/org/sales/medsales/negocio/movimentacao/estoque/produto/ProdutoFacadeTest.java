@@ -1,4 +1,4 @@
-package org.sales.medsales.negocio.movimentacao.estoque;
+package org.sales.medsales.negocio.movimentacao.estoque.produto;
 
 import java.math.BigDecimal;
 import java.text.ParseException;
@@ -22,7 +22,7 @@ import org.sales.medsales.exceptions.ProdutoCodBarrasJaExisteException;
 import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 import org.sales.medsales.exceptions.RemoverProdutoComMovimentacaoException;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
-import org.sales.medsales.negocio.movimentacao.estoque.ProdutoFacade;
+import org.sales.medsales.negocio.movimentacao.estoque.produto.ProdutoFacade;
 
 public class ProdutoFacadeTest extends MedSalesBaseTest {
 

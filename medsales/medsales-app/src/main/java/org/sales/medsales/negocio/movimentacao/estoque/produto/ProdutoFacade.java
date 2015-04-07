@@ -1,6 +1,5 @@
-package org.sales.medsales.negocio.movimentacao.estoque;
+package org.sales.medsales.negocio.movimentacao.estoque.produto;
 
-import java.util.Date;
 import java.util.List;
 
 import javax.ejb.Stateless;
@@ -15,8 +14,8 @@ import org.sales.medsales.dominio.movimento.estoque.MovimentoEstoque;
 import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimento.estoque.Produto;
 import org.sales.medsales.exceptions.ProdutoCodBarrasJaExisteException;
-import org.sales.medsales.exceptions.ProdutoSemPrecoException;
 import org.sales.medsales.exceptions.RemoverProdutoComMovimentacaoException;
+import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
 import org.sales.medsales.persistencia.repository.PrecoProdutoRepository;
 import org.sales.medsales.persistencia.repository.ProdutoRepository;
 
@@ -29,6 +28,9 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 
 	@Inject
 	private Instance<EstoqueFacade> estoqueFacadeInstance;
+	
+	@Inject
+	private Instance<AddPrecoProdutoBO> addPrecoProdutoBO;
 
 	/**
 	 * @param codBarras Código de barras de um produto.
@@ -60,25 +62,7 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 	
 	
 	public Produto save(Produto entity, PrecoProduto precoProduto) {
-		if (precoProduto == null || precoProduto.getValor() == null) {
-			throw new ProdutoSemPrecoException(null, "Preco do Produto deve ser informado.");
-		}
-
-		Produto saved = super.save(entity);
-
-		// processa o preço do produto em seguida.
-		Produto original = getRepository().findBy(entity.getId(), "precos");
-		PrecoProduto precoAtual = original.getPrecoAtual();
-
-		if (precoAtual == null || !precoAtual.getValor().equals(precoProduto.getValor())) {
-			precoProduto.setProduto(saved);
-			if (precoProduto.getValidoEm() == null) {
-				precoProduto.setValidoEm(new Date());
-			}
-			getPrecoProdutoRepository().insert(precoProduto);
-		}
-
-		return saved;
+		return getAddPrecoProdutoBO().addPreco(entity, precoProduto);
 	}
 
 	@Override
@@ -121,7 +105,7 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
     public List<PrecoProduto> findAllPrecoProdutoBy(Filter<PrecoProduto> filter) {
         return getPrecoProdutoRepository().findAllBy(filter);
     }
-    
+
     protected PrecoProdutoRepository getPrecoProdutoRepository() {
     	return precoProdutoRepositoryInstance.get();
     }
@@ -129,4 +113,9 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
     protected EstoqueFacade getEstoqueFacade() {
     	return estoqueFacadeInstance.get();
     }
+    
+    protected AddPrecoProdutoBO getAddPrecoProdutoBO() {
+    	return addPrecoProdutoBO.get();
+    }
+    
 }
