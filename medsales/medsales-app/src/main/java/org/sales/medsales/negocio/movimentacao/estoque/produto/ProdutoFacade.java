@@ -54,9 +54,10 @@ public class ProdutoFacade extends CrudFacadeBase<ProdutoRepository, Produto, Lo
 	
 	@Override
 	protected void validateSave(Produto entity) {
-		if (!checkUniqueConstraint(entity, "codigoBarras")) {
-			throw new ProdutoCodBarrasJaExisteException(null, "Este código de barras já está cadastrado.");
-		}
+		// ignorado por enquanto
+//		if (!checkUniqueConstraint(entity, "codigoBarras")) {
+//			throw new ProdutoCodBarrasJaExisteException(null, "Este código de barras já está cadastrado.");
+//		}
 		super.validateSave(entity);
 	}
 	

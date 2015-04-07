@@ -11,6 +11,7 @@ import javax.inject.Inject;
 import junit.framework.Assert;
 
 import org.apache.commons.lang.time.DateUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.sales.medsales.MedSalesBaseTest;
 import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
@@ -88,6 +89,7 @@ public class ProdutoFacadeTest extends MedSalesBaseTest {
 		Assert.assertTrue(produtoEncontrado.getPrecos().size() == 2);
 	}
 
+	@Ignore
 	@Test(expected = ProdutoCodBarrasJaExisteException.class)
 	public void inserirProdutoComCodigoBarrasDuplicado() {
 		Produto produto = new Produto();
