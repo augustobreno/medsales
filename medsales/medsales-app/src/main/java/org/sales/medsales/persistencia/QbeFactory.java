@@ -1,4 +1,4 @@
-package org.sales.medsales.api.persistencia;
+package org.sales.medsales.persistencia;
 
 import javax.enterprise.inject.Default;
 import javax.enterprise.inject.Produces;
@@ -8,6 +8,8 @@ import org.easy.qbeasy.api.OperatorProcessorRepository;
 import org.easy.qbeasy.api.QBERepository;
 import org.easy.qbeasy.repository.criteria.CriteriaQbeRepository;
 import org.easy.qbeasy.repository.criteria.OperatorProcessorRepositoryFactory;
+import org.sales.medsales.persistencia.operator.PrecoMaisRecenteOperator;
+import org.sales.medsales.persistencia.operator.PrecoMaisRecenteProcessor;
 
 /**
  * Para produção de DAOs concretos inseridos em um contexto de injeção de dependência. 
@@ -40,6 +42,7 @@ public class QbeFactory {
 	@Default
 	public OperatorProcessorRepository create() throws Exception {
 		OperatorProcessorRepository processorRepository = OperatorProcessorRepositoryFactory.create();
+		processorRepository.register(PrecoMaisRecenteOperator.class, PrecoMaisRecenteProcessor.class);
 		return processorRepository;	
 	}
 }

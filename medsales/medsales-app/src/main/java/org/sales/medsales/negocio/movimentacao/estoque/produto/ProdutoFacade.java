@@ -13,7 +13,6 @@ import org.sales.medsales.api.negocio.CrudFacadeBase;
 import org.sales.medsales.dominio.movimento.estoque.MovimentoEstoque;
 import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimento.estoque.Produto;
-import org.sales.medsales.exceptions.ProdutoCodBarrasJaExisteException;
 import org.sales.medsales.exceptions.RemoverProdutoComMovimentacaoException;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
 import org.sales.medsales.persistencia.repository.PrecoProdutoRepository;
