@@ -21,7 +21,7 @@ public class PrecoMaisRecenteProcessor extends CriteriaOperatorProcessorBase<Obj
 		maxId.setProjection( Projections.max("id") );
 		
 		// produto_ faz referência ao padrão de nome de alias do qbe
-		maxId.add(Restrictions.eqProperty("produto.id", "produto_.id"));
+		maxId.createCriteria("produto").add(Restrictions.eqProperty("id", "produto_.id"));
 		
 		getJunction().add(Subqueries.propertyEq("id", maxId));
 	}

@@ -12,6 +12,7 @@ import javax.inject.Inject;
 import org.easy.qbeasy.QBEFilter;
 import org.easy.qbeasy.api.operator.Operators;
 import org.sales.medsales.api.exceptions.BusinessException;
+import org.sales.medsales.api.util.StringUtil;
 import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimento.estoque.Produto;
 import org.sales.medsales.persistencia.repository.ProdutoRepository;
@@ -67,7 +68,8 @@ public class ImportarProdutoBO {
 				String[] tokens = linha.split("##");
 
 				String codigoBarras = tokens[0].trim();
-				String nome = tokens[1].trim();
+				String nome = tokens[1];
+				nome = StringUtil.removeDoubleSpaces(nome).trim();
 				BigDecimal preco = NumberUtils.parseBigDecimal(tokens[2]);
 
 				/*
@@ -114,7 +116,12 @@ public class ImportarProdutoBO {
 
 	private Produto findProduto(String codigoBarras, String nome) {
 		QBEFilter<Produto> filter = new QBEFilter<>(Produto.class);
-		filter.filterBy("codigoBarras", Operators.equal(), codigoBarras);
+		
+		if ("0000000000000".equals(codigoBarras)) {
+			filter.filterBy("nome", Operators.equal(), nome);
+		} else {
+			filter.filterBy("codigoBarras", Operators.equal(), codigoBarras);
+		}
 
 		List<Produto> produtos = produtoRepository.findAllBy(filter);
 		
@@ -162,4 +169,5 @@ public class ImportarProdutoBO {
 		}
 		
 	}
+	
 }

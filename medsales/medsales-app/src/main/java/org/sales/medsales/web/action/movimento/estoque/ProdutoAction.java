@@ -11,8 +11,11 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.easy.qbeasy.api.Filter;
+import org.easy.qbeasy.api.Operation;
+import org.easy.qbeasy.api.OperationContainer;
 import org.easy.qbeasy.api.OperationContainer.ContainerType;
 import org.easy.qbeasy.api.operator.Operators;
+import org.sales.medsales.api.util.StringUtil;
 import org.sales.medsales.api.web.action.CrudActionBase;
 import org.sales.medsales.dominio.movimento.estoque.PrecoProduto;
 import org.sales.medsales.dominio.movimento.estoque.Produto;
@@ -57,9 +60,20 @@ public class ProdutoAction extends CrudActionBase<Produto, Long, ProdutoFacade>{
 		super.configSearch(filter);
 		/*
 		 * Configura a consulta para usar um único campo do formulário como filtro
-		 * associado a todos os atributos consultáveis do Produto
+		 * associado a todos os atributos consultáveis do Produto. No caso do nome, cada token
+		 * da chave de consulta é considerada uma restrição, para tornar a consulta mais eficiente, assim
+		 * é possível consultar por partes diferentes do nome.
 		 */
-		filter.filterBy("nome", Operators.like(false), getChaveConsulta());
+		if (!StringUtil.isStringEmpty(getChaveConsulta())) {
+			OperationContainer and = OperationContainer.and();
+			String[] tokens = getChaveConsulta().split(" ");
+			for (String token : tokens) {
+				and.addOperation(new Operation("nome", Operators.like(false), token.trim()));
+			}
+			
+			filter.addContainerOperation(and);
+		}
+		
 		filter.filterBy("codigoBarras", Operators.like(false), getChaveConsulta());
 		filter.setRootContainerType(ContainerType.OR);
 	}

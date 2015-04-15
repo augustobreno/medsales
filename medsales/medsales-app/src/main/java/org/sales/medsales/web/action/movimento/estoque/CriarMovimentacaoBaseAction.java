@@ -2,7 +2,10 @@ package org.sales.medsales.web.action.movimento.estoque;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.Conversation;
@@ -11,10 +14,13 @@ import javax.inject.Inject;
 import org.easy.qbeasy.QBEFilter;
 import org.easy.qbeasy.api.Filter;
 import org.easy.qbeasy.api.Operation;
+import org.easy.qbeasy.api.OperationContainer;
+import org.easy.qbeasy.api.OperationContainer.ContainerType;
 import org.easy.qbeasy.api.operator.Operators;
 import org.primefaces.context.RequestContext;
 import org.primefaces.event.RowEditEvent;
 import org.sales.medsales.api.exceptions.BusinessException;
+import org.sales.medsales.api.util.StringUtil;
 import org.sales.medsales.api.web.action.ActionBase;
 import org.sales.medsales.dominio.Parceiro;
 import org.sales.medsales.dominio.movimento.estoque.Item;
@@ -24,7 +30,6 @@ import org.sales.medsales.dominio.movimento.estoque.Status;
 import org.sales.medsales.negocio.ParceiroFacade;
 import org.sales.medsales.negocio.movimentacao.estoque.EstoqueFacade;
 import org.sales.medsales.negocio.movimentacao.estoque.produto.ProdutoFacade;
-import org.sales.medsales.persistencia.operator.PrecoMaisRecenteOperator;
 
 /**
  * Classe base que mantém as principais funcionalidades dos fluxos de cadastro e
@@ -120,16 +125,34 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		 */
 		Filter<PrecoProduto> filter = new QBEFilter<PrecoProduto>(new PrecoProduto());
 
-		filter.filterBy("produto", new PrecoMaisRecenteOperator());
-		filter.addOr(
-			new Operation("produto.nome", Operators.like(false), chave),
-			new Operation("produto.codigoBarras", Operators.like(false), chave)
-		);
+		// FIXME funciona local mas nao no openshift
+//		filter.filterBy("produto", new PrecoMaisRecenteOperator());
+		
+		filter.setRootContainerType(ContainerType.OR);
+		filter.filterBy("produto.codigoBarras", Operators.like(false), chave);
 
+		/*
+		 * Configura a consulta para usar um único campo do formulário como filtro
+		 * associado a todos os atributos consultáveis do Produto. No caso do nome, cada token
+		 * da chave de consulta é considerada uma restrição, para tornar a consulta mais eficiente, assim
+		 * é possível consultar por partes diferentes do nome.
+		 */
+		if (!StringUtil.isStringEmpty(chave)) {
+			OperationContainer and = OperationContainer.and();
+			String[] tokens = chave.split(" ");
+			for (String token : tokens) {
+				and.addOperation(new Operation("produto.nome", Operators.like(false), token.trim()));
+			}
+			filter.addContainerOperation(and);
+		}
+		
+		
 		filter.addFetch("produto");
-		filter.paginate(0, 15);
+		filter.paginate(0, 20);
 		List<PrecoProduto> produtos = produtoFacade.findAllPrecoProdutoBy(filter);
 
+		produtos = removerDuplicatas(produtos);
+		
 		/*
 		 * Para automatizar a interface, se a consulta resultar em apenas 1
 		 * produto, e a chave de consulta for exatamente igual ao código de
@@ -160,6 +183,28 @@ public abstract class CriarMovimentacaoBaseAction<MOV extends MovimentoEstoque> 
 		}
 
 		return produtos;
+	}
+
+	/**
+	 * Produtos que possuem mais de um preço cadastrado apresentarão mais de um Resultado
+	 * na listagem. Este método mantém apenas o preço mais recente de cada produto.
+	 * @param produtos
+	 * @return Nova lista.
+	 */
+	private ArrayList<PrecoProduto> removerDuplicatas(List<PrecoProduto> produtos) {
+		// TODO melhorar a consulta realizada para não precisar deste método
+		Map<String, PrecoProduto> precos = new HashMap<String, PrecoProduto>();
+		
+		for (Iterator<PrecoProduto> iterator = produtos.iterator(); iterator.hasNext();) {
+			PrecoProduto precoProduto = iterator.next();
+
+			PrecoProduto precoMapa = precos.get(precoProduto.getProduto().getCodigoBarras());
+			if (precoMapa == null || precoProduto.isMaisRecente(precoMapa)) {
+				precos.put(precoProduto.getProduto().getCodigoBarras(), precoProduto);
+			} 
+		}
+		
+		return new ArrayList<PrecoProduto>(precos.values());
 	}
 
 	/**

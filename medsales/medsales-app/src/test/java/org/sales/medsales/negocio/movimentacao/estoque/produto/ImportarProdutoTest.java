@@ -109,7 +109,7 @@ public class ImportarProdutoTest extends MedSalesBaseTest {
 		Produto produto = buscarProduto("import4444444");
 		Assert.assertEquals(2, produto.getPrecos().size());
 		Assert.assertEquals(NumberUtils.parseBigDecimal("11,10"), produto.getPrecoAtual().getValor());
-		// nesse caso, o nome também foi alterado
+		// nesse caso, o nome também foi alterado 
 		Assert.assertTrue(produto.getNome().endsWith("ALTERADO"));
 		
 		produto = buscarProduto("import5555555");
