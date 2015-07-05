@@ -1,0 +1,1000 @@
+7896016806308##BARACLUDE                                    0,5MG CX 30 COMP##772,12 
+7896016806315##BARACLUDE                                    1MG CX 30 COMP##772,12 
+7896676400724##BARIOGEL                                     100% SUS ORAL CX 1 COPO X 150ML##12,05 
+7896676413625##BARIOGEL                                     100% SUS ORAL CX 10 COPOS X 150ML##120,56 
+7896676413618##BARIOGEL                                     100% SUS ORAL CX 10 COPOS X 200ML##134,09 
+7896226105192##BARIVIT                                      CX 60 COMP REV MAST##50,14 
+7891317488550##BART H                                       150+12,5MG CX 30 COMP##58,48 
+7891317488598##BART H                                       300+12,5MG CX 30 COMP##58,48 
+7891106000956##BAYCUTEN N                                   10+0,443MG/G CREME BG 40##21,49 
+7899095220492##BEBEX ADE                                    ADE POM BG 45##12,16 
+7899095220478##BEBEX N                                      N POM BG 60##29,35 
+7899095222168##BEBEX PREVINE                                PREVINE 200MG CREME BG PLAS 45##11,03 
+7898549751810##BEBEZINC                                     SUS ORAL 30 ML##20,27 
+7896422520362##BECARVE                                      12,5MG CX 15 COMP##27,49 
+7896422520379##BECARVE                                      12,5MG CX 30 COMP##54,97 
+7896422520393##BECARVE                                      25MG CX 15 COMP##30,83 
+7896422520409##BECARVE                                      25MG CX 30 COMP##61,65 
+7896422524315##BECARVE                                      3,125MG CX 15 COMP##22,17 
+7896422524322##BECARVE                                      3,125MG CX 30 COMP##44,34 
+7896422520331##BECARVE                                      6,25MG CX 15 COMP##24,78 
+7896422520348##BECARVE                                      6,25MG CX 30 COMP##49,57 
+7896016800849##BECENUN                                      100MG INJ 10FA+DIL E.M.##2.289,21 
+7896714233499##BECLONATO                                    5+2MG/ML SUS INJ 1AMP X 1ML+SER##12,18 
+7896714233512##BECLONATO                                    SUS INJ CX 50 AMP X 1ML##906,39 
+7896269900211##BECLOSOL                                     50MCG SOL SPRAY NAS AQU 200DOS##37,43 
+7893353206143##BEDOZIL                                      5000MCG SOL INJ CX 10 AMP X 2ML##66,19 
+7893353206129##BEDOZIL                                      5000MCG SOL INJ CX 50 AMP X 2ML##221,25 
+7896523210919##BEFOLIK                                      5MG CX 30 COMP REV##7,05 
+7898582380183##BELARA                                       2+0,03MG CX 21 COMP REV##27,06 
+7897917000338##BELCOMPLEX                                   FR 50 COMP##12,84 
+7897917000345##BELCOMPLEX                                   SOL OR FR GTS 30ML##8,64 
+7897917000352##BELCOMPLEX                                   XPE FR 100ML##6,74 
+7897917000260##BELFACTRIM                                   400+80MG CX 20 COMP##9,72 
+7897917001694##BELFACTRIM F                                 800+160MG CX 10 COMP##10,35 
+7897917001762##BELFAREN                                     10MG GEL BG 60##15,51 
+7897917001465##BELFAREN                                     50MG CX 20 COMP##6,19 
+7897917000734##BELGLOS                                      POM BG X 20GR##12,25 
+7897917003995##BELGLOS                                      POM BG 45##11,60 
+7898171782152##BELLY                                        500MG CX 60 CAP##107,42 
+7897917000031##BELMIRAX                                     100MG CX 6 COMP##3,67 
+7897917000048##BELMIRAX                                     20MG SUS OR FR 30ML##3,95 
+7898040322700##BELPELE                                      3MG/G GEL BG X 30##53,09 
+7897917001892##BELPIDEX                                     5+60MG CX 20 COMP REV##4,21 
+7897917001410##BELSCOPAN                                    10MG CX 20 COMP##8,09 
+7489791700295##BELSPAN                                      250+10MG CX 1000 COMP REV EMB HOSP##421,96 
+7897917002936##BELSPAN                                      250+10MG CX 200 COMP REV EMB HOSP##84,38 
+7897917002943##BELSPAN                                      250+10MG CX 500 COMP REV EMB HOSP##210,97 
+7897917001397##BELSPAN COMPOSTO                             250+10MG CX 20 COMP##8,43 
+7897917001380##BELSPAN COMPOSTO                             333,4+6,67MG SOL OR FR GTS 20ML##7,99 
+7891317482473##BEMINAL                                      FR 30 COMP REV##40,21 
+7891010803797##BENALET                                      TOSSE SECA 3MG XPE FR 120ML##11,84 
+7891268402001##BENALET                                      5+50+10MG CX 12 PAST SB FRAMB##8,02 
+7891268402025##BENALET                                      5+50+10MG CX 12 PAST SB MEL E LIMAO##8,02 
+7891268402018##BENALET                                      5+50+10MG CX 12 PAST SB MENTA##8,02 
+7891268402155##BENALET                                      5+50+10MG DISPLAY CX 100 PAST SB FRAMB E.M.##62,19 
+7891268402131##BENALET                                      5+50+10MG DISPLAY CX 100 PAST SB MEL E LIMAO##62,19 
+7891268402148##BENALET                                      5+50+10MG DISPLAY CX 100 PAST SB MENTA E.M.##62,19 
+7891010974916##BENALET                                      5+50+10MG DISPLAY CX 52 PAST SB FRAMB E.M.##34,70 
+7891010974923##BENALET                                      5+50+10MG DISPLAY CX 52 PAST SB MEL E LIMAO##34,70 
+7891010974930##BENALET                                      5+50+10MG DISPLAY CX 52 PAST SB MENTA E.M.##34,70 
+7898495603812##BENATUX                                      XPE 120ML + CP MED##8,93 
+7898158693112##BENATUX                                      5+50+10MG CX 12 PAST SB FRAMB##9,61 
+7898158693129##BENATUX                                      5+50+10MG CX 12 PAST SB MENTA##9,61 
+7898100243358##BENECLER                                     CX 12 FLAC X 10ML##19,12 
+7898100243273##BENECLER                                     CX 60 FLAC X 10ML##101,78 
+7898100243778##BENECLER                                     6 FLAC X 10ML##9,88 
+7896004810041##BENECTRIN                                    CX 20 COMP##13,69 
+7896004813172##BENECTRIN                                    SUS FR 100ML##11,63 
+7896004810065##BENECTRIN F                                  CX 10 COMP##14,51 
+7896261014497##BENEFIBER                                    POTE 155##47,48 
+7896261015043##BENEFIBER NUTRIOSE                           CX 10 SACHES X 3,5##20,34 
+7896261015500##BENEFIBER NUTRIOSE                           CX 28 SACHES X 3,5##54,15 
+7898549750530##BENEFLORA                                    10 SACHES X 2##56,08 
+7898942324512##BENEFLORA                                    3 SACHES X 2##30,70 
+7898549755924##BENEFLORA                                    50MG CX 15 CAP##55,36 
+7898549755917##BENEFLORA                                    50MG CX 30 CAP##28,78 
+7896094904682##BENEGRIP                                     CX 20 COMP REV##16,45 
+7896094903036##BENEGRIP                                     250+30+250+2MG CX 25BL X 6 COMP REV##125,85 
+7896094905825##BENEGRIP MULTI                               13,30+0,33+ 0,13MG SOL OR X 240ML##21,68 
+7891106006170##BENEROC                                      FR 100 DR##17,13 
+7891106006194##BENEROC COMPLEX                              CX 30 DR##13,20 
+7891106006187##BENEROC JUNIOR                               SOL ORAL CGTS FR 20ML##7,51 
+7891106006316##BENERVA                                      300MG FR 30 COMP REV##15,65 
+7896422518161##BENESTARE                                    625MG CX 30 COMP##22,35 
+7896112148852##BENEUM                                       300MG CX 30 COMP REV##15,62 
+7896112141938##BENEVAT                                      1MG CREME DERM BG 30##16,06 
+7896004706146##BENEVRAN                                     11,6MG GEL BG 60##9,58 
+7896004800400##BENEVRAN                                     CX 20 DR##7,70 
+7896004706153##BENEVRAN                                     15MG FR GTS 20ML##7,70 
+7896658003691##BENFLOGIN                                    30MG SOL OR FR GTS 20ML##5,34 
+7896658005206##BENFLOGIN                                    50MG CX 20 DR##6,68 
+7897411610644##BENICAR                                      20MG CX 10 COMP REV##10,68 
+7897411610606##BENICAR                                      20MG CX 30 COMP REV##32,07 
+7897411610651##BENICAR                                      40MG CX 10 COMP REV##11,24 
+7897411610620##BENICAR                                      40MG CX 30 COMP REV##33,71 
+7897411611016##BENICAR ANLO                                 20+5MG CX 30 COMP REV##39,07 
+7897411611054##BENICAR ANLO                                 20+5MG CX 7 COMP REV##9,12 
+7897411611030##BENICAR ANLO                                 40+10MG CX 30 COMP REV##44,16 
+7897411611122##BENICAR ANLO                                 40+10MG CX 7 COMP REV##10,30 
+7897411611023##BENICAR ANLO                                 40+5MG CX 30 COMP REV##44,16 
+7897411611108##BENICAR ANLO                                 40+5MG CX 7 COMP REV##10,30 
+7897411610668##BENICAR HCT                                  20+12,5MG CX 30 COMP REV##35,35 
+7897411600232##BENICAR HCT                                  20+12,5MG CX 7 COMP REV##8,25 
+7897411610675##BENICAR HCT                                  40+12,5MG CX 30 COMP REV##40,27 
+7897411600249##BENICAR HCT                                  40+12,5MG CX 7 COMP REV##9,40 
+7897411610682##BENICAR HCT                                  40+25MG CX 30 COMP REV##40,27 
+7897411600256##BENICAR HCT                                  40+25MG CX 7 COMP REV##9,40 
+7896015523954##BENLYSTA                                     120 MG PO LIOF INJ CT FA VD INC##571,29 
+7896015523961##BENLYSTA                                     400 MG PO LIOF INJ CT FA VD INC##1.904,29 
+7891058015695##BENOFLEX P                                   35+450+50MG CX 12 COM##8,38 
+7891058003715##BENOFLEX P                                   35+450+50MG CX 120 COM E.M.##83,78 
+7896676406160##BENORMAL                                     CX 20BL X 10 DRG EMB HOSP##21,99 
+7896422507974##BENTYL                                       SOL OR FR 15ML##9,41 
+7897930763791##BENZAC                                       100MG/G GEL BG 60##30,20 
+7897930763876##BENZAC                                       25MG/G GEL BG 60##27,95 
+7891317496104##BENZETACIL                                   300+1200MUI/ML SUS INJ CX 50FA X 4ML##450,65 
+7891317496241##BENZETACIL                                   300.000 U/ML SUS INJ CT 1 FA VD INC X 4 ML##8,58 
+7891317430436##BENZETACIL                                   300.000 U/ML SUS INJ CX 10 FA VD INC X 4 ML##85,83 
+7898109240433##BENZEVIT                                     BG 40##18,29 
+7898109241713##BENZEVIT PREVENT                             BG 45##18,29 
+7899547504507##BENZIDROL                                    1,5MG/ML COLUT CT SPR PLAS TRANS 30ML MENTA##16,77 
+7896004729770##BENZIFLEX                                    10MG CX 15 COMP REV##10,76 
+7896004729787##BENZIFLEX                                    10MG CX 2BL X 15 COMP REV##21,52 
+7896004737720##BENZIFLEX                                    5MG 1BL X 15 COMP REV##8,69 
+7896004730202##BENZIFLEX                                    5MG 2BL X 15 COMP REV##18,19 
+7895858004309##BENZILPEN                                    1000.0000UI PO SOL INJ CX 100FA EMB HOSP##594,13 
+7895858004293##BENZILPEN                                    1000.0000UI PO SOL INJ CX 50FA EMB HOSP##297,07 
+7898060131184##BENZIN                                       0,1G SAB 60##10,78 
+7896006216551##BENZITRAT                                    1,5MG/ML COLUT FR 150ML-CM##8,74 
+7897732628038##BENZOBEN                                     250MG/ML EMU TOP FR 60ML##2,70 
+7898014560060##BENZODERM                                    EMULSAO FR 100ML##9,04 
+7898014560077##BENZODERM                                    SABONETE 60##7,79 
+7896004702049##BENZOILMETRONIDAZOL                          4% SUS ORAL FR 120ML##7,84 
+7896714207667##BENZOILMETRONIDAZOL                          40MG SUS OR  FR 80ML##5,38 
+7898148296408##BENZOILMETRONIDAZOL                          40MG SUS OR CX 50 PLAS AMB X 100 ML EMB HOSP##244,11 
+7898148296378##BENZOILMETRONIDAZOL                          40MG/ML SUS OR 50FRX80ML+50CM EMB HOSP##191,15 
+7898148296682##BENZOILMETRONIDAZOL                          40MG/ML SUS OR FR 100ML+CM##8,29 
+7896112122975##BENZOILMETRONIDAZOL                          40MG/ML SUS ORAL FR 100ML+10ML+CM##7,18 
+7898148299683##BENZOILMETRONIDAZOL+NISTATINA+CLORETO BENZALC62,5MG+25MUI+1,25MG CREME VAG BG 40G+10APLIC##21,08 
+7896422513227##BENZOILMETRONIDAZOL+NISTATINA+CLORETO BENZALC62,5+1,25MG+25MUI CREME VAG BG 40G+10APLIC##21,16 
+7896523210797##BEPANTRIZ                                    50MG/G POM DERM BG 30##11,39 
+7896622303314##BEQUIDEX                                     0,80MG XPE FR 120ML INF##12,57 
+7896622303307##BEQUIDEX                                     1,6MG XPE FR 120ML ADU##15,72 
+7898908753127##BERBERIS                                     SOL ORAL FR GTS 30ML##27,22 
+7898205133561##BERINJELA                                    100% 400MG FR 60 CAP##19,62 
+7898049798902##BERITIN BC                                   XPE FR 240 ML##21,59 
+7898049793068##BERITIN BC                                   XPE FRX 240ML##21,59 
+7795320000849##BERLISON                                     10MG/G CREME BG 15##9,76 
+7795320050011##BERLISON                                     10MG/G CREME BG 30##17,54 
+7795320000856##BERLISON                                     10MG/G POM BG 15##9,76 
+7795320050028##BERLISON                                     10MG/G POM BG 30##17,54 
+7891106006521##BEROCCAL                                     CX 30 COMP##29,23 
+7896026302784##BEROTEC                                      2MG SOL AER TB 10ML+BOCAL##14,93 
+7896026300247##BEROTEC                                      5MG SOL ORAL FR 20ML##4,33 
+7891058018948##BERRYCRAN                                    500MG CX 30 CAP##69,92 
+7897595901187##BESEROL                                      300+125+50+30MG CX 12 COM##12,15 
+7891058002770##BESEROL                                      300+125+50+30MG CX 4 COM##3,91 
+7898331960109##BESFLOX                                      500MG CX 10 COMP REV##19,72 
+7898331960116##BESFLOX                                      500MG CX 14 COMP REV##21,33 
+7898331960123##BESFLOX                                      500MG CX 50 COMP REV HOSP##76,19 
+7898331960093##BESFLOX                                      500MG CX 6 COMP REV##15,73 
+7899095200364##BESILAPIN                                    10MG CX 30 COMP##24,21 
+7899095200333##BESILAPIN                                    5MG CX 30 COMP##12,17 
+7896112114277##BESILATO DE ANLODIPINA                       10MG CX 30 COMP##38,92 
+7896112149668##BESILATO DE ANLODIPINA                       5MG CX 20 COMP##13,91 
+7896112149460##BESILATO DE ANLODIPINA                       5MG CX 30 COMP##18,32 
+7896676413687##BESILATO DE ANLODIPINO                       10MG CX 100 COMP EMB FRAC##149,65 
+7896714211312##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##59,23 
+7896004703312##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##76,30 
+7898146822159##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##55,10 
+7898095343156##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##47,23 
+7899547504842##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##48,28 
+7898148301201##BESILATO DE ANLODIPINO                       10MG CX 400 COMP HOSP##253,15 
+7896004719689##BESILATO DE ANLODIPINO                       10MG CX 90 COMP##206,10 
+7899547504835##BESILATO DE ANLODIPINO                       5 MG CX 30 COMP##29,50 
+7896714211305##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##29,62 
+7896004703305##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##35,07 
+7898146822135##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##27,55 
+7898095343149##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##23,64 
+7898148301171##BESILATO DE ANLODIPINO                       5MG CX 400 COMP EMB HOSP##148,90 
+7896004719672##BESILATO DE ANLODIPINO                       5MG CX 90 COMP##94,75 
+7896422505796##BESILATO DE ANLODIPINO                       10MG CX 20 COMP##45,97 
+7896181906223##BESILATO DE ANLODIPINO                       10MG CX 20 COMP##37,17 
+7891721277450##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##61,32 
+7897595604668##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##29,31 
+7896422505802##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##69,04 
+7896181900443##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##55,06 
+7896181906292##BESILATO DE ANLODIPINO                       10MG CX 60 COMP##99,88 
+7896422505772##BESILATO DE ANLODIPINO                       5MG CX 20 COMP##24,36 
+7896181906162##BESILATO DE ANLODIPINO                       5MG CX 20 COMP##18,57 
+7891721277436##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##35,10 
+7897595604699##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##15,11 
+7896422505789##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##35,07 
+7896181900658##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##27,87 
+7898910350093##BESILATO DE ANLODIPINO                       5MG CX 30 COMP REV##20,35 
+7891721277429##BESILATO DE ANLODIPINO                       5MG CX 60 COMP##66,27 
+7896181906209##BESILATO DE ANLODIPINO                       5MG CX 60 COMP##51,45 
+7896676413687##BESILATO DE ANLODIPINO                       10MG CX 100 COMP EMB FRAC##138,94 
+7898361880729##BESILATO DE ANLODIPINO                       10MG CX 20 COMP##63,47 
+7896676411560##BESILATO DE ANLODIPINO                       10MG CX 20 COMP##41,82 
+7896676411553##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##59,22 
+7897076909428##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##47,20 
+7898361880736##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##34,14 
+7896523213590##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##15,90 
+7899095238473##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##38,77 
+7895296221085##BESILATO DE ANLODIPINO                       10MG CX 30 COMP##58,21 
+7898361880705##BESILATO DE ANLODIPINO                       5MG CX 20 COMP##34,42 
+7896676411591##BESILATO DE ANLODIPINO                       5MG CX 20 COMP##21,84 
+7896676411584##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##29,62 
+7897076909374##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##23,59 
+7898361880712##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##15,93 
+7896523213569##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##12,40 
+7899095238527##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##18,30 
+7895296221030##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##29,51 
+7898148301287##BESILATO DE ANLODIPINO                       5MG CX 30 COMP##25,91 
+7898487600805##BESILATO DE ATRACURIO                        10MG/ML CX 25 CX 5ML##517,35 
+7898487600393##BESILATO DE ATRACURIO                        10MG/ML SOL INJ CX 25 AMP X 2,5ML EMB HOSP##270,57 
+7897406111750##BESITRAC                                     25MG CX 5 AMP X 2,5ML##81,16 
+7897406111743##BESITRAC                                     50MG CX 5 AMP X 5ML##155,18 
+7896046300418##BESIVANCE                                    SUS OFT FR GTS 5ML##25,42 
+7897917001298##BESODIN                                      300+30+30MG CX 20 COMP##11,42 
+7897917001656##BESODIN                                      300+30+30MG CX 200 COMP##107,77 
+7897917001373##BESODIN                                      300+50+30MG/ML SOL OR FRX15ML##8,63 
+7896023792182##BETA CAROTENO                                FR 30 COMP##35,41 
+7896006221623##BETA LONG                                    3+3MG CX 1AMP X1ML##10,74 
+7896006221609##BETA LONG                                    3+3MG/ML SUS INJ 25 AMP X1ML##268,59 
+7896083400744##BETABRONZE                                   250MG CX 30 CAP##24,92 
+8902220106116##BETACARD PLUS                                100+25MG CX 30 COMP##21,80 
+8902220106093##BETACARD PLUS                                50+12,5MG CX 30 COMP##13,50 
+7897917001168##BETACORTAZOL                                 20+0,5+2,5MG CREME BG 30##21,90 
+7896472515837##BETACORTINE                                  1MG/G CREM DERM BG 30##14,93 
+7896472515813##BETACORTINE                                  1MG/G POM DERM BG 30##15,71 
+7896658016554##BETADINE                                     16MG CX 30 COMP##12,99 
+7896658016561##BETADINE                                     16MG CX 60 COMP##25,20 
+7896658016585##BETADINE                                     24MG CX 30 COMP##17,40 
+7896658016592##BETADINE                                     24MG CX 60 COMP##33,74 
+7896658016530##BETADINE                                     8MG CX 30 COMP##10,76 
+7896658016547##BETADINE                                     8MG CX 60 COMP##20,87 
+7891106903974##BETAFERON                                    9,6MUI INJ CX 15FA+SER DIL X 1,2ML##4.793,31 
+7897316800065##BETAGAN                                      0,5% SOL FR 10ML##31,11 
+7897316800058##BETAGAN                                      0,5% SOL FR 5ML##17,93 
+7703333007700##BETAGRANULOS                                 CREME FR 60##42,64 
+7896181909071##BETALOR                                      5+25MG CX 30 CAP##43,28 
+7896181917847##BETALOR                                      5+25MG CX 7##10,09 
+7896181909101##BETALOR                                      5+50MG CX 30 CAP##50,93 
+7896181917694##BETALOR                                      5+50MG CX 7##11,89 
+7898148296101##BETAMETASONA                                 0,1MG ELIXIR FR 120ML+CM##13,33 
+7896004711249##BETAMETASONA                                 0,5MG CX 20 COMP##6,05 
+7896004719849##BETAMETASONA                                 0,5MG CX 90 COMP##27,31 
+7896004716435##BETAMETASONA                                 0,5MG/5ML ELIXIR FR 120ML##11,60 
+7896004704616##BETAMETASONA                                 0,5ML ELIXIR FR 120ML##11,47 
+7896004711256##BETAMETASONA                                 2MG CX 10 COMP##8,24 
+7896004719856##BETAMETASONA                                 2MG CX 90 COMP##74,38 
+7896422506854##BETAMETASONA                                 0,1MG ELIXIR FR 120ML+CM##11,60 
+7896523209050##BETAMETASONA+SULFATO DE GENTAMICINA          0,5+1,0MG/G CREM DERM BG 30##14,42 
+7897299902282##BETANAZOL                                    20+0,5MG CREME DERM BG 30##20,56 
+7897299902299##BETANAZOL                                    20+0,5MG POM DERM BG 30##20,56 
+7896006248910##BETAPROSPAN                                  5+2MG CX 1AMP X 1ML##16,34 
+7896255766449##BETASERC                                     16MG CX 3BL X 10 COMP##21,67 
+7896255766401##BETASERC                                     24MG CX 2BL X 15 COMP##32,59 
+7896255766425##BETASERC                                     24MG CX 4BL X 15 COMP##55,95 
+7893454411217##BETASPAN                                     5+2MG SUS INJ 1 AMP##15,29 
+7891317421465##BETATRINTA                                   5+2MG INJ 1AMP X 1ML+SER##11,44 
+7891317103323##BETATRINTA                                   5MG+2MG SUS INJ AMP X 1ML+SER##12,01 
+7895858000035##BETAZIDIM                                    1G PO INJ CX 1FA+DIL X 10ML##25,32 
+7895858002886##BETAZIDIM                                    1G SOL INJ CX 50FA EMB HOSP##1.122,44 
+7891317436346##BETES                                        1MG CX 30 COMP##10,99 
+7891317436339##BETES                                        2MG CX 30 COMP##19,87 
+7891317436322##BETES                                        4MG CX 30 COMP##38,42 
+7891317478902##BETINA                                       16MG CX 20 COMP##8,61 
+7891317478919##BETINA                                       16MG CX 30 COMP##13,12 
+7891317478926##BETINA                                       16MG CX 60 COMP##25,46 
+7891317478957##BETINA                                       24MG CX 20 COMP##11,53 
+7891317478964##BETINA                                       24MG CX 30 COMP##17,57 
+7891317478971##BETINA                                       24MG CX 60 COMP##34,08 
+7891317478865##BETINA                                       8MG CX 30 COMP##10,87 
+7896269900280##BETNOVATE                                    1MG CAPILAR FR 50##39,18 
+7896269900297##BETNOVATE                                    1MG CREME BG 15##14,02 
+7896269900303##BETNOVATE                                    1MG CREME BG 30##23,04 
+7896269900310##BETNOVATE                                    1MG LOCAO FR 50##41,46 
+7896269900365##BETNOVATE                                    1MG POM BG 15##14,72 
+7896269900372##BETNOVATE                                    1MG POM BG 30##24,20 
+7896269900334##BETNOVATE N                                  1+5MG CREME BG 30##21,08 
+7896269900358##BETNOVATE N                                  1+5MG POM BG 30##21,97 
+7896269900396##BETNOVATE Q                                  Q 1+30MG CREME BG 30##23,65 
+7899095204454##BETOGENTA                                    0,5+1,0MG CREME BG 30##14,38 
+7899095204430##BETOGENTA                                    0,5+1,0MG POM BG 30##14,38 
+7896548114612##BETOPTIC                                     0,5% SOL OFT FR GTS 5ML##17,36 
+7896548114797##BETOPTIC                                     2,5MG SUS OFT GTS FR 5ML##23,17 
+7899095203266##BETRICORT                                    CREME BG 30##17,83 
+7899095203273##BETRICORT                                    POM BG 30##17,83 
+7898060132013##BETRIX                                       20MG/G+0,64MG/G 10##8,60 
+7898060132037##BETRIX                                       20+0,64MG CREM DERM BG 30##16,46 
+7896004715179##BETROSPAM                                    SUS INJ CX 1AMP X 1ML##10,76 
+7896714230078##BETSONA                                      1MG CREME BG 30##15,57 
+7896714230085##BETSONA                                      1MG POM BG 30##15,40 
+7891317468859##BEUM                                         300MG CX 20 COMP REV##9,74 
+7891317468866##BEUM                                         300MG CX 30 COMP REV##14,61 
+7899095203075##BEXETON ELIXIR                               1MG/ML FR 120ML##9,13 
+7891268108118##BEXTRA                                       40MG IM/IV PO LIOF CX 10 FA##400,83 
+7896004710525##BEZAFIBRATO                                  200MG CX 20 COMP##16,88 
+7894916140508##BEZAFIBRATO                                  200MG CX 20 COMP VER##16,05 
+7896004710518##BEZAFIBRATO                                  200MG CX 20 DR##16,06 
+8470001589712##BGSTAR                                       33G X 100 UNID LANCETAS##17,98 
+7891058018184##BGSTAR                                       TIRAS TESTE X 50UNID##63,53 
+7795320008807##BI-NERISONA                                  CREME BG 15##18,19 
+7896070601772##BI-PROFENID                                  150MG CX 10 COMP##32,37 
+7891058010355##BI-PROFENID                                  150MG CX 4 COMP##12,94 
+7898109240068##BIALERGE                                     CX 20 COMP##5,92 
+7898109240051##BIALERGE                                     ELIXIR FR 100ML##6,21 
+7898109240075##BIALERGE                                     SOL OR FR 20ML##6,52 
+7896004729664##BIALUDEX                                     POM OFT BG 3,5##20,13 
+7896004723167##BIALUDEX                                     3,5+1MG SOL OFT FR 4ML##14,22 
+7897316801215##BIAMOTIL                                     POM OFT BG 3,5##14,04 
+7897316801178##BIAMOTIL                                     SOL OFT FR 5ML##14,70 
+7897316801253##BIAMOTIL D                                   POM OFT BG 3,5##24,74 
+7897316801239##BIAMOTIL D                                   SOL OFT FR 5ML##22,56 
+7896004738208##BIANCORT                                     3,5+1MG/ML SOL OF FR X 5ML##14,66 
+7898902274796##BICALUTAMIDA                                 50MG CX 28 COMP REV##445,84 
+7891317482541##BICALUTAMIDA                                 50MG CX 30 COMP REV##477,68 
+7896023706103##BICARBONATO DE SODIO                         PT 100##6,37 
+7891721002052##BICONCOR                                     10+6,25MG FR 30 COMP##62,75 
+7891721002038##BICONCOR                                     2,5+6,25MG FR 30 COMP##47,61 
+7891721002045##BICONCOR                                     5+6,25MG FR 30 COMP##61,92 
+7896004724690##BIMATOPROSTA                                 0,3MG FR 3ML##53,74 
+7896004724706##BIMATOPROSTA                                 0,3MG FR 3ML##53,74 
+7896004724683##BIMATOPROSTA                                 0,3MG FR 5ML##80,61 
+7896004724713##BIMATOPROSTA                                 0,3MG FR 5ML##80,61 
+7894916145350##BIMATOPROSTA                                 0,3MG FR X 3 ML##53,74 
+7894916145367##BIMATOPROSTA                                 0,3MG FR X 5ML##80,61 
+7896422532310##BIMATOPROSTA                                 0,3MG/ML SOL OFT FR GOT X 3ML##53,75 
+7895296197014##BIMATOPROSTA                                 0,3MG/ML FR 3ML##53,74 
+7895296198011##BIMATOPROSTA                                 0,3MG/ML FR 5ML##80,62 
+7897595602831##BINKO                                        120MG CX 20 COMP##53,69 
+7897595602824##BINKO                                        80MG CX 20 COMP##33,51 
+7897595605610##BINKO                                        80MG CX 30 COMP##41,75 
+7897595603500##BINKO                                        80MG CX 60 COMP##66,59 
+7893736030068##BINOSPAN                                     COMPOSTO CX 20 DR##11,78 
+7891106904056##BINOTAL                                      1000MG CX 14 COMP##48,23 
+7891106904063##BINOTAL                                      1000MG CX 21 COMP##72,34 
+7891106904032##BINOTAL                                      500MG CX 14 COMP##26,94 
+7891106904049##BINOTAL                                      500MG CX 21 COMP##40,41 
+7896006200352##BIO C                                        1G  CX 30 COMP ENFERV##24,53 
+7896006298267##BIO E                                        400MG CX 20 CAP##15,66 
+7896006229957##BIO-C                                        1G CX 10 DRG ENFERV##9,97 
+7898109241294##BIO-VAGIN                                    CREME VAG BG 40G+10APLIC##32,01 
+7896006210948##BIOARGI                                      1G+1G (CX C/16 COM EFER)##25,63 
+7896083409488##BIOCARTAMO                                   1000MG CX 90 CAP##43,20 
+7896181924210##BIOEZULEN                                    100MG PO LIOF INJ FA##3.740,73 
+7896181924197##BIOEZULEN                                    50MG PO LIOF INJ FA##1.870,38 
+7896658000119##BIOFENAC                                     44,94MG SUS OR FR GTS 20ML##10,40 
+7896658000072##BIOFENAC                                     50MG CX 20 COMP##14,65 
+7896658006913##BIOFENAC                                     11MG SOL C/PROP (AER) FR 60##19,32 
+7896658004261##BIOFENAC                                     50MG CX 10 COMP##7,33 
+7896658000959##BIOFENAC CLR                                 75MG CX 14 COMP REV##15,89 
+7896658004292##BIOFENAC DI                                  46,5MG CX 10 COMP##8,54 
+7896658006906##BIOFENAC DI                                  46,5MG CX 20 COMP##17,12 
+7896676410372##BIOFLAC                                      15MG CX 10 COMP##26,58 
+7896676410389##BIOFLAC                                      15MG CX 5 AMP X 1,5ML##24,65 
+7896676410365##BIOFLAC                                      7,5MG CX 10 COMP##14,33 
+7896004726045##BIOFLADEX                                    FR 60##20,50 
+7896317909241##BIOFLAN 30                                   250MG CX  30 COMP REV##46,88 
+7896006291589##BIOFLEX                                      300+50+35MG CX 148 COMP##47,69 
+7896006291527##BIOFLEX                                      300+50+35MG CX 16 COMP##4,91 
+7896006291602##BIOFLEX                                      300+50+35MG SOL ORAL FR 10ML##4,21 
+7896685300633##BIOFLORIN                                    CX 5 FLAC X 5ML ADU##24,10 
+7896685300640##BIOFLORIN                                    CX 5 FLAC X 5ML PED##18,45 
+7898014560046##BIOFORTONICO                                 SOL ORAL FR 500ML##14,83 
+7896006291626##BIOGRIPE                                     100+2+2MG/ML SOL OR FR GTS 20ML##11,05 
+7896006291633##BIOGRIPE                                     40+0,6+0,6MG/ML XPE FR100ML##14,53 
+7896006291657##BIOGRIPE                                     400+4+4MG CX 100 CAP GEL##13,07 
+7896006291640##BIOGRIPE                                     400+4+4MG CX 100CAP GEL##59,09 
+7898014560169##BIOHEPATON                                   60 FLAC X 10ML##126,07 
+7898014561029##BIOHEPATON                                   SOL OR 150ML##19,12 
+7898183351117##BIOLIGHT C                                   CX 60 COMP##36,19 
+7896658012211##BIOMAG                                       10MG X 10 CAP##8,59 
+7896658007019##BIOMAG                                       10MG X 30 CAP##38,60 
+7896658012228##BIOMAG                                       15MG X 10 CAP##9,53 
+7896658007040##BIOMAG                                       15MG X 30 CAP##42,85 
+7896181901679##BIOMATROP                                    4UI PO LIOF INJ 1FA+DIL X 1ML##151,63 
+7891721028694##BION 3                                       FR 30 COMP##36,26 
+7896083409136##BIOSLIM QUITOSANA                            500MG CX 60 COMP##33,41 
+7896083409167##BIOSLIM SHAKE                                400G BAUNILHA DIET##18,25 
+7896083409143##BIOSLIM SHAKE                                400G CHOCOLATE DIET##18,25 
+7896083409174##BIOSLIM SHAKE                                400G MACA BANANA DIET##18,25 
+7896083409150##BIOSLIM SHAKE                                400G MORANDO DIET##18,25 
+0048582802209##BIOTENE                                      ENXAGUE BUCAL FR 240ML##18,38 
+0048582512016##BIOTENE                                      GEL ORAL BALANCE BG 42##27,56 
+7896094903067##BIOTONICO N                                  466+833+1+0,1+2+10MCL SOL FR 400ML##13,95 
+7896046383084##BIOTRUE                                      300+120ML SOL MULT EST PACK ON NOVA TAMPA##57,56 
+7896046383091##BIOTRUE                                      SOL MULT X  120ML NOVA TAMPA##35,01 
+0310119038345##BIOTRUE                                      SOLUCAO MULTIUSO - 300 ML##41,07 
+0310119037829##BIOTRUE                                      SOL 120ML##29,36 
+7898100264025##BIOVICERIN                                   CX 100 FLAC X 5ML##240,53 
+7898100264018##BIOVICERIN                                   CX 6 FLAC X 5ML##19,77 
+7898208143901##BIOZATIN                                     1.200.000UI CX 50##202,80 
+7898208143864##BIOZATIN                                     600.000UI CX 50##150,67 
+7896658026850##BIOZINC KIDS                                 FR 75ML##14,81 
+7897076914132##BIPOGINE                                     100MG CX 30 COMP##60,82 
+7897076914095##BIPOGINE                                     25MG CX 30 COMP##21,40 
+7897076914118##BIPOGINE                                     50MG CX 30 COMP##34,91 
+7898216362493##BIPROSLAN                                    6,43+2,63MG/ML SUS INJ CX 50 AMP+SER HOSP##327,57 
+7898216360352##BIPROSLAN                                    6,43+2,63MG/ML SUS OR X 1ML##13,11 
+7896006257943##BISALAX                                      5MG CX 150 DR##29,71 
+7896006257929##BISALAX                                      5MG CX 20 DR##3,95 
+7896004810140##BISMU-JET                                    SOL FR GTS 20ML##16,42 
+7898216363803##BISOLPHAR                                    0,8MG/ML XPE CX 50 FR X 120ML+CP MED HOSP##187,91 
+7898216363780##BISOLPHAR                                    0,8MG/ML XPE FR 120ML-CP MED##7,30 
+7898216363797##BISOLPHAR                                    1,6MG XPE 120ML MED##8,88 
+7898216363810##BISOLPHAR                                    1,6MG XPE 50FR 120ML MED##241,96 
+7896026303132##BISOLTUSSIN                                  2,0MG XPE FR X 120ML##8,38 
+7896026301374##BISOLVON                                     0,80MG XPE EXPEC 120ML INF##11,69 
+7896026301367##BISOLVON                                     1,60MG XPE EXPEC FR 120ML ADU##13,93 
+7896026300346##BISOLVON                                     2MG SOL EXPEC 50ML##10,01 
+7898146824474##BISSULFATO DE CLOPIDOGREL                    75MG CT BL 100 COM REV##280,20 
+7898146824696##BISSULFATO DE CLOPIDOGREL                    75MG CT BL 14 COM REV##45,66 
+7898146824276##BISSULFATO DE CLOPIDOGREL                    75MG CT BL 28 COM REV##82,91 
+7896422516105##BISSULFATO DE CLOPIDOGREL                    75MG CX 14 COMP##56,32 
+7896658011801##BISSULFATO DE CLOPIDOGREL                    75MG CX 15 COMP REV##49,67 
+7896181917397##BISSULFATO DE CLOPIDOGREL                    75MG CX 15 COMP REV##49,67 
+7896422516112##BISSULFATO DE CLOPIDOGREL                    75MG CX 28 COMP REV##104,77 
+7896658011825##BISSULFATO DE CLOPIDOGREL                    75MG CX 30 COMP REV##94,94 
+7896181917410##BISSULFATO DE CLOPIDOGREL                    75MG CX 30 COMP REV##94,94 
+7891317145545##BISSULFATO DE CLOPIDOGREL                    75MG CX 150 COMP REV EMB FRAC##521,22 
+7898146824450##BISSULFATO DE CLOPIDOGREL                    75MG CT BL 30 COMP REV##89,37 
+7891317496753##BISSULFATO DE CLOPIDOGREL                    75MG CX 30 COMP REV##104,25 
+7897076912374##BISSULFATO DE CLOPIDOGREL                    75MG ESTOJO 14 COMP##46,95 
+7897076912336##BISSULFATO DE CLOPIDOGREL                    75MG ESTOJO 28 COMP##93,33 
+7896094904378##BISUISAN                                     3,227+0,178MG DISPLAY 12ENV PO 5,5##20,33 
+7896094904385##BISUISAN                                     3,227+0,178MG DISPLAY 25ENV PO 5,5##42,30 
+7896094904323##BISUISAN                                     3,2450+0,1790MG PO FR 50##15,19 
+7896004720609##BISURAN                                      4MG/5ML XPE FR 120ML INF##6,66 
+7896004733784##BISURAN                                      8MG/5ML XPE ADU FR 120ML##8,97 
+7896014649006##BLAUBIMAX                                    20% INJ 1FA X 50ML+EQ##228,51 
+7897473206823##BLAZTERE                                     4MG PO LIOF INJ IV CT FA VD INC##444,62 
+7891158031335##BLOPRESS                                     16MG CX 30 COMP##98,27 
+7891158031311##BLOPRESS                                     8MG CX 30 COMP##87,34 
+7896622305820##BLUMEL                                       HEDERA 15MG XPE FR 100ML##31,31 
+7896622304267##BLUMEL                                       GUACO 0,0833ML XPE FR 120ML##20,18 
+7898569761189##BLUPILL                                      50MG C/ 1 COMP CX 20 COMP REV FRAC##107,67 
+7896685301920##BOLDINE                                      100MG CX 30 CAP##22,41 
+7897917003513##BOLDO BELFAR                                 CX 12 FLAC X 10ML##27,29 
+7897917003520##BOLDO BELFAR                                 CX 60 FLAC X 10ML##121,82 
+7897917003506##BOLDO BELFAR                                 FR 100ML##15,97 
+7896004726847##BONAGRAN                                     70MG CX 4 COMP##31,66 
+7896112417446##BONALEN                                      10MG CX 30 COMP REV##80,34 
+7896241217672##BONALEN                                      70MG CX 4 COMP REV##31,78 
+7896181900818##BONAR                                        15UI PO LIOF INJ FA X 5ML##250,41 
+7703333007618##BONAVEN                                      LOCAO FR 120ML##43,43 
+7703333007601##BONAVEN                                      SAB FR 120##33,98 
+7894916508483##BONECAL D                                    600MG+400UI FR X 30 COMP REV##19,42 
+7894916508155##BONECAL D                                    600MG+400UI FR X 60 COMP REV##33,23 
+7891106904131##BONEFOS                                      400MG CX 30 CAP GEL##323,20 
+7891106904148##BONEFOS                                      60MG/ML SOL INJ 5AMP X 5ML##416,33 
+7897595610973##BONEPREV                                     70MG CX 4 COMP##15,80 
+7896714218045##BONTOSS                                      0,8MG/ML XPE FR 120ML INF##9,95 
+7896714217956##BONTOSS                                      1,6MG/ML XPE FR 120ML ADU##11,89 
+7896226505299##BONVIVA                                      150MG CX 1 COMP##142,58 
+7896226505992##BONVIVA                                      3MG SOL INJ CX 1 SER X 3ML##301,08 
+7898565580548##BORTEZOMIBE                                  3,5MG PO LIOF INJ 1FA EMB HOSP##2.302,93 
+7898577810527##BORTYZ                                       3,5MG PO LIOF INJ FA##2.302,93 
+7640111930648##BOSENTANA                                    125MG CX 60 COMP REV##2.906,46 
+7640111930631##BOSENTANA                                    62,5MG CX 60 COMP REV##1.453,23 
+7892953001554##BOSENTANA                                    125MG CX 60 COMP REV##9.001,85 
+0310119052440##BOSTON SIMPLUS                               FR 120ML (+12% IPI)##49,62 
+7897316802939##BOTOX                                        FR AMP 100UI##1.421,98 
+7897316805015##BOTOX                                        FR AMP 200UI##2.843,97 
+7897316804827##BOTOX                                        FR AMP 50UI##710,99 
+7898149937263##BOTULIFT                                     100U PO LIOF INJ CX 1FA##1.313,63 
+7898149937270##BOTULIFT                                     100U PO LIOF INJ CX 5FA##6.568,22 
+7898149939267##BOTULIFT                                     200U PO LIOF INJ CX 1FA##2.627,26 
+7898149939274##BOTULIFT                                     200U PO LIOF INJ CX 5FA##13.136,34 
+7898149939243##BOTULIFT                                     50U PO LIOF INJ CX 1FA##656,81 
+7898149939250##BOTULIFT                                     50U PO LIOF INJ CX 5FA##3.284,08 
+7896672202186##BRAMITOB                                     300MG CX 56FLAC X 4ML##5.760,97 
+8902220107649##BRANTA                                       50+5MG CX 30 COMP##40,07 
+7894916507936##BRASART                                      160MG CX 30 COMP REV##22,99 
+7894916507950##BRASART                                      320MG CX 30 COMP REV##22,99 
+7894916507912##BRASART                                      80MG CX 30 COMP REV##22,99 
+7894916509312##BRASART BCC                                  160+5MG CX 10 COMP REV##9,89 
+7894916509305##BRASART BCC                                  160+5MG CX 30 COMP REV##29,63 
+7894916510103##BRASART BCC                                  160+5MG CX 60 COMP REV##47,43 
+7894916509336##BRASART BCC                                  320+10MG CX 30 COMP REV##29,63 
+7894916509329##BRASART BCC                                  320+5MG CX 30 COMP REV##29,63 
+7894916509299##BRASART BCC                                  320+5MG CX 60 COMP REV##47,43 
+7894916508353##BRASART HCT                                  160+12,5MG CX 30 COMP REV##22,99 
+7894916508360##BRASART HCT                                  160+25MG CX 30 COMP REV##22,99 
+7894916509084##BRASART HCT                                  320+12,5MG CX 30 COMP REV##22,99 
+7894916508377##BRASART HCT                                  320+25MG CX 30 COMP REV##22,99 
+7894916508346##BRASART HCT                                  80+12,5MG CX 30 COMP REV##22,99 
+8902220111622##BRATOR                                       160MG CX 10 COMP##10,64 
+8902220111639##BRATOR                                       160MG CX 30 COMP##31,92 
+8902220111585##BRATOR                                       320MG CX 30 COMP##42,56 
+8902220111677##BRATOR                                       80MG CX 10 COMP##10,64 
+8902220111684##BRATOR                                       80MG CX 30 COMP##31,92 
+8902220112384##BRATOR H                                     160+12,5MG CX 10 COMP##12,42 
+8902220112407##BRATOR H                                     160+12,5MG CX 30 COMP##37,24 
+8902220112445##BRATOR H                                     160+25MG CX 30 COMP##47,88 
+8902220112520##BRATOR H                                     320+12,5MG CX 30 COMP##42,56 
+8902220112490##BRATOR H                                     320+25MG CX 30 COMP##47,88 
+8902220112346##BRATOR H                                     80+12,5MG CX 10 COMP##12,42 
+8902220112377##BRATOR H                                     80+12,5MG CX 30 COMP##37,24 
+7896658016660##BRAVAN                                       160MG CX 10 COMP REV##7,81 
+7896658016677##BRAVAN                                       160MG CX 30 COMP REV##23,47 
+7896658016684##BRAVAN                                       320MG CX 10 COMP REV##7,81 
+7896658016691##BRAVAN                                       320MG CX 30 COMP REV##23,47 
+7896658016646##BRAVAN                                       80MG CX 10 COMP REV##7,81 
+7896658016653##BRAVAN                                       80MG CX 30 COMP REV##23,47 
+7896165600536##BRAVELLE                                     75UI CART PO LIOF 1FA+1DIL##118,42 
+7898927500016##BRAVITAN                                     2MG CX 20 COMP REV##12,15 
+7898927500108##BRAVITAN                                     5MG CX 30 COMP REV##18,20 
+7898932797050##BRECILA                                      2MG SOL INJ IM FR X 10ML##130,35 
+7898932797067##BRECILA                                      2MG SOL INJ IM FR X 25ML##322,11 
+7898932797043##BRECILA                                      2MG SOL INJ IM FR X 5ML##78,49 
+5016003145100##BREEZE                                       2 KIT DE MONITORAMENTO GLICEMICO##65,82 
+5016003147906##BREEZE                                       2 TIRAS REAGENTE CX 50 UNID.##94,08 
+7891106906425##BREEZE                                       2 UNID SOL CONTROLE NORMAL##30,57 
+7896685300947##BREFUS                                       XPE FR 100ML ADU##35,56 
+7896676405033##BREVIBLOC                                    10MG CX 20FA X 10ML EMB HOSP##838,07 
+7896676404869##BREVIBLOC                                    250MG CX 10FA X 10ML EMB HOSP##2.519,15 
+7890282800336##BREXIN                                       CX 10 COMP##43,77 
+7890282800329##BREXIN                                       CX 5 COMP##22,04 
+7896206401191##BRICANYL                                     0,3+13,3MG XPE EXPECT FR 100ML##14,28 
+7896206401245##BRICANYL                                     0,3MG XPE BRONCODILATADOR FR 100ML##10,82 
+7897572002807##BRIDION                                      200MG SOL INJ 10FA X 2ML##2.695,43 
+7896206403478##BRILINTA                                     90MG CX 20 COMP REV##65,97 
+7896206403393##BRILINTA                                     90MG CX 30 COMP REV##98,96 
+7896206403409##BRILINTA                                     90MG CX 60 COMP REV##197,91 
+7897595606952##BROMALEX                                     3MG CX 30 COMP##13,78 
+7897595607027##BROMALEX                                     6MG CX 30 COMP##22,06 
+7896004720807##BROMAZEPAM                                   2,5MG FR 20ML##7,08 
+7896004720814##BROMAZEPAM                                   2,5MG FR GTS 20ML##7,08 
+7896004701684##BROMAZEPAM                                   3MG CX 20 COMP##7,44 
+7896006254720##BROMAZEPAM                                   3MG CX 20 COMP##7,00 
+7896112115250##BROMAZEPAM                                   3MG CX 20 COMP##7,31 
+7896004708577##BROMAZEPAM                                   3MG CX 20 COMP##7,35 
+7896714212197##BROMAZEPAM                                   3MG CX 20 COMP##8,41 
+7896112115267##BROMAZEPAM                                   3MG CX 30 COMP##11,17 
+7896004716268##BROMAZEPAM                                   3MG CX 30 COMP##11,23 
+7896004716275##BROMAZEPAM                                   3MG CX 30 COMP##9,86 
+7896714212203##BROMAZEPAM                                   3MG CX 30 COMP##12,74 
+7896006242864##BROMAZEPAM                                   6MG CX 20 COMP##10,26 
+7896112113614##BROMAZEPAM                                   6MG CX 20 COMP##11,65 
+7896004708584##BROMAZEPAM                                   6MG CX 20 COMP##11,32 
+7896714212364##BROMAZEPAM                                   6MG CX 20 COMP##14,54 
+7896112113843##BROMAZEPAM                                   6MG CX 30 COMP##17,93 
+7896004713762##BROMAZEPAM                                   6MG CX 30 COMP##18,05 
+7896004713779##BROMAZEPAM                                   6MG CX 30 COMP##15,63 
+7896714212371##BROMAZEPAM                                   6MG CX 30 COMP##21,65 
+7891721013034##BROMAZEPAM                                   3MG CX 20 COMP##6,58 
+7897595606808##BROMAZEPAM                                   3MG CX 20 COMP##7,33 
+7896422505222##BROMAZEPAM                                   3MG CX 20 COMP##8,34 
+7896181907268##BROMAZEPAM                                   3MG CX 20 COMP##6,59 
+7896006254799##BROMAZEPAM                                   3MG CX 30 COMP##11,40 
+7897595606815##BROMAZEPAM                                   3MG CX 30 COMP##11,11 
+7896422505963##BROMAZEPAM                                   3MG CX 30 COMP##12,66 
+7896181909538##BROMAZEPAM                                   3MG CX 30 COMP##10,16 
+7891721013096##BROMAZEPAM                                   6MG CX 20 COMP##10,14 
+7897595606877##BROMAZEPAM                                   6MG CX 20 COMP##11,90 
+7896181907657##BROMAZEPAM                                   6MG CX 20 COMP##10,18 
+7896006242758##BROMAZEPAM                                   6MG CX 30 COMP##16,60 
+7897595606884##BROMAZEPAM                                   6MG CX 30 COMP##17,85 
+7896422505970##BROMAZEPAM                                   6MG CX 30 COMP##21,48 
+7896181909248##BROMAZEPAM                                   6MG CX 30 COMP##15,51 
+7891317415891##BROMAZEPAM                                   3MG CX 30 COMP##10,66 
+7891317415914##BROMAZEPAM                                   6MG CX 30 COMP##16,28 
+7896685302880##BROMELIN                                     SUSP OR FR 100ML##36,00 
+7896685300473##BROMELIN                                     SUS ORAL FR 100ML##31,18 
+7896685300497##BROMELIN PROPOLIS                            SOL FR 50ML##27,87 
+7896004743325##BROMEPINA                                    100MG 2BL X 15 COMP REV##42,64 
+7896004743844##BROMEPINA                                    100MG 4BL X 15 COMP REV##77,62 
+7894916145435##BROMETO DE IPRATROPIO                        0,25MG FR 20ML##7,59 
+7898148299027##BROMETO DE IPRATROPIO                        0,25MG SOL INAL CX 200 FR GOT X 20ML HOSP##703,77 
+7898060132785##BROMETO DE IPRATROPIO                        0,25MG/ML SOL INAL FR 20ML##8,44 
+7898148299010##BROMETO DE IPRATROPIO                        0,25MG/ML SOL INAL FR GTS 20ML##3,68 
+7896004725437##BROMETO DE IPRATROPIO                        SOL INAL FR 20ML##8,68 
+7896004725420##BROMETO DE IPRATROPIO                        SOL P/INAL FR 20ML##8,68 
+7896006262510##BROMETO DE IPRATROPIO                        0,25MG SOL INAL FR 20ML##7,22 
+7896181913252##BROMETO DE IPRATROPIO                        0,25MG SOL INAL FR GTS 20ML##8,28 
+7896112114413##BROMETO DE IPRATROPIO                        0,25MG SOL NAS FR GTS 20ML##5,80 
+7896714214337##BROMETO DE IPRATROPIO                        0,25MG/ML SOL FR GTS 20ML##8,17 
+7895296044011##BROMETO DE IPRATROPIO                        0,25MG/ML SOL INAL 20ML##8,89 
+7898148298310##BROMETO DE N-BUTILESCOPOLAMINA+DIPIRONA SODIC6,67+333,4MG/ML SOL OR FR 20ML##5,11 
+7898148298327##BROMETO DE N-BUTILESCOPOLAMINA+DIPIRONA SODIC6,67+333.4MG/ML SOL OR CX 200 FR X 10ML HOSP##317,18 
+7898148298334##BROMETO DE N-BUTILESCOPOLAMINA+DIPIRONA SODIC6,67+3330,4MG/ML SOL OR CX 200 FR X 20ML HOSP##455,74 
+7898208148616##BROMETO DE PANCURONIO                        2MG/ML SOL INJ CX 50 AMP X 2ML EMB HOSP##201,53 
+7896112166146##BROMETO DE PINAVERIO                         100MG CX 30 COMP REV##35,64 
+7896112166153##BROMETO DE PINAVERIO                         100MG CX 60 COMP REV##56,55 
+7896112172970##BROMETO DE PINAVERIO                         50MG CX 10 COMP REV##12,22 
+7896112151401##BROMETO DE PINAVERIO                         50MG CX 20 COMP REV##24,44 
+7896112172987##BROMETO DE PINAVERIO                         50MG CX 30 COMP REV##36,65 
+7896112172994##BROMETO DE PINAVERIO                         50MG CX 60 COMP REV##73,32 
+7891317458843##BROMETO DE ROCURONIO                         10MG SOL INJ 12 FA X 5ML##343,47 
+7898487600706##BROMETO DE ROCURONIO                         10MG/ML SOL INJ CX 10FA X 5ML EMB HOSP##286,92 
+7896004728643##BROMETO PINAVERIO                            100MG  CX 2BL X 15 COMP##37,92 
+7894916145947##BROMETO PINAVERIO                            100MG 2 BLT X 15 COMP REV##37,92 
+7896004728636##BROMETO PINAVERIO                            100MG 2BL X 15 COMP REV##37,92 
+7896004743851##BROMETO PINAVERIO                            100MG 4BL X 15 COMP REV##60,20 
+7896004743868##BROMETO PINAVERIO                            100MG CX 4BL X 15 COMP##60,20 
+7899095235854##BROMEXPEC                                    0,8MG/ML XPE FR 120ML INF##9,94 
+7899095235823##BROMEXPEC                                    1,6MG/ML XPE FR 120ML ADU##12,05 
+7898146820759##BROMIDRATO CITALOPRAM                        20 MG CT 2 BL X14 COM REV##54,27 
+7894916144414##BROMIDRATO DE CITALOPRAM                     20MG CX 2BL X 14 COMP REV##57,93 
+7896004731186##BROMIDRATO DE CITALOPRAM                     20MG CX 2BL X 15 COMP REV##72,37 
+7898361881856##BROMIDRATO DE CITALOPRAM                     20MG CX 14 COMP REV##29,21 
+7898361884475##BROMIDRATO DE CITALOPRAM                     20MG CX 140 COMP REV EMB HOSP##292,04 
+7898361881863##BROMIDRATO DE CITALOPRAM                     20MG CX 28 COMP REV##36,42 
+7898361884482##BROMIDRATO DE CITALOPRAM                     20MG CX 280 COMP REV EMB HOSP##584,07 
+7898361884499##BROMIDRATO DE CITALOPRAM                     20MG CX 560 COMP REV EMB HOSP##1.168,14 
+7898361881849##BROMIDRATO DE CITALOPRAM                     20MG CX 7 COMP REV##15,01 
+7896004710013##BROMIDRATO DE FENOTEROL                      5MG SOL FR 20ML##2,81 
+7898148294008##BROMIDRATO DE FENOTEROL                      5MG SOL OR CX 200 FR GOT X 20ML HOSP##403,32 
+7898148293995##BROMIDRATO DE FENOTEROL                      5MG/ML SOL OR FR GTS 20ML##2,79 
+7896112147985##BROMIDRATO DE FENOTEROL                      5MG SOL OR FR 20ML+CGT##2,82 
+7896714270197##BROMIFEN                                     5MG SOL FR GTS 20ML##9,80 
+7898060133164##BROMOPRIDA                                   1MG/ML SOL OR FR X 120ML##12,40 
+7898060133164##BROMOPRIDA                                   1MG/ML SOL OR FR X 120ML+COP##12,40 
+7899547502527##BROMOPRIDA                                   10MG CX 120 COMP EMB FRAC##80,57 
+7894916145800##BROMOPRIDA                                   10MG CX 20 CAP##12,66 
+7898148298587##BROMOPRIDA                                   10MG CX 20 COMP##14,25 
+7896004727882##BROMOPRIDA                                   10MG CX 2BL X 10 CAP##13,98 
+7896004727899##BROMOPRIDA                                   10MG CX 2BL X 10 CAP##12,33 
+7898148298600##BROMOPRIDA                                   10MG CX 800 COMP HOSP##300,33 
+7896112115380##BROMOPRIDA                                   4MG SOL FR GTS 20ML##11,52 
+7896714208480##BROMOPRIDA                                   4MG SOL OR GTS 20ML##11,65 
+7896004701233##BROMOPRIDA                                   4MG SOL ORAL FR 20ML##11,04 
+7896004716497##BROMOPRIDA                                   4MG SOL ORAL FR 20ML##9,39 
+7894916143479##BROMOPRIDA                                   4MG SOL ORAL FR 20ML##9,95 
+7898148298730##BROMOPRIDA                                   4MG/ML SOL OR CX 200 FR GOT X 20ML HOSP##530,08 
+7898060133195##BROMOPRIDA                                   4MG/ML SOL OR FR GOT 20 ML##9,73 
+7896006232711##BROMOPRIDA                                   4MG/ML SOL OR FR GTS 20ML##12,14 
+7898148298747##BROMOPRIDA                                   4MG/ML SOL OR FR GTS 20ML##12,61 
+7896422507158##BROMOPRIDA                                   10MG CX 20 CAP##13,99 
+7896181912422##BROMOPRIDA                                   1MG SOL OR FR GTS 120ML+CM##13,84 
+7896422505598##BROMOPRIDA                                   4MG SOL OR FR GTS 20ML##10,98 
+7896181913306##BROMOPRIDA                                   4MG SOL ORAL FR GTS 20ML##10,61 
+7896006232667##BROMOPRIDA                                   5MG/ML SOL INJ 50AMP X 2ML  EMB HOSP##117,82 
+7898148298594##BROMOPRIDA                                   10MG CX 200 COMP HOSP##75,41 
+7898917593486##BROMOPRIDA                                   4MG SOL OR FR 20ML##9,23 
+7891317466657##BROMOPRIDA                                   4MG SOL OR FR GTS 20ML##10,91 
+7898917593509##BROMOPRIDA                                   4MG/ML SOL OR CX 48 FR X 20ML HOSP##453,56 
+7898917593516##BROMOPRIDA                                   4MG/ML SOL OR CX 96 FR X 20ML HOSP##906,71 
+7895296210744##BROMOPRIDA                                   4MG/ML SOL ORAL FR 20ML+CGT##9,33 
+7898208149835##BROMOPRIDA                                   5MG/ML SOL INJ CX 50 AMP X 2ML EMB HOSP##117,80 
+7896242150329##BROMUC                                       100MG SOL INJ 5AMP X 3ML##12,93 
+7896242150336##BROMUC                                       100MG SOL INJ CX 100 AMP X 3ML##218,73 
+7896014655076##BROMUC                                       100MG/ML SOL INJ C/ 5 AMPX3ML##14,54 
+7896014655083##BROMUC                                       100MG/ML SOL INJ CX 100 AMPX3ML##245,84 
+7893736011081##BRONCATAR                                    8MG/5ML  FR 120ML##11,66 
+7896641804823##BRONCHO VAXOM                                3,5MG INFANTIL - CAPS CART C/ 10##31,79 
+7896641804113##BRONCHO VAXOM                                3,5MG PO GRAN CX 10 SACHES##30,42 
+7896641804120##BRONCHO VAXOM                                3,5MG PO GRAN CX 30 SACHES##91,24 
+7896641804830##BRONCHO VAXOM                                7,0MG ADULTO - CAPS CART C/ 10##47,06 
+7896641804106##BRONCHO VAXOM                                7MG PO LIOF CX 30 CAP GEL##135,16 
+7896006259855##BRONCOCILIN                                  0,48+20MG/ML SOL OR FR 120ML##8,82 
+7896472504961##BRONCOFEDRIN                                 FR 100ML+CD##4,25 
+7896082900078##BRONCOFENIL                                  XAROPE 100ML##20,89 
+7897322701332##BRONCOFLUX                                   3MG XPE FR 120ML PED##15,28 
+7897322701325##BRONCOFLUX                                   6MG XPE FR 120ML ADU##25,04 
+7896004710532##BRONCOLEX                                    25MG/5ML XPE FR 120ML INF##12,76 
+7896004710549##BRONCOLEX                                    50MG/5ML XPE FR 120ML ADU##17,36 
+7897299900318##BRONCOLITIC                                  20MG XPE FR 100ML##7,55 
+7898495603829##BRONCONAL                                    0,4MG/ML XPE FR 120ML+CP MED##6,68 
+7896658002113##BRONDILAT                                    10MG XPE FR 120ML+CM ADU##16,47 
+7896658012167##BRONDILAT                                    10MG XPE FR 60ML+CM X 10ML##8,22 
+7896658002120##BRONDILAT                                    5MG XPE FR 120ML+CM PED##13,80 
+7896658012174##BRONDILAT                                    5MG XPE FR 60ML+CM X 10ML##6,00 
+7896714227771##BRONDYNEO                                    25MG/5ML XPE INF FR 120ML##17,66 
+7896714227788##BRONDYNEO                                    50MG/5ML XPE ADU FR 120ML##23,97 
+7898505091011##BRONFILIL                                    25MG/5ML XPE FR 120ML+CM##15,05 
+7898505091004##BRONFILIL                                    50MG/5ML XPE FR 120ML+CM##20,41 
+7896004743400##BRONQUITOSS                                  XPE FR X 120ML+CM##12,62 
+7899095203594##BRONTEK                                      10MG XPE FR 120ML ADU##23,44 
+7899095203600##BRONTEK                                      5MG XPE FR 120ML INF##16,83 
+7898158691781##BRONXOL                                      3MG/ML XPE FR 120ML PED##13,31 
+7898158691774##BRONXOL                                      6MG/ML XPE FR 120ML ADU##20,07 
+7896281150045##BROS                                         100MG CX 20 CAP##247,72 
+7891058004989##BUCLINA                                      25MG CX 10 COMP##2,99 
+7897595900678##BUCLINA                                      25MG CX 20 COMP##5,99 
+7891058019365##BUCLINA                                      25MG CX 30 COMP##8,98 
+7896360000933##BUCLIPLEX                                    FR 120ML##20,99 
+7896360000919##BUCLIPLEX                                    FR 30 COMP REV##22,00 
+7896206402037##BUDECORT AQUA                                32MCG SUS NAS FR NEB 120 DOSES##19,10 
+7896206402044##BUDECORT AQUA                                64MCG SUS NAS FR NEB 120 DOSES##33,85 
+7898940448012##BUFEDIL                                      150MG  CX 20 COMP REV##28,55 
+7898940448029##BUFEDIL                                      150MG CX 40 COMP REV##57,11 
+7898940448036##BUFEDIL                                      300MG CX 20 COMP REV##57,10 
+7896261017795##BUFFERIN                                     500MG CX 30 COMP REV##31,01 
+7896261017801##BUFFERIN                                     500MG DISP 50BL X 4 COMP REV##257,28 
+7896261017788##BUFFERIN CARDIO                              CARDIO 81MG CX 30 COMP REV##9,64 
+7891317421694##BUONA                                        150MG CX 10 CAP##20,79 
+7891317421687##BUONA                                        150MG CX 30 CAP##62,54 
+7891317438944##BUP                                          150MG BL X 60 COMP##119,14 
+7891317473723##BUP                                          150MG CX 12 COMP##22,39 
+7891317438937##BUP                                          150MG CX 30 COMP##61,74 
+8902344419161##BUPICAN                                      5MG/ML SOL INJ CX 1AMP X 4ML##6,39 
+8902344419147##BUPICAN                                      5MG/ML SOL INJ CX 50 AMP VD INC X 4 ML##297,55 
+8902344420112##BUPICAN                                      5MG/ML SOL INJ CX FA X 20ML##19,39 
+7894916508568##BUPIUM                                       150MG CX 10 COMP REV##19,73 
+7894916507981##BUPIUM                                       150MG CX 30 COMP REV##51,79 
+7894916507998##BUPIUM                                       150MG CX 60 COMP REV##82,85 
+7896004746814##BUPOGRAN                                     150MG CX 10 COMP REV##13,13 
+7896004733081##BUPOGRAN                                     150MG CX 30 COMP REV##41,23 
+7896004733098##BUPOGRAN                                     150MG CX 60 COMP REV##78,82 
+7896472505975##BUPROVIL                                     20MG/ML SUSP ORAL FR100ML##12,51 
+7896472503209##BUPROVIL                                     300MG 600 COMP EMB HOSP##325,17 
+7896472513284##BUPROVIL                                     300MG CX 20 COMP##9,44 
+7896472505531##BUPROVIL                                     300MG CX 200 COMP E.M##96,22 
+7896472502769##BUPROVIL                                     300MG CX 30 COMP##12,88 
+7896472503261##BUPROVIL                                     50MG/ML FR GTS 30ML##12,73 
+7896472513307##BUPROVIL                                     600MG CX 20 COMP##15,31 
+7896472502776##BUPROVIL                                     600MG CX 30 COMP##20,89 
+7896472503216##BUPROVIL                                     600MG CX 600 COMP REV##465,41 
+7896472503247##BUPROVIL                                     SUSP OR 20 MG/ML FR100 ML##11,79 
+7896006247593##BUPSTESIC                                    0,50% SOL INJ 6FA X 20ML EMB HOSP##111,38 
+7896006204534##BUPSTESIC                                    5,0+0,0091MG/ML SOL INJ 6FA X 20ML C/VASO##107,72 
+7896255766708##BURINAX                                      1MG CX 20 COMP##9,18 
+7896026305235##BUSCODUO                                     10+500MG CX 120 COMP REV E.M.##83,58 
+7795304000056##BUSCODUO                                     10+500MG CX 20 COMP REV##13,94 
+7896026303002##BUSCOFEM                                     400MG CX 10 CAP##12,08 
+7896026304023##BUSCOFEM                                     400MG CX 50 CAP BL C/ 2 E.M.##64,70 
+7896026300308##BUSCOPAN                                     10MG CX 20 DR##8,60 
+7896026300315##BUSCOPAN                                     10MG SOL FR 20ML##9,29 
+7896026302333##BUSCOPAN                                     20MG INJ 5 AMP X 1ML##6,78 
+7896026305679##BUSCOPAN COMPOSTO                            10+250MG CX 120 COMP REV E.M##54,72 
+7896026301428##BUSCOPAN COMPOSTO                            10+250MG CX 20 COMP##9,12 
+7795304000131##BUSCOPAN COMPOSTO                            2,5+20MG INJ 3AMP X 5ML##9,71 
+7896026300117##BUSCOPAN COMPOSTO                            6,67+33,40MG SOL ORAL FR 20ML##8,71 
+7896290402050##BUSILVEX                                     6MG/ML SOL INJ 8FA X 10ML##6.426,68 
+7896181917823##BUSONID                                      100MCG SUS NAS FR 3ML (60 DOS)##4,75 
+7896181913719##BUSONID                                      100MCG SUS NAS FR 6ML (120 DOS)##33,74 
+7896181903567##BUSONID                                      200MCG AER BUC FR 5ML (100 DOS)##41,58 
+7896181918721##BUSONID                                      200MCG BLX15##5,78 
+7896181917700##BUSONID                                      200MCG CX 15 CAP##5,51 
+7896181904441##BUSONID                                      200MCG CX 60 CAP+INAL##28,92 
+7896181900740##BUSONID                                      200MCG CX 60 CAP+REFIL##23,17 
+7896181917199##BUSONID                                      32MCG SUS NAS FR 3ML (60 DOS)##6,47 
+7896181915171##BUSONID                                      32MCG SUS NAS FR 6ML (120 DOS)##12,96 
+7896181917724##BUSONID                                      400MCG CX 15 CAP+INAL##11,31 
+7896181917717##BUSONID                                      400MCG CX 15 CAP+REFIL##9,60 
+7896181903222##BUSONID                                      400MCG CX 60 CAP+INAL##50,23 
+7896181901372##BUSONID                                      400MCG CX 60 CAP+REFIL##40,27 
+7896181903512##BUSONID                                      50MCG AER BUC FR 5ML (100 DOS)##26,97 
+7896181917205##BUSONID                                      50MCG SUS NAS FR 3ML (60 DOS)##4,81 
+7896181907176##BUSONID                                      50MCG SUS NAS FR 6ML (120 DOS)##19,27 
+7896181917212##BUSONID                                      64MCG SUS NAS FR 3ML (60 DOS)##13,11 
+7896181915188##BUSONID                                      64MCG SUS NAS FR 6ML (120 DOS)##26,23 
+7898049790463##BUTACID                                      200MG CX 20 DR##7,38 
+7898049793419##BUTACID                                      200MG CX 200 DRG EMB HOSP##96,49 
+7896026301640##BUTAZONA CALCICA                             200MG CX 10 COMP REV##3,70 
+7896004711676##BUTILBROMETO DE ESCOPOLAMINA                 10MG SOL FR GTS 20ML##6,04 
+7898148296323##BUTILBROMETO DE ESCOPOLAMINA                 10MG/ML SOL OR CX 200 FR GOT X 10ML HOSP##428,73 
+7898148296330##BUTILBROMETO DE ESCOPOLAMINA                 10MG/ML SOL OR CX 200 FR GOT X 20ML HOSP##545,64 
+7898148296316##BUTILBROMETO DE ESCOPOLAMINA                 10MG/ML SOL OR FR GTS 20ML##6,01 
+7896006237273##BUTILBROMETO DE ESCOPOLAMINA                 20MG/ML SOL INJ 50AMP X 1ML EMB HOSP##44,18 
+7898166040977##BUTILBROMETO DE ESCOPOLAMINA+DIP. SODICA     6,67+333,4MG/ML FR GT X 20ML##3,90 
+7896004701028##BUTILBROMETO DE ESCOPOLAMINA+DIPIRONA SODICA SOL OR FR 20ML##5,57 
+7896672202414##BUTOVENT PULVINAL                            200MCG X 100 DOS##39,54 
+7896016808005##BYETTA                                       250MCG/ML SOL INJ 1,2ML+SIST APLIC##314,58 
+7896382705526##BYETTA                                       250MCG/ML SOL INJ 1,2ML+SIST+APLIC##330,32 
+7896016808012##BYETTA                                       250MCG/ML SOL INJ 2,4ML+ISIST APLIC##314,58 
+7896382705533##BYETTA                                       250MCG/ML SOL INJ 2,4ML+SIST+APLIC##330,32 
+7896016808005##BYETTA                                       250MCG/ML SOL INJ VD X 1,2ML##330,32 
+7896016808012##BYETTA                                       250MCG/ML SOL INJ VD X 2,4ML##330,32 
+7896004706269##C CALCIO                                     CX 10 COMP EFV##11,98 
+7896014681105##C-PLATIN                                     0,5MG/ML SOL INJ  1FA X 100ML##198,09 
+7896014681006##C-PLATIN                                     0,5MG/MLSOL INJ 1FA X 20ML##47,85 
+7896014681150##C-PLATIN                                     1MG SOL INJ FA X 100ML##221,00 
+7896014681020##C-PLATIN                                     1MG SOL INJ FA X 50ML##110,51 
+7896676421637##CABEREDUX                                    0,5MG CX 2 COMP##41,98 
+7896676421620##CABEREDUX                                    0,5MG CX 8 COMP##145,15 
+7892953001721##CABERGOLINA                                  0,5 MG COM FR VD AMB CT X 2##41,98 
+7892953001738##CABERGOLINA                                  0,5 MG COM FR VD AMB CT X 8##145,15 
+7892953000168##CABERTRIX                                    0,5MG FR 2 COMP##41,98 
+7892953000175##CABERTRIX                                    0,5MG FR 8 COMP##145,15 
+7891106904438##CABO USB                                     CABO USB PARA MED DE GLICEMIA (+IPI 5%)##78,20 
+7891268117554##CADUET                                       10+10MG CX 30 COMP REV##129,54 
+7891268117578##CADUET                                       10+20MG CX 30 COMP REV##213,35 
+7891268117752##CADUET                                       5+10MG CX 10 COMP REV##37,68 
+7891268117745##CADUET                                       5+10MG CX 30 COMP REV##113,03 
+7891268117530##CADUET                                       5+20MG CX 30 COMP REV##196,85 
+7898926572250##CAELYX                                       2MG/ML INJ SUS FA X 10ML##2.234,43 
+7896023700811##CAFEINA                                      210MG FR 60 CAP##30,43 
+7896112413912##CAFFE GREEN                                  EMULSAO CORP BG X 190##116,06 
+7896112414919##CAFFE GREEN                                  SERUM OLHOS BG X 20##92,77 
+7896112418931##CAFFE GREEN                                  CREME GEL NOTURNO BG 60##104,58 
+7896112418979##CAFFE GREEN                                  GEL DIURNO BG 60G DIURNO##107,57 
+7896112418900##CAFFE GREEN                                  LOCAO TONICA X 140ML##41,13 
+7896112418948##CAFFE GREEN                                  MOUSSE DE LIMPEZA X 150ML##44,80 
+7891106900775##CAFIASPIRINA                                 650+65MG CX 100 COMP##86,70 
+7897322706528##CAFILISADOR                                  500+65MG CX 16 COMP##13,50 
+7897322706931##CAFILISADOR                                  500+65MG CX 25BL X 4 COMP##85,52 
+7893454144689##CAGEL GEL                                    GEL BG 50##3,43 
+7898168007619##CALADRYL                                     LOCAO POS SOL FR 100ML##16,83 
+7891268403008##CALADRYL                                     CREME BG 28##10,41 
+7896523207377##CALAMED                                      80+10+1MG/G CREM BG AL 28##8,85 
+7896523206189##CALAMED                                      80+10+1MG/ML LOCAO FR 100ML##12,88 
+7896523206677##CALAMED                                      80+10+9MG/G SUS AER FR 120##20,75 
+7896714250014##CALAMYN                                      LOCAO CREME FR 120ML##14,94 
+7898430191046##CALCEOS D                                    300MG+200UI CX 60 COMP REV##33,42 
+7898430191114##CALCEOS D K2-7                               600MG+200UI+45MCG FR 60 COMP##46,10 
+7898430191039##CALCEOS KIDS                                 21,2+14,4+6+0,4MG/20UI/0,09MCG SOL FR 200ML##25,64 
+7896317901924##CALCICHELL                                   250MG PO ORAL CX 15 ENV X 3,5##28,48 
+7896317901917##CALCICHELL                                   500MG PO ORAL CX 15 ENV X 7##46,41 
+7898495603799##CALCIFIX COMPOSTO B12                        0,10+0,0012+45MG/ML FR 300ML+CP MED##15,84 
+7891058017736##CALCIGENOL                                   10+0,100MG/ML SUS OR FR 300ML##7,88 
+7891158023989##CALCIJEX                                     1MCG SOL INJ 3AMP X 1ML##57,84 
+7896023700491##CALCIO 500D                                  FR 60 CCOMP##23,14 
+7896083400041##CALCIO DE OSTRAS                             750MG CX 45 CAP##19,12 
+7893353614818##CALCIO GEL                                   400MG FR 60 CAP##37,28 
+7896082900290##CALCIO ZURITA                                CX 30 COMP##25,67 
+7897917002783##CALCIOFAR                                    FR 100ML##16,68 
+7897732602601##CALCITHEO                                    500MG CX 50 COMP##7,74 
+7897732602977##CALCITHEO D3                                 SUPL VITAMINICO FR X 60 CAP##49,62 
+7898414850242##CALCITRAN B12                                FR 150ML##18,06 
+7898414850891##CALCITRAN D3                                 CX 30 COMP##25,31 
+7898414850617##CALCITRAN D3                                 CX 60 COMP##46,07 
+7896261005761##CALCIUM D3                                   600MG+200UI CX 30 COMP REV##24,36 
+7896261008519##CALCIUM D3                                   600MG+200UI CX 60 COMP REV##45,95 
+7896261012639##CALCIUM SANDOZ F                             875+1132MG CX 10 COMP EFV##11,64 
+7896261012653##CALCIUM SANDOZ FF                            1750+2263MG CX 10 COMP EFV##18,79 
+7896261013353##CALCIUM SANDOZ+VIT C                         327+1000+1000MG CX 10 COMP EFV SB LARANJA##10,93 
+7891058013417##CALCORT                                      30MG CX 10 COMP##99,27 
+7891058013318##CALCORT                                      6MG CX 20 COMP##41,64 
+7896226101248##CALDE                                        1500MG+400UI CX 20 COMP##16,28 
+7896226101231##CALDE                                        1500MG+400UI CX 60 COMP##50,24 
+7896226105208##CALDE K2                                     CX 30 COMP REV##51,21 
+7896226105147##CALDE MAG                                    CX 60 COMP REV##54,54 
+7898927500184##CALDROX D                                    600MG+400UI FR 20 PAST MAST SB MENTA##14,64 
+7898927500191##CALDROX D                                    600MG+400UI FR 60 PAST MAST SB MENTA##43,30 
+7896317900200##CALMAN                                       100+30+100MG CX 20 COMP REV##18,53 
+7896317900217##CALMAN                                       100MG SOL ORAL FR 100ML##20,38 
+7891142118080##CALMINEX                                     ICE AEROSOL 170##31,49 
+7891142118073##CALMINEX                                     ICE AEROSSOL 60##17,06 
+7891142018106##CALMINEX                                     HOT C/ 10 ALMOFADAS TERMICAS ADES##64,60 
+7891142018090##CALMINEX                                     ICE BAG C/5 BOLSAS TERMICAS DESC##39,15 
+7891142118011##CALMINEX                                     H 0,05+0,02+0,016+0,09+0,01G POM BG 20G HUMAN##9,88 
+7891142118042##CALMINEX                                     0,04+0,0136+0,01G BG 20G ATLETA##9,88 
+7897732602806##CALMINTHEO                                   FR 100ML##10,97 
+7898152460970##CALMOPLANTAS                                 250MG FR 100ML+CM TINT##10,35 
+7898152460997##CALMOPLANTAS                                 400MG CX 50 CAP##17,50 
+7891317476090##CALNATE                                      900MG PO ORAL 60 ENV X 30##327,80 
+7891317465025##CALNATE                                      900MG PO ORAL 60 ENV X 30##983,38 
+7896523219714##CALOMED                                      0,2G/ML+0,05ML/ML FR 10ML##19,71 
+7896261002029##CALSAN                                       500MG CX 30 COMP MAST##33,45 
+7897917001588##CALSOL                                       FR 100ML##14,39 
+0000000000000##CALSOL                                       POM BG 20##7,43 
+7891045040884##CALTRATE                                     600+D 400UI FR 30 COMP##25,12 
+7891045040891##CALTRATE                                     600+D400UI FR 60 COMP##50,25 
+7891045040648##CALTRATE                                     600+M FR 30 COMP##23,42 
+7891045040655##CALTRATE                                     600+M FR 60 COMP##46,88 
+7896094200982##CALTREN                                      10MG CX 30 COMP##33,77 
+7896094201002##CALTREN                                      20MG CX 30 COMP##63,89 
+7897655400025##CAMBEM                                       180MG CX 2 COMP##6,81 
+7897655400032##CAMBEM                                       6MG/ML SUS ORAL FR 20ML##5,37 
+7896023700637##CAMOMILA                                     SOL FR 150ML##17,81 
+7897129300059##CAMOMILINA C                                 CX 20 CAP##27,45 
+7891268100471##CAMPTOSAR                                    100MG SOL INJ CX 1FA X 5ML##1.539,74 
+7891268100150##CAMPTOSAR                                    20MG SOL INJ CX 1FA X 2ML##662,77 
+7891268100167##CAMPTOSAR                                    20MG SOL INJ CX 1FA X 5ML##1.637,51 
+7891268100488##CAMPTOSAR                                    40MG SOL INJ CX 1FA X 2ML##623,20 
+7897337707381##CANCIDAS                                     50MG CX 1FA##2.554,27 
+7897337707398##CANCIDAS                                     70MG CX 1FA##3.290,44 
+7895296135146##CANDECOR                                     16MG CX 1BL X 30 COMP##60,61 
+7895296135115##CANDECOR                                     8MG CX 1BL X 30 COMP##56,19 
+7895296170055##CANDECOR HCT                                 16+12,5MG CX 2BL X 15 COMP##54,02 
+7895296170024##CANDECOR HCT                                 8+12,5MG CX CX 2BL X 15 COMP##52,78 
+7896004742779##CANDEMED                                     16MG 1BL X 30 COMP##39,36 
+7896004742762##CANDEMED                                     8MG 1BL X 30 COMP##34,30 
+7896004745602##CANDEMED HCT                                 16+12,5MG CX 2BL X 15 COMP##37,62 
+7896004745596##CANDEMED HCT                                 8+12,5MG CX 2BL X 15 COMP##37,62 
+7896004813226##CANDERM                                      250MG CX 20 COMP##10,88 
+7896004707570##CANDERM                                      400MG CX 20 COMP##15,04 
+7897595626127##CANDESARTANA +HCT                            16+12,5MG CX 30 COMP##45,75 
+7896004742571##CANDESARTANA CILEXATILA                      16MG CX 30 COMP##60,83 
+7896004742564##CANDESARTANA CILEXATILA                      8MG CX 30 COMP##56,25 
+7896004745336##CANDESARTANA CILEXATILA+HCT                  16+12,5MG CX 30 COMP##54,75 
+7896004745329##CANDESARTANA CILEXATILA+HCT                  8+12,5MG CX 30 COMP##53,08 
+7896004742601##CANDESARTANA CILEXETILA                      16MG CX 30 COMP##60,83 
+7896004742595##CANDESARTANA CILEXETILA                      8MG CX 30 COMP REV##56,25 
+7897595611178##CANDESARTANA CILEXETILA                      16MG CX 30 COMP##60,82 
+7897595611147##CANDESARTANA CILEXETILA                      8MG CX 30 COMP##56,25 
+7895296135054##CANDESARTANA CILEXETILA                      16MG CX 30 COMP##60,83 
+7894916147798##CANDESARTANA CILEXETILA                      16MG CX 30 COMP##60,83 
+7895296135023##CANDESARTANA CILEXETILA                      8MG CX 30 COMP##56,25 
+7894916147781##CANDESARTANA CILEXETILA                      8MG CX 30 COMP##56,25 
+7895296168021##CANDESARTANA CILEXETILA+HCT                  16+12,5MG CX 30 COMP##54,75 
+7894916148184##CANDESARTANA CILEXETILA+HCT                  16+12,5MG CX 30 COMP##54,75 
+7896004745350##CANDESARTANA CILEXETILA+HCT                  16+12,5MG CX 30 COMP##54,75 
+7895296168014##CANDESARTANA CILEXETILA+HCT                  8+12,5MG CX 30 COMP##53,08 
+7894916148177##CANDESARTANA CILEXETILA+HCT                  8+12,5MG CX 30 COMP##53,08 
+7896004745343##CANDESARTANA CILEXETILA+HCT                  8+12,5MG CX 30 COMP##53,08 
+7898569761011##CANDESARTANA CILEXETILA+HIDROCLOROTIAZIDA    16+12,5MG  CX 30 COMP##34,69 
+7898569760984##CANDESARTANA CILEXETILA+HIDROCLOROTIAZIDA    8+12,5MG CX 30 COMP##32,56 
+7896658012181##CANDICORT                                    20+0,64MG CREME BG 10##8,84 
+7896658001116##CANDICORT                                    20+0,64MG CREME DERM BG 30##17,66 
+7896658001123##CANDICORT                                    20+0,64MG POM DERM BG 30##17,66 
+7896004722702##CANDIGRAN                                    CREME BG 30##12,35 
+7896112191933##CANDITRAT                                    100MUI CREME VAG BG 60G+14 APLIC##16,57 
+7896112115045##CANDITRAT                                    100MUI SUS ORAL FR 50ML##16,30 
+7896112140993##CANDITRAT                                    CREME VAG BG 60##16,57 
+7896658001154##CANDORAL                                     200MG CX 10 COMP##26,41 
+7891106900591##CANESTEN                                     1% CREME DERM BG 20##11,03 
+7891106900898##CANESTEN                                     1% SOL TOP FR GTS 30ML##16,28 
+7891106900614##CANESTEN                                     1% SOL TOP SPRAY X 30 ML##24,53 
+7896023742903##CANFORA                                      PT 150##29,97 
+7896004742731##CANSARCOR                                    16MG CX 1BL X 30 COMP##47,96 
+7896004742748##CANSARCOR                                    8MG CX 1BL X 30 COMP##44,35 
+7896004745527##CANSARCOR HCT                                16+12,5MG CX 2BL X 15 COMP##33,71 
+7896004745510##CANSARCOR HCT                                8+12,5MG CX 2BL X 15 COMP##32,65 
+7896658002366##CAPEL                                        SHAMPOO FR 120ML (+7% IPI)##39,94 
+7897851220236##CAPILAREMA                                   75MG CX 30 COMP##27,79 
+7897851221158##CAPILAREMA                                   75MG CX 60 COMP##49,43 
+7897851220335##CAPOBAL                                      25MG CX 30 COMP##16,23 
+7897851220342##CAPOBAL                                      50MG CX 30 COMP##32,62 
+7896006226765##CAPOTRAT                                     25MG CX 30 COMP##16,34 
+7896006226727##CAPOTRAT                                     25MG CX 500 COMP EMB HOSP##99,46 
+7896006226123##CAPOTRAT                                     50MG CX 30 COMP##25,54 
+7896714200477##CAPOTRINEO                                   12,5MG CX 30 COMP##11,31 
+7896714207797##CAPOTRINEO                                   25MG CX 30 COMP##15,18 
+7896714200385##CAPOTRINEO                                   50MG CX 30 COMP##32,84 
+7899095200067##CAPOX                                        25MG CX 30 COMP##14,52 
+7899095200081##CAPOX                                        50MG CX 30 COMP##18,15 
+7896206405984##CAPRELSA                                     100MG CX 30 COMP REV##6.164,35 
+7896206405991##CAPRELSA                                     300MG CX 30 COMP REV##16.372,72 
+7898060138039##CAPTOCORD                                    12,5MG CX 15 COMP##5,83 
+7898060138046##CAPTOCORD                                    12,5MG CX 30 COMP##8,94 
+7898060138053##CAPTOCORD                                    25MG CX 15 COMP##6,46 
+7898060138060##CAPTOCORD                                    25MG CX 30 COMP##10,03 
+7898060131948##CAPTOCORD                                    25MG CX 60 COMP##12,12 
+7898060138077##CAPTOCORD                                    50MG BL X 30 COMP##7,53 
+7898060138084##CAPTOCORD                                    50MG CX 30 COMP##12,18 
+7896472502752##CAPTOLAB                                     12,5MG CX 30 COMP##5,66 
+7896472501915##CAPTOLAB                                     25MG CX 30 COMP##10,41 
+7896472504558##CAPTOLAB                                     25MG CX 60 COMP##15,92 
+7896472503018##CAPTOLAB                                     25MG CX 750 COMP##89,88 
+7896472502783##CAPTOLAB                                     50MG CX 30 COMP##15,34 
+7896523202327##CAPTOMED                                     12,5MG CX 20 COMP##7,48 
+7896523206974##CAPTOMED                                     12,5MG CX 50BL X 20 COMP##37,25 
+7896523202341##CAPTOMED                                     25MG CX 20 COMP##9,37 
+7896523207841##CAPTOMED                                     25MG CX 25BL X 20 COMP HOSP##21,94 
+7896523207292##CAPTOMED                                     25MG CX 60 COMP##14,08 
+7896523206981##CAPTOMED                                     50MG 50BL X 20 COMP##90,07 
+7896523202365##CAPTOMED                                     50MG CX 20 COMP##11,41 
+7897917001472##CAPTOMIDO                                    12,5MG CX 30 COMP##8,56 
+7897917001489##CAPTOMIDO                                    25MG CX 30 COMP##11,98 
+7897917001496##CAPTOMIDO                                    50MG CX 30 COMP##20,69 
+7898078940334##CAPTON                                       25MG CX 16 COMP##5,73 
+7898078940341##CAPTON                                       25MG CX 28 COMP##7,57 
+7896676413694##CAPTOPRIL                                    25MG CX 100 COMP EMB FRAC##25,69 
+7896181903666##CAPTOPRIL                                    25MG CX 30 COMP##15,73 
+7896676410808##CAPTOPRIL                                    12,5MG CX 30 COMP##10,33 
+7896112116653##CAPTOPRIL                                    12,5MG CX 30 COMP##6,10 
+7896004700328##CAPTOPRIL                                    12,5MG CX 30 COMP##12,03 
+7896004704678##CAPTOPRIL                                    12,5MG CX 30 COMP##9,49 
+7894916141130##CAPTOPRIL                                    12,5MG CX 30 COMP##9,07 
+7896112176466##CAPTOPRIL                                    12,5MG CX 60 COMP##12,19 
+7896004719306##CAPTOPRIL                                    12,5MG CX 90 COMP##32,52 
+7899547502763##CAPTOPRIL                                    25MG CX 280 COMP EMB FRAC##171,71 
+7896112116660##CAPTOPRIL                                    25MG CX 30 COMP##9,45 
+7896004704326##CAPTOPRIL                                    25MG CX 30 COMP##19,63 
+7898148290512##CAPTOPRIL                                    25MG CX 30 COMP##6,44 
+7896004704654##CAPTOPRIL                                    25MG CX 30 COMP##17,09 
+7894916141147##CAPTOPRIL                                    25MG CX 30 COMP##16,13 
+7898049796199##CAPTOPRIL                                    25MG CX 510 COMP EMB HOSP##78,08 
+7896004707020##CAPTOPRIL                                    25MG CX 60 COMP##28,72 
+7896112176473##CAPTOPRIL                                    25MG CX 60 COMP##18,89 
+7898148290536##CAPTOPRIL                                    25MG CX 600 COMP HOSP##283,52 
+7896004719313##CAPTOPRIL                                    25MG CX 90 COMP##43,07 
+7896714208084##CAPTOPRIL                                    50MG CX 30 COMP##30,99 
+7896676410822##CAPTOPRIL                                    50MG CX 30 COMP##31,00 
+7896112116677##CAPTOPRIL                                    50MG CX 30 COMP##18,89 
+7896004704333##CAPTOPRIL                                    50MG CX 30 COMP##35,38 
+7898148290550##CAPTOPRIL                                    50MG CX 30 COMP##19,31 
+7896004706955##CAPTOPRIL                                    50MG CX 30 COMP##22,15 
+7894916141154##CAPTOPRIL                                    50MG CX 30 COMP##25,09 
+7896004707051##CAPTOPRIL                                    50MG CX 60 COMP##51,18 
+7896112176480##CAPTOPRIL                                    50MG CX 60 COMP##37,78 
+7898148290574##CAPTOPRIL                                    50MG CX 600 COMP HOSP##514,09 
+7896004719320##CAPTOPRIL                                    50MG CX 90 COMP##76,77 
+7897595603340##CAPTOPRIL                                    12,5MG CX 30 COMP##11,06 
+7896422503655##CAPTOPRIL                                    12,5MG CX 30 COMP##12,67 
+7896181903437##CAPTOPRIL                                    12,5MG CX 30 COMP##13,73 
+7896422503679##CAPTOPRIL                                    12,5MG CX 90 COMP##33,66 
+7897595603357##CAPTOPRIL                                    25MG CX 30 COMP##18,33 
+7896422503709##CAPTOPRIL                                    25MG CX 30 COMP##19,63 
+7898049795697##CAPTOPRIL                                    25MG CX 30 COMP##11,41 
+7896006214984##CAPTOPRIL                                    25MG CX 30 COMP##17,83 
+7897595603401##CAPTOPRIL                                    25MG CX 60 COMP##27,55 
+7896422503716##CAPTOPRIL                                    25MG CX 60 COMP##28,86 
+7896422503723##CAPTOPRIL                                    25MG CX 90 COMP##43,31 
+7897595603364##CAPTOPRIL                                    50MG CX 30 COMP##34,79 
+7896422503754##CAPTOPRIL                                    50MG CX 30 COMP##37,33 
+7896181903970##CAPTOPRIL                                    50MG CX 30 COMP##39,85 
+7896006235477##CAPTOPRIL                                    50MG CX 30 COMP##35,69 
+7897595603418##CAPTOPRIL                                    50MG CX 60 COMP##46,37 
+7896422503808##CAPTOPRIL                                    50MG CX 60 COMP##54,17 
+7898361880668##CAPTOPRIL                                    12,5MG CX 30 COMP##17,96 
+7898917592458##CAPTOPRIL                                    12,5MG CX 60 COMP EM FRAC##10,45 
+7898917592465##CAPTOPRIL                                    12,5MG CX 60 COMP EMB FRAC##16,73 

@@ -1,0 +1,501 @@
+7895296202015##LATANOPROSTA                                 0,05MG/ML SOL OFT FR 2,5ML##66,04 
+7896004724515##LATANOPROSTA+MAL TIMOLOL                     SOL OFT FR 2,56ML##74,19 
+7895296291019##LATANOPROSTA+MAL TIMOLOL                     0,05+0,05MG/ML FR 2,5ML##74,18 
+7897316805459##LATISSE                                      FR 5ML +100APLIC##121,44 
+7896523204147##LAVITAN                                      65+10+10MG FR 30 DR##36,96 
+7896523204130##LAVITAN                                      65+10+10MG FR 50 DR##57,63 
+7896150300014##LAVOLHO                                      0,90% SOL FR X 15ML##10,26 
+7896112466703##LAXETTE                                      33,5MG CX 10 COMP REV##12,64 
+7896112466925##LAXETTE                                      55,6MG CX 10 COMP REV##21,42 
+7896026170635##LAXOL                                        100% SOL OR FR 60ML##15,87 
+7896023792229##LECITINA DE SOJA                             FR 40 COMP##23,11 
+7896083400249##LECITINA DE SOJA                             500MG CX 45 CAP##18,05 
+7897595604460##LECTRUM                                      3,75MG PO INJ FA+DIL X 1,5ML+2AGULHAS##448,50 
+7897595604477##LECTRUM                                      7,50MG PO INJ FA+DIL X 1,5ML+2AGULHAS##1.160,18 
+7896181922964##LEFLUNOMIDA                                  20MG CX 30 COMP REV##198,42 
+7896641802225##LEGALON                                      180MG CX 20 CAP##69,77 
+7896641800337##LEGALON                                      64MG/5ML SUS FR 100ML##32,36 
+7896641800429##LEGALON                                      90MG CX 30 DR##51,46 
+7891268104318##LEGIFOL                                      50MG SOL INJ CX 10FA##508,62 
+7897848500792##LEITE DE MAGNESIA                            80MG/ML FR 100ML SB MENTA##6,30 
+7897848500723##LEITE DE MAGNESIA                            80MG/ML FR 100ML SB ORIGINAL##6,30 
+7897917004411##LEITE DE MAGNESIA BELFAR                     FR X 120ML##8,33 
+7897917003858##LEITE DE MAGNESIA BELFAR                     SUS FR 240ML##17,62 
+7896523215853##LEITE DE MAGNESIA CIMED                      80MG/ML SUS OR##12,81 
+0000078905030##LEITE DE MAGNESIA PHILLIPS                   FR 120ML HORTELA##3,32 
+0000078905016##LEITE DE MAGNESIA PHILLIPS                   FR 120ML TRADICIONAL##3,32 
+0000078905047##LEITE DE MAGNESIA PHILLIPS                   FR 350ML HORTELA##5,36 
+0000078905023##LEITE DE MAGNESIA PHILLIPS                   FR 350ML TRADICIONAL##5,36 
+7898328480504##LEMTRADA                                     10MG/ML SOL INFUS##27.813,27 
+7898331960444##LENITRAL                                     10MG CX 30 COMP##30,18 
+7898331960451##LENITRAL                                     20MG CX 30 COMP##43,36 
+7898331960468##LENITRAL                                     40MG CX 30 COMP##82,79 
+7896677700991##LEPARIN                                      SOL FR 20 ML##28,80 
+7896261002388##LEPONEX                                      100MG CX 30 COMP##173,17 
+7896261005655##LEPONEX                                      100MG CX 30BL X 15 COMP##2.596,73 
+7896261002371##LEPONEX                                      25MG CX 20 COMP##28,69 
+7891317473396##LEPTICO                                      100MG CX 30 COMP##47,44 
+7891317473402##LEPTICO                                      100MG CX 60 COMP##94,87 
+7891317473334##LEPTICO                                      25MG CX 30 COMP##17,23 
+7891317473341##LEPTICO                                      25MG CX 60 COMP##34,45 
+7891317473365##LEPTICO                                      50MG CX 30 COMP##28,43 
+7891317473372##LEPTICO                                      50MG CX 60 COMP##56,85 
+7898060133904##LERGIDRIN                                    0,4+0,05MG/ML XPE FR X 120ML+CM##16,50 
+7898060138855##LERGITEC                                     10MG CX 12 COMP##17,01 
+7898060138848##LERGITEC                                     1MG XPE 100ML##20,47 
+7897316800201##LERIN                                        SOL FR 24ML##10,04 
+7896261005297##LESCOL XL                                    XL 80MG CX 30 COMP REV##114,56 
+7891317458867##LETROZOL                                     2,5MG CX 30 COMP REV##369,81 
+7896014662005##LEUCOCITIM                                   150MCG INJ CX 1FA+DIL##184,09 
+7896014662203##LEUCOCITIM                                   300MCG INJ CX 1FA+DIL##322,02 
+7896014662500##LEUCOCITIM                                   400MCG INJ CX 1FA+DIL##443,25 
+7896658002403##LEUCOGEN                                     200MG XPE FR 120ML##69,41 
+7896658002397##LEUCOGEN                                     80MG CX 20 CAP##88,08 
+7896269901454##LEUKERAN                                     2MG CX 25 COMP##27,23 
+7898149934095##LEUMOSTIN                                    300 MCG PO LIOF INJ CT 1FA VD INC##307,39 
+7898149934101##LEUMOSTIN                                    300 MCG PO LIOF INJ CT 5FA VD INC##1.536,99 
+7898149934132##LEUMOSTIN                                    400 MCG PO LIOF INJ CT 1FA VD INC##423,14 
+7898149934149##LEUMOSTIN                                    400 MCG PO LIOF INJ CT 5FA VD INC##2.115,69 
+7896212417179##LEUSTATIN                                    1MG/ML CX 1FA CX 10ML##1.436,96 
+7896212400001##LEUSTATIN                                    1MG/ML SOL INJ FA X 10ML HOSP##1.436,96 
+7896212424511##LEUSTATIN                                    1MG/ML SOL INJ FA X 8ML##1.149,56 
+7896212429035##LEVAQUIN                                     500MG CX 10 COMP REV##166,91 
+7896212426713##LEVAQUIN                                     500MG CX 7 COMP REV##118,02 
+7896212426720##LEVAQUIN                                     500MG/ML SOL INJ 100ML HOSP##151,08 
+7896083400881##LEVEDO DE CERVEJA                            500MG CX 350 COMP##24,87 
+7896023792243##LEVEDURA DE CERVEJA                          FR 150 COMP##24,59 
+7896241248287##LEVEL                                        0,10+0,02MG CX 21 COMP REV##12,14 
+7896112448358##LEVEL                                        0,10+0,02MG CX 63 COMP REV##34,84 
+7897705201145##LEVEMIR                                      FLEXPEN CX 1SIST APL##59,86 
+7897705201152##LEVEMIR                                      FLEXPEN CX 5 SIST APL##308,00 
+7897705201138##LEVEMIR                                      PENFILL CX 5 REFIL X 3ML##290,70 
+7894916503266##LEVERCTIN                                    6MG CX 2 COMP##11,10 
+7894916503259##LEVERCTIN                                    6MG CX 4 COMP##17,87 
+7891106005524##LEVITRA                                      10MG CX 1 COMP REV##18,47 
+7891106005968##LEVITRA                                      10MG CX 2 COMP REV##65,15 
+7891106005517##LEVITRA                                      10MG CX 4 COMP REV##123,67 
+7891106005647##LEVITRA                                      20MG CX 2 COMP REV##76,77 
+7891106005609##LEVITRA                                      20MG CX 4 COMP REV##153,50 
+7891106006644##LEVITRA                                      20MG CX 8 COMP REV##304,93 
+7891106005500##LEVITRA                                      5MG CX 4 COMP REV##116,71 
+7891106904919##LEVITRA                                      OROD 10MG CX 2 COMP##43,40 
+7891106904926##LEVITRA                                      OROD 10MG CX 4 COMP##86,83 
+7897595605856##LEVOBIOT                                     250MG CX 7 COMP REV##24,15 
+7897595605894##LEVOBIOT                                     500MG CX 10 COMP REV##65,45 
+7897595605870##LEVOBIOT                                     500MG CX 3 COMP REV##20,68 
+7897595605887##LEVOBIOT                                     500MG CX 7 COMP REV##45,89 
+7898927562472##LEVOFLOXACINO                                250MG CX 7 COMP##17,72 
+7894916142526##LEVOFLOXACINO                                500MG CX 10 COMP##69,68 
+7896004713120##LEVOFLOXACINO                                500MG CX 10 COMP REV##71,82 
+7896004713175##LEVOFLOXACINO                                500MG CX 10 COMP REV##64,33 
+7894916143851##LEVOFLOXACINO                                500MG CX 3 COMP##20,85 
+7896004719269##LEVOFLOXACINO                                500MG CX 3 COMP REV##21,52 
+7896004719450##LEVOFLOXACINO                                500MG CX 42 COMP REV##301,68 
+7894916142519##LEVOFLOXACINO                                500MG CX 7 COMP##48,81 
+7898095344054##LEVOFLOXACINO                                500MG CX 7 COMP REV##50,33 
+7896004713137##LEVOFLOXACINO                                500MG CX 7 COMP REV##50,28 
+7896004713168##LEVOFLOXACINO                                500MG CX 7 COMP REV##45,70 
+7898361700324##LEVOFLOXACINO                                5MG/ML SOL INJ FR 100ML SIST FECH##84,22 
+7896523213415##LEVOFLOXACINO                                500MG CX 10 COMP REV##48,90 
+7896523213408##LEVOFLOXACINO                                500MG CX 7 COMP REV##37,90 
+7891317414221##LEVOFLOXACINO                                500MG CX 10 COMP##71,91 
+7897595605283##LEVOFLOXACINO                                500MG CX 10 COMP REV##71,70 
+7896658015656##LEVOFLOXACINO                                500MG CX 10 COMP REV##68,59 
+7896181920687##LEVOFLOXACINO                                500MG CX 10 COMP REV##68,59 
+7891317462208##LEVOFLOXACINO                                500MG CX 3 COMP##21,52 
+7897595605306##LEVOFLOXACINO                                500MG CX 3 COMP REV##21,54 
+7891317457860##LEVOFLOXACINO                                500MG CX 42 COMP REV EMB FRAC##196,32 
+7891317414139##LEVOFLOXACINO                                500MG CX 7 COMP##50,38 
+7897076906694##LEVOFLOXACINO                                500MG CX 7 COMP##61,50 
+7898927562403##LEVOFLOXACINO                                500MG CX 7 COMP##40,60 
+7897595605290##LEVOFLOXACINO                                500MG CX 7 COMP REV##50,11 
+7896658015649##LEVOFLOXACINO                                500MG CX 7 COMP REV##48,35 
+7896181920670##LEVOFLOXACINO                                500MG CX 7 COMP REV##48,35 
+7896658008825##LEVOID                                       100MCG CX 30 COMP##7,34 
+7896658008849##LEVOID                                       112MCG CX 30 COMP##13,99 
+7896658008863##LEVOID                                       125MCG CX 30 COMP##10,79 
+7896658008887##LEVOID                                       150MCG CX 30 COMP##11,61 
+7896658003394##LEVOID                                       175MCG CX 30 COMP##14,66 
+7896658003479##LEVOID                                       200MCG CX 30 COMP##17,75 
+7896658008740##LEVOID                                       25MCG CX 30 COMP##7,78 
+7896658002076##LEVOID                                       38MCG CX 30 COMP##6,22 
+7896658008764##LEVOID                                       50MCG CX 30 COMP##8,63 
+7896658008788##LEVOID                                       75MCG CX 30 COMP##9,41 
+7896658008801##LEVOID                                       88MCG CX 30 COMP##11,34 
+7897473206861##LEVOLUKAST                                   10+5MG CX 14 COMP REV##65,64 
+7897473206854##LEVOLUKAST                                   10+5MG CX 7 COMP REV##32,82 
+7896714213255##LEVONORGESTREL                               1,5MG CX 1 COMP##13,57 
+7898907312264##LEVONORGESTREL                               1,5MG CX 1 COMP##13,41 
+7894916204705##LEVORDIOL                                    CX 28 COMP##11,76 
+7896676416411##LEVOTAC                                      5MG SOL INJ 06 BOLSAS PLSD FLEX X 100ML##906,50 
+7891721019999##LEVOTIROXINA SODICA                          100MCG CX 30 COMP##4,79 
+7891721020049##LEVOTIROXINA SODICA                          112MCG CX 30 COMP##9,43 
+7891721020094##LEVOTIROXINA SODICA                          125MCG CX 30 COMP##7,03 
+7891721020148##LEVOTIROXINA SODICA                          150MCG CX 30 COMP##7,57 
+7891721020193##LEVOTIROXINA SODICA                          175MCG CX 30 COMP##9,56 
+7891721020247##LEVOTIROXINA SODICA                          200MCG CX 30 COMP##16,54 
+7891721019791##LEVOTIROXINA SODICA                          25MCG CX 30 COMP##5,08 
+7891721019845##LEVOTIROXINA SODICA                          50MCG CX 30 COMP##5,64 
+7891721019890##LEVOTIROXINA SODICA                          75MCG CX 30 COMP##6,15 
+7891721019944##LEVOTIROXINA SODICA                          88MCG CX 30 COMP##7,41 
+7896637022989##LEVOXIN                                      250MG CX 3 COMP REV##11,82 
+7896637022996##LEVOXIN                                      250MG CX 7 COMP REV##24,41 
+7896637023108##LEVOXIN                                      500MG CX 10 COMP REV##69,72 
+7896637023764##LEVOXIN                                      500MG CX 14 COMP REV##93,82 
+7896637023092##LEVOXIN                                      500MG CX 3 COMP REV##20,92 
+7896637023009##LEVOXIN                                      500MG CX 7 COMP REV##48,80 
+7896676403374##LEVOZINE                                     100MG CX 20BL X 10 COMP EMB HOSP##130,54 
+7896676403381##LEVOZINE                                     25MG CX 20BL X 10 COMP EMB HOSP##64,40 
+7896676402308##LEVOZINE                                     40MG CX 10FR X 20ML EMB HOSP##72,49 
+5702157150700##LEXAPRO                                      10MG CX 14 COMP##75,86 
+5702157150809##LEXAPRO                                      10MG CX 28 COMP##151,83 
+5702157150601##LEXAPRO                                      10MG CX 7 COMP##37,89 
+5702157141562##LEXAPRO                                      15 MG 7 COMP##45,49 
+5702157151851##LEXAPRO                                      15MG CX 14 COMP##91,04 
+5702157151905##LEXAPRO                                      15MG CX 28 COMP##182,22 
+5702157152353##LEXAPRO                                      20MG CX 14 COMP##151,79 
+5702157152452##LEXAPRO                                      20MG CX 28 COMP##288,44 
+5702157141326##LEXAPRO                                      20MG FR 15ML##162,58 
+7896290401527##LEXATO                                       500MG SOL INJ CX 1FA##114,10 
+7896290401510##LEXATO                                       50MG SOL INJ CX 1FA##18,34 
+7896112126973##LEXIN                                        50MG PO SUS ORAL FR 100ML+CM##25,72 
+7896226500164##LEXOTAN                                      3MG CX 20 COMP##14,06 
+7896226502199##LEXOTAN                                      3MG CX 30 COMP##21,55 
+7896226500171##LEXOTAN                                      6MG CX 20 COMP##23,74 
+7896226502205##LEXOTAN                                      6MG CX 30 COMP##36,17 
+7896714209999##LEZEPAN                                      3MG CX 20 COMP##8,68 
+7896714218489##LEZEPAN                                      3MG CX 500 COMP##217,00 
+7896714209982##LEZEPAN                                      6MG CX 20 COMP##13,15 
+7896714218496##LEZEPAN                                      6MG CX 500 COMP##329,01 
+7896004734620##LIARA                                        3+0,03MG CX 21 COMP REV##28,93 
+7896658021442##LIBERAFLUX                                   7,50MG XPE FRX100ML+CP##19,71 
+7896658021459##LIBERAFLUX                                   7,50MG XPE FRX200ML+CP##34,83 
+7896317907834##LIBERAFLUX                                   7,5MG/ML XPE X 100ML+CP##18,30 
+7896317907841##LIBERAFLUX                                   7,5MG/ML XPE X 200ML+CP##32,34 
+7896317907827##LIBERAFLUX                                   7,5MG/ML XPE X 30ML+CP##6,13 
+7896094201378##LIBIAM                                       1,25MG CX 28 COMP REV##29,24 
+7896094200920##LIBIAM                                       2,5MG CX 28 COMP##46,25 
+7897851221127##LICCO                                        5MG CX 30 CAP##27,85 
+7896083400768##LICOPENE                                     250MG CX 30 CAP##42,33 
+7896094901209##LICOR DE CACAU                               100MG CX 6 COMP##9,22 
+7896094901193##LICOR DE CACAU                               20MG SUS ORAL FR 30ML##9,39 
+7896094901216##LICOR DE CACAU                               500MG CX 1 COMP##7,64 
+7896317901092##LICOVIT                                      5+10MG+600MCG CX 30 CAP GEL##43,22 
+7896317901092##LICOVIT                                      5+10MG+600MCG CX 30 CAP##40,13 
+7897460401385##LICOXID                                      5G CX 30 COMP GEL##28,49 
+7893353040082##LIDIAL                                       50MG/G POM BG 25##11,13 
+7896004721965##LIDOCAINA                                    40MG CREME DERM BG 30##49,10 
+7896004721972##LIDOCAINA                                    40MG CREME DERM BG 30##44,13 
+7896004722467##LIDOCAINA                                    50MG POM DERM BG 25##8,28 
+7896004722474##LIDOCAINA                                    50MG POM DERM BG 25G SB LARANJA##7,92 
+7896004722498##LIDOCAINA                                    50MG POM DERM BG 25G SB LARANJA##7,92 
+7898148302758##LIDOCAINA                                    50MG POM DERM BG 25##7,44 
+7896714230160##LIDOGEL                                      2% GEL BG 30G C/APLIC URET##10,36 
+7896714215617##LIDOGEL                                      2% GEL TOP CX 50BG X 30##506,11 
+7896006263616##LIDOJET                                      2% SOL INJ 12AMP X 20ML##51,57 
+7898075310901##LIDOPASS                                     50MG/G POM DERM BG 25G SB LARANJA##10,14 
+7898040320904##LIDOSPORIN                                   SOL OTO FR C/10ML##7,25 
+7898244720135##LIDOSPORIN                                   12000UI+45,4MG/ML  CX 10ML##7,61 
+7896004745619##LIDY                                         3+0,02MG CX 24 COMP REV##27,74 
+7896004752198##LIDY                                         3+0,02MG CX 3BL X 24 COMP REV##66,57 
+7896622302669##LIFE-VIT                                     CX 30 COMP##49,72 
+7893736003703##LIMA C                                       500MG CX 12 COMP REV##7,22 
+7898168007039##LIMBITROL                                    20 CAP##6,45 
+7896014686551##LINATRON                                     300MG SOL INJ CX 50 AMP X 2ML EMB HOSP##397,59 
+7893353206488##LINCOFLAN                                    300MG/ML  CX 1AMP X 1ML##7,00 
+7893353206495##LINCOFLAN                                    600MG/ML SOL INJ 1AMP X 2ML##11,36 
+7898208140238##LINCOMIN                                     300MG SOL INJ CX 50 AMP X 1ML HOSP##228,80 
+7898208140214##LINCOMIN                                     300MG SOL INJ CX 50 AMP X 2ML HOSP##493,03 
+7893454412726##LINCOVAX                                     600MG SOL INJ CX 1AMP X 2ML##5,89 
+7891142157447##LIORAM                                       10MG CX 10 COMP##22,26 
+7891142157485##LIORAM                                       10MG CX 20 COMP##40,16 
+7896261000520##LIORESAL                                     10MG CX 20 COMP##25,44 
+7897322707693##LIPANON RETARD                               250MG CX 10 CAP##19,08 
+7897322704845##LIPANON RETARD                               250MG CX 15 CAP##28,63 
+7897322705415##LIPANON RETARD                               250MG CX 30 CAP##57,22 
+7894916507066##LIPIBLOCK                                    120MG CX 2BL X 21 CAP##134,20 
+7896004743417##LIPIBLOCK                                    120MG CX 30 CAP##92,94 
+7894916507073##LIPIBLOCK                                    120MG CX 4BL X 21 CAP##245,00 
+7896004743424##LIPIBLOCK                                    120MG CX 60 CAP##167,50 
+7896255767026##LIPIDIL                                      160MG CX 30 COMP REV##63,32 
+7891158100901##LIPIDIL                                      200MG CX 30 CAP GEL##79,16 
+7896672202728##LIPIDIL                                      160MG CX 30 COMP##60,31 
+7896672202452##LIPIDIL                                      200MG CX 30 CAP##75,39 
+7896004729503##LIPIGRAN                                     10MG 3BL X 10 COMP REV##51,45 
+7896004729534##LIPIGRAN                                     20MG 3BL X 10 COMP REV##51,45 
+7896004737027##LIPIGRAN                                     20MG 6BL X 10 COMP REV##100,92 
+7896004729510##LIPIGRAN                                     40MG 3BL X 10 COMP REV##92,76 
+7896004737034##LIPIGRAN                                     40MG 6BL X 10 COMP REV##148,41 
+7896004729527##LIPIGRAN                                     80MG 5BL X 6 COMP REV##92,76 
+7894916508193##LIPISTAT                                     10MG CX 2BLX 10 COMP REV##34,29 
+7894916508162##LIPISTAT                                     10MG CX 6BL X10 COMP REV##59,27 
+7894916507332##LIPISTAT                                     10MG X 3BL X 10 COMP REV##37,04 
+7894916507349##LIPISTAT                                     20MG CX 3BL X 10 COMP REV##37,04 
+7894916508179##LIPISTAT                                     20MG CX 6BL X 10 COMP REV##59,27 
+7894916507356##LIPISTAT                                     40MG CX 3BL X 10 COMP REV##74,08 
+7894916508186##LIPISTAT                                     40MG CX 6BL X 10 COMP REV##148,41 
+7894916507363##LIPISTAT                                     80MG CX 5BL X 6 COMP REV##92,76 
+7896004736853##LIPISTATINA                                  10MG CX 30 COMP REV##10,75 
+7896004739489##LIPISTATINA                                  20MG CX 30 COMP REV##20,50 
+7896004736860##LIPISTATINA                                  20MG CX 60 COMP REV##40,04 
+7896004736884##LIPISTATINA                                  40MG CX 30 COMP REV##47,48 
+7891268117103##LIPITOR                                      10MG CX 10 COMP REV##43,32 
+7891268117110##LIPITOR                                      10MG CX 30 COMP REV##121,18 
+7891268117776##LIPITOR                                      10MG CX 90 COMP REV##363,52 
+7891268116878##LIPITOR                                      20MG CX 10 COMP REV##49,54 
+7891268117127##LIPITOR                                      20MG CX 30 COMP REV##148,61 
+7891268117790##LIPITOR                                      20MG CX 90 COMP REV##445,78 
+7891268116885##LIPITOR                                      40MG CX 10 COMP REV##72,85 
+7891268117165##LIPITOR                                      40MG CX 30 COMP REV##218,51 
+7891268117172##LIPITOR                                      80MG CX 30 COMP REV##218,51 
+7896241248430##LIPLESS                                      100MG CX 30 COMP##53,62 
+7896112416135##LIPLESS                                      100MG CX 60 COMP##75,17 
+7896112416142##LIPLESS                                      100MG CX 90 COMP##84,36 
+7896714221359##LIPNEO                                       100MG CX 30 COMP##52,19 
+7896714204505##LIPOCLIN                                     20MG CX 30 COMP##17,30 
+7898414850877##LIPOMAX                                      FR 60 CAP##37,38 
+7898414852062##LIPOMAX PLUS                                 FR X 64 COMP##38,91 
+7898414852109##LIPOMAX SHAKE DIET                           3 X 1 EMB ECONOMICA C/ LEITE##37,90 
+7898414852116##LIPOMAX SHAKE DIET                           3 X 1 EMB ECONOMICA SEM LEITE##32,82 
+7898414851737##LIPOMAX SHAKE DIET                           7 SACH X 58G SB BAUNILHA##23,69 
+7898414851720##LIPOMAX SHAKE DIET                           7 SACH X 58G SB CHOCOLATE##23,69 
+7898414851744##LIPOMAX SHAKE DIET                           7 SACH X 58G SB MORANGO##23,69 
+7896046302047##LIPOSIC                                      2,0+48,5MG/G GEL OFT BG 10##23,76 
+7896112169321##LIPTHAL                                      10MG CX 30 COMP REV##60,59 
+7896112169345##LIPTHAL                                      10MG CX 60 COMP REV##99,97 
+7896112169413##LIPTHAL                                      20MG CX 30 COMP REV##60,59 
+7896112169437##LIPTHAL                                      20MG CX 60 COMP REV##99,97 
+7896006228431##LIPTRAT                                      10MG CX 30 COMP REV##34,45 
+7897322700564##LISADOR                                      375+12,5+12,5MG INJ CX 3AMP X 2ML##6,65 
+7897322703909##LISADOR                                      375+12,5+12,5MG SOL INJ CX 50 AMP X2ML##103,07 
+7897322702209##LISADOR                                      500+5+10MG CX 16 COMP##13,93 
+7897322706320##LISADOR                                      500+5+10MG CX 25BL X 4 COMP##91,01 
+7897322701752##LISADOR                                      500+5+10MG CX 25BL X 8 COMP E.M.##173,95 
+7897322702025##LISADOR                                      500+5+10MG/1,5ML SOL OR FR 20ML##24,24 
+7897322704494##LISADOR                                      500+5+10MG/1,5ML SOL OR FR GTS 15ML##19,65 
+7896181905882##LISINOPRIL                                   10MG CX 30 COMP##26,72 
+7896676411355##LISINOPRIL                                   10MG CX 30 COMP##27,25 
+7896112110323##LISINOPRIL                                   10MG CX 30 COMP##23,16 
+7896004706429##LISINOPRIL                                   10MG CX 30 COMP##31,10 
+7896004718699##LISINOPRIL                                   10MG CX 9BL X 10 COMP##84,04 
+7896181908159##LISINOPRIL                                   20MG CX 30 COMP##54,15 
+7896676411362##LISINOPRIL                                   20MG CX 30 COMP##49,76 
+7896112110330##LISINOPRIL                                   20MG CX 30 COMP##42,30 
+7896004706436##LISINOPRIL                                   20MG CX 30 COMP##54,57 
+7896004707259##LISINOPRIL                                   20MG CX 30 COMP##49,25 
+7896004707266##LISINOPRIL                                   30MG CX 30 COMP##69,90 
+7896004718712##LISINOPRIL                                   30MG CX 6BL X 10 COMP##136,63 
+7896181907503##LISINOPRIL                                   5MG CX 30 COMP##21,01 
+7896112110316##LISINOPRIL                                   5MG CX 30 COMP##14,44 
+7896004706412##LISINOPRIL                                   5MG CX 30 COMP##19,38 
+7896676411348##LISINOPRIL                                   5MG CX 30 COMP##23,12 
+7896004707235##LISINOPRIL                                   5MG CX 30 COMP##17,00 
+7896004718682##LISINOPRIL                                   5MG CX 90 COMP##52,41 
+7895296292030##LISINOPRIL                                   10MG 3BL X 10 COMP##28,30 
+7897076907233##LISINOPRIL                                   10MG CX 30 COMP##22,12 
+7898361880538##LISINOPRIL                                   10MG CX 30 COMP##21,62 
+7895296292047##LISINOPRIL                                   20MG 3BL X 10 COMP##44,79 
+7897076907257##LISINOPRIL                                   20MG CX 30 COMP##46,62 
+7895296292023##LISINOPRIL                                   5MG 3BL X 10 COMP##17,72 
+7898361880521##LISINOPRIL                                   5MG CX 30 COMP##15,02 
+7897595609632##LISINOPRIL                                   10MG CX 30 COMP##30,64 
+7896422506755##LISINOPRIL                                   10MG CX 30 COMP##31,09 
+7897595609649##LISINOPRIL                                   20MG CX 30 COMP##53,55 
+7896422506779##LISINOPRIL                                   20MG CX 30 COMP##54,59 
+7898361880545##LISINOPRIL                                   20MG CX 30 COMP##66,85 
+7897595609625##LISINOPRIL                                   5MG CX 30 COMP##19,74 
+7896422506731##LISINOPRIL                                   5MG CX 30 COMP##19,38 
+7896181906988##LISINOPRIL+HIDROCLOROTIAZIDA                 20+12,5MG CX 30 COMP##55,26 
+7897595602985##LISINOVIL                                    10MG CX 30 COMP##29,34 
+7897595602992##LISINOVIL                                    20MG CX 30 COMP##48,55 
+7897595602978##LISINOVIL                                    5MG CX 30 COMP##17,25 
+7896714203775##LISOCLOR                                     20+12,5MG CX 30 COMP##38,75 
+7897917001502##LISODERME                                    1MG CREME BG 10##7,24 
+7896016800702##LISODREN                                     500MG FR 100 COMP##992,25 
+7898109241935##LISOMUC                                      10MG/ML XPE FR 120ML+COP##20,96 
+7898109241959##LISOMUC                                      5MG/ML XPE FR X 120ML+COP##14,49 
+7896714204420##LISOPRIL                                     10MG CX 30 COMP##26,98 
+7898495605076##LISOTOX                                      100 FLACONETES DE 10ML##198,00 
+7898148304547##LISPELIN                                     30MG CX 14 CAP##25,60 
+7896637022415##LITOCIT                                      10MEQ FR 60 COMP REV RET##38,81 
+7896637022408##LITOCIT                                      5MEQ FR 60 COMP REV RET##30,93 
+7896382707131##LIVALO                                       2MG CX 15 COMP REV##33,98 
+7896382707070##LIVALO                                       2MG CX 30 COMP##67,95 
+7896382707070##LIVALO                                       2MG CX 30 COMP REV##67,95 
+7896382707100##LIVALO                                       4MG CX 30 COMP##123,23 
+7896382707100##LIVALO                                       4MG CX 30 COMP REV##123,24 
+7896658022104##LIVEPAX                                      500MG CX 10 COMP REV##54,44 
+7896658022074##LIVEPAX                                      500MG CX 3 COMP REV##16,37 
+7896658022098##LIVEPAX                                      500MG CX 7 COMP REV##38,12 
+7896862910952##LIVGAS                                       40MG CX 20 COMP##8,92 
+7896862940065##LIVGAS                                       75MG/ML FR 15ML##7,77 
+7897572001589##LIVIAL                                       2,5MG CX 28 COMP##52,58 
+7897572001596##LIVIAL 3                                     2,5MG CX 84 COMP##105,16 
+7897595615510##LIVIPARK                                     0,125MG CX 30 COMP##19,09 
+7897595615541##LIVIPARK                                     0,250MG CX 30 COMP##43,63 
+7897595615572##LIVIPARK                                     1MG CX 30 COMP##131,49 
+7896241232255##LIVOLON                                      1,25MG CX 30 COMP##31,10 
+7896241232309##LIVOLON                                      1,25MG CX 90 COMP##73,49 
+7896241232637##LIVOLON                                      2,5MG CX 30 COMP##49,63 
+7896317901139##LIVTEN                                       500MG CX 30 CAP GEL##49,62 
+7896317901139##LIVTEN                                       500MG CX 30 CAP##46,07 
+7896317901146##LIVTEN L                                     1000MG CX 30 CAP GEL##79,04 
+7896317901146##LIVTEN L                                     1000MG CX 30 CAP##73,39 
+7896360001428##LIZALAC                                      10000FCC CX 30 SACH X 2##48,00 
+7896360001411##LIZALAC                                      5000FCC CX 30 SACH X 2##28,00 
+7897595620705##LIZZY                                        15MC+60MC 24FCT BR##17,03 
+7897595614025##LIZZY                                        15MC+60MC 72FCT BR##51,11 
+7897595614025##LIZZY                                        0,06+0,015MG CX 72 COM REV##54,35 
+7897595620705##LIZZY                                        0,06MG+0,015MG CX 24 COM REV##18,11 
+7898029555013##LOCABIOTAL                                   5MG FR 10ML AER+APLIC+INAL##31,33 
+7897930766082##LOCERYL                                      0,25% CREME DERM 20##31,46 
+7897930760424##LOCERYL                                      50MG/ML ESMALTE FR 2,5ML##67,42 
+7898078941966##LODIPEN                                      5MG CX 20 COMP##7,88 
+7896714222400##LOMBALGINA                                   300MG CX 20 COMP##9,15 
+7898089300844##LOMDOR                                       500MG SOL OR 50 FR GTS X 10ML##177,68 
+7898089300226##LOMDOR                                       500MG SOL OR FR GTS 10ML##3,62 
+7898089300110##LOMFER                                       10MG/ML XPE FR 100ML##7,46 
+7898089300868##LOMFER                                       25MG/ML SOL ORAL CX 50 FR X 30ML##294,40 
+7898089300103##LOMFER                                       25MG/ML SOL ORAL FR GTS 30ML##6,01 
+7898089300899##LOMFER                                       60MG CX 250BL X 10 DRG EMB HOSP##399,67 
+7898089300882##LOMFER                                       60MG CX 50 DR##7,99 
+7898089300189##LOMICINA                                     5MG POM BG 10##6,01 
+7896004748245##LOMYTRAT                                     ESM 2,5ML+10ESP+30SCH+30 LIXAS##79,68 
+7898096577017##LONCORD                                      20MG CX 20 CAP##12,28 
+7898096577024##LONCORD                                      40MG CX 20 CAP##28,59 
+7896676403398##LONGACTIL                                    100MG CX 20BL X 10 COMP EMB HOSP##60,09 
+7896676403404##LONGACTIL                                    25MG CX 20BL X 10 COMP EMB HOSP##36,75 
+7896676404319##LONGACTIL                                    25MG CX 50AMP X 5ML EMB HOSP##95,15 
+7896676402520##LONGACTIL                                    40MG CX 10FR X 20ML EMB HOSP##45,38 
+7891268104615##LONITEN                                      10MG BL 30 COMP##32,59 
+7896637023443##LONIUM                                       40MG CX 30 COMP REV##36,09 
+7896637023450##LONIUM                                       40MG CX 60 COMP REV##62,77 
+7891268119503##LOPID                                        600MG CX 24 COMP REV##85,87 
+7891268117844##LOPID                                        900MG BL X 10 COMP##52,60 
+7891268119510##LOPID                                        900MG CX 12 COMP REV##63,11 
+7896422516570##LOPIGREL                                     75MG CX 14 COMP##41,43 
+7896422516587##LOPIGREL                                     75MG CX 28 COMP##81,77 
+7896261000575##LOPRESSOR                                    100MG CX 20 COMP REV##16,43 
+7891058411039##LOPROX                                       10MG CREME DERM BG 20##27,16 
+7891058410063##LOPROX NL                                    10MG SOL TOP FR GTS 15ML##22,32 
+7891058409050##LOPROX NL                                    80MG ESM UNHA FR 3G+30 LENCOS##121,72 
+7896112138358##LORADINE                                     10MG CX 12 COMP##20,29 
+7896112138921##LORADINE                                     1MG XPE FR 100ML+CM##18,82 
+7898216361090##LORADRINA D                                  5+120MG CX 12 DR##23,46 
+7897322704418##LORALERG                                     10MG CX 10 COMP##24,57 
+7897322704401##LORALERG                                     1MG XPE FR 60ML PED##17,96 
+7896714204284##LORAPAN                                      1MG CX 20 COMP##7,29 
+7896714215778##LORAPAN                                      1MG CX 200 COMP##72,88 
+7896714204291##LORAPAN                                      2MG CX 20 COMP##10,94 
+7896714215761##LORAPAN                                      2MG CX 200 COMP##109,32 
+7898049790180##LORASLIV                                     10MG CX 12 COMP##18,10 
+7896714213040##LORATADINA                                   10MG CX 12 COMP##21,60 
+7898148294480##LORATADINA                                   1MG XPE CX 50 FR X 100ML+50CM HOSP##387,74 
+7896006266044##LORATADINA                                   1MG XPE FR 100ML##14,95 
+7896714224701##LORATADINA                                   1MG XPE FR 100ML+CM##17,18 
+7896112126461##LORATADINA                                   1MG XPE FR 100ML+CM##18,85 
+7898060137544##LORATADINA                                   1MG XPE FR 100ML+CM##17,02 
+7896004703251##LORATADINA                                   1MG/ML XPE FR 100ML##17,52 
+7896004713748##LORATADINA                                   1MG/ML XPE FR 100ML##14,39 
+7894916142878##LORATADINA                                   1MG/ML XPE FR 100ML##16,44 
+7898148294473##LORATADINA                                   1MG/ML XPE FR 100ML+CM##17,16 
+7897076906786##LORATADINA                                   10MG CX 12 COMP##19,23 
+7895296239028##LORATADINA                                   10MG CX 12 COMP##22,01 
+7895296239035##LORATADINA                                   10MG CX 6 COMP##18,38 
+7899095202061##LORATADINA                                   1MG XPE FR 100ML##17,44 
+7898917592991##LORATADINA                                   1MG XPE FR 100ML+CM##14,25 
+7898917592816##LORATADINA                                   1MG/ML XPE CX 48 FR X 100ML+48CM HOSP##685,28 
+7896862923136##LORATADINA                                   1MG/ML XPE CX 50 FR X 100ML+50CM EMB HOSP##350,43 
+7896523207704##LORATADINA                                   1MG/ML XPE FR 100ML##9,87 
+7896862923129##LORATADINA                                   1MG/ML XPE FR 100ML+CM##14,44 
+7895296278027##LORATADINA                                   1MG/ML XPE FR 100ML+CM##17,24 
+7896181906322##LORATADINA                                   10MG CX 12 COMP##21,79 
+7891721270505##LORATADINA                                   10MG CX 12 COMP REV##21,97 
+7896472502998##LORATADINA                                   1MG XPE FR 100ML##14,42 
+7896181911128##LORATADINA                                   1MG XPE FR 100ML+CM##15,56 
+7896422504843##LORATADINA                                   XPE FR 100ML+CM##17,27 
+7896004705095##LORATADINA+SULFATO DE PSEUDOEFEDRINA         1+12MG XPE FR 60ML##17,79 
+7896004710983##LORATADINA+SULFATO DE PSEUDOEFEDRINA         1MG XPE FR 60ML##16,00 
+7894916140201##LORATADINA+SULFATO DE PSEUDOEFEDRINA         1MG XPE FR 60ML##15,86 
+7896112113416##LORATADINA+SULFATO DE PSEUDOEFEDRINA         1+12MG XPE FR  60ML##15,88 
+7896112160830##LORATADINA+SULFATO DE PSEUDOEFEDRINA         1+12MG/ML FR 60ML+CM##15,88 
+7896714223186##LORATADINA+SULFATO DE PSEUDOEFEDRINA         1+12MG/ML XPE FR 60ML+CM##16,60 
+7896422508124##LORATADINA+SULFATO DE PSEUDOEFEDRINA         1+12MG XPE FR 60ML+DOS##17,81 
+7896181911012##LORATADINA+SULFATO DE PSEUDOEFEDRINA         1+12MG XPE FR 60ML+CM##15,90 
+7896523202822##LORATAMED                                    10MG CX 12 COMP##9,77 
+7896523215174##LORATAMED                                    10MG CX 30BL X 12 COMP E.M##32,54 
+7896523202204##LORATAMED                                    1MG/ML XPE FR 100ML##8,77 
+7891045008396##LORAX                                        1MG CX 30 COMP##14,98 
+7891045008402##LORAX                                        2MG CX 30 COMP##21,22 
+7894916502207##LORAZEFAST                                   1MG CX 20 COMP##9,24 
+7894916502214##LORAZEFAST                                   2MG CX 20 COMP##14,11 
+7896004701462##LORAZEPAM                                    2MG CX 20 COMP##9,01 
+7896004709383##LORAZEPAM                                    2MG CX 20 COMP##8,47 
+7894916140867##LORAZEPAM                                    2MG CX 20 COMP##7,49 
+7896112125563##LORAZEPAM                                    2MG CX 30 COMP##13,59 
+7896422507240##LORAZEPAM                                    1MG CX 20 COMP##6,21 
+7896422507257##LORAZEPAM                                    2MG CX 20 COMP##8,96 
+7898149932145##LORELIN DEPOT                                3.75MG PO LIOF INJ CT FA VD INC##423,77 
+7898149933524##LORELIN DEPOT                                3.75MG PO LIOF INJ FA+AMP DIL X 2ML+1SER+2A##423,77 
+7896317901665##LOREMIX D                                    1+12MG XPE FR 60ML##22,98 
+7896317901528##LOREMIX D                                    5+120MG CX 12 COMP REV##25,46 
+7896714224961##LORENTIL                                     10MG CREME DERM BG 20##16,37 
+7899095200098##LORITIL                                      10MG CX 12 COMP##20,58 
+7899095201903##LORITIL                                      1MG XPE FR 100ML##21,20 
+7899095204416##LORITIL D                                    1MG+12MG XPE FR 60ML##16,25 
+7897595628213##LORSACOR                                     50MG CX 14 COMP REV##24,37 
+7897595628220##LORSACOR                                     50MG CX 28 COMP REV##43,53 
+7897595628237##LORSACOR                                     50MG CX 30 COMP REV##13,19 
+7897595628244##LORSACOR                                     50MG CX 60 COMP REV##71,83 
+7897595602121##LORSAR HCT                                   50+12,5MG CX 30 COMP REV##34,62 
+7897595630018##LORSAR HCT                                   50+12,5MG CX 30 COMP REV##37,28 
+7898049797905##LOSACORON                                    50MG CX 14 COMP REV##15,30 
+7898049796236##LOSACORON                                    50MG CX 28 COMP REV##23,13 
+7898049796243##LOSACORON                                    50MG CX 30 COMP REV##18,09 
+7898049796250##LOSACORON                                    50MG CX 495 COMP REV EMB HOSP##271,70 
+7898078942550##LOSAPRIN                                     50MG CX 14 COMP##10,95 
+7898078942567##LOSAPRIN                                     50MG CX 28 COMP##17,59 
+7898095344634##LOSARTAN POTASSICO                           50MG CX 14 COMP REV##13,26 
+7898095344658##LOSARTAN POTASSICO                           50MG CX 28 COMP REV##26,46 
+7896181904861##LOSARTANA POTASSICA                          50MG CX 28 COMP REV##20,14 
+7899547505283##LOSARTANA POTASSICA                          100 MG CX 300 COMP REV EMB HOSP##186,14 
+7898148307036##LOSARTANA POTASSICA                          100MG CX 100 COMP REV EMB FRAC##93,64 
+7896004723655##LOSARTANA POTASSICA                          100MG CX 2BL X 15 COMP REV##38,41 
+7894916145152##LOSARTANA POTASSICA                          100MG CX 2BL X 15 COMP REV##38,41 
+7896004722870##LOSARTANA POTASSICA                          100MG CX 30 COMP REV##38,41 
+7899547505269##LOSARTANA POTASSICA                          100MG CX 30 COMP REV##38,41 
+7896112114185##LOSARTANA POTASSICA                          50MG CX 30 COMP REV##11,48 
+7896004706795##LOSARTANA POTASSICA                          50MG CX 30 COMP REV##26,00 
+7898148301720##LOSARTANA POTASSICA                          50MG CX 30 COMP REV##7,36 
+7899547505276##LOSARTANA POTASSICA                          50MG CX 300 COMP REV EMB HOSP##126,57 
+7894916145145##LOSARTANA POTASSICA                          50MG CX 3BL X 10 COMP##26,00 
+7896004708539##LOSARTANA POTASSICA                          50MG CX 3BL X 10 COMP REV##26,00 
+7896112134220##LOSARTANA POTASSICA                          50MG CX 60 COMP REV##22,83 
+7894916146982##LOSARTANA POTASSICA                          100+25MG CX 4BL X 15 COMP##66,47 
+7898148301751##LOSARTANA POTASSICA                          100MG  CX 300 COMP REV EMB HOSP##163,54 
+7896714208763##LOSARTANA POTASSICA                          100MG 3BL X 10 COMP REV##38,41 
+8902220108325##LOSARTANA POTASSICA                          100MG CX 30 COMP REV##23,59 
+7898148301744##LOSARTANA POTASSICA                          50 MG CX 300 COMP REV EMB HOSP##111,21 
+7894916146999##LOSARTANA POTASSICA                          50+12,5MG CX 4BL X 15 COMP##40,30 
+7896714208565##LOSARTANA POTASSICA                          50MG 2BL X 15 COMP REV##26,00 
+7896676413717##LOSARTANA POTASSICA                          50MG CX 100 COMP EMB FRAC##53,30 
+7899547506693##LOSARTANA POTASSICA                          50MG CX 200 COMP REV (EMB FRAC)##136,66 
+7891721238567##LOSARTANA POTASSICA                          50MG CX 30 COMP REV##25,25 
+7897076907691##LOSARTANA POTASSICA                          50MG CX 30 COMP REV##7,82 
+7896676406740##LOSARTANA POTASSICA                          50MG CX 30 COMP REV##52,78 
+7899095236639##LOSARTANA POTASSICA                          50MG CX 30 COMP REV##26,01 
+7898910350239##LOSARTANA POTASSICA                          50MG CX 30 COMP REV##19,24 
+7895296240062##LOSARTANA POTASSICA                          50MG CX 30 COMP REV##25,99 
+7897076913814##LOSARTANA POTASSICA                          50MG CX 60 COMP REV##15,64 
+7896422516853##LOSARTANA POTASSICA                          100MG BL X 30 COMP REV##38,40 
+7896181905622##LOSARTANA POTASSICA                          50MG CX 14 COMP REV##11,46 
+7896422507721##LOSARTANA POTASSICA                          50MG CX 15 COMP##13,00 
+7896422507738##LOSARTANA POTASSICA                          50MG CX 30 COMP##26,02 
+7896181915638##LOSARTANA POTASSICA                          50MG CX 30 COMP REV##22,92 
+7896422507752##LOSARTANA POTASSICA                          50MG CX 60 COMP##50,62 
+7891317482534##LOSARTANA POTASSICA                          100MG CX 120 COMP REV EMB FRAC##96,17 
+7891317482510##LOSARTANA POTASSICA                          100MG CX 30 COMP REV##37,56 
+7891317458065##LOSARTANA POTASSICA                          50MG CX 120 COMP REV EMB FRAC##79,17 
+7891317427542##LOSARTANA POTASSICA                          50MG CX 30 COMP##26,01 
+7891317463229##LOSARTANA POTASSICA                          50MG CX 60 COMP REV##47,91 
+7894916143035##LOSARTANA POTASSICA+HIDROCLOROTIAZIDA        100+25MG CX 30 COMP##43,64 

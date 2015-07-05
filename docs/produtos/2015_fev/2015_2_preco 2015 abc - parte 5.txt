@@ -1,0 +1,2001 @@
+7898917592960##CAPTOPRIL                                    12,5MG CX 600 COMP HOSP##178,12 
+7898917592472##CAPTOPRIL                                    12,5MG CX 90 COMP EM FRAC##27,79 
+7896676413694##CAPTOPRIL                                    25MG CX 100 COMP EMB FRAC##25,68 
+7898920244139##CAPTOPRIL                                    25MG CX 20 COMP##6,76 
+7896714205687##CAPTOPRIL                                    25MG CX 30 COMP##16,88 
+7898361880682##CAPTOPRIL                                    25MG CX 30 COMP##9,39 
+7896676410815##CAPTOPRIL                                    25MG CX 30 COMP##23,39 
+7898920244146##CAPTOPRIL                                    25MG CX 30 COMP##8,11 
+7896523209845##CAPTOPRIL                                    25MG CX 30 COMP##12,53 
+7898917592489##CAPTOPRIL                                    25MG CX 30 COMP##16,20 
+7896523209852##CAPTOPRIL                                    25MG CX 60 COMP##22,77 
+7898917592496##CAPTOPRIL                                    25MG CX 60 COMP EMB FRAC##23,83 
+7898917592977##CAPTOPRIL                                    25MG CX 600 COMP DISP HOSP##266,99 
+7898917592502##CAPTOPRIL                                    25MG CX 90 COMP EMB FRAC##35,76 
+7898920244160##CAPTOPRIL                                    50MG CX 20 COMP##12,24 
+7898361880699##CAPTOPRIL                                    50MG CX 30 COMP##54,96 
+7898920244177##CAPTOPRIL                                    50MG CX 30 COMP##14,69 
+7898917592519##CAPTOPRIL                                    50MG CX 30 COMP##30,81 
+7896472508167##CAPTOPRIL                                    50MG CX 30 COMP##12,18 
+7898917592526##CAPTOPRIL                                    50MG CX 60 COMP EMB FRAC##44,74 
+7898917592984##CAPTOPRIL                                    50MG CX 600 COMO HOSP##503,76 
+7898917592533##CAPTOPRIL                                    50MG CX 90 COMP EMB FRAC##67,13 
+7896004706610##CAPTOPRIL+HIDROCLOROTIAZIDA                  50+25MG CX 30 COMP##40,57 
+7896004719894##CAPTOPRIL+HIDROCLOROTIAZIDA                  50+25MG CX 90 COMP##85,92 
+7898216360468##CAPTOSEN                                     12,5MG CX 900 COMP HOSP##27,31 
+7898216360161##CAPTOSEN                                     25MG CX 30 COMP##11,90 
+7898216360345##CAPTOSEN                                     25MG CX 900 COMP EMB HOSP##40,92 
+7898216360529##CAPTOSEN                                     50MG CX 30 COMP##17,39 
+7898216360475##CAPTOSEN                                     50MG CX 900 COMP EMB HOSP##74,90 
+7897595601681##CAPTOTEC                                     12,5MG CX 30 COMP##11,39 
+7897595605627##CAPTOTEC                                     25MG CX 30 COMP##8,85 
+7897595609489##CAPTOTEC                                     25MG CX 60 COMP##25,51 
+7897595609496##CAPTOTEC                                     50MG CX 30 COMP##27,26 
+7894916503532##CAPYLA                                       1MG CX 30 COMP REV##27,16 
+7896714213316##CARBAMAZEPINA                                200MG CX 20 COMP##7,84 
+7896006225768##CARBAMAZEPINA                                200MG CX 20 COMP##7,46 
+7896112119203##CARBAMAZEPINA                                200MG CX 20 COMP##6,68 
+7896004704180##CARBAMAZEPINA                                200MG CX 20 COMP##6,05 
+7896004707198##CARBAMAZEPINA                                200MG CX 20 COMP##7,52 
+7896714213309##CARBAMAZEPINA                                200MG CX 30 COMP##10,78 
+7896112119241##CARBAMAZEPINA                                400MG CX 20 COMP##13,39 
+7896004704210##CARBAMAZEPINA                                400MG CX 20 COMP##13,91 
+7896004707174##CARBAMAZEPINA                                400MG CX 20 COMP##12,04 
+7896422513913##CARBAMAZEPINA                                200MG CX 20 COMP##6,81 
+7896006226130##CARBAMAZEPINA                                200MG CX 200 COMP EMB HOSP##80,66 
+7896006225928##CARBAMAZEPINA                                200MG CX 30 COMP##12,06 
+7896422513975##CARBAMAZEPINA                                200MG CX 30 COMP##10,92 
+7896181900405##CARBAMAZEPINA                                200MG CX 30 COMP##10,19 
+7896422513982##CARBAMAZEPINA                                200MG CX 60 COMP##21,89 
+7896422511841##CARBAMAZEPINA                                20MG SUS FR 100ML##9,20 
+7896006226505##CARBAMAZEPINA                                20MG SUS OR FR 100ML##9,21 
+7896422513920##CARBAMAZEPINA                                400MG CX 20 COMP##13,65 
+7896422514002##CARBAMAZEPINA                                400MG CX 30 COMP##20,50 
+7896004726984##CARBAMAZEPINA                                400MG CX 20 COMP LIB PROL##19,44 
+7896112143994##CARBIDOL                                     25+250MG CX 30 COMP##37,86 
+7896181900900##CARBIDOPA+LEVODOPA                           25+250MG CX 30 COMP##24,65 
+7896112110897##CARBITAL                                     100MG CX 20 COMP##4,96 
+7896523202266##CARBOCIN                                     20MG XPE FR 100ML PED##10,40 
+7896523202273##CARBOCIN                                     50MG XPE FR 100ML ADU##15,54 
+7898148293377##CARBOCISTEINA                                20MG/ML XPE CX 50 FR X 100ML+50CM HOSP##171,01 
+7898148293346##CARBOCISTEINA                                20MG/ML XPE CX 50 FR X 80ML+CM HOSP##114,86 
+7898148293339##CARBOCISTEINA                                20MG/ML XPE FR 100ML+CM##9,44 
+7898148293384##CARBOCISTEINA                                50MG/ML XPE CX 50 FR X 100ML+50CM HOSP##218,64 
+7898148293360##CARBOCISTEINA                                50MG/ML XPE CX 50 FR X 80ML+CM HOSP##158,10 
+7898148293353##CARBOCISTEINA                                50MG/ML XPE FR 100ML+CM##14,17 
+7896004700564##CARBOCISTEINA                                100MG XPE FR 100ML INF##10,19 
+7896006292128##CARBOCISTEINA                                20MG XPE FR 100ML+CM##11,96 
+7896004700571##CARBOCISTEINA                                250MG XPE FR 100ML ADU##14,74 
+7896004712215##CARBOCISTEINA                                50MG SOL OR FR 20ML##8,10 
+7896004716084##CARBOCISTEINA                                50MG XPE FR 100ML ADU##10,67 
+7896006292500##CARBOCISTEINA                                50MG XPE FR 100ML+CM##18,07 
+7896181909453##CARBOCISTEINA                                100MG XPE FR 100ML+CM##8,66 
+7896422505093##CARBOCISTEINA                                20MG XPE FR 100ML+CM##12,20 
+7896181909262##CARBOCISTEINA                                250MG XPE FR 100ML+CM##12,99 
+7896422505086##CARBOCISTEINA                                50MG SOL OR FR 20ML+CGT##9,30 
+7896422505109##CARBOCISTEINA                                50MG XPE FR 100ML+CP MED##18,50 
+7899095232686##CARBOCISTEINA                                20MG XPE FR 100ML INF##12,34 
+7896714207148##CARBOCISTEINA                                20MG XPE FR 100ML+CM INF##10,79 
+7896523207728##CARBOCISTEINA                                20MG/ML XPE FR 100ML##8,23 
+7896112113652##CARBOCISTEINA                                20MG/ML XPE FR 100ML+CM INF##9,21 
+7897848500907##CARBOCISTEINA                                20MG/ML XPE FR 100ML+CM INF##8,46 
+7895296285018##CARBOCISTEINA                                20MG/ML XPE FR 100ML+CM INF##9,66 
+7898917592847##CARBOCISTEINA                                50MG SOL ORAL FR GTS 20ML##6,64 
+7899095232693##CARBOCISTEINA                                50MG XPE FR 100ML ADU##18,70 
+7896714207131##CARBOCISTEINA                                50MG XPE FR 100ML+CM ADU##15,63 
+7898917592830##CARBOCISTEINA                                50MG/ML SOL OR CX 48 FR X 20ML HOSP##303,56 
+7896523207711##CARBOCISTEINA                                50MG/ML XPE FR 100ML##12,31 
+7896112113669##CARBOCISTEINA                                50MG/ML XPE FR 100ML+CM ADU##13,94 
+0000000000000##CARBOCISTEINA                                50MG/ML XPE FR 100ML+CM ADU##13,28 
+7895296285049##CARBOCISTEINA                                50MG/ML XPE FR 100ML+CM ADU##14,63 
+7898146821879##CARBOLIM                                     300MG CX 200 COMP EMB HOSP##71,29 
+7898146822296##CARBOLIM                                     300MG CX 500 COMP EMB HOSP##179,46 
+7898146820032##CARBOLIM                                     300MG X 50 COMP##18,68 
+7891317440275##CARBOLITIUM                                  300MG CX 25 COMP##11,63 
+7891317440268##CARBOLITIUM                                  450MG CX 10 COMP##10,83 
+7891317000226##CARBOLITIUM                                  450MG CX 30 COMP##32,46 
+7891317000189##CARBOLITIUM                                  CX 50 COMP##23,32 
+7898146821848##CARBONATO DE LITIO                           300MG CX 50 COMP##14,61 
+7898146822302##CARBONATO DE LITIO                           300MG CX 500 COMP EMB HOSP##138,40 
+7898902274426##CARBOPLATINA                                 10MG/ML SOL INJ FA X 15ML##382,97 
+7898902274277##CARBOPLATINA                                 10MG/ML SOL INJ FA X 45ML##992,33 
+7897473202009##CARBOPLATINA                                 150MG SOL INJFA X 20ML##201,59 
+7897473202016##CARBOPLATINA                                 450MG SOL INJ FA X 100ML##406,94 
+7897848500884##CARBOTRAT                                    20MG/ML XPE FR 100ML+CM INF##10,80 
+7897848500945##CARBOTRAT                                    50MG/ML XPE FR 100ML+CM ADU##14,32 
+7895296261012##CARDBET                                      12,5MG CX 30 COMP##20,75 
+7895296261029##CARDBET                                      25MG CX 30 COMP##29,47 
+7895296261036##CARDBET                                      3,125MG CX 30 COMP##15,40 
+7895296261043##CARDBET                                      6,25MG CX 30 COMP##17,91 
+7896112141334##CARDCOR                                      0,25MG CX 20 COMP##5,23 
+7896112113881##CARDICORON                                   100MG CX 20 COMP##10,28 
+7896112113898##CARDICORON                                   200MG CX 20 COMP##18,82 
+7896094202771##CARDILOL                                     12,5MG CX 30 COMP##19,58 
+7896094207813##CARDILOL                                     12,5MG CX 60 COMP##36,92 
+7896094200975##CARDILOL                                     25MG CX 30 COMP##31,80 
+7896094207820##CARDILOL                                     25MG CX 60 COMP##48,07 
+7896094202757##CARDILOL                                     3,125MG CX 30 COMP##19,58 
+7896094207790##CARDILOL                                     3,125MG CX 60 COMP##36,93 
+7896094202764##CARDILOL                                     6,25MG CX 30 COMP##19,58 
+7896094207806##CARDILOL                                     6,25MG CX 60 COMP##36,92 
+7898078941140##CARDIODOPA                                   250MG CX 30 COMP REV##21,34 
+7898078941164##CARDIODOPA                                   500MG CX 30 COMP REV##41,89 
+7898331960192##CARDIONATO                                   10MG FR 30 COMP##9,41 
+7898331960208##CARDIONATO                                   20MG FR 30 COMP##10,99 
+7898331960185##CARDIONATO                                   5MG FR 30 COMP##9,27 
+7898331960215##CARDIONATO H                                 10+25MG FR 30 COMP##11,62 
+7898331960222##CARDIONATO H                                 20+12,5MG FR 30 COMP##15,21 
+7892953102916##CARDIOXANE                                   500MG PO LIOF INJ 1FA EMB HOSP##995,99 
+7898331960239##CARDIVITA                                    25MG CX 28 COMP##12,35 
+7898331961298##CARDIVITA                                    50MG CX 30 COMP##17,69 
+7896472503117##CARDIX                                       40MG 1000 COMP EMB HOSP##124,44 
+7896472502028##CARDIX                                       40MG CX 10 COMP##4,97 
+7896472513154##CARDIX                                       40MG CX 30 COMP##4,23 
+7896472502035##CARDIX                                       80MG CX 10 COMP##4,64 
+7896026301848##CARDIZEM                                     30MG CX 50 COMP##16,56 
+7896026301855##CARDIZEM                                     60MG CX 50 COMP##31,46 
+7896026302654##CARDIZEM CD                                  180MG CX 16 CAP##37,56 
+7896026302661##CARDIZEM CD                                  240MG CX 16 CAP##44,60 
+7896026302647##CARDIZEM SR                                  120MG FR 20 CAP LIB PROL##31,88 
+7896026302630##CARDIZEM SR                                  90MG FR 20 CAP LIB PROL##24,52 
+7891268109146##CARDURAN XL                                  4MG CX 10 COMP##63,58 
+7891268109122##CARDURAN XL                                  4MG CX 30 COMP REV LIB CONTROL##190,77 
+7898331960246##CARDVITA                                     50MG CX 14 COMP REV##11,62 
+7898331960253##CARDVITA                                     50MG CX 28 COMP##16,51 
+7898331960284##CARDVITA H                                   100+25MG CX 30 COMP##42,26 
+7898331960260##CARDVITA H                                   50+12,5MG CX 14 COMP REV##12,56 
+7898331960277##CARDVITA H                                   50+12,5MG CX 28 COMP##22,58 
+7897299900349##CARECLEAN                                    50MG GEL BG 20##12,90 
+7898216360031##CARIDERM                                     POM BG 45##11,01 
+7896112143826##CARMAZIN                                     200MG CX 20 COMP##3,66 
+7896112143833##CARMAZIN                                     400MG CX 20 COMP##14,88 
+7896658001178##CARNABOL                                     CX 20 COMP##9,72 
+7896658010286##CARNABOL KIDS                                SUS ORAL FR 120ML+CMX10ML##8,36 
+7896023792571##CARTAMUS 1000                                FR 90 COMP##95,13 
+7898040324209##CARTIGEN C                                   CX 30 SACHES##82,61 
+7891268110012##CARTRAX                                      CREME BG 35##48,80 
+7894916502689##CARVEDILAT                                   12,5MG CX 30 COMP##27,58 
+7894916502696##CARVEDILAT                                   25MG CX 30 COMP##32,89 
+7894916502665##CARVEDILAT                                   3,125MG CX 30 COMP##20,58 
+7894916502672##CARVEDILAT                                   6,25MG CX 30 COMP##23,88 
+7896004731292##CARVEDILOL                                   12,5MG 1BL X 15 COMP##18,62 
+7894916146418##CARVEDILOL                                   12,5MG 1BL X 15 COMP##18,62 
+7896004731308##CARVEDILOL                                   12,5MG 2BL X 15 COMP##25,94 
+7896004731391##CARVEDILOL                                   12,5MG 2BL X 15 COMP##25,94 
+7894916146425##CARVEDILOL                                   12,5MG 2BL X 15 COMP##25,94 
+7896004743684##CARVEDILOL                                   12,5MG 4BL X 15 COMP##46,69 
+7894916147958##CARVEDILOL                                   12,5MG 4BL X 15 COMP##46,69 
+7898146822272##CARVEDILOL                                   12,5MG CT BL 15 COM##17,54 
+7898146823064##CARVEDILOL                                   12,5MG CT BL 30 COM##24,17 
+7898146822272##CARVEDILOL                                   12,5MG CX 15 COMP##20,01 
+7896004731315##CARVEDILOL                                   25MG 1BL X 15 COMP##23,59 
+7896004731322##CARVEDILOL                                   25MG 2BL X 15 COMP##43,58 
+7896004731414##CARVEDILOL                                   25MG 2BL X 15 COMP##43,58 
+7894916146449##CARVEDILOL                                   25MG 2BL X 15 COMP##43,58 
+7896004743974##CARVEDILOL                                   25MG 4BL X 15 COMP##78,45 
+7896004743677##CARVEDILOL                                   25MG 4BL X 15 COMP##78,45 
+7894916147965##CARVEDILOL                                   25MG 4BL X 15 COMP##78,45 
+7898146822418##CARVEDILOL                                   25MG CT BL 30 COM##40,98 
+7898146822418##CARVEDILOL                                   25MG CX 30 COMP##45,70 
+7896004731254##CARVEDILOL                                   3,125MG 1BL X 15 COMP##14,41 
+7894916146371##CARVEDILOL                                   3,125MG 1BL X 15 COMP##14,41 
+7896004731261##CARVEDILOL                                   3,125MG 2BL X 15 COMP##19,26 
+7896004731353##CARVEDILOL                                   3,125MG 2BL X 15 COMP##19,26 
+7894916146388##CARVEDILOL                                   3,125MG 2BL X 15 COMP##19,26 
+7896004743707##CARVEDILOL                                   3,125MG 4BL X 15 COMP##34,65 
+7898146822258##CARVEDILOL                                   3,125MG CT BL 15 COM##14,38 
+7898146823026##CARVEDILOL                                   3,125MG CT BL 30 COM##18,22 
+7898146822258##CARVEDILOL                                   3,125MG CX 15 COMP##15,48 
+7896004731278##CARVEDILOL                                   6,25MG 1BL X 15 COMP##16,19 
+7894916146395##CARVEDILOL                                   6,25MG 1BL X 15 COMP##16,19 
+7896004731285##CARVEDILOL                                   6,25MG 2BL X 15 COMP##22,40 
+7896004731377##CARVEDILOL                                   6,25MG 2BL X 15 COMP##22,40 
+7894916146401##CARVEDILOL                                   6,25MG 2BL X 15 COMP##22,40 
+7896004743691##CARVEDILOL                                   6,25MG 4BL X 15 COMP##40,32 
+7898146822265##CARVEDILOL                                   6,25MG CT BL 15 COM##16,17 
+7898146823040##CARVEDILOL                                   6,25MG CT BL 30 COM##20,91 
+7898146822265##CARVEDILOL                                   6,25MG CX 15 COMP##17,41 
+7896422519366##CARVEDILOL                                   12,5MG CX 15 COMP##24,20 
+7896181908906##CARVEDILOL                                   12,5MG CX 15 COMP##18,61 
+7896422519373##CARVEDILOL                                   12,5MG CX 30 COMP##46,64 
+7896181915041##CARVEDILOL                                   12,5MG CX 30 COMP##25,93 
+7896422519397##CARVEDILOL                                   25MG CX 15 COMP##29,49 
+7896181909323##CARVEDILOL                                   25MG CX 15 COMP##24,28 
+7896422519403##CARVEDILOL                                   25MG CX 30 COMP##54,48 
+7896181909880##CARVEDILOL                                   25MG CX 30 COMP##43,71 
+7896422519410##CARVEDILOL                                   25MG CX 60 COMP##78,83 
+7896422519298##CARVEDILOL                                   3,125MG CX 15 COMP##19,06 
+7896181905615##CARVEDILOL                                   3,125MG CX 15 COMP##14,41 
+7896422519304##CARVEDILOL                                   3,125MG CX 30 COMP##28,58 
+7896181915027##CARVEDILOL                                   3,125MG CX 30 COMP##19,25 
+7896422519311##CARVEDILOL                                   3,125MG CX 60 COMP##38,87 
+7896422519335##CARVEDILOL                                   6,25MG CX 15 COMP##20,44 
+7896181906070##CARVEDILOL                                   6,25MG CX 15 COMP##16,19 
+7896422519342##CARVEDILOL                                   6,25MG CX 30 COMP##40,92 
+7896181915034##CARVEDILOL                                   6,25MG CX 30 COMP##22,39 
+7895296092166##CARVEDILOL                                   12,5MG CX 15 COMP##18,62 
+8902220108165##CARVEDILOL                                   12,5MG CX 30 COMP##20,64 
+7895296092180##CARVEDILOL                                   12,5MG CX 30 COMP##25,94 
+7895296092197##CARVEDILOL                                   12,5MG CX 60 COMP##46,69 
+7898565580296##CARVEDILOL                                   25MG CX 14 COMP##27,42 
+7898565580333##CARVEDILOL                                   25MG CX 140 COMP (EMB HOSP)##274,31 
+7898565580302##CARVEDILOL                                   25MG CX 15 COMP##29,38 
+7895296092234##CARVEDILOL                                   25MG CX 15 COMP##23,59 
+7898565580319##CARVEDILOL                                   25MG CX 28 COMP##54,86 
+8902220109049##CARVEDILOL                                   25MG CX 30 COMP##34,81 
+7898565580326##CARVEDILOL                                   25MG CX 30 COMP##58,77 
+7895296092302##CARVEDILOL                                   25MG CX 30 COMP##43,58 
+7898565580340##CARVEDILOL                                   25MG CX 300 COMP (EMB HOSP)##58,24 
+7895296092319##CARVEDILOL                                   3,125MG CX 15 COMP##14,41 
+7895296092326##CARVEDILOL                                   3,125MG CX 30 COMP##19,26 
+8902220108134##CARVEDILOL                                   6,25MG CX 15 COMP##12,35 
+7895296092098##CARVEDILOL                                   6,25MG CX 15 COMP##16,19 
+8902220108141##CARVEDILOL                                   6,25MG CX 30 COMP##17,82 
+7895296092111##CARVEDILOL                                   6,25MG CX 30 COMP##22,40 
+7896004732497##CARVEGRAN                                    12,5MG 2BL X 15 COMP##25,94 
+7896004732510##CARVEGRAN                                    25MG 2BL X 15 COMP##36,85 
+7896004732435##CARVEGRAN                                    3,125MG 1BL X 15 COMP##11,95 
+7896004732442##CARVEGRAN                                    3,125MG 2BL X 15 COMP##19,26 
+7896004732466##CARVEGRAN                                    6,25MG 1BL X 15 COMP##13,49 
+7896004732473##CARVEGRAN                                    6,25MG 2BL X 15 COMP##22,40 
+7896006201014##CARVEROL                                     250MG CX 20 COMP##14,39 
+7896083400164##CASCARA SAGRADA                              75MG CX 45 CAP##20,96 
+7896206400781##CASODEX                                      50MG CX 28 COMP REV##685,90 
+7893736015041##CASPACIL                                     2,5% SHAMPOO FR 100ML##47,03 
+7897917002301##CASTANHA DA INDIA                            100MG CX 30 COMP REV##23,05 
+7896083400119##CASTANHA DA INDIA                            100MG CX 45 COMP##22,89 
+7896372505006##CASTANHA DA INDIA ATALAIA                    CX 30 CAP##21,62 
+7898152461359##CASTANHA DA INDIA EC                         200MG FR 100ML+CM TINT##10,35 
+7898152461373##CASTANHA DA INDIA EC                         500MG FR 50 CAP##11,40 
+7896472512829##CASTANHA DA INDIA MULTILAB                   170MG  CX 30 COMP REV##17,72 
+7896472512836##CASTANHA DA INDIA MULTILAB                   170MG  X 60 COMP REV##34,05 
+7896082900535##CASTANHA DA INDIA ZURITA                     CX 30 CAP##21,55 
+7896261005723##CATAFLAM                                     11,6MG/G SOL FILME POLIET TB AL AER X 85ML##20,83 
+7896261001077##CATAFLAM                                     1,8MG SUS ORAL FR 120ML##20,79 
+7896261000391##CATAFLAM                                     44,94MG SUS OR FR GTS 20ML##12,58 
+7896261013490##CATAFLAM                                     50MG CX 10 DR##10,66 
+7896261013483##CATAFLAM                                     50MG CX 20 DR##21,36 
+7896261000445##CATAFLAM D                                   D 50MG CX 20 COMP DISP##20,99 
+7896261018310##CATAFLAM EMULGEL                             11,6MG/G  TB 150##24,68 
+7896261016279##CATAFLAM EMULGEL                             11,6MG/G 100##19,58 
+7896261018563##CATAFLAM SPORT ICE                           AEROSOL 120##28,95 
+7896261018303##CATAFLAM SPORT ICE                           AEROSOL 60##19,91 
+7896261019003##CATAFLAMPRO                                  25MG CX 10 COMP REV##7,53 
+7896261018990##CATAFLAMPRO                                  25MG X 4##3,01 
+7896261005723##CATAFLAMPRO AEROSOL                          11,6MG/G X 85 ML##20,83 
+7896261018310##CATAFLAMPRO EMULGEL                          11,6 MG/G  CX 150##25,91 
+7896261016279##CATAFLAMPRO EMULGEL                          11,6 MG/G CX 100##20,56 
+7896261018310##CATAFLAMPRO EMULGEL                          11,6MG/G  TB 150##24,68 
+7896261014244##CATAFLAMPRO EMULGEL                          11,6MG/G GEL DERM X 30##7,81 
+7896261014268##CATAFLAMPRO EMULGEL                          11,6MG/G GEL DERM X 60##15,57 
+7896261016279##CATAFLAMPRO EMULGEL                          11,6MG/G TB 100##19,58 
+7896261019348##CATAFLAMPRO XT EMULGEL                       23,2MG/G X 100##31,17 
+7896261019331##CATAFLAMPRO XT EMULGEL                       23,2MG/G X 50##21,78 
+7898158693617##CATAFLEXYM                                   11,6MG/G GEL BG 60##10,79 
+7896658024504##CATIVA                                       15 SACHE X 6##53,30 
+7896658024511##CATIVA                                       30 SACHE X 6##88,83 
+7896023727290##CATUAMA                                      CX 30 CAP##46,77 
+7896023722721##CATUAMA                                      SOL FR 500ML##27,86 
+7896658000126##CAUTEREX                                     BG 10##18,00 
+7891268100709##CAVERJECT                                    10MCG PO LIOF CX 1FA X 1ML+SER##52,57 
+7891268100716##CAVERJECT                                    20MCG PO LIOF CX 1FA X 1ML+SER##74,07 
+7893736001240##CAZIDERM                                     2MG FR 100ML##16,53 
+7893736001242##CAZIDERM                                     2MG POM DERM BG 20##5,98 
+7893736011241##CAZIDERM                                     2MG SOL TOP FR 30ML##4,93 
+7893736001327##CAZIGERAN                                    CX 20 DR##10,96 
+7893736011326##CAZIGERAN                                    CX 60 DR##32,47 
+7891721100055##CEBION                                       100+500MG GLICOSE 10ENV X 10G GRAN##18,78 
+7891721100130##CEBION                                       100+500MG GLICOSE 50ENV X 10G E.M.##91,76 
+7891721100017##CEBION                                       1G CX 10 COM EFV SAB LARANJA##10,85 
+7891721104923##CEBION                                       1G CX 10 COM EFV SB ACEROLA##10,85 
+7891721024337##CEBION                                       1G CX 30 COM EFV SB LARANJA##26,19 
+7891721104831##CEBION                                       1G TB 10 PAST EFV S/ACUCAR##11,32 
+7891721100048##CEBION                                       200MG SOL ORAL FR 30ML##11,41 
+7891721100024##CEBION                                       2G CX 10 COM EFV##13,31 
+7891721100031##CEBION                                       500+600MG CALCIO TB10 COM EFV##11,41 
+7891721022128##CEBION                                       500MG CX 30 COMP##19,38 
+7891721104848##CEBION                                       ZINCO 1000+10MG TB 10 COM EFEV##13,29 
+7896094207660##CEBRALAT                                     100MG CX 15 COMP##16,28 
+7896094201415##CEBRALAT                                     100MG CX 30 COMP##32,55 
+7896094202047##CEBRALAT                                     100MG CX 60 COMP##39,81 
+7896094201422##CEBRALAT                                     50MG CX 30 COMP##16,50 
+7896094202030##CEBRALAT                                     50MG CX 60 COMP##19,85 
+7896094201361##CEBRILIN                                     10MG CX 30 COMP REV##43,12 
+7896094200968##CEBRILIN                                     20MG CX 30 COMP REV##86,54 
+7896094202733##CEBRILIN                                     30MG CX 10 COMP REV##29,49 
+7896094202276##CEBRILIN                                     30MG CX 30 COMP REV##95,29 
+7894916505130##CECLOR                                       250MG/5ML SUS ORAL FR 100ML##49,23 
+7894916505147##CECLOR                                       375MG/5ML SUS ORAL FR 100ML##66,90 
+7894916505673##CECLOR BD                                    500MG CX 10 COMP REV##43,07 
+7894916503914##CECLOR BD                                    750MG CX 14 COMP REV##90,50 
+7896472505913##CECOFENE                                     100MG CX 12 COMP##16,60 
+7898049795611##CECOFLAN                                     100MG CX 12 COMP REV##27,60 
+7898216361052##CEDRILAX                                     300+125+50+30MG X 100 COM##68,94 
+7898216360116##CEDRILAX                                     50+125+300+30MG CX 30 COM##21,52 
+7896004718309##CEDROXIL                                     500MG CX 8 CAP##29,80 
+7897473206915##CEDUR                                        200MG CX 20 COMP##18,06 
+7897473206922##CEDUR                                        400MG CX 30 COMP RET##85,36 
+7893736025002##CEFABEN                                      500MG CX 8 COMP##24,93 
+7896714200644##CEFABRINA                                    750MG CX 100 COMP##66,23 
+7896523206172##CEFACIMED                                    500MG CX 8 CAP##23,29 
+7896004710174##CEFACLOR                                     250MG CX 10 CAP##21,71 
+7896004704968##CEFACLOR                                     250MG SUS ORAL FR 80ML##43,63 
+7896004719085##CEFACLOR                                     250MG/5ML SUS OR FR 100ML##39,94 
+7896004704975##CEFACLOR                                     375MG SUS ORAL FR 80ML##59,31 
+7896004719078##CEFACLOR                                     375MG/5ML SUS OR FR 100ML##57,25 
+7896004704890##CEFACLOR                                     500MG CX 10 CAP##55,71 
+7896004710167##CEFACLOR                                     500MG CX 10 CAP##43,13 
+7894916141383##CEFACLOR                                     500MG CX 10 CAP##43,13 
+7896422508131##CEFACLOR                                     500MG CX 10 CAP##45,67 
+7896422507172##CEFACLOR                                     50MG SUS OR FR 80ML+DOS##35,71 
+7896422507189##CEFACLOR                                     75MG SUS OR FR 80ML+DOS##48,55 
+7898505090359##CEFADRIN                                     500+65MG CX 120 COMP REV##105,38 
+7896004703268##CEFADROXIL                                   250MG SUS FR 100ML##38,96 
+7896004703275##CEFADROXIL                                   500MG CX 8 COMP##27,81 
+7896004703626##CEFADROXIL                                   500MG SUS FR 100ML##77,33 
+7896181913146##CEFADROXILA                                  250MG/5ML PO SUS FR 100ML+SER DOS##30,52 
+7896181913221##CEFADROXILA                                  100MG PO SUS FR 100ML+SER DOS##60,82 
+7896112130192##CEFADROXILA                                  500MG CX 8 CAP GEL##35,26 
+7896422508094##CEFADROXILA                                  250MG PO SUS OR FR 100ML+DOS##38,85 
+7891317001421##CEFADROXILA                                  250MG/5ML SUS FR 100ML##35,44 
+7891317001438##CEFADROXILA                                  500MG CX 2 ENV X 4 CAP##26,40 
+7896422508087##CEFADROXILA                                  500MG CX 8 CAP##34,51 
+7896422508100##CEFADROXILA                                  500MG PO SUS OR FR 100ML+DOS##80,42 
+7897595604934##CEFADROXILA                                  500MG/5ML PO SUS ORAL FR 100ML+CD##77,30 
+7898361881047##CEFADROXILA                                  50/ML PO SUS ORAL FR 100ML+SER DOS##28,45 
+7898361884505##CEFADROXILA                                  500MG CX 200 CAP EMB HOSP##1.037,03 
+7898361884512##CEFADROXILA                                  500MG CX 400 CAP EMB HOSP##2.074,05 
+7897595604927##CEFADROXILA                                  500MG CX 8 CAP##20,97 
+7898361880552##CEFADROXILA                                  500MG CX 8 CAP##23,33 
+7897595604910##CEFADROXILA                                  50MG/ML PO SUS ORAL FR 100ML+CD##32,45 
+7896472512751##CEFAGEL                                      250MG/5ML FR 100ML##18,75 
+7896472512744##CEFAGEL                                      250MG/5ML FR 60ML##16,88 
+7896472509645##CEFAGEL                                      500MG  500 CAP EMB HOSP##503,04 
+7896472502943##CEFAGEL                                      500MG CX 10 CAP##21,23 
+7898911244681##CEFALEXINA                                   1G CX 14 DR##71,69 
+7898911244698##CEFALEXINA                                   1G CX 40 DR##203,33 
+7898911244650##CEFALEXINA                                   500MG CX 28 DR##74,46 
+7898911244667##CEFALEXINA                                   500MG CX 40 DR##106,39 
+7898924600489##CEFALEXINA                                   50MG/ML SUS OR FR X 100ML + CP MED##36,21 
+7898911244711##CEFALEXINA                                   50MG/ML SUS OR FR X 60 ML + CP MED##19,88 
+7898911244735##CEFALEXINA                                   100MG/ML SUS OR CT FR AMB X 100ML + COL DOSAD##69,09 
+7898924600504##CEFALEXINA                                   100MG/ML SUS OR CT FR AMB X 100ML + CP MED##62,36 
+7896004712581##CEFALEXINA                                   1G CX 8 COMP##41,25 
+7894916142151##CEFALEXINA                                   1G CX 8 COMP REV##34,48 
+7898911244674##CEFALEXINA                                   1G CX 8 DRA##41,31 
+7898149938161##CEFALEXINA                                   250MG 5ML PO P EXT CX50 FR PLAS OPC X 100ML##1.035,10 
+7898149938154##CEFALEXINA                                   250MG 5ML PO P PREP EXT CX50 FR PLAS OPC 60ML##621,59 
+7896004704364##CEFALEXINA                                   250MG SUS FR 100ML##28,16 
+7898149937317##CEFALEXINA                                   250MG+5ML PO CX 50FR X 60ML HOSP##988,57 
+7896112128885##CEFALEXINA                                   250MG/5ML PO SUS CX 50FR X 60ML EMB HOSP##1.068,73 
+7896112128861##CEFALEXINA                                   250MG/5ML PO SUS FR 100ML##22,44 
+7898911244728##CEFALEXINA                                   250MG/5ML SUS OR FR 100ML+COL DOS##38,36 
+7898924600481##CEFALEXINA                                   250MG/5ML SUS OR FR 60ML+COL DOS##21,04 
+7896112134213##CEFALEXINA                                   500MG CX 10 COMP##12,79 
+7896004704692##CEFALEXINA                                   500MG CX 10 COMP##17,39 
+7898924600733##CEFALEXINA                                   500MG CX 200 DR##531,92 
+7896112149422##CEFALEXINA                                   500MG CX 40 COMP##49,69 
+7896112149415##CEFALEXINA                                   500MG CX 8 COMP##10,44 
+7896004715803##CEFALEXINA                                   500MG CX 8 COMP##14,75 
+7896004716633##CEFALEXINA                                   500MG CX 8 COMP##12,15 
+7894916143806##CEFALEXINA                                   500MG CX 8 COMP##13,55 
+7898911244643##CEFALEXINA                                   500MG CX 8 DR##21,32 
+7896714202617##CEFALEXINA                                   50MG/ML PO SUS OR FR 100ML+CM##26,59 
+7896006224822##CEFALEXINA                                   50MG/ML PO SUS OR FR 60ML+CM##20,17 
+7897595604347##CEFALEXINA                                   500MG CX 10 COMP##21,89 
+7897595605689##CEFALEXINA                                   500MG CX 200 COMP HOSP##325,82 
+7897595605672##CEFALEXINA                                   500MG CX 40 COMP##65,61 
+7897595604187##CEFALEXINA                                   500MG CX 8 CAP GEL DURA##13,94 
+7896006212300##CEFALEXINA                                   250MG/5ML SUS OR FR 100ML##24,84 
+7896422507196##CEFALEXINA                                   250MG/5ML SUS OR FR 100ML+DOS##26,61 
+7896422512572##CEFALEXINA                                   500MG CX 10 CAP##17,42 
+7896006216544##CEFALEXINA                                   500MG CX 10 CAP##16,48 
+7891317448844##CEFALEXINA                                   500MG CX 10 COMP##17,00 
+7891317449100##CEFALEXINA                                   500MG CX 30 COMP REV EMB FRAC##51,01 
+7896422512596##CEFALEXINA                                   500MG CX 40 CAP-EMB FRAC##66,91 
+7898149935122##CEFALEXINA                                   500MG CX 500 COMP REV HOSP##921,72 
+7896422512589##CEFALEXINA                                   500MG CX 8 CAP##13,69 
+7896006216766##CEFALEXINA                                   500MG CX 8 CAP##12,83 
+7891317001803##CEFALEXINA                                   500MG CX 8 COMP##13,81 
+7896422507233##CEFALEXINA                                   500MG/5ML SUS OR FR 100ML+DOS##69,04 
+7891317007898##CEFALEXINA                                   50MG/ML SUS FR 100ML##26,34 
+7896523208688##CEFALEXINA                                   250MG/5ML SUS OR FR 100ML##15,14 
+7898361881771##CEFALEXINA                                   500MG CX 10 CAP##17,47 
+7897076907912##CEFALEXINA                                   500MG CX 10 COMP##15,87 
+7898361880026##CEFALEXINA                                   500MG CX 10 COMP REV##21,76 
+7895296224024##CEFALEXINA                                   500MG CX 10 COMP REV##18,12 
+7898361881788##CEFALEXINA                                   500MG CX 100 CAP EMB HOSP##165,89 
+7897076907929##CEFALEXINA                                   500MG CX 20 COMP##31,83 
+7895296224031##CEFALEXINA                                   500MG CX 20 COMP REV##33,81 
+7898361881795##CEFALEXINA                                   500MG CX 200 CAP EMB HOSP##331,76 
+7898361881764##CEFALEXINA                                   500MG CX 8 CAP##13,99 
+7897076907905##CEFALEXINA                                   500MG CX 8 COMP##12,70 
+7898095343057##CEFALEXINA                                   500MG CX 8 COMP##13,99 
+7898361880019##CEFALEXINA                                   500MG CX 8 COMP REV##12,70 
+7898095341619##CEFALEXINA                                   500MG CX 8 COMP REV##14,52 
+7895296224017##CEFALEXINA                                   500MG CX 8 COMP REV##13,91 
+7896523208534##CEFALEXINA MONOIDRATADA                      500MG CX 8 CAP##14,00 
+7896658002205##CEFALIUM                                     1+45+75+10MG CX 12 COMP##13,33 
+7896658001079##CEFALIV                                      CX 12 COMP##10,12 
+7896006233657##CEFALOTIL                                    1G SOL INJ CX 50 FA+DIL##281,97 
+7896242123873##CEFALOTINA SODICA                            1000MG PO INJ 100FA##354,87 
+7896242123880##CEFALOTINA SODICA                            1000MG PO INJ 100FA X 5ML##354,87 
+7896242123897##CEFALOTINA SODICA                            1000MG PO INJ 100FA+100 AMP X 5ML##354,87 
+7896242123842##CEFALOTINA SODICA                            1000MG PO INJ 50FA##177,43 
+7896242123859##CEFALOTINA SODICA                            1000MG PO INJ 50FA X 5ML##177,43 
+7896242123866##CEFALOTINA SODICA                            1000MG PO INJ 50FA+50 X 5ML##177,43 
+7896242123811##CEFALOTINA SODICA                            1000MG PO INJ FA##3,55 
+7896242123835##CEFALOTINA SODICA                            1000MG PO INJ FA X 5ML##3,55 
+7896242123828##CEFALOTINA SODICA                            1000MG PO INJ FA+AMP X 5ML##3,55 
+7898901848998##CEFALOTINA SODICA                            1G  PO INJ CX 50 FA##199,43 
+7898901848851##CEFALOTINA SODICA                            1G PO SOL INJ CX 100 FA 10ML+100DIL AMP 10 ML##422,78 
+7898934756222##CEFALOTINA SODICA                            1G PO SOL INJ CX100 FA 10ML + 100 BOLS 100ML##398,84 
+7898911244018##CEFALOTINA SODICA                            1G PO SOL INJ CX100 FA INC X 10ML (EMB HOSP)##398,84 
+7898924600627##CEFALOTINA SODICA                            1G PO SOL INJ CX150 FA 10ML (EMB HOSP)##598,26 
+7898901848868##CEFALOTINA SODICA                            1G PO SOL INJ CX150 FA 10ML+150DIL AMP 10ML##634,17 
+7898901848875##CEFALOTINA SODICA                            1G PO SOL INJ CX200 FA INC X10ML+200 DIL 10ML##845,58 
+7898924600634##CEFALOTINA SODICA                            1G PO SOL INJ CX200 FA X 10ML (EMB HOSP)##797,69 
+7898901848844##CEFALOTINA SODICA                            1G PO SOL INJ CX50 FA 10ML + 50 DIL AMP 10 ML##211,39 
+7896014685639##CEFALOTINA SODICA                            1000MG PO INJ C/FA X 5ML##3,98 
+7896014685707##CEFALOTINA SODICA                            1000MG PO INJ CX 100 FA##398,84 
+7896014685677##CEFALOTINA SODICA                            1000MG PO INJ CX 100 FA+100AMP DIL VD X5ML##398,84 
+7896014685653##CEFALOTINA SODICA                            1000MG PO INJ CX 100FA+100AMP DIL PLAS X5ML##398,84 
+7896014685660##CEFALOTINA SODICA                            1000MG PO INJ CX 50 FA+50AMP X 5ML##199,42 
+7896014685691##CEFALOTINA SODICA                            1000MG PO INJ CX 50FA##193,87 
+7896014685646##CEFALOTINA SODICA                            1000MG PO INJ CX 50FA+50AMP X 5ML##199,42 
+7896014685684##CEFALOTINA SODICA                            1000MG PO INJ FA##3,98 
+7896014685714##CEFALOTINA SODICA                            1000MG PO INJ FA X 5ML##3,98 
+7898208144342##CEFALOTINA SODICA                            1G PO SOL INJ CX 50FA X 10ML EMB HOSP##199,38 
+7898361880392##CEFALOTINA SODICA                            1G SOL INJ CX 1FA+DIL X 10ML##5,56 
+7898361881474##CEFALOTINA SODICA                            1G SOL INJ CX 1FA+DIL X 5ML##4,23 
+7898361881450##CEFALOTINA SODICA                            1G SOL INJ CX 50FA X 10ML EMB HOSP##199,43 
+7898361881276##CEFALOTINA SODICA                            1G SOL INJ CX 50FA+50DIL X 10ML EMB HOSP##211,40 
+7898361881467##CEFALOTINA SODICA                            1G SOL INJ CX 50FA+50DIL X 5ML EMB HOSP##211,40 
+7896016805127##CEFAMOX                                      500MG CX 8 CAP##63,81 
+7896112137917##CEFANAXIL                                    500MG CX 8 CAP##38,30 
+7896714203928##CEFANID                                      500MG CX 8 COMP##20,14 
+7896242150381##CEFARISTON                                   1000MG PO INJ CX 50FA X 5ML##257,89 
+0789624215043##CEFARISTON                                   1000MG PO INJ CX 50FA+50AMP X 5ML##257,89 
+7896242150374##CEFARISTON                                   1000MG PO INJ FA X 5ML##5,15 
+7896242150350##CEFARISTON                                   1000MG PO INJ FA+AMP X 5ML##5,16 
+7896242150367##CEFARISTON                                   1000MG PO INJ CX 100FA##515,77 
+7896014686988##CEFARISTON                                   10000MG PO INJ CX 50FA+50AMP X 5ML##289,85 
+7896014686971##CEFARISTON                                   1000MG PO INJ C/FA+AMP X 5ML##5,79 
+7896014686940##CEFARISTON                                   1000MG PO INJ CX 50FA +50 AMP X 5ML##289,85 
+7896014686957##CEFARISTON                                   100MG PO C/ FA+AMP X 5ML##5,80 
+7896014686964##CEFARISTON                                   100MH PO INJ CX 100FA##579,68 
+7897406110678##CEFAZIMA                                     1G CX 1FR+1AMP##11,78 
+7897406110999##CEFAZIMA                                     1G CX 50FR##479,12 
+7898487605275##CEFAZOLINA SODICA                            1G PO LIOF SOL INJ  20FA+20BOLS X 100ML HOSP##157,57 
+7898924600559##CEFAZOLINA SODICA                            1G PO SOL INJ CX50FA + 50AMP X 10ML EMB HOSP##426,65 
+7898901848509##CEFAZOLINA SODICA                            1G PO INJ CX 50 FA##426,65 
+7898294600566##CEFAZOLINA SODICA                            1G PO P/ SOL INJ CX100 FA + 100 AMP X 10ML H##853,32 
+7898901848516##CEFAZOLINA SODICA                            1G PO P/ SOL INJ CX100 FA X 10ML EMB HOSP##853,32 
+7898901848523##CEFAZOLINA SODICA                            1G PO P/ SOL INJ CX150 FA INC X 10ML EMB HOSP##1.279,96 
+7898901848561##CEFAZOLINA SODICA                            1G PO P/ SOL INJ CX200 FA X 10ML EMB HOSP##1.706,64 
+7898924600580##CEFAZOLINA SODICA                            1G PO P/ SOL INJ CX200 FA+200 DIL 10ML E HOSP##1.706,64 
+7896006270720##CEFAZOLINA SODICA                            1G PO SOL INJ CX 50FA X 13ML EMB HOSP##389,41 
+7898924600986##CEFAZOLINA SODICA                            1G PO SOL INJ CX100 FA + 100 BOLS 100ML HOSP##853,32 
+7898924600573##CEFAZOLINA SODICA                            1G PO SOL INJ CX150 FA+ 150DIL AMP 10ML HOSP##1.279,96 
+7898361880422##CEFAZOLINA SODICA                            1G INJ CX 25FA+25DIL X 10ML EMB HOSP##156,28 
+7898361881351##CEFAZOLINA SODICA                            1G PO INJ CX 1FA+DIL X 10ML##6,35 
+7898487605282##CEFAZOLINA SODICA                            1G PO LIOF SOL 25FA+25BOLS X 100ML HOSP##196,97 
+7898487605299##CEFAZOLINA SODICA                            1G PO LIOF SOL INJ 50FA+50BOLS X 100ML HOSP##393,94 
+7898208142416##CEFAZOLINA SODICA                            1G PO LIOF SOL INJ CX 50FA EMB HOSP##418,96 
+7898361881405##CEFAZOLINA SODICA                            1G SOL INJ CX 50FA+DIL EMB HOSP##393,82 
+7896006236818##CEFORAN                                      1G IM-IV CX FA+DIL 4ML##31,54 
+7898361881269##CEFOTAXIMA SODICA                            1G SOL INJ 25FA+25DIL X 10ML##597,25 
+7898361881245##CEFOTAXIMA SODICA                            1G SOL INJ CX 1FA+DIL X 10ML##24,39 
+7898361881436##CEFOTAXIMA SODICA                            1G SOL INJ CX 1FA+DIL X 5ML##31,26 
+7898361881429##CEFOTAXIMA SODICA                            1G SOL INJ CX 25FA+25DIL X 5ML EMB HOSP##729,02 
+7898361881412##CEFOTAXIMA SODICA                            1G SOL INJ CX 50FA HOSP##1.457,74 
+7898361881238##CEFOTAXIMA SODICA                            500MG SOL INJ 1FA+DIL X 5ML##13,40 
+7898361880415##CEFOTAXIMA SODICA                            500MG SOL INJ CX 25FA+DIL X 5ML##332,30 
+7898361881443##CEFOTAXIMA SODICA                            500MG SOL INJ CX 50FA EMB HOSP##1.007,90 
+7896014686674##CEFOXITINA SODICA                            1000MG PO SOL INJ C/ 1FA##29,72 
+7896014686711##CEFOXITINA SODICA                            1000MG PO SOL INJ CX 25FA EMB HOSP##743,14 
+7896014686728##CEFOXITINA SODICA                            100MG PO SOL INJ CX 40FA EMB FRAC##1.189,04 
+7896014686681##CEFOXITINA SODICA                            1000MG PO SOL INJ CX 20FA EMB HOSP##594,52 
+7896014686704##CEFOXITINA SODICA                            100MG PO SOL INJ CX 100FA EM HOSP##2.972,59 
+7896014686698##CEFOXITINA SODICA                            100MG PO SOL INJ CX 50FA EMB HOSP##1.486,30 
+7898487605312##CEFOXITINA SODICA                            1G PO SOL INJ 1FA+BOLS X 100ML EMB HOSP##17,12 
+7898208144168##CEFOXITINA SODICA                            1G PO SOL INJ 1FA+DIL X 10ML EMB HOSP##19,28 
+7898487600133##CEFOXITINA SODICA                            1G PO SOL INJ CX 20FA+DIL X 10ML EMB HOSP##364,35 
+7898208141174##CEFTAFOR                                     1G PO SOL INJ CX 50FA X 14ML EMB HOSP##1.442,93 
+7898361880255##CEFTAZIDIMA                                  1G SOL INJ CX 1FA+DIL X 10ML##23,02 
+7898361880262##CEFTAZIDIMA                                  1G SOL INJ CX 25FA+25DIL X 10ML##584,43 
+7898361881375##CEFTAZIDIMA                                  1G SOL INJ CX 50FA##1.150,53 
+7896242150435##CEFTAZIDON                                   1000MG PO INJ CX 100 FA VD INC EMB HOSP##3.459,88 
+7896242150404##CEFTAZIDON                                   1000MG PO INJ CX 20 FA VD INC+ DIL X 10ML##691,98 
+7896242150411##CEFTAZIDON                                   1000MG PO INJ CX 20 FA VD INC+AMP PLAS 10ML##691,98 
+7896242150428##CEFTAZIDON                                   1000MG PO INJ CX 20FA##689,55 
+7896014685028##CEFTAZIDON                                   1000MG PO INJ CX 20FA X 10ML##777,71 
+7896014685042##CEFTAZIDON                                   100MG PO INJ CX 100FA EMB HOSP##3.888,58 
+7896014685011##CEFTAZIDON                                   100MG PO INJ CX 20 FA X 10ML##777,71 
+7896014685035##CEFTAZIDON                                   100MG PO INJ CX 20FA##774,99 
+7896242150510##CEFTON                                       1000MG PO INJ CX 100 FA VD INC##2.645,28 
+7896242150497##CEFTON                                       1000MG PO INJ CX 20 FA VD INC+20AMP DIL X 2ML##529,06 
+7896242150503##CEFTON                                       1000MG PO INJ CX 20FA EMB HOSP##529,06 
+7896014685127##CEFTON                                       1000MG PO INJ CX 20FA EM HOSP##594,61 
+7896014685110##CEFTON                                       1000MG PO INJ CX 20FA+20AMP X 2ML##594,61 
+7896014685134##CEFTON                                       100MG PO INJ CX 100FA EMB HOSP##2.973,05 
+7896006237631##CEFTRAT                                      1G PO INJ CX 50 FA##431,04 
+7894916500111##CEFTRIAX                                     1G INJ IM CX 1AMP X 3,5ML##20,25 
+7894916500074##CEFTRIAX                                     500MG IM CX 1AMP X 2ML##13,59 
+7898911244155##CEFTRIAXONA                                  1 G (CX 50 FRASCOS)##1.462,23 
+7898911244148##CEFTRIAXONA DISSODICA                        1G IV PO INJ CX 25FA##774,25 
+7898934756109##CEFTRIAXONA DISSODICA                        1G IV PO INJ CX 50FA + 50 BOLS##1.462,23 
+7898924600597##CEFTRIAXONA DISSODICA                        1G PO P/ SOL INJ CT 100 FA 10ML EMB HOSP##2.924,43 
+7898924600436##CEFTRIAXONA DISSODICA                        1G PO P/ SOL INJ CT 150 FA 10 ML+150 AMP 10ML##4.386,67 
+7898924600443##CEFTRIAXONA DISSODICA                        1G PO P/ SOL INJ CT 200 FA 10 ML+200 AMP 10ML##5.848,89 
+7898924600610##CEFTRIAXONA DISSODICA                        1G PO P/ SOL INJ CT 200 FA 10ML EMB HOSP##5.848,89 
+7898924600405##CEFTRIAXONA DISSODICA                        1G PO P/ SOL INJ CT 25 FA 10 ML+25 AMP X 10ML##774,25 
+7898924600429##CEFTRIAXONA DISSODICA                        1G PO SOL INJ CT 100 FA 10 ML+100 AMP 10 ML##2.924,43 
+7898924600603##CEFTRIAXONA DISSODICA                        1G PO SOL INJ CT 150 FA 10ML EMB HOSP##4.386,67 
+7898924600412##CEFTRIAXONA DISSODICA                        1G PO SOL INJ CT 50 FA 10 ML+50 AMP 10ML HOSP##1.462,23 
+7898934756093##CEFTRIAXONA DISSODICA                        1G PO SOL INJ CX25 FA 10ML + 25 BOLS 100ML HP##738,57 
+7896004700205##CEFTRIAXONA SODICA                           1G INJ IM CX 1FA+DIL##19,72 
+7896004700229##CEFTRIAXONA SODICA                           500MG INJ IM 1FA+DIL X 2ML##13,11 
+7891317007836##CEFTRIAXONA SODICA                           1G INJ IM CX 1FA+DIL##19,21 
+7891317426347##CEFTRIAXONA SODICA                           1G INJ IV DISPLAY 50 FA##1.518,13 
+7898361881177##CEFTRIAXONA SODICA                           1G SOL INJ CX 25FA+DIL X 10ML##712,96 
+7891317007829##CEFTRIAXONA SODICA                           500MG INJ IM CX 1FA+DIL##12,77 
+7898361881184##CEFTRIAXONA SODICA                           500MG SOL INJ CX 25FA+25AMP+DIL X 5ML##396,21 
+7898361881399##CEFTRIAXONA SODICA                           500MG SOL INJ CX 50FA##934,89 
+7898361880408##CEFTRIAXONA SODICA                           500MG SOL INJ CX 5FA+5AMP+DIL X 5ML##76,98 
+7898361881153##CEFTRIAXONA SODICA                           1G SOL INJ CX 1FA+DIL X 10ML##27,14 
+7898361881382##CEFTRIAXONA SODICA                           1G SOL INJ CX 50FA##1.409,25 
+7898361881160##CEFTRIAXONA SODICA                           1G SOL INJ CX 5FA+5AMP+DIL X 10ML EMB HOSP##140,48 
+7898361881252##CEFTRIAXONA SODICA                           500MG SOL INJ CX 1FA+DIL X 5ML##15,11 
+7898208141617##CEFTRIONA                                    1G PO SOL INJ CX 50FA EMB HOSP##2.187,37 
+7898208141501##CEFTRIONA                                    500MG PO SOL INJ CX 50FA EMB HOSP##476,53 
+7898361884628##CEFUROXIMA SODICA                            750MG PO SOL INJ X 50FA EMB HOSP##1.060,25 
+7898361881535##CEFUROXIMA SODICA                            750MG SOL INJ CX 1FA+DIL X 6ML##22,98 
+7898361881511##CEFUROXIMA SODICA                            750MG SOL INJ CX 25FA##530,13 
+7898361881528##CEFUROXIMA SODICA                            750MG SOL INJ CX 25FA+25AMP+DIL X 6ML##562,63 
+7897473205246##CELAMINA                                     ZINCO SHAMPOO FR 150ML##32,31 
+7897473205253##CELAMINA                                     ULTRA SHAMPOO FR 150ML##40,92 
+7891721013553##CELAPRAM                                     20MG CX 30 COMP REV##62,54 
+7891268100808##CELEBRA                                      100MG CX 20 CAP##41,22 
+7891268101188##CELEBRA                                      200MG  CX 15 CAP##50,21 
+7891268100815##CELEBRA                                      200MG CX 10 CAP##33,92 
+7891268100822##CELEBRA                                      200MG CX 30 CAP##99,14 
+7891268100457##CELEBRA                                      200MG CX 4 CAP##13,39 
+7896112182092##CELECOXIBE                                   100MG CX 20 CAP##26,79 
+7896112164838##CELECOXIBE                                   200MG CX 10 CAP##22,05 
+7896112181842##CELECOXIBE                                   200MG CX 15 CAP##30,84 
+7896112164845##CELECOXIBE                                   200MG CX 30 CAP##58,60 
+8902344307413##CELEMIN HEPA                                 8% 80MG/ML SOL INJ FR X 1000ML##104,76 
+8902344307215##CELEMIN HEPA                                 8% 80MG/ML SOL INJ FR X 500ML##86,98 
+8902344307314##CELEMIN HEPA                                 80MG/ML SOL INJ FR X 250ML##50,84 
+8902344309417##CELEMIN NEPHRO                               7% 70MG/ML SOL INJ FR X 1000ML##71,37 
+8902344309318##CELEMIN NEPHRO                               7% 70MG/ML SOL INJ FR X 500ML##58,53 
+8902344309219##CELEMIN NEPHRO                               70 MG/ML SOL INJ CT FR X 250ML##44,08 
+8902344316118##CELEPID                                      0,1G/ML EMUL INJ FR X 100ML##44,58 
+8902344316415##CELEPID                                      0,1G/ML EMUL INJ FR X 500ML##174,93 
+8902344317412##CELEPID                                      0,2G/ML EMUL INJ FR X 100ML##83,00 
+8902344317313##CELEPID                                      0,2G/ML EMUL INJ FR X 500ML##239,62 
+7896004706528##CELERG                                       0,25+2MG CX 20 COMP##11,86 
+7896004706559##CELERG                                       0,25+2MG/5ML XPE FR 120ML##15,99 
+7896004706573##CELERGIN                                     0,25+2MG CX 20 COMP##11,86 
+7896004706764##CELERGIN                                     0,25+2MG/5ML XPE FR 120ML##15,99 
+7891142126115##CELESTAMINE                                  0,25+2MG CX 10 COMP##8,53 
+7891142126139##CELESTAMINE                                  0,25+2MG CX 20 COMP##17,04 
+7891142126153##CELESTAMINE                                  0,25+2MG SOL OR FR GTS 20ML##23,20 
+7891142115614##CELESTAMINE                                  50MCG+0,4MG XPE FR 120ML##29,96 
+7891142128249##CELESTONE                                    0,1MG ELIXIR SOL FR 120ML##20,51 
+7891142128140##CELESTONE                                    0,5MG CX 10 COMP##4,68 
+7891142128133##CELESTONE                                    0,5MG CX 20 COMP##9,40 
+7891142128263##CELESTONE                                    0,5MG SOL ORAL FR GTS 15ML##8,81 
+7891142128096##CELESTONE                                    2MG CX 10 COMP##12,74 
+7891142128546##CELESTONE                                    4MG INJ CX 1AMP X 1ML##4,69 
+7891142128638##CELESTONE                                    SOLUSPAN 3+3MG INJ CX 1AMP X 1ML##12,84 
+7896006240990##CELESTRAT                                    2+0,25MG CX 15 COMP##9,10 
+7896006284369##CELESTRAT                                    2MG XPE FR 120ML##15,83 
+7899095201743##CELETIL                                      2+0,25MG CX 20 COMP##11,88 
+7899095201941##CELETIL                                      2+0,25MG/5ML XPE FR 120ML##19,51 
+7896226501284##CELLCEPT                                     500MG CX 50 COMP##677,88 
+7895858000561##CELLEXINA                                    500MG CX 200 CAP GEL DURA EMB HOSP##224,51 
+7896004704395##CELOCORT                                     CREME BG 30##17,22 
+7896015522872##CELSENTRI                                    150MG CX 60 COMP REV##2.042,32 
+7896015522957##CELSENTRI                                    300MG CX 60 COMP REV##2.042,32 
+0000001111122##CELSIOR                                      CX. C/4 BOLSAS 1##8.306,99 
+7897406111347##CEMAX                                        1G CX 1FA+DIL X 3ML##64,57 
+7897406114157##CEMAX                                        1G SIST FECH CX 10FA+BOLSA##618,92 
+7897406114140##CEMAX                                        1G SIST FECH CX 1FA+BOLSA##61,89 
+7897406114164##CEMAX                                        1G SIST FECH CX 50FA+BOLSA##3.094,67 
+7897406112160##CEMAX                                        1G X 50FA##3.163,68 
+7897406112177##CEMAX                                        1G X 50FA+DIL X 3,0ML##3.228,24 
+7897406111354##CEMAX                                        2G CX 1FA##127,64 
+7897406114171##CEMAX                                        2G SIS FECH CX 1FA+BOLSA##108,16 
+7897406114188##CEMAX                                        2G SIST FECH CX 10FA+BOLSA##1.081,66 
+7897406114195##CEMAX                                        2G SIST FECH CX 50FA+BOLSA##5.408,38 
+7897406112184##CEMAX                                        2G X 50FA##6.234,63 
+7897406111521##CEMAX                                        500MG PO LIOF FA+DIL X 1,5 ML##45,70 
+7896004714837##CENEVIT                                      2G TB 10 COMP EFV##13,91 
+7896083400102##CENTELLA                                     66MG  CX 45 CAP##20,94 
+7896714213392##CENTROTABS                                   CX 30 COMP##37,46 
+7897732602960##CENTROVITHEO-AZ                              POLIVITAMINICO FR 60 CAP##40,81 
+7891045040709##CENTRUM                                      FR 100+FR 30 COMP##124,53 
+7891045042741##CENTRUM                                      FR 150 COMP##125,77 
+7891045040679##CENTRUM                                      FR 30 COMP##35,85 
+7891045040686##CENTRUM                                      FR 60 COMP##66,90 
+7891045040693##CENTRUM                                      FR X 100 COMP##101,44 
+7891045042444##CENTRUM CONTROL                              FR 30 COMP##43,31 
+7891045042451##CENTRUM CONTROL                              FR 60 COMP##77,01 
+7891045043175##CENTRUM HOMEM                                FR 150 COMP##147,36 
+7891045043144##CENTRUM HOMEM                                FR 30 COMP##43,31 
+7891045043151##CENTRUM HOMEM                                FR 60 COMP##77,01 
+7891045043113##CENTRUM MULHER                               FR 150 COMP##147,36 
+7891045043083##CENTRUM MULHER                               FR 30 COMP##43,31 
+7891045043090##CENTRUM MULHER                               FR 60 COMP##77,01 
+7891045042703##CENTRUM OMEGA                                FR 30 COMP##26,28 
+7891045043229##CENTRUM OMEGA                                FR 60 COMP##46,93 
+7891045043632##CENTRUM OMEGA                                FR 60+FR 30 COMP##67,00 
+7891045040990##CENTRUM SELECT                               FR 100 COMP##116,68 
+7891045041003##CENTRUM SELECT                               FR 100+FR 30 COMP##136,78 
+7891045043045##CENTRUM SELECT                               FR 150 COMP##147,36 
+7891045040983##CENTRUM SELECT                               FR 30 COMP##43,31 
+7891045043502##CENTRUM SELECT HOMEM                         FR 150 COMP##162,09 
+7891045043472##CENTRUM SELECT HOMEM                         FR 30 COMP##47,64 
+7891045043489##CENTRUM SELECT HOMEM                         FR 60 COMP##84,70 
+7891045043465##CENTRUM SELECT MULHER                        FR 150 COMP##162,09 
+7891045043434##CENTRUM SELECT MULHER                        FR 30 COMP##47,64 
+7891045043441##CENTRUM SELECT MULHER                        FR 60 COMP##84,70 
+7891058220815##CEPACAINA                                    0,5+4MG/ML SOL ORAL FR 100ML##8,88 
+7891058220839##CEPACAINA                                    0,5+4MG/ML SOL SPRAY FR 50ML NEB##17,01 
+7891058220761##CEPACAINA                                    1,446+10MG CX 12 PAST##6,10 
+7896714222417##CEPROFEN                                     50MG CX 24 CAP GEL DURA##19,08 
+7898168000177##CERAVE                                       CREM PARA MAOS BG 85##31,28 
+7898168000153##CERAVE                                       CREME HIDRADANTE PT 340##45,66 
+7898168000139##CERAVE                                       ESPUMA DE LIMP FACIAL FR 355ML##48,20 
+7898168000146##CERAVE                                       HIDR FACIAL LOC POM FR 89ML##34,67 
+7898168000160##CERAVE                                       LOC HIDR FR 355ML##47,66 
+7897572001923##CERAZETTE                                    0,075MG CX 28 COMP##25,57 
+7897572006119##CERAZETTE                                    75MCG CX 3BL X 28 COMP##61,37 
+7898907313339##CEREMIL                                      250MG CT BL 14 COM##39,74 
+7898907313353##CEREMIL                                      250MG CT BL 28 COM##78,50 
+7898328480108##CEREZYME                                     200U PO LIOF INJ##2.090,44 
+7898328480092##CEREZYME                                     400U PO LIOF INJ##4.180,89 
+7896261008212##CERTICAN                                     0,50MG CX 60 COMP##1.021,30 
+7896261008205##CERTICAN                                     0,75MG CX 60 COMP##1.531,97 
+7896261008199##CERTICAN                                     1MG CX 60 COMP##2.042,61 
+7896548140284##CERUMIN                                      0,4+140MG SOL OTO FR GTS 8ML##8,17 
+7891721013447##CESTOX                                       150MG CX 12 COMP##38,87 
+7898014561098##CETACONAL                                    CREME BG 30##14,26 
+7898014561166##CETACONAL                                    SHAMPOO FR 100ML##27,01 
+7899095203204##CETADEX                                      1MG CREME DERM BG 10##8,16 
+7896622302454##CETAFRIN                                     200MG SOL OR FR GTS 20ML##12,88 
+7896622302720##CETAFRIN                                     750MG CX 200 COMP##166,45 
+7896006235552##CETAZ                                        1G PO LIOF INJ CX 50FA+DIL X 10ML##1.478,46 
+7896006235514##CETAZ                                        1G PO LIOF INJ CX FA+DIL X 10ML##29,56 
+7898208141228##CETAZIMA                                     1G PO SOL INJ CX 50FA X 10ML EMB HOSP##1.082,59 
+7898208141211##CETAZIMA                                     500MG PO SOL INJ CX 50FA X 10ML EMB HOSP##645,44 
+7897595603173##CETIHEXAL                                    10MG CX 12 COMP##24,23 
+7897595603166##CETIHEXAL                                    10MG CX 6 COMP##12,88 
+7896714216409##CETILPLEX                                    100MG GRAN CX 16 ENV X 5##17,21 
+7896714216416##CETILPLEX                                    200MG GRAN CX 16 ENV X 5##19,26 
+7896714216003##CETILPLEX                                    20MG XPE FR 100ML##16,23 
+7896112134084##CETIRTEC                                     1MG SOL OR FR 120ML+CM##22,46 
+7897322701899##CETIVA AE                                    5MUI+65+30MG SOL OR FR 30ML##10,15 
+7896707224305##CETIVIT                                      500MG SOL INJ CX 50 AMP X 5ML##36,63 
+7893353036498##CETOBETA                                     CREME BG 30##27,86 
+7893353036504##CETOBETA                                     POM BG 30##25,63 
+7896714207032##CETOCONAZOL                                  200MG CX 10 COMP##17,45 
+7896112110477##CETOCONAZOL                                  200MG CX 10 COMP##19,47 
+7896004700250##CETOCONAZOL                                  200MG CX 10 COMP##20,20 
+7898095344955##CETOCONAZOL                                  200MG CX 10 COMP##18,74 
+7898148290406##CETOCONAZOL                                  200MG CX 10 COMP##16,43 
+7896004709499##CETOCONAZOL                                  200MG CX 10 COMP##17,37 
+7894916142083##CETOCONAZOL                                  200MG CX 10 COMP##17,37 
+7896112110484##CETOCONAZOL                                  200MG CX 30 COMP##51,94 
+7896004700267##CETOCONAZOL                                  200MG CX 30 COMP##56,25 
+7898148297955##CETOCONAZOL                                  200MG CX 400 COMP HOSP##176,46 
+7898148290437##CETOCONAZOL                                  200MG CX 450 COMP HOSP##194,10 
+7896004719726##CETOCONAZOL                                  200MG CX 60 COMP##112,18 
+7899547507225##CETOCONAZOL                                  200MG CX 80 COMP EMB FRAC##149,94 
+7898148295531##CETOCONAZOL                                  20MG CREM CX 100 BG X 30G HOSP##405,17 
+7896714203416##CETOCONAZOL                                  20MG CREME BG 30##11,00 
+7896676407990##CETOCONAZOL                                  20MG CREME BG 30##15,90 
+7896112145868##CETOCONAZOL                                  20MG CREME DERM BG 30##10,75 
+7896112125457##CETOCONAZOL                                  20MG SHAMPOO FR 100ML##27,66 
+7898060132549##CETOCONAZOL                                  20MG SHAMPOO FR 100ML##24,35 
+7896676408362##CETOCONAZOL                                  20MG SHAMPOO FR 100ML##30,28 
+7898148295524##CETOCONAZOL                                  20MG/G CREME BG 30##12,11 
+7898148299799##CETOCONAZOL                                  20MG/G SHAMP CX 50 FR X 100ML EMB HOSP##735,53 
+7898148299782##CETOCONAZOL                                  20MG/G SHAMPOO FR 100ML##27,55 
+7896004718460##CETOCONAZOL                                  CREME BG 30##12,13 
+7894916143257##CETOCONAZOL                                  CREME BG 30##15,73 
+7896004700984##CETOCONAZOL                                  SHAMPOO FR 100ML##28,40 
+7896422507523##CETOCONAZOL                                  200MG CX 10 COMP##20,21 
+7896658002656##CETOCONAZOL                                  200MG CX 10 COMP##16,72 
+7896422507530##CETOCONAZOL                                  200MG CX 30 COMP##56,87 
+7896658002717##CETOCONAZOL                                  200MG CX 30 COMP##51,92 
+7896181917090##CETOCONAZOL                                  200MG X 10 COMP##16,71 
+7896181917113##CETOCONAZOL                                  200MG X 30 COMP##51,92 
+7896422506267##CETOCONAZOL                                  20MG BG 30##15,80 
+7896181912743##CETOCONAZOL                                  20MG CREME BG 30##11,17 
+7897595616081##CETOCONAZOL                                  20MG SHAMPOO FR 100ML##27,64 
+7896422506823##CETOCONAZOL                                  20MG SHAMPOO FR 110ML##28,41 
+7896523207919##CETOCONAZOL                                  20MG/G CREM DERM BG 30##9,77 
+7897732602083##CETOCONAZOL                                  20MG/G CREME DERM BG 30##14,59 
+7898216367535##CETOCONAZOL                                  200MG CX 10 COMP##15,03 
+7897076906373##CETOCONAZOL                                  200MG CX 10 COMP##18,14 
+7895296225014##CETOCONAZOL                                  200MG CX 10 COMP##20,09 
+7898216361816##CETOCONAZOL                                  200MG CX 30 COMP##42,84 
+7897076906380##CETOCONAZOL                                  200MG CX 30 COMP##48,42 
+7895296225021##CETOCONAZOL                                  200MG CX 30 COMP##53,55 
+7898216361809##CETOCONAZOL                                  200MG CX 500 COMP EMB HOSP##170,71 
+7898216361540##CETOCONAZOL                                  20MG CREME DERM 30##9,86 
+7899095202177##CETOCONAZOL                                  20MG CREME DERM 30##13,19 
+7898216361557##CETOCONAZOL                                  20MG CREME DERM CX 100 BG 30##223,73 
+7896472507054##CETOCONAZOL                                  20MG/G CREME DERM BG X 30##11,57 
+7896472509638##CETOCONAZOL                                  20MG/G CREME DERM CX 50 BG X 30G EMB HOSP##537,37 
+7897848501065##CETOCONAZOL                                  20MG/ML SHAMPOO FR 100ML##17,78 
+7896523208022##CETOCONAZOL                                  20MG/ML SHAMPOO FR 100ML##14,27 
+7896112126744##CETOCONAZOL+DIP BETAMETASONA                 20+0,5MG CREME BG 30##14,33 
+7898095341145##CETOCONAZOL+DIP BETAMETASONA                 20+0,5MG CREME BG 30##17,04 
+7894916143127##CETOCONAZOL+DIP BETAMETASONA                 20+0,5MG CREME BG 30##15,49 
+7896112126720##CETOCONAZOL+DIP BETAMETASONA                 20+0,5MG POM BG 30##13,88 
+7894916142908##CETOCONAZOL+DIP BETAMETASONA                 20+0,5MG POM BG 30##15,49 
+7898148299812##CETOCONAZOL+DIP BETAMETASONA                 20+0,5MG/G CREM DERM BG 30##14,66 
+7898148299850##CETOCONAZOL+DIP BETAMETASONA                 20+0,5MG/G POM DERM BG 30##14,66 
+7896004705125##CETOCONAZOL+DIP BETAMETASONA                 CREME BG 30##14,50 
+7896004705118##CETOCONAZOL+DIP BETAMETASONA                 POM BG 30##14,22 
+7896422506274##CETOCONAZOL+DIP BETAMETASONA                 20+0,5MG CREME DERM BG 30##17,97 
+7896422506250##CETOCONAZOL+DIP BETAMETASONA                 20+0,5MG POM DERM BG 30##17,61 
+7891317002442##CETOCONAZOL+DIP BETAMETASONA                 CREME BG 30##12,68 
+7891317002459##CETOCONAZOL+DIP BETAMETASONA                 POM BG 30##12,40 
+7895296297042##CETOCONAZOL+DIP BETAMETASONA                 20+0,5MG/G CREM DERM BG 30##17,03 
+7895296210546##CETOCONAZOL+DIP BETAMETASONA                 20+0,5MG/G POM DERM BG 30##17,03 
+7896112113577##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+1,68MG CREME BG 30##17,06 
+7896112113560##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+1,68MG POM BG 30##16,20 
+7896004705606##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+2,5MG CREME BG 30##18,97 
+7898095341152##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+2,5MG CREME BG 30##17,50 
+7896004709413##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+2,5MG CREME BG 30##13,31 
+7894916143141##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+2,5MG CREME BG 30##13,31 
+7896004705590##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+2,5MG POM BG 30##16,07 
+7894916143134##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+2,5MG POM BG 30##13,31 
+7898148297672##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+2,5MG/G CREM DERM BG 30##14,85 
+7898148297696##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+2,5MG/G POM DERM BG 30##14,85 
+7896422507301##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+2,5MG CREME DERM BG 30##19,10 
+7896422507318##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+2,5MG POM DERM BG 30##17,80 
+7895296270014##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+2,5MG/G CREM DERM BG 30##18,97 
+7895296287012##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  20+0,5+2,5MG/G POM DERM BG 30##17,80 
+7891317002503##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  CREME BG 30##13,43 
+7891317002497##CETOCONAZOL+DIP BETAMETASONA+SULF NEOMICINA  POM BG 30##12,53 
+7899095202412##CETOCONAZOL+DIPROBETAMETASONA                20+0,64MG POM BG 30##15,55 
+7899095202153##CETOCONAZOL+DIPROBETAMETASONA                20+064MG CREM DERM BG 30##15,55 
+7899095232389##CETOCONAZOL+DIPROBETAMETASONA+SULF NEOMICINA 20+0,64+2,5MG CREM DERM BG 30##17,83 
+7899095232396##CETOCONAZOL+DIPROBETAMETASONA+SULF NEOMICINA 20+0,64+2,5MG POM DERM BG 30##17,83 
+7898060131986##CETOCONAZOL+DIPROP DE BETAMETASONA           20+0,64MG/G CREME DERM  30##10,66 
+7896523208855##CETOCONAZOL+NEOMICINA+BETAMETASONA           20MG/G CREM DERM BG 30##15,28 
+7896112143598##CETOCORT                                     20+0,5MG CREME DERM BG 30##23,89 
+7896112143581##CETOCORT                                     20+0,5MG POM DERM BG 30##23,74 
+7897655041525##CETODERM                                     20 MG/G CREM DERM CT BG AL X 30 ##11,72 
+7897655041532##CETODERM                                     20 MG/ML SHAMP CT FR PLAS OPC X 100 ML##35,75 
+7896112156482##CETOFENID                                    20MG/ML SOL OR 20ML##17,83 
+7896112156666##CETOFENID                                    25MG/G GEL BG 30##17,42 
+7896523201313##CETOMED                                      200MG CX 10 COMP##12,77 
+7896523202884##CETOMED                                      200MG CX 30 COMP##62,48 
+7898060131221##CETOMICOSS                                   200MG CX 10 COMP##23,43 
+7898060131269##CETOMICOSS                                   200MG CX 30 COMP##57,73 
+7898060131238##CETOMICOSS                                   20MG CREME DERM BG 20##15,77 
+7896212479436##CETONAX                                      200MG CX 10 COMP##32,85 
+7896212416561##CETONAX                                      20MG/G CREME DERM BG 30##24,11 
+7896212479931##CETONAX                                      20MG/G SHAMPOO FR 100ML (+7% IPI)##42,44 
+7896714201184##CETONEO                                      200MG CX 10 COMP##26,92 
+7896714222387##CETONEO                                      20MG CREME BG 30##17,20 
+7896714204017##CETONEO                                      20MG/G CREME CX 50 BG X 30##680,57 
+7896714290010##CETONEO                                      SHAMPOO FR 100ML##38,79 
+7898158691712##CETONIN                                      20MG CREME DERM BG 30##11,21 
+7894164003938##CETOP                                        20MG/G SHAMPOO FR 100ML##29,19 
+7896676411096##CETOPROFENO                                  100MG PO LIOF INJ CX 50FA X 2ML EMB HOSP##310,77 
+7896112136385##CETOPROFENO                                  20M/ML SOL OR FR GTS 20ML##11,48 
+7896112136132##CETOPROFENO                                  25MG GEL 30##11,14 
+7896004705736##CETOPROFENO                                  50MG CX 24 CAP##15,50 
+7896004719863##CETOPROFENO                                  50MG CX 60 CAP##38,82 
+7896676413342##CETOPROFENO                                  50MG SOL INJ CX 48AMP X 2ML EMB HOSP##80,22 
+7896676406108##CETOPROFENO                                  50MG SOL INJ CX 6AMP X 2ML##10,29 
+7896422507295##CETOPROFENO                                  100MG CX 20 COMP##20,81 
+7891317007065##CETOPROFENO                                  100MG INJ IV CX 50 FA##309,11 
+7896422506649##CETOPROFENO                                  20MG SOL ORAL FR 20ML##10,63 
+7896422506656##CETOPROFENO                                  25MG GEL BG 30##12,29 
+7896422507288##CETOPROFENO                                  50MG CX 24 CAP##15,49 
+7897595616111##CETOPROX                                     SHAMP X 100ML##27,64 
+7896004713663##CETOROLACO DE TROMETAMINA                    30MG INJ 3 AMP X 1ML##13,83 
+7896004713656##CETOROLACO DE TROMETAMINA                    60MG INJ 3 AMP X 2ML##27,63 
+7896004706900##CETOROLACO DE TROMETAMOL                     5MG SOL OFT FR 5ML##24,04 
+7896714230702##CETOROLACO DE TROMETAMOL                     5MG SOL OFT FR GT 5ML##23,38 
+7898078940525##CETOZAN                                      200MG CX 20 COMP##20,75 
+7898078940488##CETOZAN                                      20MG CREME BG 30##13,35 
+7898078940501##CETOZAN                                      SHAMP FR 100ML##18,91 
+7893736012286##CETOZOL                                      2% SHAMPOO FR 100ML##37,15 
+7893736012101##CETOZOL                                      20MG CREME DERM BG 20##16,24 
+7896006290070##CETROLAC                                     SOL OFT FR GTS 5ML##32,47 
+7896006207665##CETROLAC MD                                  4MG/ML SOL OFT FR 10ML##51,95 
+7891721022548##CETROTIDE                                    0,25MG PO INJ CX 1FA+DIL+1SER+2AGU+2TOA##189,26 
+7897595900685##CEWIN                                        1G CX 10 COM EFV SB LARANJA##10,61 
+7897595900708##CEWIN                                        200MG/ML SOL OR FR GTS 20ML##8,16 
+7897595900692##CEWIN                                        2G CX 10 COM EFV SB LARANJA##20,04 
+7897595901514##CEWIN                                        500MG CX 10 COM EFV##8,45 
+7897595900715##CEWIN                                        500MG CX 30 COM##17,55 
+7891058006327##CEWIN                                        500MG CX 30 COM EFV SB LARANJA##19,02 
+7897406110982##CEZOLIN                                      1G CX 50FA##246,75 
+7897406110777##CEZOLIN                                      1G PO SOL INJ 1FA##4,86 
+7891268100761##CHAMPIX                                      0,5+1MG CX 11+42 COMP. REV KIT INICIO##308,23 
+7891268100792##CHAMPIX                                      05+1MG CX 11+154 COMP REV KIT TRAT COMPLETO##924,69 
+7891268100778##CHAMPIX                                      1MG CX 112 COMP REV KIT MANUTENCAO##616,43 
+7891268100785##CHAMPIX                                      1MG CX 168 COMP REV KIT REFORCO##924,69 
+7891268100747##CHAMPIX                                      1MG CX 28 COMP REV##154,13 
+7896083400461##CHLORELLA                                    320MG CX 45 CAP##24,02 
+7896006291817##CHOFRAFIG                                    10ML SOL OR CX 12FLAC##16,53 
+7896006291862##CHOFRAFIG                                    10ML SOL OR CX 60 FLAC##79,04 
+7896006291787##CHOFRAFIG                                    SOL OR 1FR X 120ML##17,89 
+7896830500543##CHOPHYTOL                                    CX 48 FLAC X 10ML##105,32 
+7896830500079##CHOPHYTOL                                    FR 120 DR##51,12 
+7896830500598##CHOPHYTOL                                    FR 20 DR##16,01 
+7896830500093##CHOPHYTOL                                    FR 40 DR##29,18 
+7896830500116##CHOPHYTOL                                    SOL FR 100ML##30,72 
+7896830500161##CHOPHYTOL                                    SOL FR 250ML##51,17 
+7895197030366##CHORIOMON-M                                  5000UI PO LIOF INJ CX FA+DIL AMP X 1ML##67,84 
+7894916501965##CHRON-ASA 5                                  400MG CX 30 COMP REV##57,19 
+7894916501972##CHRON-ASA 5                                  800MG CX 20 COMP REV##50,86 
+7896382705342##CIALIS                                       20MG CX 1 COMP REV##33,34 
+7896382706714##CIALIS                                       20MG CX 12 COMP REV##400,07 
+7896382703614##CIALIS                                       20MG CX 2 COMP REV##66,68 
+7896382703973##CIALIS                                       20MG CX 4 COMP REV##133,35 
+7896382705397##CIALIS                                       20MG CX 8 COMP REV##266,73 
+7896382706066##CIALIS                                       DIARIO 5MG CX 28 COMP REV##233,38 
+7896112453390##CIAVOR                                       20 CX 8 COMP REV##200,05 
+7896112453376##CIAVOR                                       20MG CX 2 COMP REV##50,01 
+7896112453383##CIAVOR                                       20MG CX 4 COMP REV##100,01 
+7896261015630##CIBALENA A                                   250+250+65MG COMP REV X 192 E.M##170,76 
+7891142136978##CIBRATO                                      100MG CX 10 COMP##18,44 
+7891142136985##CIBRATO                                      100MG CX 30 COMP##48,21 
+7896004734347##CICATENOL                                    50MG POMADA BG 30##11,53 
+7898040320812##CICATRENE                                    POM DERM BG 20##10,79 
+7896672202476##CICLADOL                                     20MG CX 10 COMP EFV##49,09 
+7896672202469##CICLADOL                                     20MG CX 6 COMP EFV##29,44 
+7896672202285##CICLADOL                                     CX 10 COMP##38,08 
+7896672202278##CICLADOL                                     CX 5 COMP##19,38 
+7896472510511##CICLATRY                                     500MG CX 14 COMP##25,71 
+7896622302515##CICLAVIX                                     0,05G CREME BG 10##15,76 
+7896006234067##CICLO 21                                     0,15+0,03MG CX 21 COMP##4,45 
+7896006234050##CICLO 21                                     0,15+0,03MG CX 63 COMP##13,41 
+7898505091349##CICLOFEMME                                   0,15+0,03MG CX 21DR##4,66 
+7898505091349##CICLOFEMME                                   0,15MG+0,03MG CX 21DR##5,00 
+7896006229384##CICLOGYN                                     0,075+0,03MG CX 21 DR##11,65 
+7896180300138##CICLOLATO                                    10MG SOL OFT FR 5ML##6,30 
+7896180300039##CICLOMIDRIN                                  10MG SOL OFT FR 5ML##10,10 
+7898149938499##CICLOPIROX                                   80MG/G ESMALT UNHA##70,08 
+7896004727233##CICLOPIROX OLAMINA                           10MG SOL TOP FR 15ML##14,44 
+7896004727240##CICLOPIROX OLAMINA                           10MG SOL TOP FR 15ML##14,16 
+7894916145695##CICLOPIROX OLAMINA                           10MG SOL TOP FR X 15ML##14,16 
+7898060132761##CICLOPIROX OLAMINA                           10MG/G CREME DERM BG 20##15,22 
+7898148298105##CICLOPIROX OLAMINA                           10MG/ML CREME DERM BG 20##17,19 
+7898148298129##CICLOPIROX OLAMINA                           10MG/ML SOL TOP FR 15ML##14,17 
+7896422512169##CICLOPIROX OLAMINA                           10MG CREME DERM BG 20##17,60 
+7896422512145##CICLOPIROX OLAMINA                           10MG SOL TOP FR GTS 15ML##14,44 
+7897316801277##CICLOPLEGICO                                 SOL FR 5ML##6,22 
+7891106905886##CICLOPRIMOGYNA                               2MG +0,25MG CX 21 DR##6,45 
+7896006252849##CICLOVULAR                                   150+10MG/ML SOL INJ CX 1AMP X 1ML##10,75 
+7891045014458##CICLOXX                                      15MG CX 10 COMP##22,77 
+7896523208909##CICONAZOL                                    20MG/G CREM DERM BG 28##11,85 
+7896523202556##CICONAZOL                                    20MG/G LOCAO FR 30ML##9,15 
+7896523206035##CIFLOGEX                                     1,5MG/ML COLUT FR SPRAY 100ML SB LARANJA##22,23 
+7896523201603##CIFLOGEX                                     1,5MG/ML COLUT FR SPRAY 100ML SB MENTA##22,23 
+7896523206271##CIFLOGEX                                     1,5MG/ML COLUT FR SPRAY 30ML SB MEL##8,48 
+7896523206288##CIFLOGEX                                     1,5MG/ML COLUT FR SPRAY 30ML SB MENTA##8,48 
+7896523216461##CIFLOGEX                                     3,0MG CX 12 PAST SB CEREJA##7,49 
+7896523216454##CIFLOGEX                                     3,0MG CX 12 PAST SB LARANJA##7,49 
+7896523216447##CIFLOGEX                                     3,0MG CX 12 PAST SB MENTA-LIMAO##7,49 
+7896523213101##CIFLOGEX                                     3MG 4 DISP X 45 PAST##108,69 
+7896523216478##CIFLOGEX                                     3MG CX 12 PAST SB MEL-LIMAO##7,49 
+7896523206806##CIFLOGEX                                     DIET 3MG CX 12 PAST##9,79 
+7898100242993##CIFLOXATIL                                   500MG CX 14 COMP##26,76 
+7896242150527##CIFLOXTRON                                   2MG/ML SOL INJ CT FR PLAS TRANSP SIST X 100ML##76,93 
+7896014686452##CIFLOXTRON                                   2MG/ML SOL INJ X 100ML EMB HOSP##85,36 
+7896242150619##CILINON                                      1000MG PO INJ CT FA VD INC+AMP DILL X 5ML##324,86 
+7896242150626##CILINON                                      1000MG PO INJ CX 100 FA VD INC+100 AMP 5ML##324,86 
+7896242150541##CILINON                                      1000MG PO INJ CX 100 FA VD INC+100 DIL X 5ML##324,86 
+7896242150589##CILINON                                      1000MG PO INJ CX 100FA##303,18 
+7896242150602##CILINON                                      500MG PO INJ CX 100 FA VD INC+100 AMP DIL 5ML##275,41 
+7896242150534##CILINON                                      500MG PO INJ CX 100 FA VD INC+100 DIL X 5ML##275,41 
+7896242150572##CILINON                                      500MG PO INJ CX 100FA##250,17 
+7896014685851##CILINON                                      1000MG PO INJ CX 100 FA##318,34 
+7896014685899##CILINON                                      1000MG PO INJ CX 100 FA X 5ML##360,49 
+7896014685813##CILINON                                      1000MG PO INJ CX 100FA X 5ML##360,49 
+7896014685882##CILINON                                      100MG PO INJ C/FA X 5ML##360,49 
+7896014685868##CILINON                                      500MG PO INJ C/FA X 5ML##305,61 
+7896014685844##CILINON                                      500MG PO INJ CX 100 FA##262,68 
+7896014685806##CILINON                                      500MG PO INJ CX 100FA X 5ML##305,61 
+7896548161746##CILODEX                                      3+1MG SUS OFT GTS FR 5ML##21,33 
+7896548198308##CILODEX                                      3+1MG/G POM OFT BG 3,5##22,85 
+7891317435943##CILOSTAZOL                                   100MG CX 30 COMP##37,08 
+7891317452230##CILOSTAZOL                                   100MG CX 60 COMP##45,40 
+7891317435936##CILOSTAZOL                                   50MG CX 30 COMP##18,82 
+7891317452254##CILOSTAZOL                                   50MG CX 60 COMP##22,71 
+7896548198278##CILOXAN                                      3 MG/G POM OFT BG 3,5 ##18,67 
+7896548160619##CILOXAN                                      3,0MG/ML SOL OTO FR GTS 5ML##17,37 
+7896548112793##CILOXAN                                      3MG/ML SOL OFT FR GTS 5ML##14,48 
+7891317454975##CIMAHER                                      50MG SOL INJ 4 FA X 10ML##4.140,11 
+7896523207780##CIMECORT                                     20+0,64+2,5MG/G CREME DERM BG 15##13,10 
+7896523206691##CIMECORT                                     20+0,64+2,5MG/G CREME DERM BG 30##14,99 
+7896523211497##CIMEGRIPE                                    32MG/ML SUSP OR FR X60ML+C.DOS##10,14 
+7896523214016##CIMEGRIPE                                    DIA 400+400+20MG CX 100 COM##76,45 
+7896523206295##CIMEGRIPE                                    100+2+2MG/ML SOL OR FR GTS 20ML##9,89 
+7896523200569##CIMEGRIPE                                    400+4+4MG CX 100 CAP##81,63 
+7896523200576##CIMEGRIPE                                    400+4+4MG CX 20 CAP##12,11 
+7896523207490##CIMEGRIPE                                    DIA 400+400+20MG CX 12 COM##18,60 
+7896523207759##CIMEGRIPE                                    DIA 400+400+20MG CX 50 COM##75,68 
+7896523208640##CIMEGRIPE 77 C                               100MG/G PO PREP EXTEMP 50 ENV X5##38,90 
+7896523209289##CIMEGRIPE BEBE                               BEBE 100MG/ML SUS OR FR 15ML+SER DOS##12,45 
+7896523208428##CIMEGRIPE DIA                                DIA 400+400+20MG CX 20 COM##16,25 
+7896523206110##CIMELIDE                                     100MG CX 12 COMP##10,74 
+7896523208961##CIMELIDE                                     100MG CX 50BL X 12 COMP HOSP##36,58 
+7896523210339##CIMELIDE                                     20MG/G GEL BG 30##11,16 
+7896523206103##CIMELIDE                                     50MG/ML SUS OR FR GTS 15ML##10,74 
+7896714205854##CIMETIDINA                                   200MG CX 10 COMP##5,85 
+7896112110378##CIMETIDINA                                   200MG CX 10 COMP##6,97 
+7896112119609##CIMETIDINA                                   200MG CX 20 COMP##12,94 
+7899547504224##CIMETIDINA                                   200MG CX 20 COMP REV##12,92 
+7896472506576##CIMETIDINA                                   200MG CX 40 COMP##20,53 
+7899547504170##CIMETIDINA                                   200MG CX 600 COMP REV EMB HOSP##126,56 
+7896714205847##CIMETIDINA                                   400MG CX 16 COMP##15,08 
+7896112110392##CIMETIDINA                                   400MG CX 16 COMP##19,06 
+7896472506590##CIMETIDINA                                   400MG CX 20 COMP##17,01 
+7898148300327##CIMETIDINA                                   200MG CX 600 COMP REV HOSP##111,20 
+7898148300389##CIMETIDINA                                   400MG CX 20 COMP REV##22,88 
+7896472506897##CIMETILAB                                    200MG 40 CPRS##16,49 
+7896472506910##CIMETILAB                                    400MG 20 CPRS##13,66 
+7896206403270##CIMZIA                                       200MG SOL INJ 2 SER PREENC X 1ML+2 LE UMD##1.651,86 
+7896206403270##CIMZIA                                       200MG/ML SOL INJ CX 2 SER X 1ML+2 LENCOS UMID##1.651,86 
+7895858010096##CINADERM                                     3,5MG/G POM DERM BG 20##8,83 
+7898060138459##CINAFAR                                      25MG CX 30 COMP##6,31 
+7898060138466##CINAFAR                                      75MG CX 30 COMP##8,43 
+7895197130165##CINALEO                                      15UI PO LIOF INJ FA##205,40 
+7897076910905##CINARIZINA                                   25MG CX 30 COMP##7,66 
+7895296262026##CINARIZINA                                   25MG CX 30 COMP##7,67 
+7897076910929##CINARIZINA                                   75MG CX 30 COMP##10,71 
+7895296262040##CINARIZINA                                   75MG CX 30 COMP##10,71 
+7898100240845##CINATIL                                      11,6MG/G GEL BG 60##12,21 
+7898158690586##CINATREX                                     5MG POM OFT BG 3,5##7,63 
+7894916550000##CINCORDIL                                    20MG CX 30 COMP##8,02 
+7894916550017##CINCORDIL                                    40MG CX 30 COMP##15,59 
+7896676403251##CINETOL                                      2MG CX 20BL X 10 COMP EMB HOSP##41,89 
+7896676408126##CINETOL                                      2MG CX 80 CAP##16,71 
+7896676402315##CINETOL                                      5MG CX 50AMP X 1ML EMB HOSP##75,89 
+7897595609588##CINTAG                                       200MG CX 20 COMP##9,62 
+7896242150633##CINTON                                       150MG SOL INJ CX 50 AMP VD X 2ML EMB HOSP##52,03 
+7896014688371##CINTON                                       150MG/ML SOL INJ CX 50 AMP X 2ML EMB HOSP##59,23 
+7896658019913##CIPIDE                                       100MG CX 10 COMP##9,86 
+7896658019562##CIPIDE                                       100MG CX 30 COMP##29,57 
+5702157106509##CIPRAMIL                                     20MG CX 28 COMP##152,07 
+7896112144403##CIPRANE                                      2+0,035MG CX 21 DR##15,91 
+7899095201675##CIPRIX                                       500MG CX 14 COMP REV##25,31 
+7899095203990##CIPRIXIN DEXA                                0,35+0,1% SOL OFT FR 5ML##17,22 
+7891106006897##CIPRO                                        0,2% SOL INJ BOLSA X 100ML HOSP##112,93 
+7891106006903##CIPRO                                        0,2% SOL INJ BOLSA X 200ML HOSP##194,31 
+7891106001045##CIPRO                                        500MG CX 14 COMP REV##190,97 
+7891106001038##CIPRO                                        500MG CX 6 COMP REV##93,48 
+7891106904544##CIPRO XR                                     1000MG CX 3 COMP REV##81,72 
+7891106005630##CIPRO XR                                     1000MG CX 7 COMP REV##190,65 
+7891106005623##CIPRO XR                                     500MG CX 3 COMP REV##53,38 
+7891106006798##CIPRO XR                                     500MG CX 7 COMP REV##124,54 
+7898361700447##CIPROBACTER                                  2MG/ML SOL INJ 100ML SIST FECH##68,62 
+7898361700454##CIPROBACTER                                  2MG/ML SOL INJ X 200ML SIST FECH##118,09 
+7897595601803##CIPROBIOT                                    250MG CX 6 COMP REV##19,67 
+7897595601827##CIPROBIOT                                    500MG CX 14 COMP REV##33,01 
+7897595601810##CIPROBIOT                                    500MG CX 6 COMP REV##24,89 
+7896004706047##CIPROCILIN                                   500MG CX 14 COMP##22,35 
+7898109241393##CIPROFAR                                     500MG CX 14 COMP REV##29,08 
+7898109241386##CIPROFAR                                     500MG CX 6 COMP REV##23,98 
+7898095344689##CIPROFIBRATO                                 100MG CX 30 COMP##51,87 
+7896714215976##CIPROFIBRATO                                 100MG CX 30 COMP##51,88 
+7891058001612##CIPROFIBRATO                                 100 MG COMP X 30##51,86 
+7891058001612##CIPROFIBRATO                                 100MG CX 30 COMP##51,86 
+7896658019951##CIPROFIBRATO                                 100MG CX 30 COMP##51,86 
+7896181923367##CIPROFIBRATO                                 100MG CX 30 COMP##51,86 
+7898216360932##CIPROFLONAX                                  500MG CX 14 COM##27,28 
+7898216361625##CIPROFLONAX                                  500MG CX 500 COM REV EMB HOSP##918,97 
+7896685300770##CIPROFLOX                                    500MG CX 14 COMP##28,38 
+7896685300763##CIPROFLOX                                    500MG CX 6 COMP##17,96 
+7898060138534##CIPROFLOXATRIN                               500MG CX 14 COMP##26,51 
+7898060138527##CIPROFLOXATRIN                               500MG CX 6 COMP##13,80 
+7897655043208##CIPROLIP                                     100MG CX 30 COMP##43,62 
+0000000000000##CIRLEG                                       10MG CX 6 COMP##15,13 
+7896676401653##CIS - CISATRACURIO                            2MG/ML SOL INJ IV CT 5 AMP VD TRANS X 5ML##131,26 
+7896676403152##CIS - CISATRACURIO                           2MG/ML SOL INJ IV CT 5 AMP VD TRANS X 10ML##257,28 
+7898902274283##CISPLATINA                                   1MG/ML SOL INJ FA X 10ML##34,53 
+7898902274284##CISPLATINA                                   1MG/ML SOL INJ FA X 10ML EMB HOSP##188,83 
+7898902274291##CISPLATINA                                   1MG/ML SOL INJ FA X 25ML##80,08 
+7898902274307##CISPLATINA                                   1MG/ML SOL INJ FA X 50ML##165,58 
+7899095239340##CISTEIL                                      200MG CX 16 ENV X5##17,73 
+7899095203532##CISTEIL                                      20MG XPE FR 120ML INF##18,70 
+7899095203556##CISTEIL                                      40MG XPE FR 120ML ADU##24,21 
+7899095239401##CISTEIL                                      600MG CX 16 ENV X 5##37,57 
+7891721027253##CISTICID                                     500MG CX 50 COMP##473,51 
+7896004739137##CITAFORIN                                    20MG CX 2BL X 15 COMP REV##29,89 
+7896004736839##CITAGRAN                                     20MG CX 30 COMP REV##29,89 
+7898095341435##CITALOPRAM                                   20MG CX 14 COMP REV##33,78 
+7898095341466##CITALOPRAM                                   20MG CX 28 COMP REV##67,55 
+7898146820759##CITALOPRAM                                   20MG CX 28 COMP REV##82,32 
+7891317422004##CITALOPRAM                                   20MG CX 14 COMP##33,85 
+7896181911616##CITALOPRAM                                   20MG CX 14 COMP##31,66 
+7896422515474##CITALOPRAM                                   20MG CX 15 COMP##42,03 
+7891317422011##CITALOPRAM                                   20MG CX 28 COMP##67,71 
+7896181911715##CITALOPRAM                                   20MG CX 28 COMP##63,78 
+7896422515580##CITALOPRAM                                   20MG CX 30 COMP##82,55 
+7891721274107##CITALOPRAM                                   20MG CX 30 COMP REV##76,70 
+7897595602954##CITALOPRAM                                   20MG CX 30 COMP REV##70,76 
+7898910350130##CITALOPRAM                                   20MG CX 30 COMP REV##38,24 
+7895296226028##CITALOPRAM                                   20MG CX 14 COMP REV##34,55 
+7895296226035##CITALOPRAM                                   20MG CX 28 COMP REV##62,99 
+7897076912701##CITALOPRAM                                   20MG CX 30 COMP##63,96 
+7896004721019##CITALOPRAM, BROMIDRATO DE                    20MG CX 28 COMP REV##61,23 
+7896004730981##CITALOPRAM, BROMIDRATO DE                    20MG CX 30 COMP REV##81,30 
+7891268102161##CITALOR                                      10MG CX 30 COMP REV##60,59 
+7891268102314##CITALOR                                      10MG CX 60 COMP REV##96,95 
+7891268102239##CITALOR                                      20MG CX 30 COMP REV##60,59 
+7891268102345##CITALOR                                      20MG CX 60 COMP REV##96,95 
+7891268116922##CITALOR                                      40MG CX 10 COMP REV##40,39 
+7891268102246##CITALOR                                      40MG CX 30 COMP REV##121,18 
+7891268102253##CITALOR                                      80MG CX 30 COMP REV##121,18 
+7898902274321##CITARABINA                                   100MG/ML SOL INJ FA X 10ML##74,72 
+7898902274314##CITARABINA                                   100MG/ML SOL INJ FA X 1ML##7,44 
+7898902274338##CITARABINA                                   100MG/ML SOL INJ FA X 5ML##37,34 
+7896014681907##CITARAX                                      100MG/ML SOL INJ C/10 AMP X 5ML##182,23 
+7896014681921##CITARAX                                      20MG SOL INJ 10FA X 5ML##104,42 
+7896014681914##CITARAX                                      500MG/ML SOL INJ C/ 10 AMP X 10ML##911,19 
+7896014681938##CITARAX                                      50MG SOL INJ 10FA X 10ML##583,59 
+7896676401912##CITOCAINA+FELIPRESSINA                       3% CX 50CARP X 1,8ML EMB HOSP##49,40 
+7891721020520##CITONEURIN                                   100+100MG+1000MCG/ML SOL INJ  CX 3 AMP X 1ML##6,02 
+7891721000133##CITONEURIN                                   100+100MG+5000MCG CX 20 DR##32,77 
+7891721020506##CITONEURIN                                   100+100MG+5000MCG/ML SOL INJ  X 3 AMP X 1ML##8,79 
+7898149933340##CITOPLAX                                     1MG/ML SOL INJ CX 50FA X 100ML##10.940,22 
+7898149933357##CITOPLAX                                     1MG/ML SOL INJ FA 100ML##218,80 
+7898149933326##CITOPLAX                                     1MG/ML SOL INJ FA 50ML HOSP##181,34 
+7896016800856##CITOSTAL                                     10MG FR 5 CAP##23,86 
+7896016800863##CITOSTAL                                     40MG FR 5 CAP##74,95 
+7896004711935##CITRATO DE ORFENADRINA+DIPIRONA+CAFEINA      35+300+50MG FR GTS 20ML##5,92 
+7896004728506##CITRATO DE SILDENAFILA                       100MG BL 4 COMP REV##65,09 
+7896004734262##CITRATO DE SILDENAFILA                       100MG CX 1 COMP REV##18,78 
+7894916147132##CITRATO DE SILDENAFILA                       100MG CX 1 COMP REV##16,28 
+7896004734279##CITRATO DE SILDENAFILA                       100MG CX 2 COMP REV##37,55 
+7896714226736##CITRATO DE SILDENAFILA                       100MG CX 4 COMP##65,10 
+7896004728490##CITRATO DE SILDENAFILA                       100MG CX 4 COMP REV##65,09 
+7894916145909##CITRATO DE SILDENAFILA                       100MG CX 4 COMP REV##65,09 
+7896004730158##CITRATO DE SILDENAFILA                       25MG BL 4 COMP REV##37,82 
+7896004734224##CITRATO DE SILDENAFILA                       25MG CX 1 COMP REV##10,92 
+7896004734231##CITRATO DE SILDENAFILA                       25MG CX 2 COMP REV##21,81 
+7896004730080##CITRATO DE SILDENAFILA                       25MG CX 4 COMP REV##37,82 
+7894916146210##CITRATO DE SILDENAFILA                       25MG CX 4 COMP REV##37,82 
+7896004734286##CITRATO DE SILDENAFILA                       50MG BL 1 COMP REV##10,38 
+7896004730127##CITRATO DE SILDENAFILA                       50MG BL 2 COMP REV##20,80 
+7896004730134##CITRATO DE SILDENAFILA                       50MG BL 4 COMP REV##41,59 
+7896004730141##CITRATO DE SILDENAFILA                       50MG BL 8 COMP REV##83,16 
+7896714227375##CITRATO DE SILDENAFILA                       50MG CX 1 COMP##10,38 
+7896004734248##CITRATO DE SILDENAFILA                       50MG CX 1 COMP REV##10,38 
+7894916147125##CITRATO DE SILDENAFILA                       50MG CX 1 COMP REV##5,32 
+7896004734255##CITRATO DE SILDENAFILA                       50MG CX 12 COMP REV##122,37 
+7896714226699##CITRATO DE SILDENAFILA                       50MG CX 2 COMP##20,79 
+7896004730097##CITRATO DE SILDENAFILA                       50MG CX 2 COMP REV##20,80 
+7894916146227##CITRATO DE SILDENAFILA                       50MG CX 2 COMP REV##9,32 
+7896714226705##CITRATO DE SILDENAFILA                       50MG CX 4 COMP##41,59 
+7896004730103##CITRATO DE SILDENAFILA                       50MG CX 4 COMP REV##41,59 
+7894916146234##CITRATO DE SILDENAFILA                       50MG CX 4 COMP REV##16,56 
+7896714226712##CITRATO DE SILDENAFILA                       50MG CX 8 COMP##83,17 
+7896004730110##CITRATO DE SILDENAFILA                       50MG CX 8 COMP REV##83,16 
+7894916146241##CITRATO DE SILDENAFILA                       50MG CX 8 COMP REV##23,19 
+7896422525879##CITRATO DE SILDENAFILA                       100MG CX 1 COMP REV##16,27 
+7891317477622##CITRATO DE SILDENAFILA                       100MG CX 1 COMP REV##16,27 
+7896422525220##CITRATO DE SILDENAFILA                       100MG CX 2 COMP REV##32,55 
+7891317477639##CITRATO DE SILDENAFILA                       100MG CX 2 COMP REV##32,56 
+7897595618658##CITRATO DE SILDENAFILA                       100MG CX 4 COMP##64,06 
+7896422525237##CITRATO DE SILDENAFILA                       100MG CX 4 COMP REV##65,10 
+7891317477646##CITRATO DE SILDENAFILA                       100MG CX 4 COMP REV##65,10 
+7896422525145##CITRATO DE SILDENAFILA                       25MG CX 2 COMP REV##18,90 
+7897595618573##CITRATO DE SILDENAFILA                       25MG CX 4 COMP##37,21 
+7896422525152##CITRATO DE SILDENAFILA                       25MG CX 4 COMP REV##37,81 
+7897595618597##CITRATO DE SILDENAFILA                       50 MG CX 1 COMP##10,21 
+7896422525862##CITRATO DE SILDENAFILA                       50MG CX 1 COMP REV##10,38 
+7891317477578##CITRATO DE SILDENAFILA                       50MG CX 1 COMP REV##10,39 
+7891045011747##CITRATO DE SILDENAFILA                       50MG CX 1 COMP REV##10,38 
+7897595618603##CITRATO DE SILDENAFILA                       50MG CX 2 COMP##20,44 
+7896422525183##CITRATO DE SILDENAFILA                       50MG CX 2 COMP REV##19,59 
+7891317477585##CITRATO DE SILDENAFILA                       50MG CX 2 COMP REV##20,81 
+7891045011754##CITRATO DE SILDENAFILA                       50MG CX 2 COMP REV##20,80 
+7897595618610##CITRATO DE SILDENAFILA                       50MG CX 4 COMP##40,92 
+7896422525190##CITRATO DE SILDENAFILA                       50MG CX 4 COMP REV##39,18 
+7891317477592##CITRATO DE SILDENAFILA                       50MG CX 4 COMP REV##41,59 
+7891045011761##CITRATO DE SILDENAFILA                       50MG CX 4 COMP REV##41,60 
+7897595618627##CITRATO DE SILDENAFILA                       50MG CX 8 COMP##81,87 
+7896422525206##CITRATO DE SILDENAFILA                       50MG CX 8 COMP REV##78,36 
+7891045011778##CITRATO DE SILDENAFILA                       50MG CX 8 COMP REV##83,17 
+7896112169710##CITRATO DE SILDENAFILA                       50MG CX  1 COMP REV##5,72 
+7896112160922##CITRATO DE SILDENAFILA                       50MG CX  2 COMP REV##11,43 
+7896112160915##CITRATO DE SILDENAFILA                       50MG CX  4 COMP REV##22,86 
+7896112169727##CITRATO DE SILDENAFILA                       50MG CX  8 COMP REV##45,72 
+7898945030151##CITRATO DE SILDENAFILA                       50MG CX 1 COMP##5,69 
+7896112189022##CITRATO DE SILDENAFILA                       50MG CX 1 COMP REV##6,00 
+7898945030168##CITRATO DE SILDENAFILA                       50MG CX 2 COMP##11,38 
+7896112189039##CITRATO DE SILDENAFILA                       50MG CX 2 COMP REV##12,00 
+7898945030175##CITRATO DE SILDENAFILA                       50MG CX 4 COMP##22,76 
+7896112189046##CITRATO DE SILDENAFILA                       50MG CX 4 COMP REV##24,01 
+7896112189053##CITRATO DE SILDENAFILA                       50MG CX 8 COMP REV##48,01 
+7897595601889##CITRATO DE TAMOXIFENO                        10MG CX 30 COMP REV##47,01 
+7897595601834##CITRATO DE TAMOXIFENO                        20MG CX 30 COMP REV##90,00 
+7896422527101##CITRATO SILDENAFILA                          20MG CX 90 COMP REV##905,81 
+7898014564579##CITROBION                                    1G TB 10 COMP EFERV##10,48 
+7898014561609##CITROBION                                    200MG SOL FR GTS 20ML##6,51 
+7898014564586##CITROBION                                    2G TB 10 COMP EFERV##12,33 
+7898014561593##CITROBION                                    500MG CX 20 COMP MAST##10,89 
+7896714270852##CITROPLEX                                    200MG SOL FR GTS 20ML##9,24 
+7896714200842##CITROPLEX                                    500MG CX 5 ENV X 4 COMP##15,14 
+7896714240862##CITROPLEX                                    500MG INJ CX 50AMP X 5ML##127,20 
+7891317425760##CITTA                                        20MG CX 14 COMP REV##17,62 
+7891317425777##CITTA                                        20MG CX 28 COMP REV##35,23 
+7891317440282##CITTA                                        20MG CX 7 COMP REV##16,91 
+7899095201712##CIXIN                                        0,5MG CX 20 COMP##15,21 
+7891142128867##CIZAX                                        10MG CX 10 COMP##7,04 
+7891142128836##CIZAX                                        10MG CX 30 COMP##21,14 
+7891142128744##CIZAX                                        5MG CX 10 COMP##6,33 
+7891142128812##CIZAX                                        5MG CX 30 COMP##19,01 
+7891058221096##CLAFORAN                                     250MG/ML PO INJ CX 1FA+DIL X 4ML##62,60 
+7896242151920##CLAFORDIL                                    1000MG PO INJ CX 100 FA VD INC##3.273,39 
+7896242151906##CLAFORDIL                                    1000MG PO INJ CX 20 FA VD INC##654,68 
+7896242150732##CLAFORDIL                                    1000MG PO INJ CX 20 FA VD INC+20 AMP VD 5ML##654,68 
+7896242151913##CLAFORDIL                                    1000MG PO INJ CX 50 FA VD INC##1.636,70 
+7896242150756##CLAFORDIL                                    100MG PO INJ CX 20FA+AMP DIL X 5ML##654,68 
+7896014685615##CLAFORDIL                                    1000MG PO INJ CX 100FA##3.678,99 
+7896014685585##CLAFORDIL                                    1000MG PO INJ CX 20 FA X 5ML##735,80 
+7896014685561##CLAFORDIL                                    1000MG PO INJ CX 20FA X 5ML##735,80 
+7896014685592##CLAFORDIL                                    100MG PO INJ CX 20FA##735,80 
+7896014685608##CLAFORDIL                                    100MG PO INJ CX 50FA##1.839,49 
+3401345271297##CLAIRIAL C10                                 FR 50ML##80,41 
+7896714202976##CLANISTIL                                    0,25+3MG/ML SOL OFT CX 1FR X 15ML##6,12 
+7896004726267##CLAQUINONA                                   40MG CREME BG 30##26,57 
+7896004726274##CLAQUINONA                                   40MG GEL BG 30##26,57 
+7896548113479##CLARIL                                       0,25+3MG SOL FR OFT GTS 15ML##8,76 
+7897595602039##CLARILERG                                    10MG CX 12 COMP##20,36 
+7891142129161##CLARITIN                                     10MG CX 12 COMP##33,87 
+7891142129178##CLARITIN                                     10MG CX 6 COMP##15,33 
+7891142129185##CLARITIN                                     1MG XPE FR 100ML##28,16 
+7891142129208##CLARITIN                                     1MG/ML SOL OR FR 60ML##16,88 
+7891142129154##CLARITIN                                     D1+12MG XPE FR 30ML##13,85 
+7891142129192##CLARITIN D                                   5+120MG CX 6 DR##15,06 
+7891142129147##CLARITIN D                                   1+12MG XPE FR 60ML##27,70 
+7891142129055##CLARITIN D                                   10+240MG CX 6 COM REV##32,96 
+7891142129093##CLARITIN D                                   5+120MG CX 12 DR##30,11 
+7898911244780##CLARITROMICINA                               500MG PO P/ SOL INJ CX 25FA 30 ML##2.488,93 
+7896004703503##CLARITROMICINA                               125MG SUS ORAL FR 60ML##31,54 
+7896004703497##CLARITROMICINA                               250MG SUS ORAL FR 60ML##62,76 
+7896004701172##CLARITROMICINA                               500MG CX 10 COMP##72,69 
+7896004700991##CLARITROMICINA                               500MG CX 14 COMP##106,52 
+7896004719405##CLARITROMICINA                               500MG CX 5BL X 6 COMP REV##218,09 
+7898911244759##CLARITROMICINA                               500MG IV INJ 1FA##99,53 
+7898911244766##CLARITROMICINA                               500MG PO P/ SOL INJ CX 5FA VD 30ML##497,77 
+7898911244865##CLARITROMICINA                               500MG PO SOL INJ FA X 30ML+ BOLS X 250ML##99,53 
+7898911244773##CLARITROMICINA                               500 MG (CX 10 FRASCOS)##995,56 
+7896422503600##CLARITROMICINA                               500MG CX 10 COMP##74,51 
+7896422503617##CLARITROMICINA                               500MG CX 14 COMP##108,63 
+7895858004439##CLARITROMICINA                               500MG PO LIOF INJ CX 1FA EMB HOSP##99,03 
+7896548133613##CLAROFT                                      0,12MG SOL OFT GTS FR 15ML##6,57 
+7897316801291##CLARVISOL                                    SOL FR 15ML##16,39 
+7896112414698##CLAUDIC                                      100MG CX 30 COMP##46,04 
+7896112429128##CLAUDIC                                      100MG CX 60 COMP##76,09 
+7896112417194##CLAUDIC                                      50MG CX 30 COMP##23,36 
+7896112416647##CLAUDIC                                      50MG CX 60 COMP##39,38 
+7895858000882##CLAVICIN                                     1G CX FA+DIL X 20ML##46,27 
+7895858000875##CLAVICIN                                     500MG CX 1FA+DIL X 10ML##23,11 
+7896015520281##CLAVULIN                                     125MG SUS FR 100ML##30,52 
+7896015520298##CLAVULIN                                     250MG SUS FR 100ML##53,76 
+7896015520311##CLAVULIN                                     500MG CX 21 COMP##76,74 
+7896015520380##CLAVULIN                                     500MG CX 30 COMP##101,19 
+7896015516697##CLAVULIN                                     ES 600MG/5ML FR 100ML##56,07 
+7896015516703##CLAVULIN                                     ES 600MG/5ML FR 50ML##52,09 
+7896015568115##CLAVULIN BD                                  200MG FR 70ML##41,66 
+7896015527242##CLAVULIN BD                                  400MG SUS FR 140ML##67,38 
+7896015568214##CLAVULIN BD                                  400MG SUS FR 70ML##43,61 
+7896015510022##CLAVULIN BD                                  875MG CX 14 COMP##65,69 
+7896015510015##CLAVULIN BD                                  875MG CX 20 COMP##81,06 
+7896015530402##CLAVULIN IV                                  1G INJ CX 10 FA##509,11 
+7896015530303##CLAVULIN IV                                  500MG INJ CX 10 FA##298,37 
+7897595608611##CLAXAM                                       80+11,4MG/ML PO SUS OR FR 70ML+DOS##35,21 
+7897595606099##CLAXAM                                       875+125MG CX 14 COMP REV##58,00 
+7897595606105##CLAXAM                                       875+125MG CX 20 COMP REV##80,27 
+7896714250038##CLEAN HAIR                                   10MG LIQ FR 60ML+PENTE##13,82 
+7898148294756##CLEANBAC                                     2MG POM DERM BG 50##6,04 
+7898148294749##CLEANBAC                                     2MG/G POM 24PT X 500##130,36 
+7896004726199##CLEANKINOL                                   40MG CREME BG 30##26,47 
+7896004725987##CLEANKINOL                                   40MG GEL DERM BG 30##24,95 
+5013147063802##CLEAR BLUE                                   CX 1 UNID TESTE DE GRAVIDEZ##42,30 
+5013147063833##CLEAR BLUE                                   CX 1 UNID TESTE DE GRAVIDEZ COMPACTO##15,21 
+7898902180158##CLEAR LENS                                   CONSERVADORA FR 120ML##24,43 
+7898902180165##CLEAR LENS                                   CONSERVADORA FR 300ML##32,98 
+7898902180141##CLEAR LENS                                   CONSERVADORA FR 60ML##19,50 
+7898902180219##CLEAR LENS                                   MULTIUSO FR 120ML##12,92 
+7898902180226##CLEAR LENS                                   MULTIUSO FR 300ML##29,51 
+7898902180240##CLEAR LENS                                   MULTIUSO FR 420ML##36,80 
+7898902180202##CLEAR LENS                                   MULTIUSO FR 60ML##9,20 
+7898902180196##CLEAR LENS                                   LIMPADORA FR 60ML##15,06 
+7896523201344##CLEARTOP                                     20MG/G CREME BG 30##9,40 
+7896523201351##CLEARTOP                                     20MG/ML SHAMPOO FR 100ML##14,27 
+7896672201059##CLENIL                                       250MCG SPRAY 15ML##46,73 
+7896672201042##CLENIL                                       250MCG SPRAY JET 15ML##46,73 
+7896672202636##CLENIL                                       50MCG SPRAY ORAL 15ML##30,70 
+7896672202872##CLENIL                                       HFA 200MCG SPRAY 200 DOS##50,23 
+7896672202919##CLENIL                                       HFA 250MCG JET 200 DOS##49,54 
+7896672202902##CLENIL                                       HFA 250MCG SPRAY 200 DOS##49,54 
+7896672202810##CLENIL                                       HFA 50MCG SPRAY 200 DOS##30,70 
+7896672202681##CLENIL A                                     CX 10 FLAC##39,30 
+7896672201424##CLENIL COMPOSITUM                            HFA SPRAY X 200 DOS##28,07 
+7896672201981##CLENIL COMPOSITUM                            JET FR 15ML##28,07 
+7896672202384##CLENIL COMPOSITUM A                          CX 10FLAC X 2ML##39,30 
+7896672201691##CLENIL NASAL                                 SPRAY 15ML##30,70 
+7896672202612##CLENIL NASAL AQUOSO                          SPRAY FR 20ML##26,35 
+7896672201943##CLENIL NASAL AQUOSO                          SPRAY FR 30ML##35,82 
+7896672202315##CLENIL PULVINAL                              100MCG X 100 DOS##14,51 
+7896672202322##CLENIL PULVINAL                              200MCG X 100 DOS##29,08 
+7896672202339##CLENIL PULVINAL                              400MCG X 100 DOS##50,56 
+7896548134542##CLENS 100                                    FR 15ML##20,07 
+7896281155019##CLEVERON                                     10MG CX 15 COMP##38,19 
+7896281155026##CLEVERON                                     10MG CX 30 COMP##67,93 
+7891058003302##CLEXANE SAFETY LOCK                          100MG SOL INJ 2SER X1ML+SIST SE##191,67 
+7891058003203##CLEXANE SAFETY LOCK                          20MG SOL INJ 10SER X0,2ML+SIST SER##193,38 
+7891058003180##CLEXANE SAFETY LOCK                          20MG SOL INJ 2SER PREENCH X0,2ML+SIST SE##38,67 
+7896070605268##CLEXANE SAFETY LOCK                          40MG SOL INJ 10SER X0,4 ML##375,66 
+7891058003210##CLEXANE SAFETY LOCK                          40MG SOL INJ 2SER PREENCH X0,4ML+SIST SE##75,11 
+7891058003241##CLEXANE SAFETY LOCK                          60MG SOL INJ 2SER X0,6ML+SIST SE##115,16 
+7891058003272##CLEXANE SAFETY LOCK                          80MG SOL INJ 2SER X0,8ML+SIST SE##153,39 
+7891106905893##CLIANE                                       2+1MG CX 28 COMP REV##33,59 
+7896083402588##CLIFEMIN                                     160MG CX 15 COMP##26,51 
+7896083402540##CLIFEMIN                                     160MG CX 30 COMP##49,88 
+7896317909760##CLIMATRIX                                    100MG CX 30 COMP REV##61,68 
+7891106905909##CLIMENE                                      2MG DRG/2MG+1MG DRG X 11+10##18,17 
+7896251801267##CLINAGEL                                     10,3 MG/G CX 45##31,95 
+7896251801267##CLINAGEL                                     10MG BG 45##30,04 
+7898495601474##CLINARA                                      OLEO HIDRATANTE FR 100ML##29,90 
+7898495601481##CLINARA                                      OLEO HIDRATANTE FR 200ML##49,90 
+7896641811036##CLINARIS                                     SOL NASAL FR 100ML##24,52 
+7897129300707##CLINDACNE                                    GEL BG 25##33,79 
+7891721001994##CLINDAL AZ                                   500MG CX 2 COMP REV##13,14 
+7891721000812##CLINDAL AZ                                   500MG CX 3 COMP REV##18,92 
+7891721013522##CLINDAL AZ                                   500MG CX 5 COMP REV##28,38 
+7896112144465##CLINDAMIN-C                                  300MG CX 16 CAP##49,30 
+7896242150800##CLINDARIX                                    150MG SOL INJ CX 20 AMP VDX4ML##265,85 
+7896242150817##CLINDARIX                                    150MG SOL INJ CX 20 AMP VDX6ML##398,76 
+7896014686896##CLINDARIX                                    150MG/ML SOL INJ C/ 6ML##453,85 
+7896014686889##CLINDARIX                                    150MG/ML SOL INJ C/ AMP X 4ML##302,57 
+7895296263016##CLINDELLA                                    2,5MG 1BL X 30 COMP##36,23 
+7895296263023##CLINDELLA                                    2,5MG 2BL X 30 COMP##62,94 
+7896251803513##CLINDOXYL                                    CONTROL 10% GEL BG X 45##31,07 
+7896251803506##CLINDOXYL                                    CONTROL 5%  GEL BG X 45##30,34 
+7896251802103##CLINDOXYL                                    1%+5%  CX 30##31,97 
+7896251802646##CLINDOXYL                                    1%+5% CX 45##45,78 
+7896251802103##CLINDOXYL                                    10+50MG GEL BG 30##31,97 
+7896251802646##CLINDOXYL                                    10+50MG GEL BG 45##45,78 
+7898158697066##CLINERIZE                                    ENX BUCAL C/ FLUOR FR 300ML SB HORTELA##8,56 
+7898495601412##CLINERIZE                                    ENX BUCAL CUID TOTAL 6 EM 1 FR 300ML SB HORT##8,56 
+7898495602044##CLINERIZE                                    ENX BUCAL CUIDADO TOTAL 6 EM 1 FR X 60ML##1,56 
+7898495601405##CLINERIZE                                    ENX BUCAL FR 300ML SB BAUNILHA##8,56 
+7898158697035##CLINERIZE                                    ENX BUCAL FR 300ML SB MENTA##8,56 
+7898158697028##CLINERIZE                                    ENX BUCAL FR 300ML SB MENTA SUAVE##8,56 
+7898158697073##CLINERIZE                                    ENX BUCAL FR 300ML SB MENTA/HORTELA##8,56 
+7898158697097##CLINERIZE                                    ENX BUCAL FR 300ML SB TRADICIONAL##8,56 
+7898495602037##CLINERIZE                                    ENX BUCAL FR 60ML SB BAUNILHA##1,56 
+7898495602334##CLINERIZE                                    ENX BUCAL KIT FR 300ML+60ML SB BAUNILHA##10,13 
+7891721003059##CLINFAR                                      10MG CX 10 COMP REV##3,84 
+7891721003042##CLINFAR                                      10MG CX 30 COMP REV##11,51 
+7891721013119##CLINFAR                                      20MG CX 10 COMP REV##7,33 
+7891721012884##CLINFAR                                      20MG CX 30 COMP REV##22,02 
+7891721016189##CLINFAR                                      40MG CX 10 COMP REV##14,85 
+7891721016165##CLINFAR                                      40MG CX 30 COMP REV##44,57 
+7891721016172##CLINFAR                                      80MG CX 30 COMP REV##60,94 
+7896523209258##CLIOQUINO                                    0,5+1,0+10+10MG/G POM DERM 20##15,76 
+7897917001731##CLIOTISONA                                   30+10MG CREME BG 20##12,43 
+7894916503044##CLO                                          10MG CX 20 COMP REV##7,84 
+7894916503037##CLO                                          25MG CX 20 COMP REV##17,80 
+7894916503051##CLO                                          75MG CX 20 COMP REV##22,88 
+7897930760486##CLOB-X                                       0,5MG/G CREME DERM BG 30##20,19 
+7897930760509##CLOB-X                                       0,5MG/G GEL BG 30##22,43 
+7897930761148##CLOB-X                                       0,5MG/G LOCAO DERM FR 59ML##39,72 
+7897930760516##CLOB-X                                       0,5MG/G POM DERM BG 30##20,80 
+7897930761162##CLOB-X                                       0,5MG/G SHAMPOO FR 125ML##75,49 
+7897930762619##CLOB-X                                       0,5MG/G SOL SPR FRX120ML+APLIC##76,64 
+7898168006285##CLOBESOL                                     0,5MG CREME BG 30##19,95 
+7898075310222##CLOFEN K                                     50MG CX 20 DR##8,05 
+7898075310260##CLOFEN S                                     50MG CX 20 COMP REV##4,45 
+7896006235903##CLOMAZEN                                     1% CREME BG 20##11,45 
+7898158690692##CLOMAZOL                                     10MG CREME DERM BG 50##13,17 
+7898146825167##CLOMENAC                                     10MG CX 15 COMP REV##26,40 
+7898146825181##CLOMENAC                                     10MG CX 30 COMP REV##35,70 
+7898146825198##CLOMENAC                                     10MG CX 60 COMP REV##71,39 
+7898146825150##CLOMENAC                                     10MG CX 7 COMP REV##8,33 
+7896422513098##CLOMID                                       50MG CX 10 COMP##34,20 
+7896006285366##CLOMIPRAN                                    10MG CX 20 DR##7,42 
+7896006285335##CLOMIPRAN                                    25MG CX 20 DR##16,09 
+7896004712932##CLONAZEPAM                                   2,5MG FR GTS 20ML##7,30 
+7896004712925##CLONAZEPAM                                   2,5MG FR GTS 20ML##7,23 
+7899547502275##CLONAZEPAM                                   2,5MG/ML SOL OR CX 100 FR GOT X 20ML##749,85 
+7899547502251##CLONAZEPAM                                   2,5MG/ML SOL OR FR GOT X 20ML##7,26 
+7896112135913##CLONAZEPAM                                   2,5MG/ML SOL OR FR GTS 20ML##6,95 
+7896004721835##CLONAZEPAM                                   2MG CX 2BL X 10 COMP##5,82 
+7896004721828##CLONAZEPAM                                   2MG CX 30 COMP##8,76 
+7896004721842##CLONAZEPAM                                   2MG CX 3BL X 10 COMP##8,76 
+7894916144674##CLONAZEPAM                                   2MG CX 3BL X 10 COMP##8,79 
+7894916142403##CLONAZEPAM                                   SOL FR GTS 20ML##7,23 
+7896422514644##CLONAZEPAM                                   0,5MG CX 30 COMP##5,00 
+7896422515016##CLONAZEPAM                                   0,5MG CX 60 COMP##10,00 
+7896006259817##CLONAZEPAM                                   2,5MG SOL OR FR GTS 20ML##7,94 
+7896422511865##CLONAZEPAM                                   2,5MG SOL ORAL FR GTS 20ML##7,27 
+7896422514408##CLONAZEPAM                                   2MG CX 20 COMP##5,81 
+7896422514651##CLONAZEPAM                                   2MG CX 30 COMP##8,78 
+7898927562090##CLONAZEPAM                                   2MG CX 30 COMP##7,90 
+7896422515023##CLONAZEPAM                                   2MG CX 60 COMP##17,54 
+7891317445249##CLONAZEPAM                                   2MG CX 20 COMP##5,86 
+7891317445232##CLONAZEPAM                                   2MG CX 30 COMP##8,82 
+7899095236318##CLONAZEPAM                                   2,5MG/ML SOL ORAL FR 20ML##7,28 
+7895296055017##CLONAZEPAM                                   2MG CX 10 COMP##5,82 
+7897076913456##CLONAZEPAM                                   2MG CX 20 COMP##5,80 
+7897076913463##CLONAZEPAM                                   2MG CX 30 COMP##8,77 
+7895296055024##CLONAZEPAM                                   2MG CX 30 COMP##8,76 
+7896676404975##CLONIDIN                                     150MCG CX 25EST X 1ML EMB HOSP##140,47 
+7896676406979##CLONIDIN                                     150MCG CX 30EST X 1ML EMB HOSP##168,57 
+7896676408485##CLOPAM                                       0,5MG CX 20 COMP##5,12 
+7896676411256##CLOPAM                                       0,5MG CX 20BL X 10 COMP EMB HOSP##51,48 
+7896676408515##CLOPAM                                       2,5MG/ML  - FRASCO 20 ML##11,25 
+7896676408492##CLOPAM                                       2MG CX 20 COMP##8,86 
+7896676411263##CLOPAM                                       2MG CX 20BL X 10 COMP EMB HOSP##88,71 
+7896004722382##CLOPIDO-GRAN                                 75MG 4BL X 7 COMP REV##44,87 
+7894916145008##CLOPIDOGREL, BISSUFATO DE                    75MG 4BL X 7 COMP REV##104,21 
+7896004722047##CLOPIDOGREL, BISSULFATO DE                   75MG 2BL CX 7 COMP REV##52,93 
+7896004738406##CLOPIDOGREL, BISSULFATO DE                   75MG 4BL X 7 COMP REV##104,24 
+7896004738413##CLOPIDOGREL, BISSULFATO DE                   75MG CX 28 COMP REV##104,24 
+7897595605917##CLOPIDOGREL, BISSULFATO DE                   75MG CX 14 COMP REV##22,34 
+7897595605924##CLOPIDOGREL, BISSULFATO DE                   75MG CX 28 COMP REV##78,10 
+7896658011900##CLOPIN                                       75MG CX 15 COMP REV##22,15 
+7896658011924##CLOPIN                                       75MG CX 30 COMP REV##42,60 
+7895296256018##CLOPIPLAX                                    75MG CX 14 COMP REV##41,37 
+7895296257015##CLOPIPLAX                                    75MG CX 28 COMP REV##44,87 
+7898901921417##CLOPIVIX                                     75MG CX 14 COMP REV##39,75 
+7898901921417##CLOPIVIX                                     75MG CX 14 COMP REV##45,23 
+7898901921899##CLOPIVIX                                     75MG CX 20 COMP REV##53,68 
+7898901921400##CLOPIVIX                                     75MG CX 28 COMP REV##90,48 
+7898901921400##CLOPIVIX                                     75MG CX 28 COMP REV##90,48 
+7898901921905##CLOPIVIX                                     75MG CX 30 COMP REV##87,02 
+7898901921912##CLOPIVIX                                     75MG CX 60 COMP REV##161,08 
+7898901921493##CLOPIVIX                                     75MG CX 7 COMP REV##18,80 
+7898901921516##CLOPIVIX                                     75MG CX 98 COMP REV##284,01 
+5702157108220##CLOPIXOL                                     ACUPHASE 50MG FR 1ML##24,79 
+5702157109159##CLOPIXOL                                     DEPOT 200MG FR 1ML##49,43 
+5702157108411##CLOPIXOL                                     10MG CX 20 COMP##24,66 
+5702157108459##CLOPIXOL                                     25MG CX 20 COMP##53,89 
+7896004732626##CLOR. BUPROPIONA                             150MG 3BL X 10 COMP REV##61,82 
+7896004732633##CLOR. BUPROPIONA                             150MG 6BL X 10 COMP REV##117,46 
+7894916147316##CLOR. CICLOBENZAPRINA                        5MG CX 1BL X 15 COMP REV##8,72 
+7894916147323##CLOR. CICLOBENZAPRINA                        5MG CX 2BL X 15 COMP REV##18,19 
+7896004731698##CLOR. DE PIOGLITAZONA                        15MG FR 15 COMP##34,43 
+7896004731728##CLOR. DE PIOGLITAZONA                        15MG FR 15 COMP##34,43 
+7894916146517##CLOR. DE PIOGLITAZONA                        15MG FR 15 COMP##34,43 
+7896004731704##CLOR. DE PIOGLITAZONA                        30MG FR 15 COMP##36,43 
+7896004731735##CLOR. DE PIOGLITAZONA                        30MG FR 15 COMP##36,43 
+7894916146524##CLOR. DE PIOGLITAZONA                        30MG FR 15 COMP##36,43 
+7896004744148##CLOR. DE PIOGLITAZONA                        30MG FR 30 COMP##65,72 
+7896004731711##CLOR. DE PIOGLITAZONA                        45MG FR 15 COMP##71,11 
+7896004731742##CLOR. DE PIOGLITAZONA                        45MG FR 15 COMP##71,11 
+7896004734354##CLOR. MOXIFLOXACINO                          400MG 1BL X 5 COMP REV##70,93 
+7896004734361##CLOR. MOXIFLOXACINO                          400MG 1BL X 7 COMP REV##89,69 
+7896004744759##CLOR.DULOXETINA                              30MG 1BL 15CAP##41,64 
+7896004754031##CLOR.DULOXETINA                              30MG 2BL 15CAP##83,28 
+7896004754048##CLOR.DULOXETINA                              60MG 3BL 10CAP##166,59 
+7895296354011##CLOR.DULOXETINA                              30MG 1BL X 15 CAP##41,64 
+7895296354028##CLOR.DULOXETINA                              30MG 2BL X 15 CAP##83,28 
+7895296354035##CLOR.DULOXETINA                              60MG 3BL X 10 CAP##166,59 
+7897595901521##CLORANA                                      25MG CX 30 COMP##6,07 
+7897595900722##CLORANA                                      50MG CX 20 COMP##6,29 
+7897316801314##CLORANFENICOL                                SOL OFT COL FR 10ML##6,54 
+7896004704289##CLORATADD                                    10MG CX 12 COMP##23,93 
+7896004704265##CLORATADD                                    5MG XPE FR 100ML##23,70 
+7898049794706##CLORDILON                                    25MG CX 42 COMP##8,38 
+7898049794720##CLORDILON                                    50MG CX 28 COMP##11,17 
+7896112141617##CLORDOX                                      100MG CX 15 DR##18,64 
+7898924600016##CLORETO DE SODIO                             0,9% CX 10 BOLSAS X 100ML##36,36 
+7898924600054##CLORETO DE SODIO                             0,9% CX 100BOLS PLAS FLEX X 100ML SIST.FECHAD##363,42 
+7898170783266##CLORETO DE SODIO                             0,9% SOL INJ CX 100 BOLS PLAS FLEX X 100 ML##452,54 
+7898170783082##CLORETO DE SODIO                             0,9% SOL INJ CX 14 BOLS PLAS FLEX X 1000 ML##89,20 
+7898170783075##CLORETO DE SODIO                             0,9% SOL INJ CX 24 BOLS PLAS FLEX X 500 ML##112,90 
+7898170783235##CLORETO DE SODIO                             0,9% SOL INJ CX 50 BOLS PLAS FLEX X 100 ML##226,29 
+7898170783068##CLORETO DE SODIO                             0,9% SOL INJ CX 50 BOLS PLAS FLEX X 250 ML##193,52 
+7898911244483##CLORETO DE SODIO 0,9%                        9MG/ML SOL CX25 BOLS INC X 1000 ML SIST FECH##123,90 
+7898924600061##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 10 BOLS 200ML SIST FECHADO##27,11 
+7898924600184##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 10 BOLS 500ML SIST FECH##37,26 
+7898924600276##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 100 BOLS 1000ML SIST FECH##495,55 
+7898924600122##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 100 BOLS 200 ML SIST FECH##271,11 
+7898924600078##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 25 BOLS 200ML SIST FECHADO##67,77 
+7898991124421##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 25 BOLS 250ML SIST FECHADO##80,99 
+7898911244452##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 25 BOLS 500ML SIST FECHADO##93,17 
+7898911244391##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 25 BOLS SIST FECH 100ML##90,85 
+7898924600085##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 40 BOLS 200ML SIST FECHADO##108,44 
+7898924600146##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 40 BOLS 250ML SIST FECHADO##129,57 
+7898924600191##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 40 BOLS 500ML SIST FECHADO##149,07 
+7898924600023##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 40 BOLS SIST FECH 100ML##145,37 
+7898924600252##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 50 BOLS 1000ML SIST FECHADO##247,77 
+7898924600092##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 50 BOLS 200 ML SIST FECHADO##135,57 
+7898924600153##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 50 BOLS 250ML SIST FECH##161,97 
+7898924600207##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 50 BOLS 500ML SIST FECHADO##186,35 
+7898924600030##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 50 BOLS SIST FECH X 100ML##181,71 
+7898911244490##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 60 BOLS 1000ML SIST FECHADO##297,32 
+7898924600108##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 60 BOLS X 200ML SIST FECH##162,66 
+7898924600214##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX 72BOLS PLAS X 500ML S. F.##268,33 
+7898924600238##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX10 BOLS 1000ML SIST FECH##49,55 
+7898924600177##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX100 BOLS 250ML SIST FECHADO##323,91 
+7898924600221##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX100 BOLS 500ML SIST FECHADO##372,67 
+7898924600245##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX40 BOLS 1000ML SIST FECHADO##198,22 
+7898911244469##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX60 BOLS 500ML SIST FECHADO##223,60 
+7898911244407##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX60 BOLS SIST FECH X 100ML##218,05 
+7898911244438##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX60 BOLS X 250ML SIST FECHADO##194,34 
+7898924600269##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX72 BOLS 1000ML SIST FECHADO##356,81 
+7898924600115##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX72 BOLS INC X 200ML SIST FE##195,19 
+7898924600160##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX72 BOLS PLAS INC X 250ML##233,23 
+7898924600047##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ CX72 BOLS SIST FECH X 100 ML##261,68 
+7898924600139##CLORETO DE SODIO 0,9%                        9MG/ML SOL INJ IV CX10 BOLS 250ML SIST FECH##32,41 
+7898170783297##CLORETO DE SODIO BEKER                       9MG/ML SOL INJ CX 10 X 100ML##45,27 
+7898170783280##CLORETO DE SODIO BEKER                       9MG/ML SOL INJ CX 25 X 100ML##113,12 
+7898170783273##CLORETO DE SODIO BEKER                       9MG/ML SOL INJ CX 40 X 100ML##181,02 
+7898170783242##CLORETO DE SODIO BEKER                       9MG/ML SOL INJ CX 60 X 100ML##271,53 
+7898170783259##CLORETO DE SODIO BEKER                       9MG/ML SOL INJ CX 72 X 100ML##325,84 
+7898170783051##CLORETO DE SODIO BEKER                       9MG/ML SOL INJ CX 90 X 125ML##407,30 
+7894916146678##CLORIDRATO BUPROPIONA                        150MG 30 COMP##57,55 
+7894916146685##CLORIDRATO BUPROPIONA                        150MG 60 COMP##109,34 
+7898148293872##CLORIDRATO DE AMBROXOL                       3MG/ML XPE CX 50 FR X 100ML+CM HOSP##117,73 
+7898148294169##CLORIDRATO DE AMBROXOL                       3MG/ML XPE CX 50 FR X 120ML+CM HOSP##140,39 
+7898148293834##CLORIDRATO DE AMBROXOL                       3MG/ML XPE FR 120ML+CM##9,91 
+7898148294183##CLORIDRATO DE AMBROXOL                       6MG/ML XPE CX 50 FR 120ML+50CM HOSP##187,03 
+7898148293896##CLORIDRATO DE AMBROXOL                       6MG/ML XPE CX 50 FR X 100ML+50CM HOSP##156,97 
+7898148293858##CLORIDRATO DE AMBROXOL                       6MG/ML XPE FR 120ML+CM##14,10 
+7898148293810##CLORIDRATO DE AMBROXOL                       7,5MG/ML SOL OR FR GTS 50ML##9,19 
+7896676410549##CLORIDRATO DE AMBROXOL                       3MG XPE FR 120ML##8,70 
+7896004706276##CLORIDRATO DE AMBROXOL                       3MG XPE S-ACUCAR FR 120ML INF##8,54 
+7896676410556##CLORIDRATO DE AMBROXOL                       6MG XPE FR 120ML##14,29 
+7896004716701##CLORIDRATO DE AMBROXOL                       6MG XPE FR 120ML ADU##13,21 
+7894916142281##CLORIDRATO DE AMBROXOL                       6MG XPE FR 120ML S/ACUC ADU##13,68 
+7896004706290##CLORIDRATO DE AMBROXOL                       6MG XPE S-ACUCAR FR 120ML ADU##13,75 
+7896181909460##CLORIDRATO DE AMBROXOL                       3MG XPE FR 120ML+CM##8,36 
+7896422505567##CLORIDRATO DE AMBROXOL                       3MG XPE FR 120ML+CM PED##12,31 
+7896181909279##CLORIDRATO DE AMBROXOL                       6MG XPE FR 120ML+CM##13,44 
+7896422505574##CLORIDRATO DE AMBROXOL                       6MG XPE FR 120ML+CM ADU##19,84 
+7897848500631##CLORIDRATO DE AMBROXOL                       15MG/5ML XPE FR 120ML INF##7,25 
+7899095202245##CLORIDRATO DE AMBROXOL                       15MG/5ML XPE FR 120ML PED##11,05 
+7899095202252##CLORIDRATO DE AMBROXOL                       30MG/5ML XPE FR 120ML ADU##16,33 
+7897848500501##CLORIDRATO DE AMBROXOL                       30MG/5ML XPE FR 120ML ADU##10,35 
+7896714202921##CLORIDRATO DE AMBROXOL                       3MG XPE FR 120ML INF##10,44 
+7896112127338##CLORIDRATO DE AMBROXOL                       3MG XPE FR 120ML+CM##8,32 
+7895296281027##CLORIDRATO DE AMBROXOL                       3MG XPE FR 120ML+CM INF##9,40 
+7896523207643##CLORIDRATO DE AMBROXOL                       3MG/ML XPE FR 120ML+CM##8,83 
+7896112147831##CLORIDRATO DE AMBROXOL                       3MG/ML XPE FR 120ML+CM INF##8,32 
+7898166041516##CLORIDRATO DE AMBROXOL                       3MG/ML XPE FR X 100ML+CM##6,04 
+7896714202891##CLORIDRATO DE AMBROXOL                       6MG XPE FR 120ML ADU##16,49 
+7895296281041##CLORIDRATO DE AMBROXOL                       6MG XPE FR 120ML+CM ADU##13,38 
+7896112127390##CLORIDRATO DE AMBROXOL                       6MG/ML XPE FR 120ML+CM##12,83 
+7896523207636##CLORIDRATO DE AMBROXOL                       6MG/ML XPE FR 120ML+CM##10,50 
+7896112147817##CLORIDRATO DE AMBROXOL                       6MG/ML XPE FR 120ML+CM ADU##12,83 
+7898166041578##CLORIDRATO DE AMBROXOL                       6MG/ML XPE FR X 100ML+CM##9,73 
+7897848500563##CLORIDRATO DE AMBROXOL                       7,5MG/ML SOL OR FR 50ML##6,24 
+7896181906032##CLORIDRATO DE AMILORIDA+HIDROCLOROTIAZIDA    5+50MG CX 30 COMP##8,49 
+7896004710860##CLORIDRATO DE AMILORIDA+HIDROCLOROTIAZIDA    2,5+25MG CX 30 COMP##6,15 
+7894916140911##CLORIDRATO DE AMILORIDA+HIDROCLOROTIAZIDA    2,5+25MG CX 30 COMP##6,14 
+7896004719801##CLORIDRATO DE AMILORIDA+HIDROCLOROTIAZIDA    2,5+25MG CX 90 COMP REV##16,62 
+7896004711652##CLORIDRATO DE AMILORIDA+HIDROCLOROTIAZIDA    5+50MG CX 30 COMP##10,04 
+7894916141338##CLORIDRATO DE AMILORIDA+HIDROCLOROTIAZIDA    5+50MG CX 30 COMP##10,21 
+7896004719795##CLORIDRATO DE AMILORIDA+HIDROCLOROTIAZIDA    5+50MG CX 90 COMP##27,70 
+7896004711454##CLORIDRATO DE AMILORIDA+HIDROCLOROTIAZIDA    5,0+50MG CX 30 COMP##10,27 
+7896181914242##CLORIDRATO DE AMIODARONA                     100MG CX 30 COMP##9,91 
+7891058001636##CLORIDRATO DE AMIODARONA                     100MG CX 20 COMP##7,00 
+7891058001674##CLORIDRATO DE AMIODARONA                     200MG CX 20 COMP##13,37 
+7896181904830##CLORIDRATO DE AMIODARONA                     200MG CX 30 COMP##20,07 
+7897076911551##CLORIDRATO DE AMIODARONA                     100MG CX 20 COMP##7,01 
+7897076911575##CLORIDRATO DE AMIODARONA                     200MG CX 20 COMP##13,38 
+7897076911582##CLORIDRATO DE AMIODARONA                     200MG CX 30 COMP##20,06 
+7896714208183##CLORIDRATO DE AMITRIPTILINA                  25MG CX 20 COMP##9,03 
+7894916140102##CLORIDRATO DE AMITRIPTILINA                  25MG CX 20 COMP REV##9,38 
+7896004727493##CLORIDRATO DE AMITRIPTILINA                  25MG CX 30 COMP##8,86 
+7896004727776##CLORIDRATO DE AMITRIPTILINA                  25MG CX 30 COMP REV##9,07 
+7896004709598##CLORIDRATO DE AMITRIPTILINA                  75MG CX 2BL X 10 COMP##28,87 
+7896004709567##CLORIDRATO DE AMITRIPTILINA                  75MG CX 30 COMP REV##28,91 
+7896422511964##CLORIDRATO DE AMITRIPTILINA                  25MG CX 20 COMP##9,06 
+7891317408060##CLORIDRATO DE AMITRIPTILINA                  25MG CX 20 COMP##9,09 
+7896422511995##CLORIDRATO DE AMITRIPTILINA                  75MG CX 20 COMP##26,12 
+7894916143691##CLORIDRATO DE AZELASTINA                     10ML SOL NAS FR 10ML##17,77 
+7896004703985##CLORIDRATO DE AZELASTINA                     SOL NAS FR 10ML##18,38 
+7896658020711##CLORIDRATO DE BENSERAZIDA+LEVODOPA           200+50MG FR 30 COMP##35,83 
+7896181923909##CLORIDRATO DE BENSERAZIDA+LEVODOPA           200+50MG FR 30 COMP##35,83 
+7896676406429##CLORIDRATO DE BETAXOLOL                      0,5% SOL OFT FR 5ML##10,39 
+7894916142779##CLORIDRATO DE BETAXOLOL                      5MG SOL OFT FR 5ML##10,35 
+7896714229836##CLORIDRATO DE BETAXOLOL                      5MG/ML SOL OFT FR GT X 5ML##11,29 
+7899095230323##CLORIDRATO DE BETAXOLOL                      5MG SOL OFT FR 5ML##10,25 
+7898148299928##CLORIDRATO DE BROMEXINA                      0,8MG/ML XPE CX 50 FR X 120ML+CM X 10ML HOSP##199,20 
+7898148299911##CLORIDRATO DE BROMEXINA                      0,8MG/ML XPE FR X 120ML+CM X 10ML##8,56 
+7898148299966##CLORIDRATO DE BROMEXINA                      1,6MG/ML XPE CX 50 FR X 120ML+CM X 10ML HOSP##256,51 
+7898148299959##CLORIDRATO DE BROMEXINA                      1,6MG/ML XPE FR 120ML+CM X 10ML##9,88 
+7898060131146##CLORIDRATO DE BROMEXINA                      0,8MG XPE FR 120ML+CM##8,21 
+7896004721798##CLORIDRATO DE BROMEXINA                      1,6MG XPE FR 120ML ADU##8,97 
+7898060131504##CLORIDRATO DE BROMEXINA                      1,6MG XPE FR 120ML+CM##9,98 
+7896004720241##CLORIDRATO DE BROMEXINA                      4MG/5ML XPE FR 120ML INF##6,74 
+7896004720258##CLORIDRATO DE BROMEXINA                      4MG/5ML XPE FR 120ML INF##6,27 
+7894916144650##CLORIDRATO DE BROMEXINA                      8MG/5ML XPE FR 120ML ADU##9,09 
+7896422505147##CLORIDRATO DE BROMEXINA                      4MG/5ML XPE FR 120ML##9,25 
+7896422505154##CLORIDRATO DE BROMEXINA                      8MG/5ML XPE FR 120ML##11,88 
+7899095230088##CLORIDRATO DE BROMEXINA                      0,8MG XPE FR 120ML INF##7,91 
+7896714220857##CLORIDRATO DE BROMEXINA                      0,8MG XPE FR 120ML INF##8,28 
+7899095230071##CLORIDRATO DE BROMEXINA                      1,6MG XPE FR 120ML ADU##9,43 
+7896714220765##CLORIDRATO DE BROMEXINA                      1,6MG XPE FR 120ML ADUL##10,96 
+7896004732640##CLORIDRATO DE BUPROPIONA                     150MG CX 3BL X 10 COMP REV##57,55 
+7896004732657##CLORIDRATO DE BUPROPIONA                     150MG CX 6BL X 10 COMP REV##109,34 
+7895296213042##CLORIDRATO DE BUPROPIONA                     150MG CX 30 COMP REV##55,45 
+7895296213059##CLORIDRATO DE BUPROPIONA                     150MG CX 60 COMP REV##101,29 
+7898911244261##CLORIDRATO DE CEFEPIMA                       1G PO INJ CT FA X 20 ML##44,57 
+7898911244308##CLORIDRATO DE CEFEPIMA                       1G PO INJ CX 25 FA X 20 ML##1.115,27 
+7898911244315##CLORIDRATO DE CEFEPIMA                       1G PO INJ CX10 FA X 20ML+10BOLS X 100ML##487,68 
+7898911244377##CLORIDRATO DE CEFEPIMA                       2G PO INJ CX10 FA VDX 50ML+ 10 BOLS X 100 ML##852,27 
+7898911244353##CLORIDRATO DE CEFEPIMA                       2G PO INJ FA INC X 50ML+ AMP X 10ML##81,04 
+7898911244339##CLORIDRATO DE CEFEPIMA                       2G PO INJ IV CX 10 FA VD INC X 50 ML##810,52 
+7898911244346##CLORIDRATO DE CEFEPIMA                       2G PO INJ IV CX 25 FA VD INC X 50 ML##2.026,31 
+7897406114386##CLORIDRATO DE CEFEPIMA                       1G CX 1FA##44,56 
+7897406114393##CLORIDRATO DE CEFEPIMA                       1G CX 50FA##2.228,73 
+7897406114362##CLORIDRATO DE CEFEPIMA                       1G SIST FECH CX 10FA+BOLSAS##487,61 
+7897406114355##CLORIDRATO DE CEFEPIMA                       1G SIST FECH CX 1FA+BOLSA##48,75 
+7897406114379##CLORIDRATO DE CEFEPIMA                       1G SIST FECH CX 50FA+BOLSAS##2.438,20 
+7898361881559##CLORIDRATO DE CEFEPIMA                       1G SOL INJ CX 1FA##44,82 
+7898361881504##CLORIDRATO DE CEFEPIMA                       1G SOL INJ CX 1FA+DIL 3ML##44,16 
+7898361881481##CLORIDRATO DE CEFEPIMA                       1G SOL INJ CX 25FA##1.014,10 
+7898361881498##CLORIDRATO DE CEFEPIMA                       1G SOL INJ CX 25FA+25AMP+DIL X 3ML##1.104,22 
+7897406114430##CLORIDRATO DE CEFEPIMA                       2G CX 1FA##81,05 
+7897406114447##CLORIDRATO DE CEFEPIMA                       2G CX 50FA##4.052,68 
+7898361881610##CLORIDRATO DE CEFEPIMA                       2G PO SOL INJ 1FA##76,52 
+7897406114416##CLORIDRATO DE CEFEPIMA                       2G SIST FECH CX 10FA+BOLSAS##852,27 
+7897406114409##CLORIDRATO DE CEFEPIMA                       2G SIST FECH CX 1FA+BOLSA##85,20 
+7897406114423##CLORIDRATO DE CEFEPIMA                       2G SIST FECH CX 50FA+BOLSAS##4.261,33 
+7898487605411##CLORIDRATO DE CEFEPIMA                       1G PO SOL INJ 10FA+BOLS X 100ML EMB HOSP##397,04 
+7898208144373##CLORIDRATO DE CEFEPIMA                       1G PO SOL INJ 1FA X 17ML EMB HOSP##42,22 
+7898208144366##CLORIDRATO DE CEFEPIMA                       1G PO SOL INJ CX 10FA X 17ML EMB HOSP##422,25 
+7898208144380##CLORIDRATO DE CEFEPIMA                       2G PO SOL INJ CX 10FA X 17ML EMB HOSP##767,87 
+7898487605497##CLORIDRATO DE CEFEPIMA                       2G PO SOL INJ CX 10FA+ BOLS X 100ML EMB HOSP##722,02 
+7898208144359##CLORIDRATO DE CEFEPIMA                       2G PO SOL INJ CX 1FA X 17ML EMB HOSP##76,77 
+7898911244292##CLORIDRATO DE CEFEPIME                       1G INJ CX 1FA+BOLSA##48,76 
+7898911244278##CLORIDRATO DE CEFEPIME                       1G PO INJ CX 10 FA##445,86 
+7898911244285##CLORIDRATO DE CEFEPIME                       1G PO INJ CX 1FA+1AMP DIL##44,57 
+7898911244322##CLORIDRATO DE CEFEPIME                       2G INJ CX 1FA##81,04 
+7898911244360##CLORIDRATO DE CEFEPIME                       2G INJ CX 1FA+BOLSA##85,22 
+7898361882372##CLORIDRATO DE CEFEPIME                       1G PO SOL INJ 10FA+10 BOLSAS SIST FEC X 100ML##448,21 
+7898361882365##CLORIDRATO DE CEFEPIME                       1G PO SOL INJ 1FA+BOLSA SIST FECH X 100ML##44,82 
+7898361882396##CLORIDRATO DE CEFEPIME                       2G PO SOL INJ 10FA+10 BOLSAS SIST FECH X100ML##765,35 
+7898361882389##CLORIDRATO DE CEFEPIME                       2G PO SOL INJ 1FA+BOLSA SIST FECH X 100ML##76,52 
+7896004726908##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 10 COMP REV##6,74 
+7896004726922##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 10 COMP REV##6,74 
+7896004730196##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 15 COMP REV##10,14 
+7896004730172##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 15 COMP REV##10,14 
+7894916146128##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 15 COMP REV##10,14 
+7896004730189##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 2BL X 15 COMP REV##20,28 
+7896004730165##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 30 COMP REV##20,28 
+7894916146135##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 30 COMP REV##20,28 
+7896004730066##CLORIDRATO DE CICLOBENZAPRINA                5MG CX 1BL X 10 COMP REV##6,06 
+7896004737591##CLORIDRATO DE CICLOBENZAPRINA                5MG CX 1BL X 15 COMP REV##8,72 
+7896004737607##CLORIDRATO DE CICLOBENZAPRINA                5MG CX 2BL X 15 COMP REV##18,19 
+7896004730059##CLORIDRATO DE CICLOBENZAPRINA                5MG CX 3BL X 10 COMP REV##18,19 
+7891317446772##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 15 COMP##10,16 
+7896181901327##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 15 COMP REV##9,24 
+7891317433642##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 30 COMP##20,31 
+7896181901341##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 30 COMP REV##16,54 
+7891317446819##CLORIDRATO DE CICLOBENZAPRINA                5MG CX 15 COMP##9,12 
+7896181901150##CLORIDRATO DE CICLOBENZAPRINA                5MG CX 15 COMP REV##8,19 
+7891317433673##CLORIDRATO DE CICLOBENZAPRINA                5MG CX 30 COMP##18,25 
+7896181901198##CLORIDRATO DE CICLOBENZAPRINA                5MG CX 30 COMP REV##16,13 
+7895296033039##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 10 COMP REV##6,75 
+7896658011009##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 15 COMP REV##9,24 
+7895296033053##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 15 COMP REV##10,12 
+7896472507160##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 30 COMP##16,07 
+7898095341305##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 30 COMP##19,57 
+7896658010026##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 30 COMP REV##16,54 
+7895296033077##CLORIDRATO DE CICLOBENZAPRINA                10MG CX 30 COMP REV##20,29 
+7895296033121##CLORIDRATO DE CICLOBENZAPRINA                5MG 1BL X 15 COMP REV##8,72 
+7895296033138##CLORIDRATO DE CICLOBENZAPRINA                5MG 2BL X 15 COMP REV##18,19 
+7896658009845##CLORIDRATO DE CICLOBENZAPRINA                5MG CX 15 COMP REV##8,19 
+7896472507139##CLORIDRATO DE CICLOBENZAPRINA                5MG CX 30 COMP##14,44 
+7898095341268##CLORIDRATO DE CICLOBENZAPRINA                5MG CX 30 COMP##17,61 
+7896658009969##CLORIDRATO DE CICLOBENZAPRINA                5MG CX 30 COMP REV##16,13 
+7896004713854##CLORIDRATO DE CIPROFLOXACINO                 0,35% SOL OFT FR 5ML##9,51 
+7896004701257##CLORIDRATO DE CIPROFLOXACINO                 250MG CX 14 COMP##23,27 
+7896004720319##CLORIDRATO DE CIPROFLOXACINO                 250MG CX 2BL X 7 COMP REV##23,27 
+7898148291953##CLORIDRATO DE CIPROFLOXACINO                 250MG CX 300 COMP REV HOSP##268,08 
+7896004701240##CLORIDRATO DE CIPROFLOXACINO                 250MG CX 6 COMP##20,41 
+7898361700270##CLORIDRATO DE CIPROFLOXACINO                 2MG/ML SOL INJ FR 100ML SIST FECH##68,62 
+7898361700278##CLORIDRATO DE CIPROFLOXACINO                 2MG/ML SOL INJ X 200ML SIST FECH##118,09 
+7896004713090##CLORIDRATO DE CIPROFLOXACINO                 3,5MG POM OFT BG 3,5##9,09 
+7896714224695##CLORIDRATO DE CIPROFLOXACINO                 3,5MG SOL OFT FR 5ML##9,50 
+7896004713861##CLORIDRATO DE CIPROFLOXACINO                 3,5MG SOL OFT FR 5ML##9,48 
+7896714221380##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##34,97 
+7898060131399##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##27,96 
+7899547502923##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 140 COMP REV EMB FRAC##892,66 
+7896004701271##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 2BL X 7 COMP##34,97 
+7896004720296##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 2BL X 7 COMP REV##34,97 
+7898148292004##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 300 COMP REV HOSP##372,28 
+7898060134055##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 500 COMP HOSP##548,15 
+7896714205762##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 6 COMP##24,02 
+7896004701264##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 6 COMP##31,34 
+7898060138893##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 6 COMP REV##20,71 
+7898361881337##CLORIDRATO DE CIPROFLOXACINO                 250MG CX 10 COMP REV##34,11 
+7896422507080##CLORIDRATO DE CIPROFLOXACINO                 250MG CX 14 COMP##23,27 
+7897595602770##CLORIDRATO DE CIPROFLOXACINO                 250MG CX 14 COMP REV##31,74 
+7898361881320##CLORIDRATO DE CIPROFLOXACINO                 250MG CX 14 COMP REV##51,66 
+7898361881344##CLORIDRATO DE CIPROFLOXACINO                 250MG CX 20 COMP REV##64,82 
+7898361880675##CLORIDRATO DE CIPROFLOXACINO                 250MG CX 6 COMP REV##23,37 
+7896422507073##CLORIDRATO DE CIPROFLOXACINO                 250MG CX 7 COMP##20,43 
+7897595604248##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 10 COMP REV##51,72 
+7898361881306##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 10 COMP REV##57,92 
+7891721270581##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##85,72 
+7897595602404##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##22,58 
+7898910350086##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##25,31 
+7898361881368##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 20 COMP REV##99,12 
+7891721270574##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 6 COMP REV##36,70 
+7897595602398##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 6 COMP REV##35,62 
+7898361881290##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 6 COMP REV##37,26 
+7896181911975##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##33,59 
+7896181911890##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 6 COMP REV##30,75 
+7896472510481##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP##31,08 
+7896112156086##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##24,95 
+7898361881313##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##23,32 
+7899095204041##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##22,51 
+7896523209647##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##19,80 
+7895296215053##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##37,08 
+7898148291984##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##34,93 
+7894916143998##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 14 COMP REV##27,66 
+7895296215046##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 6 COMP REV##30,95 
+7896112156062##CLORIDRATO DE CIPROFLOXACINO                 500MG CX 7 COMP REV##13,72 
+7898100242979##CLORIDRATO DE CIPROFLOXACINO MONOIDRATO      500MG CX 14 COMP REV##22,35 
+7898100242986##CLORIDRATO DE CIPROFLOXACINO MONOIDRATO      500MG CX 210 COMP REV##154,18 
+7896004722535##CLORIDRATO DE CIPROFLOXACINO+DEXAMETASONA    3,5+1MG SOL OFT FR 5ML##14,66 
+7896004722528##CLORIDRATO DE CIPROFLOXACINO+DEXAMETASONA    SOL OFT FR 5ML##14,66 
+7894916144872##CLORIDRATO DE CIPROFLOXACINO+DEXAMETASONA    SOL OFT FR 5ML##14,66 
+7899095230309##CLORIDRATO DE CIPROFOXACINO+DEXAMETASONA     0,35+0,1% SOL OFT FR 5ML##14,47 
+7896004720494##CLORIDRATO DE CLINDAMICINA                   300MG CX 16 COMP##40,41 
+7896004720517##CLORIDRATO DE CLINDAMICINA                   300MG CX 16 COMP##40,07 
+7896004719696##CLORIDRATO DE CLINDAMICINA                   300MG CX 72 CAP##181,98 
+7896006225744##CLORIDRATO DE CLINDAMICINA                   300MG CX 16 CAP##49,89 
+7896112123033##CLORIDRATO DE CLINDAMICINA                   300MG CX 16 CAP##40,58 
+7896004716626##CLORIDRATO DE CLOBUTINOL                     4MG XPE FR 120ML##5,99 
+7896422506502##CLORIDRATO DE CLOBUTINOL                     4MG XPE FR 120ML+CM##6,40 
+7896422506496##CLORIDRATO DE CLOBUTINOL                     60MG SOL OR FR 20ML##10,95 
+7896006225454##CLORIDRATO DE CLOBUTINOL+SUCCINATO DE DOXILAM4+0,75MG/ML XPE 120ML##7,55 
+7898148297115##CLORIDRATO DE CLOBUTINOL+SUCCINATO DE DOXILAM4+0,75MG/ML XPE FR 120ML+CM##7,88 
+7896006225669##CLORIDRATO DE CLOBUTINOL+SUCCINATO DE DOXILAM48+9MG SOL ORAL X 20ML##10,30 
+7894916140898##CLORIDRATO DE CLOMIPRAMINA                   10MG CX 20 COMP##6,78 
+7896004709857##CLORIDRATO DE CLOMIPRAMINA                   10MG CX 20 COMP REV##7,05 
+7896004709871##CLORIDRATO DE CLOMIPRAMINA                   25MG CX 20 COMP##15,37 
+7894916140904##CLORIDRATO DE CLOMIPRAMINA                   25MG CX 20 COMP##15,08 
+7896004701301##CLORIDRATO DE CLOMIPRAMINA                   25MG CX 20 COMP REV##15,49 
+7896181901112##CLORIDRATO DE DILTIAZEM                      30MG CX 30 COMP REV##5,66 
+7894916141833##CLORIDRATO DE DILTIAZEM                      30MG CX 50 COMP##10,62 
+7896004706733##CLORIDRATO DE DILTIAZEM                      30MG FR 2BL X 25 COMP##10,64 
+7896004710082##CLORIDRATO DE DILTIAZEM                      30MG FR 2BL X 25 COMP##10,63 
+7896004700410##CLORIDRATO DE DILTIAZEM                      60MG CX 25 COMP##10,39 
+7896004700403##CLORIDRATO DE DILTIAZEM                      60MG CX 2BL X 25 COMP##20,42 
+7894916141840##CLORIDRATO DE DILTIAZEM                      60MG CX 2BL X 25 COMP##20,24 
+7896181901471##CLORIDRATO DE DILTIAZEM                      60MG CX 30 COMP REV##11,10 
+7896004710075##CLORIDRATO DE DILTIAZEM                      60MG FR 50 COMP##20,27 
+7897076913494##CLORIDRATO DE DILTIAZEM                      30MG CX 30 COMP##6,29 
+7897076913500##CLORIDRATO DE DILTIAZEM                      30MG CX 50 COMP##10,63 
+7895296211062##CLORIDRATO DE DILTIAZEM                      30MG CX 50 COMP##10,63 
+7897076913531##CLORIDRATO DE DILTIAZEM                      60MG CX 30 COMP##12,25 
+7897076913548##CLORIDRATO DE DILTIAZEM                      60MG CX 50 COMP##20,37 
+7895296211086##CLORIDRATO DE DILTIAZEM                      60MG CX 50 COMP##20,26 
+7898208147428##CLORIDRATO DE DOBUTAMINA                     12,5MG/ML SOL INJ  CX 1 AMP X 20ML EMB HOSP##18,29 
+7898208147619##CLORIDRATO DE DOBUTAMINA                     12,5MG/ML SOL INJ CX 50 AMP X 20ML EMB HOSP##863,63 
+7896181919971##CLORIDRATO DE DONEPEZILA                     10MG CX 15 COMP REV##136,51 
+7896181919926##CLORIDRATO DE DONEPEZILA                     5MG CX 15 COMP REV##122,85 
+7897595614964##CLORIDRATO DE DONEPEZILA                     5MG CX 30 COMP REV##104,66 
+7896658014772##CLORIDRATO DE DONEPEZILA                     10MG CX 15 COMP REV##136,51 
+8902220108721##CLORIDRATO DE DONEPEZILA                     10MG CX 30 COMP REV##97,66 
+7897595615022##CLORIDRATO DE DONEPEZILA                     10MG CX 30 COMP REV##133,11 
+7897076912060##CLORIDRATO DE DONEPEZILA                     10MG CX 30 COMP REV##87,36 
+7898909981772##CLORIDRATO DE DONEPEZILA                     10MG CX 30 COMP REV##260,04 
+8902220108738##CLORIDRATO DE DONEPEZILA                     10MG CX 60 COMP REV##195,32 
+7896658014727##CLORIDRATO DE DONEPEZILA                     5MG CX 15 COMP REV##122,85 
+8902220108677##CLORIDRATO DE DONEPEZILA                     5MG CX 30 COMP REV##88,98 
+7897076911421##CLORIDRATO DE DONEPEZILA                     5MG CX 30 COMP REV##78,84 
+7898909981758##CLORIDRATO DE DONEPEZILA                     5MG CX 30 COMP REV##234,01 
+8902220108684##CLORIDRATO DE DONEPEZILA                     5MG CX 60 COMP REV##177,96 
+7896714222486##CLORIDRATO DE DOPAMINA                       5MG SOL INJ CX 50 AMP X 10ML EMB HOSP##60,81 
+7896006264514##CLORIDRATO DE DOPAMINA                       5MG/ML SOL INJ 1AMP X 10ML EMB HOSP##12,69 
+7896006268611##CLORIDRATO DE DOPAMINA                       5MG/ML SOL INJ CX 50AMP X 10ML EMB HOSP##54,53 
+7896004726069##CLORIDRATO DE DORZOLAMIDA                    20MG SOL OFT FR 5ML##33,07 
+7896004726076##CLORIDRATO DE DORZOLAMIDA                    20MG SOL OFT FR 5ML##33,92 
+7894916145527##CLORIDRATO DE DORZOLAMIDA                    20MG SOL OFT FR X 5ML##33,92 
+7896181909361##CLORIDRATO DE DORZOLAMIDA                    2% SOL OFT FR GTS 5ML##33,07 
+7896422524711##CLORIDRATO DE DORZOLAMIDA                    20MG SOL OFT FR X 5ML##32,09 
+7895296186018##CLORIDRATO DE DORZOLAMIDA                    20MG/ML FR X 5ML##33,07 
+7894916145466##CLORIDRATO DE DORZOLAMIDA+MAL TIMOLOL        FR X 5ML##50,14 
+7896004725697##CLORIDRATO DE DORZOLAMIDA+MALEATO DE TIMOLOL 20+5MG SOL OFT FR 5ML##50,14 
+7896112129653##CLORIDRATO DE DORZOLAMIDA+MALEATO DE TIMOLOL 20+5MG SOL OFT FR GTS 5ML##50,13 
+7896004725703##CLORIDRATO DE DORZOLAMIDA+MALEATO DE TIMOLOL SOL OFT FR 5ML##50,14 
+7895296195010##CLORIDRATO DE DORZOLAMIDA+MALEATO DE TIMOLOL 20+5MG/ML FR X 5ML##50,14 
+7898060133225##CLORIDRATO DE DOXICICLINA                    100MG 15 COMP##19,51 
+7894916140683##CLORIDRATO DE DOXICICLINA                    100MG CX 15 COMP REV##21,75 
+7896004719412##CLORIDRATO DE DOXICICLINA                    100MG CX 60 COMP##102,10 
+7896004705040##CLORIDRATO DE DOXICICLINA                    CX 15 COMP##29,75 
+7897076906595##CLORIDRATO DE DOXICICLINA                    100MG CX 15 COMP##23,80 
+7897473202047##CLORIDRATO DE DOXORRUBICINA                  10MG SOL INJ FA##27,16 
+7891317462666##CLORIDRATO DE DOXORRUBICINA                  50MG PO LIOF SOL CX 10FA X 50ML##1.176,19 
+7891317007966##CLORIDRATO DE DOXORRUBICINA                  50MG PO LIOF SOL INJ CX 1FA X 50ML##124,62 
+7897473202054##CLORIDRATO DE DOXORRUBICINA                  50MG SOL INJ FA##112,92 
+7896004744445##CLORIDRATO DE DULOXETINA                     30MG 1BL X 15CAP##41,64 
+7894916149051##CLORIDRATO DE DULOXETINA                     30MG CX 15 CAP##41,64 
+7894916148016##CLORIDRATO DE DULOXETINA                     30MG CX 30 CAP##83,28 
+7896004747774##CLORIDRATO DE DULOXETINA                     60MG 3BL X 10 CAP##166,59 
+7894916148023##CLORIDRATO DE DULOXETINA                     60MG CX 30 CAP##166,59 
+7898932797029##CLORIDRATO DE EPIRRUBICINA                   2MG SOL INJ IM FR X 10ML##102,15 
+7898932797036##CLORIDRATO DE EPIRRUBICINA                   2MG SOL INJ IM FR X 25ML##217,19 
+7898932797012##CLORIDRATO DE EPIRRUBICINA                   2MG SOL INJ IM FR X 5ML##52,06 
+7896004712116##CLORIDRATO DE FENOXAZOLINA                   0,5MG SOL NAS FR 10ML INF##4,83 
+7896004712123##CLORIDRATO DE FENOXAZOLINA                   1,0MG SOL NAS FR 10ML ADU##5,68 
+7897076910950##CLORIDRATO DE FEXOFENADINA                   120MG CX 10 COMP##23,47 
+7898095343552##CLORIDRATO DE FEXOFENADINA                   120MG CX 10 COMP REV##23,48 
+7898912189479##CLORIDRATO DE FEXOFENADINA                   120MG CX 10 COMP REV##22,20 
+7895296252010##CLORIDRATO DE FEXOFENADINA                   120MG CX 10 COMP REV##23,47 
+7897076910974##CLORIDRATO DE FEXOFENADINA                   180MG CX 10 COMP##35,81 
+7898095343576##CLORIDRATO DE FEXOFENADINA                   180MG CX 10 COMP REV##35,87 
+7898912189486##CLORIDRATO DE FEXOFENADINA                   180MG CX 10 COMP REV##33,89 
+7895296252027##CLORIDRATO DE FEXOFENADINA                   180MG CX 10 COMP REV##33,76 
+7896004720425##CLORIDRATO DE FLUOXETINA                     10MG CX 20 CAP##13,41 
+7896004720432##CLORIDRATO DE FLUOXETINA                     10MG CX 28 CAP##18,85 
+7896004720449##CLORIDRATO DE FLUOXETINA                     10MG CX 28 CAP##18,80 
+7896004700649##CLORIDRATO DE FLUOXETINA                     20MG CX 14 COMP##28,57 
+7896004711096##CLORIDRATO DE FLUOXETINA                     20MG CX 28 CAP##42,80 
+7894916141413##CLORIDRATO DE FLUOXETINA                     20MG CX 28 CAP##42,81 
+7896714223674##CLORIDRATO DE FLUOXETINA                     20MG CX 30 CAP##49,01 
+7896004711799##CLORIDRATO DE FLUOXETINA                     20MG CX 30 COMP REV##25,94 
+7894916141567##CLORIDRATO DE FLUOXETINA                     20MG CX 30 COMP REV##25,94 
+7897595605092##CLORIDRATO DE FLUOXETINA                     20MG CX 20 CAP GEL##25,75 
+7896422513760##CLORIDRATO DE FLUOXETINA                     20MG CX 28 CAP##50,82 
+7896181902041##CLORIDRATO DE FLUOXETINA                     20MG CX 30 CAP##23,72 
+7898910350017##CLORIDRATO DE FLUOXETINA                     20MG CX 30 CAP##25,75 
+7897595601865##CLORIDRATO DE FLUOXETINA                     20MG CX 30 CAP GEL##33,59 
+7898361882303##CLORIDRATO DE FLUOXETINA                     20MG CX 70 CAP EMB HOSP##232,36 
+7896422512961##CLORIDRATO DE FLUOXETINA                     20MG SOL ORAL FR 20ML##19,11 
+7896004700632##CLORIDRATO DE FLUOXETINA                     20MG CX 28 COMP##50,81 
+7896112123316##CLORIDRATO DE FLUOXETINA                     20MG CX 28 COMP##24,91 
+7897076913579##CLORIDRATO DE FLUOXETINA                     20MG CX 30 CAP##24,48 
+7894916146029##CLORIDRATO DE FLUOXETINA                     20MG CX 30 CAP##24,91 
+7898559950128##CLORIDRATO DE FLUOXETINA                     20MG/G CX 14 CAP##17,83 
+7898559950135##CLORIDRATO DE FLUOXETINA                     20MG/G CX 28 CAP##35,67 
+7898559950111##CLORIDRATO DE FLUOXETINA                     20MG/G CX 7 CAP##8,92 
+7898559950142##CLORIDRATO DE FLUOXETINA                     20MG/G CX 70 CAP EMB HOSP##89,18 
+7896112136125##CLORIDRATO DE FLUOXETINA                     20MG/ML SOL OR FR GOT X 20ML##18,04 
+7898902274598##CLORIDRATO DE GENCITABINA                    1000MG PO LIOF INJ FA X 50ML##500,72 
+7898902274581##CLORIDRATO DE GENCITABINA                    200MG PO LIOF INJ FA X 10ML##100,61 
+7896014663811##CLORIDRATO DE GENCITABINA                    1000MG PO SOL INF FA X 50ML##500,74 
+7891317460020##CLORIDRATO DE GENCITABINA                    1G PO LIOF SOL INJ CX 10FA X 50ML EMB HOSP##5.007,26 
+7891317460259##CLORIDRATO DE GENCITABINA                    1G PO LIOF SOL INJ FA X 50ML##500,72 
+7891317460044##CLORIDRATO DE GENCITABINA                    200MG PO LIOF SOL INJ CX 10FA X 10ML EMB HOSP##1.006,21 
+7891317460266##CLORIDRATO DE GENCITABINA                    200MG PO LIOF SOL INJ FA X 10ML##100,62 
+7896014663804##CLORIDRATO DE GENCITABINA                    200MG PO SOL INJ C/FA X 13ML##100,62 
+7891317462789##CLORIDRATO DE GRANISETRONA                   1MG SOL INJ 10 AMP X 3ML EMB HOSP##951,79 
+7891317428594##CLORIDRATO DE GRANISETRONA                   1MG SOL INJ 1AMP X 3ML##95,19 
+7898487600607##CLORIDRATO DE GRANISETRONA                   1MG/ML SOL INJ CX 50 AMP X 3ML EMB HOSP##4.758,96 
+7898060133249##CLORIDRATO DE HIDROXIZINA                    100MG/5ML SOL OR 100ML##15,52 
+7896714223414##CLORIDRATO DE HIDROXIZINA                    10MG SOL OR FR 120ML+CM##19,21 
+7896004729695##CLORIDRATO DE HIDROXIZINA                    25MG CX 30 COMP##17,01 
+7896004729688##CLORIDRATO DE HIDROXIZINA                    25MG FR 30 COMP##14,93 
+7898095343767##CLORIDRATO DE HIDROXIZINA                    2MG SOL OR FR 100ML+SD##15,28 
+7894916145718##CLORIDRATO DE HIDROXIZINA                    2MG SOL ORAL FR 120ML##19,21 
+7896004727363##CLORIDRATO DE HIDROXIZINA                    SOL ORAL FR 120ML##19,21 
+7899620910744##CLORIDRATO DE HIDROXIZINA                    10MG/5ML SOL OR FR X 100ML+CM##15,52 
+7896862921101##CLORIDRATO DE HIDROXIZINA                    2MG CX 80 FR 100ML+SER DOS EMB HOSP##1.209,25 
+7899095235632##CLORIDRATO DE HIDROXIZINA                    2MG SOL ORAL FR 120ML##18,12 
+7896862990107##CLORIDRATO DE HIDROXIZINA                    2MG/ML SOL OR FR 100ML+SER DOS##15,12 
+7897406112344##CLORIDRATO DE IRINOTECANO                    20MG SOL INJ FA X 5ML##947,04 
+7898902274734##CLORIDRATO DE IRINOTECANO                    20MG SOL INJ FR X 2ML##430,79 
+7898902274727##CLORIDRATO DE IRINOTECANO                    20MG SOL INJ FR X 5ML##1.064,35 
+7897473201996##CLORIDRATO DE IRINOTECANO                    100/20MG SOL INJ FA X 5ML##802,16 
+7891317414726##CLORIDRATO DE IRINOTECANO                    20MG/ML SOL INJ CX 1FA X 2ML##424,37 
+7891317414764##CLORIDRATO DE IRINOTECANO                    20MG/ML SOL INJ CX 1FA X 5ML##1.048,33 
+7897473201989##CLORIDRATO DE IRINOTECANO                    40MG /20MG SOL INJ FA X 2ML##323,42 
+7891317470821##CLORIDRATO DE IRINOTECANO TRIHIDRATADO       20MG/ML SOL INJ 10FA X 5ML##10.483,36 
+7896004715193##CLORIDRATO DE LIDOCAINA                      20MG GEL BG 30##11,03 
+7894916143370##CLORIDRATO DE LIDOCAINA                      20MG GELEIA BG 30##10,85 
+7896676406351##CLORIDRATO DE LIDOCAINA                      20MG/G GEL BG 30G+APLIC##11,05 
+7896014682218##CLORIDRATO DE LIDOCAINA                      20MG SOL INJ 12FA X 20ML##63,56 
+7896014682225##CLORIDRATO DE LIDOCAINA                      20MG SOL INJ FA X 20ML##5,27 
+7898487608146##CLORIDRATO DE LIDOCAINA                      20MG/ML SOL INJ CX 25FA X 20ML EMB HOSP##132,41 
+7896714202969##CLORIDRATO DE LINCOMICINA                    600MG INJ CX 1AMP X 2ML##5,81 
+7896112144755##CLORIDRATO DE LINCOMICINA                    300MG SOL INJ CX 1AMP X 2ML##6,64 
+7898060132600##CLORIDRATO DE LOPERAMIDA                     2 MG 12 COMP##3,23 
+7898060132624##CLORIDRATO DE LOPERAMIDA                     2MG 200 COMP##43,20 
+7898146825112##CLORIDRATO DE MEMANTINA                      10MG CX 30 COMP REV##45,27 
+7898146825129##CLORIDRATO DE MEMANTINA                      10MG CX 60 COMP REV##89,65 
+7891317472122##CLORIDRATO DE MEMANTINA                      10MG CX 30 COMP REV##52,78 
+7891317472139##CLORIDRATO DE MEMANTINA                      10MG CX 60 COMP REV##104,55 
+7896637016056##CLORIDRATO DE MEMANTINA                      10MG CX 60 COMP REV##109,21 
+7896112167198##CLORIDRATO DE MEMANTINA                      10MG CX 30 COMP REV##44,01 
+7896112167211##CLORIDRATO DE MEMANTINA                      10MG CX 60 COMP REV##83,60 
+7896181908944##CLORIDRATO DE METFORMINA                     500MG CX 60 COMP REV##10,12 
+7896181908968##CLORIDRATO DE METFORMINA                     850MG CX 60 COMP##15,01 
+7896004719924##CLORIDRATO DE METFORMINA                     1G CX 15BL X 6 COMP REV##40,10 
+7896004709239##CLORIDRATO DE METFORMINA                     1G CX 30 COMP REV##14,78 
+7896004719900##CLORIDRATO DE METFORMINA                     500MG CX 15BL X 6 COMP REV##19,99 
+7896112126478##CLORIDRATO DE METFORMINA                     500MG CX 30 COMP##8,06 
+7898095341732##CLORIDRATO DE METFORMINA                     500MG CX 30 COMP REV##7,79 
+7896112131113##CLORIDRATO DE METFORMINA                     500MG CX 60 COMP##16,10 
+7896004712888##CLORIDRATO DE METFORMINA                     500MG CX 60 COMP REV##12,35 
+7896004712840##CLORIDRATO DE METFORMINA                     500MG CX 60 COMP REV##12,98 
+7898902274642##CLORIDRATO DE METFORMINA                     850MG CX 105 COMP REV HOSP##39,49 
+7898902274123##CLORIDRATO DE METFORMINA                     850MG CX 15 COMP REV##5,63 
+7896004719917##CLORIDRATO DE METFORMINA                     850MG CX 15BL X 6 COMP REV##27,74 
+7898902274655##CLORIDRATO DE METFORMINA                     850MG CX 210 COMP REV HOSP##69,86 
+7896112126485##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP##10,13 
+7896004709185##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP REV##10,25 
+7898902274031##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP REV##10,23 
+7898095341794##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP REV##10,79 
+7898902274666##CLORIDRATO DE METFORMINA                     850MG CX 450 COMP REV HOSP##149,72 
+7896112128670##CLORIDRATO DE METFORMINA                     850MG CX 60 COMP##17,54 
+7896004712895##CLORIDRATO DE METFORMINA                     850MG CX 60 COMP REV##17,68 
+7896004712864##CLORIDRATO DE METFORMINA                     850MG CX 60 COMP REV##18,41 
+7898902274673##CLORIDRATO DE METFORMINA                     850MG CX 600 COMP REV HOSP##199,62 
+7896422507936##CLORIDRATO DE METFORMINA                     1G CX 30 COMP##16,00 
+7897595604392##CLORIDRATO DE METFORMINA                     1G CX 30 COMP REV##15,48 
+7898361881603##CLORIDRATO DE METFORMINA                     1G CX 30 COMP REV##15,28 
+7896181911074##CLORIDRATO DE METFORMINA                     1G CX 30 COMP REV##14,19 
+7896422507943##CLORIDRATO DE METFORMINA                     500MG CX 30 COMP##7,37 
+7891721238123##CLORIDRATO DE METFORMINA                     500MG CX 30 COMP REV##8,07 
+7897595604378##CLORIDRATO DE METFORMINA                     500MG CX 30 COMP REV##7,73 
+7896181904922##CLORIDRATO DE METFORMINA                     500MG CX 30 COMP REV##7,01 
+7896422508056##CLORIDRATO DE METFORMINA                     500MG CX 60 COMP##12,31 
+7898361881573##CLORIDRATO DE METFORMINA                     500MG CX 60 COMP REV##12,10 
+7896422507950##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP##10,21 
+7897595604385##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP REV##10,69 
+7898361882662##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP REV##10,08 
+7896181901402##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP REV##9,48 
+7896422508063##CLORIDRATO DE METFORMINA                     850MG CX 60 COMP##17,58 
+7898361881597##CLORIDRATO DE METFORMINA                     850MG CX 60 COMP REV##17,62 
+7891721238253##CLORIDRATO DE METFORMINA                     1G CX 30 COMP REV##15,07 
+7898216362547##CLORIDRATO DE METFORMINA                     1G CX 30 COMP REV##15,21 
+7895296190053##CLORIDRATO DE METFORMINA                     1G CX 30 COMP REV##14,78 
+7898216362578##CLORIDRATO DE METFORMINA                     1G CX 500 COMP REV EMB HOSP##61,23 
+7898361884550##CLORIDRATO DE METFORMINA                     500MG CX 100 COMP REV EMB HOSP##24,67 
+7898361884567##CLORIDRATO DE METFORMINA                     500MG CX 200 COMP REV EMB HOSP##49,34 
+7897076909848##CLORIDRATO DE METFORMINA                     500MG CX 30 COMP##7,18 
+7898148291267##CLORIDRATO DE METFORMINA                     500MG CX 30 COMP##2,99 
+7896004709192##CLORIDRATO DE METFORMINA                     500MG CX 30 COMP REV##6,66 
+7898361882655##CLORIDRATO DE METFORMINA                     500MG CX 30 COMP REV##6,55 
+7895296190039##CLORIDRATO DE METFORMINA                     500MG CX 30 COMP REV##7,40 
+7899547503050##CLORIDRATO DE METFORMINA                     500MG CX 320 COMP REV EMB FRAC##84,66 
+7898148291281##CLORIDRATO DE METFORMINA                     500MG CX 400 COMP REV HOSP##57,92 
+7898361884574##CLORIDRATO DE METFORMINA                     500MG CX 500 COMP REV EMB HOSP##123,34 
+7891721238239##CLORIDRATO DE METFORMINA                     500MG CX 60 COMP REV##15,01 
+7898361884581##CLORIDRATO DE METFORMINA                     850MG CX 100 COMP REV EMB HOSP##33,55 
+7898361884598##CLORIDRATO DE METFORMINA                     850MG CX 200 COMP REV EMB HOSP##67,10 
+7897076909855##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP##9,61 
+7896523210001##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP##10,81 
+7891721027406##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP REV##10,97 
+7898148291298##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP REV##3,68 
+7895296190022##CLORIDRATO DE METFORMINA                     850MG CX 30 COMP REV##10,25 
+7899547502978##CLORIDRATO DE METFORMINA                     850MG CX 320 COMP REV EMB FRAC##108,02 
+7898148291311##CLORIDRATO DE METFORMINA                     850MG CX 400 COMP REV EMB HOSP##60,98 
+7898361884604##CLORIDRATO DE METFORMINA                     850MG CX 500 COMP REV EMB HOSP##167,74 
+7897076912572##CLORIDRATO DE METFORMINA                     850MG CX 60 COMP##16,84 
+7891721238246##CLORIDRATO DE METFORMINA                     850MG CX 60 COMP REV##20,39 
+7899547511031##CLORIDRATO DE METFORMINA                     XR 500MG CX 30 COMP##6,48 
+7899547511130##CLORIDRATO DE METFORMINA                     XR 750MG CX 30 CPMP##11,43 
+7896004711898##CLORIDRATO DE METOCLOPRAMIDA                 4MG FR GTS 10ML##3,77 
+7898089301094##CLORIDRATO DE METOCLOPRAMIDA                 4MG FR GTS 10ML##4,03 
+7896112144816##CLORIDRATO DE METOCLOPRAMIDA                 4MG SOL OR FR GTS 10ML##3,05 
+7891058001544##CLORIDRATO DE METOCLOPRAMIDA                 10MG CX 20 COMP##3,81 
+7896523212203##CLORIDRATO DE METOCLOPRAMIDA                 4MG SOL OR FR GTS X 10 ML##3,45 
+7898917592366##CLORIDRATO DE METOCLOPRAMIDA                 4MG/ML SOL OR CX 48 FR X 10ML HOSP##143,91 
+0000000000000##CLORIDRATO DE METOCLOPRAMIDA                 4MG/ML SOL OR CX 96 FR X 10ML HOSP##295,65 
+7898917592359##CLORIDRATO DE METOCLOPRAMIDA                 4MG/ML SOL OR FR GTS 10ML##3,14 
+7897076909121##CLORIDRATO DE MINOCICLINA                    100MG CX 30 COMP##63,25 
+7897076909107##CLORIDRATO DE MINOCICLINA                    100MG CX 9 COMP##19,61 
+7896004712017##CLORIDRATO DE NAFAZOLINA                     0,5MG SOL NAS FR GTS 30ML##8,03 
+7896112160175##CLORIDRATO DE NAFAZOLINA                     0,5MG SOL NAS FR GTS 30ML##7,23 
+7896422506809##CLORIDRATO DE NAFAZOLINA                     0,5MG SOL NAS FR GTS 30ML##7,97 
+7898937322288##CLORIDRATO DE NAFAZOLINA                     0,5MG SOL NAS FR 30ML+GOT##7,27 
+7895296067034##CLORIDRATO DE NAFAZOLINA                     0,5MG SOL NAS FR GTS 30ML##8,03 
+7898937322325##CLORIDRATO DE NAFAZOLINA                     0,5MG/ML SOL NAS CX 24 FR+GOT X 30ML HOSP##175,06 
+7898937322332##CLORIDRATO DE NAFAZOLINA                     0,5MG/ML SOL NAS CX 48 FR+GOT X 30ML HSP##350,13 
+7898937322349##CLORIDRATO DE NAFAZOLINA                     0,5MG/ML SOL NAS CX 96 FR+GOTX30ML HOSP##700,26 
+7898487602885##CLORIDRATO DE NALOXONA                       0,4MG/ML SOL INJ CX 10FA X 1ML EMB HOSP##55,15 
+7894916147941##CLORIDRATO DE NARATRIPTANA                   2,5MG CX 10 COMP REV##17,07 
+7896004733302##CLORIDRATO DE NARATRIPTANA                   2,5MG CX 4 COMP REV##7,53 
+7894916146883##CLORIDRATO DE NARATRIPTANA                   2,5MG CX 4 COMP REV##7,53 
+7895296105040##CLORIDRATO DE NARATRIPTANA                   2,5MG CX 10 COMP REV##17,07 
+7895296105026##CLORIDRATO DE NARATRIPTANA                   2,5MG CX 4 COMP REV##7,53 
+8902220114906##CLORIDRATO DE NEBIVOLOL                      5MG CX 30 COMP##41,91 
+7891317430139##CLORIDRATO DE NORTRIPTILINA                  10MG CX 30 CAP##10,51 
+7891317430146##CLORIDRATO DE NORTRIPTILINA                  25MG CX 30 CAP##16,56 
+7896422516280##CLORIDRATO DE NORTRIPTILINA                  50MG CX 20 CAP##16,04 
+7896422516334##CLORIDRATO DE NORTRIPTILINA                  50MG CX 30 CAP##24,07 
+7891317430153##CLORIDRATO DE NORTRIPTILINA                  50MG CX 30 CAP##24,06 
+7896422516303##CLORIDRATO DE NORTRIPTILINA                  75MG CX 30 CAP##32,50 
+7897076912268##CLORIDRATO DE NORTRIPTILINA                  25MG CX 20 CAP##10,97 
+7897076912275##CLORIDRATO DE NORTRIPTILINA                  25MG CX 30 CAP##16,47 
+7897076912299##CLORIDRATO DE NORTRIPTILINA                  50MG CX 30 CAP##24,05 
+7897076912312##CLORIDRATO DE NORTRIPTILINA                  75MG CX 30 CAP##32,50 
+7898208147183##CLORIDRATO DE ONDANSETRONA                   2MG/ML SOL INJ CX 50 AMP X 2ML HOSP##1.427,69 
+7896004716732##CLORIDRATO DE OXIBUTININA                    1MG XPE FR 120ML##17,56 
+7896112123354##CLORIDRATO DE OXIMETAZOLINA                  0,25MG SOL NAS 20ML##5,81 
+7896004713717##CLORIDRATO DE OXIMETAZOLINA                  0,25MG SOL NAS FR 20ML##5,78 
+7896004713724##CLORIDRATO DE OXIMETAZOLINA                  0,50MG SOL NAS FR 30ML##8,30 
+7896112123347##CLORIDRATO DE OXIMETAZOLINA                  0,5MG SOL NAS 10ML##4,64 
+7896112123361##CLORIDRATO DE OXIMETAZOLINA                  0,5MG SOL NAS 30ML##8,32 
+7896714225524##CLORIDRATO DE OXIMETAZOLINA                  0,5MG/ML SOL NAS FR 30ML##8,24 
+7896004742182##CLORIDRATO DE PAROXETINA                     20MG 2BL X 10 COMP REV##52,14 
+7896004737119##CLORIDRATO DE PAROXETINA                     20MG 2BL X 15 COMP REV##66,76 
+7896004737126##CLORIDRATO DE PAROXETINA                     20MG CX 2 BLT X 15 COMP REV##66,76 
+7898095346232##CLORIDRATO DE PAROXETINA                     20MG CX 20 COMP REV##52,71 
+7894916141604##CLORIDRATO DE PAROXETINA                     20MG CX 30 COMP REV##66,76 
+7896004726823##CLORIDRATO DE PAROXETINA                     30MG CX 2BL X 15 COMP REV##61,93 
+7898361881016##CLORIDRATO DE PAROXETINA                     20MG CX 10 COMP REV##34,53 
+7891317420321##CLORIDRATO DE PAROXETINA                     20MG CX 20 COMP##55,00 
+7898361881023##CLORIDRATO DE PAROXETINA                     20MG CX 20 COMP REV##70,82 
+7896181908937##CLORIDRATO DE PAROXETINA                     20MG CX 20 COMP REV##52,68 
+7896422515894##CLORIDRATO DE PAROXETINA                     20MG CX 30 COMP##85,03 
+7891317420338##CLORIDRATO DE PAROXETINA                     20MG CX 30 COMP##80,43 
+7896181909347##CLORIDRATO DE PAROXETINA                     20MG CX 30 COMP##77,21 
+7898910350024##CLORIDRATO DE PAROXETINA                     20MG CX 30 COMP REV##37,10 
+7891721274190##CLORIDRATO DE PAROXETINA                     20MG FR 20 COMP REV##57,61 
+7891721274206##CLORIDRATO DE PAROXETINA                     20MG FR 30 COMP REV##84,80 
+7897076909930##CLORIDRATO DE PAROXETINA                     20MG CX 20 COMP##46,89 
+7896112137313##CLORIDRATO DE PAROXETINA                     20MG CX 20 COMP REV##29,52 
+7895296230025##CLORIDRATO DE PAROXETINA                     20MG CX 20 COMP REV##54,42 
+7897076909947##CLORIDRATO DE PAROXETINA                     20MG CX 30 COMP##70,35 
+7896472512591##CLORIDRATO DE PAROXETINA                     20MG CX 30 COMP##44,90 
+7896112129462##CLORIDRATO DE PAROXETINA                     20MG CX 30 COMP REV##44,28 
+7898361881030##CLORIDRATO DE PAROXETINA                     20MG CX 30 COMP REV##36,42 
+7898146821862##CLORIDRATO DE PAROXETINA                     20MG CX 30 COMP REV##43,63 
+7898095346249##CLORIDRATO DE PAROXETINA                     20MG CX 30 COMP REV##44,27 
+7895296230032##CLORIDRATO DE PAROXETINA                     20MG CX 30 COMP REV##77,11 
+7896472512607##CLORIDRATO DE PAROXETINA                     20MG CX 60 COMP##82,49 
+7896006264811##CLORIDRATO DE PETIDINA                       50MG SOL INJ 25AMP X 2ML##41,98 
+8902220109766##CLORIDRATO DE PIOGLITAZONA                   15MG CX 30 COMP##62,00 
+8902220109773##CLORIDRATO DE PIOGLITAZONA                   15MG CX 60 COMP##116,98 
+7895296098021##CLORIDRATO DE PIOGLITAZONA                   15MG FR 15 COMP##34,43 
+8902220109810##CLORIDRATO DE PIOGLITAZONA                   30MG CX 30 COMP##62,42 
+8902220109827##CLORIDRATO DE PIOGLITAZONA                   30MG CX 60 COMP##118,12 
+7895296098090##CLORIDRATO DE PIOGLITAZONA                   30MG FR 15 COMP##51,56 
+7895296098113##CLORIDRATO DE PIOGLITAZONA                   30MG FR 30 COMP##97,39 
+8902220109865##CLORIDRATO DE PIOGLITAZONA                   45MG CX 30 COMP##129,34 
+8902220109872##CLORIDRATO DE PIOGLITAZONA                   45MG CX 60 COMP##244,04 
+7895296098168##CLORIDRATO DE PIOGLITAZONA                   45MG FR 15 COMP##101,97 
+7899547507270##CLORIDRATO DE PROMETAZINA                    25MG CX 120 COMP REV EMB FRAC##28,90 
+7899547505955##CLORIDRATO DE PROMETAZINA                    25MG CX 20 COMP REV##5,18 
+7898148302741##CLORIDRATO DE PROMETAZINA                    25MG CX 500 COMP REV EMB HOSP##56,22 
+7896112166351##CLORIDRATO DE PROMETAZINA                    25MG CX 20 COMP REV##5,19 
+7896112166368##CLORIDRATO DE PROMETAZINA                    25MG CX 200 COMP REV EMB HOSP##48,24 
+7898569761431##CLORIDRATO DE PROPAFENONA                    300MG CX 30 COMP REV##41,77 
+7898569761448##CLORIDRATO DE PROPAFENONA                    300MG CX 60 COMP##71,02 
+7898148305599##CLORIDRATO DE PROPANOLOL                     40MG CX 20 COMP##1,23 
+7898216362431##CLORIDRATO DE PROPANOLOL                     40MG CX 30 COMP##4,10 
+7898216362806##CLORIDRATO DE PROPANOLOL                     40MG CX 500 COMP HOSP##61,85 
+7898216362448##CLORIDRATO DE PROPANOLOL                     80MG CX 30 COMP##6,67 
+7898216362417##CLORIDRATO DE PROPANOLOL                     80MG CX 500 COMP HOSP##100,46 
+7899547502404##CLORIDRATO DE PROPRANOLOL                    40 MG CX 600 COMP  (EMB HOSP)##72,33 
+7899547512731##CLORIDRATO DE PROPRANOLOL                    40 MG COM CT BL AL PLAS OPC X 30##1,84 
+7898089301049##CLORIDRATO DE PROPRANOLOL                    40 MG COM CT BL AL PVC X 30##4,65 
+7898089301025##CLORIDRATO DE PROPRANOLOL                    40 MG COM CT BL AL PVC X 40##6,20 
+7898089301032##CLORIDRATO DE PROPRANOLOL                    40 MG COM CX BL AL PVC X 6000 (EMB HOSP)##911,59 
+7898148305780##CLORIDRATO DE PROPRANOLOL                    40MG CX 270 COMP EMB FRAC##40,48 
+7896006245278##CLORIDRATO DE PROPRANOLOL                    40MG CX 40 COMP##5,30 
+7896004707341##CLORIDRATO DE PROPRANOLOL                    40MG CX 60 COMP##8,93 
+7898148295807##CLORIDRATO DE PROPRANOLOL                    40MG CX 600 COMP EMB HOSP##76,91 
+7896422515511##CLORIDRATO DE PROPRANOLOL                    10MG CX 30 COMP##2,73 
+7896006245247##CLORIDRATO DE PROPRANOLOL                    40MG CX 30 COMP##3,88 
+7896422515535##CLORIDRATO DE PROPRANOLOL                    40MG CX 30 COMP##4,36 
+7896422515559##CLORIDRATO DE PROPRANOLOL                    80MG CX 30 COMP##7,09 
+7898148295777##CLORIDRATO DE PROPRANOLOL                    10MG CX 600 COMP EMB HOSP##45,05 
+7898148295784##CLORIDRATO DE PROPRANOLOL                    40MG CX 20 COMP##1,14 
+7896714205182##CLORIDRATO DE PROPRANOLOL                    40MG CX 30 COMP##4,04 
+7896112110576##CLORIDRATO DE PROPRANOLOL                    40MG CX 30 COMP##4,03 
+7896523210438##CLORIDRATO DE PROPRANOLOL                    40MG CX 30 COMP##4,13 
+7896112149187##CLORIDRATO DE PROPRANOLOL                    40MG CX 40 COMP##5,81 
