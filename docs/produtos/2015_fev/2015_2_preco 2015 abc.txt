@@ -1,0 +1,500 @@
+7897595901927##A A S                                        100MG CX 120 COMP##38,21 
+7897595900593##A A S                                        100MG CX 200 COMP E.M##68,52 
+7897595900029##A A S                                        100MG CX 30 COMP##9,95 
+7897595903693##A A S PROTECT                                100MG CX 30 COMP REV##10,46 
+7896006211808##A CURITYBINA                                 0,1G/ML SOL TOP FA X 5ML##6,54 
+7896006212508##A CURITYBINA                                 280MG/G FR 12 PAST X 13##62,41 
+7896004817477##A SAUDE DA MULHER                            SUS FR 150ML##8,90 
+7891058010362##AAS PROTECT                                  100MG CX 10 COM REV##3,48 
+7896331702545##ABC                                          10MG/G CREME DERM BG 20##8,89 
+7896331702583##ABC                                          10MG/ML SOL SPRAY FR 30ML##22,13 
+7894164004928##ABCALCIUM B12                                12UI+42+7,5+0,075MG+1,5MCG SUS OR FR 200ML+CM##16,98 
+7894164000418##ABCLER                                       10+50+100MG/ML SOL OR CX 12FLAC X 10ML##20,62 
+7894164000388##ABCLER                                       10+50+100MG/ML SOL OR CX 60FLAC X 10ML##96,67 
+7894164004904##ABCLER                                       10+50+100MG/ML SOL OR FR 120ML+COP##17,29 
+7898906376489##ABELCET                                      5 MG/ML SUS INJ IV 1FA X20 ML AGU 5##2.276,73 
+7898906376489##ABELCET                                      5MG/ML SUS INJ 1FAX20ML+AGU##2.276,73 
+7896016806322##ABILIFY                                      10MG CX 10 COMP##153,44 
+7896016806001##ABILIFY                                      15MG CX 30 COMP##690,47 
+7896241225530##ABLOK                                        100MG CX 30 COMP##25,00 
+7896241221853##ABLOK                                        25MG CX 30 COMP##9,72 
+7896241225523##ABLOK                                        50MG CX 30 COMP##15,29 
+7896241225547##ABLOK PLUS                                   100+25MG CX 30 COMP##32,57 
+7896112411437##ABLOK PLUS                                   100+25MG CX 60 COMP##65,16 
+7896112419778##ABLOK PLUS                                   100+25MG CX 90 COMP##97,74 
+7896241225257##ABLOK PLUS                                   25+12,5MG CX 30 COMP##10,95 
+7896112411529##ABLOK PLUS                                   25+12,5MG CX 60 COMP##21,85 
+7896112419730##ABLOK PLUS                                   25+12,5MG CX 60 COMP##32,82 
+7896241225127##ABLOK PLUS                                   50+12,5MG CX 30 COMP##20,20 
+7896112411512##ABLOK PLUS                                   50+12,5MG CX 60 COMP##40,39 
+7896112419761##ABLOK PLUS                                   50+12,5MG CX 90 COMP##60,60 
+7898040321642##ABRILAR                                      65MG PO EFV 10 SACHES X 3,4##28,81 
+7898040320973##ABRILAR                                      7MG XPE FR 100ML+CM##27,94 
+7898040321970##ABRILAR                                      7MG XPE FR 200ML+CM##46,56 
+7898040322878##ABRILAR                                      7MG/ML SOL ORAL CX 21 ENV X 5ML##30,26 
+7896181900191##ACARSAN                                      25% SOL FR 80ML##7,47 
+7896658000010##ACCUVIT                                      CX 30 COMP REV##62,03 
+7898148292905##ACEBROFILINA                                 10MG XPE CX 50 FR X 120ML+50CM EMB HOSP##553,81 
+7896714214146##ACEBROFILINA                                 10MG XPE FR 120ML ADU##16,39 
+7898148292851##ACEBROFILINA                                 10MG/ML XPE FR 120ML+CM##16,38 
+7896004710464##ACEBROFILINA                                 25MG FR 120ML+CM##12,10 
+7894916140492##ACEBROFILINA                                 25MG XPE FR 120ML##12,94 
+7896004710488##ACEBROFILINA                                 25MG/5ML XPE FR 120ML##12,27 
+7896004710495##ACEBROFILINA                                 50 MG XPE FR 120ML##16,72 
+7896004710471##ACEBROFILINA                                 50MG FR 120ML+CM##17,07 
+7894916140485##ACEBROFILINA                                 50MG XPE FR 120ML##16,63 
+7898148292790##ACEBROFILINA                                 5MG XPE CX 50 FR 120ML+50CM EMB HOSP##369,18 
+7896714214115##ACEBROFILINA                                 5MG XPE FR 120ML INF##12,08 
+7898148292745##ACEBROFILINA                                 5MG/ML XPE FR 120ML+CM##12,07 
+7896523209098##ACEBROFILINA                                 10MG XPE CX 50X 20ML+50CP EMB HOSP##296,34 
+7896422509244##ACEBROFILINA                                 10MG XPE FR 120ML+DOS##17,05 
+7896006205593##ACEBROFILINA                                 10MG/ML XPE FR 120ML+COP##15,96 
+7896181924098##ACEBROFILINA                                 25MG/5ML XPE FR PETX120ML##11,73 
+7896181924081##ACEBROFILINA                                 50MG XPE FR 120ML PET##16,59 
+7896422509251##ACEBROFILINA                                 5MG XPE FR 120ML+DOS##12,09 
+7896523209104##ACEBROFILINA                                 5MG/ML XPE CX 50 FR X 120ML+50CP MED EMB HOSP##286,47 
+7896006259152##ACEBROFILINA                                 5MG/ML XPE FR 120ML+SER DOS##15,87 
+7899095233027##ACEBROFILINA                                 10MG XPE FR 120ML ADU##19,01 
+7898148292882##ACEBROFILINA                                 10MG/ML XPE 50FR X 120ML+50CM HOSP##463,51 
+7891317002695##ACEBROFILINA                                 10MG/ML XPE FR 120ML +CM##17,09 
+7896523209111##ACEBROFILINA                                 10MG/ML XPE FR 120ML+CM##10,40 
+7896112159070##ACEBROFILINA                                 10MG/ML XPE FR 120ML+CM##16,92 
+7895296271042##ACEBROFILINA                                 25MG/5ML XPE FR 120ML+CM##11,57 
+7895296271035##ACEBROFILINA                                 50MG+5ML XPE FR 120ML+CM##16,28 
+7899095233034##ACEBROFILINA                                 5MG XPE FR 120ML PED##12,84 
+7898148292776##ACEBROFILINA                                 5MG/ML XPE 50FR X 120ML+50CM HOSP##308,99 
+7891317002688##ACEBROFILINA                                 5MG/ML XPE FR 120ML +CM##12,11 
+7896523209128##ACEBROFILINA                                 5MG/ML XPE FR 120ML+CM##9,77 
+7896112159049##ACEBROFILINA                                 5MG/ML XPE FR 120ML+CM##12,11 
+7896004722726##ACECLO-GRAN                                  100MG CX 12 COMP REV##17,87 
+7896004722122##ACECLOFENACO                                 100MG CX 2BL X 6 COMP REV##18,63 
+7896004722146##ACECLOFENACO                                 100MG CX 2BL X 6 COMP REV##18,93 
+7894916144803##ACECLOFENACO                                 100MG CX 2BL X 6 COMP REV##17,87 
+7896004722153##ACECLOFENACO                                 100MG CX 4BL X 6 COMP REV##34,85 
+7896004716534##ACECLOFENACO                                 15MG CREME DERM BG 30##13,74 
+7896004716541##ACECLOFENACO                                 CREME BG 30##13,74 
+7896472505883##ACECLOFENACO                                 100MG CX 12 COMP##18,94 
+7898049795277##ACECLOFENACO                                 100MG CX 16 COMP REV##26,73 
+7898049795284##ACECLOFENACO                                 100MG CX 24 COMP REV##40,08 
+7897076909312##ACECLOFENACO                                 100MG CX 12 COMP##18,67 
+7895296118064##ACECLOFENACO                                 100MG CX 12 COMP##18,53 
+7898049795260##ACECLOFENACO                                 100MG CX 12 COMP REV##20,05 
+7897076909343##ACECLOFENACO                                 100MG CX 24 COMP##34,91 
+7895296118088##ACECLOFENACO                                 100MG CX 24 COMP##34,85 
+7893454300115##ACERATUM                                     SOL FR 10ML##10,79 
+7896622303642##ACEROGRIP C                                  1G TB 10 COMP EFV##41,20 
+7898029550247##ACERTIL                                      10 MG CX CT TB PLAST X 30##88,61 
+7896714241821##ACETATO CIPROTERONA+ETINILESTRADIOL          2,0+0,035MG CX 21 COMP REV##11,07 
+7898149934514##ACETATO DE CIPROTERONA                       50MG CX 20 COMP##65,46 
+7898907313858##ACETATO DE CIPROTERONA+ETINILESTRADIOL       2,0+0,035MG CX 21 COMP REV##11,07 
+7898907313872##ACETATO DE CIPROTERONA+ETINILESTRADIOL       2,0+0,035MG CX 63 COMP REV##23,58 
+7896422515399##ACETATO DE CLOSTEBOL+SULFATO DE NEOMICINA    5+5MG CREM DERM BG 30##15,61 
+7896422515405##ACETATO DE CLOSTEBOL+SULFATO DE NEOMICINA    5+5MG CREM VAG BG 45G+8APLIC##26,63 
+7898149934910##ACETATO DE DESMOPRESSINA                     0,1MG/ML SOL NAS FA X 2,5 ML##111,35 
+7896004721903##ACETATO DE DEXAMETASONA                      1G CREME DERM BG 10##5,40 
+7896004721897##ACETATO DE DEXAMETASONA                      1MG CREME DERM BG 10##5,40 
+7898148294602##ACETATO DE DEXAMETASONA                      1MG/G CREME DERM 100BG X 10G HOSP##350,80 
+7898148294596##ACETATO DE DEXAMETASONA                      1MG/G CREME DERM BG 10##5,37 
+7896006267010##ACETATO DE DEXAMETASONA                      1MG CREME DERM BG 10##4,78 
+7896112123026##ACETATO DE DEXAMETASONA                      1MG CREME DERM BG 10##5,35 
+7899095232372##ACETATO DE DEXAMETASONA                      1MG CREME DERM BG 10##5,01 
+7896523210698##ACETATO DE DEXAMETASONA                      1MG/G CREM DERM BG 10##5,16 
+7896006267072##ACETATO DE HIDROCORTISONA                    10MG CREME DERM BG 20##6,72 
+7896112132936##ACETATO DE HIDROCORTISONA                    10MG CREME DERM BG 15##6,32 
+7896112132974##ACETATO DE HIDROCORTISONA                    10MG CREME DERM BG 30##11,41 
+7899095230293##ACETATO DE PREDNISOLONA                      10MG SUS OFT FR 5ML##16,70 
+7896548138281##ACETATO DE PREDNISOLONA                      10MG SUS OFT FR GTS 5ML##15,67 
+7897732601932##ACETAZONA                                    0,1MG/ML FR 120ML##8,40 
+7897732601727##ACETAZONA                                    1MG/G CREME DERM BG 10##6,45 
+7893736023766##ACETICIL                                     100MG CX 20 COMP##6,53 
+7893736007527##ACETICIL                                     100MG CX 200 COMP##20,35 
+7893736027525##ACETICIL                                     500MG CX 20 COMP##9,38 
+7893736013764##ACETICIL                                     500MG CX 500 COMP##75,39 
+7898148297986##ACETILCISTEINA                               120MG/G GRAN 200 ENV X 5G E.M##259,83 
+7898148297979##ACETILCISTEINA                               120MG/G GRAN CX 16 ENV X 5##32,32 
+7898148298068##ACETILCISTEINA                               20MG/G GRAN 16 ENV X 5##13,38 
+7898148296620##ACETILCISTEINA                               20MG/ML XPE FR 100ML+CM##15,41 
+7898148296637##ACETILCISTEINA                               20MG/ML XPE FR 150ML+CM##15,66 
+7898148296606##ACETILCISTEINA                               40MG XP FR 120 ML CM##20,12 
+7898148299577##ACETILCISTEINA                               40MG/G GRAN 16 ENV X 5##14,85 
+7894916143899##ACETILCISTEINA                               100MG CX 10 ENV X 5##8,95 
+7896004719979##ACETILCISTEINA                               100MG GRAN 10ENV X 5##8,41 
+7896004708706##ACETILCISTEINA                               200MG CX 16 ENV X 5##14,57 
+7896004719986##ACETILCISTEINA                               200MG GRAN 10ENV X 5##8,92 
+7898095340414##ACETILCISTEINA                               20MG XPE FR 100ML+CM##11,87 
+7896004715292##ACETILCISTEINA                               20MG XPE FR 120ML INF##16,54 
+7896004715285##ACETILCISTEINA                               20MG XPE FR 120ML INF##14,93 
+7894916143400##ACETILCISTEINA                               20MG XPE FR 120ML INF##15,98 
+7896004713366##ACETILCISTEINA                               40MG XPE FR 120ML ADU##21,63 
+7896004713373##ACETILCISTEINA                               40MG XPE FR 120ML ADU##19,91 
+7894916142656##ACETILCISTEINA                               40MG XPE FR 120ML ADU##21,74 
+7894916143912##ACETILCISTEINA                               600MG CX 10 ENV X 5##22,32 
+7894916142632##ACETILCISTEINA                               600MG CX 16 ENV X 5##27,84 
+7896004713342##ACETILCISTEINA                               600MG GRAN 16 ENV X 5##28,10 
+7896006259732##ACETILCISTEINA                               10% SOL INJ 5AMP X 3ML##10,15 
+7896014655007##ACETILCISTEINA                               100MG 5AMP X 3ML##10,08 
+7891317448158##ACETILCISTEINA                               100MG CX 30 ENV X 5G  EMB FRAC##25,50 
+7896014655014##ACETILCISTEINA                               100MG INJ 100AMP X 3ML EMB. HOSP.##201,51 
+7891317448165##ACETILCISTEINA                               200MG CX 30 ENV X 5G EMB FRAC##28,45 
+7896006210221##ACETILCISTEINA                               20MG XPE FR 120ML##16,49 
+7891317448172##ACETILCISTEINA                               600MG CX 30 ENV X 5G EMB FRAC##63,35 
+7891317001056##ACETILCISTEINA                               100MG CX 16 SACHES X 5##14,96 
+7891317001063##ACETILCISTEINA                               200MG CX 16 SACHES X 5##16,69 
+7898148296613##ACETILCISTEINA                               20MG XPE CX 50 FR X 80ML##341,10 
+7891317001940##ACETILCISTEINA                               20MG XPE FR 100ML##16,70 
+7899095233805##ACETILCISTEINA                               20MG XPE FR 120ML INF##13,98 
+7891317002176##ACETILCISTEINA                               20MG XPE FR 150ML##18,86 
+7896112158882##ACETILCISTEINA                               20MG/ML XPE FR 120ML+CM##17,18 
+7899095233799##ACETILCISTEINA                               40MG XPE FR 120ML ADU##20,77 
+7896112158981##ACETILCISTEINA                               40MG/ML XPE FR 120ML+CM##22,47 
+7891317001070##ACETILCISTEINA                               600MG CX 16 SACHES X 5##37,17 
+7898148298075##ACETILCISTEINA                               20MG CX 200 X 5G E.M.##107,48 
+7898148299584##ACETILCISTEINA                               40MG CX 200 X 5G E.M.##120,82 
+7897732696129##ACETILDOR                                    CX 200 COMP INF##16,61 
+7896004708768##ACETO+TRIA+SULF+NEOMICINA+GRAMICIDINA+NISTATI1+2,5+0,25MG+100MUI CREME BG 30##17,89 
+7896004715698##ACETOFLUX                                    10MG CX 5 COMP##6,57 
+7896004712048##ACETONIDA DE TRIANCINOLONA                   1MG POM BG 10##7,45 
+7899095230026##ACETONIDA DE TRIANCINOLONA                   1MG POM BG 10##8,39 
+7896004713625##ACETONIDO DE ALGESTONA+ENANTATO DE ESTRADIOL 150+10MG INJ AMP X 1ML##6,74 
+7896004713618##ACETONIDO DE ALGESTONA+ENANTATO DE ESTRADIOL 150+10MG SOL INJ AMP X 1ML##6,85 
+7891317445300##ACETONIDO DE ALGESTONA+ENANTATO DE ESTRADIOL SOL INJ 1ML##6,80 
+7894916141734##ACETONIDO DE TRIANCINOLONA                   1MG BG 10##7,37 
+7898148293490##ACETONIDO DE TRIANCINOLONA                   1MG/G POM BUCAL BG 10##7,32 
+7896004712031##ACETONIDO TRIANCINOLONA                      1MG POM BG 10##7,42 
+7893736003291##ACFOL                                        5MG CX 40 COMP##7,18 
+7893736013689##ACFOL                                        5MG SOL FR GTS 10ML##6,14 
+7896658006432##ACHEFLAN                                     5MG CREME BG 30##21,85 
+7896658006920##ACHEFLAN                                     AER FR 54##29,10 
+7896658007170##ACHEFLAN                                     CREME BG 60##37,13 
+7897917000871##ACICLOFAR                                    200MG CX 25 COMP##49,80 
+7897917000864##ACICLOFAR                                    50MG CREME BG 10##16,44 
+7896523200637##ACICLOMED                                    50MG CREME DERM BG 10##9,30 
+7896331702279##ACICLOR                                      50MG/G CREME DERM BG 10##16,12 
+7896014674701##ACICLOVIR                                    50MG CREME DERM BG 10##17,25 
+7898095340131##ACICLOVIR                                    200MG CX 10 COMP##43,08 
+7896714205748##ACICLOVIR                                    200MG CX 25 COMP##63,96 
+7898095340155##ACICLOVIR                                    200MG CX 25 COMP##78,12 
+7899547503067##ACICLOVIR                                    200MG CX 280 COMP EMB FRAC##368,08 
+7898148298372##ACICLOVIR                                    200MG CX 30 COMP##63,30 
+7898148298396##ACICLOVIR                                    200MG CX 450 COMP HOSP##591,98 
+7898148299324##ACICLOVIR                                    50MG CREM DERM CX 100 BG X 10G HOSP##1.093,49 
+7896714203096##ACICLOVIR                                    50MG CREME BG 10##13,93 
+7896006225874##ACICLOVIR                                    50MG CREME BG 10##17,91 
+7896004714011##ACICLOVIR                                    50MG CREME BG 10##13,31 
+7894916143295##ACICLOVIR                                    50MG CREME DERM BG 10##14,63 
+7898148299317##ACICLOVIR                                    50MG/G CREME DERM BG 10##13,29 
+7896004715933##ACICLOVIR                                    CREME BG 10##15,08 
+7896181918189##ACICLOVIR                                    200MG BL 25 COMP##63,93 
+7897595602626##ACICLOVIR                                    200MG CX 25 COMP##63,24 
+7896658012266##ACICLOVIR                                    200MG CX 25 COMP##63,93 
+7891721023477##ACICLOVIR                                    200MG FR 25 COMP##71,43 
+7897595603494##ACICLOVIR                                    400MG CX 30 COMP##120,58 
+7891721023484##ACICLOVIR                                    400MG FR 30 COMP##129,81 
+7896658011535##ACICLOVIR                                    50MG CREM DERM BG 10##13,33 
+7896181901143##ACICLOVIR                                    50MG CREM DERM X 10##13,32 
+7896472502981##ACICLOVIR                                    50MG CREME BG 10##12,88 
+7891721200915##ACICLOVIR                                    50MG CREME DERM BG 10##12,58 
+7897595608758##ACICLOVIR                                    50MG CREME DERM BG 10##16,22 
+7898158696335##ACICLOVIR                                    50MG/G CREM DERM BG 10##13,87 
+7896422505741##ACICLOVIR                                    CREME DERM BG 10##14,67 
+7897076907400##ACICLOVIR                                    200MG CX 10 COMP##21,45 
+7895296217026##ACICLOVIR                                    200MG CX 10 COMP##42,78 
+7897076907417##ACICLOVIR                                    200MG CX 25 COMP##44,69 
+7896112128762##ACICLOVIR                                    200MG CX 25 COMP##59,53 
+7895296217019##ACICLOVIR                                    200MG CX 25 COMP##74,11 
+7897076907424##ACICLOVIR                                    400MG CX 10 COMP##42,90 
+7897076907431##ACICLOVIR                                    400MG CX 25 COMP##89,38 
+7896676405835##ACICLOVIR                                    50MG CREME DERM BG 10##13,30 
+7899095202092##ACICLOVIR                                    50MG CREME DERM BG 10##13,96 
+7897917002820##ACICLOVIR                                    50MG/G CREM DERM BG X 10##18,23 
+7896112128847##ACICLOVIR                                    50MG/G CREME DERM BG 10##12,86 
+7896523207629##ACICLOVIR                                    50MG/G CREME DERM BG 10##9,77 
+7895296269018##ACICLOVIR                                    50MG/G CREME DERM BG 10##14,95 
+7898049794423##ACIDINA                                      FR 240ML##24,71 
+7896004713182##ACIDO ACETILSALICILICO                       100MG CX 100 COMP##17,78 
+7896004710907##ACIDO ACETILSALICILICO                       100MG CX 200 COMP##32,76 
+7896004710891##ACIDO ACETILSALICILICO                       100MG CX 30 COMP##5,17 
+7896004722849##ACIDO ACETILSALICILICO                       300MG CX 3BL X 10 COMP REV##21,01 
+7896004703572##ACIDO ACETILSALICILICO                       500MG DISPLAY 200 COMP##31,72 
+7898920244016##ACIDO ACETILSALICILICO                       100MG CX 20 COMP##2,88 
+7898920244023##ACIDO ACETILSALICILICO                       100MG CX 200 COMP##28,66 
+7896523208084##ACIDO ACETILSALICILICO                       100MG CX 200 COMP E.M##32,85 
+7896523208091##ACIDO ACETILSALICILICO                       500MG CX 100 COMP E.M##19,62 
+7898920244047##ACIDO ACETILSALICILICO                       500MG CX 20 COMP##2,82 
+7898920244054##ACIDO ACETILSALICILICO                       500MG CX 200 COMP##28,38 
+7896714208206##ACIDO FUSIDICO                               20MG CREME BG 15##22,58 
+7898148298501##ACIDO FUSIDICO                               20MG/G CREM DERM CT BG X 15##22,58 
+7896004726885##ACIDO FUSIDICO+VAL BETAMETASONA              20+1MG CREME DERM BG 15##29,94 
+7894916145633##ACIDO FUSIDICO+VAL BETAMETASONA              20+1MG CREME DERM BG 15##29,93 
+7895296034029##ACIDO FUSIDICO+VAL DE BETAMETASONA           20+1MG/G CREME DERM BG 15##29,83 
+7896004720869##ACIDO MEFENAMICO                             500MG CX 24 COMP##11,66 
+7896004720876##ACIDO MEFENAMICO                             500MG CX 24 COMP##11,69 
+7894916144261##ACIDO MEFENAMICO                             500MG CX 2BL X 12 COMP##11,69 
+7896422516877##ACIDO MEFENAMICO                             500MG CX 12 COMP##5,82 
+7896422517195##ACIDO MEFENAMICO                             500MG CX 24 COMP##11,66 
+7896181911517##ACIDO MEFENAMICO                             500MG CX 24 COMP##11,37 
+7896242101390##ACIDO TRANEXAMICO                            50MG SOL INJ CX 5 AMP X 5ML##9,40 
+7896242142287##ACIDO TRANEXAMICO                            50MG SOL INJ CX 50 AMP X 5ML##188,12 
+7894916144971##ACIDO TRANEXAMICO                            250MG CX 12 COMP##25,24 
+7896004723020##ACIDO TRANEXAMICO                            250MG CX 1BL X 12 COMP##25,24 
+7896014670055##ACIDO TRANEXAMICO                            50MG/ML SOL INJ CX 5 AMP X 5 ML##10,44 
+7896014670062##ACIDO TRANEXAMICO                            50MG/ML SOL INJ CX 50AMP X 5ML##208,75 
+7891317459222##ACIDO ZOLEDRONICO                            4MG SOL INJ FA X 5ML##708,06 
+7896241232903##ACINIC                                       500MG CX 30 COMP##35,22 
+7896241232958##ACINIC                                       750MG LP X 30 COMP##31,74 
+7898495604727##ACIVIRAX                                     200MG CX 25 COMP##41,58 
+7898158693556##ACIVIRAX                                     50MG CREME DERM BG 10##11,98 
+7898549753425##ACNASE                                       ACNASE CLEAN GEL CREME X 50##40,29 
+7898549756013##ACNASE                                       ACNASE CLEAN MOUSSE LIMP X 150ML##37,99 
+7896082900412##ACNASE                                       CLEAN CREME 20##27,88 
+7896082900351##ACNASE                                       CREME 25GR##21,68 
+7896082900047##ACNASE                                       GEL 20##20,06 
+7896082900405##ACNASE                                       GEL ESFOLIANTE 80##15,76 
+7896082900504##ACNASE                                       LAPISEIRA SECATIVA 0,3##10,23 
+7896082900856##ACNASE                                       LENCOS UMED X 16##9,51 
+7896082900399##ACNASE                                       LOCAO ADSTRINGENTE 130ML##14,15 
+7896082900054##ACNASE                                       SABONETE 110##6,01 
+7896082900436##ACNASE                                       SABONETE LIQUIDO 200ML##15,92 
+7896082900382##ACNASE                                       SHAMPOO DE ENXOFRE 130ML##11,22 
+7898549756624##ACNASE CLEAN                                 SAB ANTIACNEICO BARRA X 80##6,23 
+7898549756617##ACNASE CLEAN                                 SAB ESFOLIANTE BARRA X 80##6,23 
+7898549756631##ACNASE CLEAN                                 SAB LIMPEZA PROFUNDA BARRA X 80##6,23 
+7898495600255##ACNEE LOSS                                   50MG/G GEL BG 20##15,13 
+7896112182764##ACNEFIN                                      50MG/G GEL BG 20##16,24 
+7896523208282##ACNEZIL                                      50MG/G GEL BG 20##13,02 
+7896523208824##ACNEZIL BASE                                 100MG/G BG X 10##22,97 
+7896004734057##ACNOVA                                       10MG 6BL X 5 CAP##48,51 
+7896004734064##ACNOVA                                       20MG 6BL X 5 CAPS##89,56 
+7896226505855##ACTEMRA                                      20MG SOL INJ CX 1FA X 4ML##532,44 
+7896226505879##ACTEMRA                                      20MG/ML SOL INJ CX 1FA X 10ML##1.331,11 
+7898040320782##ACTIFEDRIN                                   2,5+60MG CX 20 COMP##6,99 
+7898040320799##ACTIFEDRIN                                   6+0,25MG XPE FR 100ML##7,26 
+7896023793295##ACTIVE BLOC                                  FPS 15 FR 120ML##18,26 
+7896023793301##ACTIVE BLOC                                  FPS 30 FR 120ML##21,37 
+7896023793608##ACTIVE BLOC                                  FPS 30 FR 120ML  KIDS##24,75 
+7896023793615##ACTIVE BLOC                                  FAMILY FPS 30 FR 480ML##56,60 
+7896023793400##ACTIVE BLOC                                  BRONZEADOR FPS 2 FR 120ML##17,89 
+7891317480738##ACTIVELLE                                    1+0,5MG CX 28 COMP REV##32,80 
+7891058004217##ACTONEL                                      150MG CX 1 COMP REV (UMA VEZ AO MES)##103,20 
+7891058019259##ACTONEL                                      35MG CX 4 COMP REV (UMA VEZ POR SEMANA)##103,20 
+7891058016142##ACTONEL CHRONOS                              35MG CX 2 COMP REV LIB RETARD##53,70 
+7891058016159##ACTONEL CHRONOS                              35MG CX 4 COMP REV LIB RETARD##107,40 
+7891158042287##ACTOS                                        15MG FR 15 COMP##50,42 
+7891158042294##ACTOS                                        30MG FR 15 COMP##53,34 
+7891158042300##ACTOS                                        45MG FR 15 COMP##104,16 
+7898040323332##ACTSUN                                       FPS 30##25,12 
+7898040323301##ACTSUN                                       FPS 30##30,15 
+7898040323318##ACTSUN                                       FPS 30 FACIAL##21,54 
+7898040323325##ACTSUN                                       FPS 45##28,38 
+7898040323332##ACTSUN                                       FPS 60##25,47 
+7898040323332##ACTSUN                                       FPS 60##30,56 
+7898040323295##ACTSUN                                       FPS 60 COLOR##27,64 
+7897316800027##ACULAR                                       0,5% SOL OFT 5ML##39,84 
+7897316805572##ACULAR CMC                                   0,45% CX 10 FLAC##28,67 
+7897316805589##ACULAR CMC                                   0,45% CX 20 FLAC##57,36 
+7897316805596##ACULAR CMC                                   0,45% CX 30 FLAC##86,03 
+7897316804742##ACULAR LS                                    0,40% FR 10ML##63,72 
+7897316804735##ACULAR LS                                    0,40% FR 5ML##31,87 
+7896112452461##AD-MUC                                       POM 10##19,10 
+7896641800627##AD-TIL                                       SOL FR 10ML##5,14 
+7896641808609##AD-TIL                                       SOL FR 20ML##10,29 
+7897473201637##ADACNE                                       1,0MG GEL BG 30##23,37 
+7897473201798##ADACNE CLIN                                  1 MG GEL BG 30##24,18 
+7897473205741##ADACNE CLIN                                  1+10MG GEL BG 45##34,74 
+7897473206724##ADACNE SEC                                   BARRA 90##23,87 
+7891106000918##ADALAT                                       10MG FR 60 CAP##23,99 
+7891106904094##ADALAT OROS                                  20MG 30 COMP##94,84 
+7891106002370##ADALAT OROS                                  20MG FR 15 COMP##44,03 
+7891106903936##ADALAT OROS                                  30MG CX 30 COMP##115,87 
+7891106000932##ADALAT OROS                                  30MG FR 15 COMP##57,95 
+7891106903943##ADALAT OROS                                  60MG CX 30 COMP##170,67 
+7891106000949##ADALAT OROS                                  60MG FR 15 COMP##85,32 
+7891106001588##ADALAT RETARD                                10MG FR 30 COMP##16,66 
+7891106000925##ADALAT RETARD                                20MG FR 30 COMP##24,69 
+7896004712727##ADAPALENO                                    1MG GEL BG 30##37,27 
+7896004712697##ADAPALENO                                    1MG GEL BG 30##35,99 
+7894916142212##ADAPALENO                                    1MG GEL BG 30##35,99 
+7896422515122##ADAPALENO                                    1MG GEL BG 30##31,69 
+7896181911432##ADAPALENO                                    1MG GEL DERM BG 30##34,83 
+7896422518321##ADAPEL                                       1MG GEL BG 20##21,11 
+7896641810275##ADCETRIS                                     50MG PO LIOF CX 1FA##13.891,75 
+7897322709420##ADDERA D3                                    1.000UI COMP REV X 30##27,61 
+7897322709529##ADDERA D3                                    50.000UI COMP REV X 4##83,50 
+7897322709468##ADDERA D3                                    7.000UI COMP REV X 4##25,76 
+7897322707617##ADDERA D3                                    SOL OR FR GTS 10ML##32,21 
+7896004702070##ADEDERME                                     POM BG 45##9,97 
+7890282800022##ADEFORTE                                     SOL OR FR GTS 15ML##33,95 
+7890282800015##ADEFORTE                                     SOL ORAL CX 1AMP X 3ML##6,22 
+7890282800176##ADEFORTE                                     SOL ORAL CX 25AMP X 3ML##145,74 
+7896094200418##ADENOCARD                                    3MG/ML SOL INJ CX 2 AMP X 2ML##36,58 
+7896094200425##ADENOCARD                                    3MG/ML SOL INJ CX 50 AMP X 2ML##644,25 
+7896360001152##ADEPLEX PLUS                                 FR 20ML##17,90 
+7896185955005##ADEROGIL                                     5500+2200UI/ML SOL OR FR GTS 10ML##5,91 
+7896658003165##ADINOS                                       0,5MG GEL CREM BG 15##8,91 
+7896658002960##ADINOS                                       0,5MG GEL CREM BG 30##16,80 
+7896658011030##ADINOS GEN                                   0,5+1,0MG/G GEL CREM BG 15##10,37 
+7896658011412##ADINOS GEN                                   0,5+1,0MG/G GEL CREME BG 30##20,54 
+7896658021671##ADIPEPT                                      20MG CX 14 COMP REV##17,59 
+7896658021688##ADIPEPT                                      20MG CX 28 COMP REV##30,13 
+7896658021664##ADIPEPT                                      20MG CX 7 COMP REV##9,78 
+7896658021725##ADIPEPT                                      40MG CX 14 COMP REV##17,59 
+7896658021732##ADIPEPT                                      40MG CX 28 COMP REV##30,13 
+7896658021718##ADIPEPT                                      40MG CX 7 COMP REV##9,78 
+7896094901100##ADNAX                                        1+0,5MG SOL NAS FR 20ML ADU##8,90 
+7898040320683##ADOLESS                                      0,060+0,015MG CX 28 COMP REV##22,13 
+7895858003159##ADRECON                                      1MG/G CREM DERM 100BGX10G EMB HOSP##681,31 
+7895858003142##ADRECON                                      1MG/G CREM DERM BG 10##6,80 
+7891268100112##ADRIBLASTINA RD                              10MG PO LIOF INJ CX 1FA HOSP##43,55 
+7891268100136##ADRIBLASTINA RD                              50MG PO LIOF INJ CX 1FA HOSP##180,95 
+7795320050127##ADVANTAN                                     1MG/G CREME 15##35,12 
+7795320050646##ADVANTAN                                     1MG/G LOCAO FR 20##44,98 
+7891106910712##ADVANTAN                                     1MG/ML SOL GT 20ML##48,09 
+7891045038386##ADVIL                                        200MG CX 2BL X 10 COMP##15,53 
+7891045040501##ADVIL                                        200MG CX 50BL X 2 COMP##77,71 
+7891045040587##ADVIL                                        400MG CX 12BL X 3 CAP##53,34 
+7891045043595##ADVIL                                        400MG CX 2BL X 10 CAP##26,40 
+7891045040426##ADVIL                                        400MG CX 8 CAP (IMP)##11,73 
+7891045043564##ADVIL                                        400MG CX 8 CAP (NAC)##11,73 
+7891045043601##ADVIL                                        400MG CX 8+2 CAP##12,32 
+7891045043588##ADVIL                                        400MG FR 16 CAP##23,47 
+7897473201378##AEROCORT S                                   50+100MCG AER BUC FR 200 DOS##26,91 
+7896112154365##AERODINI                                     100MCG AER+ESPAC FR 200 DOS##21,74 
+7896112147640##AERODINI                                     100MCG SPRAY AER FR 200 DOS##22,82 
+7896269900013##AEROFLUX                                     2+100MG/5ML SOL EDUL FR 120ML##10,43 
+7898014561333##AEROFRIN                                     100MCG AER 200 JATOS##20,52 
+7898014560336##AEROFRIN                                     XPE FR 120ML##6,26 
+7897473201071##AEROGOLD                                     100MCG PO AER INAL FR 200 DOS##21,15 
+7896672201912##AEROJET                                      SPRAY C/ESPACADOR X 200 DOS##21,92 
+7896672202445##AEROJET                                      SPRAY X 200 DOS##18,63 
+7896269900051##AEROLIN                                      0,5MG SOL INJ 5AMP X 1ML##9,00 
+7896015522506##AEROLIN                                      1MG SOL NEB CX 20 AMP X 2,5ML##10,36 
+7896269900037##AEROLIN                                      2MG CX 20 COMP##3,06 
+7896269900075##AEROLIN                                      2MG/5ML XPE FR 120ML SUGARFREE##6,43 
+7896269900044##AEROLIN                                      4MG CX 20 COMP##4,51 
+7896269900068##AEROLIN                                      5MG SOL NEB NAS FR 10ML##10,36 
+7896269900150##AEROLIN                                      SPRAY 200DOS##24,06 
+7896015521370##AEROLIN                                      SPRAY 200DOS+ESPACADOR##24,06 
+7896862980047##AEROMED                                      2MG/5ML XPE FR 120ML##6,44 
+7898078941539##AEROTAMOL                                    XPE FR 120ML##7,00 
+7893736010237##AEROTRAT                                     2MG CX 20 COMP##2,90 
+7893736013504##AEROTRAT                                     2MG/5ML XPE FR 100ML##5,70 
+7896261016545##AFINITOR                                     10MG CX 30 COMP##10.343,96 
+7896261018075##AFINITOR                                     2,5MG CX 30 COMP##2.585,95 
+7896261016538##AFINITOR                                     5MG CX 30 COMP##5.171,98 
+7896112141846##AFOPIC                                       5MG CX 20 COMP##5,79 
+7891142113375##AFRIN                                        6,5+0,25MG SOL NAS FR 30ML##7,15 
+7891142113269##AFRIN                                        0,250MG FR 20ML PED##8,93 
+7891142113306##AFRIN                                        0,250MG SOL OFT FR 20ML##2,36 
+7891142113153##AFRIN                                        0,5MG 12H FR 10ML ADU##7,12 
+7891142113160##AFRIN                                        0,5MG 12H FR 30ML ADU##12,81 
+7898158690517##AFTINE                                       15+25+1+15MG SUS OR FR 20ML##16,12 
+7897299900127##AFTJET                                       100MG SOL TOP GTS 30ML##15,87 
+7896261002067##AGASTEN                                      0,05MG XPE FR 120ML##9,54 
+7896261002050##AGASTEN                                      1MG CX 15 COMP##15,78 
+7898495605014##AGE D OR                                     NUTRIOX ANTIOXIDANTE FR 30 CAP##79,90 
+7898495605526##AGE D OR                                     CART C/ 1 BISN POLIETILENO 150##48,99 
+7898495603560##AGE D OR                                     HIDRADANTE PARA MAOS FPS15 BG 60##27,57 
+7898495603249##AGE D OR                                     HIDRATANTE REPARADOR DA PELE BG 60##34,34 
+7898495603003##AGE D OR                                     SABONETE INTIMO FR 150ML##25,41 
+7896641801488##AGIOLAX                                      TB 100##53,36 
+7896641801495##AGIOLAX                                      TB 250##113,86 
+7894916507691##AGLITIL                                      15MG FR X 15 COMP##20,17 
+7894916507707##AGLITIL                                      30MG FR X 15 COMP##30,89 
+7894916508421##AGLITIL                                      30MG FR X 30 COMP##61,76 
+7894916507714##AGLITIL                                      45MG FR X 15 COMP##59,87 
+7894916503761##AGLUCOSE                                     100MG CX 30 COMP##28,63 
+7894916503754##AGLUCOSE                                     50MG CX 30 COMP##18,86 
+7895858005849##AGRASTAT                                     0,25MG/ML SOL INJ 1FA X 50ML##754,32 
+7898152460086##AGRITOSS                                     0,15ML SOL OR FR 100ML+CM##7,28 
+7898152460093##AGRITOSS                                     0,15ML SOL OR FR VD 100ML+CM##7,28 
+7896023799945##AGUA BORICADA                                FR 100ML##2,95 
+7898170783327##AGUA ESTERIL PARA INJETAVEIS BEKER           SOL INJ IV CX 100 X 100 ML##447,78 
+7896023705397##AGUA INGLESA                                 FR 500ML##22,49 
+7896023705557##AGUA OXIGENADA                               FR 100ML VOL 10##2,54 
+7898901848820##AGUA PARA INJECAO                            SOL INJ CT 50 AMP X 10 ML##21,65 
+7898901848813##AGUA PARA INJECAO                            25 AMP X 10ML##10,84 
+7898361700154##AGUA PARA INJECAO                            SOL INJ CX 100 AMP X 10ML##33,70 
+7898361700198##AGUA PARA INJECAO                            SOL INJ CX 100 AMP X 20ML##56,98 
+7898361700017##AGUA PARA INJECAO                            SOL INJ CX 100 AMP X 5ML##31,84 
+7898361700151##AGUA PARA INJECAO                            SOL INJ CX 200 AMP X 10ML##67,43 
+7898361700199##AGUA PARA INJECAO                            SOL INJ CX 200 AMP X 20ML##113,98 
+7898361700168##AGUA PARA INJECAO                            SOL INJ CX 200 AMP X 2ML##16,27 
+7898361700014##AGUA PARA INJECAO                            SOL INJ CX 200 AMP X 5ML##64,63 
+7898361700169##AGUA PARA INJECAO                            SOL INJ CX 50 AMP X 2ML##4,06 
+7898361700015##AGUA PARA INJECAO                            SOL INJ CX 50 AMP X 5ML##12,26 
+7898170783228##AGUA PARA INJETAVEIS                         SOL INJ CX 14 BOLS PLAS FLEX X 1000 ML##116,71 
+7898170783211##AGUA PARA INJETAVEIS                         SOL INJ CX 24 BOLS PLAS FLEX X 500 ML##142,93 
+7898170783204##AGUA PARA INJETAVEIS                         SOL INJ CX 50 BOLS PLAS FLEX X 250 ML##267,94 
+7898170783198##AGUA PARA INJETAVEIS                         SOL INJ CX 90 BOLS PLAS FLEX X 125 ML##503,75 
+7896014650040##AGUA PARA INJETAVEIS                         SOL INJ CX 100 AMP X 10 ML##38,38 
+7896014650095##AGUA PARA INJETAVEIS                         SOL INJ CX 100 AMP X 10ML##38,38 
+7896014650057##AGUA PARA INJETAVEIS                         SOL INJ CX 100 AMP X 20 ML##76,77 
+7896014650064##AGUA PARA INJETAVEIS                         SOL INJ CX 100 AMP X 3ML##11,52 
+7896014650071##AGUA PARA INJETAVEIS                         SOL INJ CX 100 AMP X 4 ML##15,35 
+7896014650033##AGUA PARA INJETAVEIS                         SOL INJ CX 100 AMP X 5ML##19,19 
+7896014650088##AGUA PARA INJETAVEIS                         SOL INJ CX 100 AMP X 5ML##19,19 
+7896004728568##AH-ZUL                                       100MG CX 1BL X 4 COMP REV##67,06 
+7896004734323##AH-ZUL                                       25MG CX 1BL X 2 COMP REV##17,46 
+7896004730295##AH-ZUL                                       25MG CX 1BL X 4 COMP REV##34,79 
+7896004734316##AH-ZUL                                       50MG CX 12 COMP REV##95,24 
+7896004736778##AH-ZUL                                       50MG CX 1BL X 1 COMP REV##9,56 
+7896004730301##AH-ZUL                                       50MG CX 1BL X 2 COMP REV##19,12 
+7896004730318##AH-ZUL                                       50MG CX 1BL X 4 COMP REV##37,86 
+7896004730325##AH-ZUL                                       50MG CX 2BL X 4 COMP REV##74,71 
+7891317144166##AIDE 3                                       200UI SOL OR FR 10ML##23,36 
+7891317144142##AIDE 3                                       200UI SOL OR FR 20ML##37,11 
+7896658005183##AIRCLIN                                      SPRAY NAS FR 15ML (120 DOSES)##42,06 
+7891317459062##AIRES                                        120MG/G CX 16 SACHES X 5G GRAN##36,32 
+7891317464028##AIRES                                        120MG/G CX 8 ENV X 5G GRAN##17,47 
+7891317459048##AIRES                                        20MG/G CX 16 SACHES X 5G GRAN##14,63 
+7891317464035##AIRES                                        20MG/G CX 8 ENV X 5G GRAN##7,04 
+7891317459055##AIRES                                        40MG/G CX 16 SACHES X 5G GRAN##16,32 
+7891317464042##AIRES                                        40MG/G CX 8 ENV X 5G GRAN##7,86 
+7896422531788##AIXA                                         2+0,03MG CX 21 COMP REV##27,07 
+7896422532228##AIXA                                         2+0,03MG CX 63 COMP REV##73,90 
+7896255711005##AKINETON                                     2MG CX 80 COMP##21,60 
+7896255711043##AKINETON                                     4MG CX 30 COMP REV RETARD##14,59 
+7899095201972##ALBEL                                        200MG/5ML SUS FR 10ML##4,83 
+7899095201934##ALBEL                                        400MG CX 1 COMP##4,25 
+7898148295227##ALBENDAZOL                                   400MG CX 100 COM MAST (EMB FRAC)##3,92 
+7898148295227##ALBENDAZOL                                   400MG CX 100 COMP MAST##65,50 
+7896714205878##ALBENDAZOL                                   400MG CX 1 COMP##4,02 
+7898148295234##ALBENDAZOL                                   400MG CX 80 COMP HOSP##152,67 
+7896714201252##ALBENDAZOL                                   400MG SUS FR 10ML##3,43 
+7898148295210##ALBENDAZOL                                   400MG X 1 COMP MAST##3,92 
+7896004702452##ALBENDAZOL                                   40MG SUS FR 10ML##5,28 
+7898148292943##ALBENDAZOL                                   40MG SUS OR CX 200 FR 10ML HOSP##283,66 
+7894916143264##ALBENDAZOL                                   40MG SUS ORAL FR 10ML##4,86 
+7898148292936##ALBENDAZOL                                   40MG/ML SUS OR FR 10ML##3,84 
+7896422511728##ALBENDAZOL                                   400MG FR 1 COMP MAST##4,56 
+7896112126515##ALBENDAZOL                                   400MG CX 1 COMP MAST##4,61 
+7896112147909##ALBENDAZOL                                   40MG/ML SUS ORAL FR 10ML##3,64 
+7895296210218##ALBENDAZOL                                   40MG/ML SUS ORAL FR 10ML+CM##5,50 
+7898078942147##ALBENDROX                                    200MG CX 2 COMP##2,64 
+7898078942161##ALBENDROX                                    400MG CX 1 COMP##3,77 
+7898078942185##ALBENDROX                                    400MG SUS OR FR 10ML##4,12 
+7896331702095##ALBENDY                                      400MG CX 1 COMP##4,56 
+7896331702088##ALBENDY                                      40MG/ML SUS ORAL FR 10ML##5,44 
+7898060131900##ALBENIX                                      200MG CX 2 COMP##2,22 
+7898060131917##ALBENIX                                      40MG/ML SUS ORAL FR 10ML##4,14 
+7896112143888##ALBENTEL                                     400MG CX 1 COMP MAST##4,61 
+7896112141006##ALBENTEL                                     40MG/ML SUS OR FR 10ML##4,87 
+7896672202643##ALBICON                                      TB C/ 20 GRAMAS##9,48 
+7893736014518##ALBISTIN                                     100.000UI/ML SUS ORAL FR 40ML##15,69 
+7893736014525##ALBISTIN                                     25.000UI/G CREME VAG BG 60##20,11 
+7893736014501##ALBISTIN                                     500.000UI CX 16 DR##20,42 
+7896641800023##ALBOCRESIL                                   CX 6 OVL##9,64 
+7896641800016##ALBOCRESIL                                   GEL BG 50G+APLIC##14,88 
+7896641800030##ALBOCRESIL                                   SOL FR 12ML##15,00 
+7896014641307##ALBUMAX                                      20% INJ CX 1FA 50ML+EQ##222,90 
+7896083400027##ALCACHOFRA                                   300MG CX 45 CAP##19,78 
+7896472515363##ALCACHOFRA MULTILAB                          200MG CX 120 COMP##46,52 
+7896472515349##ALCACHOFRA MULTILAB                          200MG CX 30 COMP##12,97 
+7896472515356##ALCACHOFRA MULTILAB                          200MG CX 60 COMP##23,75 
+7896023703010##ALCACHOFRAX                                  FR 100 COMP##41,20 
+7896622300030##ALCAFELOL                                    LIQ FR 150ML##13,46 
+7896622303413##ALCAFLOR UNO                                 200MG CX 120 COMP REV##53,66 
+7894164003174##ALCAGEST                                     350MG CX 100 CAP##36,39 
+7894164000999##ALCAGEST                                     350MG CX 45 CAP##19,53 
+7898014562095##ALCANATAN                                    250MG CX 100 CAP##28,55 
+7898014561845##ALCANATAN                                    250MG CX 30 CAP##11,56 

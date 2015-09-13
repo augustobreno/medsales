@@ -11,6 +11,7 @@ import org.apache.commons.io.IOUtils;
 import org.easy.qbeasy.QBEFilter;
 import org.easy.qbeasy.api.operator.Operators;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.sales.medsales.MedSalesBaseTest;
 import org.sales.medsales.dominio.movimento.estoque.Produto;
@@ -76,6 +77,7 @@ public class ImportarProdutoTest extends MedSalesBaseTest {
 	 * @throws ParseException 
 	 */
 	@Test
+	@Ignore
 	public void importarNovosPrecosProdutosExistentes() throws IOException, ParseException {
 		
 		/*
