@@ -7,7 +7,7 @@ import javax.persistence.EntityManager;
 
 import junit.framework.Assert;
 
-import org.jboss.arquillian.junit.Arquillian;
+//import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.sales.medsales.MedSalesBaseTest;
@@ -19,7 +19,7 @@ import org.sales.medsales.negocio.ParceiroFacade;
  * @author Augusto
  *
  */
-@RunWith(Arquillian.class)
+//@RunWith(Arquillian.class)
 public class EntityBaseTest extends MedSalesBaseTest {
 
 	@Inject

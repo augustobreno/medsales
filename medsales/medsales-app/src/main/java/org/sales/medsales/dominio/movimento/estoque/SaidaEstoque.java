@@ -31,6 +31,18 @@ public class SaidaEstoque extends MovimentoEstoque {
 	 * Sequencial para identificação de um pedido por cliente.
 	 */
 	private String numeroPedido;
+
+	/**
+	 * Porcentagem para calculo do investimento sobre o valor da nota.
+	 */
+	@Column(precision=4, scale=2)
+	private BigDecimal indiceInvestimento;
+	
+	/**
+	 * Porcentagem para calculo da comissão paga.
+	 */
+	@Column(precision=4, scale=2)
+	private BigDecimal indiceComissao;	
 	
 	/**
 	 * Valores das notas originais de compras dos produtos.
@@ -117,5 +129,21 @@ public class SaidaEstoque extends MovimentoEstoque {
 			this.notasCompra.remove(nota);
 		}	
 		
+	}
+
+	public BigDecimal getIndiceInvestimento() {
+		return indiceInvestimento;
+	}
+
+	public void setIndiceInvestimento(BigDecimal indiceInvestimento) {
+		this.indiceInvestimento = indiceInvestimento;
+	}
+
+	public BigDecimal getIndiceComissao() {
+		return indiceComissao;
+	}
+
+	public void setIndiceComissao(BigDecimal indiceComissao) {
+		this.indiceComissao = indiceComissao;
 	}
 }

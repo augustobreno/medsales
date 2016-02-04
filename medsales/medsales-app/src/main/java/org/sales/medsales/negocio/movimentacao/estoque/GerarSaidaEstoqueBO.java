@@ -8,12 +8,14 @@ import javax.inject.Inject;
 
 import org.sales.medsales.api.exceptions.EntityNotFoundException;
 import org.sales.medsales.api.exceptions.NullParameterException;
+import org.sales.medsales.dominio.Configuracao;
 import org.sales.medsales.dominio.movimento.estoque.EntradaEstoque;
 import org.sales.medsales.dominio.movimento.estoque.Item;
 import org.sales.medsales.dominio.movimento.estoque.MovimentoEstoque;
 import org.sales.medsales.dominio.movimento.estoque.SaidaEstoque;
 import org.sales.medsales.dominio.movimento.estoque.Status;
 import org.sales.medsales.exceptions.ExceptionCodes;
+import org.sales.medsales.negocio.ConfiguracaoFacade;
 import org.sales.medsales.persistencia.repository.EstoqueRepository;
 
 /**
@@ -29,6 +31,9 @@ public class GerarSaidaEstoqueBO implements Serializable {
 	
 	@Inject
 	private SaidaEstoqueBO saidaEstoqueBO;
+	
+	@Inject
+	private ConfiguracaoFacade configuracaoFacade;
 	
 	/**
 	 * Gera uma saída a partir de uma entrada pré-cadastrada
@@ -57,6 +62,11 @@ public class GerarSaidaEstoqueBO implements Serializable {
 		
 		saidaEstoque.setItens(itensSaida);
 //		saidaEstoque.setCiclo(entradaEstoque.getCiclo());
+		
+		Configuracao configuracao = configuracaoFacade.getConfiguracao();
+		saidaEstoque.setIndiceComissao(configuracao.getIndiceComissao());
+		saidaEstoque.setIndiceInvestimento(configuracao.getIndiceInvestimento());
+		
 		saidaEstoqueBO.salvar(saidaEstoque);
 		
 		return saidaEstoque;

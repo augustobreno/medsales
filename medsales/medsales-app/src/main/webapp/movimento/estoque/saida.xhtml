@@ -16,8 +16,7 @@
 
 <ui:composition template="criarMovimentoTemplate.xhtml">
 
-	<ui:param name="param_pageTitle"
-		value="Saída de Estoque - #{saidaAction.titulo}" />
+	<ui:param name="param_pageTitle" value="Saída de Estoque - #{saidaAction.titulo}" />
 	<ui:param name="movimentoAction" value="#{saidaAction}" />
 
 	<ui:define name="ajaxItemEdit">
@@ -38,7 +37,7 @@
 		</p:column>
 	</ui:define>
 
-	<ui:define name="colCustom" >
+	<ui:define name="colCustom">
 		<p:column headerText="R$ Desc" style="text-align:right" width="100">
 			<h:outputText value="#{item.precoProduto.getValorComDesconto(saidaAction.movimentacao.desconto)}">
 				<f:convertNumber type="currency" pattern="#,##0.00" />
@@ -51,16 +50,16 @@
 		<style type="text/css">
 .labelFormula {
 	font-style: italic;
-	font-size: smaller;
+	font-size: 12px;
 }
 
 .labelTotalizadores {
-	width:40%
+	width: 40%
 }
 </style>
 
 		<p:outputPanel id="totalizadorPanel">
-			<p:panelGrid columns="2" layout="grid" >
+			<p:panelGrid columns="2" layout="grid">
 				<h:form id="totalForm">
 
 
@@ -76,7 +75,7 @@
 
 						<p:outputLabel value="Desconto" for="desconto" />
 						<p:outputPanel>
-							<pe:inputNumber id="desconto" value="#{saidaAction.movimentacao.desconto}" symbol=" %" symbolPosition="suffix"/>
+							<pe:inputNumber id="desconto" value="#{saidaAction.movimentacao.desconto}" symbol=" %" symbolPosition="suffix" />
 							<p:commandButton icon="ui-icon-check" update=":listForm :totalizadorPanel"
 								actionListener="#{saidaAction.aplicarDesconto()}" />
 						</p:outputPanel>
@@ -106,8 +105,10 @@
 				<h:form id="lucroForm">
 
 					<c:set var="totalNotaCompra" value="#{saidaAction.movimentacao.calcularValorNotaCompra()}" />
-					<c:set var="valorInvestimento" value="#{calculosUtil.aplicarDesconto(totalNotaCompra, 24)}" />
-					<c:set var="valorComissao" value="#{calculosUtil.calcularDesconto(totalNotaCompra, 2)}" />
+					<c:set var="valorInvestimento"
+						value="#{calculosUtil.aplicarDesconto(totalNotaCompra, saidaAction.movimentacao.indiceInvestimento)}" />
+					<c:set var="valorComissao"
+						value="#{calculosUtil.calcularDesconto(totalNotaCompra, saidaAction.movimentacao.indiceComissao)}" />
 					<c:set var="valorLucro" value="#{valorPedido - valorInvestimento - valorComissao}" />
 
 					<p:panelGrid columns="2" style="width: 100%;" columnClasses="labelTotalizadores">
@@ -137,19 +138,27 @@
 
 						<p:outputPanel>
 							<p:outputLabel value="Investimento" for="investimento" />
-							<h:outputText value=" (I=NC-24%)" styleClass="labelFormula" />
+							<h:outputText value=" (I=NC-#{viewFunctions.format(saidaAction.movimentacao.indiceInvestimento)}%)"
+								styleClass="labelFormula" />
 						</p:outputPanel>
-						<h:outputText id="investimento" value="#{valorInvestimento}">
-							<f:convertNumber type="currency" pattern="- #,##0.00" />
-						</h:outputText>
+						<p:outputPanel>
+							<h:outputText id="investimento" value="#{valorInvestimento}" style="padding-right: 5px">
+								<f:convertNumber type="currency" pattern="- #,##0.00" />
+							</h:outputText>
+							<p:commandButton id="valorIndiceInvestimento" icon="ui-icon-extlink" type="button" />
+						</p:outputPanel>
 
 						<p:outputPanel>
 							<p:outputLabel value="Comissão" for="comissao" />
-							<h:outputText value=" (C=NC*2%)" styleClass="labelFormula" />
+							<h:outputText value=" (C=NC*#{viewFunctions.format(saidaAction.movimentacao.indiceComissao)}%)"
+								styleClass="labelFormula" />
 						</p:outputPanel>
-						<h:outputText id="comissao" value="#{valorComissao}">
-							<f:convertNumber type="currency" pattern="- #,##0.00" />
-						</h:outputText>
+						<p:outputPanel>
+							<h:outputText id="comissao" value="#{valorComissao}" style="padding-right: 5px">
+								<f:convertNumber type="currency" pattern="- #,##0.00" />
+							</h:outputText>
+							<p:commandButton id="valorIndiceComissao" icon="ui-icon-extlink" type="button" />
+						</p:outputPanel>
 
 						<p:outputPanel>
 							<p:outputLabel value="Lucro " for="lucro" />
@@ -170,6 +179,33 @@
 
 				</h:form>
 			</p:panelGrid>
+
+			<!-- modal valor indice investimento -->
+			<p:overlayPanel showEffect="fade" hideEffect="fade" showCloseIcon="true" for="lucroForm:valorIndiceInvestimento">
+				<h:form id="indiceInvestimentoForm">
+					<p:outputLabel value="Índice Investimento: " for="investimento" />
+					<p:outputPanel>
+						<pe:inputNumber id="investimento" value="#{saidaAction.movimentacao.indiceInvestimento}" symbol="% "
+							required="true" />
+						<p:commandButton icon="ui-icon-plus" process="@this investimento" update=":totalizadorPanel"
+							action="#{saidaAction.salvarAutomaticamente()}" />
+					</p:outputPanel>
+					<p:message for="investimento" />
+				</h:form>
+			</p:overlayPanel>
+
+			<!-- modal valor indice comissao -->
+			<p:overlayPanel showEffect="fade" hideEffect="fade" showCloseIcon="true" for="lucroForm:valorIndiceComissao">
+				<h:form id="indiceComissaoForm">
+					<p:outputLabel value="Índice Comissao: " for="comissao" />
+					<p:outputPanel>
+						<pe:inputNumber id="comissao" value="#{saidaAction.movimentacao.indiceComissao}" symbol="% " required="true" />
+						<p:commandButton icon="ui-icon-plus" process="@this comissao" update=":totalizadorPanel"
+							action="#{saidaAction.salvarAutomaticamente()}" />
+					</p:outputPanel>
+					<p:message for="comissao" />
+				</h:form>
+			</p:overlayPanel>
 
 			<!-- modal de valores de notas originais -->
 			<p:overlayPanel showEffect="fade" hideEffect="fade" showCloseIcon="true" for="lucroForm:valoresNotaOriginal">
@@ -209,7 +245,7 @@
 	<ui:define name="dadosComplementares">
 
 		<p:outputLabel value="Nº do Pedido:" for="numPedido" />
-		<p:inputText id="numPedido" value="#{saidaAction.movimentacao.numeroPedido}"/>
+		<p:inputText id="numPedido" value="#{saidaAction.movimentacao.numeroPedido}" />
 		<p:message for="numPedido" />
 
 	</ui:define>

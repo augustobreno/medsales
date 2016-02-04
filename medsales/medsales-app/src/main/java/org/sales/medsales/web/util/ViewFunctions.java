@@ -1,5 +1,8 @@
 package org.sales.medsales.web.util;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+
 import javax.inject.Named;
 import javax.inject.Singleton;
 
@@ -25,4 +28,7 @@ public class ViewFunctions {
 		return valor == null ? "" : valor.toString();
 	}
 
+	public String format(BigDecimal valor) {
+		return new DecimalFormat("#,###.0").format(valor);
+	}
 }

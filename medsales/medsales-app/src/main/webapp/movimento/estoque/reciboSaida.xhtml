@@ -56,25 +56,25 @@
     				Produtos
 	    </f:facet>
 
-			<p:column headerText="Produto" width="400">
+			<p:column headerText="Produto" width="390" sortBy="#{item.precoProduto.produto.nome}">
 				<h:outputText value="#{item.precoProduto.produto.nome}" />
 			</p:column>
 
-			<p:column headerText="Quantidade" style="text-align:center" width="100">
+			<p:column headerText="Quant." style="text-align:center" width="90" sortBy="#{item.quantidade}">
 				<h:outputText value="#{item.quantidade}" />
 			</p:column>
 
-			<p:column headerText="R$ Fábrica" style="text-align:right" width="100">
+			<p:column headerText="R$ Fábrica" style="text-align:right" width="120" sortBy="#{item.precoProduto.valor}">
 				<h:outputText value="#{item.precoProduto.valor}" converter="BigDecimalConverter" />
 			</p:column>
 
-			<p:column headerText="R$ Final" style="text-align:right" width="100">
+			<p:column headerText="R$ Final" style="text-align:right" width="100" sortBy="#{item.precoProduto.getValorComDesconto(saidaReciboAction.movimentacao.desconto)}">
 				<h:outputText value="#{item.precoProduto.getValorComDesconto(saidaReciboAction.movimentacao.desconto)}">
 					<f:convertNumber type="currency" pattern="#,##0.00" />
 				</h:outputText>
 			</p:column>
 
-			<p:column headerText="R$ Total" style="text-align:right" width="100">
+			<p:column headerText="R$ Total" style="text-align:right" width="100" sortBy="#{saidaReciboAction.calcularPrecoTotal(item)}">
 				<h:outputText id="precoTotal" value="#{saidaReciboAction.calcularPrecoTotal(item)}" converter="BigDecimalConverter" />
 			</p:column>
 
